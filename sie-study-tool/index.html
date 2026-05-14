@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SIE Study Tool — Kaplan 3rd Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#09090a;--bg2:#111113;--bg3:#18181b;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#f0eeea;--muted:#6b6965;--muted2:#9b9894;
+  --gold:#d4a84b;--gold2:#f0c96a;--green:#4ade80;--red:#f87171;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:100;opacity:.4}
+.wrap{max-width:780px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+ 
+/* header */
+header{padding:1.75rem 0 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo-mark{width:28px;height:28px;background:var(--gold);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#09090a;font-family:'DM Mono',monospace}
+.logo-text{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted2)}
+.hdr-right{display:flex;align-items:center;gap:.85rem}
+.score-display{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)}
+.score-val{color:var(--gold2);font-weight:500}
+.reset-link{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer;background:none;border:none;text-decoration:underline}
+.reset-link:hover{color:var(--muted2)}
+.back-btn{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer;background:none;border:1px solid var(--border);padding:4px 10px;border-radius:3px;letter-spacing:.04em;display:none}
+.back-btn:hover{border-color:var(--border2);color:var(--muted2)}
+.back-btn.vis{display:inline-block}
+ 
+/* api prompt */
+.api-prompt{background:var(--bg2);border:1px solid rgba(212,168,75,.3);border-radius:8px;padding:1.5rem;margin:1.5rem 0;display:none}
+.api-prompt.vis{display:block}
+.api-prompt h3{font-size:14px;font-weight:700;color:var(--gold2);margin-bottom:.4rem}
+.api-prompt p{font-size:13px;color:var(--muted);margin-bottom:.9rem;line-height:1.6}
+.api-row{display:flex;gap:8px}
+.api-input{flex:1;padding:.6rem .85rem;background:var(--bg3);border:1px solid var(--border2);border-radius:5px;font-family:'DM Mono',monospace;font-size:12px;color:var(--text)}
+.api-input:focus{outline:none;border-color:var(--gold)}
+.api-save{padding:.6rem 1rem;background:var(--gold);border:none;border-radius:5px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#09090a;cursor:pointer}
+.api-save:hover{background:var(--gold2)}
+.api-ok{font-family:'DM Mono',monospace;font-size:12px;color:var(--green);margin-top:.5rem;display:none}
+.api-ok.vis{display:block}
+ 
+/* hero */
+.hero{padding:3rem 0 2rem;text-align:center}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;opacity:0;animation:fu .5s ease .1s forwards}
+.hero-title{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(2.2rem,5.5vw,3.75rem);font-style:italic;color:var(--text);margin-bottom:.6rem;line-height:1.1;opacity:0;animation:fu .6s ease .2s forwards}
+.hero-sub{font-size:13.5px;color:var(--muted);max-width:420px;margin:0 auto 2rem;line-height:1.7;opacity:0;animation:fu .6s ease .3s forwards}
+ 
+/* stats */
+.stats-bar{display:none;gap:0;border:.5px solid var(--border);border-radius:6px;margin-bottom:1.5rem;background:var(--bg2);overflow:hidden}
+.stats-bar.vis{display:flex}
+.stat{flex:1;padding:.85rem .5rem;text-align:center;border-right:.5px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-val{font-family:'DM Mono',monospace;font-size:18px;font-weight:500;color:var(--gold2)}
+.stat-label{font-size:10px;color:var(--muted);margin-top:2px;letter-spacing:.04em;text-transform:uppercase}
+ 
+/* section label */
+.slabel{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem}
+ 
+/* unit grid */
+.unit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:7px;margin-bottom:1.75rem}
+.unit-btn{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:.65rem .85rem;text-align:left;cursor:pointer;transition:all .16s}
+.unit-btn:hover{border-color:var(--border2);background:var(--bg3)}
+.unit-btn.active{border-color:var(--gold);background:var(--bg3)}
+.unit-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.08em;margin-bottom:.25rem}
+.unit-name{font-size:12px;font-weight:600;color:var(--text);line-height:1.3}
+.unit-src{font-size:10px;color:var(--muted);margin-top:.15rem;font-family:'DM Mono',monospace}
+ 
+/* mode */
+.mode-row{display:flex;gap:7px;margin-bottom:1.5rem;flex-wrap:wrap}
+.mode-btn{padding:.4rem .9rem;border-radius:4px;border:1px solid var(--border2);background:transparent;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;color:var(--muted2);cursor:pointer;letter-spacing:.03em;transition:all .14s}
+.mode-btn.active,.mode-btn:hover{background:var(--gold);color:#09090a;border-color:var(--gold)}
+ 
+/* error */
+.err{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);border-radius:6px;padding:.85rem 1rem;margin-bottom:1rem;font-size:13px;color:#fca5a5;display:none;line-height:1.5}
+.err.vis{display:block}
+ 
+/* start btn */
+.start-btn{display:block;width:100%;padding:.95rem;background:var(--gold);border:none;border-radius:6px;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#09090a;cursor:pointer;letter-spacing:.04em;transition:all .2s;margin-bottom:2.5rem}
+.start-btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.start-btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+ 
+/* question area */
+#qarea{display:none}
+#qarea.vis{display:block}
+.q-meta{display:flex;align-items:center;gap:.85rem;margin-bottom:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border);flex-wrap:wrap}
+.q-tag{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.07em;background:rgba(212,168,75,.1);padding:3px 10px;border-radius:20px;border:1px solid rgba(212,168,75,.18)}
+.q-num{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted)}
+.q-mode{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-left:auto;background:var(--bg2);padding:2px 8px;border-radius:3px;border:1px solid var(--border)}
+ 
+/* loading */
+.loading{display:none;text-align:center;padding:3.5rem 1rem}
+.loading.vis{display:block}
+.loading-ring{width:36px;height:36px;border:2px solid var(--border2);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto .75rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.08em}
+ 
+/* question card */
+.qcard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.75rem;margin-bottom:1rem}
+.qtext{font-family:'Instrument Serif',Georgia,serif;font-size:1.3rem;line-height:1.55;color:var(--text);font-style:italic}
+.kb-hint{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);text-align:center;margin-bottom:.75rem;letter-spacing:.04em}
+ 
+/* options */
+.opts{display:flex;flex-direction:column;gap:7px;margin-bottom:1rem}
+.opt{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem .95rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;cursor:pointer;text-align:left;font-family:'Syne',sans-serif;font-size:13px;color:var(--text);transition:all .14s;width:100%}
+.opt:hover:not(:disabled){border-color:var(--border2);background:var(--bg3)}
+.opt:disabled{cursor:default}
+.opt.correct{border-color:var(--green)!important;background:rgba(74,222,128,.07)!important}
+.opt.wrong{border-color:var(--red)!important;background:rgba(248,113,113,.07)!important;color:var(--muted2)}
+.opt.reveal{border-color:var(--green)!important;background:rgba(74,222,128,.04)!important}
+.opt-l{font-family:'DM Mono',monospace;font-size:12px;color:var(--gold);font-weight:500;flex-shrink:0;margin-top:1px;width:16px}
+.opt-t{line-height:1.5}
+ 
+/* explanation */
+.expl{display:none;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:1.4rem;margin-bottom:1rem}
+.expl.vis{display:block;animation:fi .25s ease}
+.expl-hdr{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.65rem;font-weight:500}
+.expl-hdr.ok{color:var(--green)}
+.expl-hdr.no{color:var(--red)}
+.expl-body{font-size:13.5px;color:var(--muted2);line-height:1.72}
+.expl-body strong{color:var(--text);font-weight:600}
+ 
+/* follow-up */
+.fu-area{display:none;margin-bottom:1rem}
+.fu-area.vis{display:block;animation:fi .2s ease}
+.fu-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.fu-input{width:100%;padding:.7rem .9rem;background:var(--bg2);border:1px solid var(--border2);border-radius:6px;font-family:'Syne',sans-serif;font-size:13px;color:var(--text);resize:none;height:68px;line-height:1.5}
+.fu-input:focus{outline:none;border-color:var(--gold)}
+.fu-input::placeholder{color:var(--muted)}
+.fu-row{display:flex;gap:8px;margin-top:7px;align-items:center}
+.fu-send{padding:.45rem 1rem;background:var(--gold);border:none;border-radius:4px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#09090a;cursor:pointer;transition:background .14s}
+.fu-send:hover{background:var(--gold2)}
+.fu-send:disabled{opacity:.35;cursor:not-allowed}
+.fu-thinking{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);display:none}
+.fu-thinking.vis{display:inline}
+.fu-resp{margin-top:.75rem;font-size:13px;color:var(--muted2);line-height:1.7;background:var(--bg2);border-radius:6px;padding:.8rem 1rem;border:1px solid var(--border);display:none}
+.fu-resp.vis{display:block;animation:fi .2s ease}
+ 
+/* action row */
+.act-row{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:3rem;margin-top:.25rem}
+.next-btn{flex:1;padding:.78rem;background:var(--gold);border:none;border-radius:6px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#09090a;cursor:pointer;letter-spacing:.04em;transition:all .15s;display:none;min-width:160px}
+.next-btn.vis{display:block}
+.next-btn:hover{background:var(--gold2)}
+.fu-toggle{padding:.78rem 1.1rem;background:transparent;border:1px solid var(--border2);border-radius:6px;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;color:var(--muted2);cursor:pointer;transition:all .14s;display:none}
+.fu-toggle.vis{display:block}
+.fu-toggle:hover{border-color:var(--gold);color:var(--gold)}
+ 
+/* animations */
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.fi{animation:fi .3s ease forwards}
+ 
+@media(max-width:520px){.unit-grid{grid-template-columns:1fr 1fr}.act-row{flex-direction:column}.next-btn,.fu-toggle{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ 
+<header>
+  <div class="logo">
+    <div class="logo-mark">SIE</div>
+    <span class="logo-text">Study Tool · Kaplan 3rd Ed.</span>
+  </div>
+  <div class="hdr-right">
+    <div class="score-display">Score: <span class="score-val" id="score-text">—</span></div>
+    <button class="reset-link" onclick="resetAll()">reset</button>
+    <button class="back-btn" id="back-btn" onclick="goBack()">← units</button>
+  </div>
+</header>
+ 
+<div class="api-prompt" id="api-prompt">
+  <h3>🔑 Anthropic API key required</h3>
+  <p>Stored only in your browser session — sent only to Anthropic's API. Get your key at <strong>console.anthropic.com</strong> → API Keys.</p>
+  <div class="api-row">
+    <input class="api-input" id="api-key-input" type="password" placeholder="sk-ant-..." autocomplete="off"/>
+    <button class="api-save" onclick="saveKey()">Save</button>
+  </div>
+  <div class="api-ok" id="api-ok">✓ Key saved for this session</div>
+</div>
+ 
+<div id="setup">
+  <div class="hero">
+    <div class="hero-kicker">Kaplan 3rd Edition · License Exam Manual + Class Notes · All 12 Units</div>
+    <h1 class="hero-title">SIE Exam Prep</h1>
+    <p class="hero-sub">Claude-powered questions grounded in your exact Kaplan study materials. Pick a unit, choose a mode, and drill.</p>
+  </div>
+ 
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat"><div class="stat-val" id="s-total">0</div><div class="stat-label">Questions</div></div>
+    <div class="stat"><div class="stat-val" id="s-correct">0</div><div class="stat-label">Correct</div></div>
+    <div class="stat"><div class="stat-val" id="s-pct">—</div><div class="stat-label">Score %</div></div>
+    <div class="stat"><div class="stat-val" id="s-streak">0</div><div class="stat-label">Streak</div></div>
+    <div class="stat"><div class="stat-val" id="s-best">0</div><div class="stat-label">Best streak</div></div>
+  </div>
+ 
+  <div class="slabel">Select a unit</div>
+  <div class="unit-grid" id="unit-grid"></div>
+ 
+  <div class="slabel">Question mode</div>
+  <div class="mode-row">
+    <button class="mode-btn active" onclick="setMode(this,'standard')">Standard</button>
+    <button class="mode-btn" onclick="setMode(this,'hard')">Hard (EXCEPT style)</button>
+    <button class="mode-btn" onclick="setMode(this,'definitions')">Definitions</button>
+    <button class="mode-btn" onclick="setMode(this,'calculations')">Calculations</button>
+    <button class="mode-btn" onclick="setMode(this,'random')">Random unit</button>
+  </div>
+ 
+  <div class="err" id="setup-err"></div>
+  <button class="start-btn" id="start-btn" onclick="startQ()" disabled>Select a unit above to begin</button>
+</div>
+ 
+<div id="qarea">
+  <div class="q-meta">
+    <span class="q-tag" id="q-tag">Unit 1</span>
+    <span class="q-num" id="q-num">Question 1</span>
+    <span class="q-mode" id="q-mode">STANDARD</span>
+  </div>
+  <div class="loading" id="loading">
+    <div class="loading-ring"></div>
+    <div class="loading-text">Generating question...</div>
+  </div>
+  <div class="err" id="q-err"></div>
+  <div id="qcontent" style="display:none">
+    <div class="qcard"><div class="qtext" id="qtext"></div></div>
+    <div class="kb-hint">Press A B C D to answer · Enter for next question</div>
+    <div class="opts" id="opts"></div>
+    <div class="expl" id="expl">
+      <div class="expl-hdr" id="expl-hdr"></div>
+      <div class="expl-body" id="expl-body"></div>
+    </div>
+    <div class="fu-area" id="fu-area">
+      <div class="fu-label">Ask Claude a follow-up</div>
+      <textarea class="fu-input" id="fu-input" placeholder="e.g. Explain the difference between cumulative and straight preferred. Give me another breakeven calculation example."></textarea>
+      <div class="fu-row">
+        <button class="fu-send" id="fu-send" onclick="sendFU()">Ask →</button>
+        <span class="fu-thinking" id="fu-thinking">Thinking...</span>
+      </div>
+      <div class="fu-resp" id="fu-resp"></div>
+    </div>
+    <div class="act-row">
+      <button class="fu-toggle" id="fu-toggle" onclick="toggleFU()">Ask a follow-up</button>
+      <button class="next-btn" id="next-btn" onclick="nextQ()">Next Question →</button>
+    </div>
+  </div>
+</div>
+ 
+</div>
+<script>
+// ─── KAPLAN 3RD EDITION CONTENT (extracted from LEM + Class Notes) ─────────
+const UNITS=[
+{num:1,name:"Primary & Secondary Markets",src:"LEM Ch.1 + CN Unit 1",topics:`PRIMARY MARKET: Issuers sell securities to raise capital — proceeds go to issuer. IPO: first-time issuance, Rule 5130 applies. APO/Follow-on: company already public, Rule 5130 does NOT apply. SECONDARY MARKET: investors trade among themselves — issuer does NOT receive proceeds. NYSE/Nasdaq (NMS securities); OTC (non-NMS). NYSE hours 9:30am–4:00pm ET. Dark pools: anonymous institutional block orders. SECURITIES ACT OF 1933 (Paper Act): governs primary market. Registration statement (S-1) filed with SEC. Cooling-off period: minimum 20 calendar days — no solicitation during this period. Tombstone ads allowed during cooling-off (name, type/number of securities, POP range, underwriters). Prospectus: disclosure document provided to all purchasers. EXEMPT ISSUERS: US government, municipalities, national/state banks (NOT bank holding companies), S&Ls, charities, religious/educational nonprofits. EXEMPT ISSUES: commercial paper/bankers acceptances under 270 days; insurance policies; fixed annuity contracts (NOT variable annuities). REG A: Tier 1 up to $20M/12 months, Tier 2 up to $75M/12 months. REG D: private placements to accredited investors (net worth over $1M excluding primary residence OR income over $200K individual/$300K joint). SHELF REGISTRATION: WKSI registers securities to sell over 2–3 years. Supplemental prospectus required before each sale. ORDER TYPES: Market (immediate, best available price). Limit (specific price or better). Stop (triggers when price hits stop price, becomes market order). Stop-limit (triggers at stop, becomes limit order). Buy limit = at or below. Sell limit = at or above. Buy stop = above market. Sell stop = below market. TIME RESTRICTIONS: Day order (default, cancelled EOD). GTC (auto-cancelled last business day of April and October). Market-on-open/close. FILL RESTRICTIONS (limit orders only): FOK (fill-or-kill: all or nothing immediately). IOC (partial fill ok, rest cancelled). AON (all or nothing, can wait). SETTLEMENT: corporate T+1, options T+1, government T+1. PROSPECTUS DELIVERY: IPO NMS 25 days, IPO non-NMS 90 days, APO NMS 0 days, APO non-NMS 40 days. LONG = own, bullish. SHORT = borrowed and sold, bearish.`},
+{num:2,name:"Equity Securities",src:"LEM Ch.2 + CN Unit 2",topics:`COMMON STOCK: ownership in corporation. Authorized = total allowed. Issued = sold. Outstanding = issued minus treasury. Treasury stock = repurchased, no voting rights, no dividends, not outstanding. Formula: Issued − Treasury = Outstanding. Market cap = outstanding shares × CMV. RIGHTS: vote for BOD (one share one vote or cumulative voting), receive dividends if declared, preemptive rights (maintain proportional ownership), residual claim (last at bankruptcy). PREEMPTIVE RIGHTS: short-term (30–45 days), exercised BELOW current market (subscription price), traded on exchanges. WARRANTS: long-term (years), exercise price ABOVE current market initially, issued with bonds as sweetener. DIVIDEND PROCESS: Declaration date (BOD declares). Ex-dividend date (buyer on/after does NOT get dividend; must buy day BEFORE ex-date). Record date (1 business day after ex-date). Payable date. Cash dividends taxed as ordinary income. Stock dividends increase shares, reduce price proportionally, not taxable until sold. PREFERRED STOCK: fixed dividend (% of $100 par), priority over common for dividends and at liquidation, generally no voting rights. Par = $100 (always assume unless stated). Straight/Noncumulative: missed dividends lost forever. Cumulative: missed dividends accumulate, paid before common. Callable: company can redeem at stated price. Convertible: exchange for fixed number of common shares, lower dividend rate. Participating: shares in additional profits. ADRs: US-traded certificates for foreign securities, traded in USD, dividends in USD, subject to currency risk and political risk. STOCK SPLITS: 2:1 doubles shares, halves price, no change in market cap. Reverse split decreases shares, increases price. CONVERSION: ratio = par value of bond ÷ conversion price. Parity price of stock = bond price ÷ conversion ratio.`},
+{num:3,name:"Debt Securities",src:"LEM Ch.3 + CN Unit 3",topics:`BOND BASICS: issuer promises to pay interest and repay par at maturity. Par = $1,000 corporate. Coupon rate = stated rate, fixed. Premium bond: price above par (coupon > market rates). Discount bond: price below par (coupon < market rates). KEY RULE: bond prices and interest rates move INVERSELY. CORPORATE QUOTES: % of par (95 = $950, 102.5 = $1,025). GOVERNMENT QUOTES: in 32nds (98:16 = 98+16/32 = 98.5 = $985). MUNICIPAL QUOTES: yield basis (YTM) or dollar price. BOND TYPES: Mortgage bond (secured by real estate). Collateral trust (secured by securities). Equipment trust certificate (secured by equipment). Debenture (unsecured). Subordinated debenture (junior to debentures). Convertible (can convert to common stock at conversion price). Zero-coupon (no periodic interest, issued at deep discount, accretes to par, taxed annually on phantom income = OID). Callable (issuer can redeem early, bad for investor when rates fall). Putable (investor can sell back at par, good when rates rise). Income/adjustment bond (interest paid only if company earns it). PRIORITY AT LIQUIDATION: 1) Secured creditors 2) Debentures 3) Subordinated debentures 4) Preferred stockholders 5) Common stockholders. US GOVERNMENT: full faith and credit, no default risk. T-Bills: discount, 4/8/13/26/52 weeks, min $100. T-Notes: semi-annual interest, 2–10 years. T-Bonds: semi-annual interest, 30 years. TIPS: principal adjusted for CPI. STRIPS: zero-coupon. T+1 settlement all government securities. Taxable at federal ONLY — exempt state/local. AGENCY: Ginnie Mae (GNMA) IS backed by US government, FHA/VA mortgages. Fannie Mae (FNMA) and Freddie Mac (FHLMC) are NOT backed by US government. MBS: pool of mortgages, monthly principal+interest, prepayment risk. CMOs: tranches of MBS. PAC tranche most stable. Companion tranche absorbs prepayment risk. MUNICIPAL BONDS: interest EXEMPT from federal tax. May be exempt state tax if issued in investor's home state. GO bonds: full faith and credit, taxing power, voter approval required. Revenue bonds: backed only by project revenues, no voter approval, higher yield than GO. AMT bonds: private purpose, subject to Alternative Minimum Tax. BOND RATINGS: Moody's Aaa/Aa/A/Baa = investment grade, Ba and below = speculative/junk. S&P/Fitch AAA/AA/A/BBB = investment grade, BB and below = speculative. DURATION: higher duration = more volatile. Longer maturity + lower coupon = higher duration. YIELD RELATIONSHIPS (MEMORIZE): Premium: coupon > current yield > YTM. Discount: coupon < current yield < YTM. Par: coupon = current yield = YTM.`},
+{num:4,name:"Investment Companies & Insurance",src:"LEM Ch.4 + CN Unit 4",topics:`INVESTMENT COMPANY ACT OF 1940: regulates investment companies. Types: face-amount certificate companies, UITs, management investment companies. OPEN-END FUNDS (Mutual Funds): continuously issue/redeem shares, priced at NAV once daily at 4pm ET (forward pricing). NAV = (assets − liabilities) ÷ shares outstanding. Class A: front-end load (up to 8.5%), lower 12b-1 fees, best for large long-term. Class B: CDSC/back-end load declining over time, higher 12b-1 fees, converts to A. Class C: level load, small 12b-1 (~1%), no CDSC after 1 year, best for short-term. POP = NAV + sales charge. Sales charge % = (POP − NAV) ÷ POP. No-load: POP = NAV. 12b-1 fee: annual distribution/marketing fee. BREAKPOINTS: quantity discounts. Rights of accumulation (count past purchases). LOI: commit to breakpoint within 13 months, can backdate 90 days. Breakpoint selling = violation. CLOSED-END FUNDS: fixed shares from IPO, trade on exchange at market price (can be at premium or discount to NAV), leverage possible. UITs: fixed unmanaged portfolio, no active management, units not shares, self-liquidating, no management fee, redeemable with sponsor. ETFs: legally open-end but trade on exchange throughout day at market price. Mostly index-tracking. Marginable. Tax efficient. Low expenses. Commissionable transactions. ETNs: senior unsecured debt from bank, NOT a fund, interest from reference index, primary risk = default of issuing bank. MONEY MARKET FUNDS: short-term high-quality debt, $1 NAV, NOT FDIC insured. VARIABLE ANNUITIES: registered security, separate account holds subaccounts, investor bears investment risk. Accumulation phase = accumulation units. Payout phase: accumulation units convert to annuity units (number fixed, value fluctuates). Death benefit = greater of account value or total premiums. Fees: M&E risk, admin, investment management, surrender charges. SUITABILITY: long-term supplemental retirement income, funded with cash. NOT suitable: short-term needs, needs lump sum, funded by replacing life insurance or home equity. PAYOUT OPTIONS: Life only (highest payment), Life with period certain, Joint and last survivor. Fixed annuity: NOT a security, insurance company bears risk, guaranteed rate. REITs: trade on exchanges, distribute 90%+ of taxable income, pass-through taxation. DPPs: pass-through income/losses, illiquid, limited partners passive with limited liability.`},
+{num:5,name:"Other Investment Vehicles",src:"LEM Ch.5 + CN Unit 5",topics:`OPTIONS: contract giving buyer RIGHT (not obligation) to buy or sell. One contract = 100 shares. Premium = price paid for option. Strike price = fixed exercise price. Expiration = 3rd Friday of month at 11:59pm ET. American style = any time before expiration. European style = only at expiration. CALL: right to BUY. Buyer = bullish, max gain = unlimited, max loss = premium. Naked call writer = max gain = premium, max loss = unlimited. PUT: right to SELL. Buyer = bearish, max gain = strike − premium, max loss = premium. Short put writer = max gain = premium, max loss = strike − premium. COVERED CALL: own stock AND sell call. Income strategy. Max gain = strike − stock cost + premium. Max loss = stock cost − premium. Breakeven = stock cost − premium. BREAKEVENS (MEMORIZE): Long call BE = strike + premium. Long put BE = strike − premium. Short call BE = strike + premium. Short put BE = strike − premium. IN/AT/OUT OF MONEY: Call ITM: CMV > strike. Call OTM: CMV < strike. Put ITM: CMV < strike. Put OTM: CMV > strike. ATM: CMV = strike (both calls and puts). INTRINSIC VALUE = amount in-the-money (zero if OTM). TIME VALUE = premium − intrinsic value. OCC: clears and guarantees listed options, trading 9:30am–4:00pm ET, T+1 settlement. OPTIONS ACCOUNT: ODD provided at/before account approval. Account approved by ROP (Registered Options Principal). First trade immediately after approval. Signed options agreement must be returned within 15 days — if not returned, closing transactions only. STRADDLE (long): buy call + buy put same strike/expiration. Profit = large price movement either direction. Loss when price stays near strike. 529 PLANS: tax-deferred growth, tax-free withdrawal for qualified education expenses. 5-year gift tax averaging. No income limits. Can change beneficiary within family. Penalty for non-qualified = 10% + ordinary income on earnings. DPPs: general partner manages/unlimited liability. Limited partners passive/limited liability. At-risk rules. Passive activity rules. OIL AND GAS: intangible drilling costs (IDCs) deductible in year incurred. EQUIPMENT LEASING: depreciation benefits.`},
+{num:6,name:"Customer Accounts",src:"LEM Ch.6 + CN Unit 6",topics:`ACCOUNT TYPES: Individual (one owner, TOD possible). JTWROS: joint tenants with right of survivorship — survivor inherits, equal undivided interest, most common for couples. TIC: tenants in common — stated percentages, deceased share goes to ESTATE not survivor. Partnership: all general partners sign. Corporate: corporate resolution required. Trust: trust document required. CUSTODIAL (UGMA/UTMA): ONE custodian, ONE minor. Irrevocable. Indefeasible. UTMA: real estate allowed, up to age 25 (49 states). Minor cannot sell or gift assets. TRADITIONAL IRA: pre-tax contributions, tax-deferred growth, distributions = ordinary income. RMDs at age 73. Early withdrawal (before 59½) = 10% penalty + taxes. Exceptions: death, disability, 72(t) equal periodic payments, medical expenses >7.5% AGI, first-time home ($10K lifetime), higher education, health insurance while unemployed. Contribution limit $7,000/year ($8,000 if 50+). Must have earned income. ROTH IRA: after-tax contributions, tax-FREE growth and qualified distributions. No RMDs. Income limits apply. Qualified distribution: account 5+ years old AND 59½ or death/disability/first home. ROLLOVER: must complete within 60 days. Direct rollover preferred (no withholding). Indirect rollover: 20% mandatory withholding. SEP-IRA: employer-only contributions, 25% of compensation limit. SIMPLE IRA: 100 or fewer employees, employer and employee contribute, 2-year rule (25% penalty if transferred within 2 years). CASH ACCOUNT: pay in full by settlement. MARGIN ACCOUNT: Regulation T = 50% initial margin. FINRA maintenance = 25% long positions. Minimum $2,000 to open. Equity = market value − debit. Margin call if equity < 25% of market value. Short maintenance = 30%. DISCRETIONARY ACCOUNT: requires written authorization, each trade approved by principal. NEW ACCOUNT FORM: before first trade, signed by principal, customer reviews within 30 days then every 36 months. Customer does NOT need to sign NAF. REG S-P: protects customer financial information, privacy notice required.`},
+{num:7,name:"Risk & Recommendations",src:"LEM Ch.7 + CN Unit 7",topics:`SYSTEMATIC/MARKET RISK: affects ALL securities, CANNOT be diversified away. Measured by BETA. Beta 1 = moves with market. Beta > 1 = more volatile. Beta < 1 = less volatile. Beta < 0 = inverse. Includes: interest rate risk, inflation/purchasing power risk, market risk. NONSYSTEMATIC/BUSINESS RISK: specific to one company/sector, CAN be diversified away. Includes: business risk, financial risk, default risk, credit risk, regulatory risk. OTHER RISKS: Liquidity risk (difficulty finding buyer). Reinvestment risk (reinvest at lower rates — zero-coupon bonds ELIMINATE reinvestment risk). Call risk (bond called when rates fall). Prepayment risk (MBS when rates fall). Currency risk. Legislative/political risk. DIVERSIFICATION: reduces nonsystematic risk, does NOT eliminate systematic risk. ASSET ALLOCATION: dividing portfolio among asset classes — most important portfolio decision. REGULATION BEST INTEREST (Reg BI): broker-dealers must act in BEST INTEREST of retail customer for recommendations. Four obligations: Disclosure, Care, Conflict of Interest, Compliance. Higher standard than old suitability rule. KNOW YOUR CUSTOMER: understand financial situation, risk tolerance, investment objectives, time horizon, liquidity needs, tax status. INVESTMENT OBJECTIVES: Capital preservation (lowest risk), Income, Growth, Speculation (highest risk). INDICES: DJIA = 30 large-cap stocks, price-weighted. S&P 500 = 500 large-cap, market-cap weighted, broadest US benchmark. Nasdaq Composite = all Nasdaq stocks, tech-heavy. Russell 2000 = 2,000 small-cap. Barclays Aggregate = bond index. MSCI EAFE = international stocks. FUNDAMENTAL: analyzes financials, earnings, P/E, EPS, book value. TECHNICAL: price patterns, charts, volume, moving averages, resistance/support levels. FIDUCIARY: investment advisers registered under Investment Advisers Act of 1940 must act as fiduciaries. Broker-dealers under Reg BI must act in best interest for recommendations.`},
+{num:8,name:"Tax & Yields",src:"LEM Ch.8 + CN Unit 8",topics:`CURRENT YIELD (CY) = annual income ÷ current market value. For bonds: annual interest ÷ current price. For stocks: annual dividend ÷ CMV. NOMINAL YIELD = coupon rate. Stated rate. NEVER changes. YIELD TO MATURITY (YTM) = total return if held to maturity. Most accurate yield measure. YIELD TO CALL (YTC) = return if called at first call date. Use when bond trades at premium and likely to be called. YIELD RELATIONSHIPS (MEMORIZE — this is heavily tested): Premium bond: coupon > current yield > YTM. Discount bond: coupon < current yield < YTM. Par bond: coupon = current yield = YTM. CAPITAL GAINS: Short-term (≤1 year) = taxed as ordinary income. Long-term (>1 year) = preferential rates (0%, 15%, 20%). Capital loss offsets gains dollar-for-dollar. Net capital loss up to $3,000/year offsets ordinary income. Unused losses carry forward indefinitely. WASH SALE RULE: cannot claim loss if same/substantially identical security repurchased within 30 days before or after sale. Loss disallowed, added to cost basis of new shares. COST BASIS: original purchase price. FIFO = default IRS method. TAX TREATMENT: Corporate bond interest = taxable federal, state, local. US Treasury interest = taxable federal ONLY, exempt state/local. Municipal bond interest = generally exempt federal, may be exempt state if issued in investor's home state. AMT bonds = subject to Alternative Minimum Tax. Qualified dividends = long-term capital gains rates. Non-qualified = ordinary income. ACCRUED INTEREST: buyer pays seller accrued interest. Corporate bonds use 30/360. Government bonds use actual/actual. ZERO-COUPON: taxed annually on phantom interest (OID — original issue discount) even though no cash received. ANNUITY TAXATION: accumulation = tax-deferred. Withdrawals = LIFO (earnings out first). Earnings = ordinary income + 10% penalty if before 59½. TAX-EQUIVALENT YIELD = municipal yield ÷ (1 − tax rate). Used to compare muni to taxable bond.`},
+{num:9,name:"Economics",src:"LEM Ch.9 + CN Unit 9",topics:`BUSINESS CYCLE: Expansion → Peak → Contraction/Recession → Trough. Recession = 2+ consecutive quarters of negative GDP growth. GDP: total value of goods/services produced in country. Main economic measure. CPI: measures inflation, basket of consumer goods. PPI: wholesale inflation, leading indicator for CPI. ECONOMIC INDICATORS: Leading (predict future): stock prices, building permits, consumer confidence, money supply, average weekly hours, initial unemployment claims. Coincident (current): GDP, employment, personal income. Lagging (confirm trends): corporate profits, CPI, prime rate, outstanding loans. INFLATION: too much money chasing too few goods. Demand-pull: too much demand. Cost-push: rising production costs (supply shock). STAGFLATION: high inflation + high unemployment + slow growth. MONETARY POLICY (Federal Reserve): Expansionary (easy money): buy government securities (open market ops — MOST FREQUENTLY USED), lower reserve requirement, lower discount rate → money supply up, rates fall, economy stimulated. Contractionary (tight money): sell securities, raise reserve requirement, raise discount rate → money supply down, rates rise, inflation controlled. Federal funds rate = most important rate, target set by FOMC. FISCAL POLICY: government spending and taxation. Set by Congress and President — NOT the Fed. Expansionary: increase spending, decrease taxes. Contractionary: decrease spending, increase taxes. BALANCE OF PAYMENTS: all US international financial transactions. Current account (trade) + capital account (investment flows). Trade surplus = exports > imports. Trade deficit = imports > exports. CURRENCY: Strong dollar = imports cheaper, exports more expensive (bad for US exporters). Weak dollar = imports expensive, exports cheaper (good for US exporters). Rising US rates → dollar strengthens. ECONOMIC THEORIES: Keynesian (demand-side, government spending) = John Maynard Keynes. Monetarist (control money supply) = Milton Friedman. Supply-side (tax cuts/deregulation) = Arthur Laffer. FRB STRUCTURE: 12 regional banks. Board of Governors (7 members, 14-year terms, appointed by President). FOMC sets fed funds rate, meets 8 times per year.`},
+{num:10,name:"Regulators",src:"LEM Ch.10 + CN Unit 10",topics:`KEY LAWS: Securities Act 1933 (primary market, Paper Act). Securities Exchange Act 1934 (created SEC, governs secondary market). Investment Advisers Act 1940 (regulates IAs — $100M+ register with SEC, under $100M register with state; IAs are FIDUCIARIES). Investment Company Act 1940 (mutual funds, ETFs, closed-end, UITs, variable annuities). Trust Indenture Act 1940 (corporate bonds over $5M require independent trustee). Securities Investor Protection Act 1970 (created SIPC). SEC: PRIMARY federal regulator. Created by 1934 Act. CAN: censure, limit activities, suspend, bar, impose fines, cease and desist. CANNOT: revoke registration. SIPC: protects customers if broker-dealer fails. NOT a government agency (funded by member firms). Up to $500,000 per customer, max $250,000 cash claims. Does NOT protect against market losses, bad advice, or commodity futures. FDIC: insures bank deposits $250,000 per depositor per institution per ownership category. Covers: checking, savings, CDs, money market DEPOSIT accounts. Does NOT cover: mutual funds, stocks, bonds, annuities (even if sold at a bank). FINRA: self-regulatory organization (SRO). Regulates broker-dealers and registered representatives. Largest SRO. Created by merger of NASD and NYSE regulatory arm. MSRB: makes rules for municipal securities, has NO enforcement authority — FINRA and bank regulators enforce MSRB rules. OCC: clears and guarantees listed options. DTC: holds securities in electronic form, settles trades. NASAA: represents state securities regulators, no direct enforcement authority. STATE ADMINISTRATORS: regulate under Blue Sky Laws, register securities/BDs/IAs at state level. FINCEN: receives SARs and CTRs. OCC (Office of Comptroller of Currency): regulates national banks. SIPC vs FDIC: SIPC = securities accounts at BDs. FDIC = bank deposit accounts.`},
+{num:11,name:"Regulatory Issues & Ethics",src:"LEM Ch.11 + CN Unit 11",topics:`BANK SECRECY ACT (BSA)/AML: financial institutions must help detect and prevent money laundering. THREE STAGES: Placement (dirty money enters financial system). Layering (complex transactions obscure origin). Integration (money reintroduced as legitimate). CTR (Currency Transaction Report): cash transactions over $10,000, filed with FinCEN within 15 days. STRUCTURING = breaking up transactions to avoid $10K threshold — ILLEGAL. SAR (Suspicious Activity Report): suspicious transactions $5,000+, filed within 30 days. Customer must NOT be told SAR was filed (confidentiality required). No minimum for terrorist financing. KYC/CIP: collect name, date of birth, address, SSN (or EIN for businesses). Beneficial ownership: identify individuals owning 25%+ of legal entity + one control person. MARKET MANIPULATION (all prohibited): Pump and dump (inflate with false info, sell). Front running (own order placed ahead of known large client order). Churning (excessive trading to generate commissions = fiduciary violation). Matching orders/painting the tape (artificial volume/activity). Marking the open/close (orders to manipulate opening/closing prices). Freeriding in cash accounts (buy and sell before paying — account frozen 90 days). INSIDER TRADING: trading on material nonpublic information (MNPI). Both tipper and tippee liable. Material information = would reasonable investor consider it important. CHINESE WALL/INFORMATION BARRIER: separates investment banking (has MNPI) from sales/trading. PROHIBITED ACTIVITIES: Selling away (securities transactions away from employing firm without knowledge — violation). Guaranteeing against loss (cannot guarantee client won't lose money). Sharing in profits/losses (prohibited UNLESS same firm AND customer consent AND proportional to investment). Commingling (mixing customer funds with firm funds). Unauthorized trading (trades without authorization in non-discretionary account). COMMUNICATIONS: Retail communication = written/electronic to 25+ retail investors in 30 days — must be pre-approved by principal before first use. Correspondence = fewer than 25 retail investors — reviewed not necessarily pre-approved. Institutional communication = to institutional investors only. All must be fair, balanced, not misleading. Social media: static posts = retail communication. Interactive posts = correspondence. FINRA ARBITRATION: for disputes between customers and BDs or between industry participants. Binding. Faster and cheaper than litigation.`},
+{num:12,name:"Joining & Leaving a Member Firm",src:"LEM Ch.12 + CN Unit 12",topics:`REGISTRATION: must register with FINRA to be associated with member firm. Form U4: registration application. Form U5: termination/amendment, filed within 30 days of termination, reason for termination disclosed. Fingerprinting required. CRD (Central Registration Depository) maintained by FINRA. LICENSING: SIE: prerequisite for most Series exams, can take WITHOUT firm sponsorship, 4-year window if inactive in industry. Series 6: mutual funds/variable annuities, supervised by Series 26. Series 7: general securities representative, broad license, supervised by Series 24. Series 63: state law exam, required in most states for RRs. Series 65/66: Investment Adviser Representative. Most top-off exams (6, 7) require firm association/sponsorship. SIE is the exception. PROHIBITED PERSONS: convicted of financial crime, court injunction, bar order from SEC or SRO = statutory disqualification. Cannot associate without FINRA approval. CONTINUING EDUCATION (CE): TWO components. Regulatory element: within 120 days of 2nd registration anniversary, then every 3 years (5th, 8th, 11th, etc.). Computer-based, content set by FINRA. Failure = registration deactivated. Firm element: annual training plan by member firm, based on regulatory developments and scope of business, completed by December 31. OUTSIDE BUSINESS ACTIVITIES (OBAs): must provide prior written notice to employing firm for compensated outside activities. Firm may reject or restrict. Passive investments generally do not require notice. PRIVATE SECURITIES TRANSACTIONS (Selling Away): prior written notice to firm. Describe transaction, role, and compensation. If approved with compensation: firm records and supervises as its own transaction. If no compensation: firm acknowledges. RECORD KEEPING: communications retained 3 years (first 2 years easily accessible). Financial records 6 years. Blotter 6 years. SUPERVISION: written supervisory procedures (WSPs) required. Principal designated for each type of business. Annual review required. ACATS: automated account transfer between firms, must complete within 3 business days of validation.`}
+];
+ 
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let apiKey='',selUnit=null,selMode='standard',stats={total:0,correct:0,streak:0,best:0},curQ=null,answered=false,fuOpen=false,history=[];
+ 
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded',()=>{
+  renderUnits();
+  const saved=sessionStorage.getItem('sie_key');
+  if(saved){apiKey=saved}else{document.getElementById('api-prompt').classList.add('vis')}
+  const s=localStorage.getItem('sie_stats3');
+  if(s){stats=JSON.parse(s);updateScore();if(stats.total>0){document.getElementById('stats-bar').classList.add('vis');updateStatBar()}}
+});
+ 
+function saveKey(){
+  const v=document.getElementById('api-key-input').value.trim();
+  if(!v.startsWith('sk-ant-')){alert('Please enter a valid Anthropic API key (starts with sk-ant-)');return}
+  apiKey=v;sessionStorage.setItem('sie_key',v);
+  document.getElementById('api-ok').classList.add('vis');
+  setTimeout(()=>{document.getElementById('api-prompt').style.display='none'},1500);
+}
+ 
+function saveStats(){localStorage.setItem('sie_stats3',JSON.stringify(stats))}
+function resetAll(){if(!confirm('Reset all stats?'))return;stats={total:0,correct:0,streak:0,best:0};history=[];saveStats();updateScore();document.getElementById('stats-bar').classList.remove('vis')}
+ 
+function renderUnits(){
+  document.getElementById('unit-grid').innerHTML=UNITS.map(u=>`<button class="unit-btn" data-u="${u.num}" onclick="selU(${u.num})"><div class="unit-num">UNIT ${u.num}</div><div class="unit-name">${u.name}</div><div class="unit-src">${u.src}</div></button>`).join('');
+}
+ 
+function selU(n){
+  selUnit=n;
+  document.querySelectorAll('.unit-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`[data-u="${n}"]`).classList.add('active');
+  const btn=document.getElementById('start-btn');
+  btn.disabled=false;
+  btn.textContent=`Generate Unit ${n} Question →`;
+  showErr('setup-err','');
+}
+ 
+function setMode(el,m){
+  selMode=m;
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  if(m==='random'){
+    const u=UNITS[Math.floor(Math.random()*UNITS.length)];
+    selUnit=u.num;
+    document.querySelectorAll('.unit-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelector(`[data-u="${u.num}"]`).classList.add('active');
+    const btn=document.getElementById('start-btn');btn.disabled=false;btn.textContent='Generate Random Question →';
+  }
+}
+ 
+async function startQ(){
+  if(!apiKey){showErr('setup-err','Please enter your Anthropic API key first.');return}
+  if(!selUnit){showErr('setup-err','Please select a unit above.');return}
+  await genQ();
+}
+ 
+async function nextQ(){
+  if(selMode==='random'){const u=UNITS[Math.floor(Math.random()*UNITS.length)];selUnit=u.num}
+  await genQ();
+}
+ 
+async function genQ(){
+  const unit=UNITS.find(u=>u.num===selUnit);
+  document.getElementById('setup').style.display='none';
+  document.getElementById('qarea').classList.add('vis');
+  document.getElementById('back-btn').classList.add('vis');
+  document.getElementById('loading').classList.add('vis');
+  document.getElementById('qcontent').style.display='none';
+  document.getElementById('expl').classList.remove('vis');
+  document.getElementById('fu-area').classList.remove('vis');
+  document.getElementById('next-btn').classList.remove('vis');
+  document.getElementById('fu-toggle').classList.remove('vis');
+  document.getElementById('fu-resp').classList.remove('vis');
+  document.getElementById('fu-input').value='';
+  showErr('q-err','');
+  answered=false;fuOpen=false;
+ 
+  document.getElementById('q-tag').textContent=`Unit ${unit.num}: ${unit.name}`;
+  document.getElementById('q-num').textContent=`Question ${stats.total+1}`;
+  document.getElementById('q-mode').textContent=selMode.toUpperCase();
+ 
+  const modes={
+    standard:'Generate a standard SIE exam-style multiple choice question testing a key concept clearly.',
+    hard:'Generate a challenging question using hedge clauses (if, not, all, none, except, LEAST, MOST), or combining multiple concepts, or Roman numeral format (I, II, III, IV). Make all four answer choices highly plausible.',
+    definitions:'Generate a question asking the student to define a specific term, rule, or concept from this unit.',
+    calculations:'Generate a calculation question requiring specific arithmetic with numbers (current yield, YTM relationship, breakeven, NAV, accrued interest, margin equity, conversion ratios, etc.).'
+  };
+  const recent=history.slice(-6).map(h=>h.topic).join(', ');
+  const avoid=recent?`Do NOT repeat these recently tested topics: ${recent}.`:'';
+ 
+  const sys=`You are a FINRA SIE exam tutor using only Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual and Class Notes as your source. Generate exam-realistic multiple choice questions.
+ 
+RULES:
+1. Base ALL content strictly on the Kaplan unit material provided. Do not invent content not covered.
+2. Exactly one correct answer. Four choices (A B C D), all plausible.
+3. ${modes[selMode]||modes.standard}
+4. ${avoid}
+5. Keep questions concise and focused on one testable concept.
+ 
+Respond ONLY with valid JSON — no markdown fences, no extra text:
+{"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right per the Kaplan material. Why each wrong answer is incorrect."}`;
+ 
+  const msg=`Generate a ${selMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nKAPLAN SOURCE MATERIAL:\n${unit.topics}`;
+ 
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:[{role:'user',content:msg}]})
+    });
+    if(!r.ok){const e=await r.json();throw new Error(e.error?.message||`API error ${r.status}`)}
+    const d=await r.json();
+    const raw=d.content[0].text.trim();
+    let q;
+    try{const m=raw.match(/\{[\s\S]*\}/);q=JSON.parse(m?m[0]:raw)}
+    catch(e){throw new Error('Could not parse response — please try again.')}
+    curQ=q;
+    history.push({topic:q.topic,unit:selUnit});
+    if(history.length>20)history.shift();
+    renderQ(q);
+  }catch(err){
+    document.getElementById('loading').classList.remove('vis');
+    showErr('q-err',`Error: ${err.message}`);
+  }
+}
+ 
+function renderQ(q){
+  document.getElementById('loading').classList.remove('vis');
+  const c=document.getElementById('qcontent');c.style.display='block';c.classList.add('fi');
+  document.getElementById('qtext').textContent=q.question;
+  document.getElementById('opts').innerHTML=['A','B','C','D'].map(l=>`<button class="opt" onclick="answer('${l}')" id="o-${l}"><span class="opt-l">${l}.</span><span class="opt-t">${q.options[l]}</span></button>`).join('');
+}
+ 
+function answer(chosen){
+  if(answered)return;answered=true;
+  const correct=curQ.correct;const ok=chosen===correct;
+  stats.total++;
+  if(ok){stats.correct++;stats.streak++;if(stats.streak>stats.best)stats.best=stats.streak}
+  else{stats.streak=0}
+  saveStats();updateScore();updateStatBar();document.getElementById('stats-bar').classList.add('vis');
+  ['A','B','C','D'].forEach(l=>{
+    const b=document.getElementById(`o-${l}`);b.disabled=true;
+    if(l===correct){b.classList.add(chosen===correct?'correct':'reveal')}
+    else if(l===chosen&&!ok){b.classList.add('wrong')}
+  });
+  const hdr=document.getElementById('expl-hdr');
+  hdr.className='expl-hdr '+(ok?'ok':'no');
+  hdr.innerHTML=ok?`✓ Correct — answer ${correct}`:`✗ Incorrect — correct answer is ${correct}`;
+  document.getElementById('expl-body').innerHTML=curQ.explanation.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+  document.getElementById('expl').classList.add('vis');
+  document.getElementById('next-btn').classList.add('vis');
+  document.getElementById('fu-toggle').classList.add('vis');
+  setTimeout(()=>document.getElementById('expl').scrollIntoView({behavior:'smooth',block:'nearest'}),100);
+}
+ 
+function toggleFU(){
+  fuOpen=!fuOpen;
+  document.getElementById('fu-area').classList.toggle('vis',fuOpen);
+  document.getElementById('fu-toggle').textContent=fuOpen?'Hide follow-up':'Ask a follow-up';
+  if(fuOpen)setTimeout(()=>document.getElementById('fu-input').focus(),50);
+}
+ 
+async function sendFU(){
+  if(!apiKey)return;
+  const q=document.getElementById('fu-input').value.trim();if(!q)return;
+  const btn=document.getElementById('fu-send');const resp=document.getElementById('fu-resp');const think=document.getElementById('fu-thinking');
+  btn.disabled=true;think.classList.add('vis');resp.classList.remove('vis');
+  const unit=UNITS.find(u=>u.num===selUnit);
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:500,system:`You are a FINRA SIE exam tutor using Kaplan's 3rd Edition SIE materials. Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,messages:[{role:'user',content:`We just covered Unit ${unit.num} (${unit.name}). Question: ${curQ.question}. Correct answer: ${curQ.correct} — ${curQ.options[curQ.correct]}. Explanation: ${curQ.explanation}\n\nFollow-up question: ${q}`}]})
+    });
+    const d=await r.json();resp.textContent=d.content[0].text;resp.classList.add('vis');
+  }catch(err){resp.textContent=`Error: ${err.message}`;resp.classList.add('vis')}
+  finally{btn.disabled=false;think.classList.remove('vis')}
+}
+ 
+function goBack(){document.getElementById('qarea').classList.remove('vis');document.getElementById('setup').style.display='block';document.getElementById('back-btn').classList.remove('vis')}
+function updateScore(){const p=stats.total>0?Math.round(stats.correct/stats.total*100):null;document.getElementById('score-text').textContent=p!==null?`${stats.correct}/${stats.total} (${p}%)`:'—'}
+function updateStatBar(){document.getElementById('s-total').textContent=stats.total;document.getElementById('s-correct').textContent=stats.correct;document.getElementById('s-pct').textContent=stats.total>0?Math.round(stats.correct/stats.total*100)+'%':'—';document.getElementById('s-streak').textContent=stats.streak;document.getElementById('s-best').textContent=stats.best}
+function showErr(id,msg){const el=document.getElementById(id);if(!el)return;el.textContent=msg;el.classList.toggle('vis',!!msg)}
+ 
+// keyboard shortcuts
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='TEXTAREA'||e.target.tagName==='INPUT')return;
+  if(e.key==='Escape'&&document.getElementById('qarea').classList.contains('vis'))goBack();
+  if((e.key==='Enter'||e.key==='ArrowRight')&&answered){const nb=document.getElementById('next-btn');if(nb.classList.contains('vis'))nextQ()}
+  if(!answered&&document.getElementById('qcontent').style.display!=='none'){
+    const km={1:'A',a:'A',2:'B',b:'B',3:'C',c:'C',4:'D',d:'D'};
+    if(km[e.key])answer(km[e.key]);
+  }
+});
+</script>
+</body>
+</html>
