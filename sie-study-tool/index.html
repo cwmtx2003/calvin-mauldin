@@ -351,7 +351,7 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
     const r=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:[{role:'user',content:msg}]})
+      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:1000,system:sys,messages:[{role:'user',content:msg}]})
     });
     if(!r.ok){const e=await r.json();throw new Error(e.error?.message||`API error ${r.status}`)}
     const d=await r.json();
@@ -415,7 +415,7 @@ async function sendFU(){
     const r=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
       headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:500,system:`You are a FINRA SIE exam tutor using Kaplan's 3rd Edition SIE materials. Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,messages:[{role:'user',content:`We just covered Unit ${unit.num} (${unit.name}). Question: ${curQ.question}. Correct answer: ${curQ.correct} — ${curQ.options[curQ.correct]}. Explanation: ${curQ.explanation}\n\nFollow-up question: ${q}`}]})
+      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:500,system:`You are a FINRA SIE exam tutor using Kaplan's 3rd Edition SIE materials. Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,messages:[{role:'user',content:`We just covered Unit ${unit.num} (${unit.name}). Question: ${curQ.question}. Correct answer: ${curQ.correct} — ${curQ.options[curQ.correct]}. Explanation: ${curQ.explanation}\n\nFollow-up question: ${q}`}]})
     });
     const d=await r.json();resp.textContent=d.content[0].text;resp.classList.add('vis');
   }catch(err){resp.textContent=`Error: ${err.message}`;resp.classList.add('vis')}
