@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
+  .home-btn{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);cursor:pointer;background:none;border:1px solid rgba(191,87,0,.4);padding:4px 10px;border-radius:3px;letter-spacing:.04em;text-decoration:none;transition:all .15s}
+.home-btn:hover{border-color:var(--gold);background:rgba(191,87,0,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 :root {
   --bg:#0a0e1a;--bg2:#0f1628;--bg3:#1a2440;
@@ -126,17 +128,23 @@ header{padding:1.75rem 0 1.5rem;border-bottom:1px solid var(--border);display:fl
 </style>
 </head>
 <body>
+  <div style="width:100%;background:#0f1628;border-bottom:1px solid rgba(255,255,255,0.08);overflow:hidden">
+  <iframe scrolling="no" allowtransparency="true" frameborder="0" style="display:block;width:100%;height:46px"
+    src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPX500%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ANDX%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22description%22%3A%22Dow%22%2C%22proName%22%3A%22FOREXCOM%3ADJI%22%7D%2C%7B%22description%22%3A%22Apple%22%2C%22proName%22%3A%22NASDAQ%3AAAPL%22%7D%2C%7B%22description%22%3A%22Goldman%22%2C%22proName%22%3A%22NYSE%3AGS%22%7D%2C%7B%22description%22%3A%22JPMorgan%22%2C%22proName%22%3A%22NYSE%3AJPM%22%7D%2C%7B%22description%22%3A%2210Y%20Treasury%22%2C%22proName%22%3A%22TVC%3AUS10Y%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22colorTheme%22%3A%22dark%22%7D">
+  </iframe>
+</div>
 <div class="wrap">
 
 <header>
   <div class="logo">
-    <div class="logo-mark">SIE</div>
-    <span class="logo-text">Study Tool · Kaplan 3rd Ed.</span>
+    <div class="logo-mark">CM</div>
+    <span class="logo-text">SIE Study Tool</span>
   </div>
   <div class="hdr-right">
     <div class="score-display">Score: <span class="score-val" id="score-text">—</span></div>
     <button class="reset-link" onclick="resetAll()">reset</button>
     <button class="back-btn" id="back-btn" onclick="goBack()">← units</button>
+    <a class="home-btn" href="https://calvinmauldin.com" target="_blank" rel="noopener">← calvinmauldin.com</a>
   </div>
 </header>
 
@@ -150,9 +158,31 @@ header{padding:1.75rem 0 1.5rem;border-bottom:1px solid var(--border);display:fl
   <div class="api-ok" id="api-ok">✓ Key saved for this session</div>
 </div>
 
+<div style="background:var(--bg2);border:.5px solid var(--border);border-radius:8px;padding:1rem 1.25rem;margin:1.5rem 0;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap">
+  <div>
+    <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px">Focus timer</div>
+    <div id="pomo-display" style="font-family:'DM Mono',monospace;font-size:2rem;font-weight:500;color:var(--gold2);letter-spacing:.05em">25:00</div>
+  </div>
+  <div style="display:flex;gap:6px">
+    <button id="pomo-start" onclick="pomoToggle()" style="padding:.35rem .8rem;border-radius:4px;border:1px solid var(--border2);background:transparent;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);cursor:pointer;letter-spacing:.04em">Start</button>
+    <button onclick="pomoReset()" style="padding:.35rem .8rem;border-radius:4px;border:1px solid var(--border2);background:transparent;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);cursor:pointer;letter-spacing:.04em">Reset</button>
+    <button onclick="pomoSkip()" style="padding:.35rem .8rem;border-radius:4px;border:1px solid var(--border2);background:transparent;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);cursor:pointer;letter-spacing:.04em">Skip</button>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:5px">
+      <label style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase">Work</label>
+      <input type="number" id="pomo-work-input" value="25" min="1" max="120" onchange="pomoUpdateSettings()" style="width:42px;padding:3px 6px;background:var(--bg3);border:1px solid var(--border2);border-radius:3px;font-family:'DM Mono',monospace;font-size:12px;color:var(--text);text-align:center"/>
+    </div>
+    <div style="display:flex;align-items:center;gap:5px">
+      <label style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase">Break</label>
+      <input type="number" id="pomo-break-input" value="5" min="1" max="60" onchange="pomoUpdateSettings()" style="width:42px;padding:3px 6px;background:var(--bg3);border:1px solid var(--border2);border-radius:3px;font-family:'DM Mono',monospace;font-size:12px;color:var(--text);text-align:center"/>
+    </div>
+  </div>
+  <div id="pomo-phase" style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-left:auto">WORK SESSION</div>
+</div>
+
 <div id="setup">
   <div class="hero">
-    <div class="hero-kicker">Kaplan 3rd Edition · License Exam Manual + Class Notes · All 12 Units</div>
     <h1 class="hero-title">SIE Exam Prep</h1>
     <p class="hero-sub">Claude-powered questions grounded in your exact Kaplan study materials. Pick a unit, choose a mode, and drill.</p>
   </div>
@@ -239,6 +269,7 @@ let apiKey='',selUnit=null,selMode='standard',stats={total:0,correct:0,streak:0,
 
 window.addEventListener('DOMContentLoaded',()=>{
   renderUnits();
+  pomoUpdateDisplay();
   const saved=sessionStorage.getItem('sie_key');
   if(saved){apiKey=saved}else{document.getElementById('api-prompt').classList.add('vis')}
   const s=localStorage.getItem('sie_stats3');
@@ -257,7 +288,7 @@ function saveStats(){localStorage.setItem('sie_stats3',JSON.stringify(stats))}
 function resetAll(){if(!confirm('Reset all stats?'))return;stats={total:0,correct:0,streak:0,best:0};history=[];saveStats();updateScore();document.getElementById('stats-bar').classList.remove('vis')}
 
 function renderUnits(){
-  document.getElementById('unit-grid').innerHTML=UNITS.map(u=>`<button class="unit-btn" data-u="${u.num}" onclick="selU(${u.num})"><div class="unit-num">UNIT ${u.num}</div><div class="unit-name">${u.name}</div><div class="unit-src">${u.src}</div></button>`).join('');
+  document.getElementById('unit-grid').innerHTML=UNITS.map(u=>`<button class="unit-btn" data-u="${u.num}" onclick="selU(${u.num})"><div class="unit-num">UNIT ${u.num}</div><div class="unit-name">${u.name}</div></button>`).join('');
 }
 
 function selU(n){
@@ -436,6 +467,41 @@ document.addEventListener('keydown',e=>{
     if(km[e.key])answer(km[e.key]);
   }
 });
+
+let pomoWorkMins=25,pomoBreakMins=5,pomoSecsLeft=1500,pomoRunning=false,pomoIsWork=true,pomoInterval=null;
+function pomoFmt(s){return`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`}
+function pomoUpdateDisplay(){
+  document.getElementById('pomo-display').textContent=pomoFmt(pomoSecsLeft);
+  document.getElementById('pomo-display').style.color=pomoIsWork?'var(--gold2)':'var(--green)';
+  document.getElementById('pomo-phase').textContent=pomoIsWork?'WORK SESSION':'BREAK TIME';
+  document.getElementById('pomo-phase').style.color=pomoIsWork?'var(--gold)':'var(--green)';
+  document.title=pomoRunning?`${pomoFmt(pomoSecsLeft)} · SIE Study Tool`:'SIE Study Tool';
+}
+function pomoToggle(){
+  pomoRunning=!pomoRunning;
+  const btn=document.getElementById('pomo-start');
+  btn.textContent=pomoRunning?'Pause':'Start';
+  btn.style.background=pomoRunning?'var(--gold)':'transparent';
+  btn.style.color=pomoRunning?'#09090a':'var(--muted2)';
+  if(pomoRunning){
+    pomoInterval=setInterval(()=>{
+      pomoSecsLeft--;
+      if(pomoSecsLeft<=0){
+        clearInterval(pomoInterval);pomoRunning=false;
+        btn.textContent='Start';btn.style.background='transparent';btn.style.color='var(--muted2)';
+        const a=new AudioContext(),o=a.createOscillator(),g=a.createGain();
+        o.connect(g);g.connect(a.destination);o.frequency.value=pomoIsWork?440:330;
+        g.gain.setValueAtTime(0.3,a.currentTime);g.gain.exponentialRampToValueAtTime(0.001,a.currentTime+0.8);
+        o.start();o.stop(a.currentTime+0.8);
+        pomoIsWork=!pomoIsWork;pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;
+      }
+      pomoUpdateDisplay();
+    },1000);
+  }else{clearInterval(pomoInterval);pomoUpdateDisplay();}
+}
+function pomoReset(){clearInterval(pomoInterval);pomoRunning=false;pomoIsWork=true;pomoSecsLeft=pomoWorkMins*60;document.getElementById('pomo-start').textContent='Start';document.getElementById('pomo-start').style.background='transparent';document.getElementById('pomo-start').style.color='var(--muted2)';pomoUpdateDisplay();}
+function pomoSkip(){clearInterval(pomoInterval);pomoRunning=false;pomoIsWork=!pomoIsWork;pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;document.getElementById('pomo-start').textContent='Start';document.getElementById('pomo-start').style.background='transparent';document.getElementById('pomo-start').style.color='var(--muted2)';pomoUpdateDisplay();}
+function pomoUpdateSettings(){pomoWorkMins=Math.max(1,parseInt(document.getElementById('pomo-work-input').value)||25);pomoBreakMins=Math.max(1,parseInt(document.getElementById('pomo-break-input').value)||5);if(!pomoRunning){pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;pomoUpdateDisplay();}}
 </script>
 </body>
 </html>
