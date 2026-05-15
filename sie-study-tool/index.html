@@ -497,7 +497,18 @@ function pomoToggle(){
 }
 function pomoReset(){clearInterval(pomoInterval);pomoRunning=false;pomoIsWork=true;pomoSecsLeft=pomoWorkMins*60;document.getElementById('pomo-start').textContent='Start';document.getElementById('pomo-start').style.background='transparent';document.getElementById('pomo-start').style.color='var(--muted2)';pomoUpdateDisplay();}
 function pomoSkip(){clearInterval(pomoInterval);pomoRunning=false;pomoIsWork=!pomoIsWork;pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;document.getElementById('pomo-start').textContent='Start';document.getElementById('pomo-start').style.background='transparent';document.getElementById('pomo-start').style.color='var(--muted2)';pomoUpdateDisplay();}
-function pomoUpdateSettings(){pomoWorkMins=Math.max(1,parseInt(document.getElementById('pomo-work-input').value)||25);pomoBreakMins=Math.max(1,parseInt(document.getElementById('pomo-break-input').value)||5);if(!pomoRunning){pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;pomoUpdateDisplay();}}
+function pomoSetPreset(w,b){
+  pomoWorkMins=w;pomoBreakMins=b;
+  ['preset-1','preset-2','preset-3'].forEach(id=>{
+    const el=document.getElementById(id);
+    el.style.background='transparent';el.style.color='var(--muted2)';el.style.borderColor='var(--border2)';
+  });
+  const active=w===25?'preset-1':w===50?'preset-2':'preset-3';
+  document.getElementById(active).style.background='var(--gold)';
+  document.getElementById(active).style.color='#09090a';
+  document.getElementById(active).style.borderColor='var(--gold)';
+  if(!pomoRunning){pomoSecsLeft=pomoIsWork?pomoWorkMins*60:pomoBreakMins*60;pomoUpdateDisplay();}
+}
 </script>
 </body>
 </html>
