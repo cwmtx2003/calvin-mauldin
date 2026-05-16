@@ -38,7 +38,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* grain overlay */
     body::before {
       content: '';
       position: fixed;
@@ -49,7 +48,15 @@
       opacity: 0.35;
     }
 
-    /* layout */
+    .ticker-wrap {
+      width: 100%;
+      background: #0f1628;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      overflow: hidden;
+      position: relative;
+      z-index: 10;
+    }
+
     .container {
       max-width: 760px;
       margin: 0 auto;
@@ -58,7 +65,6 @@
       z-index: 1;
     }
 
-    /* nav */
     nav {
       padding: 2rem 0 1.5rem;
       display: flex;
@@ -94,10 +100,12 @@
     }
     .nav-links a:hover { color: var(--text); }
 
-    /* hero */
+    /* hero — stacked with wide banner photo */
     .hero {
-      padding: 6rem 0 5rem;
+      padding: 5rem 0 4.5rem;
     }
+
+    .hero-content { min-width: 0; margin-bottom: 2.5rem; }
 
     .hero-eyebrow {
       font-family: var(--mono);
@@ -129,7 +137,7 @@
     .hero-bio {
       font-size: 1.05rem;
       color: var(--muted);
-      max-width: 480px;
+      max-width: 460px;
       line-height: 1.7;
       margin-bottom: 2.5rem;
       opacity: 0;
@@ -147,6 +155,21 @@
       flex-wrap: wrap;
       opacity: 0;
       animation: fadeUp 0.7s ease 0.4s forwards;
+    }
+
+    /* portrait — full image stacked below */
+    .hero-portrait {
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.45s forwards;
+      width: 100%;
+    }
+
+    .hero-portrait img {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      border: 1px solid var(--border2);
+      display: block;
     }
 
     .btn {
@@ -169,29 +192,21 @@
       color: #0e0e0d;
       border: 1px solid var(--accent);
     }
-    .btn-primary:hover {
-      background: transparent;
-      color: var(--accent);
-    }
+    .btn-primary:hover { background: transparent; color: var(--accent); }
 
     .btn-ghost {
       background: transparent;
       color: var(--muted);
       border: 1px solid var(--border2);
     }
-    .btn-ghost:hover {
-      border-color: var(--accent2);
-      color: var(--accent2);
-    }
+    .btn-ghost:hover { border-color: var(--accent2); color: var(--accent2); }
 
-    /* divider line */
     .section-rule {
       height: 1px;
       background: var(--border);
       margin: 0 0 3.5rem;
     }
 
-    /* section label */
     .section-label {
       font-family: var(--mono);
       font-size: 11px;
@@ -210,7 +225,6 @@
       background: var(--border);
     }
 
-    /* projects */
     .projects { padding-bottom: 5rem; }
 
     .projects-grid {
@@ -283,21 +297,12 @@
       letter-spacing: 0.06em;
     }
 
-    /* about strip */
-    .about {
-      padding-bottom: 5rem;
-    }
+    .about { padding-bottom: 5rem; }
 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
-    }
-
-    @media (max-width: 560px) {
-      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .hero-name { font-size: 3rem; }
-      nav { flex-direction: column; align-items: flex-start; gap: .75rem; }
     }
 
     .about-col h3 {
@@ -330,7 +335,6 @@
       flex-shrink: 0;
     }
 
-    /* footer */
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem 0;
@@ -347,10 +351,7 @@
       color: var(--muted);
     }
 
-    .footer-links {
-      display: flex;
-      gap: 1.5rem;
-    }
+    .footer-links { display: flex; gap: 1.5rem; }
 
     .footer-links a {
       font-family: var(--mono);
@@ -361,7 +362,6 @@
     }
     .footer-links a:hover { color: var(--accent); }
 
-    /* animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -372,32 +372,45 @@
       transform: translateY(20px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 620px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-name { font-size: 3rem; }
+      nav { flex-direction: column; align-items: flex-start; gap: .75rem; }
     }
   </style>
 </head>
 <body>
 
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <iframe scrolling="no" allowtransparency="true" frameborder="0"
+      style="display:block;width:100%;height:46px"
+      src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22S%26P%20500%22%2C%22proName%22%3A%22FOREXCOM%3ASPX500%22%7D%2C%7B%22description%22%3A%22Berkshire%20A%22%2C%22proName%22%3A%22NYSE%3ABRK.A%22%7D%2C%7B%22description%22%3A%22Berkshire%20B%22%2C%22proName%22%3A%22NYSE%3ABRK.B%22%7D%2C%7B%22description%22%3A%22Apple%22%2C%22proName%22%3A%22NASDAQ%3AAAPL%22%7D%2C%7B%22description%22%3A%22Tesla%22%2C%22proName%22%3A%22NASDAQ%3ATSLA%22%7D%2C%7B%22description%22%3A%22Nvidia%22%2C%22proName%22%3A%22NASDAQ%3ANVDA%22%7D%2C%7B%22description%22%3A%22Goldman%22%2C%22proName%22%3A%22NYSE%3AGS%22%7D%2C%7B%22description%22%3A%22Palantir%22%2C%22proName%22%3A%22NYSE%3APLTR%22%7D%2C%7B%22description%22%3A%22JPMorgan%22%2C%22proName%22%3A%22NYSE%3AJPM%22%7D%2C%7B%22description%22%3A%22Moelis%22%2C%22proName%22%3A%22NYSE%3AMC%22%7D%2C%7B%22description%22%3A%22UBS%22%2C%22proName%22%3A%22NYSE%3AUBS%22%7D%2C%7B%22description%22%3A%22Bank%20of%20America%22%2C%22proName%22%3A%22NYSE%3ABAC%22%7D%2C%7B%22description%22%3A%22Lockheed%22%2C%22proName%22%3A%22NYSE%3ALMT%22%7D%2C%7B%22description%22%3A%22Dell%22%2C%22proName%22%3A%22NYSE%3ADELL%22%7D%2C%7B%22description%22%3A%22IBM%22%2C%22proName%22%3A%22NYSE%3AIBM%22%7D%2C%7B%22description%22%3A%22QXO%22%2C%22proName%22%3A%22NYSE%3AQXO%22%7D%2C%7B%22description%22%3A%22XPO%22%2C%22proName%22%3A%22NYSE%3AXPO%22%7D%2C%7B%22description%22%3A%22GXO%22%2C%22proName%22%3A%22NYSE%3AGXO%22%7D%2C%7B%22description%22%3A%22RXO%22%2C%22proName%22%3A%22NYSE%3ARXO%22%7D%2C%7B%22description%22%3A%22TopBuild%22%2C%22proName%22%3A%22NYSE%3ATBI%22%7D%2C%7B%22description%22%3A%22Nike%22%2C%22proName%22%3A%22NYSE%3ANKE%22%7D%2C%7B%22description%22%3A%22On%20Running%22%2C%22proName%22%3A%22NYSE%3AONON%22%7D%2C%7B%22description%22%3A%22Starbucks%22%2C%22proName%22%3A%22NASDAQ%3ASBUX%22%7D%2C%7B%22description%22%3A%22Chevron%22%2C%22proName%22%3A%22NYSE%3ACVX%22%7D%2C%7B%22description%22%3A%22Exxon%22%2C%22proName%22%3A%22NYSE%3AXOM%22%7D%2C%7B%22description%22%3A%22Shell%22%2C%22proName%22%3A%22NYSE%3ASHEL%22%7D%2C%7B%22description%22%3A%22BP%22%2C%22proName%22%3A%22NYSE%3ABP%22%7D%2C%7B%22description%22%3A%22Crude%20Oil%22%2C%22proName%22%3A%22TVC%3AUSOIL%22%7D%2C%7B%22description%22%3A%2210Y%20Treasury%22%2C%22proName%22%3A%22TVC%3AUS10Y%22%7D%2C%7B%22description%22%3A%22Gold%22%2C%22proName%22%3A%22TVC%3AGOLD%22%7D%2C%7B%22description%22%3A%22Bitcoin%22%2C%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%7D%2C%7B%22description%22%3A%22Amazon%22%2C%22proName%22%3A%22NASDAQ%3AAMZN%22%7D%2C%7B%22description%22%3A%22Visa%22%2C%22proName%22%3A%22NYSE%3AV%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22colorTheme%22%3A%22dark%22%7D">
+    </iframe>
+  </div>
+
   <div class="container">
 
-    <!-- nav -->
-    <nav>
-    </nav>
+    <nav></nav>
 
     <!-- hero -->
     <section class="hero">
-      <p class="hero-eyebrow">Based in Texas &nbsp;·&nbsp; Deliberative. Intentional. Always learning.</p>
-      <h1 class="hero-name">Calvin<br /><em>Mauldin</em></h1>
-      <p class="hero-bio">
-        <strong>Graduate from The University of Texas at Austin with a background in Government &amp; Business.</strong> Focused on finance, operations, and building with AI. I write about what I'm learning and ship everything publicly.
-      </p>
-      <div class="hero-links">
-        <a href="https://linkedin.com/in/calvinwmauldin" target="_blank" rel="noopener" class="btn btn-ghost"> <i class="fab fa-linkedin-in"></i>LinkedIn</a>
-        <a href="https://github.com/cwmtx2003" target="_blank" rel="noopener" class="btn btn-ghost">
-          <i class="fab fa-github"></i> GitHub</a>
-        <a href="mailto:calvin9306@outlook.com" class="btn btn-ghost"> <i class="fas fa-envelope"></i> email me</a>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Based in Texas &nbsp;·&nbsp; Deliberative. Intentional. Always learning.</p>
+        <h1 class="hero-name">Calvin<br /><em>Mauldin</em></h1>
+        <p class="hero-bio">
+          <strong>Graduate from The University of Texas at Austin with a background in Government &amp; Business.</strong> Focused on finance, operations, and building with AI. I write about what I'm learning and ship everything publicly.
+        </p>
+        <div class="hero-links">
+          <a href="https://linkedin.com/in/calvinwmauldin" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://github.com/cwmtx2003" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          <a href="mailto:calvin9306@outlook.com" class="btn btn-ghost"><i class="fas fa-envelope"></i> email me</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="calvinwebsiteheadshot.jpg" alt="Calvin Mauldin at UT Austin" />
       </div>
     </section>
 
@@ -405,33 +418,25 @@
     <section class="projects" id="projects">
       <div class="section-rule"></div>
       <p class="section-label reveal">Projects</p>
-
       <div class="projects-grid reveal">
-
-        <!-- placeholder card 1 — replace with your first real project -->
         <div class="project-card placeholder">
           <span class="project-tag">Claude · Finance</span>
           <h2 class="project-title">SIE Study Tool</h2>
           <p class="project-desc">A Claude-powered flashcard and quiz app for FINRA SIE exam prep. Built to study smarter, not longer.</p>
           <a href="/sie-study-tool/" class="project-link" target="_blank" rel="noopener noreferrer">give it a whirl →</a>
         </div>
-
-        <!-- placeholder card 2 -->
         <div class="project-card placeholder">
           <span class="project-tag">Coming soon</span>
           <h2 class="project-title">Next project</h2>
           <p class="project-desc">Building in public. Follow along on LinkedIn for updates as new projects ship.</p>
           <span class="coming-soon">[ in progress ]</span>
         </div>
-
-        <!-- placeholder card 3 -->
         <div class="project-card placeholder">
           <span class="project-tag">Coming soon</span>
           <h2 class="project-title">More soon</h2>
           <p class="project-desc">Shipping one new Claude project every 3–4 weeks. Check back or connect on GitHub.</p>
           <span class="coming-soon">[ in progress ]</span>
         </div>
-
       </div>
     </section>
 
