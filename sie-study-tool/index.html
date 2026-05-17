@@ -109,8 +109,6 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .jf-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.06em;margin-bottom:.25rem}
 .jf-name{font-size:12px;font-weight:600;color:var(--text);line-height:1.3}
 
-/* MODE BUTTONS — now use .jf-btn style, see JOB FUNCTION GRID above */
-
 /* ERRORS + START */
 .err{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);border-radius:6px;padding:.85rem 1rem;margin-bottom:1rem;font-size:13px;color:#fca5a5;display:none;line-height:1.5}
 .err.vis{display:block}
@@ -140,6 +138,7 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .opt.correct{border-color:var(--green)!important;background:rgba(74,222,128,.07)!important}
 .opt.wrong{border-color:var(--red)!important;background:rgba(248,113,113,.07)!important;color:var(--muted2)}
 .opt.reveal{border-color:var(--green)!important;background:rgba(74,222,128,.04)!important}
+.opt.picked{border-color:var(--gold)!important;background:rgba(191,87,0,.1)!important}
 .opt-l{font-family:'DM Mono',monospace;font-size:12px;color:var(--gold);font-weight:500;flex-shrink:0;margin-top:1px;width:16px}
 .opt-t{line-height:1.5}
 .expl{display:none;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:1.4rem;margin-bottom:1rem}
@@ -171,10 +170,8 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .act-btn{padding:.78rem 1.1rem;background:transparent;border:1px solid var(--border2);border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600;color:var(--muted2);cursor:pointer;transition:all .14s}
 .act-btn:hover{border-color:var(--gold);color:var(--gold)}
 .act-btn-red{border-color:rgba(248,113,113,.3);color:var(--red)}
-.act-btn-red:hover{border-color:var(--red);background:rgba(248,113,113,.08);color:var(--red)}border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600;color:var(--red);cursor:pointer;transition:all .14s}
-.exit-btn:hover{background:rgba(248,113,113,.08);border-color:var(--red)}font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600;color:var(--muted2);cursor:pointer;transition:all .14s;display:none}
-.fu-toggle.vis{display:block}
-.fu-toggle:hover{border-color:var(--gold);color:var(--gold)}
+.act-btn-red:hover{border-color:var(--red);background:rgba(248,113,113,.08);color:var(--red)}
+
 /* Live timer on question page */
 .pomo-live{display:none;font-family:'DM Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.08em;padding:4px 12px;border-radius:4px;border:1px solid #2a3a2a;background:#0a0f0a;text-shadow:0 0 8px currentColor}
 .pomo-live.vis{display:inline-block}
@@ -185,10 +182,166 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .surprise-btn:hover{background:var(--gold);color:#09090a}
 .surprise-btn.active{background:var(--gold);color:#09090a}
 
+/* ═══════════════════════════════════════════════════
+   PASS 2 — TIMED QUIZ STYLES
+   ═══════════════════════════════════════════════════ */
+
+/* Quiz tabs */
+.quiz-tabs{display:flex;gap:.4rem;margin-bottom:1.25rem;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.quiz-tab{padding:.6rem 1rem;background:transparent;border:none;border-bottom:2px solid transparent;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);cursor:pointer;letter-spacing:.07em;text-transform:uppercase;transition:all .14s;margin-bottom:-1px;white-space:nowrap}
+.quiz-tab:hover{color:var(--muted2)}
+.quiz-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.quiz-tab-count{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-left:5px;opacity:.7}
+.quiz-tab.active .quiz-tab-count{color:var(--gold2)}
+
+.quiz-pane{display:none}
+.quiz-pane.vis{display:block;animation:fi .2s ease}
+
+/* Small quiz card (for unit/JF/type grids) */
+.quiz-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.7rem;margin-bottom:1rem}
+.quiz-card{background:var(--bg2);border:1px solid var(--border);border-radius:7px;padding:.95rem 1.05rem;text-align:left;cursor:pointer;transition:all .15s;position:relative;display:flex;flex-direction:column;gap:.4rem;font-family:'Instrument Sans',sans-serif}
+.quiz-card:hover{border-color:var(--gold);background:var(--bg3);transform:translateY(-1px)}
+.quiz-card-head{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.quiz-card-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.quiz-card-stat{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.05em;background:var(--bg);padding:2px 7px;border-radius:3px;border:1px solid var(--border)}
+.quiz-card-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.3}
+.quiz-card-sub{font-size:11.5px;color:var(--muted);line-height:1.4}
+
+/* Hero Mini-SIE card (kept large) */
+.quiz-launch{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.5rem;margin-bottom:1.25rem;position:relative;overflow:hidden}
+.quiz-launch::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold2) 100%);opacity:.7}
+.quiz-launch-hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:.5rem;gap:1rem;flex-wrap:wrap}
+.quiz-launch-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--text);font-style:italic;letter-spacing:-.01em;line-height:1.1}
+.quiz-launch-stat{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:rgba(191,87,0,.1);padding:4px 10px;border-radius:4px;border:1px solid rgba(191,87,0,.25);white-space:nowrap}
+.quiz-launch-desc{font-size:13.5px;color:var(--muted2);line-height:1.65;margin-bottom:1.15rem}
+.quiz-launch-desc strong{color:var(--text);font-weight:600}
+
+.quiz-dist{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.25rem}
+.quiz-dist-cell{background:var(--bg);padding:.75rem .55rem;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.quiz-dist-pct{font-family:'DM Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--gold2);line-height:1}
+.quiz-dist-q{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+.quiz-dist-jf{font-size:10.5px;color:var(--muted2);margin-top:6px;line-height:1.25;letter-spacing:.01em;min-height:2.4em;display:flex;align-items:center;justify-content:center}
+
+.quiz-launch-btn{display:block;width:100%;padding:.9rem;background:var(--gold);border:none;border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:700;color:#09090a;cursor:pointer;letter-spacing:.04em;transition:all .2s}
+.quiz-launch-btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.quiz-launch-btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+
+/* Quiz mode overrides on question page */
+.quiz-timer{display:none;font-family:'DM Mono',monospace;font-size:14px;font-weight:700;letter-spacing:.08em;padding:5px 14px;border-radius:4px;border:1px solid;text-shadow:0 0 8px currentColor;align-items:center;gap:6px}
+.quiz-timer.vis{display:inline-flex}
+.quiz-timer.ok{color:var(--gold2);border-color:rgba(212,98,26,.4);background:rgba(191,87,0,.06)}
+.quiz-timer.warn{color:#facc15;border-color:rgba(250,204,21,.4);background:rgba(250,204,21,.06)}
+.quiz-timer.critical{color:var(--red);border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.08);animation:pulse 1s ease infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.quiz-timer-label{font-size:9px;letter-spacing:.14em;opacity:.7;font-weight:500}
+
+.quiz-prog{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em}
+.quiz-prog-bar{height:2px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:1.25rem}
+.quiz-prog-fill{height:100%;background:linear-gradient(90deg,var(--gold) 0%,var(--gold2) 100%);transition:width .4s ease}
+
+/* Quiz init / loading screen */
+.quiz-init{display:none;text-align:center;padding:4rem 1rem}
+.quiz-init.vis{display:block}
+.quiz-init-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-style:italic;margin-bottom:.5rem;color:var(--text)}
+.quiz-init-sub{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.06em;margin-bottom:2rem}
+.quiz-init-ring{width:44px;height:44px;border:2px solid var(--border2);border-top-color:var(--gold);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1rem}
+.quiz-init-prog{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);letter-spacing:.06em}
+.quiz-init-prog-bar{max-width:280px;margin:.85rem auto 0;height:3px;background:var(--bg2);border-radius:2px;overflow:hidden}
+.quiz-init-prog-fill{height:100%;background:var(--gold);transition:width .3s ease;width:0%}
+
+/* Quiz submit/finish row */
+.quiz-finish-row{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:3rem;margin-top:.25rem;align-items:center}
+.quiz-submit-btn{flex:1;padding:.85rem;background:var(--gold);border:none;border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:700;color:#09090a;cursor:pointer;letter-spacing:.04em;transition:all .15s;min-width:160px}
+.quiz-submit-btn:hover{background:var(--gold2)}
+.quiz-submit-btn:disabled{opacity:.35;cursor:not-allowed}
+
+/* ═══════════════════════════════════════════════════
+   PASS 2 — QUIZ RESULTS SCREEN
+   ═══════════════════════════════════════════════════ */
+#quiz-results{display:none;padding-top:1.5rem}
+#quiz-results.vis{display:block}
+
+.qr-banner{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:2rem 1.75rem;margin-bottom:1.5rem;position:relative;overflow:hidden;text-align:center}
+.qr-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.qr-banner.pass::before{background:linear-gradient(90deg,var(--green) 0%,#22d3a5 100%)}
+.qr-banner.fail::before{background:linear-gradient(90deg,var(--red) 0%,#fb923c 100%)}
+.qr-verdict{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.6rem}
+.qr-banner.pass .qr-verdict{color:var(--green)}
+.qr-banner.fail .qr-verdict{color:var(--red)}
+.qr-score{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:var(--text);line-height:1;margin-bottom:.4rem;font-style:italic}
+.qr-score-frac{font-family:'DM Mono',monospace;font-size:14px;color:var(--muted);letter-spacing:.06em;margin-bottom:1rem}
+.qr-time{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted2);letter-spacing:.04em}
+.qr-time strong{color:var(--text);font-weight:600}
+
+.qr-section-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem;display:flex;align-items:center;gap:.75rem}
+.qr-section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.qr-jf-table{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:2rem}
+.qr-jf-row{display:grid;grid-template-columns:1fr auto auto;gap:1rem;align-items:center;padding:.95rem 1.2rem;border-bottom:1px solid var(--border)}
+.qr-jf-row:last-child{border-bottom:none}
+.qr-jf-row.hdr{background:var(--bg);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:.6rem 1.2rem}
+.qr-jf-name{font-size:13px;color:var(--text);font-weight:500;line-height:1.3}
+.qr-jf-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.06em;margin-bottom:2px;text-transform:uppercase}
+.qr-jf-score{font-family:'DM Mono',monospace;font-size:13px;color:var(--muted2);min-width:60px;text-align:right}
+.qr-jf-pct{font-family:'DM Mono',monospace;font-size:13px;font-weight:700;min-width:50px;text-align:right}
+.qr-jf-pct.ok{color:var(--green)}
+.qr-jf-pct.mid{color:#facc15}
+.qr-jf-pct.bad{color:var(--red)}
+.qr-jf-pct.empty{color:var(--muted)}
+
+/* Review filter toggle */
+.qr-filter-row{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.qr-filter-group{display:flex;gap:.4rem;flex-wrap:wrap}
+.qr-filter-btn{padding:.4rem .85rem;background:var(--bg2);border:1px solid var(--border);border-radius:20px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.05em;color:var(--muted);cursor:pointer;transition:all .14s}
+.qr-filter-btn:hover{border-color:var(--border2);color:var(--muted2)}
+.qr-filter-btn.active{background:rgba(191,87,0,.1);border-color:var(--gold);color:var(--gold)}
+.qr-filter-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em}
+
+/* Review question cards */
+.qr-q-list{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
+.qr-q-card{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--green);border-radius:6px;padding:1.1rem 1.25rem;transition:all .15s}
+.qr-q-card.wrong{border-left-color:var(--red)}
+.qr-q-card.skipped{border-left-color:var(--muted);opacity:.85}
+.qr-q-head{display:flex;align-items:center;gap:.65rem;margin-bottom:.65rem;flex-wrap:wrap}
+.qr-q-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em}
+.qr-q-mark{font-family:'DM Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.08em}
+.qr-q-mark.ok{color:var(--green)}
+.qr-q-mark.no{color:var(--red)}
+.qr-q-mark.sk{color:var(--muted)}
+.qr-q-jf{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);background:rgba(191,87,0,.08);padding:2px 7px;border-radius:3px;border:1px solid rgba(191,87,0,.2);margin-left:auto}
+.qr-q-text{font-size:13.5px;line-height:1.6;color:var(--text);margin-bottom:.75rem;font-weight:500}
+.qr-q-ans{font-size:12.5px;color:var(--muted2);line-height:1.6;margin-bottom:.45rem}
+.qr-q-ans strong{color:var(--text);font-weight:600}
+.qr-q-ans .right-ans{color:var(--green);font-weight:600}
+.qr-q-ans .your-ans-wrong{color:var(--red);font-weight:600}
+.qr-q-expand{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);cursor:pointer;background:none;border:none;padding:.35rem 0;letter-spacing:.04em;display:inline-flex;align-items:center;gap:.3rem;transition:gap .15s}
+.qr-q-expand:hover{gap:.5rem;color:var(--gold2)}
+.qr-q-expl{display:none;font-size:12.5px;color:var(--muted2);line-height:1.7;background:var(--bg3);border:1px solid var(--border);border-radius:5px;padding:.85rem 1rem;margin-top:.7rem}
+.qr-q-expl.vis{display:block;animation:fi .2s ease}
+.qr-q-expl strong{color:var(--text);font-weight:600}
+
+.qr-actions{display:flex;gap:.6rem;flex-wrap:wrap;padding-bottom:3rem}
+.qr-btn{padding:.78rem 1.25rem;border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:.04em;transition:all .15s;border:1px solid;flex:1;min-width:140px}
+.qr-btn-primary{background:var(--gold);color:#09090a;border-color:var(--gold)}
+.qr-btn-primary:hover{background:var(--gold2);border-color:var(--gold2)}
+.qr-btn-ghost{background:transparent;color:var(--muted2);border-color:var(--border2)}
+.qr-btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
 @keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fi{from{opacity:0}to{opacity:1}}
 .fi{animation:fi .3s ease forwards}
-@media(max-width:520px){.unit-grid{grid-template-columns:1fr 1fr}.act-row{flex-direction:column}.next-btn,.fu-toggle{width:100%}.pomo-bar{gap:.75rem}#pomo-display{font-size:1.6rem}}
+@media(max-width:520px){
+  .unit-grid{grid-template-columns:1fr 1fr}
+  .act-row{flex-direction:column}
+  .next-btn,.fu-toggle{width:100%}
+  .pomo-bar{gap:.75rem}
+  #pomo-display{font-size:1.6rem}
+  .quiz-dist{grid-template-columns:repeat(2,1fr)}
+  .quiz-dist-jf{min-height:auto}
+  .qr-score{font-size:2.75rem}
+  .qr-jf-row{grid-template-columns:1fr auto;gap:.5rem}
+  .qr-jf-score{display:none}
+}
 </style>
 </head>
 <body>
@@ -323,19 +476,82 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
   <div class="err" id="setup-err"></div>
   <button class="start-btn" id="start-btn" onclick="startDrill()" disabled>Select a preset, unit/job function, and mode to begin</button>
 
+  <!-- ══ SECTION: TIMED QUIZZES (PASS 2) ══ -->
+  <div class="section-hdr"><span class="section-hdr-text">Timed Quizzes</span></div>
+
+  <div class="quiz-tabs" id="quiz-tabs">
+    <button class="quiz-tab active" data-pane="mini" onclick="switchQuizTab('mini')">Mini-SIE<span class="quiz-tab-count">1</span></button>
+    <button class="quiz-tab" data-pane="unit" onclick="switchQuizTab('unit')">By Unit<span class="quiz-tab-count">12</span></button>
+    <button class="quiz-tab" data-pane="jf" onclick="switchQuizTab('jf')">By Job Function<span class="quiz-tab-count">4</span></button>
+    <button class="quiz-tab" data-pane="type" onclick="switchQuizTab('type')">By Question Type<span class="quiz-tab-count">4</span></button>
+  </div>
+
+  <!-- PANE: MINI-SIE (hero card) -->
+  <div class="quiz-pane vis" id="pane-mini">
+    <div class="quiz-launch">
+      <div class="quiz-launch-hdr">
+        <div class="quiz-launch-title">Mini-SIE</div>
+        <div class="quiz-launch-stat">12 Q · 14 MIN</div>
+      </div>
+      <div class="quiz-launch-desc">
+        A <strong>scaled-down dress rehearsal</strong> for the real SIE. Twelve questions drawn proportionally from the four FINRA job functions, with a mix of standard, definition, calculation, and EXCEPT/NOT formats — same diversity ratio as the live exam. Countdown timer, auto-submit at zero, full results breakdown after.
+      </div>
+      <div class="quiz-dist">
+        <div class="quiz-dist-cell"><div class="quiz-dist-pct">16%</div><div class="quiz-dist-q">2 Q</div><div class="quiz-dist-jf">Capital<br/>Markets</div></div>
+        <div class="quiz-dist-cell"><div class="quiz-dist-pct">44%</div><div class="quiz-dist-q">5 Q</div><div class="quiz-dist-jf">Products<br/>&amp; Risks</div></div>
+        <div class="quiz-dist-cell"><div class="quiz-dist-pct">31%</div><div class="quiz-dist-q">4 Q</div><div class="quiz-dist-jf">Trading &amp;<br/>Accounts</div></div>
+        <div class="quiz-dist-cell"><div class="quiz-dist-pct">9%</div><div class="quiz-dist-q">1 Q</div><div class="quiz-dist-jf">Regulatory<br/>Framework</div></div>
+      </div>
+      <div class="err" id="quiz-err"></div>
+      <button class="quiz-launch-btn" onclick="launchQuiz('mini-sie')">Begin Mini-SIE</button>
+    </div>
+  </div>
+
+  <!-- PANE: BY UNIT -->
+  <div class="quiz-pane" id="pane-unit">
+    <div style="font-size:13px;color:var(--muted2);line-height:1.6;margin-bottom:1rem">One timed quiz per unit — <strong style="color:var(--text)">12 questions in 14 minutes</strong>. All four question modes (standard, hard, definitions, calculations) spread evenly across each quiz, all drawn from that unit's Kaplan + FINRA content.</div>
+    <div class="quiz-card-grid" id="unit-quiz-grid"></div>
+  </div>
+
+  <!-- PANE: BY JOB FUNCTION -->
+  <div class="quiz-pane" id="pane-jf">
+    <div style="font-size:13px;color:var(--muted2);line-height:1.6;margin-bottom:1rem">One deep-dive quiz per FINRA job function — <strong style="color:var(--text)">25 questions in 30 minutes</strong>. All units within that job function are sampled, all four question modes spread evenly.</div>
+    <div class="quiz-card-grid" id="jf-quiz-grid"></div>
+  </div>
+
+  <!-- PANE: BY QUESTION TYPE -->
+  <div class="quiz-pane" id="pane-type">
+    <div style="font-size:13px;color:var(--muted2);line-height:1.6;margin-bottom:1rem">One focused drill per question format — <strong style="color:var(--text)">20 questions in 24 minutes</strong>. Every quiz spans all 12 units and all 4 job functions (weighted by the FINRA outline), so you're drilling the <em>format</em> not the content area.</div>
+    <div class="quiz-card-grid" id="type-quiz-grid"></div>
+  </div>
+
 </div><!-- /setup -->
 
-<!-- QUESTION AREA -->
+<!-- QUESTION AREA (shared by drill + quiz) -->
 <div id="qarea">
   <div class="q-meta">
     <span class="q-tag" id="q-tag">Unit 1</span>
     <span class="q-num" id="q-num">Question 1</span>
     <span class="q-mode" id="q-mode">STANDARD</span>
-    <span style="margin-left:auto;display:flex;align-items:center;gap:.6rem">
+    <span style="margin-left:auto;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap">
+      <span class="quiz-timer" id="quiz-timer"><span class="quiz-timer-label">TIME</span><span id="quiz-timer-val">14:00</span></span>
       <span class="pomo-live" id="pomo-live"></span>
       <span class="pomo-live" id="session-score-live" style="display:none"></span>
     </span>
   </div>
+
+  <!-- Quiz progress bar -->
+  <div class="quiz-prog-bar" id="quiz-prog-bar" style="display:none"><div class="quiz-prog-fill" id="quiz-prog-fill" style="width:0%"></div></div>
+
+  <!-- Quiz init / generating screen -->
+  <div class="quiz-init" id="quiz-init">
+    <div class="quiz-init-title">Building your Mini-SIE</div>
+    <div class="quiz-init-sub">Generating 12 questions across all 4 job functions</div>
+    <div class="quiz-init-ring"></div>
+    <div class="quiz-init-prog" id="quiz-init-prog">0 / 12 ready</div>
+    <div class="quiz-init-prog-bar"><div class="quiz-init-prog-fill" id="quiz-init-prog-fill"></div></div>
+  </div>
+
   <div class="loading" id="loading">
     <div class="loading-ring"></div>
     <div class="loading-text">Generating question...</div>
@@ -357,12 +573,19 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
       </div>
       <div class="fu-resp" id="fu-resp"></div>
     </div>
-    <div class="act-row">
+    <div class="act-row" id="drill-act-row">
       <button class="act-btn" id="back-arrow" onclick="goBack()">← Back to Home</button>
       <button class="next-btn" id="next-btn" onclick="nextQ()" disabled>Next →</button>
     </div>
+    <div class="quiz-finish-row" id="quiz-act-row" style="display:none">
+      <button class="act-btn act-btn-red" onclick="exitQuiz()">Exit quiz</button>
+      <button class="quiz-submit-btn" id="quiz-next-btn" onclick="quizNext()">Next →</button>
+    </div>
   </div>
 </div>
+
+<!-- QUIZ RESULTS SCREEN (PASS 2) -->
+<div id="quiz-results"></div>
 
 </div><!-- /wrap -->
 
@@ -389,10 +612,10 @@ const UNITS=[
 // STATE
 // ═══════════════════════════════════════════════════
 let apiKey = '';
-let selUnits = new Set();      // selected unit numbers
-let selJFs = new Set();        // selected job function keys
-let selModes = new Set();      // selected modes
-let pomoPresetChosen = false;  // tracks if a preset has been picked
+let selUnits = new Set();
+let selJFs = new Set();
+let selModes = new Set();
+let pomoPresetChosen = false;
 let stats = { total:0, correct:0, streak:0, best:0 };
 let curQ = null;
 let answered = false;
@@ -400,8 +623,8 @@ let fuOpen = false;
 let drillHistory = [];
 let inSession = false;
 let currentSessionLog = [];
-let prefetchedQ = null;      // prefetched next question
-let prefetching = false;     // true while prefetch is in flight
+let prefetchedQ = null;
+let prefetching = false;
 
 // Job function → unit mapping
 const JF_UNITS = {
@@ -409,6 +632,18 @@ const JF_UNITS = {
   pr: [2,3,4,5],
   tc: [6,7,8,11],
   rf: [10,12]
+};
+const JF_NAMES = {
+  km: 'Knowledge of Capital Markets',
+  pr: 'Understanding Products & Their Risks',
+  tc: 'Trading, Customer Accounts & Prohibited Activities',
+  rf: 'Overview of the Regulatory Framework'
+};
+const JF_SHORT = {
+  km: 'Capital Markets',
+  pr: 'Products & Risks',
+  tc: 'Trading & Accounts',
+  rf: 'Regulatory'
 };
 
 // Pomodoro state
@@ -419,16 +654,105 @@ let pomoIsWork = true;
 let pomoInterval = null;
 
 // ═══════════════════════════════════════════════════
+// QUIZ STATE (PASS 2)
+// ═══════════════════════════════════════════════════
+let quizActive = false;
+let quizQuestions = [];       // generated questions [{...q, jfKey, jfName, unitNum, mode}, ...]
+let quizAnswers = [];         // user answers, parallel to quizQuestions; null = skipped
+let quizIdx = 0;
+let quizSecsLeft = 14 * 60;
+let quizTimerInterval = null;
+let quizStartTime = 0;
+let quizConfig = null;        // active quiz config (set by launchQuiz)
+const QUIZ_PASS_PCT = 70;
+
+// FINRA Mini-SIE weight distribution (16/44/31/9%) — scaled to question counts in each config's planBuilder
+const FINRA_WEIGHTS = { km: 0.16, pr: 0.44, tc: 0.31, rf: 0.09 };
+
+// Mini-SIE: 16/44/31/9% × 12 → 2/5/4/1 = 12
+const QUIZ_JF_DIST_MINI = [
+  { jf: 'km', count: 2 },
+  { jf: 'pr', count: 5 },
+  { jf: 'tc', count: 4 },
+  { jf: 'rf', count: 1 }
+];
+
+// ═══════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
   renderUnits();
+  renderQuizCards();
   pomoUpdateDisplay();
   const saved = sessionStorage.getItem('sie_key');
   if (saved) { apiKey = saved; } else { document.getElementById('api-prompt').classList.add('vis'); }
-  // Stats are per-session only — start fresh every page load
   updateScore();
 });
+
+// ═══════════════════════════════════════════════════
+// QUIZ TAB SWITCHER + CARD RENDERING
+// ═══════════════════════════════════════════════════
+function switchQuizTab(pane) {
+  document.querySelectorAll('.quiz-tab').forEach(b => {
+    b.classList.toggle('active', b.dataset.pane === pane);
+  });
+  document.querySelectorAll('.quiz-pane').forEach(p => {
+    p.classList.toggle('vis', p.id === `pane-${pane}`);
+  });
+}
+
+function renderQuizCards() {
+  // Unit cards
+  const ug = document.getElementById('unit-quiz-grid');
+  if (ug) {
+    ug.innerHTML = UNITS.map(u => `
+      <button class="quiz-card" onclick="launchQuiz('unit-${u.num}')">
+        <div class="quiz-card-head">
+          <span class="quiz-card-tag">Unit ${u.num}</span>
+          <span class="quiz-card-stat">12 Q · 14 MIN</span>
+        </div>
+        <div class="quiz-card-title">${u.name}</div>
+        <div class="quiz-card-sub">All modes · drawn from this unit only</div>
+      </button>`).join('');
+  }
+
+  // JF cards
+  const jg = document.getElementById('jf-quiz-grid');
+  if (jg) {
+    const jfDescs = {
+      km: 'Units 1, 9 · Markets, products, indices, economics',
+      pr: 'Units 2–5 · Equity, debt, funds, options, DPPs',
+      tc: 'Units 6, 7, 8, 11 · Accounts, suitability, tax, ethics',
+      rf: 'Units 10, 12 · SEC, FINRA, registration, U4/U5'
+    };
+    jg.innerHTML = Object.keys(JF_NAMES).map(jfKey => `
+      <button class="quiz-card" onclick="launchQuiz('jf-${jfKey}')">
+        <div class="quiz-card-head">
+          <span class="quiz-card-tag">${JF_SHORT[jfKey]}</span>
+          <span class="quiz-card-stat">25 Q · 30 MIN</span>
+        </div>
+        <div class="quiz-card-title">${JF_NAMES[jfKey]}</div>
+        <div class="quiz-card-sub">${jfDescs[jfKey]}</div>
+      </button>`).join('');
+  }
+
+  // Type cards
+  const tg = document.getElementById('type-quiz-grid');
+  if (tg) {
+    tg.innerHTML = Object.keys(TYPE_QUIZ_META).map(modeKey => {
+      const meta = TYPE_QUIZ_META[modeKey];
+      return `
+        <button class="quiz-card" onclick="launchQuiz('type-${modeKey}')">
+          <div class="quiz-card-head">
+            <span class="quiz-card-tag">${modeKey.toUpperCase()}</span>
+            <span class="quiz-card-stat">20 Q · 24 MIN</span>
+          </div>
+          <div class="quiz-card-title">${meta.title}</div>
+          <div class="quiz-card-sub">${meta.sub}</div>
+        </button>`;
+    }).join('');
+  }
+}
 
 // ═══════════════════════════════════════════════════
 // API KEY
@@ -445,7 +769,7 @@ function saveKey() {
 // ═══════════════════════════════════════════════════
 // STATS
 // ═══════════════════════════════════════════════════
-function saveStats() { /* session only — not persisted */ }
+function saveStats() { /* session only */ }
 
 function resetAll() {
   if (!confirm('Reset everything and start over?')) return;
@@ -491,7 +815,7 @@ function pomoUpdateDisplay() {
     phase.textContent = '——';
     phase.className = 'unset';
     if (live) { live.textContent = ''; live.className = 'pomo-live'; }
-    document.title = 'SIE Study Tool';
+    if (!quizActive) document.title = 'SIE Study Tool';
     return;
   }
   const fmt = pomoFmt(pomoSecsLeft);
@@ -503,22 +827,18 @@ function pomoUpdateDisplay() {
     live.textContent = `${pomoIsWork ? 'FOCUS' : 'REST'} ${fmt}`;
     live.className = `pomo-live vis ${pomoIsWork ? 'focus' : 'rest'}`;
   }
-  document.title = pomoRunning ? `${fmt} · SIE Study Tool` : 'SIE Study Tool';
+  if (!quizActive) document.title = pomoRunning ? `${fmt} · SIE Study Tool` : 'SIE Study Tool';
 }
-
-// Timer starts automatically when preset selected — no manual start/stop/skip needed
 
 function pomoSetPreset(w, b) {
   const id = w === 25 ? 'preset-1' : w === 50 ? 'preset-2' : 'preset-3';
   const already = document.getElementById(id).classList.contains('selected');
 
-  // Stop any running timer
   clearInterval(pomoInterval);
   pomoRunning = false;
   ['preset-1','preset-2','preset-3'].forEach(pid => document.getElementById(pid).classList.remove('selected'));
 
   if (already) {
-    // Deselect — reset to unset state
     pomoPresetChosen = false;
     pomoIsWork = true;
     pomoUpdateDisplay();
@@ -526,7 +846,6 @@ function pomoSetPreset(w, b) {
     return;
   }
 
-  // Select preset — timer starts when drilling begins, not here
   pomoWorkMins = w;
   pomoBreakMins = b;
   pomoPresetChosen = true;
@@ -558,7 +877,6 @@ function pomoStartInterval() {
       pomoIsWork = !pomoIsWork;
       pomoSecsLeft = pomoIsWork ? pomoWorkMins * 60 : pomoBreakMins * 60;
       pomoUpdateDisplay();
-      // Auto-start next phase
       pomoStartInterval();
     } else {
       pomoUpdateDisplay();
@@ -607,16 +925,13 @@ function surpriseMe() {
   const modes = ['standard','hard','definitions','calculations'];
   const modeLabels = { standard:'Standard', hard:'Hard (EXCEPT/NOT)', definitions:'Definitions', calculations:'Calculations' };
 
-  // Randomly pick a preset
   const presets = [{w:25,b:5,id:'preset-1'},{w:50,b:10,id:'preset-2'},{w:90,b:20,id:'preset-3'}];
   const pickedPreset = presets[Math.floor(Math.random() * presets.length)];
 
-  // Randomly decide how many modes to pick (1 to 4)
   const modeCount = Math.floor(Math.random() * 4) + 1;
   const shuffledModes = [...modes].sort(() => Math.random() - 0.5);
   const pickedModes = shuffledModes.slice(0, modeCount);
 
-  // Randomly decide: units only, jfs only, or both
   const targetType = ['units','jfs','both'][Math.floor(Math.random() * 3)];
 
   const pickedUnits = [];
@@ -635,10 +950,8 @@ function surpriseMe() {
     shuffled.slice(0, count).forEach(k => pickedJFs.push(k));
   }
 
-  // Clear existing selections silently
   surpriseClear(true);
 
-  // Apply preset
   pomoWorkMins = pickedPreset.w;
   pomoBreakMins = pickedPreset.b;
   pomoPresetChosen = true;
@@ -648,32 +961,27 @@ function surpriseMe() {
   document.getElementById(pickedPreset.id).classList.add('selected');
   pomoUpdateDisplay();
 
-  // Apply units
   pickedUnits.forEach(n => {
     selUnits.add(n);
     const btn = document.querySelector(`[data-u="${n}"]`);
     if (btn) btn.classList.add('active');
   });
 
-  // Apply job functions
-  const jfNames = { km:'Capital Markets', pr:'Products & Risks', tc:'Trading & Accounts', rf:'Regulatory' };
   pickedJFs.forEach(k => {
     selJFs.add(k);
     const btn = document.querySelector(`[data-jf="${k}"]`);
     if (btn) btn.classList.add('active');
   });
 
-  // Apply modes
   pickedModes.forEach(m => {
     selModes.add(m);
     const btn = document.querySelector(`[data-mode="${m}"]`);
     if (btn) btn.classList.add('active');
   });
 
-  // Build preview label
   const targetParts = [];
   if (pickedUnits.length > 0) targetParts.push(`Unit${pickedUnits.length > 1 ? 's' : ''} ${pickedUnits.join(', ')}`);
-  if (pickedJFs.length > 0) targetParts.push(pickedJFs.map(k => jfNames[k]).join(', '));
+  if (pickedJFs.length > 0) targetParts.push(pickedJFs.map(k => JF_SHORT[k]).join(', '));
   const modePart = pickedModes.map(m => modeLabels[m]).join(', ');
 
   document.getElementById('surprise-text').textContent = `${pickedPreset.w}/${pickedPreset.b} · ${targetParts.join(' + ')} · ${modePart}`;
@@ -690,7 +998,6 @@ function surpriseClear(silent) {
   selModes.clear();
   document.querySelectorAll('.unit-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.jf-btn').forEach(b => b.classList.remove('active'));
-  // Also clear preset
   ['preset-1','preset-2','preset-3'].forEach(id => document.getElementById(id).classList.remove('selected'));
   pomoPresetChosen = false;
   clearInterval(pomoInterval);
@@ -708,7 +1015,6 @@ function checkCanStart() {
   const hasMode = selModes.size > 0;
   const btn = document.getElementById('start-btn');
 
-  // Update step indicators
   if (hasPreset) setStep('pomo', 'done'); else setStep('pomo', 'current');
   if (hasTarget) setStep('unit', 'done'); else if (hasPreset) setStep('unit', 'current'); else setStep('unit', '');
   if (hasMode) setStep('mode', 'done'); else if (hasTarget) setStep('mode', 'current'); else setStep('mode', '');
@@ -716,12 +1022,6 @@ function checkCanStart() {
 
   if (hasPreset && hasTarget && hasMode) {
     btn.disabled = false;
-    const unitCount = selUnits.size;
-    const jfCount = selJFs.size;
-    const modeCount = selModes.size;
-    const parts = [];
-    if (unitCount > 0) parts.push(`${unitCount} unit${unitCount > 1 ? 's' : ''}`);
-    if (jfCount > 0) parts.push(`${jfCount} job function${jfCount > 1 ? 's' : ''}`);
     btn.textContent = `Begin Drilling`;
   } else {
     btn.disabled = true;
@@ -751,16 +1051,13 @@ async function startDrill() {
   await genQ();
 }
 
-
 async function genQ() {
-  // Build pool of unit numbers from selected units + selected job functions
   const pool = new Set([...selUnits]);
   selJFs.forEach(jf => { (JF_UNITS[jf] || []).forEach(n => pool.add(n)); });
   const poolArr = [...pool];
   const pickedUnitNum = poolArr[Math.floor(Math.random() * poolArr.length)];
   const unit = UNITS.find(u => u.num === pickedUnitNum);
 
-  // Pick a random mode from selected modes
   const modesArr = [...selModes];
   const pickedMode = modesArr[Math.floor(Math.random() * modesArr.length)];
 
@@ -768,13 +1065,8 @@ async function genQ() {
   document.getElementById('qarea').classList.add('vis');
   document.getElementById('ticker-bar').style.display = 'none';
 
-  // Pause timer while generating
-  if (pomoRunning) {
-    clearInterval(pomoInterval);
-    pomoRunning = false;
-  }
+  if (pomoRunning) { clearInterval(pomoInterval); pomoRunning = false; }
 
-  // Reset question state
   document.getElementById('loading').classList.add('vis');
   document.getElementById('qcontent').style.display = 'none';
   document.getElementById('expl').classList.remove('vis');
@@ -783,17 +1075,30 @@ async function genQ() {
   document.getElementById('next-btn').disabled = true;
   document.getElementById('fu-resp').classList.remove('vis');
   document.getElementById('fu-input').value = '';
-  // Show action buttons
   document.getElementById('back-arrow').style.display = '';
   showErr('q-err', '');
   answered = false;
   fuOpen = false;
 
-  // Update meta
   document.getElementById('q-tag').textContent = `Unit ${unit.num}: ${unit.name}`;
   document.getElementById('q-num').textContent = `Question ${stats.total + 1}`;
   document.getElementById('q-mode').textContent = pickedMode.toUpperCase();
 
+  try {
+    const q = await callGenQuestion(unit, pickedMode);
+    q._unitNum = unit.num;
+    curQ = q;
+    drillHistory.push({ topic: q.topic, unit: unit.num });
+    if (drillHistory.length > 20) drillHistory.shift();
+    renderQ(q);
+  } catch (err) {
+    document.getElementById('loading').classList.remove('vis');
+    showErr('q-err', `Error: ${err.message}`);
+  }
+}
+
+// Shared question generation — used by both drill and quiz
+async function callGenQuestion(unit, pickedMode, opts = {}) {
   const modeprompts = {
     standard: 'Generate a standard SIE exam-style multiple choice question testing one key concept clearly.',
     hard: 'Generate a challenging question using hedge clauses (if, not, all, none, except, LEAST, MOST), or combining multiple concepts, or Roman numeral format (I, II, III, IV). Make all four answer choices highly plausible.',
@@ -802,7 +1107,8 @@ async function genQ() {
     surprise: 'Generate a question from any topic in this unit using a randomly chosen format — standard concept, definition, calculation, or EXCEPT/NOT style. Vary it each time.'
   };
 
-  const recent = drillHistory.slice(-6).map(h => h.topic).join(', ');
+  const recentSource = opts.recentTopics || drillHistory.slice(-6).map(h => h.topic);
+  const recent = recentSource.join(', ');
   const avoid = recent ? `Do NOT repeat these recently tested topics: ${recent}.` : '';
 
   const sys = `You are a FINRA SIE exam tutor using Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual, Class Notes, and the official FINRA SIE Content Outline (2024) as your sources. Generate exam-realistic multiple choice questions that mirror the actual SIE exam.
@@ -819,38 +1125,27 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
 
   const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nKAPLAN + FINRA SOURCE MATERIAL:\n${unit.topics}`;
 
-  try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 1000,
-        system: sys,
-        messages: [{ role: 'user', content: msg }]
-      })
-    });
-    if (!r.ok) { const e = await r.json(); throw new Error(e.error?.message || `API error ${r.status}`); }
-    const d = await r.json();
-    const raw = d.content[0].text.trim();
-    let q;
-    try { const m = raw.match(/\{[\s\S]*\}/); q = JSON.parse(m ? m[0] : raw); }
-    catch (e) { throw new Error('Could not parse response — please try again.'); }
-    // Store unit for follow-up
-    q._unitNum = unit.num;
-    curQ = q;
-    drillHistory.push({ topic: q.topic, unit: unit.num });
-    if (drillHistory.length > 20) drillHistory.shift();
-    renderQ(q);
-  } catch (err) {
-    document.getElementById('loading').classList.remove('vis');
-    showErr('q-err', `Error: ${err.message}`);
-  }
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1000,
+      system: sys,
+      messages: [{ role: 'user', content: msg }]
+    })
+  });
+  if (!r.ok) { const e = await r.json(); throw new Error(e.error?.message || `API error ${r.status}`); }
+  const d = await r.json();
+  const raw = d.content[0].text.trim();
+  const m = raw.match(/\{[\s\S]*\}/);
+  const q = JSON.parse(m ? m[0] : raw);
+  return q;
 }
 
 function renderQ(q) {
@@ -869,7 +1164,6 @@ function renderQ(q) {
   nb.disabled = true;
   nb.textContent = 'Next →';
   if (!pomoRunning) pomoStartInterval();
-  // Start prefetching next question silently
   prefetchedQ = null;
   prefetchNextQ();
 }
@@ -885,52 +1179,7 @@ async function prefetchNextQ() {
     const unit = UNITS.find(u => u.num === pickedUnitNum);
     const modesArr = [...selModes];
     const pickedMode = modesArr[Math.floor(Math.random() * modesArr.length)];
-
-    const modeprompts = {
-      standard: 'Generate a standard SIE exam-style multiple choice question testing one key concept clearly.',
-      hard: 'Generate a challenging question using hedge clauses (if, not, all, none, except, LEAST, MOST), or combining multiple concepts, or Roman numeral format (I, II, III, IV). Make all four answer choices highly plausible.',
-      definitions: 'Generate a question asking the student to define a specific term, rule, or concept from this unit.',
-      calculations: 'Generate a calculation question requiring specific arithmetic with numbers (current yield, YTM relationship, breakeven, NAV, accrued interest, margin equity, conversion ratios, tax-equivalent yield, basis points, etc.).',
-      surprise: 'Generate a question from any topic in this unit using a randomly chosen format — standard concept, definition, calculation, or EXCEPT/NOT style. Vary it each time.'
-    };
-
-    const recent = drillHistory.slice(-6).map(h => h.topic).join(', ');
-    const avoid = recent ? `Do NOT repeat these recently tested topics: ${recent}.` : '';
-
-    const sys = `You are a FINRA SIE exam tutor using Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual, Class Notes, and the official FINRA SIE Content Outline (2024) as your sources. Generate exam-realistic multiple choice questions that mirror the actual SIE exam.
-
-RULES:
-1. Base ALL content strictly on the provided Kaplan/FINRA material. Do not invent content not covered.
-2. Exactly one correct answer. Four choices (A B C D), all plausible.
-3. ${modeprompts[pickedMode] || modeprompts.standard}
-4. ${avoid}
-5. Keep questions concise and focused on one testable concept.
-
-Respond ONLY with valid JSON — no markdown fences, no extra text:
-{"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect."}`;
-
-    const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nKAPLAN + FINRA SOURCE MATERIAL:\n${unit.topics}`;
-
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true'
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 1000,
-        system: sys,
-        messages: [{ role: 'user', content: msg }]
-      })
-    });
-    if (!r.ok) { prefetching = false; return; }
-    const d = await r.json();
-    const raw = d.content[0].text.trim();
-    const m = raw.match(/\{[\s\S]*\}/);
-    const q = JSON.parse(m ? m[0] : raw);
+    const q = await callGenQuestion(unit, pickedMode);
     q._unitNum = unit.num;
     q._mode = pickedMode;
     prefetchedQ = q;
@@ -942,19 +1191,15 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
 
 async function nextQ() {
   if (prefetchedQ) {
-    // Use prefetched question instantly
     const q = prefetchedQ;
     prefetchedQ = null;
-    // Update meta
     const unit = UNITS.find(u => u.num === q._unitNum);
     document.getElementById('q-tag').textContent = `Unit ${unit.num}: ${unit.name}`;
     document.getElementById('q-num').textContent = `Question ${stats.total + 1}`;
     document.getElementById('q-mode').textContent = (q._mode || 'standard').toUpperCase();
-    // Log to history
     drillHistory.push({ topic: q.topic, unit: q._unitNum });
     if (drillHistory.length > 20) drillHistory.shift();
     curQ = q;
-    // Reset question UI without showing loading spinner
     document.getElementById('expl').classList.remove('vis');
     document.getElementById('fu-area').classList.remove('vis');
     document.getElementById('fu-resp').classList.remove('vis');
@@ -962,14 +1207,13 @@ async function nextQ() {
     showErr('q-err', '');
     answered = false;
     fuOpen = false;
-    // Pause timer during render
     if (pomoRunning) { clearInterval(pomoInterval); pomoRunning = false; }
     renderQ(q);
   } else {
-    // No prefetch ready — fall back to normal genQ
     await genQ();
   }
 }
+
 function answer(chosen) {
   if (answered) return;
   answered = true;
@@ -981,7 +1225,6 @@ function answer(chosen) {
   else { stats.streak = 0; }
   saveStats(); updateScore(); updateStatBar(); updateSessionScoreLive();
 
-  // Option B: log every answer immediately to localStorage
   currentSessionLog.push({
     question: curQ.question,
     options: curQ.options,
@@ -1009,11 +1252,9 @@ function answer(chosen) {
   hdr.innerHTML = ok ? `✓ Correct — answer ${correct}` : `✗ Incorrect — correct answer is ${correct}`;
   document.getElementById('expl-body').innerHTML = curQ.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
   document.getElementById('expl').classList.add('vis');
-  // Enable next
   const nb = document.getElementById('next-btn');
   nb.disabled = false;
   nb.textContent = 'Next →';
-  // Auto-show follow-up textarea
   document.getElementById('fu-area').classList.add('vis');
   document.getElementById('fu-resp').classList.remove('vis');
   document.getElementById('fu-input').value = '';
@@ -1023,8 +1264,6 @@ function answer(chosen) {
 // ═══════════════════════════════════════════════════
 // FOLLOW-UP
 // ═══════════════════════════════════════════════════
-// Follow-up area auto-shows after answering — no toggle needed
-
 async function sendFU() {
   if (!apiKey) return;
   const q = document.getElementById('fu-input').value.trim();
@@ -1063,24 +1302,21 @@ async function sendFU() {
 }
 
 // ═══════════════════════════════════════════════════
-// NAVIGATION
+// NAVIGATION (drill)
 // ═══════════════════════════════════════════════════
 function fullReset(keepSelections) {
-  // Stop timer
   clearInterval(pomoInterval);
   pomoRunning = false;
   inSession = false;
   prefetchedQ = null;
   prefetching = false;
   clearCurrentSession();
-  // Reset stats
   stats = { total:0, correct:0, streak:0, best:0 };
   drillHistory = [];
   updateScore();
   updateSessionScoreLive();
   const sb = document.getElementById('stats-bar');
   if (sb) sb.classList.remove('vis');
-  // Return to setup
   const qa = document.getElementById('qarea');
   if (qa) qa.classList.remove('vis');
   const sp = document.getElementById('setup');
@@ -1089,7 +1325,6 @@ function fullReset(keepSelections) {
   if (tb) tb.style.display = '';
 
   if (!keepSelections) {
-    // Deselect preset
     pomoPresetChosen = false;
     pomoIsWork = true;
     pomoSecsLeft = 25 * 60;
@@ -1098,17 +1333,14 @@ function fullReset(keepSelections) {
       if (el) el.classList.remove('selected');
     });
     pomoUpdateDisplay();
-    // Deselect units/jfs/modes
     selUnits.clear(); selJFs.clear(); selModes.clear();
     document.querySelectorAll('.unit-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.jf-btn').forEach(b => b.classList.remove('active'));
-    // Clear surprise me
     const prev = document.getElementById('surprise-preview');
     if (prev) prev.style.display = 'none';
     const sbtn = document.getElementById('surprise-btn');
     if (sbtn) sbtn.classList.remove('active');
   }
-  // Update start button
   const startBtn = document.getElementById('start-btn');
   if (startBtn) {
     if (keepSelections && (selUnits.size > 0 || selJFs.size > 0) && selModes.size > 0 && pomoPresetChosen) {
@@ -1162,7 +1394,6 @@ function clearCurrentSession() {
 }
 
 function finalizeSession() {
-  // Move current session to history as complete
   const raw = localStorage.getItem('sie_current_session');
   if (!raw || currentSessionLog.length === 0) return;
   const entry = JSON.parse(raw);
@@ -1180,7 +1411,6 @@ function getHistory() {
   catch(e) { return []; }
 }
 
-
 function showErr(id, msg) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -1189,10 +1419,761 @@ function showErr(id, msg) {
 }
 
 // ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+// PASS 2 — TIMED QUIZZES (21 total: 1 Mini-SIE + 12 unit + 4 JF + 4 type)
+// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Distribute `total` items across `weights` (object of key→pct).
+// Uses largest-remainder method so sum always equals `total`.
+function distributeByWeight(weights, total) {
+  const keys = Object.keys(weights);
+  const raw = keys.map(k => ({ key: k, exact: weights[k] * total }));
+  const floors = raw.map(r => ({ ...r, floor: Math.floor(r.exact), rem: r.exact - Math.floor(r.exact) }));
+  let used = floors.reduce((s, r) => s + r.floor, 0);
+  // Sort by largest remainder, hand out remaining slots
+  const sorted = [...floors].sort((a, b) => b.rem - a.rem);
+  let i = 0;
+  while (used < total) {
+    sorted[i % sorted.length].floor++;
+    used++;
+    i++;
+  }
+  const out = {};
+  floors.forEach(f => { out[f.key] = f.floor; });
+  return out;
+}
+
+// Spread `modes` evenly across `total` slots
+function buildEvenModePool(total) {
+  const modes = ['standard','hard','definitions','calculations'];
+  const dist = distributeByWeight({ standard: 0.25, hard: 0.25, definitions: 0.25, calculations: 0.25 }, total);
+  const pool = [];
+  modes.forEach(m => { for (let i = 0; i < dist[m]; i++) pool.push(m); });
+  return shuffle(pool);
+}
+
+// ─────────────────────────────────────────────
+// PLAN BUILDERS — one per quiz "shape"
+// ─────────────────────────────────────────────
+
+// Mini-SIE: FINRA-weighted JFs, mixed modes
+function planMiniSIE() {
+  const modePool = [
+    ...Array(3).fill('standard'),
+    ...Array(3).fill('hard'),
+    ...Array(3).fill('definitions'),
+    ...Array(3).fill('calculations')
+  ];
+  const jfSlots = [];
+  QUIZ_JF_DIST_MINI.forEach(({ jf, count }) => {
+    for (let i = 0; i < count; i++) jfSlots.push(jf);
+  });
+  const shuffledJF = shuffle(jfSlots);
+  const shuffledModes = shuffle(modePool);
+  return shuffledJF.map((jf, i) => {
+    const units = JF_UNITS[jf];
+    const unitNum = units[Math.floor(Math.random() * units.length)];
+    return {
+      jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+      unit: UNITS.find(u => u.num === unitNum),
+      mode: shuffledModes[i]
+    };
+  });
+}
+
+// Single-unit quiz: 12 questions, all from one unit, modes spread evenly
+function planUnitQuiz(unitNum) {
+  const unit = UNITS.find(u => u.num === unitNum);
+  // Determine which JF this unit primarily belongs to (for results display)
+  let jf = 'pr';
+  for (const [k, units] of Object.entries(JF_UNITS)) {
+    if (units.includes(unitNum)) { jf = k; break; }
+  }
+  const modePool = buildEvenModePool(12);
+  return modePool.map(mode => ({
+    jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+    unit, mode
+  }));
+}
+
+// Job-function quiz: 25 questions, sampled across the JF's units, modes spread evenly
+function planJFQuiz(jfKey) {
+  const units = JF_UNITS[jfKey];
+  const modePool = buildEvenModePool(25);
+  // Distribute 25 questions across this JF's units as evenly as possible
+  const perUnit = {};
+  units.forEach(u => perUnit[u] = 1 / units.length);
+  const unitCounts = distributeByWeight(perUnit, 25);
+  // Build unit slot array
+  const unitSlots = [];
+  units.forEach(u => {
+    for (let i = 0; i < unitCounts[u]; i++) unitSlots.push(u);
+  });
+  const shuffledUnits = shuffle(unitSlots);
+  return shuffledUnits.map((unitNum, i) => ({
+    jf: jfKey, jfName: JF_NAMES[jfKey], jfShort: JF_SHORT[jfKey],
+    unit: UNITS.find(u => u.num === unitNum),
+    mode: modePool[i]
+  }));
+}
+
+// Question-type quiz: 20 questions, all one mode, JFs distributed by FINRA weights
+function planTypeQuiz(modeKey) {
+  // 20 questions weighted by FINRA: 16/44/31/9 → 3/9/6/2 = 20
+  const jfCounts = distributeByWeight(FINRA_WEIGHTS, 20);
+  const slots = [];
+  Object.entries(jfCounts).forEach(([jf, count]) => {
+    for (let i = 0; i < count; i++) slots.push(jf);
+  });
+  const shuffledJF = shuffle(slots);
+  return shuffledJF.map(jf => {
+    const units = JF_UNITS[jf];
+    const unitNum = units[Math.floor(Math.random() * units.length)];
+    return {
+      jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+      unit: UNITS.find(u => u.num === unitNum),
+      mode: modeKey
+    };
+  });
+}
+
+// ─────────────────────────────────────────────
+// QUIZ REGISTRY — every launchable quiz lives here
+// ─────────────────────────────────────────────
+const QUIZ_REGISTRY = {
+  'mini-sie': {
+    id: 'mini-sie',
+    title: 'Mini-SIE',
+    tagLabel: 'Mini-SIE',
+    total: 12,
+    durationSec: 14 * 60,
+    planBuilder: () => planMiniSIE()
+  }
+};
+
+// Register unit quizzes
+UNITS.forEach(u => {
+  const id = `unit-${u.num}`;
+  QUIZ_REGISTRY[id] = {
+    id,
+    title: `Unit ${u.num}: ${u.name}`,
+    tagLabel: `Unit ${u.num}`,
+    total: 12,
+    durationSec: 14 * 60,
+    planBuilder: () => planUnitQuiz(u.num)
+  };
+});
+
+// Register JF quizzes
+Object.keys(JF_NAMES).forEach(jfKey => {
+  const id = `jf-${jfKey}`;
+  QUIZ_REGISTRY[id] = {
+    id,
+    title: JF_NAMES[jfKey],
+    tagLabel: JF_SHORT[jfKey],
+    total: 25,
+    durationSec: 30 * 60,
+    planBuilder: () => planJFQuiz(jfKey)
+  };
+});
+
+// Register question-type quizzes
+const TYPE_QUIZ_META = {
+  standard: { title: 'Standard Questions', sub: 'Clean concept-tests across all 12 units' },
+  hard: { title: 'Hard (EXCEPT / NOT)', sub: 'Hedge clauses, Roman numerals, multi-concept traps' },
+  definitions: { title: 'Definitions', sub: 'Term, rule, and concept identification' },
+  calculations: { title: 'Calculations', sub: 'Yields, NAV, breakeven, accrued interest, margin equity' }
+};
+Object.keys(TYPE_QUIZ_META).forEach(modeKey => {
+  const id = `type-${modeKey}`;
+  QUIZ_REGISTRY[id] = {
+    id,
+    title: TYPE_QUIZ_META[modeKey].title,
+    tagLabel: modeKey.toUpperCase(),
+    total: 20,
+    durationSec: 24 * 60,
+    planBuilder: () => planTypeQuiz(modeKey)
+  };
+});
+
+// ─────────────────────────────────────────────
+// QUIZ LAUNCHER (config-driven)
+// ─────────────────────────────────────────────
+function launchQuiz(quizId) {
+  const config = QUIZ_REGISTRY[quizId];
+  if (!config) {
+    showErr('quiz-err', `Unknown quiz: ${quizId}`);
+    return;
+  }
+  startQuiz(config);
+}
+
+async function startQuiz(config) {
+  if (!config) config = QUIZ_REGISTRY['mini-sie']; // fallback
+  if (!apiKey) {
+    document.getElementById('api-prompt').classList.add('vis');
+    showErr('quiz-err', 'Please enter your Anthropic API key first (see top of page).');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  showErr('quiz-err', '');
+
+  quizConfig = config;
+  quizActive = true;
+  quizQuestions = [];
+  quizAnswers = [];
+  quizIdx = 0;
+  quizSecsLeft = config.durationSec;
+
+  if (pomoRunning) { clearInterval(pomoInterval); pomoRunning = false; }
+  pomoUpdateDisplay();
+
+  document.getElementById('setup').style.display = 'none';
+  document.getElementById('ticker-bar').style.display = 'none';
+  document.getElementById('qarea').classList.add('vis');
+
+  document.getElementById('qcontent').style.display = 'none';
+  document.getElementById('loading').classList.remove('vis');
+  document.getElementById('drill-act-row').style.display = 'none';
+  document.getElementById('quiz-act-row').style.display = '';
+  document.getElementById('expl').classList.remove('vis');
+  document.getElementById('fu-area').classList.remove('vis');
+  document.getElementById('quiz-prog-bar').style.display = 'block';
+  document.getElementById('quiz-timer').classList.add('vis');
+  document.getElementById('pomo-live').className = 'pomo-live';
+  document.getElementById('pomo-live').textContent = '';
+  document.getElementById('session-score-live').style.display = 'none';
+
+  // Update init screen text to match config
+  const initTitle = document.querySelector('.quiz-init-title');
+  const initSub = document.querySelector('.quiz-init-sub');
+  if (initTitle) initTitle.textContent = `Building your ${config.title}`;
+  if (initSub) initSub.textContent = `Generating ${config.total} questions`;
+
+  const init = document.getElementById('quiz-init');
+  init.classList.add('vis');
+  document.getElementById('q-tag').textContent = config.tagLabel;
+  document.getElementById('q-num').textContent = 'Loading...';
+  document.getElementById('q-mode').textContent = `${config.total} Q · ${Math.round(config.durationSec / 60)} MIN`;
+  updateQuizTimerDisplay();
+  updateQuizProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const plan = config.planBuilder();
+
+  const CONCURRENCY = 3;
+  let ready = 0;
+  const updateProgress = () => {
+    document.getElementById('quiz-init-prog').textContent = `${ready} / ${config.total} ready`;
+    document.getElementById('quiz-init-prog-fill').style.width = (ready / config.total * 100) + '%';
+  };
+  updateProgress();
+
+  const recentTopics = [];
+  const results = new Array(plan.length);
+
+  async function worker(i) {
+    const slot = plan[i];
+    try {
+      const q = await callGenQuestion(slot.unit, slot.mode, { recentTopics: recentTopics.slice(-6) });
+      q.jf = slot.jf;
+      q.jfName = slot.jfName;
+      q.jfShort = slot.jfShort;
+      q.unitNum = slot.unit.num;
+      q.unitName = slot.unit.name;
+      q.mode = slot.mode;
+      results[i] = q;
+      if (q.topic) recentTopics.push(q.topic);
+    } catch (err) {
+      try {
+        await new Promise(r => setTimeout(r, 800));
+        const q2 = await callGenQuestion(slot.unit, slot.mode, { recentTopics: recentTopics.slice(-6) });
+        q2.jf = slot.jf; q2.jfName = slot.jfName; q2.jfShort = slot.jfShort;
+        q2.unitNum = slot.unit.num; q2.unitName = slot.unit.name; q2.mode = slot.mode;
+        results[i] = q2;
+        if (q2.topic) recentTopics.push(q2.topic);
+      } catch (err2) {
+        results[i] = { _failed: true, _error: err2.message, slot };
+      }
+    }
+    ready++;
+    updateProgress();
+  }
+
+  const queue = plan.map((_, i) => i);
+  const active = [];
+  while (queue.length || active.length) {
+    while (active.length < CONCURRENCY && queue.length) {
+      const i = queue.shift();
+      const p = worker(i).finally(() => {
+        const idx = active.indexOf(p);
+        if (idx >= 0) active.splice(idx, 1);
+      });
+      active.push(p);
+    }
+    if (active.length) await Promise.race(active);
+  }
+
+  const failed = results.filter(r => r._failed);
+  if (failed.length > 0) {
+    init.classList.remove('vis');
+    showErr('q-err', `Failed to generate ${failed.length} question${failed.length > 1 ? 's' : ''}. Please check your API key and try again. (${failed[0]._error})`);
+    return;
+  }
+
+  quizQuestions = results;
+  quizAnswers = new Array(config.total).fill(null);
+
+  init.classList.remove('vis');
+  quizStartTime = Date.now();
+  startQuizTimer();
+  renderQuizQuestion(0);
+}
+
+function startQuizTimer() {
+  clearInterval(quizTimerInterval);
+  quizTimerInterval = setInterval(() => {
+    quizSecsLeft--;
+    updateQuizTimerDisplay();
+    if (quizSecsLeft <= 0) {
+      clearInterval(quizTimerInterval);
+      submitQuiz(true); // auto-submit
+    }
+  }, 1000);
+}
+
+function updateQuizTimerDisplay() {
+  const el = document.getElementById('quiz-timer');
+  const val = document.getElementById('quiz-timer-val');
+  if (!el || !val) return;
+  const s = Math.max(0, quizSecsLeft);
+  val.textContent = pomoFmt(s);
+  // Color tiers: green/gold default, yellow under 3 min, red under 1 min
+  let tier = 'ok';
+  if (s <= 60) tier = 'critical';
+  else if (s <= 180) tier = 'warn';
+  el.className = `quiz-timer vis ${tier}`;
+  document.title = `${pomoFmt(s)} · ${quizConfig ? quizConfig.tagLabel : 'Quiz'}`;
+}
+
+function updateQuizProgress() {
+  const fill = document.getElementById('quiz-prog-fill');
+  const pct = (quizIdx / (quizConfig ? quizConfig.total : 12)) * 100;
+  if (fill) fill.style.width = pct + '%';
+}
+
+function renderQuizQuestion(i) {
+  const q = quizQuestions[i];
+  if (!q) return;
+
+  document.getElementById('q-tag').textContent = q.jfShort;
+  document.getElementById('q-num').textContent = `Question ${i + 1} of ${quizConfig.total}`;
+  document.getElementById('q-mode').textContent = q.mode.toUpperCase();
+  document.getElementById('qcontent').style.display = 'block';
+  document.getElementById('qcontent').classList.add('fi');
+
+  document.getElementById('qtext').textContent = q.question;
+  const previousAnswer = quizAnswers[i];
+  document.getElementById('opts').innerHTML = ['A', 'B', 'C', 'D'].map(l =>
+    `<button class="opt ${previousAnswer === l ? 'picked' : ''}" onclick="quizPick('${l}')" id="o-${l}">
+      <span class="opt-l">${l}.</span><span class="opt-t">${q.options[l]}</span>
+    </button>`
+  ).join('');
+
+  // Hide drill-only feedback elements
+  document.getElementById('expl').classList.remove('vis');
+  document.getElementById('fu-area').classList.remove('vis');
+
+  // Quiz next/submit button label
+  const nextBtn = document.getElementById('quiz-next-btn');
+  nextBtn.textContent = (i === quizConfig.total - 1) ? 'Submit quiz' : 'Next →';
+  nextBtn.disabled = false;
+
+  updateQuizProgress();
+  // Scroll to top of question area on each question
+  setTimeout(() => {
+    document.getElementById('qarea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 50);
+}
+
+function quizPick(letter) {
+  if (!quizActive) return;
+  quizAnswers[quizIdx] = letter;
+  // Visually mark selection
+  ['A','B','C','D'].forEach(l => {
+    const b = document.getElementById(`o-${l}`);
+    if (b) b.classList.toggle('picked', l === letter);
+  });
+}
+
+function quizNext() {
+  if (!quizActive) return;
+  if (quizIdx >= quizConfig.total - 1) {
+    // On last question: submit (after confirm if any unanswered)
+    const unanswered = quizAnswers.filter(a => a === null).length;
+    if (unanswered > 0) {
+      if (!confirm(`You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Submit anyway?`)) return;
+    }
+    submitQuiz(false);
+    return;
+  }
+  quizIdx++;
+  renderQuizQuestion(quizIdx);
+}
+
+function exitQuiz() {
+  if (!confirm('Exit the quiz? Your progress will be lost.')) return;
+  clearInterval(quizTimerInterval);
+  quizActive = false;
+  document.title = 'SIE Study Tool';
+  // Return to setup
+  document.getElementById('qarea').classList.remove('vis');
+  document.getElementById('setup').style.display = 'block';
+  document.getElementById('ticker-bar').style.display = '';
+  document.getElementById('quiz-timer').classList.remove('vis');
+  document.getElementById('quiz-prog-bar').style.display = 'none';
+  document.getElementById('drill-act-row').style.display = '';
+  document.getElementById('quiz-act-row').style.display = 'none';
+  // Reset display elements
+  document.getElementById('q-tag').textContent = 'Unit 1';
+  document.getElementById('q-mode').textContent = 'STANDARD';
+}
+
+function submitQuiz(autoSubmitted) {
+  clearInterval(quizTimerInterval);
+  quizActive = false;
+  const timeUsed = quizConfig.durationSec - Math.max(0, quizSecsLeft);
+  document.title = 'SIE Study Tool';
+
+  // Score
+  let correct = 0;
+  const jfBreakdown = {}; // { jf: { correct, total } }
+  const modeBreakdown = {}; // { mode: { correct, total } }
+  const unitBreakdown = {}; // { unitNum: { correct, total, name } }
+
+  quizQuestions.forEach((q, i) => {
+    const chosen = quizAnswers[i];
+    const ok = chosen === q.correct;
+    if (ok) correct++;
+
+    // JF
+    if (!jfBreakdown[q.jf]) jfBreakdown[q.jf] = { correct: 0, total: 0 };
+    jfBreakdown[q.jf].total++;
+    if (ok) jfBreakdown[q.jf].correct++;
+
+    // Mode
+    if (!modeBreakdown[q.mode]) modeBreakdown[q.mode] = { correct: 0, total: 0 };
+    modeBreakdown[q.mode].total++;
+    if (ok) modeBreakdown[q.mode].correct++;
+
+    // Unit
+    if (!unitBreakdown[q.unitNum]) unitBreakdown[q.unitNum] = { correct: 0, total: 0, name: q.unitName };
+    unitBreakdown[q.unitNum].total++;
+    if (ok) unitBreakdown[q.unitNum].correct++;
+  });
+
+  const pct = Math.round(correct / quizConfig.total * 100);
+  const passed = pct >= QUIZ_PASS_PCT;
+
+  // Save to localStorage history
+  const entry = {
+    id: Date.now(),
+    type: 'quiz',
+    subtype: quizConfig.id,
+    quizTitle: quizConfig.title,
+    quizTagLabel: quizConfig.tagLabel,
+    status: 'complete',
+    date: new Date().toLocaleString(),
+    correct,
+    total: quizConfig.total,
+    pct,
+    passed,
+    timeUsed,
+    autoSubmitted,
+    jfBreakdown,
+    modeBreakdown,
+    unitBreakdown,
+    questions: quizQuestions.map((q, i) => ({
+      question: q.question,
+      options: q.options,
+      correct: q.correct,
+      chosen: quizAnswers[i],
+      ok: quizAnswers[i] === q.correct,
+      explanation: q.explanation,
+      jf: q.jf,
+      jfName: q.jfName,
+      jfShort: q.jfShort,
+      unitNum: q.unitNum,
+      unitName: q.unitName,
+      mode: q.mode
+    }))
+  };
+  try {
+    const hist = getHistory();
+    hist.unshift(entry);
+    if (hist.length > 50) hist.pop();
+    localStorage.setItem('sie_history', JSON.stringify(hist));
+  } catch(e) {}
+
+  renderQuizResults(entry, autoSubmitted);
+}
+
+// ═══════════════════════════════════════════════════
+// QUIZ RESULTS SCREEN
+// ═══════════════════════════════════════════════════
+let currentResults = null;
+let resultsFilter = 'all'; // 'all' | 'missed' | 'correct'
+
+function renderQuizResults(entry, autoSubmitted) {
+  currentResults = entry;
+  resultsFilter = 'all';
+
+  // Hide question area, show results
+  document.getElementById('qarea').classList.remove('vis');
+  document.getElementById('quiz-timer').classList.remove('vis');
+  document.getElementById('quiz-prog-bar').style.display = 'none';
+  document.getElementById('drill-act-row').style.display = '';
+  document.getElementById('quiz-act-row').style.display = 'none';
+
+  const root = document.getElementById('quiz-results');
+  root.classList.add('vis');
+
+  const timeUsedStr = pomoFmt(entry.timeUsed);
+  const totalTimeStr = pomoFmt(quizConfig ? quizConfig.durationSec : 14 * 60);
+  const titleLabel = entry.quizTitle || 'Mini-SIE';
+
+  // Decide which breakdown to show based on quiz type
+  // - mini-sie / type-* quizzes → JF breakdown (spans multiple JFs)
+  // - unit-* quizzes → mode breakdown (one unit, mixed modes)
+  // - jf-* quizzes → unit breakdown (one JF, multiple units)
+  let breakdownTitle = 'Job Function Breakdown';
+  let breakdownRows = '';
+  const sub = entry.subtype || '';
+
+  if (sub.startsWith('unit-')) {
+    breakdownTitle = 'Question Mode Breakdown';
+    const modes = ['standard','hard','definitions','calculations'];
+    const modeLabels = { standard:'Standard', hard:'Hard (EXCEPT/NOT)', definitions:'Definitions', calculations:'Calculations' };
+    breakdownRows = modes.map(m => {
+      const b = entry.modeBreakdown[m];
+      if (!b || b.total === 0) return '';
+      const p = Math.round(b.correct / b.total * 100);
+      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
+      return `
+        <div class="qr-jf-row">
+          <div>
+            <div class="qr-jf-tag">${m.toUpperCase()}</div>
+            <div class="qr-jf-name">${modeLabels[m]}</div>
+          </div>
+          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
+          <div class="qr-jf-pct ${cls}">${p}%</div>
+        </div>`;
+    }).join('');
+  } else if (sub.startsWith('jf-')) {
+    breakdownTitle = 'Unit Breakdown';
+    const sortedUnits = Object.keys(entry.unitBreakdown).map(Number).sort((a, b) => a - b);
+    breakdownRows = sortedUnits.map(u => {
+      const b = entry.unitBreakdown[u];
+      const p = Math.round(b.correct / b.total * 100);
+      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
+      return `
+        <div class="qr-jf-row">
+          <div>
+            <div class="qr-jf-tag">UNIT ${u}</div>
+            <div class="qr-jf-name">${b.name}</div>
+          </div>
+          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
+          <div class="qr-jf-pct ${cls}">${p}%</div>
+        </div>`;
+    }).join('');
+  } else {
+    // mini-sie or type-* → JF breakdown
+    const jfOrder = ['km','pr','tc','rf'];
+    breakdownRows = jfOrder.map(jf => {
+      const b = entry.jfBreakdown[jf];
+      if (!b || b.total === 0) return '';
+      const p = Math.round(b.correct / b.total * 100);
+      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
+      return `
+        <div class="qr-jf-row">
+          <div>
+            <div class="qr-jf-tag">${jf.toUpperCase()}</div>
+            <div class="qr-jf-name">${JF_NAMES[jf]}</div>
+          </div>
+          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
+          <div class="qr-jf-pct ${cls}">${p}%</div>
+        </div>`;
+    }).join('');
+  }
+
+  root.innerHTML = `
+    <div class="qr-banner ${entry.passed ? 'pass' : 'fail'}">
+      <div class="qr-verdict">${entry.passed ? '✓ Passed' : '✗ Did Not Pass'} · ${titleLabel}${autoSubmitted ? ' · Auto-submitted at time' : ''}</div>
+      <div class="qr-score">${entry.pct}%</div>
+      <div class="qr-score-frac">${entry.correct} of ${entry.total} correct · passing threshold ${QUIZ_PASS_PCT}%</div>
+      <div class="qr-time">Time used: <strong>${timeUsedStr}</strong> of ${totalTimeStr}</div>
+    </div>
+
+    <div class="qr-section-title">${breakdownTitle}</div>
+    <div class="qr-jf-table">
+      <div class="qr-jf-row hdr">
+        <div>Category</div>
+        <div>Score</div>
+        <div>%</div>
+      </div>
+      ${breakdownRows}
+    </div>
+
+    <div class="qr-section-title">Question Review</div>
+    <div class="qr-filter-row">
+      <div class="qr-filter-group">
+        <button class="qr-filter-btn active" id="qr-f-all" onclick="setResultsFilter('all')">All ${entry.total}</button>
+        <button class="qr-filter-btn" id="qr-f-missed" onclick="setResultsFilter('missed')">Missed only</button>
+        <button class="qr-filter-btn" id="qr-f-correct" onclick="setResultsFilter('correct')">Correct only</button>
+      </div>
+      <div class="qr-filter-count" id="qr-filter-count"></div>
+    </div>
+    <div class="qr-q-list" id="qr-q-list"></div>
+
+    <div class="qr-actions">
+      <button class="qr-btn qr-btn-primary" onclick="newQuiz()">Retake this quiz</button>
+      <button class="qr-btn qr-btn-ghost" onclick="resultsBackHome()">Back to home</button>
+    </div>
+  `;
+
+  renderResultsQList();
+
+  // Scroll to top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function setResultsFilter(filter) {
+  resultsFilter = filter;
+  ['all','missed','correct'].forEach(f => {
+    const b = document.getElementById(`qr-f-${f}`);
+    if (b) b.classList.toggle('active', f === filter);
+  });
+  renderResultsQList();
+}
+
+function renderResultsQList() {
+  if (!currentResults) return;
+  const list = document.getElementById('qr-q-list');
+  const cntEl = document.getElementById('qr-filter-count');
+  if (!list) return;
+
+  const qs = currentResults.questions
+    .map((q, idx) => ({ ...q, _origIdx: idx }))
+    .filter(q => {
+      if (resultsFilter === 'missed') return !q.ok;
+      if (resultsFilter === 'correct') return q.ok;
+      return true;
+    });
+
+  if (cntEl) cntEl.textContent = `${qs.length} of ${currentResults.total} shown`;
+
+  if (qs.length === 0) {
+    list.innerHTML = `<div style="text-align:center;padding:2rem 1rem;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.04em">No questions match this filter.</div>`;
+    return;
+  }
+
+  list.innerHTML = qs.map(q => {
+    const isSkipped = q.chosen === null;
+    const cardClass = isSkipped ? 'skipped' : (q.ok ? '' : 'wrong');
+    const markClass = isSkipped ? 'sk' : (q.ok ? 'ok' : 'no');
+    const markText = isSkipped ? '— SKIPPED' : (q.ok ? '✓ CORRECT' : '✗ INCORRECT');
+    const correctLetter = q.correct;
+    const correctText = q.options[q.correct];
+    let answerLine;
+    if (isSkipped) {
+      answerLine = `<div class="qr-q-ans">No answer · Correct: <span class="right-ans">${correctLetter}. ${correctText}</span></div>`;
+    } else if (q.ok) {
+      answerLine = `<div class="qr-q-ans">Your answer: <span class="right-ans">${q.chosen}. ${q.options[q.chosen]}</span></div>`;
+    } else {
+      answerLine = `<div class="qr-q-ans">Your answer: <span class="your-ans-wrong">${q.chosen}. ${q.options[q.chosen]}</span></div>
+                    <div class="qr-q-ans">Correct: <span class="right-ans">${correctLetter}. ${correctText}</span></div>`;
+    }
+    return `
+      <div class="qr-q-card ${cardClass}">
+        <div class="qr-q-head">
+          <span class="qr-q-num">Q${q._origIdx + 1}</span>
+          <span class="qr-q-mark ${markClass}">${markText}</span>
+          <span class="qr-q-jf">${q.jfShort} · ${q.mode}</span>
+        </div>
+        <div class="qr-q-text">${escapeHtml(q.question)}</div>
+        ${answerLine}
+        <button class="qr-q-expand" onclick="toggleExpl(this)">▸ Show explanation</button>
+        <div class="qr-q-expl">${q.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>
+      </div>`;
+  }).join('');
+}
+
+function toggleExpl(btn) {
+  const expl = btn.nextElementSibling;
+  if (!expl) return;
+  const isOpen = expl.classList.toggle('vis');
+  btn.innerHTML = isOpen ? '▾ Hide explanation' : '▸ Show explanation';
+}
+
+function escapeHtml(s) {
+  return (s + '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
+function newQuiz() {
+  const lastConfig = quizConfig;
+  document.getElementById('quiz-results').classList.remove('vis');
+  document.getElementById('quiz-results').innerHTML = '';
+  currentResults = null;
+  // Re-launch the same quiz
+  startQuiz(lastConfig || QUIZ_REGISTRY['mini-sie']);
+}
+
+function resultsBackHome() {
+  document.getElementById('quiz-results').classList.remove('vis');
+  document.getElementById('quiz-results').innerHTML = '';
+  currentResults = null;
+  document.getElementById('setup').style.display = 'block';
+  document.getElementById('ticker-bar').style.display = '';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ═══════════════════════════════════════════════════
 // KEYBOARD SHORTCUTS
 // ═══════════════════════════════════════════════════
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+
+  if (quizActive) {
+    // Quiz keyboard: A/B/C/D pick, Enter/→ next
+    const key = e.key.toUpperCase();
+    if (['A','B','C','D'].includes(key)) {
+      quizPick(key);
+      return;
+    }
+    if (e.key === 'Enter' || e.key === 'ArrowRight') {
+      const nb = document.getElementById('quiz-next-btn');
+      if (nb && !nb.disabled) quizNext();
+      return;
+    }
+    if (e.key === 'ArrowLeft' && quizIdx > 0) {
+      quizIdx--;
+      renderQuizQuestion(quizIdx);
+      return;
+    }
+    return;
+  }
+
+  // Drill keyboard
   if (e.key === 'Enter' || e.key === 'ArrowRight') {
     const nb = document.getElementById('next-btn');
     if (nb.classList.contains('vis') && !nb.disabled) nextQ();
