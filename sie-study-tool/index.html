@@ -309,6 +309,7 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .qr-q-mark.no{color:var(--red)}
 .qr-q-mark.sk{color:var(--muted)}
 .qr-q-jf{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);background:rgba(191,87,0,.08);padding:2px 7px;border-radius:3px;border:1px solid rgba(191,87,0,.2);margin-left:auto}
+.qr-q-unscored{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:rgba(107,122,158,.08);padding:2px 7px;border-radius:3px;border:1px solid rgba(107,122,158,.2)}
 .qr-q-text{font-size:13.5px;line-height:1.6;color:var(--text);margin-bottom:.75rem;font-weight:500}
 .qr-q-ans{font-size:12.5px;color:var(--muted2);line-height:1.6;margin-bottom:.45rem}
 .qr-q-ans strong{color:var(--text);font-weight:600}
@@ -327,6 +328,52 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .qr-btn-ghost{background:transparent;color:var(--muted2);border-color:var(--border2)}
 .qr-btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
 
+/* ═══════════════════════════════════════════════════
+   PASS 3 — PRACTICE TEST STYLES
+   ═══════════════════════════════════════════════════ */
+
+/* Hero practice test card — slightly larger, more dramatic than Mini-SIE */
+.pt-hero{background:linear-gradient(180deg,var(--bg2) 0%,#0d1322 100%);border:1px solid rgba(191,87,0,.22);border-radius:10px;padding:1.85rem 1.75rem;margin-bottom:1.25rem;position:relative;overflow:hidden}
+.pt-hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold2) 50%,var(--gold) 100%)}
+.pt-hero::after{content:'85';position:absolute;top:-20px;right:-12px;font-family:'Playfair Display',serif;font-size:11rem;font-weight:700;font-style:italic;color:rgba(191,87,0,.04);line-height:1;pointer-events:none;letter-spacing:-.04em}
+.pt-hero-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem;display:inline-block;background:rgba(191,87,0,.1);padding:4px 10px;border-radius:3px;border:1px solid rgba(191,87,0,.25)}
+.pt-hero-hdr{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem;position:relative;z-index:1}
+.pt-hero-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;font-style:italic;color:var(--text);letter-spacing:-.015em;line-height:1.05}
+.pt-hero-stat{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:rgba(191,87,0,.12);padding:5px 11px;border-radius:4px;border:1px solid rgba(191,87,0,.3);white-space:nowrap;font-weight:500}
+.pt-hero-desc{font-size:13.5px;color:var(--muted2);line-height:1.7;margin-bottom:1.35rem;position:relative;z-index:1;max-width:640px}
+.pt-hero-desc strong{color:var(--text);font-weight:600}
+
+/* 4-cell FINRA distribution grid for practice test */
+.pt-dist{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.25rem;position:relative;z-index:1}
+.pt-dist-cell{background:var(--bg);padding:.85rem .6rem;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.pt-dist-pct{font-family:'DM Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--gold2);line-height:1}
+.pt-dist-q{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+.pt-dist-jf{font-size:10.5px;color:var(--muted2);margin-top:6px;line-height:1.25;letter-spacing:.01em;min-height:2.4em;display:flex;align-items:center;justify-content:center}
+
+/* Key facts row (105 min, 75 scored / 10 unscored, 70% pass) */
+.pt-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.35rem;position:relative;z-index:1}
+.pt-fact{background:var(--bg);border:1px solid var(--border);border-radius:5px;padding:.7rem .9rem;text-align:center}
+.pt-fact-val{font-family:'DM Mono',monospace;font-size:1.05rem;font-weight:700;color:var(--gold2);line-height:1.1}
+.pt-fact-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+
+.pt-launch-btn{display:block;width:100%;padding:1rem;background:var(--gold);border:none;border-radius:6px;font-family:'Instrument Sans',sans-serif;font-size:15px;font-weight:700;color:#09090a;cursor:pointer;letter-spacing:.04em;transition:all .2s;position:relative;z-index:1}
+.pt-launch-btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.pt-launch-btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+
+/* Streaming "X/85 ready" indicator that lives in the question header during the test */
+.pt-stream-badge{display:none;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg2);padding:3px 9px;border-radius:3px;border:1px solid var(--border);align-items:center;gap:5px;font-weight:500}
+.pt-stream-badge.vis{display:inline-flex}
+.pt-stream-badge.complete{color:var(--green);border-color:rgba(74,222,128,.25);background:rgba(74,222,128,.06)}
+.pt-stream-badge .pt-stream-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 1.4s ease infinite}
+.pt-stream-badge.complete .pt-stream-dot{background:var(--green);animation:none}
+
+/* Practice test results — extra row to show scored/unscored split */
+.pt-result-split{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.5rem}
+.pt-result-cell{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem}
+.pt-result-cell-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.45rem}
+.pt-result-cell-val{font-family:'DM Mono',monospace;font-size:1.15rem;font-weight:700;color:var(--text)}
+.pt-result-cell-sub{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);margin-top:3px;letter-spacing:.03em}
+
 @keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fi{from{opacity:0}to{opacity:1}}
 .fi{animation:fi .3s ease forwards}
@@ -341,6 +388,11 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
   .qr-score{font-size:2.75rem}
   .qr-jf-row{grid-template-columns:1fr auto;gap:.5rem}
   .qr-jf-score{display:none}
+  .pt-dist{grid-template-columns:repeat(2,1fr)}
+  .pt-dist-jf{min-height:auto}
+  .pt-facts{grid-template-columns:1fr}
+  .pt-hero::after{display:none}
+  .pt-result-split{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -525,15 +577,46 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
     <div class="quiz-card-grid" id="type-quiz-grid"></div>
   </div>
 
+  <!-- ══ SECTION: PRACTICE TEST (PASS 3) ══ -->
+  <div class="section-hdr"><span class="section-hdr-text">Practice Test</span></div>
+
+  <div class="pt-hero">
+    <span class="pt-hero-tag">Full-length simulation</span>
+    <div class="pt-hero-hdr">
+      <div class="pt-hero-title">SIE Practice Test</div>
+      <div class="pt-hero-stat">85 Q · 105 MIN</div>
+    </div>
+    <div class="pt-hero-desc">
+      The real thing: <strong>75 scored questions and 10 unscored — indistinguishable, mixed in randomly,</strong> exactly as FINRA structures the live SIE. FINRA's official 16/44/31/9% job-function distribution. 105-minute countdown, auto-submit at zero, pass at 70% (53 of 75 correct). Questions stream in as they're generated — you can start the moment Q1 is ready while the rest fills in behind you.
+    </div>
+
+    <div class="pt-dist">
+      <div class="pt-dist-cell"><div class="pt-dist-pct">16%</div><div class="pt-dist-q">14 Q</div><div class="pt-dist-jf">Capital<br/>Markets</div></div>
+      <div class="pt-dist-cell"><div class="pt-dist-pct">44%</div><div class="pt-dist-q">37 Q</div><div class="pt-dist-jf">Products<br/>&amp; Risks</div></div>
+      <div class="pt-dist-cell"><div class="pt-dist-pct">31%</div><div class="pt-dist-q">26 Q</div><div class="pt-dist-jf">Trading &amp;<br/>Accounts</div></div>
+      <div class="pt-dist-cell"><div class="pt-dist-pct">9%</div><div class="pt-dist-q">8 Q</div><div class="pt-dist-jf">Regulatory<br/>Framework</div></div>
+    </div>
+
+    <div class="pt-facts">
+      <div class="pt-fact"><div class="pt-fact-val">75 / 10</div><div class="pt-fact-label">Scored / Unscored</div></div>
+      <div class="pt-fact"><div class="pt-fact-val">70%</div><div class="pt-fact-label">Pass threshold</div></div>
+      <div class="pt-fact"><div class="pt-fact-val">105:00</div><div class="pt-fact-label">Time limit</div></div>
+    </div>
+
+    <div class="err" id="pt-err"></div>
+    <button class="pt-launch-btn" onclick="launchPracticeTest()">Begin Practice Test</button>
+  </div>
+
 </div><!-- /setup -->
 
-<!-- QUESTION AREA (shared by drill + quiz) -->
+<!-- QUESTION AREA (shared by drill + quiz + practice test) -->
 <div id="qarea">
   <div class="q-meta">
     <span class="q-tag" id="q-tag">Unit 1</span>
     <span class="q-num" id="q-num">Question 1</span>
     <span class="q-mode" id="q-mode">STANDARD</span>
     <span style="margin-left:auto;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap">
+      <span class="pt-stream-badge" id="pt-stream-badge"><span class="pt-stream-dot"></span><span id="pt-stream-text">0 / 85 ready</span></span>
       <span class="quiz-timer" id="quiz-timer"><span class="quiz-timer-label">TIME</span><span id="quiz-timer-val">14:00</span></span>
       <span class="pomo-live" id="pomo-live"></span>
       <span class="pomo-live" id="session-score-live" style="display:none"></span>
@@ -584,7 +667,7 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
   </div>
 </div>
 
-<!-- QUIZ RESULTS SCREEN (PASS 2) -->
+<!-- QUIZ / PRACTICE TEST RESULTS SCREEN -->
 <div id="quiz-results"></div>
 
 </div><!-- /wrap -->
@@ -654,22 +737,27 @@ let pomoIsWork = true;
 let pomoInterval = null;
 
 // ═══════════════════════════════════════════════════
-// QUIZ STATE (PASS 2)
+// QUIZ STATE (PASS 2 + PASS 3)
 // ═══════════════════════════════════════════════════
 let quizActive = false;
-let quizQuestions = [];       // generated questions [{...q, jfKey, jfName, unitNum, mode}, ...]
-let quizAnswers = [];         // user answers, parallel to quizQuestions; null = skipped
+let quizQuestions = [];
+let quizAnswers = [];
 let quizIdx = 0;
 let quizSecsLeft = 14 * 60;
 let quizTimerInterval = null;
 let quizStartTime = 0;
-let quizConfig = null;        // active quiz config (set by launchQuiz)
+let quizConfig = null;
 const QUIZ_PASS_PCT = 70;
 
-// FINRA Mini-SIE weight distribution (16/44/31/9%) — scaled to question counts in each config's planBuilder
+// PASS 3: streaming state
+let ptStreaming = false;
+let ptReadyCount = 0;
+let ptTotalCount = 0;
+let ptGenAbort = false;
+
+// FINRA Mini-SIE weight distribution (16/44/31/9%)
 const FINRA_WEIGHTS = { km: 0.16, pr: 0.44, tc: 0.31, rf: 0.09 };
 
-// Mini-SIE: 16/44/31/9% × 12 → 2/5/4/1 = 12
 const QUIZ_JF_DIST_MINI = [
   { jf: 'km', count: 2 },
   { jf: 'pr', count: 5 },
@@ -702,7 +790,6 @@ function switchQuizTab(pane) {
 }
 
 function renderQuizCards() {
-  // Unit cards
   const ug = document.getElementById('unit-quiz-grid');
   if (ug) {
     ug.innerHTML = UNITS.map(u => `
@@ -716,7 +803,6 @@ function renderQuizCards() {
       </button>`).join('');
   }
 
-  // JF cards
   const jg = document.getElementById('jf-quiz-grid');
   if (jg) {
     const jfDescs = {
@@ -736,7 +822,6 @@ function renderQuizCards() {
       </button>`).join('');
   }
 
-  // Type cards
   const tg = document.getElementById('type-quiz-grid');
   if (tg) {
     tg.innerHTML = Object.keys(TYPE_QUIZ_META).map(modeKey => {
@@ -1097,7 +1182,7 @@ async function genQ() {
   }
 }
 
-// Shared question generation — used by both drill and quiz
+// Shared question generation — used by drill, quiz, and practice test
 async function callGenQuestion(unit, pickedMode, opts = {}) {
   const modeprompts = {
     standard: 'Generate a standard SIE exam-style multiple choice question testing one key concept clearly.',
@@ -1420,7 +1505,7 @@ function showErr(id, msg) {
 
 // ═══════════════════════════════════════════════════
 // ═══════════════════════════════════════════════════
-// PASS 2 — TIMED QUIZZES (21 total: 1 Mini-SIE + 12 unit + 4 JF + 4 type)
+// PASS 2 — TIMED QUIZZES + PASS 3 — PRACTICE TEST
 // ═══════════════════════════════════════════════════
 // ═══════════════════════════════════════════════════
 
@@ -1433,14 +1518,11 @@ function shuffle(arr) {
   return a;
 }
 
-// Distribute `total` items across `weights` (object of key→pct).
-// Uses largest-remainder method so sum always equals `total`.
 function distributeByWeight(weights, total) {
   const keys = Object.keys(weights);
   const raw = keys.map(k => ({ key: k, exact: weights[k] * total }));
   const floors = raw.map(r => ({ ...r, floor: Math.floor(r.exact), rem: r.exact - Math.floor(r.exact) }));
   let used = floors.reduce((s, r) => s + r.floor, 0);
-  // Sort by largest remainder, hand out remaining slots
   const sorted = [...floors].sort((a, b) => b.rem - a.rem);
   let i = 0;
   while (used < total) {
@@ -1453,7 +1535,6 @@ function distributeByWeight(weights, total) {
   return out;
 }
 
-// Spread `modes` evenly across `total` slots
 function buildEvenModePool(total) {
   const modes = ['standard','hard','definitions','calculations'];
   const dist = distributeByWeight({ standard: 0.25, hard: 0.25, definitions: 0.25, calculations: 0.25 }, total);
@@ -1463,10 +1544,9 @@ function buildEvenModePool(total) {
 }
 
 // ─────────────────────────────────────────────
-// PLAN BUILDERS — one per quiz "shape"
+// PLAN BUILDERS
 // ─────────────────────────────────────────────
 
-// Mini-SIE: FINRA-weighted JFs, mixed modes
 function planMiniSIE() {
   const modePool = [
     ...Array(3).fill('standard'),
@@ -1491,10 +1571,8 @@ function planMiniSIE() {
   });
 }
 
-// Single-unit quiz: 12 questions, all from one unit, modes spread evenly
 function planUnitQuiz(unitNum) {
   const unit = UNITS.find(u => u.num === unitNum);
-  // Determine which JF this unit primarily belongs to (for results display)
   let jf = 'pr';
   for (const [k, units] of Object.entries(JF_UNITS)) {
     if (units.includes(unitNum)) { jf = k; break; }
@@ -1506,15 +1584,12 @@ function planUnitQuiz(unitNum) {
   }));
 }
 
-// Job-function quiz: 25 questions, sampled across the JF's units, modes spread evenly
 function planJFQuiz(jfKey) {
   const units = JF_UNITS[jfKey];
   const modePool = buildEvenModePool(25);
-  // Distribute 25 questions across this JF's units as evenly as possible
   const perUnit = {};
   units.forEach(u => perUnit[u] = 1 / units.length);
   const unitCounts = distributeByWeight(perUnit, 25);
-  // Build unit slot array
   const unitSlots = [];
   units.forEach(u => {
     for (let i = 0; i < unitCounts[u]; i++) unitSlots.push(u);
@@ -1527,9 +1602,7 @@ function planJFQuiz(jfKey) {
   }));
 }
 
-// Question-type quiz: 20 questions, all one mode, JFs distributed by FINRA weights
 function planTypeQuiz(modeKey) {
-  // 20 questions weighted by FINRA: 16/44/31/9 → 3/9/6/2 = 20
   const jfCounts = distributeByWeight(FINRA_WEIGHTS, 20);
   const slots = [];
   Object.entries(jfCounts).forEach(([jf, count]) => {
@@ -1547,8 +1620,35 @@ function planTypeQuiz(modeKey) {
   });
 }
 
+// ─── PASS 3: 85-question practice test ──────────────────
+// FINRA weights × 85 → distributeByWeight gives 14/37/26/8 = 85.
+// We then mark 10 random slots as `unscored: true` (still indistinguishable).
+function planPracticeTest() {
+  const jfCounts = distributeByWeight(FINRA_WEIGHTS, 85);
+  const modePool = buildEvenModePool(85);
+  const jfSlots = [];
+  Object.entries(jfCounts).forEach(([jf, count]) => {
+    for (let i = 0; i < count; i++) jfSlots.push(jf);
+  });
+  const shuffledJF = shuffle(jfSlots);
+  const plan = shuffledJF.map((jf, i) => {
+    const units = JF_UNITS[jf];
+    const unitNum = units[Math.floor(Math.random() * units.length)];
+    return {
+      jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+      unit: UNITS.find(u => u.num === unitNum),
+      mode: modePool[i],
+      unscored: false
+    };
+  });
+  // Randomly designate 10 slots as unscored
+  const unscoredIdx = shuffle([...Array(85).keys()]).slice(0, 10);
+  unscoredIdx.forEach(i => { plan[i].unscored = true; });
+  return plan;
+}
+
 // ─────────────────────────────────────────────
-// QUIZ REGISTRY — every launchable quiz lives here
+// QUIZ REGISTRY
 // ─────────────────────────────────────────────
 const QUIZ_REGISTRY = {
   'mini-sie': {
@@ -1558,10 +1658,21 @@ const QUIZ_REGISTRY = {
     total: 12,
     durationSec: 14 * 60,
     planBuilder: () => planMiniSIE()
+  },
+  'practice-test': {
+    id: 'practice-test',
+    title: 'SIE Practice Test',
+    tagLabel: 'Practice Test',
+    total: 85,
+    scoredTotal: 75,
+    unscoredTotal: 10,
+    durationSec: 105 * 60,
+    streaming: true,
+    concurrency: 5,
+    planBuilder: () => planPracticeTest()
   }
 };
 
-// Register unit quizzes
 UNITS.forEach(u => {
   const id = `unit-${u.num}`;
   QUIZ_REGISTRY[id] = {
@@ -1574,7 +1685,6 @@ UNITS.forEach(u => {
   };
 });
 
-// Register JF quizzes
 Object.keys(JF_NAMES).forEach(jfKey => {
   const id = `jf-${jfKey}`;
   QUIZ_REGISTRY[id] = {
@@ -1587,7 +1697,6 @@ Object.keys(JF_NAMES).forEach(jfKey => {
   };
 });
 
-// Register question-type quizzes
 const TYPE_QUIZ_META = {
   standard: { title: 'Standard Questions', sub: 'Clean concept-tests across all 12 units' },
   hard: { title: 'Hard (EXCEPT / NOT)', sub: 'Hedge clauses, Roman numerals, multi-concept traps' },
@@ -1607,7 +1716,7 @@ Object.keys(TYPE_QUIZ_META).forEach(modeKey => {
 });
 
 // ─────────────────────────────────────────────
-// QUIZ LAUNCHER (config-driven)
+// QUIZ LAUNCHER
 // ─────────────────────────────────────────────
 function launchQuiz(quizId) {
   const config = QUIZ_REGISTRY[quizId];
@@ -1618,567 +1727,672 @@ function launchQuiz(quizId) {
   startQuiz(config);
 }
 
-async function startQuiz(config) {
-  if (!config) config = QUIZ_REGISTRY['mini-sie']; // fallback
+function launchPracticeTest() {
   if (!apiKey) {
     document.getElementById('api-prompt').classList.add('vis');
-    showErr('quiz-err', 'Please enter your Anthropic API key first (see top of page).');
+    showErr('pt-err', 'Please enter your Anthropic API key first (see top of page).');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     return;
   }
-  showErr('quiz-err', '');
+  if (!confirm('Begin the 85-question practice test?\n\n• 105-minute countdown starts when the first question appears\n• Auto-submit when time runs out\n• Pass at 70% (53 of 75 scored questions correct)\n• 10 unscored questions are mixed in but don\'t count toward your score\n\nQuestions stream in as they\'re generated — you can start answering immediately.')) return;
+  showErr('pt-err', '');
+  startQuiz(QUIZ_REGISTRY['practice-test']);
+}
 
-  quizConfig = config;
+
+// ─────────────────────────────────────────────
+// QUIZ START — generates questions, with streaming support for practice test
+// ─────────────────────────────────────────────
+async function startQuiz(config) {
+  if (!apiKey) {
+    document.getElementById('api-prompt').classList.add('vis');
+    showErr('quiz-err', 'Please enter your Anthropic API key first.');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
   quizActive = true;
+  quizConfig = config;
   quizQuestions = [];
-  quizAnswers = [];
+  quizAnswers = new Array(config.total).fill(null);
   quizIdx = 0;
   quizSecsLeft = config.durationSec;
+  ptStreaming = !!config.streaming;
+  ptReadyCount = 0;
+  ptTotalCount = config.total;
+  ptGenAbort = false;
+  const concurrency = config.concurrency || 3;
 
-  if (pomoRunning) { clearInterval(pomoInterval); pomoRunning = false; }
-  pomoUpdateDisplay();
-
+  // Hide setup, show qarea
   document.getElementById('setup').style.display = 'none';
-  document.getElementById('ticker-bar').style.display = 'none';
   document.getElementById('qarea').classList.add('vis');
-
+  document.getElementById('ticker-bar').style.display = 'none';
   document.getElementById('qcontent').style.display = 'none';
   document.getElementById('loading').classList.remove('vis');
   document.getElementById('drill-act-row').style.display = 'none';
   document.getElementById('quiz-act-row').style.display = '';
+  document.getElementById('back-arrow').style.display = 'none';
   document.getElementById('expl').classList.remove('vis');
   document.getElementById('fu-area').classList.remove('vis');
+  document.getElementById('fu-resp').classList.remove('vis');
   document.getElementById('quiz-prog-bar').style.display = 'block';
-  document.getElementById('quiz-timer').classList.add('vis');
-  document.getElementById('pomo-live').className = 'pomo-live';
-  document.getElementById('pomo-live').textContent = '';
+  document.getElementById('q-tag').textContent = config.tagLabel;
+  document.getElementById('q-num').textContent = `Question 1 of ${config.total}`;
+  document.getElementById('q-mode').style.display = 'none';
+
+  // Hide pomo, show quiz timer
+  const pomoBar = document.querySelector('.pomo-bar');
+  if (pomoBar) pomoBar.style.display = 'none';
+  if (pomoRunning) { clearInterval(pomoInterval); pomoRunning = false; }
+  document.getElementById('pomo-live').classList.remove('vis');
   document.getElementById('session-score-live').style.display = 'none';
 
-  // Update init screen text to match config
-  const initTitle = document.querySelector('.quiz-init-title');
-  const initSub = document.querySelector('.quiz-init-sub');
-  if (initTitle) initTitle.textContent = `Building your ${config.title}`;
-  if (initSub) initSub.textContent = `Generating ${config.total} questions`;
-
+  // Init screen
   const init = document.getElementById('quiz-init');
   init.classList.add('vis');
-  document.getElementById('q-tag').textContent = config.tagLabel;
-  document.getElementById('q-num').textContent = 'Loading...';
-  document.getElementById('q-mode').textContent = `${config.total} Q · ${Math.round(config.durationSec / 60)} MIN`;
-  updateQuizTimerDisplay();
-  updateQuizProgress();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('quiz-init').querySelector('.quiz-init-title').textContent = `Building your ${config.title}`;
+  document.getElementById('quiz-init').querySelector('.quiz-init-sub').textContent = ptStreaming
+    ? `Generating ${config.total} questions — you'll start answering as soon as Q1 is ready`
+    : `Generating ${config.total} questions across all 4 job functions`;
+  document.getElementById('quiz-init-prog').textContent = `0 / ${config.total} ready`;
+  document.getElementById('quiz-init-prog-fill').style.width = '0%';
 
+  showErr('q-err', '');
+
+  // Build plan
   const plan = config.planBuilder();
 
-  const CONCURRENCY = 3;
-  let ready = 0;
-  const updateProgress = () => {
-    document.getElementById('quiz-init-prog').textContent = `${ready} / ${config.total} ready`;
-    document.getElementById('quiz-init-prog-fill').style.width = (ready / config.total * 100) + '%';
-  };
-  updateProgress();
+  // Initialize question slots
+  quizQuestions = plan.map((p, i) => ({
+    idx: i,
+    jf: p.jf, jfName: p.jfName, jfShort: p.jfShort,
+    unitNum: p.unit.num, unitName: p.unit.name,
+    mode: p.mode,
+    unscored: !!p.unscored,
+    _planUnit: p.unit,
+    _ready: false,
+    _failed: false,
+    question: null, options: null, correct: null, explanation: null
+  }));
 
-  const recentTopics = [];
-  const results = new Array(plan.length);
+  // Generator: pulls next un-generated slot
+  let nextSlot = 0;
+  let firstReadyResolved = false;
+  let firstReadyResolve = null;
+  const firstReady = new Promise(r => { firstReadyResolve = r; });
 
-  async function worker(i) {
-    const slot = plan[i];
-    try {
-      const q = await callGenQuestion(slot.unit, slot.mode, { recentTopics: recentTopics.slice(-6) });
-      q.jf = slot.jf;
-      q.jfName = slot.jfName;
-      q.jfShort = slot.jfShort;
-      q.unitNum = slot.unit.num;
-      q.unitName = slot.unit.name;
-      q.mode = slot.mode;
-      results[i] = q;
-      if (q.topic) recentTopics.push(q.topic);
-    } catch (err) {
+  async function worker() {
+    while (!ptGenAbort) {
+      const myIdx = nextSlot++;
+      if (myIdx >= plan.length) return;
+      const slot = quizQuestions[myIdx];
       try {
-        await new Promise(r => setTimeout(r, 800));
-        const q2 = await callGenQuestion(slot.unit, slot.mode, { recentTopics: recentTopics.slice(-6) });
-        q2.jf = slot.jf; q2.jfName = slot.jfName; q2.jfShort = slot.jfShort;
-        q2.unitNum = slot.unit.num; q2.unitName = slot.unit.name; q2.mode = slot.mode;
-        results[i] = q2;
-        if (q2.topic) recentTopics.push(q2.topic);
-      } catch (err2) {
-        results[i] = { _failed: true, _error: err2.message, slot };
+        const recentTopics = quizQuestions
+          .slice(Math.max(0, myIdx - 6), myIdx)
+          .filter(s => s._ready)
+          .map(s => s.question?.slice(0, 80));
+        const q = await callGenQuestion(slot._planUnit, slot.mode, { recentTopics });
+        slot.question = q.question;
+        slot.options = q.options;
+        slot.correct = q.correct;
+        slot.explanation = q.explanation;
+        slot._ready = true;
+        ptReadyCount++;
+
+        // Update init progress bar (if init still visible)
+        const progEl = document.getElementById('quiz-init-prog');
+        if (progEl) progEl.textContent = `${ptReadyCount} / ${config.total} ready`;
+        const fill = document.getElementById('quiz-init-prog-fill');
+        if (fill) fill.style.width = `${(ptReadyCount / config.total) * 100}%`;
+
+        // Update streaming badge (visible during the test)
+        if (ptStreaming) updateStreamBadge();
+
+        // If we're in streaming mode and Q1 just became ready, resolve so test can begin
+        if (ptStreaming && !firstReadyResolved && myIdx === 0) {
+          firstReadyResolved = true;
+          firstReadyResolve();
+        }
+        // If we're in streaming mode and the user is waiting on this specific question, re-render
+        if (ptStreaming && firstReadyResolved && myIdx === quizIdx) {
+          renderQuizQuestion(quizIdx);
+        }
+      } catch(err) {
+        slot._failed = true;
+        slot._err = err.message;
+        ptReadyCount++;
       }
     }
-    ready++;
-    updateProgress();
   }
 
-  const queue = plan.map((_, i) => i);
-  const active = [];
-  while (queue.length || active.length) {
-    while (active.length < CONCURRENCY && queue.length) {
-      const i = queue.shift();
-      const p = worker(i).finally(() => {
-        const idx = active.indexOf(p);
-        if (idx >= 0) active.splice(idx, 1);
-      });
-      active.push(p);
-    }
-    if (active.length) await Promise.race(active);
-  }
+  const workers = [];
+  for (let w = 0; w < concurrency; w++) workers.push(worker());
 
-  const failed = results.filter(r => r._failed);
-  if (failed.length > 0) {
+  if (ptStreaming) {
+    // Streaming mode: wait only for Q1
+    await firstReady;
     init.classList.remove('vis');
-    showErr('q-err', `Failed to generate ${failed.length} question${failed.length > 1 ? 's' : ''}. Please check your API key and try again. (${failed[0]._error})`);
-    return;
+    document.getElementById('qcontent').style.display = 'block';
+    document.getElementById('quiz-timer').classList.add('vis');
+    document.getElementById('pt-stream-badge').classList.add('vis');
+    updateStreamBadge();
+    quizStartTime = Date.now();
+    startQuizTimer();
+    renderQuizQuestion(0);
+    // Let remaining workers continue in background
+    Promise.all(workers).then(() => {
+      // All done — let badge show "complete"
+      updateStreamBadge();
+    });
+  } else {
+    // Non-streaming: wait for all
+    await Promise.all(workers);
+    const ready = quizQuestions.filter(q => q._ready);
+    if (ready.length === 0) {
+      init.classList.remove('vis');
+      document.getElementById('drill-act-row').style.display = '';
+      document.getElementById('quiz-act-row').style.display = 'none';
+      document.getElementById('back-arrow').style.display = '';
+      document.getElementById('back-arrow').textContent = '← Back to Home';
+      showErr('q-err', 'Could not generate questions. Check your API key and try again.');
+      quizActive = false;
+      const pomoBar2 = document.querySelector('.pomo-bar');
+      if (pomoBar2) pomoBar2.style.display = '';
+      return;
+    }
+    init.classList.remove('vis');
+    document.getElementById('qcontent').style.display = 'block';
+    document.getElementById('quiz-timer').classList.add('vis');
+    quizStartTime = Date.now();
+    startQuizTimer();
+    renderQuizQuestion(0);
   }
+}
 
-  quizQuestions = results;
-  quizAnswers = new Array(config.total).fill(null);
-
-  init.classList.remove('vis');
-  quizStartTime = Date.now();
-  startQuizTimer();
-  renderQuizQuestion(0);
+function updateStreamBadge() {
+  const badge = document.getElementById('pt-stream-badge');
+  const txt = document.getElementById('pt-stream-text');
+  if (!badge || !txt) return;
+  txt.textContent = `${ptReadyCount} / ${ptTotalCount} ready`;
+  if (ptReadyCount >= ptTotalCount) badge.classList.add('complete');
+  else badge.classList.remove('complete');
 }
 
 function startQuizTimer() {
   clearInterval(quizTimerInterval);
+  updateQuizTimerDisplay();
   quizTimerInterval = setInterval(() => {
     quizSecsLeft--;
-    updateQuizTimerDisplay();
     if (quizSecsLeft <= 0) {
       clearInterval(quizTimerInterval);
-      submitQuiz(true); // auto-submit
+      submitQuiz(true);
+      return;
     }
+    updateQuizTimerDisplay();
   }, 1000);
 }
 
 function updateQuizTimerDisplay() {
-  const el = document.getElementById('quiz-timer');
-  const val = document.getElementById('quiz-timer-val');
-  if (!el || !val) return;
-  const s = Math.max(0, quizSecsLeft);
-  val.textContent = pomoFmt(s);
-  // Color tiers: green/gold default, yellow under 3 min, red under 1 min
-  let tier = 'ok';
-  if (s <= 60) tier = 'critical';
-  else if (s <= 180) tier = 'warn';
-  el.className = `quiz-timer vis ${tier}`;
-  document.title = `${pomoFmt(s)} · ${quizConfig ? quizConfig.tagLabel : 'Quiz'}`;
+  const m = Math.floor(quizSecsLeft / 60);
+  const s = quizSecsLeft % 60;
+  const fmt = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  document.getElementById('quiz-timer-val').textContent = fmt;
+  document.title = `${fmt} · ${quizConfig.title}`;
+  const total = quizConfig.durationSec;
+  const t = document.getElementById('quiz-timer');
+  t.classList.remove('ok','warn','critical');
+  if (quizSecsLeft <= 60) t.classList.add('critical');
+  else if (quizSecsLeft <= total * 0.25) t.classList.add('warn');
+  else t.classList.add('ok');
 }
 
 function updateQuizProgress() {
-  const fill = document.getElementById('quiz-prog-fill');
-  const pct = (quizIdx / (quizConfig ? quizConfig.total : 12)) * 100;
-  if (fill) fill.style.width = pct + '%';
+  const answered = quizAnswers.filter(a => a !== null).length;
+  const pct = (answered / quizConfig.total) * 100;
+  document.getElementById('quiz-prog-fill').style.width = `${pct}%`;
 }
 
+// Renders the question at index i. Handles the streaming case where the slot isn't ready yet.
 function renderQuizQuestion(i) {
-  const q = quizQuestions[i];
-  if (!q) return;
+  quizIdx = i;
+  const slot = quizQuestions[i];
+  const cfg = quizConfig;
 
-  document.getElementById('q-tag').textContent = q.jfShort;
-  document.getElementById('q-num').textContent = `Question ${i + 1} of ${quizConfig.total}`;
-  document.getElementById('q-mode').textContent = q.mode.toUpperCase();
-  document.getElementById('qcontent').style.display = 'block';
-  document.getElementById('qcontent').classList.add('fi');
+  document.getElementById('q-tag').textContent = `${slot.jfShort} · U${slot.unitNum}`;
+  document.getElementById('q-num').textContent = `Question ${i + 1} of ${cfg.total}`;
 
-  document.getElementById('qtext').textContent = q.question;
-  const previousAnswer = quizAnswers[i];
-  document.getElementById('opts').innerHTML = ['A', 'B', 'C', 'D'].map(l =>
-    `<button class="opt ${previousAnswer === l ? 'picked' : ''}" onclick="quizPick('${l}')" id="o-${l}">
-      <span class="opt-l">${l}.</span><span class="opt-t">${q.options[l]}</span>
-    </button>`
-  ).join('');
+  // If question not yet generated, show a generating state and poll
+  if (!slot._ready && !slot._failed) {
+    document.getElementById('qtext').innerHTML = `<span style="color:var(--muted);font-family:'DM Mono',monospace;font-size:14px">Generating question ${i + 1}...</span>`;
+    document.getElementById('opts').innerHTML = `
+      <div style="text-align:center;padding:2rem 1rem">
+        <div class="loading-ring" style="margin:0 auto"></div>
+        <div class="loading-text" style="margin-top:.75rem">This one's still being prepared. It'll appear in a moment.</div>
+      </div>`;
+    document.getElementById('expl').classList.remove('vis');
+    document.getElementById('quiz-next-btn').disabled = true;
+    return;
+  }
 
-  // Hide drill-only feedback elements
+  if (slot._failed) {
+    document.getElementById('qtext').innerHTML = `<span style="color:var(--red);font-size:14px">⚠ This question couldn't be generated (${slot._err || 'unknown error'}). Move on — it won't count against you.</span>`;
+    document.getElementById('opts').innerHTML = '';
+    document.getElementById('expl').classList.remove('vis');
+    document.getElementById('quiz-next-btn').disabled = false;
+    document.getElementById('quiz-next-btn').textContent = i < cfg.total - 1 ? 'Skip →' : 'Submit quiz';
+    return;
+  }
+
+  document.getElementById('qtext').textContent = slot.question;
+  const chosen = quizAnswers[i];
+  document.getElementById('opts').innerHTML = ['A','B','C','D'].map(l => `
+    <button class="opt ${chosen === l ? 'picked' : ''}" onclick="quizPick('${l}')" id="o-${l}">
+      <span class="opt-l">${l}.</span><span class="opt-t">${slot.options[l]}</span>
+    </button>`).join('');
+
   document.getElementById('expl').classList.remove('vis');
-  document.getElementById('fu-area').classList.remove('vis');
-
-  // Quiz next/submit button label
-  const nextBtn = document.getElementById('quiz-next-btn');
-  nextBtn.textContent = (i === quizConfig.total - 1) ? 'Submit quiz' : 'Next →';
-  nextBtn.disabled = false;
-
+  const nb = document.getElementById('quiz-next-btn');
+  nb.disabled = false;
+  nb.textContent = i < cfg.total - 1 ? 'Next →' : 'Submit quiz';
   updateQuizProgress();
-  // Scroll to top of question area on each question
-  setTimeout(() => {
-    document.getElementById('qarea').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 50);
 }
 
 function quizPick(letter) {
   if (!quizActive) return;
   quizAnswers[quizIdx] = letter;
-  // Visually mark selection
   ['A','B','C','D'].forEach(l => {
     const b = document.getElementById(`o-${l}`);
     if (b) b.classList.toggle('picked', l === letter);
   });
+  updateQuizProgress();
 }
 
 function quizNext() {
-  if (!quizActive) return;
-  if (quizIdx >= quizConfig.total - 1) {
-    // On last question: submit (after confirm if any unanswered)
+  if (quizIdx < quizConfig.total - 1) {
+    renderQuizQuestion(quizIdx + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    submitQuiz(false);
+  }
+}
+
+function exitQuiz() {
+  if (!confirm('Exit this quiz? Your progress will be lost.')) return;
+  ptGenAbort = true;
+  quizActive = false;
+  clearInterval(quizTimerInterval);
+  document.title = 'SIE Study Tool';
+  document.getElementById('qarea').classList.remove('vis');
+  document.getElementById('setup').style.display = 'block';
+  document.getElementById('ticker-bar').style.display = '';
+  document.getElementById('drill-act-row').style.display = '';
+  document.getElementById('quiz-act-row').style.display = 'none';
+  document.getElementById('back-arrow').style.display = '';
+  document.getElementById('quiz-prog-bar').style.display = 'none';
+  document.getElementById('quiz-timer').classList.remove('vis');
+  document.getElementById('pt-stream-badge').classList.remove('vis');
+  document.getElementById('q-mode').style.display = '';
+  const pomoBar = document.querySelector('.pomo-bar');
+  if (pomoBar) pomoBar.style.display = '';
+}
+
+// ─────────────────────────────────────────────
+// QUIZ SUBMIT + RESULTS
+// ─────────────────────────────────────────────
+let currentResults = null;
+let resultsFilter = 'wrong'; // 'all' | 'wrong' | 'skipped' | 'correct'
+
+function submitQuiz(autoSubmitted) {
+  if (!autoSubmitted) {
     const unanswered = quizAnswers.filter(a => a === null).length;
     if (unanswered > 0) {
       if (!confirm(`You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Submit anyway?`)) return;
     }
-    submitQuiz(false);
-    return;
   }
-  quizIdx++;
-  renderQuizQuestion(quizIdx);
-}
-
-function exitQuiz() {
-  if (!confirm('Exit the quiz? Your progress will be lost.')) return;
-  clearInterval(quizTimerInterval);
   quizActive = false;
-  document.title = 'SIE Study Tool';
-  // Return to setup
-  document.getElementById('qarea').classList.remove('vis');
-  document.getElementById('setup').style.display = 'block';
-  document.getElementById('ticker-bar').style.display = '';
-  document.getElementById('quiz-timer').classList.remove('vis');
-  document.getElementById('quiz-prog-bar').style.display = 'none';
-  document.getElementById('drill-act-row').style.display = '';
-  document.getElementById('quiz-act-row').style.display = 'none';
-  // Reset display elements
-  document.getElementById('q-tag').textContent = 'Unit 1';
-  document.getElementById('q-mode').textContent = 'STANDARD';
-}
-
-function submitQuiz(autoSubmitted) {
+  ptGenAbort = true;
   clearInterval(quizTimerInterval);
-  quizActive = false;
-  const timeUsed = quizConfig.durationSec - Math.max(0, quizSecsLeft);
   document.title = 'SIE Study Tool';
 
-  // Score
-  let correct = 0;
-  const jfBreakdown = {}; // { jf: { correct, total } }
-  const modeBreakdown = {}; // { mode: { correct, total } }
-  const unitBreakdown = {}; // { unitNum: { correct, total, name } }
+  const cfg = quizConfig;
+  const isPracticeTest = cfg.id === 'practice-test';
 
-  quizQuestions.forEach((q, i) => {
+  // Build per-question records
+  const records = quizQuestions.map((slot, i) => {
     const chosen = quizAnswers[i];
-    const ok = chosen === q.correct;
-    if (ok) correct++;
-
-    // JF
-    if (!jfBreakdown[q.jf]) jfBreakdown[q.jf] = { correct: 0, total: 0 };
-    jfBreakdown[q.jf].total++;
-    if (ok) jfBreakdown[q.jf].correct++;
-
-    // Mode
-    if (!modeBreakdown[q.mode]) modeBreakdown[q.mode] = { correct: 0, total: 0 };
-    modeBreakdown[q.mode].total++;
-    if (ok) modeBreakdown[q.mode].correct++;
-
-    // Unit
-    if (!unitBreakdown[q.unitNum]) unitBreakdown[q.unitNum] = { correct: 0, total: 0, name: q.unitName };
-    unitBreakdown[q.unitNum].total++;
-    if (ok) unitBreakdown[q.unitNum].correct++;
+    const ok = slot._ready && chosen && chosen === slot.correct;
+    return {
+      idx: i,
+      question: slot.question,
+      options: slot.options,
+      correct: slot.correct,
+      chosen,
+      ok: !!ok,
+      explanation: slot.explanation,
+      jf: slot.jf, jfName: slot.jfName, jfShort: slot.jfShort,
+      unitNum: slot.unitNum, unitName: slot.unitName,
+      mode: slot.mode,
+      unscored: slot.unscored,
+      failed: slot._failed
+    };
   });
 
-  const pct = Math.round(correct / quizConfig.total * 100);
-  const passed = pct >= QUIZ_PASS_PCT;
+  // For practice test: score only scored questions (75 total)
+  // For other quizzes: score all questions
+  let scoredCorrect = 0, scoredTotal = 0;
+  let unscoredCorrect = 0, unscoredTotal = 0;
+  records.forEach(r => {
+    if (r.unscored) {
+      unscoredTotal++;
+      if (r.ok) unscoredCorrect++;
+    } else {
+      scoredTotal++;
+      if (r.ok) scoredCorrect++;
+    }
+  });
 
-  // Save to localStorage history
+  let correct, total, pct, passed;
+  if (isPracticeTest) {
+    correct = scoredCorrect;
+    total = scoredTotal; // 75
+    pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+    passed = correct >= 53; // 70% of 75
+  } else {
+    correct = records.filter(r => r.ok).length;
+    total = cfg.total;
+    pct = Math.round((correct / total) * 100);
+    passed = pct >= QUIZ_PASS_PCT;
+  }
+
+  const timeUsed = cfg.durationSec - quizSecsLeft;
+
+  // Build job-function breakdown (scored only for practice test)
+  const jfStats = {};
+  records.forEach(r => {
+    if (isPracticeTest && r.unscored) return;
+    if (!jfStats[r.jf]) jfStats[r.jf] = { name: r.jfName, short: r.jfShort, correct: 0, total: 0 };
+    jfStats[r.jf].total++;
+    if (r.ok) jfStats[r.jf].correct++;
+  });
+  const jfBreakdown = Object.entries(jfStats).map(([k, v]) => ({
+    key: k, name: v.name, short: v.short,
+    correct: v.correct, total: v.total,
+    pct: v.total > 0 ? Math.round((v.correct / v.total) * 100) : 0
+  })).sort((a, b) => b.pct - a.pct);
+
+  // Persist to history
   const entry = {
     id: Date.now(),
     type: 'quiz',
-    subtype: quizConfig.id,
-    quizTitle: quizConfig.title,
-    quizTagLabel: quizConfig.tagLabel,
+    subtype: cfg.id,
+    quizTitle: cfg.title,
+    quizTagLabel: cfg.tagLabel,
     status: 'complete',
     date: new Date().toLocaleString(),
-    correct,
-    total: quizConfig.total,
-    pct,
-    passed,
+    correct, total, pct, passed,
     timeUsed,
     autoSubmitted,
     jfBreakdown,
-    modeBreakdown,
-    unitBreakdown,
-    questions: quizQuestions.map((q, i) => ({
-      question: q.question,
-      options: q.options,
-      correct: q.correct,
-      chosen: quizAnswers[i],
-      ok: quizAnswers[i] === q.correct,
-      explanation: q.explanation,
-      jf: q.jf,
-      jfName: q.jfName,
-      jfShort: q.jfShort,
-      unitNum: q.unitNum,
-      unitName: q.unitName,
-      mode: q.mode
-    }))
+    questions: records
   };
-  try {
-    const hist = getHistory();
-    hist.unshift(entry);
-    if (hist.length > 50) hist.pop();
-    localStorage.setItem('sie_history', JSON.stringify(hist));
-  } catch(e) {}
+  if (isPracticeTest) {
+    entry.scoredCorrect = scoredCorrect;
+    entry.scoredTotal = scoredTotal;
+    entry.unscoredCorrect = unscoredCorrect;
+    entry.unscoredTotal = unscoredTotal;
+  }
 
+  const hist = getHistory();
+  hist.unshift(entry);
+  if (hist.length > 50) hist.pop();
+  localStorage.setItem('sie_history', JSON.stringify(hist));
+
+  currentResults = entry;
+  resultsFilter = entry.questions.some(q => !q.ok) ? 'wrong' : 'all';
   renderQuizResults(entry, autoSubmitted);
 }
 
-// ═══════════════════════════════════════════════════
-// QUIZ RESULTS SCREEN
-// ═══════════════════════════════════════════════════
-let currentResults = null;
-let resultsFilter = 'all'; // 'all' | 'missed' | 'correct'
-
 function renderQuizResults(entry, autoSubmitted) {
-  currentResults = entry;
-  resultsFilter = 'all';
+  const isPracticeTest = entry.subtype === 'practice-test';
 
-  // Hide question area, show results
   document.getElementById('qarea').classList.remove('vis');
-  document.getElementById('quiz-timer').classList.remove('vis');
   document.getElementById('quiz-prog-bar').style.display = 'none';
-  document.getElementById('drill-act-row').style.display = '';
-  document.getElementById('quiz-act-row').style.display = 'none';
+  document.getElementById('quiz-timer').classList.remove('vis');
+  document.getElementById('pt-stream-badge').classList.remove('vis');
+  document.getElementById('q-mode').style.display = '';
+  const pomoBar = document.querySelector('.pomo-bar');
+  if (pomoBar) pomoBar.style.display = '';
 
   const root = document.getElementById('quiz-results');
   root.classList.add('vis');
 
-  const timeUsedStr = pomoFmt(entry.timeUsed);
-  const totalTimeStr = pomoFmt(quizConfig ? quizConfig.durationSec : 14 * 60);
-  const titleLabel = entry.quizTitle || 'Mini-SIE';
+  const minsUsed = Math.floor(entry.timeUsed / 60);
+  const secsUsed = entry.timeUsed % 60;
+  const timeStr = `${minsUsed}:${String(secsUsed).padStart(2,'0')}`;
 
-  // Decide which breakdown to show based on quiz type
-  // - mini-sie / type-* quizzes → JF breakdown (spans multiple JFs)
-  // - unit-* quizzes → mode breakdown (one unit, mixed modes)
-  // - jf-* quizzes → unit breakdown (one JF, multiple units)
-  let breakdownTitle = 'Job Function Breakdown';
-  let breakdownRows = '';
-  const sub = entry.subtype || '';
-
-  if (sub.startsWith('unit-')) {
-    breakdownTitle = 'Question Mode Breakdown';
-    const modes = ['standard','hard','definitions','calculations'];
-    const modeLabels = { standard:'Standard', hard:'Hard (EXCEPT/NOT)', definitions:'Definitions', calculations:'Calculations' };
-    breakdownRows = modes.map(m => {
-      const b = entry.modeBreakdown[m];
-      if (!b || b.total === 0) return '';
-      const p = Math.round(b.correct / b.total * 100);
-      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
-      return `
-        <div class="qr-jf-row">
-          <div>
-            <div class="qr-jf-tag">${m.toUpperCase()}</div>
-            <div class="qr-jf-name">${modeLabels[m]}</div>
-          </div>
-          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
-          <div class="qr-jf-pct ${cls}">${p}%</div>
-        </div>`;
-    }).join('');
-  } else if (sub.startsWith('jf-')) {
-    breakdownTitle = 'Unit Breakdown';
-    const sortedUnits = Object.keys(entry.unitBreakdown).map(Number).sort((a, b) => a - b);
-    breakdownRows = sortedUnits.map(u => {
-      const b = entry.unitBreakdown[u];
-      const p = Math.round(b.correct / b.total * 100);
-      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
-      return `
-        <div class="qr-jf-row">
-          <div>
-            <div class="qr-jf-tag">UNIT ${u}</div>
-            <div class="qr-jf-name">${b.name}</div>
-          </div>
-          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
-          <div class="qr-jf-pct ${cls}">${p}%</div>
-        </div>`;
-    }).join('');
-  } else {
-    // mini-sie or type-* → JF breakdown
-    const jfOrder = ['km','pr','tc','rf'];
-    breakdownRows = jfOrder.map(jf => {
-      const b = entry.jfBreakdown[jf];
-      if (!b || b.total === 0) return '';
-      const p = Math.round(b.correct / b.total * 100);
-      const cls = p >= 80 ? 'ok' : p >= 60 ? 'mid' : 'bad';
-      return `
-        <div class="qr-jf-row">
-          <div>
-            <div class="qr-jf-tag">${jf.toUpperCase()}</div>
-            <div class="qr-jf-name">${JF_NAMES[jf]}</div>
-          </div>
-          <div class="qr-jf-score">${b.correct} / ${b.total}</div>
-          <div class="qr-jf-pct ${cls}">${p}%</div>
-        </div>`;
-    }).join('');
+  let practiceTestSplit = '';
+  if (isPracticeTest) {
+    practiceTestSplit = `
+      <div class="pt-result-split">
+        <div class="pt-result-cell">
+          <div class="pt-result-cell-label">Scored (counted)</div>
+          <div class="pt-result-cell-val">${entry.scoredCorrect} / ${entry.scoredTotal}</div>
+          <div class="pt-result-cell-sub">${Math.round(entry.scoredCorrect / entry.scoredTotal * 100)}% — need 53 to pass (70%)</div>
+        </div>
+        <div class="pt-result-cell">
+          <div class="pt-result-cell-label">Unscored (didn't count)</div>
+          <div class="pt-result-cell-val">${entry.unscoredCorrect} / ${entry.unscoredTotal}</div>
+          <div class="pt-result-cell-sub">FYI only — same format as real SIE</div>
+        </div>
+      </div>`;
   }
 
-  root.innerHTML = `
+  // Banner
+  const bannerHTML = `
     <div class="qr-banner ${entry.passed ? 'pass' : 'fail'}">
-      <div class="qr-verdict">${entry.passed ? '✓ Passed' : '✗ Did Not Pass'} · ${titleLabel}${autoSubmitted ? ' · Auto-submitted at time' : ''}</div>
+      <div class="qr-verdict">${entry.passed ? '✓ Passed' : '✗ Did not pass'}${autoSubmitted ? ' · Auto-submitted at time' : ''}</div>
       <div class="qr-score">${entry.pct}%</div>
-      <div class="qr-score-frac">${entry.correct} of ${entry.total} correct · passing threshold ${QUIZ_PASS_PCT}%</div>
-      <div class="qr-time">Time used: <strong>${timeUsedStr}</strong> of ${totalTimeStr}</div>
-    </div>
+      <div class="qr-score-frac">${entry.correct} / ${entry.total} correct${isPracticeTest ? ' (scored)' : ''}</div>
+      <div class="qr-time">Time used: <strong>${timeStr}</strong> of ${Math.floor(quizConfig.durationSec / 60)}:00 · ${entry.quizTitle}</div>
+    </div>`;
 
-    <div class="qr-section-title">${breakdownTitle}</div>
-    <div class="qr-jf-table">
-      <div class="qr-jf-row hdr">
-        <div>Category</div>
-        <div>Score</div>
-        <div>%</div>
-      </div>
-      ${breakdownRows}
-    </div>
+  // JF breakdown
+  let jfHTML = '';
+  if (entry.jfBreakdown && entry.jfBreakdown.length > 0) {
+    jfHTML = `
+      <div class="qr-section-title">By job function${isPracticeTest ? ' (scored only)' : ''}</div>
+      <div class="qr-jf-table">
+        <div class="qr-jf-row hdr">
+          <div>Job function</div>
+          <div>Score</div>
+          <div>%</div>
+        </div>
+        ${entry.jfBreakdown.map(row => {
+          let cls = 'empty';
+          if (row.total > 0) {
+            if (row.pct >= 80) cls = 'ok';
+            else if (row.pct >= 60) cls = 'mid';
+            else cls = 'bad';
+          }
+          return `
+            <div class="qr-jf-row">
+              <div>
+                <div class="qr-jf-tag">${row.short}</div>
+                <div class="qr-jf-name">${row.name}</div>
+              </div>
+              <div class="qr-jf-score">${row.correct} / ${row.total}</div>
+              <div class="qr-jf-pct ${cls}">${row.pct}%</div>
+            </div>`;
+        }).join('')}
+      </div>`;
+  }
 
-    <div class="qr-section-title">Question Review</div>
+  // Filter row
+  const wrongCount = entry.questions.filter(q => q.chosen && !q.ok).length;
+  const skippedCount = entry.questions.filter(q => !q.chosen).length;
+  const correctCount = entry.questions.filter(q => q.ok).length;
+
+  const filterRow = `
     <div class="qr-filter-row">
       <div class="qr-filter-group">
-        <button class="qr-filter-btn active" id="qr-f-all" onclick="setResultsFilter('all')">All ${entry.total}</button>
-        <button class="qr-filter-btn" id="qr-f-missed" onclick="setResultsFilter('missed')">Missed only</button>
-        <button class="qr-filter-btn" id="qr-f-correct" onclick="setResultsFilter('correct')">Correct only</button>
+        <button class="qr-filter-btn" data-f="all" onclick="setResultsFilter('all')">All <span class="qr-filter-count">${entry.questions.length}</span></button>
+        <button class="qr-filter-btn" data-f="wrong" onclick="setResultsFilter('wrong')">Wrong <span class="qr-filter-count">${wrongCount}</span></button>
+        <button class="qr-filter-btn" data-f="skipped" onclick="setResultsFilter('skipped')">Skipped <span class="qr-filter-count">${skippedCount}</span></button>
+        <button class="qr-filter-btn" data-f="correct" onclick="setResultsFilter('correct')">Correct <span class="qr-filter-count">${correctCount}</span></button>
       </div>
-      <div class="qr-filter-count" id="qr-filter-count"></div>
-    </div>
-    <div class="qr-q-list" id="qr-q-list"></div>
+    </div>`;
 
+  root.innerHTML = `
+    ${bannerHTML}
+    ${practiceTestSplit}
+    ${jfHTML}
+    <div class="qr-section-title">Review questions</div>
+    ${filterRow}
+    <div id="qr-q-list" class="qr-q-list"></div>
     <div class="qr-actions">
-      <button class="qr-btn qr-btn-primary" onclick="newQuiz()">Retake this quiz</button>
-      <button class="qr-btn qr-btn-ghost" onclick="resultsBackHome()">Back to home</button>
+      <button class="qr-btn qr-btn-primary" onclick="newQuiz()">${isPracticeTest ? 'Try another practice test' : 'Try another quiz'}</button>
+      <button class="qr-btn qr-btn-ghost" onclick="resultsBackHome()">← Back to home</button>
     </div>
   `;
 
+  document.querySelectorAll('.qr-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.f === resultsFilter);
+  });
   renderResultsQList();
-
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function setResultsFilter(filter) {
-  resultsFilter = filter;
-  ['all','missed','correct'].forEach(f => {
-    const b = document.getElementById(`qr-f-${f}`);
-    if (b) b.classList.toggle('active', f === filter);
+function setResultsFilter(f) {
+  resultsFilter = f;
+  document.querySelectorAll('.qr-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.f === f);
   });
   renderResultsQList();
 }
 
 function renderResultsQList() {
-  if (!currentResults) return;
+  const entry = currentResults;
+  if (!entry) return;
   const list = document.getElementById('qr-q-list');
-  const cntEl = document.getElementById('qr-filter-count');
   if (!list) return;
 
-  const qs = currentResults.questions
-    .map((q, idx) => ({ ...q, _origIdx: idx }))
-    .filter(q => {
-      if (resultsFilter === 'missed') return !q.ok;
-      if (resultsFilter === 'correct') return q.ok;
-      return true;
-    });
+  let filtered = entry.questions;
+  if (resultsFilter === 'wrong') filtered = filtered.filter(q => q.chosen && !q.ok);
+  else if (resultsFilter === 'skipped') filtered = filtered.filter(q => !q.chosen);
+  else if (resultsFilter === 'correct') filtered = filtered.filter(q => q.ok);
 
-  if (cntEl) cntEl.textContent = `${qs.length} of ${currentResults.total} shown`;
-
-  if (qs.length === 0) {
-    list.innerHTML = `<div style="text-align:center;padding:2rem 1rem;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.04em">No questions match this filter.</div>`;
+  if (filtered.length === 0) {
+    list.innerHTML = `<div style="text-align:center;padding:2rem;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.05em">No questions match this filter.</div>`;
     return;
   }
 
-  list.innerHTML = qs.map(q => {
-    const isSkipped = q.chosen === null;
-    const cardClass = isSkipped ? 'skipped' : (q.ok ? '' : 'wrong');
-    const markClass = isSkipped ? 'sk' : (q.ok ? 'ok' : 'no');
-    const markText = isSkipped ? '— SKIPPED' : (q.ok ? '✓ CORRECT' : '✗ INCORRECT');
-    const correctLetter = q.correct;
-    const correctText = q.options[q.correct];
-    let answerLine;
-    if (isSkipped) {
-      answerLine = `<div class="qr-q-ans">No answer · Correct: <span class="right-ans">${correctLetter}. ${correctText}</span></div>`;
+  list.innerHTML = filtered.map((q, fi) => {
+    const status = q.failed ? 'skipped' : (!q.chosen ? 'skipped' : (q.ok ? 'correct' : 'wrong'));
+    const cls = status === 'correct' ? '' : status === 'wrong' ? 'wrong' : 'skipped';
+    const mark = q.failed ? '⊘ FAILED' : (!q.chosen ? '— SKIPPED' : (q.ok ? '✓ CORRECT' : '✗ WRONG'));
+    const markCls = q.failed ? 'sk' : (!q.chosen ? 'sk' : (q.ok ? 'ok' : 'no'));
+
+    let ansHTML = '';
+    if (q.failed) {
+      ansHTML = `<div class="qr-q-ans" style="color:var(--red)">This question failed to generate during the quiz.</div>`;
+    } else if (!q.chosen) {
+      ansHTML = `<div class="qr-q-ans">You did not answer. Correct answer: <span class="right-ans">${q.correct}. ${escapeHtml(q.options[q.correct])}</span></div>`;
     } else if (q.ok) {
-      answerLine = `<div class="qr-q-ans">Your answer: <span class="right-ans">${q.chosen}. ${q.options[q.chosen]}</span></div>`;
+      ansHTML = `<div class="qr-q-ans">Your answer: <span class="right-ans">${q.chosen}. ${escapeHtml(q.options[q.chosen])}</span></div>`;
     } else {
-      answerLine = `<div class="qr-q-ans">Your answer: <span class="your-ans-wrong">${q.chosen}. ${q.options[q.chosen]}</span></div>
-                    <div class="qr-q-ans">Correct: <span class="right-ans">${correctLetter}. ${correctText}</span></div>`;
+      ansHTML = `
+        <div class="qr-q-ans">Your answer: <span class="your-ans-wrong">${q.chosen}. ${escapeHtml(q.options[q.chosen])}</span></div>
+        <div class="qr-q-ans">Correct answer: <span class="right-ans">${q.correct}. ${escapeHtml(q.options[q.correct])}</span></div>`;
     }
+
+    const explBlock = q.explanation ? `
+      <button class="qr-q-expand" onclick="toggleExpl(${q.idx})">
+        <span id="expl-toggle-${q.idx}">▸ Show explanation</span>
+      </button>
+      <div class="qr-q-expl" id="expl-${q.idx}">${q.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>` : '';
+
     return `
-      <div class="qr-q-card ${cardClass}">
+      <div class="qr-q-card ${cls}">
         <div class="qr-q-head">
-          <span class="qr-q-num">Q${q._origIdx + 1}</span>
-          <span class="qr-q-mark ${markClass}">${markText}</span>
-          <span class="qr-q-jf">${q.jfShort} · ${q.mode}</span>
+          <span class="qr-q-num">Q${q.idx + 1}</span>
+          <span class="qr-q-mark ${markCls}">${mark}</span>
+          ${q.unscored ? '<span class="qr-q-unscored">UNSCORED</span>' : ''}
+          <span class="qr-q-jf">${q.jfShort} · U${q.unitNum}</span>
         </div>
-        <div class="qr-q-text">${escapeHtml(q.question)}</div>
-        ${answerLine}
-        <button class="qr-q-expand" onclick="toggleExpl(this)">▸ Show explanation</button>
-        <div class="qr-q-expl">${q.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>
+        <div class="qr-q-text">${escapeHtml(q.question || '(question failed to generate)')}</div>
+        ${ansHTML}
+        ${explBlock}
       </div>`;
   }).join('');
 }
 
-function toggleExpl(btn) {
-  const expl = btn.nextElementSibling;
-  if (!expl) return;
-  const isOpen = expl.classList.toggle('vis');
-  btn.innerHTML = isOpen ? '▾ Hide explanation' : '▸ Show explanation';
+function toggleExpl(idx) {
+  const el = document.getElementById(`expl-${idx}`);
+  const t = document.getElementById(`expl-toggle-${idx}`);
+  if (!el) return;
+  el.classList.toggle('vis');
+  t.textContent = el.classList.contains('vis') ? '▾ Hide explanation' : '▸ Show explanation';
 }
 
 function escapeHtml(s) {
-  return (s + '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  if (!s) return '';
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
 function newQuiz() {
-  const lastConfig = quizConfig;
-  document.getElementById('quiz-results').classList.remove('vis');
-  document.getElementById('quiz-results').innerHTML = '';
-  currentResults = null;
-  // Re-launch the same quiz
-  startQuiz(lastConfig || QUIZ_REGISTRY['mini-sie']);
+  const root = document.getElementById('quiz-results');
+  root.classList.remove('vis');
+  root.innerHTML = '';
+  document.getElementById('setup').style.display = 'block';
+  document.getElementById('ticker-bar').style.display = '';
+  document.getElementById('drill-act-row').style.display = '';
+  document.getElementById('quiz-act-row').style.display = 'none';
+  document.getElementById('back-arrow').style.display = '';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function resultsBackHome() {
-  document.getElementById('quiz-results').classList.remove('vis');
-  document.getElementById('quiz-results').innerHTML = '';
-  currentResults = null;
-  document.getElementById('setup').style.display = 'block';
-  document.getElementById('ticker-bar').style.display = '';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  newQuiz();
 }
 
 // ═══════════════════════════════════════════════════
 // KEYBOARD SHORTCUTS
 // ═══════════════════════════════════════════════════
-document.addEventListener('keydown', e => {
-  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+document.addEventListener('keydown', (e) => {
+  const tag = (e.target.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea') return;
 
-  if (quizActive) {
-    // Quiz keyboard: A/B/C/D pick, Enter/→ next
-    const key = e.key.toUpperCase();
-    if (['A','B','C','D'].includes(key)) {
-      quizPick(key);
+  // Drill question page
+  if (document.getElementById('qarea').classList.contains('vis') && !quizActive) {
+    if (!answered && curQ) {
+      const k = e.key.toLowerCase();
+      if (['a','b','c','d'].includes(k)) { e.preventDefault(); answer(k.toUpperCase()); return; }
+    }
+    if (answered && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      const nb = document.getElementById('next-btn');
+      if (nb && !nb.disabled) nextQ();
       return;
     }
-    if (e.key === 'Enter' || e.key === 'ArrowRight') {
+  }
+
+  // Quiz / Practice test question page
+  if (quizActive) {
+    const k = e.key.toLowerCase();
+    if (['a','b','c','d'].includes(k)) {
+      const slot = quizQuestions[quizIdx];
+      if (slot && slot._ready) { e.preventDefault(); quizPick(k.toUpperCase()); }
+      return;
+    }
+    if (e.key === 'Enter') {
+      e.preventDefault();
       const nb = document.getElementById('quiz-next-btn');
       if (nb && !nb.disabled) quizNext();
       return;
     }
-    if (e.key === 'ArrowLeft' && quizIdx > 0) {
-      quizIdx--;
-      renderQuizQuestion(quizIdx);
-      return;
-    }
-    return;
-  }
-
-  // Drill keyboard
-  if (e.key === 'Enter' || e.key === 'ArrowRight') {
-    const nb = document.getElementById('next-btn');
-    if (nb.classList.contains('vis') && !nb.disabled) nextQ();
   }
 });
+
 </script>
 </body>
 </html>
