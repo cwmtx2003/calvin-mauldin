@@ -672,6 +672,8 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 
 </div><!-- /wrap -->
 
+<!-- Phase 1 source material — extracted Kaplan Manual + FINRA Outline -->
+<script src="sie_sources.js"></script>
 <script>
 // ═══════════════════════════════════════════════════
 // UNITS — Kaplan 3rd Ed. + FINRA Content Outline 2024
@@ -728,6 +730,87 @@ const JF_SHORT = {
   tc: 'Trading & Accounts',
   rf: 'Regulatory'
 };
+
+// ═══════════════════════════════════════════════════
+// SOURCE GROUNDING (Phase 2)
+// Uses window.SIE_SOURCES (loaded from sie_sources.js) to ground questions
+// in the actual Kaplan Manual + FINRA Outline text instead of relying only
+// on the curated topics string.
+// ═══════════════════════════════════════════════════
+
+// Feature flag — defaults ON when SIE_SOURCES is loaded; user can disable for A/B test.
+let groundingEnabled = (() => {
+  try {
+    const v = localStorage.getItem('sie_grounding_enabled');
+    if (v === 'off') return false;
+    return true;
+  } catch (e) { return true; }
+})();
+
+function setGroundingEnabled(on) {
+  groundingEnabled = !!on;
+  try { localStorage.setItem('sie_grounding_enabled', on ? 'on' : 'off'); } catch (e) {}
+}
+
+function isGroundingAvailable() {
+  return groundingEnabled && typeof window.SIE_SOURCES === 'object' && window.SIE_SOURCES !== null;
+}
+
+// Lesson picker — given a unit and a question mode, return one lesson object.
+// Strategy:
+//   - For 'calculations' mode: prefer lessons with hasCalculations=true.
+//   - For 'definitions' mode: prefer lessons with hasDefinitions=true (almost all).
+//   - Otherwise: pick uniformly at random across the unit's lessons.
+// Returns the lesson object, or null if SIE_SOURCES isn't loaded.
+function pickLessonForUnit(unitNum, mode) {
+  if (!isGroundingAvailable()) return null;
+  const unitEntry = window.SIE_SOURCES.manual[String(unitNum)];
+  if (!unitEntry || !unitEntry.lessons || unitEntry.lessons.length === 0) return null;
+  let pool = unitEntry.lessons;
+  if (mode === 'calculations') {
+    const calcOnly = pool.filter(L => L.hasCalculations);
+    if (calcOnly.length) pool = calcOnly;
+  } else if (mode === 'definitions') {
+    const defOnly = pool.filter(L => L.hasDefinitions);
+    if (defOnly.length) pool = defOnly;
+  }
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// JF-aware lesson picker — used by job-function quizzes. Picks from all lessons
+// across all units whose jobFunction tag matches `jfKey`. This is more accurate
+// than the unit-level JF_UNITS mapping because units 1, 7, 8, and 10 each split
+// their content across multiple job functions at the lesson level.
+function pickLessonForJF(jfKey, mode) {
+  if (!isGroundingAvailable()) return null;
+  const allLessons = [];
+  for (let u = 1; u <= 12; u++) {
+    const entry = window.SIE_SOURCES.manual[String(u)];
+    if (!entry) continue;
+    for (const L of entry.lessons) {
+      if (L.jobFunction === jfKey) allLessons.push(L);
+    }
+  }
+  if (allLessons.length === 0) return null;
+  let pool = allLessons;
+  if (mode === 'calculations') {
+    const calcOnly = pool.filter(L => L.hasCalculations);
+    if (calcOnly.length) pool = calcOnly;
+  } else if (mode === 'definitions') {
+    const defOnly = pool.filter(L => L.hasDefinitions);
+    if (defOnly.length) pool = defOnly;
+  }
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+// Trim helper — Outline is small enough to send whole; lessons can be big.
+// Most lessons stay under 35KB which is fine, but we cap at 60KB defensively
+// in case a future source update produces a giant chunk.
+function trimText(t, max = 60000) {
+  if (!t) return '';
+  if (t.length <= max) return t;
+  return t.slice(0, max) + '\n\n[...truncated for context length...]';
+}
 
 // Pomodoro state
 let pomoWorkMins = 25, pomoBreakMins = 5;
@@ -1196,7 +1279,24 @@ async function callGenQuestion(unit, pickedMode, opts = {}) {
   const recent = recentSource.join(', ');
   const avoid = recent ? `Do NOT repeat these recently tested topics: ${recent}.` : '';
 
-  const sys = `You are a FINRA SIE exam tutor using Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual, Class Notes, and the official FINRA SIE Content Outline (2024) as your sources. Generate exam-realistic multiple choice questions that mirror the actual SIE exam.
+  // ─── Phase 2: source grounding ───
+  // If SIE_SOURCES is loaded and grounding is enabled, include the FINRA Outline
+  // and the lesson text the question should be drawn from. The caller may pass
+  // opts.lesson to override the picker (useful when the quiz planner already
+  // chose a specific lesson for this slot).
+  let lesson = opts.lesson || pickLessonForUnit(unit.num, pickedMode);
+  let groundingBlock = '';
+  let outlineBlock = '';
+  let sourcesClaim = `Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual and the official FINRA SIE Content Outline (2024)`;
+  if (isGroundingAvailable() && lesson) {
+    outlineBlock = `\n\nFINRA SIE CONTENT OUTLINE (official, full document):\n${window.SIE_SOURCES.outline.full}`;
+    groundingBlock = `\n\nKAPLAN SIE MANUAL — Lesson ${lesson.unit}.${lesson.lesson}: ${lesson.title}\n(This is the authoritative source. Draw the question's content from this lesson.)\n\n${trimText(lesson.text)}`;
+  } else {
+    // Fall back to topics-only mode
+    sourcesClaim = `Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual and the official FINRA SIE Content Outline (2024)`;
+  }
+
+  const sys = `You are a FINRA SIE exam tutor using ${sourcesClaim} as your sources. Generate exam-realistic multiple choice questions that mirror the actual SIE exam.
 
 RULES:
 1. Base ALL content strictly on the provided Kaplan/FINRA material. Do not invent content not covered.
@@ -1208,7 +1308,7 @@ RULES:
 Respond ONLY with valid JSON — no markdown fences, no extra text:
 {"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect."}`;
 
-  const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nKAPLAN + FINRA SOURCE MATERIAL:\n${unit.topics}`;
+  const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nCURATED TOPIC SUMMARY (use this for the unit's key facts and exam-tested points):\n${unit.topics}${outlineBlock}${groundingBlock}`;
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -1230,6 +1330,10 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
   const raw = d.content[0].text.trim();
   const m = raw.match(/\{[\s\S]*\}/);
   const q = JSON.parse(m ? m[0] : raw);
+  // Attach grounding info so the caller / log can record which lesson was used
+  if (lesson) {
+    q._lesson = { unit: lesson.unit, lesson: lesson.lesson, title: lesson.title };
+  }
   return q;
 }
 
@@ -1561,12 +1665,22 @@ function planMiniSIE() {
   const shuffledJF = shuffle(jfSlots);
   const shuffledModes = shuffle(modePool);
   return shuffledJF.map((jf, i) => {
+    const mode = shuffledModes[i];
+    if (isGroundingAvailable()) {
+      const lesson = pickLessonForJF(jf, mode);
+      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
+      return {
+        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+        unit: UNITS.find(u => u.num === unitNum),
+        mode, lesson
+      };
+    }
     const units = JF_UNITS[jf];
     const unitNum = units[Math.floor(Math.random() * units.length)];
     return {
       jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
       unit: UNITS.find(u => u.num === unitNum),
-      mode: shuffledModes[i]
+      mode
     };
   });
 }
@@ -1585,8 +1699,27 @@ function planUnitQuiz(unitNum) {
 }
 
 function planJFQuiz(jfKey) {
-  const units = JF_UNITS[jfKey];
   const modePool = buildEvenModePool(25);
+
+  // Phase 2: when grounding is available, pick lessons by their JF tag
+  // (more accurate than the unit-level JF_UNITS mapping). Each slot still
+  // gets a `unit` ref (for UI labels / drilldown), but the bound lesson
+  // determines what content the model actually sees.
+  if (isGroundingAvailable()) {
+    return modePool.map(mode => {
+      const lesson = pickLessonForJF(jfKey, mode);
+      const unitNum = lesson ? lesson.unit : JF_UNITS[jfKey][0];
+      return {
+        jf: jfKey, jfName: JF_NAMES[jfKey], jfShort: JF_SHORT[jfKey],
+        unit: UNITS.find(u => u.num === unitNum),
+        mode,
+        lesson
+      };
+    });
+  }
+
+  // Fallback (no grounding) — original behavior
+  const units = JF_UNITS[jfKey];
   const perUnit = {};
   units.forEach(u => perUnit[u] = 1 / units.length);
   const unitCounts = distributeByWeight(perUnit, 25);
@@ -1609,6 +1742,20 @@ function planTypeQuiz(modeKey) {
     for (let i = 0; i < count; i++) slots.push(jf);
   });
   const shuffledJF = shuffle(slots);
+
+  if (isGroundingAvailable()) {
+    return shuffledJF.map(jf => {
+      const lesson = pickLessonForJF(jf, modeKey);
+      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
+      return {
+        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+        unit: UNITS.find(u => u.num === unitNum),
+        mode: modeKey,
+        lesson
+      };
+    });
+  }
+
   return shuffledJF.map(jf => {
     const units = JF_UNITS[jf];
     const unitNum = units[Math.floor(Math.random() * units.length)];
@@ -1632,12 +1779,23 @@ function planPracticeTest() {
   });
   const shuffledJF = shuffle(jfSlots);
   const plan = shuffledJF.map((jf, i) => {
+    const mode = modePool[i];
+    if (isGroundingAvailable()) {
+      const lesson = pickLessonForJF(jf, mode);
+      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
+      return {
+        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
+        unit: UNITS.find(u => u.num === unitNum),
+        mode, lesson,
+        unscored: false
+      };
+    }
     const units = JF_UNITS[jf];
     const unitNum = units[Math.floor(Math.random() * units.length)];
     return {
       jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
       unit: UNITS.find(u => u.num === unitNum),
-      mode: modePool[i],
+      mode,
       unscored: false
     };
   });
@@ -1810,6 +1968,7 @@ async function startQuiz(config) {
     mode: p.mode,
     unscored: !!p.unscored,
     _planUnit: p.unit,
+    _planLesson: p.lesson || null,
     _ready: false,
     _failed: false,
     question: null, options: null, correct: null, explanation: null
@@ -1831,7 +1990,7 @@ async function startQuiz(config) {
           .slice(Math.max(0, myIdx - 6), myIdx)
           .filter(s => s._ready)
           .map(s => s.question?.slice(0, 80));
-        const q = await callGenQuestion(slot._planUnit, slot.mode, { recentTopics });
+        const q = await callGenQuestion(slot._planUnit, slot.mode, { recentTopics, lesson: slot._planLesson });
         slot.question = q.question;
         slot.options = q.options;
         slot.correct = q.correct;
