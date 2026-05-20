@@ -1,0 +1,246 @@
+{
+  "unit": 1,
+  "lesson": 3,
+  "lesson_title": "PLACING A TRADE oL",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Bull vs. Bear",
+      "back": "Bull: investor who believes a market or security will rise in value (bullish). Bear: investor who believes a market or security will fall in value (bearish). A short seller is bearish.",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Bid price (in a quote)",
+      "back": "The highest price someone is currently willing to pay for a security. It is the price a seller receives. Size is expressed in round lots (100 shares).",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Ask (Offer) price",
+      "back": "The lowest price at which someone is currently willing to sell a security. It is the price a buyer pays. Size is expressed in round lots (100 shares).",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "What is the 'inside quote' (inside market)?",
+      "back": "The highest available bid and the lowest available ask currently in the market for a security.",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "scenario",
+      "front": "BCO is quoted: bid 42 \u2013 ask 42.50, size 10 x 12. If a customer enters a market order to buy 500 shares, what price will the customer pay, and how many shares are available at that price?",
+      "back": "The customer buys at the ask = $42.50 per share. Up to 1,200 shares (12 round lots) are available at the ask. The 500-share order fills at $42.50.",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "scenario",
+      "front": "Three market makers quote MGS: GoldCoast 15.00\u201315.25 (15x20); Great Plains 15.20\u201315.27 (5x8); Seacoast 15.15\u201315.22 (10x12). What is the inside quote and size?",
+      "back": "Highest bid = 15.20 (Great Plains, size 5). Lowest ask = 15.22 (Seacoast, size 12). Inside quote: Bid 15.20 \u2013 Ask 15.22, size 5 x 12.",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "What is the spread, and how does a market maker profit from it?",
+      "back": "The spread is the difference between the bid and ask prices. A market maker buys at the bid and sells at the ask, profiting from the spread (markup/markdown).",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "How are bid and ask determined for exchange-listed stocks?",
+      "back": "The DMM maintains an order book of open limit orders. The highest buy limit sets the bid (and its size). The lowest sell limit sets the ask (and its size).",
+      "lo": "1.f",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Market order",
+      "back": "An order to buy or sell that is executed immediately at the best available market price. Market orders take precedence over limit orders and are filled first come, first served.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Limit order",
+      "back": "An order with a specified maximum buy price or minimum sell price. Buy limit: execute at the limit or lower. Sell limit: execute at the limit or higher. Risk: the order may never be filled (missing the market).",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "How does a stop order work?",
+      "back": "A stop order is not a live order \u2014 it is a trigger. When the stock trades at or through the stop price, the stop order becomes a market order and executes at the next available price. Stop orders have no time priority standing until triggered.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "How does a stop limit order differ from a stop order?",
+      "back": "Both are triggered when the stock trades at or through the stop price. A stop order then becomes a market order (guaranteed fill, not price). A stop limit order becomes a limit order (guaranteed price or better, not fill).",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "scenario",
+      "front": "BCO is trading at $12. A customer enters: Buy 2,000 BCO at 15 stop limit 16. Explain what happens.",
+      "back": "Once BCO trades at or through $15, the stop is triggered and the order becomes a buy limit order with a $16 limit. It will only execute at $16 or lower.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "scenario",
+      "front": "ABC trades at $63. Julia wants to buy only if the price falls to $58 or lower. Which order type should she use?",
+      "back": "A buy limit order at $58. Buy limits execute at the limit price or lower, matching her requirement.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Day order",
+      "back": "The default time restriction. Valid only until the close of trading on the day entered; any unexecuted portion is canceled at day's end.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Good-til-canceled (GTC) order",
+      "back": "Valid until executed or canceled. All open GTC orders are automatically canceled on the last business day of April and the last business day of October unless renewed.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish FOK, IOC, and AON orders.",
+      "back": "FOK (Fill-or-Kill): must be filled immediately and in full or canceled \u2014 no partials. IOC (Immediate-or-Cancel): fill immediately what you can; cancel the rest \u2014 partials allowed. AON (All-or-None): must be filled in full but not necessarily immediately; can be a day or GTC order. All three apply only to limit orders.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "Long position: buy/sell sequence, market view, and maximum loss?",
+      "back": "Buy to open, sell to close. Bullish (expects price to rise). Maximum loss = cost basis (if security becomes worthless).",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "Short position: buy/sell sequence, market view, and maximum loss?",
+      "back": "Sell to open (borrowed shares), buy to close (cover). Bearish (expects price to fall). Maximum loss is unlimited because the stock price has no upside ceiling.",
+      "lo": "1.g",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "Difference between a BD acting in agency vs. principal capacity?",
+      "back": "Agency (broker): trades on behalf of customers with another party; charges a commission. Principal (dealer/market maker): trades with the customer from its own inventory; profits on the spread (markup/markdown). A BD cannot act in both capacities on the same transaction.",
+      "lo": "1.h",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "What is regular way settlement for Treasury securities vs. corporate, municipal, and agency securities?",
+      "back": "Treasury securities (T-bills, T-notes, T-bonds): T+1. Corporate stocks/bonds, municipal debt, agency (GNMA), and GSE (FNMA, FHLMC) securities: T+2.",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer buys 100 shares of ABC common stock on Thursday, June 30. July 4 is a holiday. When is settlement?",
+      "back": "Corporate stock settles T+2. Friday July 1 = T+1; Saturday/Sunday don't count; Monday July 4 is a holiday; Tuesday July 5 = T+2 (settlement date).",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "What is cash (same-day) settlement?",
+      "back": "Settlement occurs on the trade date. Both buyer and seller must agree to cash settlement before the trade takes place. Not to be confused with a 'cash trade' (one without margin).",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "Settlement for option trades vs. exercises?",
+      "back": "Option trade: T+1. Exercise of an equity option: T+2 (stock and cash delivered). Exercise of an index option: T+1 cash payment of intrinsic value (no underlying to deliver).",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "qa",
+      "front": "What constitutes 'good delivery' of a physical stock certificate?",
+      "back": "The certificate must be endorsed (signed) by all owners listed on the face, with the signature matching the name exactly as it appears. A separate signed stock/bond power may be used instead and mailed separately for security.",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    },
+    {
+      "type": "definition",
+      "front": "Street name",
+      "back": "Securities held electronically by a BD on behalf of a customer. No physical certificate exists and no physical signature is required for good delivery.",
+      "lo": "1.i",
+      "unit": 1,
+      "lesson": 3,
+      "lesson_title": "PLACING A TRADE oL"
+    }
+  ],
+  "tokens": {
+    "input": 12378,
+    "output": 3144
+  },
+  "cost_usd": 0.4215
+}

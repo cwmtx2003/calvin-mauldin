@@ -1,0 +1,219 @@
+{
+  "unit": 2,
+  "lesson": 2,
+  "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Preferred stock",
+      "back": "An equity security representing ownership in a corporation that pays a fixed dividend (stated as a percentage of par or a dollar amount). Generally has no voting rights and no preemptive rights, but has dividend preference and priority over common stock at dissolution.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "A preferred stock has a par value of $100 and pays $6 in annual dividends. How is this stock identified, and what is the assumed par value of preferred stock unless stated otherwise?",
+      "back": "It is identified as a '6% preferred' ($6 / $100 par). Always assume the par value of preferred stock is $100 unless stated otherwise.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What two key rights do preferred shareholders generally NOT have?",
+      "back": "Preferred shareholders generally have no voting rights and no preemptive rights.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the two main benefits of owning preferred stock over common stock?",
+      "back": "1) Dividend preference \u2014 preferred dividends must be paid before common dividends. 2) Priority claim ahead of common stock on remaining assets if the company is liquidated (after creditors are paid).",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the primary risks of owning preferred stock?",
+      "back": "Purchasing power (inflation) risk, interest rate sensitivity (prices fall when rates rise), possible reduction/elimination of dividends, and at dissolution preferred is still paid behind all creditors.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Straight (noncumulative) preferred stock",
+      "back": "Preferred stock with no special features beyond the stated dividend. Missed dividends are NOT paid to the holder.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Cumulative preferred stock",
+      "back": "Preferred stock that accrues unpaid dividends (dividends in arrears) when payments are reduced or suspended. All accumulated and current dividends must be paid to cumulative preferred holders before any dividend may be paid to common shareholders.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "RST Corp issued $2 cumulative preferred stock. Dividends were suspended for 2017\u20132020 and resumed in 2021. How much must each cumulative preferred shareholder receive before common shareholders can be paid in 2021?",
+      "back": "$10 per share \u2014 $8 in arrears (4 years \u00d7 $2) plus the current $2 dividend for 2021.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Callable preferred stock",
+      "back": "Preferred stock that the issuer can buy back from investors at a stated price after a specified date. Allows the company to replace a high fixed dividend with a lower one when rates decline. Dividends cease on the call date; issuer often pays a premium above par at call.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Convertible preferred stock",
+      "back": "Preferred stock that may be exchanged by the owner for a fixed number of shares of the issuer's common stock. Typically carries a lower stated dividend than nonconvertible preferred of the same quality due to capital gain potential.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Adjustable-rate preferred stock",
+      "back": "Preferred stock whose dividend is tied to a benchmark (e.g., T-bills, money market rates) and adjusts periodically. Because the dividend adjusts to current rates, the stock's price remains relatively stable. Not ideal for investors seeking a fixed income.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Participating preferred stock",
+      "back": "Preferred stock that, in addition to its fixed dividend, may receive additional dividends out of corporate profits remaining after all other dividends and interest have been paid, up to a stated percentage.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "American Depositary Receipt (ADR)",
+      "back": "A U.S.-issued negotiable equity security representing ownership of foreign company shares held on deposit at a foreign branch of a U.S. bank. Trades in U.S. markets in U.S. dollars and pays dividends in U.S. dollars, simplifying foreign investing for U.S. investors.",
+      "lo": "2.e",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What risks remain for an ADR investor even though trading and dividends are in U.S. dollars?",
+      "back": "Currency risk (the underlying dividends and share value are tied to the foreign currency, which is converted to USD) and political risk if the issuer's home country is unstable.",
+      "lo": "2.e",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How are ADR dividends and capital gains taxed for a U.S. investor?",
+      "back": "Dividends may be subject to a withholding tax by the foreign country, which often can be claimed as a credit against U.S. tax liability. Capital gains from selling ADRs are taxable only in the United States.",
+      "lo": "2.e",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Does an ADR holder have the same voting rights as the underlying foreign common stockholder?",
+      "back": "No. ADR holders typically do not have the same voting rights. However, they may request the depositary bank cancel the ADR and deliver the underlying foreign shares.",
+      "lo": "2.e",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Restricted stock (Rule 144)",
+      "back": "Securities acquired through means other than a registered public offering (e.g., private placement). Carry a restrictive legend and may not be sold until held fully paid for six months.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Control stock / Control person (affiliate)",
+      "back": "Control persons are directors, officers, or persons (including aggregated family holdings) who own or control 10% or more of the issuer's voting stock. Stock they hold \u2014 even if registered \u2014 is considered control stock and subject to Rule 144 volume limits when sold.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Under Rule 144, what are the volume limits on a control person's sales over a 90-day period?",
+      "back": "The greater of: (1) 1% of the issuer's outstanding shares, or (2) the average weekly trading volume over the most recent four weeks. The control person must file Form 144 when selling.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Ron is a control person of a company with 2,400,000 outstanding shares. The most recent four-week trading volumes are 23,000, 25,000, 26,000, and 24,000 shares. Under Rule 144, how many shares may he sell in the next 90 days?",
+      "back": "24,500 shares. 1% of outstanding = 24,000. Four-week average = (23,000 + 25,000 + 26,000 + 24,000) / 4 = 24,500. The greater of the two is 24,500 shares.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Under Rule 144, which sales are subject to volume limitations?",
+      "back": "Sales by control persons (affiliates) are always subject to volume limits, whether the stock is registered or restricted. Nonaffiliates selling restricted stock held more than six months are NOT subject to volume limits.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Lori owns 8% of XYZ's voting stock and her husband Ron owns 4%. Are either or both considered control persons?",
+      "back": "Both are control persons. Immediate family member holdings are aggregated; together they hold 12%, exceeding the 10% threshold, so both are treated as affiliates/control persons.",
+      "lo": "2.f",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "RST Corp has $100 par 4% NONCUMULATIVE preferred stock paying quarterly dividends. Dividends were suspended after 2016 and resumed in 2021. Before paying any common dividend in 2021, what quarterly amount must the preferred receive?",
+      "back": "$1 per share. The annual dividend is 4% \u00d7 $100 = $4, paid quarterly = $1. Because it is noncumulative, no dividends in arrears are owed.",
+      "lo": "2.d",
+      "unit": 2,
+      "lesson": 2,
+      "lesson_title": "PREFERRED STOCK, ADRs, AND OTHER CONSIDERATIONS"
+    }
+  ],
+  "tokens": {
+    "input": 6257,
+    "output": 3053
+  },
+  "cost_usd": 0.3228
+}

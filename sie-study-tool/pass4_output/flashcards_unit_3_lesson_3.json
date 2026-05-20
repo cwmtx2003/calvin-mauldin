@@ -1,0 +1,219 @@
+{
+  "unit": 3,
+  "lesson": 3,
+  "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Jumbo Certificate of Deposit (CD)",
+      "back": "A bank-issued CD with a fixed interest rate and minimum face value of $100,000 (often $1 million+), typically maturing in one year or less. Only negotiable jumbo CDs (tradeable in the secondary market) are considered money market instruments. Issued at face value and pay interest.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How does a negotiable CD differ from a retail CD purchased at a bank?",
+      "back": "Negotiable (jumbo) CDs have a minimum face value of $100,000, can be traded in the secondary market, and are considered money market instruments. Retail CDs are difficult to transfer, not liquid, and the bank sets any minimum amount.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Bankers' Acceptance (BA)",
+      "back": "A short-term time draft drawn on a bank with a specified payment date, used primarily by import/export corporations to finance international trade. Maturities range from 1 to 180 days (never more than 270). Issued at a discount from face value. Also called a bill of exchange or letter of credit (LOC).",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Commercial Paper",
+      "back": "Short-term, unsecured corporate promissory notes used to finance accounts receivable and seasonal inventory needs. Maturities range from 1 to 270 days (most within 90 days). Typically issued by corporations with excellent credit ratings. Issued at a discount.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "When are Treasury notes and bonds considered money market instruments?",
+      "back": "Once a T-note or T-bond has one year or less remaining until maturity, it is considered a money market instrument.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Repurchase Agreement (Repo)",
+      "back": "An agreement in which a financial institution (bank or BD) raises cash by selling assets with an agreement to repurchase them later at a slightly higher price. Includes a repurchase price and maturity date. Commonly used between banks or with the Federal Reserve.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What is a reverse repurchase agreement (reverse repo)?",
+      "back": "A transaction in which a dealer agrees to buy securities from an investor and sell them back later at a higher price \u2014 the opposite side of a standard repo.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Federal Funds",
+      "back": "Excess reserves deposited by member banks at the Federal Reserve above the required reserve amount. These funds can be loaned bank-to-bank, typically overnight, to help banks meet reserve requirements. The interest rate charged is the federal funds rate.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Why might a registered representative recommend money market securities for a client's portfolio?",
+      "back": "Money market securities are (1) highly liquid, (2) very safe, and (3) suitable for money needed in the short term. However, returns are low and income fluctuates as principal is reinvested at varying short-term rates, making them unsuitable for long-term investment goals.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following would NOT be found in a money market fund's portfolio: T-bills, T-bonds with less than one year to maturity, negotiable CDs, or common stock?",
+      "back": "Common stock. It has no maturity date and is not relatively safe compared to short-term debt instruments, so it does not meet money market criteria.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Asset-Backed Security (ABS)",
+      "back": "A security whose value and income payments are derived from a pool of underlying assets (e.g., mortgages, auto loans, credit card receivables). Created through securitization, which pools assets so they can be sold to investors and diversifies risk.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Securitization",
+      "back": "The process of pooling illiquid assets (such as loans or mortgages) into financial instruments that can be sold to general investors, providing liquidity and diversifying risk among investors.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Collateralized Mortgage Obligation (CMO)",
+      "back": "An asset-backed security that pools mortgages on single-family residences and divides them into maturity classes called tranches. CMOs pay principal and interest monthly, often backed by Ginnie Mae, Fannie Mae, or Freddie Mac pass-through securities.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How are principal payments distributed among CMO tranches?",
+      "back": "Principal is paid to only one tranche at a time. Investors in the shortest-term tranche must receive all of their principal before the next tranche begins receiving principal repayments. Payments are made in $1,000 increments to randomly selected bonds within the active tranche.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How do changes in interest rates affect CMO investors?",
+      "back": "Interest rate changes affect the rate of mortgage prepayments (refinancings). This alters the timing and flow of both interest and principal payments to CMO investors \u2014 creating prepayment risk when rates fall and extension risk when rates rise.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Collateralized Debt Obligation (CDO)",
+      "back": "A complex asset-backed security whose portfolio typically consists of nonmortgage debt \u2014 bonds, auto loans, leases, credit card receivables, company receivables, or derivatives. Structured into tranches with different maturities and risk levels; higher-risk tranches pay more.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How are CMOs and CDOs similar, and how do they differ?",
+      "back": "Similar: Both are asset-backed securities structured into tranches with different maturities and risk levels, both use securitization to convert illiquid debt into liquid investments. Different: CMOs are backed exclusively by mortgages; CDOs are typically backed by nonmortgage debt (bonds, auto loans, credit card debt, leases, etc.).",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from U.S. Treasury securities taxed?",
+      "back": "Taxable at the federal level; exempt from state and local taxation.",
+      "lo": "3.g",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from municipal bonds taxed?",
+      "back": "Exempt from federal taxation; state and local taxation depends on the investor's state of residence (generally exempt if the investor lives in the issuing state).",
+      "lo": "3.g",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from GNMA, FNMA, and FHLMC securities taxed?",
+      "back": "Taxable at federal, state, and local levels. GNMA pays interest monthly; FNMA and FHLMC pay biannually.",
+      "lo": "3.g",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from U.S. territory bonds (e.g., Puerto Rico, Guam) taxed?",
+      "back": "Triple tax-exempt \u2014 exempt from federal, state, AND local taxation for all U.S. investors regardless of state of residence.",
+      "lo": "3.g",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer in the 30% federal tax bracket is considering a 7% corporate bond. What is the after-tax yield?",
+      "back": "After-tax yield = coupon rate \u00d7 (1 \u2212 tax bracket) = 7% \u00d7 (1 \u2212 0.30) = 7% \u00d7 0.70 = 4.9%.",
+      "lo": "3.g",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor holds a CMO. Interest rates fall sharply and homeowners begin refinancing en masse. What risk has materialized?",
+      "back": "Prepayment risk. As mortgages are paid off early due to refinancing, the investor receives principal back faster than expected and must reinvest at lower prevailing rates.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 3,
+      "lesson_title": "MONEY MARKET AND ASSET-BACKED SECURITIES"
+    }
+  ],
+  "tokens": {
+    "input": 5034,
+    "output": 2996
+  },
+  "cost_usd": 0.3002
+}

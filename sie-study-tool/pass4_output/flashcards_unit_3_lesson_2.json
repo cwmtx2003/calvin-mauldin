@@ -1,0 +1,228 @@
+{
+  "unit": 3,
+  "lesson": 2,
+  "lesson_title": "GOVERNMENT-ISSUED BONDS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Municipal bond",
+      "back": "A debt security issued by a state, local government, U.S. territory, authority, or special district to finance public works projects. Interest is generally federally tax-exempt and may be state tax-exempt for in-state residents.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the two main categories of municipal bonds, and how is each backed?",
+      "back": "General Obligation (GO) bonds \u2014 backed by the issuer's full faith, credit, and taxing power. Revenue bonds \u2014 backed solely by revenues generated from the specific project or facility being financed.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What taxes back GO bonds issued at the state level versus the local (town/city/county) level?",
+      "back": "State-level GOs: backed by income taxes, license fees, and sales taxes. Local-level GOs: backed by ad valorem (property/real estate) taxes, license fees, fines, and other direct income.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Why do GO bonds \u2014 but not revenue bonds \u2014 typically require voter approval and are subject to statutory debt limits?",
+      "back": "GO bonds represent a debt of the municipality repaid through taxes, so they affect taxpayers and are subject to debt ceilings and voter approval. Revenue bonds are self-supporting from project revenues, so they are not subject to statutory debt limits and generally do not require voter approval.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from bonds issued by a U.S. territory (e.g., Puerto Rico, Guam, USVI) taxed?",
+      "back": "Triple tax-exempt \u2014 free from federal, state, and local taxes for all U.S. taxpayers, regardless of state of residence.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Tax Anticipation Note (TAN)",
+      "back": "A short-term municipal note that finances current operations in anticipation of future tax receipts, helping smooth cash flow between tax collection periods.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Bond Anticipation Note (BAN)",
+      "back": "A short-term municipal note sold as interim financing that will eventually be converted to long-term funding through a sale of bonds.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Identify these municipal anticipation notes: RAN, TRAN, CLN, GAN.",
+      "back": "RAN \u2014 Revenue Anticipation Note (financed by future project/facility revenues). TRAN \u2014 Tax and Revenue Anticipation Note (combination of TAN and RAN). CLN \u2014 Construction Loan Note (interim financing for housing construction). GAN \u2014 Grant Anticipation Note (anticipates federal grant money).",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor in the 28% federal tax bracket is considering a municipal bond yielding 6%. What corporate bond yield would be equivalent on an after-tax basis?",
+      "back": "Tax-equivalent yield = municipal yield / (100% \u2212 tax bracket) = 6% / (1 \u2212 0.28) = 6% / 0.72 = 8.33%. A corporate bond must yield at least 8.33% to match.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor in the 35% tax bracket holds a corporate bond yielding 9%. What is the equivalent municipal (tax-free) yield?",
+      "back": "After-tax yield = 9% \u00d7 (1 \u2212 0.35) = 9% \u00d7 0.65 = 5.85%. A municipal bond yielding 5.85% would provide an equivalent return.",
+      "lo": "3.d",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Compare T-bills, T-notes, and T-bonds by maturity and how each is priced.",
+      "back": "T-bills: 1 year or less; issued at a discount, priced on a discount basis; no stated coupon. T-notes: 2\u201310 years; pay semiannual interest; priced as % of par. T-bonds: more than 10 years up to 30; pay semiannual interest; priced as % of par.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Which two Treasury securities are issued at a discount with no stated interest rate?",
+      "back": "Treasury bills (T-bills) and Treasury STRIPS (zero-coupon Treasury bonds).",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the settlement cycle and accrued interest convention for U.S. Treasury securities?",
+      "back": "Treasury securities settle T+1 (regular way) and accrued interest is calculated on actual days elapsed / actual days in the year (actual/actual). Note: municipal and corporate bonds settle T+2 and use 30/360.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Which T-bill maturity is considered the benchmark 'risk-free' investment in market analysis?",
+      "back": "The 13-week (91-day) T-bill.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Treasury STRIPS",
+      "back": "Treasury zero-coupon bonds created by the Treasury Department in which interest coupons and principal are separated (stripped) and traded individually. Issued at a discount, mature at par, backed by full faith and credit of the U.S. government.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the key difference between Treasury Receipts and Treasury STRIPS regarding backing?",
+      "back": "Treasury STRIPS are issued by the Treasury and backed by the full faith and credit of the U.S. government. Treasury Receipts are created by broker-dealers and are NOT backed by the U.S. government \u2014 they are backed only by the Treasuries held in trust as collateral.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "How do TIPS protect investors against inflation?",
+      "back": "The principal value is adjusted every six months based on the inflation rate (CPI). The fixed coupon rate is applied to the adjusted principal, so interest payments rise with inflation and fall with deflation. At maturity, the principal repaid will never be less than the original $1,000 par.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Which federal agency security is the only one backed by the full faith and credit of the U.S. government?",
+      "back": "GNMA (Ginnie Mae) \u2014 Government National Mortgage Association.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is prepayment risk on a GNMA security?",
+      "back": "The risk that homeowners pay off their mortgages early (often when rates fall), causing GNMA investors to receive outstanding principal back at par sooner than expected and to reinvest at lower prevailing rates.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Are Fannie Mae (FNMA) and Freddie Mac (FHLMC) government agencies?",
+      "back": "No. They are publicly held corporations known as government-sponsored enterprises (GSEs). Their securities are NOT backed by the full faith and credit of the U.S. government.",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the settlement cycle for agency-issued debt securities?",
+      "back": "Regular way T+2 (trade date plus two business days).",
+      "lo": "3.e",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Money market securities",
+      "back": "Fixed-income (debt) securities with one year or less to maturity. They are highly liquid, relatively safe, typically issued at a discount, and mature at face value. Return = face value \u2212 discounted purchase price.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "How does the capital market differ from the money market?",
+      "back": "Capital market: intermediate- to long-term financing (more than 1 year) via equity or debt securities. Money market: very short-term financing (1 year or less) for corporations, banks, BDs, municipalities, and the federal government.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Why do money market securities offer relatively low returns despite their high liquidity?",
+      "back": "Their very short maturities mean minimal default risk and minimal interest rate risk \u2014 high safety and liquidity. Investors accept lower yields in exchange for that safety.",
+      "lo": "3.f",
+      "unit": 3,
+      "lesson": 2,
+      "lesson_title": "GOVERNMENT-ISSUED BONDS"
+    }
+  ],
+  "tokens": {
+    "input": 6682,
+    "output": 3089
+  },
+  "cost_usd": 0.3319
+}

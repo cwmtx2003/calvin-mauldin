@@ -394,6 +394,121 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
   .pt-hero::after{display:none}
   .pt-result-split{grid-template-columns:1fr}
 }
+
+/* ═══════════════════════════════════════════════════
+   DEEP STUDY (PASS 4) — Flashcards / Study Guides / Reference Sheets / Concept Index
+   ═══════════════════════════════════════════════════ */
+.ds-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;flex-wrap:wrap}
+.ds-tab{background:none;border:none;color:var(--muted);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:.85rem 1.2rem;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;display:flex;align-items:center;gap:.4rem}
+.ds-tab:hover{color:var(--muted2)}
+.ds-tab.active{color:var(--gold2);border-bottom-color:var(--gold2)}
+.ds-tab-count{background:var(--bg3);color:var(--muted);font-size:9px;padding:2px 6px;border-radius:8px;font-weight:600}
+.ds-tab.active .ds-tab-count{background:var(--gold);color:#09090a}
+.ds-pane{display:none}
+.ds-pane.vis{display:block}
+.ds-pane-intro{font-size:13px;color:var(--muted2);line-height:1.65;margin-bottom:1.25rem}
+
+/* DECK PICKER (flashcards / study guides) */
+.deck-group-tabs{display:flex;gap:.4rem;margin-bottom:.9rem;flex-wrap:wrap}
+.deck-group-tab{background:var(--bg2);border:1px solid var(--border);color:var(--muted2);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:.45rem .85rem;cursor:pointer;border-radius:3px;transition:all .15s}
+.deck-group-tab:hover{border-color:var(--border2);color:var(--text)}
+.deck-group-tab.active{background:var(--gold);border-color:var(--gold);color:#09090a;font-weight:700}
+.deck-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.7rem;margin-bottom:1.25rem}
+.deck-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:.95rem 1rem;cursor:pointer;transition:all .15s;text-align:left}
+.deck-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.deck-card-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:.35rem}
+.deck-card-title{font-weight:600;font-size:13px;color:var(--text);margin-bottom:.3rem;line-height:1.35}
+.deck-card-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold2)}
+
+/* FLASHCARD VIEWER */
+.fc-viewer{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.5rem;margin-bottom:1rem}
+.fc-viewer-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem}
+.fc-viewer-title{font-weight:700;font-size:14px;color:var(--text)}
+.fc-viewer-meta{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
+.fc-card{background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:2rem 1.5rem;min-height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer;transition:all .25s;position:relative;margin-bottom:1rem}
+.fc-card:hover{border-color:var(--gold)}
+.fc-card-type{position:absolute;top:.6rem;right:.85rem;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;color:var(--gold2);background:rgba(191,87,0,.15);padding:2px 7px;border-radius:3px;text-transform:uppercase}
+.fc-card-face{font-size:15px;line-height:1.55;color:var(--text);max-width:560px}
+.fc-card-face.back{color:var(--muted2);font-size:14px;line-height:1.6}
+.fc-card-hint{position:absolute;bottom:.6rem;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;opacity:.6}
+.fc-controls{display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap}
+.fc-ctrl-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.05em;padding:.55rem 1.1rem;border-radius:4px;cursor:pointer;transition:all .15s;text-transform:uppercase}
+.fc-ctrl-btn:hover{border-color:var(--gold);color:var(--gold2)}
+.fc-ctrl-btn:disabled{opacity:.4;cursor:not-allowed}
+.fc-ctrl-btn.primary{background:var(--gold);border-color:var(--gold);color:#09090a;font-weight:700}
+.fc-ctrl-btn.primary:hover{background:var(--gold2);color:#09090a}
+.fc-prog{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
+.fc-prog-bar{height:4px;background:var(--border);border-radius:2px;margin-top:.6rem;overflow:hidden}
+.fc-prog-fill{height:100%;background:var(--gold2);transition:width .3s}
+.fc-complete{text-align:center;padding:1.5rem 1rem}
+.fc-complete-icon{font-size:32px;color:var(--green);margin-bottom:.5rem}
+.fc-complete-title{font-size:18px;font-weight:700;margin-bottom:.4rem}
+.fc-complete-sub{font-size:13px;color:var(--muted2);margin-bottom:1rem}
+
+/* STUDY GUIDES */
+.sg-section{background:var(--bg2);border:1px solid var(--border);border-radius:6px;margin-bottom:.6rem;overflow:hidden}
+.sg-header{padding:.85rem 1.1rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;color:var(--text);transition:background .15s;font-size:14px}
+.sg-header:hover{background:var(--bg3)}
+.sg-chevron{font-family:'DM Mono',monospace;color:var(--muted);font-size:14px;transition:transform .2s}
+.sg-section.open .sg-chevron{transform:rotate(90deg);color:var(--gold2)}
+.sg-body{display:none;padding:.4rem 1.1rem 1.1rem;border-top:1px solid var(--border);background:#0a0e1a}
+.sg-section.open .sg-body{display:block}
+.sg-overview{font-size:13px;color:var(--muted2);line-height:1.65;margin:.6rem 0 .9rem}
+.sg-subhead{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin:.85rem 0 .35rem;font-weight:600}
+.sg-list{margin:0 0 .5rem;padding-left:1.1rem;color:var(--muted2);font-size:13px;line-height:1.6}
+.sg-list li{margin-bottom:.25rem}
+.sg-list li::marker{color:var(--gold)}
+.sg-formula{font-family:'DM Mono',monospace;background:var(--bg3);padding:.5rem .75rem;border-radius:4px;color:var(--text);font-size:12px;margin:.3rem 0;line-height:1.6;border-left:2px solid var(--gold)}
+.sg-mnemonic{background:rgba(74,222,128,.08);border-left:2px solid var(--green);padding:.5rem .75rem;border-radius:4px;color:#c8eed4;font-size:12.5px;font-style:italic;margin:.3rem 0;line-height:1.55}
+.sg-unit-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;background:var(--bg3);color:var(--muted);padding:2px 7px;border-radius:3px;margin-left:.5rem}
+
+/* REFERENCE SHEETS */
+.rs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.85rem;margin-bottom:1rem}
+.rs-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem;cursor:pointer;transition:all .15s}
+.rs-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.rs-card-title{font-weight:700;font-size:14px;color:var(--text);margin-bottom:.4rem}
+.rs-card-meta{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em}
+.rs-detail{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.5rem;margin-bottom:1rem}
+.rs-detail-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.1rem;flex-wrap:wrap;gap:.5rem}
+.rs-detail-title{font-weight:700;font-size:16px;color:var(--text)}
+.rs-back{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);background:none;border:1px solid var(--border);padding:.4rem .85rem;border-radius:3px;cursor:pointer;text-transform:uppercase;letter-spacing:.05em}
+.rs-back:hover{color:var(--text);border-color:var(--border2)}
+.rs-sec{margin-bottom:1.1rem}
+.rs-sec-head{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);font-weight:700;margin-bottom:.5rem}
+.rs-sec-items{margin:0;padding-left:1.1rem;color:var(--muted2);font-size:13px;line-height:1.65}
+.rs-sec-items li{margin-bottom:.3rem}
+.rs-sec-items li::marker{color:var(--gold)}
+.rs-table{width:100%;border-collapse:collapse;margin:.25rem 0;font-size:12.5px}
+.rs-table th{text-align:left;padding:.45rem .6rem;background:var(--bg3);color:var(--text);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--border)}
+.rs-table td{padding:.45rem .6rem;border:1px solid var(--border);color:var(--muted2)}
+.rs-formula{font-family:'DM Mono',monospace;background:var(--bg3);padding:.6rem .85rem;border-radius:4px;color:var(--text);font-size:12.5px;border-left:2px solid var(--gold);margin:.25rem 0}
+.rs-traps{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.25);border-radius:6px;padding:1rem 1.15rem;margin-top:.5rem}
+.rs-traps-head{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:.45rem}
+.rs-traps ul{margin:0;padding-left:1.1rem;color:#f5d6d6;font-size:12.5px;line-height:1.6}
+.rs-traps li{margin-bottom:.3rem}
+
+/* CONCEPT INDEX */
+.ci-search-row{display:flex;gap:.6rem;margin-bottom:1rem;align-items:center;flex-wrap:wrap}
+.ci-search{flex:1;min-width:220px;padding:.85rem 1rem;background:var(--bg2);border:1px solid var(--border2);border-radius:6px;color:var(--text);font-family:'Instrument Sans',sans-serif;font-size:14px}
+.ci-search:focus{outline:none;border-color:var(--gold)}
+.ci-stat{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);white-space:nowrap}
+.ci-results{display:flex;flex-direction:column;gap:.6rem;max-height:650px;overflow-y:auto;padding-right:.25rem}
+.ci-results::-webkit-scrollbar{width:6px}
+.ci-results::-webkit-scrollbar-track{background:var(--bg2);border-radius:3px}
+.ci-results::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:3px}
+.ci-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:.95rem 1.1rem;transition:border-color .15s}
+.ci-card:hover{border-color:var(--border2)}
+.ci-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:.6rem;margin-bottom:.45rem;flex-wrap:wrap}
+.ci-card-term{font-weight:700;font-size:14px;color:var(--text)}
+.ci-card-xref{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold2);background:rgba(191,87,0,.12);padding:2px 7px;border-radius:3px;letter-spacing:.04em}
+.ci-card-defn{font-size:13px;color:var(--muted2);line-height:1.6;margin-bottom:.6rem}
+.ci-card-refs{display:flex;gap:.4rem;flex-wrap:wrap}
+.ci-ref{font-family:'DM Mono',monospace;font-size:10px;background:var(--bg3);color:var(--muted2);padding:3px 8px;border-radius:3px;letter-spacing:.03em}
+.ci-ref.manual{color:#a3d4ff;background:rgba(48,100,150,.18)}
+.ci-ref.outline{color:#b8d4a3;background:rgba(80,120,60,.18)}
+.ci-empty{color:var(--muted);font-style:italic;text-align:center;padding:2rem;font-size:13px}
+mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:2px}
+
 </style>
 </head>
 <body>
@@ -577,6 +692,73 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
     <div class="quiz-card-grid" id="type-quiz-grid"></div>
   </div>
 
+  <!-- ══ SECTION: DEEP STUDY (PASS 4) ══ -->
+  <div class="section-hdr"><span class="section-hdr-text">Deep Study — No API Required</span></div>
+
+  <div class="ds-tabs" id="ds-tabs">
+    <button class="ds-tab active" data-pane="fc" onclick="dsSwitchTab('fc')">
+      Flashcards <span class="ds-tab-count">20</span>
+    </button>
+    <button class="ds-tab" data-pane="sg" onclick="dsSwitchTab('sg')">
+      Study Guides <span class="ds-tab-count">16</span>
+    </button>
+    <button class="ds-tab" data-pane="rs" onclick="dsSwitchTab('rs')">
+      Reference Sheets <span class="ds-tab-count">6</span>
+    </button>
+    <button class="ds-tab" data-pane="ci" onclick="dsSwitchTab('ci')">
+      Concept Index <span class="ds-tab-count" id="ci-tab-count">—</span>
+    </button>
+  </div>
+
+  <!-- FLASHCARDS PANE -->
+  <div class="ds-pane vis" id="ds-pane-fc">
+    <div class="ds-pane-intro">
+      20 flashcard decks. Pick a deck, flip cards (click or spacebar), shuffle anytime.
+      Cards mix Q/A, scenario, and definition formats — chosen per concept by Opus from the Kaplan Manual.
+    </div>
+    <div class="deck-group-tabs">
+      <button class="deck-group-tab active" data-group="unit" onclick="dsShowDeckGroup('unit')">By Unit (12)</button>
+      <button class="deck-group-tab" data-group="jf" onclick="dsShowDeckGroup('jf')">By Job Function (4)</button>
+      <button class="deck-group-tab" data-group="type" onclick="dsShowDeckGroup('type')">By Question Type (4)</button>
+    </div>
+    <div id="deck-grid-host"></div>
+    <div id="fc-viewer-host"></div>
+  </div>
+
+  <!-- STUDY GUIDES PANE -->
+  <div class="ds-pane" id="ds-pane-sg">
+    <div class="ds-pane-intro">
+      16 in-depth study guides. Collapsible sections with definitions, rules, formulas, and mnemonics — distilled from the Kaplan Manual + FINRA Outline.
+    </div>
+    <div class="deck-group-tabs">
+      <button class="deck-group-tab active" data-group="unit" onclick="dsShowGuideGroup('unit')">By Unit (12)</button>
+      <button class="deck-group-tab" data-group="jf" onclick="dsShowGuideGroup('jf')">By Job Function (4)</button>
+    </div>
+    <div id="guide-grid-host"></div>
+    <div id="guide-detail-host"></div>
+  </div>
+
+  <!-- REFERENCE SHEETS PANE -->
+  <div class="ds-pane" id="ds-pane-rs">
+    <div class="ds-pane-intro">
+      Final-hour cheat sheets. Six topic-focused references with formulas, thresholds, lookup tables, and common exam traps.
+    </div>
+    <div id="rs-grid-host"></div>
+    <div id="rs-detail-host"></div>
+  </div>
+
+  <!-- CONCEPT INDEX PANE -->
+  <div class="ds-pane" id="ds-pane-ci">
+    <div class="ds-pane-intro">
+      Search every term in the Kaplan glossary cross-referenced to the Manual and FINRA Outline. Type a term, get the definition + which lesson covers it.
+    </div>
+    <div class="ci-search-row">
+      <input type="text" class="ci-search" id="ci-search" placeholder='Try: "preemptive rights", "YTM", "Reg T", "AON"…' autocomplete="off"/>
+      <div class="ci-stat" id="ci-stat">— terms</div>
+    </div>
+    <div class="ci-results" id="ci-results"></div>
+  </div>
+
   <!-- ══ SECTION: PRACTICE TEST (PASS 3) ══ -->
   <div class="section-hdr"><span class="section-hdr-text">Practice Test</span></div>
 
@@ -674,6 +856,8 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 
 <!-- Phase 1 source material — extracted Kaplan Manual + FINRA Outline -->
 <script src="sie_sources.js"></script>
+<!-- Pass 4 offline study data — flashcards, study guides, reference sheets, concept index -->
+<script src="sie_study_data.js"></script>
 <script>
 // ═══════════════════════════════════════════════════
 // UNITS — Kaplan 3rd Ed. + FINRA Content Outline 2024
@@ -2551,6 +2735,420 @@ document.addEventListener('keydown', (e) => {
     }
   }
 });
+
+// ═══════════════════════════════════════════════════════════════════════
+// DEEP STUDY (PASS 4) — Flashcards, Study Guides, Reference Sheets, Concept Index
+// All offline. Powered by window.SIE_STUDY_DATA (loaded from sie_study_data.js).
+// ═══════════════════════════════════════════════════════════════════════
+
+const DS = {
+  data: null,
+  currentDeck: null,        // {key, title, cards[]}
+  cardIndex: 0,
+  flipped: false,
+  shuffleSeed: 0,
+  shuffleOrder: [],         // mapping of display index → real card index
+  currentRefKey: null,
+  currentGuide: null,       // {type:'unit'|'jf', key}
+};
+
+function dsInit() {
+  if (typeof window.SIE_STUDY_DATA !== 'object' || !window.SIE_STUDY_DATA) {
+    console.warn('SIE_STUDY_DATA not loaded — Deep Study disabled.');
+    return;
+  }
+  DS.data = window.SIE_STUDY_DATA;
+  // Set initial tab counts
+  const ciCount = DS.data.conceptIndex?.term_count || 0;
+  const ciTabCount = document.getElementById('ci-tab-count');
+  if (ciTabCount) ciTabCount.textContent = ciCount.toLocaleString();
+  // Render default panes
+  dsShowDeckGroup('unit');
+  dsShowGuideGroup('unit');
+  dsRenderRefGrid();
+  dsRenderConceptIndex('');
+  // Search wire-up
+  const search = document.getElementById('ci-search');
+  if (search) search.addEventListener('input', e => dsRenderConceptIndex(e.target.value));
+}
+
+function dsSwitchTab(p) {
+  document.querySelectorAll('.ds-tab').forEach(t => t.classList.toggle('active', t.dataset.pane === p));
+  document.querySelectorAll('.ds-pane').forEach(pane => pane.classList.toggle('vis', pane.id === 'ds-pane-' + p));
+}
+
+// ─── FLASHCARDS ──────────────────────────────────────────────────────
+
+function dsShowDeckGroup(group) {
+  document.querySelectorAll('#ds-pane-fc .deck-group-tab').forEach(b => b.classList.toggle('active', b.dataset.group === group));
+  const host = document.getElementById('deck-grid-host');
+  document.getElementById('fc-viewer-host').innerHTML = '';
+  if (!DS.data) { host.innerHTML = '<div class="ci-empty">Study data not loaded.</div>'; return; }
+  const fc = DS.data.flashcards;
+  let decks = [];
+  if (group === 'unit') {
+    for (let u = 1; u <= 12; u++) {
+      const d = fc.byUnit[String(u)];
+      if (!d) continue;
+      decks.push({ key: 'unit-' + u, tag: `Unit ${u}`, title: d.unit_name, count: d.cards.length, cards: d.cards });
+    }
+  } else if (group === 'jf') {
+    const jfMap = { km: 'Capital Markets', pr: 'Products & Risks', tc: 'Trading & Accounts', rf: 'Regulatory' };
+    for (const jf of ['km','pr','tc','rf']) {
+      const d = fc.byJF[jf];
+      if (!d) continue;
+      decks.push({ key: 'jf-' + jf, tag: 'Job Function', title: jfMap[jf], count: d.cards.length, cards: d.cards });
+    }
+  } else if (group === 'type') {
+    const titleMap = { standard: 'Standard', hard: 'Hard (EXCEPT/NOT/Multi)', definitions: 'Definitions', calculations: 'Calculations' };
+    for (const t of ['standard','hard','definitions','calculations']) {
+      const d = fc.byType[t];
+      if (!d) continue;
+      decks.push({ key: 'type-' + t, tag: 'Question Type', title: titleMap[t], count: d.cards.length, cards: d.cards });
+    }
+  }
+  host.innerHTML = '<div class="deck-grid">' + decks.map(d => `
+    <button class="deck-card" onclick='dsOpenDeck(${JSON.stringify(d.key).replace(/'/g, "&#39;")})'>
+      <div class="deck-card-tag">${dsEsc(d.tag)}</div>
+      <div class="deck-card-title">${dsEsc(d.title)}</div>
+      <div class="deck-card-count">${d.count} cards</div>
+    </button>`).join('') + '</div>';
+  DS._currentDeckPool = {};
+  decks.forEach(d => DS._currentDeckPool[d.key] = d);
+}
+
+function dsOpenDeck(key) {
+  const deck = DS._currentDeckPool[key];
+  if (!deck) return;
+  DS.currentDeck = deck;
+  DS.cardIndex = 0;
+  DS.flipped = false;
+  DS.shuffleOrder = deck.cards.map((_, i) => i);  // identity, no shuffle yet
+  dsRenderViewer();
+}
+
+function dsRenderViewer() {
+  const host = document.getElementById('fc-viewer-host');
+  const deck = DS.currentDeck;
+  if (!deck) { host.innerHTML = ''; return; }
+  if (DS.cardIndex >= deck.cards.length) {
+    host.innerHTML = `
+      <div class="fc-viewer">
+        <div class="fc-complete">
+          <div class="fc-complete-icon">✓</div>
+          <div class="fc-complete-title">Deck complete</div>
+          <div class="fc-complete-sub">${deck.cards.length} cards reviewed — ${dsEsc(deck.title)}</div>
+          <button class="fc-ctrl-btn primary" onclick="dsResetDeck()">Restart</button>
+          <button class="fc-ctrl-btn" onclick="dsShuffleDeck()" style="margin-left:.5rem">Shuffle &amp; restart</button>
+          <button class="fc-ctrl-btn" onclick="dsCloseDeck()" style="margin-left:.5rem">Close</button>
+        </div>
+      </div>`;
+    return;
+  }
+  const realIdx = DS.shuffleOrder[DS.cardIndex];
+  const card = deck.cards[realIdx];
+  const front = card.front || '';
+  const back = card.back || '';
+  const typeLabel = (card.type || 'qa').toUpperCase();
+  const progPct = Math.round(((DS.cardIndex) / deck.cards.length) * 100);
+  host.innerHTML = `
+    <div class="fc-viewer">
+      <div class="fc-viewer-hdr">
+        <div class="fc-viewer-title">${dsEsc(deck.title)}</div>
+        <div class="fc-viewer-meta">Card ${DS.cardIndex + 1} of ${deck.cards.length}</div>
+      </div>
+      <div class="fc-card" id="fc-card-clickable" onclick="dsFlipCard()">
+        <div class="fc-card-type">${dsEsc(typeLabel)}</div>
+        <div class="fc-card-face ${DS.flipped ? 'back' : ''}">${dsEsc(DS.flipped ? back : front)}</div>
+        <div class="fc-card-hint">${DS.flipped ? 'Click to see front · Space ↔ flip' : 'Click to reveal · Space ↔ flip'}</div>
+      </div>
+      <div class="fc-controls">
+        <div>
+          <button class="fc-ctrl-btn" onclick="dsCloseDeck()">← Back</button>
+          <button class="fc-ctrl-btn" onclick="dsShuffleDeck()" style="margin-left:.4rem">Shuffle</button>
+        </div>
+        <div class="fc-prog">${progPct}% complete</div>
+        <div>
+          <button class="fc-ctrl-btn" onclick="dsPrevCard()" ${DS.cardIndex === 0 ? 'disabled' : ''}>← Prev</button>
+          <button class="fc-ctrl-btn primary" onclick="dsNextCard()" style="margin-left:.4rem">${DS.cardIndex === deck.cards.length - 1 ? 'Finish →' : 'Next →'}</button>
+        </div>
+      </div>
+      <div class="fc-prog-bar"><div class="fc-prog-fill" style="width:${progPct}%"></div></div>
+    </div>`;
+}
+
+function dsFlipCard() { DS.flipped = !DS.flipped; dsRenderViewer(); }
+function dsNextCard() { DS.cardIndex++; DS.flipped = false; dsRenderViewer(); }
+function dsPrevCard() { if (DS.cardIndex > 0) { DS.cardIndex--; DS.flipped = false; dsRenderViewer(); } }
+function dsResetDeck() { DS.cardIndex = 0; DS.flipped = false; DS.shuffleOrder = DS.currentDeck.cards.map((_, i) => i); dsRenderViewer(); }
+function dsShuffleDeck() {
+  if (!DS.currentDeck) return;
+  const n = DS.currentDeck.cards.length;
+  const arr = Array.from({length: n}, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  DS.shuffleOrder = arr;
+  DS.cardIndex = 0;
+  DS.flipped = false;
+  dsRenderViewer();
+}
+function dsCloseDeck() {
+  DS.currentDeck = null;
+  document.getElementById('fc-viewer-host').innerHTML = '';
+}
+
+// Spacebar flips when a deck is open. Only when no input/textarea is focused.
+document.addEventListener('keydown', e => {
+  if (!DS.currentDeck) return;
+  const focused = document.activeElement;
+  if (focused && ['INPUT', 'TEXTAREA'].includes(focused.tagName)) return;
+  const fcPaneVisible = document.getElementById('ds-pane-fc')?.classList.contains('vis');
+  if (!fcPaneVisible) return;
+  if (e.key === ' ') { e.preventDefault(); dsFlipCard(); }
+  else if (e.key === 'ArrowRight') { e.preventDefault(); dsNextCard(); }
+  else if (e.key === 'ArrowLeft')  { e.preventDefault(); dsPrevCard(); }
+});
+
+// ─── STUDY GUIDES ────────────────────────────────────────────────────
+
+function dsShowGuideGroup(group) {
+  document.querySelectorAll('#ds-pane-sg .deck-group-tab').forEach(b => b.classList.toggle('active', b.dataset.group === group));
+  const host = document.getElementById('guide-grid-host');
+  document.getElementById('guide-detail-host').innerHTML = '';
+  if (!DS.data) return;
+  const sg = DS.data.studyGuides;
+  let items = [];
+  if (group === 'unit') {
+    for (let u = 1; u <= 12; u++) {
+      const g = sg.byUnit[String(u)];
+      if (!g) continue;
+      items.push({ key: 'unit-' + u, tag: `Unit ${u}`, title: g.unit_name, count: g.sections.length });
+    }
+  } else {
+    const jfMap = { km: 'Capital Markets', pr: 'Products & Risks', tc: 'Trading & Accounts', rf: 'Regulatory' };
+    for (const jf of ['km','pr','tc','rf']) {
+      const g = sg.byJF[jf];
+      if (!g) continue;
+      items.push({ key: 'jf-' + jf, tag: 'Job Function', title: jfMap[jf], count: g.sections.length });
+    }
+  }
+  host.innerHTML = '<div class="deck-grid">' + items.map(i => `
+    <button class="deck-card" onclick='dsOpenGuide(${JSON.stringify(i.key).replace(/'/g, "&#39;")})'>
+      <div class="deck-card-tag">${dsEsc(i.tag)}</div>
+      <div class="deck-card-title">${dsEsc(i.title)}</div>
+      <div class="deck-card-count">${i.count} sections</div>
+    </button>`).join('') + '</div>';
+}
+
+function dsOpenGuide(key) {
+  const sg = DS.data.studyGuides;
+  let guide = null, title = '';
+  if (key.startsWith('unit-')) {
+    const u = key.slice(5);
+    guide = sg.byUnit[u];
+    title = `Unit ${u}: ${guide.unit_name}`;
+  } else if (key.startsWith('jf-')) {
+    const jf = key.slice(3);
+    guide = sg.byJF[jf];
+    title = guide.jf_name;
+  }
+  if (!guide) return;
+  const host = document.getElementById('guide-detail-host');
+  const sectionsHtml = guide.sections.map((s, i) => {
+    const unitTag = s._unit ? ` <span class="sg-unit-tag">Unit ${s._unit}</span>` : '';
+    const overview = s.overview ? `<div class="sg-overview">${dsEsc(s.overview)}</div>` : '';
+    const concepts = (s.key_concepts && s.key_concepts.length) ? `
+      <div class="sg-subhead">Key Concepts</div>
+      <ul class="sg-list">${s.key_concepts.map(c => `<li>${dsEsc(c)}</li>`).join('')}</ul>` : '';
+    const rules = (s.rules && s.rules.length) ? `
+      <div class="sg-subhead">Rules &amp; Regulations</div>
+      <ul class="sg-list">${s.rules.map(r => `<li>${dsEsc(r)}</li>`).join('')}</ul>` : '';
+    const formulas = (s.formulas && s.formulas.length) ? `
+      <div class="sg-subhead">Formulas</div>
+      ${s.formulas.map(f => `<div class="sg-formula">${dsEsc(f)}</div>`).join('')}` : '';
+    const mnemonics = (s.mnemonics && s.mnemonics.length) ? `
+      <div class="sg-subhead">Mnemonics</div>
+      ${s.mnemonics.map(m => `<div class="sg-mnemonic">${dsEsc(m)}</div>`).join('')}` : '';
+    return `
+      <div class="sg-section" id="sg-sec-${i}">
+        <div class="sg-header" onclick="dsToggleSection(${i})">
+          <span>${dsEsc(s.title || ('Section ' + (i + 1)))}${unitTag}</span>
+          <span class="sg-chevron">›</span>
+        </div>
+        <div class="sg-body">
+          ${overview}${concepts}${rules}${formulas}${mnemonics}
+        </div>
+      </div>`;
+  }).join('');
+  host.innerHTML = `
+    <div class="rs-detail-hdr" style="margin-top:1rem">
+      <div class="rs-detail-title">${dsEsc(title)}</div>
+      <button class="rs-back" onclick="dsCloseGuide()">← All guides</button>
+    </div>
+    ${sectionsHtml}`;
+  document.getElementById('guide-grid-host').style.display = 'none';
+}
+
+function dsToggleSection(i) {
+  document.getElementById('sg-sec-' + i)?.classList.toggle('open');
+}
+
+function dsCloseGuide() {
+  document.getElementById('guide-detail-host').innerHTML = '';
+  document.getElementById('guide-grid-host').style.display = '';
+}
+
+// ─── REFERENCE SHEETS ────────────────────────────────────────────────
+
+function dsRenderRefGrid() {
+  const host = document.getElementById('rs-grid-host');
+  document.getElementById('rs-detail-host').innerHTML = '';
+  if (!DS.data) return;
+  const sheets = DS.data.referenceSheets || [];
+  host.innerHTML = '<div class="rs-grid">' + sheets.map(s => `
+    <button class="rs-card" onclick='dsOpenRefSheet(${JSON.stringify(s.key).replace(/'/g, "&#39;")})'>
+      <div class="rs-card-title">${dsEsc(s.title)}</div>
+      <div class="rs-card-meta">${s.sections.length} sections · ${s.common_traps.length} traps</div>
+    </button>`).join('') + '</div>';
+}
+
+function dsOpenRefSheet(key) {
+  const sheet = DS.data.referenceSheets.find(s => s.key === key);
+  if (!sheet) return;
+  const host = document.getElementById('rs-detail-host');
+  const sectionsHtml = sheet.sections.map(sec => {
+    let body = '';
+    const items = sec.items || [];
+    if (sec.type === 'table' && Array.isArray(items) && items.length && typeof items[0] === 'object') {
+      // Render table
+      const cols = Object.keys(items[0]);
+      body = `<table class="rs-table"><thead><tr>${cols.map(c => `<th>${dsEsc(c)}</th>`).join('')}</tr></thead><tbody>${items.map(row => `<tr>${cols.map(c => `<td>${dsEsc(String(row[c] ?? ''))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    } else if (sec.type === 'formula') {
+      body = items.map(f => `<div class="rs-formula">${dsEsc(typeof f === 'string' ? f : JSON.stringify(f))}</div>`).join('');
+    } else {
+      // bullets or rule — render as list
+      const flat = items.map(it => typeof it === 'string' ? it : JSON.stringify(it));
+      body = `<ul class="rs-sec-items">${flat.map(t => `<li>${dsEsc(t)}</li>`).join('')}</ul>`;
+    }
+    return `<div class="rs-sec"><div class="rs-sec-head">${dsEsc(sec.heading || '')}</div>${body}</div>`;
+  }).join('');
+  const trapsHtml = sheet.common_traps?.length ? `
+    <div class="rs-traps">
+      <div class="rs-traps-head">Common Traps</div>
+      <ul>${sheet.common_traps.map(t => `<li>${dsEsc(t)}</li>`).join('')}</ul>
+    </div>` : '';
+  host.innerHTML = `
+    <div class="rs-detail">
+      <div class="rs-detail-hdr">
+        <div class="rs-detail-title">${dsEsc(sheet.title)}</div>
+        <button class="rs-back" onclick="dsCloseRefSheet()">← All sheets</button>
+      </div>
+      ${sectionsHtml}
+      ${trapsHtml}
+    </div>`;
+  document.getElementById('rs-grid-host').style.display = 'none';
+}
+
+function dsCloseRefSheet() {
+  document.getElementById('rs-detail-host').innerHTML = '';
+  document.getElementById('rs-grid-host').style.display = '';
+}
+
+// ─── CONCEPT INDEX ───────────────────────────────────────────────────
+
+function dsRenderConceptIndex(q) {
+  const wrap = document.getElementById('ci-results');
+  const stat = document.getElementById('ci-stat');
+  if (!DS.data || !wrap) return;
+  const terms = DS.data.conceptIndex.terms || [];
+  if (!q.trim()) {
+    const sorted = [...terms].sort((a, b) => a.term_lower.localeCompare(b.term_lower));
+    wrap.innerHTML = '';
+    sorted.forEach(t => wrap.appendChild(dsRenderConceptCard(t, '')));
+    stat.textContent = `${sorted.length.toLocaleString()} of ${terms.length.toLocaleString()} terms`;
+    return;
+  }
+  const ql = q.toLowerCase().trim();
+  const scored = [];
+  for (const t of terms) {
+    let score = 0;
+    if (t.term_lower === ql) score = 1000;
+    else if (t.term_lower.startsWith(ql)) score = 500;
+    else if (t.term_lower.includes(ql)) score = 250;
+    else if ((t.definition || '').toLowerCase().includes(ql)) score = 100;
+    if (score) scored.push({ t, score });
+  }
+  scored.sort((a, b) => b.score - a.score);
+  wrap.innerHTML = '';
+  if (scored.length === 0) {
+    wrap.innerHTML = '<div class="ci-empty">No matches. Try a different term or shorter query.</div>';
+    stat.textContent = '0 matches';
+    return;
+  }
+  scored.forEach(({ t }) => wrap.appendChild(dsRenderConceptCard(t, ql)));
+  stat.textContent = `${scored.length.toLocaleString()} matches`;
+}
+
+function dsRenderConceptCard(t, q) {
+  const card = document.createElement('div');
+  card.className = 'ci-card';
+  const isXref = /^See\s+/i.test(t.definition || '');
+  const head = document.createElement('div');
+  head.className = 'ci-card-head';
+  const termEl = document.createElement('div');
+  termEl.className = 'ci-card-term';
+  termEl.innerHTML = dsHighlight(t.term, q);
+  head.appendChild(termEl);
+  if (isXref) {
+    const tag = document.createElement('div');
+    tag.className = 'ci-card-xref';
+    tag.textContent = 'CROSS-REF';
+    head.appendChild(tag);
+  }
+  card.appendChild(head);
+  const defn = document.createElement('div');
+  defn.className = 'ci-card-defn';
+  defn.innerHTML = dsHighlight(t.definition || '', q);
+  card.appendChild(defn);
+  if ((t.manual_refs && t.manual_refs.length) || (t.outline_refs && t.outline_refs.length)) {
+    const refs = document.createElement('div');
+    refs.className = 'ci-card-refs';
+    (t.manual_refs || []).slice(0, 3).forEach(r => {
+      const tag = document.createElement('div');
+      tag.className = 'ci-ref manual';
+      const trimTitle = (r.title || '').slice(0, 30) + ((r.title || '').length > 30 ? '…' : '');
+      tag.textContent = `Manual ${r.unit}.${r.lesson}: ${trimTitle}`;
+      refs.appendChild(tag);
+    });
+    (t.outline_refs || []).slice(0, 2).forEach(r => {
+      const tag = document.createElement('div');
+      tag.className = 'ci-ref outline';
+      tag.textContent = `Outline [${(r.jf || '?').toUpperCase()}]`;
+      refs.appendChild(tag);
+    });
+    card.appendChild(refs);
+  }
+  return card;
+}
+
+function dsHighlight(text, q) {
+  if (!q) return dsEsc(text);
+  const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+  return dsEsc(text).replace(re, '<mark>$1</mark>');
+}
+
+function dsEsc(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// Boot Deep Study after DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', dsInit);
+} else {
+  dsInit();
+}
 
 </script>
 </body>

@@ -1,0 +1,201 @@
+{
+  "unit": 10,
+  "lesson": 2,
+  "lesson_title": "SELF-REGULATORY ORGANIZATIONS",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What is the scope of FINRA's regulatory authority?",
+      "back": "FINRA regulates all matters related to investment banking (securities underwriting), trading in the OTC market, trading in exchange-listed securities, and the conduct of FINRA member firms and their associated persons.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "FINRA Conduct Rules",
+      "back": "Rules establishing the relationship between member firms and their customers. They cover fair dealing, compensation, communications, and sales practice violations. Violations are considered serious.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "FINRA Code of Procedure (COP)",
+      "back": "Covers the enforcement of FINRA rules and punishment of members who violate the Conduct Rules. The Department of Enforcement (DOE) investigates suspected violations and holds hearings.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What sanctions may FINRA impose on a member firm or associated person found in violation of its rules?",
+      "back": "FINRA may suspend, expel, or bar from membership; impose fines; censure; or take any other action deemed appropriate. FINRA does NOT have arrest powers.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the proper appeal route for a DOE decision under the Code of Procedure?",
+      "back": "DOE decision \u2192 National Adjudicatory Council (NAC) \u2192 SEC \u2192 federal appellate courts.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Uniform Practice Code (UPC)",
+      "back": "FINRA rules covering technical aspects of securities transactions between member firms, such as settlement, good delivery, payment procedures, dividends, and interest.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Code of Arbitration (COA)",
+      "back": "FINRA-run dispute resolution forum for monetary disputes. Provides a faster, cheaper alternative to court. COA decisions are final and binding \u2014 there is no appeal.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer has a monetary dispute with their broker-dealer. The new account form contains a predispute arbitration agreement. Can the customer take the dispute to court instead of arbitration?",
+      "back": "No. By signing a predispute arbitration agreement, the customer has agreed to settle disputes through arbitration. The customer cannot be compelled to arbitration unless they agreed to it, but once agreed, the arbitration decision is final and binding with no appeal.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "With whom may FINRA member firms conduct securities business at member-firm pricing?",
+      "back": "Only with other FINRA member firms or with institutions meeting a listed exception, such as a bank in the underwriting of a municipal issue or a foreign firm that is a member of its nation's FINRA equivalent.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the role of the Municipal Securities Rulemaking Board (MSRB)?",
+      "back": "The MSRB writes rules governing the underwriting and trading of state and municipal securities (including non-debt municipal securities like 529 plans and ABLE accounts). It has NO enforcement authority and NO regulatory power over the municipal issuers themselves.",
+      "lo": "10.f",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Who enforces MSRB rules?",
+      "back": "MSRB rules are enforced by the SEC and FINRA (for securities firms) and by the Comptroller of the Currency, the Federal Reserve, and the FDIC (for banks). The MSRB itself has no enforcement powers.",
+      "lo": "10.f",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What regulatory authority do the exchanges (e.g., NYSE) have?",
+      "back": "Exchanges regulate trading activity occurring on the exchange, exercise authority over listed securities and their issuers, and have the power to suspend trading or delist a security.",
+      "lo": "10.f",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Which BD records must be retained for the life of the firm?",
+      "back": "Partnership agreement, corporate charter/articles of incorporation, stock certificate books, board/partner meeting minutes, amendments to these documents, and organizational records (e.g., Form BD).",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Which broker-dealer records must be retained for six years?",
+      "back": "Blotters, general ledger, stock record, customer ledgers (customer statements \u2014 cash and margin on separate ledgers), customer account records, and designation of principals records.",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Blotter",
+      "back": "A record of original entry showing purchases and sales of securities, receipts and deliveries of securities, and receipts and disbursements of cash. Must be prepared no later than the business day following the transaction. Retained for six years.",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How long must written customer complaints be retained under FINRA rules?",
+      "back": "Four years after resolution. (Note: the SEC rule is three years; firms typically retain four years to satisfy both.)",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Name records that must be retained for three years.",
+      "back": "Advertising, trial balances, U4/U5 and fingerprint cards for terminated personnel, customer confirmations, order tickets, other ledgers (securities/monies borrowed and loaned, dividends and interest received), list of every office where each associated person regularly conducts business, associated persons' compensation records, and the firm's compliance and procedures manuals.",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "For three- and six-year records, where must they be kept and for how long must they be readily accessible?",
+      "back": "The most recent two years must be readily accessible (at the branch office, OSJ, or headquarters where they would normally be stored). After two years they may be stored offsite as long as they remain retrievable.",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "When BD records are kept on digital storage media, what format requirement must be met?",
+      "back": "The storage media must keep records in a nonrewriteable and nonerasable format (WORM \u2014 write once, read many).",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An arbitration panel rules that Seacoast Securities owes a customer $50,000. Seacoast believes the ruling was wrong and wants to appeal. What options does Seacoast have?",
+      "back": "None. Arbitration findings under the FINRA Code of Arbitration are final and binding \u2014 there is no appeal.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "A registered representative is found in a DOE hearing to have violated the Code of Procedure. Where does the first appeal go?",
+      "back": "To the National Adjudicatory Council (NAC). From there, appeals may proceed to the SEC and then to federal appellate courts.",
+      "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    }
+  ],
+  "tokens": {
+    "input": 6381,
+    "output": 2606
+  },
+  "cost_usd": 0.2912
+}

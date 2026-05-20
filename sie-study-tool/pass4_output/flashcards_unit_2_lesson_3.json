@@ -1,0 +1,228 @@
+{
+  "unit": 2,
+  "lesson": 3,
+  "lesson_title": "CORPORATE ACTIONS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Stock rights (preemptive rights)",
+      "back": "Short-term certificates given to existing common shareholders allowing them to purchase new shares at a discount to the current market price, in proportion to their existing ownership, before the shares are offered to the public. Subscription period is typically 30\u201345 days.",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Warrant",
+      "back": "A long-term certificate granting the holder the right to purchase common stock from the issuer at a specified exercise price that is normally above the current market price at the time of issuance. Warrants are typically bundled with other securities (bonds or preferred stock) as 'sweeteners.'",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Compare rights and warrants on three key dimensions: term, recipient, and exercise price relative to market.",
+      "back": "Rights: short-term, issued to existing shareholders, exercise price BELOW current market value. Warrants: long-term, bundled with other securities (often debt) as sweeteners, exercise price ABOVE current market value at time of issuance.",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three things a shareholder can do with rights received in a rights offering?",
+      "back": "(1) Exercise the rights by sending the certificates and a check to the rights agent; (2) Sell the rights in the secondary market (they are negotiable); (3) Let them expire worthless (unlikely).",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor buys 200 shares of BOB at $50 per share. BOB declares a 10% stock dividend. What is the investor's new cost basis per share?",
+      "back": "Total cost = 200 \u00d7 $50 = $10,000. New shares = 200 \u00d7 1.10 = 220. New cost basis = $10,000 / 220 = $45.45 per share. (No tax event at the time of the stock dividend.)",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor owns 100 shares at $60 per share. The company declares a 2:1 forward split. What are the new share count and price per share?",
+      "back": "New shares: 100 \u00d7 2 / 1 = 200 shares. New price: $6,000 total value / 200 shares = $30 per share. Total position value remains $6,000.",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor owns 100 shares at $60 per share. The company declares a 5:4 forward split. What are the new share count and price per share?",
+      "back": "New shares: 100 \u00d7 5 / 4 = 125 shares. New price: $6,000 / 125 = $48 per share. Total position value remains $6,000.",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor owns 100 shares at $5 per share. The company declares a 1:4 reverse split. What are the new share count and price per share?",
+      "back": "New shares: 100 \u00d7 1 / 4 = 25 shares. New price: $500 / 25 = $20 per share. Total position value remains $500. Cost basis per share increases.",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What happens to share count, price per share, and cost basis per share in a forward stock split vs. a reverse stock split?",
+      "back": "Forward split: more shares, lower price per share, lower cost basis per share. Reverse split: fewer shares, higher price per share, higher cost basis per share. Total position value is unchanged in both cases.",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Are stock splits or stock dividends taxable events?",
+      "back": "No. Neither stock splits nor stock dividends create a tax event at the time of the action. The per-share cost basis is adjusted, which affects tax consequences only when the shares are eventually sold.",
+      "lo": "2.h",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Merger",
+      "back": "A corporate action in which two or more companies combine operations and assets. Shareholders of the original companies receive new shares of the combined company, and the old shares are canceled.",
+      "lo": "2.i",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Acquisition",
+      "back": "A corporate action in which one company takes over the operations and assets of another. Shareholders of the acquired company typically receive shares in the acquiring company, and the acquired company's shares are canceled.",
+      "lo": "2.i",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Spin-off",
+      "back": "A corporate action in which a corporation forms a subsidiary out of some of its assets and operations and issues shares of the new corporation to the original company's shareholders. Original shares remain intact.",
+      "lo": "2.i",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Stock buyback",
+      "back": "A corporate action in which the issuer repurchases its own shares from existing shareholders in the secondary market, reducing the supply of outstanding shares. Typically an all-cash transaction.",
+      "lo": "2.i",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Tender offer",
+      "back": "An offer to buy securities directly from the owners of those securities (not through the secondary market). Used by issuers to retire debt early, or by an acquirer to purchase a target company's shares or convertible securities. Normally a cash offer.",
+      "lo": "2.i",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Which corporate actions are generally taxable events and which are not?",
+      "back": "NOT taxable (stock received): stock splits, stock dividends, mergers, acquisitions, spin-offs (cash portions of M&A are taxable). TAXABLE (cash received): cash dividends, buybacks, and tender offers \u2014 treated as a sale resulting in capital gain or loss.",
+      "lo": "2.j",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What information must an issuer include in a corporate action notice to shareholders?",
+      "back": "Title of the security; date of declaration; record date; date of payment/distribution; amount (for cash dividend); rate (for stock dividend, e.g., 10%); ratio (for split, e.g., 2:1).",
+      "lo": "2.j",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "When must an issuer give notice of a corporate action to shareholders?",
+      "back": "No later than 10 days before the record date. For a rights subscription or other offering where 10 days' advance notice is not practical, on or before the record date and in no event later than the effective date.",
+      "lo": "2.j",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Proxy",
+      "back": "A limited power of attorney by which a shareholder transfers the right to vote on the shareholder's behalf to another person. Automatically revoked if the shareholder attends the meeting or executes a later proxy.",
+      "lo": "2.k",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "If a customer signs and returns a proxy for street name stock but does not indicate how to vote, how must the member firm vote the shares?",
+      "back": "The member firm must vote the shares as recommended by the issuer's management.",
+      "lo": "2.k",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "If a customer fails to return a proxy by the 10th day before the annual meeting, when may a member firm vote the street name shares at its own discretion?",
+      "back": "Only if the matters to be voted on are of MINOR importance. For matters of MAJOR importance (e.g., merger, issuance of additional securities), the member may never vote at its discretion \u2014 if the proxy is not returned, the shares are not voted.",
+      "lo": "2.k",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is a broker-dealer's obligation regarding proxies and corporate materials for stock held in street name?",
+      "back": "The member BD must act as forwarding agent \u2014 ensuring customers (beneficial owners) receive all proxies, quarterly reports, and other corporate materials from the issuer, and must vote the street name shares in accordance with the beneficial owner's instructions.",
+      "lo": "2.k",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "American Liquidators (LQDT) has 100 million outstanding common shares and wants to raise capital by issuing 10 million new shares while allowing existing shareholders to maintain proportional ownership. What corporate action accomplishes this?",
+      "back": "A stock rights (preemptive rights) offering. Existing shareholders receive rights allowing them to purchase a proportional share of the new issue at a discount before the shares are offered to the public.",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Squidco is issuing 20-year bonds with an attached security that allows the buyer to purchase 20 shares of Squidco common stock at $50 per share anytime in the next 15 years. Squidco currently trades at $29.95. What is this attached security?",
+      "back": "A warrant. Warrants are long-term instruments bundled with debt as a 'sweetener,' with an exercise price ($50) above the current market price ($29.95) at the time of issuance.",
+      "lo": "2.g",
+      "unit": 2,
+      "lesson": 3,
+      "lesson_title": "CORPORATE ACTIONS"
+    }
+  ],
+  "tokens": {
+    "input": 9104,
+    "output": 3218
+  },
+  "cost_usd": 0.3779
+}

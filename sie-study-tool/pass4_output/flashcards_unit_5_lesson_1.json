@@ -1,0 +1,273 @@
+{
+  "unit": 5,
+  "lesson": 1,
+  "lesson_title": "CHARACTERISTICS OF OPTIONS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Derivative",
+      "back": "A contract that derives its value from an underlying asset. Options are derivatives; futures are derivatives but are NOT classified as securities. Options are the only derivative securities tested on the SIE.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the rights and obligations of the buyer vs. the writer of an option?",
+      "back": "Buyer (long/holder): pays the premium and has the RIGHT to exercise. Risk = premium paid. Writer (short/seller): receives the premium and has the OBLIGATION to perform if exercised.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the four basic option positions and the market attitude of each?",
+      "back": "Long call = bullish; Short call = bearish; Long put = bearish; Short put = bullish.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What right does the owner of a call hold? What obligation does the writer of a call have?",
+      "back": "Call owner has the right to BUY 100 shares of the underlying at the strike price before expiration. Call writer has the obligation to SELL 100 shares at the strike price if assigned.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What right does the owner of a put hold? What obligation does the writer of a put have?",
+      "back": "Put owner has the right to SELL 100 shares of the underlying at the strike price before expiration. Put writer has the obligation to BUY 100 shares at the strike price if assigned.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "In-the-money, At-the-money, Out-of-the-money (Calls)",
+      "back": "Call is IN the money when stock price > strike. AT the money when stock price = strike. OUT of the money when stock price < strike.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "In-the-money, At-the-money, Out-of-the-money (Puts)",
+      "back": "Put is IN the money when stock price < strike. AT the money when stock price = strike. OUT of the money when stock price > strike.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "Intrinsic Value",
+      "back": "The amount by which an option is in the money. Always zero or positive\u2014never negative. At-the-money and out-of-the-money options have zero intrinsic value.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for an option premium, and what two factors affect time value?",
+      "back": "Premium = Intrinsic Value + Time Value (IV + TV = Premium). Time value is affected by (1) time to expiration and (2) volatility of the underlying. More time and more volatility = more time value.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "ABC stock trades at 62. An ABC Jun 60 call trades at a premium of 2. What is the intrinsic value, and is the contract at parity?",
+      "back": "Intrinsic value = 62 \u2212 60 = 2. Because the premium (2) equals intrinsic value (2), the contract is trading at parity (no time value).",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Investor is long 1 Jul 40 call at 3. Calculate breakeven, maximum gain, and maximum loss.",
+      "back": "BE = strike + premium = 40 + 3 = 43. MG = unlimited (stock can rise to infinity). ML = premium paid = $300.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Investor is short 1 Jul 40 call at 3. Calculate breakeven, maximum gain, and maximum loss.",
+      "back": "BE = strike + premium = 40 + 3 = 43. MG = premium received = $300. ML = unlimited (writer may be forced to buy stock at any price to deliver).",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Investor is long 1 Jul 40 put at 3. Calculate breakeven, maximum gain, and maximum loss.",
+      "back": "BE = strike \u2212 premium = 40 \u2212 3 = 37. MG = strike \u2212 premium = 37 points = $3,700 (stock falls to 0). ML = premium paid = $300.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "Investor is short 1 Jul 40 put at 3. Calculate breakeven, maximum gain, and maximum loss.",
+      "back": "BE = strike \u2212 premium = 40 \u2212 3 = 37. MG = premium received = $300. ML = strike \u2212 premium = 37 points = $3,700 (stock falls to 0; writer must buy worthless stock at strike).",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How are index option premiums and exercises calculated, and how do they settle?",
+      "back": "Index options use a $100 multiplier. Exercise settles in CASH equal to the intrinsic value, delivered the next business day. Settlement price is the closing value on the day of exercise.",
+      "lo": "5.b",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer buys 1 OEX Jan 460 call at 3.20 when the OEX is at 461. What is the premium paid, intrinsic value, time value, and breakeven?",
+      "back": "Premium = 3.20 \u00d7 $100 = $320. Intrinsic value = (461 \u2212 460) \u00d7 $100 = $100. Time value = $320 \u2212 $100 = $220. Breakeven = 460 + 3.20 = 463.20.",
+      "lo": "5.b",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is portfolio insurance using index options, and what type of risk does it hedge?",
+      "back": "A portfolio manager holding diversified equities buys index puts to offset losses if the market falls. This hedges systematic (market) risk.",
+      "lo": "5.b,5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How do yield-based (interest rate) options work, and what exercise style do they use?",
+      "back": "Yield-based options move directly with interest rates (strike of 35 = 3.5% yield). Each full point = $1,000. They are European-style exercise\u2014exercisable only on expiration day.",
+      "lo": "5.b",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "EPIC: Which currency options should importers and exporters buy?",
+      "back": "Exporters buy Puts (concerned foreign currency value will drop). Importers buy Calls (concerned foreign currency value will rise). Foreign currency options are European-style exercise.",
+      "lo": "5.b,5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "definition",
+      "front": "American-style vs. European-style exercise",
+      "back": "American-style: may be exercised any time before expiration (nearly all equity and equity index options). European-style: may be exercised ONLY on expiration day (foreign currency options and yield-based options).",
+      "lo": "5.b",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How does a protective put hedge a long stock position, and what is the breakeven?",
+      "back": "An investor long stock buys a put to lock in a minimum sale price if the stock declines. Breakeven = stock purchase price + premium paid.",
+      "lo": "5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "How does a protective call hedge a short stock position, and what is the breakeven?",
+      "back": "An investor short stock buys a call to lock in a maximum repurchase price if the stock rises (controls unlimited risk of short sale). Breakeven = short sale price \u2212 premium paid.",
+      "lo": "5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a covered call and a naked (uncovered) call?",
+      "back": "Covered call: writer already owns the underlying stock, so delivery is guaranteed\u2014relatively conservative income strategy. Naked call: writer does not own the stock; risk is theoretically unlimited because the stock could rise infinitely before assignment.",
+      "lo": "5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum loss on a naked short put?",
+      "back": "Strike price \u2212 premium received (occurs if the stock falls to zero and the writer is forced to buy worthless stock at the strike). Significant but NOT unlimited.",
+      "lo": "5.c",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "List the steps required to open an options account.",
+      "back": "(1) RR determines suitability. (2) Customer receives the Options Disclosure Document (ODD) at or before account approval. (3) Account is approved by a Registered Options Principal (ROP). (4) Trading may begin immediately after approval. (5) Signed options agreement must be returned within 15 days of approval\u2014otherwise only closing transactions are permitted.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the role of the Options Clearing Corporation (OCC)?",
+      "back": "The OCC issues, standardizes, and guarantees the performance of listed options contracts. It sets strike prices, expiration months, and assigns exercise notices to short broker-dealers on a random basis.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "qa",
+      "front": "Listed equity options: trading hours, settlement, expiration, and automatic exercise rule?",
+      "back": "Trade 9:30 am\u20134:00 pm ET. Trades settle T+1. Contracts expire third Friday of expiration month at 11:59 pm ET. Any contract in the money by at least $0.01 at expiration is automatically exercised unless 'do not exercise' instructions are given.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor is long 1 Aug XYZ 30 put when XYZ is trading at 25. What is the intrinsic value/moneyness?",
+      "back": "The put is IN the money by 5 points (30 strike \u2212 25 market = 5). It has intrinsic value of $500.",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer buys 1 put on Napa Valley Spirits at a strike of $50 with a $4.50 premium. How much did he pay for the contract?",
+      "back": "$450. Premium of $4.50 \u00d7 100 shares = $450. (The strike price is paid only if/when the contract is exercised.)",
+      "lo": "5.a",
+      "unit": 5,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF OPTIONS"
+    }
+  ],
+  "tokens": {
+    "input": 15749,
+    "output": 3743
+  },
+  "cost_usd": 0.517
+}

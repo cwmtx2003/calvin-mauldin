@@ -1,0 +1,195 @@
+{
+  "unit": 5,
+  "unit_name": "Other Investment Vehicles",
+  "sections": [
+    {
+      "title": "Lesson 5.1: Characteristics of Options",
+      "overview": "Options are derivative contracts whose value is derived from an underlying asset such as a stock, index, interest rate, or foreign currency. They are two-party contracts giving the buyer (long, holder) the right\u2014and obligating the seller (short, writer) to perform\u2014to buy (call) or sell (put) the underlying at a set strike price by expiration. Options are used to hedge existing positions or to speculate on price movements, and they are the only derivative securities tested on the SIE.",
+      "key_concepts": [
+        "Two parties: Buyer (long/holder/owner) pays premium and has the right to exercise; Seller (short/writer) receives premium and has the obligation to perform if assigned.",
+        "Four basic positions: Buy calls, Sell calls, Buy puts, Sell puts.",
+        "One contract = 100 shares of the underlying equity; premium quoted per share (e.g., premium of 3 = $300 total).",
+        "Long call = bullish (right to buy at strike); Short call = bearish (obligated to sell at strike).",
+        "Long put = bearish (right to sell at strike); Short put = bullish (obligated to buy at strike).",
+        "Opening purchase \u2192 Closing sale (buyer); Opening sale \u2192 Closing purchase (writer).",
+        "In/At/Out of the Money \u2014 Calls: ITM when stock > strike; ATM when stock = strike; OTM when stock < strike. Puts: ITM when stock < strike; ATM when stock = strike; OTM when stock > strike.",
+        "Intrinsic value (IV) = amount option is ITM; never negative (minimum is zero).",
+        "Time value (TV) is subjective, driven by time to expiration and volatility; greater time and greater volatility increase TV.",
+        "Parity: premium equals intrinsic value (no time value remaining).",
+        "Buyers want options ITM (intrinsic value); sellers want options ATM or OTM (expire worthless, keep premium).",
+        "Equity options: expire third Friday of expiration month at 11:59 pm ET; trade 9:30 am\u20134:00 pm ET; trade settles T+1; exercise settles T+2 (equity options).",
+        "Index options: $100 multiplier; cash-settled; exercise settles T+1; broad-based stop trading 4:15 pm ET, narrow-based 4:00 pm ET; settlement uses closing index value on exercise day.",
+        "VIX = 'fear gauge' reflecting implied volatility of S&P 500 options over next 30 days; high VIX means expected volatility (not bullish or bearish).",
+        "Interest rate (yield-based) options: strike of 35 = 3.5% yield; each full percentage point = $1,000; European-style exercise only.",
+        "Currency options: hedge foreign currency vs. U.S. dollar; expire 3rd Friday; settle next business day; European-style exercise; no options on U.S. dollar itself.",
+        "American-style exercise: exercisable any time before expiration (most equity and equity index options).",
+        "European-style exercise: exercisable only on expiration day (foreign currency and yield-based options).",
+        "Protective put: long stock + long put (hedge against decline); locks in minimum sale price.",
+        "Protective call: short stock + long call (hedge against rise); locks in maximum repurchase price.",
+        "Covered call: writer owns the underlying stock; conservative income strategy.",
+        "Naked (uncovered) call: writer does not own stock; unlimited risk.",
+        "Covered put: writer has cash on hand to purchase the stock (or is short the stock).",
+        "Naked put: maximum loss = strike price \u2212 premium (limited but can be substantial).",
+        "Options Clearing Corporation (OCC): issues, guarantees, and standardizes listed options contracts; assigns exercise notices to short BDs randomly.",
+        "Automatic exercise: any option ITM by at least $0.01 at expiration is automatically exercised unless 'do not exercise' instructions given.",
+        "Assignment to customers by BD: random, FIFO, or any fair and reasonable method.",
+        "Account approval process: RR determines suitability \u2192 ODD delivered at or before account approval \u2192 ROP approves account \u2192 trading may begin immediately \u2192 signed options agreement returned within 15 days of approval.",
+        "If signed options agreement not returned within 15 days, only closing transactions permitted."
+      ],
+      "rules": [
+        "FINRA Rule 2360 \u2013 Options.",
+        "CBOE Rule 1.1 \u2013 Definitions.",
+        "Options Disclosure Document (ODD) must be provided at or before account approval.",
+        "Options account must be approved by a Registered Options Principal (ROP) before trading.",
+        "Signed options agreement required within 15 days of account approval; otherwise restricted to closing transactions only.",
+        "OCC is the issuer, guarantor, and clearing agent for listed options."
+      ],
+      "formulas": [
+        "Premium = Intrinsic Value + Time Value (IV + TV = Premium)",
+        "Call Intrinsic Value = Market Price \u2212 Strike Price (zero if negative)",
+        "Put Intrinsic Value = Strike Price \u2212 Market Price (zero if negative)",
+        "Call Breakeven = Strike Price + Premium (same for buyer and seller)",
+        "Put Breakeven = Strike Price \u2212 Premium (same for buyer and seller)",
+        "Long Call: MG = Unlimited; ML = Premium Paid",
+        "Short Call: MG = Premium Received; ML = Unlimited",
+        "Long Put: MG = Strike Price \u2212 Premium (down to zero); ML = Premium Paid",
+        "Short Put: MG = Premium Received; ML = Strike Price \u2212 Premium",
+        "Protective Put Breakeven = Stock Purchase Price + Put Premium",
+        "Protective Call Breakeven = Stock Short Sale Price \u2212 Call Premium",
+        "Covered Call Breakeven = Stock Purchase Price \u2212 Premium Received",
+        "Index Option Exercise Value = (Closing Index \u2212 Strike) \u00d7 $100 (for calls); (Strike \u2212 Closing Index) \u00d7 $100 (for puts)",
+        "Yield-Based Option Exercise Value = (Yield Difference in percentage points) \u00d7 $1,000 per contract"
+      ],
+      "mnemonics": [
+        "CALL UP, PUT DOWN \u2014 Call buyers want price up; Put buyers want price down.",
+        "EPIC \u2014 Exporters buy Puts, Importers buy Calls (currency options hedging).",
+        "OWLS \u2014 Owners want options to be Worth Something (ITM); writers want them worthless.",
+        "Long = Right, Short = Obligation.",
+        "Bullish: Long Calls, Short Puts | Bearish: Long Puts, Short Calls.",
+        "For Calls: Add premium to strike for BE; For Puts: Subtract premium from strike for BE (PSP \u2013 Puts Subtract Premium)."
+      ]
+    },
+    {
+      "title": "Lesson 5.2: Municipal Fund Securities",
+      "overview": "Municipal fund securities are state- or local-government-sponsored investment vehicles regulated by the MSRB. The three main types are Section 529 college savings/prepaid tuition plans, Local Government Investment Pools (LGIPs), and Achieving a Better Life Experience (ABLE) accounts. All require disclosure via an official statement or offering circular rather than a prospectus.",
+      "key_concepts": [
+        "Section 529 Plans: state-sponsored education savings accounts classified as municipal fund securities; sold with an official statement/offering circular.",
+        "Two types of 529s: (1) Prepaid tuition plan \u2014 lock in current tuition rates; hedges tuition inflation; usually restricted to specific schools/state residents. (2) Savings plan \u2014 invest contributions for future qualified education expenses; market performance dependent.",
+        "Qualified expenses: tuition, room and board, books for post-secondary; up to $10,000/year for K-12 tuition.",
+        "Contributions are after-tax (gifts for federal tax purposes); earnings grow tax-deferred; qualified withdrawals tax-free at federal level.",
+        "Many states offer state-tax deductions for in-state plans; out-of-state plans may lose state tax benefits.",
+        "Donor retains control of account even after beneficiary reaches majority.",
+        "No income limits on contributions; high overall contribution maximums set by state.",
+        "Beneficiary may be changed to a family member without penalty.",
+        "Scholarship exception: equivalent amount may be withdrawn penalty-free (taxes on earnings still apply).",
+        "Nonqualified withdrawals subject to ordinary income tax on earnings plus 10% penalty on earnings.",
+        "Rollovers between state plans allowed once per 12 months.",
+        "Local Government Investment Pools (LGIPs): trusts established by states to allow other governmental entities (cities, counties, school districts) to invest short-term funds; NOT for retail investors.",
+        "LGIPs commonly maintain a stable $1 NAV like money market funds (but are not money market funds).",
+        "LGIPs are exempt from SEC registration (governmental exemption); no prospectus, but information statement/investment policy/operating procedures provided.",
+        "ABLE Accounts: tax-advantaged savings accounts for individuals with significant disabilities; created by ABLE Act of 2014.",
+        "ABLE eligibility: disability must have onset before age 26 (beneficiary may currently be older than 26).",
+        "Automatic eligibility for ABLE if receiving SSI or SSDI and meet age/onset rules.",
+        "Only one ABLE account per beneficiary; beneficiary is the account owner.",
+        "ABLE contributions are after-tax (not federally deductible); some states allow deductions.",
+        "ABLE earnings grow tax-free; qualified disability-related withdrawals are tax-free.",
+        "ABLE annual contribution cap is set in dollars and may be inflation-adjusted."
+      ],
+      "rules": [
+        "MSRB Rule D-12 \u2014 Definition of Municipal Fund Securities.",
+        "MSRB Rule G-17 \u2014 Conduct of municipal securities and municipal advisory activities.",
+        "MSRB Rule G-30 \u2014 Pricing and commissions.",
+        "MSRB Rule G-45 \u2014 Reporting of information on municipal fund securities.",
+        "529 plans require delivery of an official statement (similar to a prospectus).",
+        "LGIPs exempt from SEC registration under governmental exemption."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "529 = 'Save for college' (Section 529).",
+        "ABLE = Age-26 Before Limited Eligibility \u2014 disability onset must be before age 26.",
+        "LGIP = Local Government Invests Pool \u2014 government entities only, not retail.",
+        "Prepaid = Price-locked; Savings = Stock-market-like growth."
+      ]
+    },
+    {
+      "title": "Lesson 5.3: Partnerships (General, Limited, and Hedge Funds)",
+      "overview": "Partnerships are unincorporated associations of two or more persons. General partnerships are not securities; limited partnerships (LPs), the most common Direct Participation Program (DPP), are securities that pass income, losses, gains, and tax deductions directly to investors. Hedge funds are typically organized as LPs sold via private placement and are aggressively managed, illiquid, and lightly regulated.",
+      "key_concepts": [
+        "General Partnership: all partners share management responsibility; unlimited personal liability; income/losses flow through to partners.",
+        "Partnership is a tax-reporting (not tax-paying) entity.",
+        "Limited Partnership (LP) / DPP: at least one General Partner (GP) and one Limited Partner; common in real estate, oil and gas, equipment leasing.",
+        "GP: unlimited liability; manages partnership; fiduciary duty; cannot compete with, borrow from, or commingle assets with the partnership.",
+        "Limited Partner: limited liability (loss limited to investment); no management role; right to vote on objectives, inspect books, receive distributions, sue GP.",
+        "If a limited partner participates in management, limited liability status may be lost (treated as GP).",
+        "LPs are highly illiquid \u2014 virtually no secondary market; transfer requires GP consent.",
+        "Property often held as Tenants in Common (TIC) \u2014 provides limited liability and no management role to LPs.",
+        "Sales channel: Private placements (accredited investors only; private placement memorandum) or Public offerings (prospectus; small contributions of $1,000\u2013$5,000).",
+        "Pass-through taxation: income = passive income; losses = passive losses (offset passive income only, NOT ordinary income).",
+        "Tax deductions used by DPPs to shelter income: depreciation, depletion, accelerated depreciation, intangible drilling costs.",
+        "Dissolution priority: (1) Secured lenders, (2) Other creditors, (3) Limited partners (profits first, then return of capital), (4) General partners.",
+        "Recapture risk: if IRS disallows prior tax benefit, limited partners owe back taxes, interest, and penalties.",
+        "Hedge funds: typically LPs sold as private placements; not regulated like mutual funds.",
+        "Hedge fund strategies: leverage, short selling, derivatives, currency/commodity speculation, emerging market investing.",
+        "Hedge fund features: large minimum investments, accredited investor requirement, lockup provisions (minimum holding period), high fees, illiquid."
+      ],
+      "rules": [
+        "FINRA Rule 2310 \u2014 Direct Participation Programs.",
+        "Outline references: TIC structure, pass-through tax treatment, generally unlisted/illiquid.",
+        "Private placements of LPs limited to accredited investors with substantial investment experience.",
+        "Passive losses can only offset passive income (not ordinary income or portfolio income)."
+      ],
+      "formulas": [
+        "Cash Flow = Net Income (or Loss) + Depreciation (and other non-cash deductions)",
+        "Dissolution Priority: Secured Lenders \u2192 Other Creditors \u2192 Limited Partners (profits, then capital) \u2192 General Partners",
+        "Investor's Passive Loss Share = Partnership Loss \u00d7 Investor's % Ownership"
+      ],
+      "mnemonics": [
+        "SCLG \u2014 Secured creditors, Creditors (general), Limited partners, GPs (order of dissolution claims).",
+        "DPP losses are PASSIVE \u2014 only offset PASSIVE income.",
+        "DAID \u2014 Depreciation, Accelerated depreciation, Intangible drilling costs, Depletion (non-cash deductions in DPPs).",
+        "Limited Partner = Limited Liability AND Limited Management."
+      ]
+    },
+    {
+      "title": "Lesson 5.4: REITs, ETFs, and ETNs",
+      "overview": "REITs, ETFs, and ETNs are pooled or exchange-traded investment vehicles offering investors access to real estate or index-based returns. REITs distribute income from real estate ownership or mortgage holdings and receive favorable tax treatment as conduits. ETFs are exchange-traded shares typically tracking an index, while ETNs are unsecured debt obligations of an issuer linked to index performance \u2014 carrying credit risk in addition to market risk.",
+      "key_concepts": [
+        "REIT (Real Estate Investment Trust): pools capital to own/manage real estate, mortgages, or both; not an investment company.",
+        "Three REIT types by holdings: Equity REITs (own property), Mortgage REITs (own mortgages), Hybrid REITs (both).",
+        "Three REIT types by registration/listing: Private (unregistered, illiquid), Public Non-Listed (registered but not exchange-traded), Listed/Exchange-Traded (registered and on exchanges).",
+        "Subchapter M / Conduit (pipeline) tax treatment: REIT avoids corporate tax if it receives at least 75% of income from real estate AND distributes at least 90% of net investment income to shareholders.",
+        "REITs pass through income and capital gains to investors, but NOT losses (unlike DPPs).",
+        "Shareholders receive dividends (taxed as ordinary income generally) and possible capital gains distributions.",
+        "Investors own an undivided interest in a pool of real estate investments.",
+        "ETF (Exchange-Traded Fund): equity security; registered as open-end fund or UIT; tracks an index; trades intraday on an exchange like a stock.",
+        "ETF advantages vs. mutual funds: intraday trading, marginable, can be sold short, low expense ratios, tax efficient (rare capital gain distributions).",
+        "ETF disadvantages: commissions on each trade, temptation to overtrade, market price may diverge from NAV due to supply/demand.",
+        "ETN (Exchange-Traded Note): unsecured debt security issued by bank/financial institution; backed only by issuer's credit.",
+        "ETN features: stated maturity, no interest payments, no principal protection; at maturity pays cash linked to index performance minus fees.",
+        "ETN risks: credit/default risk of issuer (primary risk), market risk, liquidity risk (many never actually exchange-listed), possible premium pricing.",
+        "Both ETFs and ETNs are 'Exchange-Traded Products' (ETPs)."
+      ],
+      "rules": [
+        "Subchapter M of the Internal Revenue Code \u2014 conduit theory for REITs (75% real estate income test; 90% distribution test).",
+        "Public (registered) REITs subject to SEC disclosure requirements; private REITs are not.",
+        "ETFs registered under Investment Company Act of 1940 as open-end funds or UITs.",
+        "ETNs not registered as investment companies; treated as debt securities of the issuer."
+      ],
+      "formulas": [
+        "REIT Conduit Requirements: \u2265 75% income from real estate AND \u2265 90% of net investment income distributed to avoid corporate-level tax",
+        "ETN Maturity Payment = Cash payment linked to underlying index performance \u2212 Management fees"
+      ],
+      "mnemonics": [
+        "REIT = Real Estate Income Trust \u2014 Income flows through, losses do NOT.",
+        "75/90 Rule for REITs \u2014 75% real estate income, 90% distribution.",
+        "ETF = Fund (equity ownership); ETN = Note (debt of issuer with credit risk).",
+        "ETN Primary Risk = Default (issuer credit risk)."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 30491,
+    "output": 6396
+  },
+  "cost_usd": 0.9371
+}

@@ -1,0 +1,175 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "sections": [
+    {
+      "title": "Lesson 11.1: Anti-Money Laundering (AML) and the Bank Secrecy Act",
+      "overview": "Money laundering is the process of disguising the origin or intended use of funds tied to criminal or terrorist activity. The Bank Secrecy Act (BSA) and USA PATRIOT Act impose detection, reporting, and recordkeeping obligations on broker-dealers, enforced primarily through FinCEN and OFAC under the U.S. Treasury Department.",
+      "key_concepts": [
+        "Pre-9/11 AML focus: concealing the criminal SOURCE of dirty money (e.g., drug trafficking proceeds).",
+        "Post-9/11 (USA PATRIOT Act) focus: also concerned with the DESTINATION/USE of funds (e.g., clean money used for terrorism).",
+        "Three Stages of Money Laundering: (1) Placement \u2014 cash enters the financial system (most detectable stage); (2) Layering \u2014 multiple transactions disguise audit trail; (3) Integration \u2014 funds reenter economy appearing legitimate.",
+        "FinCEN: Bureau of U.S. Treasury (not DOJ); intelligence agency with no direct enforcement arm; collects CTRs and SARs.",
+        "Currency Transaction Report (CTR): Filed for currency receipts over $10,000 in a single day; file within 15 days; retain records 5 years; CTRs apply to CURRENCY only, not checks/wires (any currency, not only U.S. dollars).",
+        "Structuring: Designing deposits to fall under $10,000 threshold \u2014 prohibited.",
+        "Suspicious Activity Report (SAR): Filed for transactions of $5,000 or more (alone or in aggregate) that involve illegal funds, evade BSA, lack lawful purpose, or facilitate crime; file within 30 days; retain 5 years; filing must remain CONFIDENTIAL \u2014 subject must not be notified.",
+        "USA PATRIOT Act wire transfer recordkeeping: required for transfers of $3,000 or more (names/addresses of sender/recipient, amount, financial institution, account number).",
+        "AML Compliance Officer: Required by BSA; need not be a registered person; establishes internal compliance and red-flag detection procedures.",
+        "Red flags: lack of concern over costs/risks, frequent large currency deposits, many wires to unrelated third parties, excessive journal entries between unrelated accounts, structuring.",
+        "OFAC: Treasury division; maintains SDN (Specially Designated Nationals) list; U.S. persons and entities prohibited from doing business with SDNs; check at account opening, during relationship, and periodically.",
+        "Customer Identification Program (CIP): Required by USA PATRIOT Act; firms must notify new customers that information is being requested for verification (posted notice, verbal, or on new account form)."
+      ],
+      "rules": [
+        "Bank Secrecy Act \u2014 establishes Treasury as primary AML regulator; requires CTR for currency > $10,000.",
+        "USA PATRIOT Act (2001) \u2014 requires SARs, CIPs, wire transfer recordkeeping \u2265 $3,000, and broader AML focus on terrorism financing.",
+        "Penalties for failure to file CTR: up to $500,000 fine and/or 10 years prison.",
+        "CTR retention: 5 years from filing; SAR retention: 5 years from filing date.",
+        "FINRA Rule 3310 \u2014 AML Compliance Program (requires written program, designated officer, training, independent testing)."
+      ],
+      "formulas": [
+        "CTR threshold: Currency received > $10,000 in a single day = file CTR within 15 days",
+        "SAR threshold: Suspicious transaction \u2265 $5,000 (alone or aggregate) = file SAR within 30 days",
+        "Wire transfer recordkeeping threshold: \u2265 $3,000"
+      ],
+      "mnemonics": [
+        "PLI \u2014 Placement, Layering, Integration (stages of money laundering, in order).",
+        "CTR = Currency, Ten thousand, Reported in 15 days.",
+        "SAR = Suspicious, \u2265 $5,000, file in 30 days, Secret (confidential)."
+      ]
+    },
+    {
+      "title": "Lesson 11.2: Market Manipulation and Insider Trading",
+      "overview": "No security is exempt from antifraud provisions. Manipulative practices \u2014 designed to deceive market participants or distort prices \u2014 are strictly prohibited, as is trading on material nonpublic information. The Insider Trading Act of 1988 dramatically increased penalties for misuse of inside information.",
+      "key_concepts": [
+        "Market Rumors: Spreading false/misleading information (including via social media \u2014 Twitter, Reddit, Facebook, chat rooms) to manipulate prices is prohibited.",
+        "Pump and Dump: Accumulate shares cheap, spread positive false rumors to inflate price, then sell (dump) at inflated price.",
+        "Front Running: Placing personal orders ahead of known pending customer orders (especially block orders) to profit from anticipated price movement.",
+        "Churning (Excessive Trading): Trading solely to generate commissions, inconsistent with client objectives, history, or financial ability \u2014 breach of fiduciary duty; principal review required.",
+        "Marking the Open / Marking the Close: Entering or falsely reporting trades at open or close to manipulate reported opening/closing prices.",
+        "Freeriding: Buying and selling securities before payment is made \u2014 prohibited in cash and margin accounts; penalty is 90-day account freeze requiring cash up front.",
+        "Matching Orders (Painting the Tape): Coordinated buy/sell at same price to create false appearance of volume/activity.",
+        "Inside Information: Material nonpublic information \u2014 info that would influence price of stock and has not been disseminated to the public.",
+        "Insider Trading: ILLEGAL USE of inside information for gain or to avoid loss; mere possession is not illegal \u2014 it's the use.",
+        "Tipper and Tippee both liable. Four-prong test: (1) info material & nonpublic; (2) tipper owes fiduciary duty; (3) tipper meets personal benefits test; (4) tippee knew or should have known info was confidential.",
+        "Information Barrier / Firewall: Required written supervisory procedures restricting flow of material nonpublic information between firm departments.",
+        "Contemporaneous Traders: Persons trading opposite side of market at same time as insider; may sue for up to 5 years after violation.",
+        "Bounties (Dodd-Frank): Informants may receive 10%\u201330% of amounts recovered for original information on securities law violations.",
+        "Rule 5130 \u2014 Restricted Persons (cannot buy common stock IPOs at POP): member firms; employees of member firms; finders/fiduciaries to underwriter (attorneys, accountants); portfolio managers (banks, S&Ls, insurance, investment companies); 10%+ owners of a member firm; immediate family members (parents, in-laws, spouses, siblings, children, anyone receiving material support).",
+        "Aunts, uncles, grandparents are NOT immediate family \u2014 unless they live in same household or receive material support.",
+        "De minimis exemption: Account may purchase IPO if restricted persons own no more than 10% of beneficial interests."
+      ],
+      "rules": [
+        "Securities Exchange Act of 1934 \u2014 original prohibition on insider trading.",
+        "Insider Trading and Securities Fraud Enforcement Act of 1988 \u2014 increased penalties.",
+        "FINRA Rule 5130 \u2014 Restrictions on Purchase and Sale of IPO equity securities.",
+        "Penalties for Insider Trading: Civil \u2014 up to 3x profit gained or loss avoided; Controlling person \u2014 greater of $1 million or 3x profit/loss avoided; Criminal \u2014 up to $5 million and/or 20 years prison for individuals; Firm \u2014 greater of $25 million or 3x damages.",
+        "SEC Rule 10b-5 \u2014 Employment of Manipulative and Deceptive Devices.",
+        "FINRA Rule 5270 \u2014 Front Running of Block Transactions; Rule 5320 \u2014 Trading Ahead of Customer Orders."
+      ],
+      "formulas": [
+        "Insider trading civil penalty (individual) = up to 3 \u00d7 (profit gained or loss avoided)",
+        "Controlling person penalty = greater of $1,000,000 OR 3 \u00d7 profit/loss avoided",
+        "Firm penalty (for failure to supervise) = greater of $25,000,000 OR 3 \u00d7 damages",
+        "Whistleblower bounty = 10% to 30% of amount recovered"
+      ],
+      "mnemonics": [
+        "FPCMMMF \u2014 Front-running, Pump and dump, Churning, Marking open/close, Matching orders, Market rumors, Freeriding (manipulation list).",
+        "Restricted persons under 5130 = 'I-FOAM' \u2014 Industry employees, Finders/fiduciaries, Owners (10%+), Asset managers/portfolio managers, Member firms (and immediate family).",
+        "Insider Trading Penalty 3-3-5-20: 3x profits (civil), $5 million / 20 years (criminal individual)."
+      ]
+    },
+    {
+      "title": "Lesson 11.3: Prohibited Activities \u2014 Senior Investors, Improper Use of Assets, Nonregistered Personnel",
+      "overview": "Beyond market manipulation, the rules prohibit financial exploitation of senior/specified adult clients, improper use of customer funds and securities (including borrowing/lending without authorization), guarantees, and the performance of registered functions by nonregistered employees.",
+      "key_concepts": [
+        "Specified Adult (FINRA Rule 2165): age 65+; OR age 18+ whom member reasonably believes has a mental or physical impairment rendering them unable to protect own interests.",
+        "Financial Exploitation: Wrongful or unauthorized taking/use of funds or securities; or any act/omission to gain control through deception, intimidation, or undue influence (includes use of POA, guardianship).",
+        "Trusted Contact Person: Firm must make reasonable efforts to obtain name/contact info at account opening or when updating account info; not required for opening \u2014 only reasonable efforts required; written disclosure of authorized contact must be provided.",
+        "Temporary Hold on Disbursements: Firm MAY (not required) place temporary hold (up to 15 business days, extendable by state regulator) if reasonable belief of financial exploitation; internal review must begin immediately; notification to trusted contact and authorized parties within 2 business days, unless trusted contact is suspected perpetrator.",
+        "Improper Use: Any use of customer funds/securities other than as the customer intended; borrowing without consent is indistinguishable from stealing.",
+        "Five Permitted Borrowing/Lending Arrangements (Rule 3240): (1) immediate family \u2014 no notice/approval; (2) customer in business of lending (bank) \u2014 no approval needed; (3) both registered with same firm \u2014 firm approval required; (4) personal relationship outside broker-customer \u2014 firm approval required; (5) business relationship outside broker-customer \u2014 firm approval required.",
+        "Firm must have written procedures in place permitting lending arrangements; otherwise prohibited.",
+        "Guarantees Prohibited: No firm/IA/RR may guarantee against loss or guarantee a gain.",
+        "Sharing in Customer Accounts (Rule 2150): Allowed only with prior written firm approval AND only in proportion to RR's financial contribution to joint account; exception for immediate family \u2014 proportionality not required.",
+        "Firms cannot have joint accounts with customers.",
+        "Immediate Family for Sharing: parents, in-laws, spouses, children, and anyone receiving material financial support (broadly includes anyone living in same residence).",
+        "Nonregistered Personnel \u2014 PERMITTED: answer general questions, give literature, set appointments, invite to seminars, handle customer money/securities (must be fingerprinted).",
+        "Nonregistered Personnel \u2014 PROHIBITED: open accounts, solicit trades, conduct securities business, receive commissions.",
+        "Passing the SIE alone does NOT make you registered \u2014 must also pass a top-off (e.g., Series 7) exam."
+      ],
+      "rules": [
+        "FINRA Rule 2165 \u2014 Financial Exploitation of Specified Adults (allows temporary holds up to 15 business days).",
+        "FINRA Rule 2150 \u2014 Improper Use of Customers' Securities or Funds; Prohibition Against Guarantees and Sharing in Accounts.",
+        "FINRA Rule 3240 \u2014 Borrowing From or Lending to Customers.",
+        "FINRA Rule 2040 \u2014 Payments to Unregistered Persons (prohibits commission payment to unregistered persons)."
+      ],
+      "formulas": [
+        "Temporary hold duration: up to 15 business days (state regulator may extend or shorten)",
+        "Trusted contact / authorized parties notification: within 2 business days of hold",
+        "Sharing in account: RR share % \u2264 RR contribution % (except immediate family)"
+      ],
+      "mnemonics": [
+        "Specified Adult = '65 or unable' (age 65+ OR 18+ with impairment).",
+        "Borrow/Lend exceptions = 'FB-RPB' \u2014 Family, Bank-customer, Registered same firm, Personal relationship, Business relationship.",
+        "Hold = 15 business days; Notify = 2 business days."
+      ]
+    },
+    {
+      "title": "Lesson 11.4: Communications with the Public",
+      "overview": "FINRA Rule 2210 governs all member communications, requiring fair dealing, good faith, balanced risk/benefit disclosure, and prohibiting omission of material facts or misleading statements. Communications are categorized as institutional, retail, or correspondence based on audience and volume, each with its own approval and filing requirements.",
+      "key_concepts": [
+        "General Standards (Rule 2210): All communications must be based on fair dealing/good faith; fair and balanced; no false, exaggerated, or misleading statements; no implication past performance will be repeated; tailored to audience.",
+        "Three Categories of Communication: Institutional, Retail, Correspondence.",
+        "Institutional Communication: Written communications distributed only to institutional investors (other member firms/RRs, banks, S&Ls, insurance companies, registered investment companies, employee benefit plans, government entities, entities with $50M+ assets, persons acting on behalf of institutional investors); excludes internal firm memos.",
+        "Retail Communication: Written communications distributed to MORE THAN 25 retail investors within any 30-calendar-day period; requires principal approval before use; must be filed with FINRA \u2014 new member firms file 10 days BEFORE use; established firms file within 10 days OF first use.",
+        "Correspondence: Written communications to 25 OR FEWER retail investors within any 30-day period; firm decides whether to require pre-approval or train/document post-use review.",
+        "If reason to believe institutional communication will be forwarded to retail \u2014 treat as retail.",
+        "Filing with FINRA \u2260 approval \u2014 it is a filing process only.",
+        "Social Media: Static content (websites, blogs) generally requires principal pre-approval; interactive posts do not require pre-approval but require firm policies and supervision.",
+        "Cannot imply regulator approval or endorsement \u2014 overly prominent display of regulator logo or 'Approved by SEC' is misleading and prohibited.",
+        "TCPA of 1991 (administered by FCC): Cold-calling rules \u2014 must identify name, company, phone/address; calls only between 8:00 am and 9:00 pm prospect's local time; must check company AND National Do Not Call Registry (both lists must be no more than 30 days old).",
+        "TCPA exemptions: existing business relationship, prior express permission, tax-exempt nonprofit, noncommercial purpose, legitimate debt collection.",
+        "Account Statements: At least quarterly; monthly if penny stocks held; must show activity, positions, balances; must advise customer to report discrepancies.",
+        "Trade Confirmations (Rule 10b-10): Sent at or before completion of transaction (settlement date); must show trade date, account #, RR ID, BOT/SLD, quantity, description, yield (callable bonds), CUSIP, price, amount, commission (if agent), capacity (agent or principal), net amount.",
+        "Holding Customer Mail (Rule 3150): Written customer request required; standard up to 3 months (longer for acceptable reasons like safety, not convenience); firm must verify customer's instructions still apply at reasonable intervals; firm must inform of alternate access methods.",
+        "Customer Account Records: Send copy within 30 days of account opening; update within 30 days of any change; verify at least every 36 months.",
+        "Regulation S-P: Protects nonpublic personal information (SSN, balances, history, internet cookies); initial privacy notice at relationship inception; annual notice for customers (ongoing); consumers (one-time) get initial only; reasonable opt-out methods required (check boxes, electronic opt-out, toll-free number) \u2014 letter writing NOT reasonable; safeguard requirements include encryption and secure systems.",
+        "Business Continuity Plan (BCP \u2014 FINRA Rule 4370): Must address data backup/recovery, alternate communications with customers/employees/regulators, alternate physical location, customer access to funds; review annually; senior management principal responsible; two emergency contacts to FINRA (both associated; at least one principal/senior management); update within 30 days of changes; disclose BCP to customers at account opening, on website, and by mail on request."
+      ],
+      "rules": [
+        "FINRA Rule 2210 \u2014 Communications with the Public (three categories, approval, filing).",
+        "FINRA Rule 2231 \u2014 Customer Account Statements (quarterly minimum).",
+        "FINRA Rule 2232 \u2014 Customer Confirmations (at/before completion of transaction).",
+        "FINRA Rule 3150 \u2014 Holding of Customer Mail.",
+        "FINRA Rule 3230 \u2014 Telemarketing (incorporates TCPA requirements).",
+        "FINRA Rule 4370 \u2014 Business Continuity Plans and Emergency Contact Information.",
+        "FINRA Rule 4512 \u2014 Customer Account Information (30-day records, 36-month update).",
+        "SEC Rule 10b-10 \u2014 Confirmation of Transactions.",
+        "Regulation S-P \u2014 Privacy of Consumer Financial Information.",
+        "Telephone Consumer Protection Act of 1991 (TCPA) \u2014 administered by FCC."
+      ],
+      "formulas": [
+        "Retail communication = > 25 retail investors / 30 calendar days",
+        "Correspondence = \u2264 25 retail investors / 30 calendar days",
+        "New member filing: 10 days BEFORE first use; Established member: within 10 days OF first use",
+        "Account statement frequency: quarterly (monthly if penny stocks)",
+        "Cold calls: between 8:00 am and 9:00 pm prospect's local time",
+        "DNC list age: \u2264 30 days old",
+        "Institutional investor threshold: $50 million+ in total assets",
+        "Customer account record: send within 30 days; update every 36 months"
+      ],
+      "mnemonics": [
+        "'25 in 30' rule \u2014 over 25 retail in 30 days = Retail; 25 or fewer = Correspondence.",
+        "TCPA = 'Talk Calmly Politely Always' \u2014 8 am to 9 pm prospect's time, identify yourself, check DNC.",
+        "BCP contacts: '2 contacts, 1 must be principal/senior management'.",
+        "Reg S-P: 'Customers get annual; consumers get one-time'.",
+        "New firm files BEFORE (10 days prior); Old firm files AFTER (within 10 days of use)."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 22351,
+    "output": 6844
+  },
+  "cost_usd": 0.8486
+}

@@ -1,0 +1,451 @@
+{
+  "type_key": "standard",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What is the primary purpose of the Securities Act of 1933?",
+      "back": "To require full and fair disclosure of material information in connection with the issuance of new securities to the public (regulates the primary market).",
+      "unit": 1,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What does the Securities Exchange Act of 1934 primarily regulate?",
+      "back": "The secondary market \u2014 trading of securities after issuance, including the registration of broker-dealers and exchanges, and the creation of the SEC.",
+      "unit": 1,
+      "lesson": 2
+    },
+    {
+      "type": "definition",
+      "front": "Define 'firm commitment' underwriting.",
+      "back": "An underwriting arrangement in which the investment bank purchases the entire issue from the issuer and assumes the financial risk of reselling it to the public.",
+      "unit": 1,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "In a 'best efforts' underwriting, who bears the risk of unsold shares?",
+      "back": "The issuer. The underwriter acts only as an agent and is not obligated to purchase unsold shares.",
+      "unit": 1,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the third market?",
+      "back": "Trading of exchange-listed securities in the over-the-counter (OTC) market.",
+      "unit": 1,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is the fourth market?",
+      "back": "Direct trading of securities between institutional investors without using a broker-dealer, typically via electronic communication networks (ECNs).",
+      "unit": 1,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is a market order?",
+      "back": "An order to buy or sell a security immediately at the best available current price. Execution is guaranteed; price is not.",
+      "unit": 1,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the key difference between a limit order and a stop order?",
+      "back": "A limit order executes only at the specified limit price or better; a stop order becomes a market order once the stop price is triggered.",
+      "unit": 1,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "List the rights of common stockholders.",
+      "back": "Voting rights, right to dividends (if declared), preemptive rights (if granted), right to inspect corporate books, and a residual claim on assets in liquidation.",
+      "unit": 2,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "In a corporate liquidation, what is the order of priority for claims?",
+      "back": "Unpaid wages/taxes, secured creditors, unsecured creditors (including debenture holders), subordinated debt holders, preferred stockholders, then common stockholders.",
+      "unit": 2,
+      "lesson": 1
+    },
+    {
+      "type": "definition",
+      "front": "What is cumulative preferred stock?",
+      "back": "Preferred stock that accumulates any missed (unpaid) dividends; all arrears must be paid before any dividends can be paid to common stockholders.",
+      "unit": 2,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What does an ADR represent?",
+      "back": "An American Depositary Receipt represents ownership of shares in a foreign corporation, allowing U.S. investors to invest in foreign companies through a U.S. bank-issued receipt.",
+      "unit": 2,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is the main risk unique to ADR holders?",
+      "back": "Currency (exchange rate) risk, since the underlying shares are denominated in a foreign currency.",
+      "unit": 2,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "On the ex-dividend date, what happens to a stock's price?",
+      "back": "The stock opens at a price reduced by the amount of the dividend; buyers on or after the ex-date are not entitled to the dividend.",
+      "unit": 2,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the inverse relationship between bond prices and interest rates?",
+      "back": "When interest rates rise, bond prices fall; when interest rates fall, bond prices rise.",
+      "unit": 3,
+      "lesson": 1
+    },
+    {
+      "type": "definition",
+      "front": "Define a debenture.",
+      "back": "An unsecured corporate bond backed only by the issuer's full faith and credit (general creditworthiness), not by specific collateral.",
+      "unit": 3,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the maturity range for Treasury bills, notes, and bonds?",
+      "back": "T-bills: 1 year or less (issued at discount); T-notes: 2\u201310 years; T-bonds: 10\u201330 years.",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Are Treasury securities subject to state and local income tax?",
+      "back": "No. Treasury interest is taxable at the federal level but exempt from state and local income taxes.",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What backs a general obligation (GO) bond?",
+      "back": "The full faith, credit, and taxing power of the issuing municipality.",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What backs a revenue bond?",
+      "back": "Revenue generated by a specific project or facility (e.g., toll road, airport, utility), not the municipality's taxing power.",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "definition",
+      "front": "What is commercial paper?",
+      "back": "Short-term unsecured corporate debt with a maximum maturity of 270 days, issued at a discount.",
+      "unit": 3,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is a banker's acceptance (BA) used for?",
+      "back": "Financing international trade; it is a time draft guaranteed by a bank, typically with maturities up to 270 days.",
+      "unit": 3,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the key difference between open-end and closed-end funds?",
+      "back": "Open-end funds continuously issue/redeem shares at NAV; closed-end funds issue a fixed number of shares that trade on exchanges at market-determined prices.",
+      "unit": 4,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "How is the public offering price (POP) of a mutual fund calculated?",
+      "back": "NAV plus the sales charge (load). For no-load funds, POP equals NAV.",
+      "unit": 4,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum allowable sales charge on a mutual fund under FINRA rules?",
+      "back": "8.5% of the public offering price.",
+      "unit": 4,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the main difference between a fixed and variable annuity?",
+      "back": "A fixed annuity guarantees a fixed payment and is backed by the insurer's general account; a variable annuity payments fluctuate with the performance of separate account investments and pass investment risk to the contract owner.",
+      "unit": 4,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What gives the holder of a call option the right to do?",
+      "back": "Buy the underlying security at the strike price on or before expiration.",
+      "unit": 5,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What gives the holder of a put option the right to do?",
+      "back": "Sell the underlying security at the strike price on or before expiration.",
+      "unit": 5,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum loss for the buyer of an option?",
+      "back": "The premium paid.",
+      "unit": 5,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "When must the Options Disclosure Document (ODD) be delivered to a customer?",
+      "back": "At or before the time the customer's account is approved for options trading.",
+      "unit": 5,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What are the two types of 529 plans?",
+      "back": "Prepaid tuition plans and college savings plans.",
+      "unit": 5,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Who controls the assets in a 529 plan?",
+      "back": "The account owner (donor) retains control; the beneficiary does not have control over the assets.",
+      "unit": 5,
+      "lesson": 2
+    },
+    {
+      "type": "definition",
+      "front": "What is a Direct Participation Program (DPP)?",
+      "back": "A limited partnership that passes through income, gains, losses, and tax benefits directly to investors (limited partners); generally illiquid.",
+      "unit": 5,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the 2025 annual IRA contribution limit and catch-up amount?",
+      "back": "$7,000 annual contribution; additional $1,000 catch-up for those age 50 and older.",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is the key tax difference between a Traditional IRA and a Roth IRA?",
+      "back": "Traditional IRA contributions may be tax-deductible and withdrawals are taxed; Roth IRA contributions are after-tax and qualified withdrawals are tax-free.",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "At what age must required minimum distributions (RMDs) begin from a Traditional IRA?",
+      "back": "Age 73 (per SECURE Act 2.0).",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is the penalty for failing to take an RMD?",
+      "back": "25% excise tax on the amount not distributed (reduced to 10% if timely corrected).",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is JTWROS?",
+      "back": "Joint Tenants with Right of Survivorship \u2014 upon one owner's death, that owner's share passes automatically to the surviving tenant(s).",
+      "unit": 6,
+      "lesson": 3
+    },
+    {
+      "type": "definition",
+      "front": "Define purchasing power (inflation) risk.",
+      "back": "The risk that inflation will erode the real value of an investment's future cash flows; particularly affects fixed-income securities.",
+      "unit": 7,
+      "lesson": 1
+    },
+    {
+      "type": "definition",
+      "front": "Define reinvestment risk.",
+      "back": "The risk that interest or principal received from a bond will have to be reinvested at a lower interest rate than the original bond's yield.",
+      "unit": 7,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is systematic (market) risk?",
+      "back": "Risk affecting the overall market that cannot be eliminated through diversification (e.g., recessions, interest rate changes).",
+      "unit": 7,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What does Regulation Best Interest (Reg BI) require?",
+      "back": "Broker-dealers and their associated persons to act in the best interest of the retail customer when making recommendations, without placing their own interests ahead of the customer's.",
+      "unit": 7,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Rank these yields for a discount bond from lowest to highest: nominal, current yield, YTM, YTC.",
+      "back": "Nominal < Current Yield < YTM < YTC (for a bond trading at a discount).",
+      "unit": 8,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "How are long-term capital gains taxed compared to short-term gains?",
+      "back": "Long-term gains (holding period > 1 year) are taxed at preferential rates (0%, 15%, or 20%); short-term gains are taxed as ordinary income.",
+      "unit": 8,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Are municipal bond interest payments taxable at the federal level?",
+      "back": "No, municipal bond interest is generally exempt from federal income tax (and may also be exempt from state tax in the state of issuance).",
+      "unit": 8,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What are the four phases of the business cycle in order?",
+      "back": "Expansion, Peak, Contraction, Trough.",
+      "unit": 9,
+      "lesson": 1
+    },
+    {
+      "type": "definition",
+      "front": "Define a recession.",
+      "back": "Two or more consecutive quarters of declining GDP.",
+      "unit": 9,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is Keynesian economic theory's main premise?",
+      "back": "Government intervention through fiscal policy (spending and taxation) is necessary to stabilize the economy and manage demand.",
+      "unit": 9,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is monetarist economic theory's main premise?",
+      "back": "The money supply is the primary driver of economic activity; control of money supply growth is the key tool for managing the economy.",
+      "unit": 9,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "List the tools of the Federal Reserve to conduct monetary policy.",
+      "back": "Open market operations, the discount rate, reserve requirements, and (more recently) interest on reserve balances.",
+      "unit": 9,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the discount rate?",
+      "back": "The interest rate the Federal Reserve charges member banks for short-term loans from the Fed.",
+      "unit": 9,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the federal funds rate?",
+      "back": "The interest rate banks charge each other for overnight loans of reserves.",
+      "unit": 9,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the SEC's role?",
+      "back": "Federal agency that administers federal securities laws, enforces compliance, and oversees SROs, broker-dealers, investment advisers, and securities markets.",
+      "unit": 10,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What does SIPC protect, and up to what limits?",
+      "back": "Customer accounts at failed brokerage firms up to $500,000 per separate customer (including up to $250,000 in cash). SIPC does NOT protect against market losses.",
+      "unit": 10,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the MSRB's role?",
+      "back": "Self-regulatory organization that writes rules for municipal securities dealers and municipal advisors; the MSRB does NOT enforce its own rules.",
+      "unit": 10,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "What are the three stages of money laundering?",
+      "back": "Placement, layering, and integration.",
+      "unit": 11,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "When must a Currency Transaction Report (CTR) be filed?",
+      "back": "For any cash transaction (or related transactions) exceeding $10,000 in a single business day; filed with FinCEN within 15 days.",
+      "unit": 11,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is insider trading?",
+      "back": "Trading securities based on material, nonpublic information in breach of a fiduciary or other duty; prohibited under the Insider Trading and Securities Fraud Enforcement Act of 1988.",
+      "unit": 11,
+      "lesson": 2
+    },
+    {
+      "type": "definition",
+      "front": "Define churning.",
+      "back": "Excessive trading in a customer's account by a registered representative to generate commissions, without regard to the customer's investment objectives. Prohibited.",
+      "unit": 11,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is the retention requirement for retail communications under FINRA rules?",
+      "back": "Retail communications must be retained for at least 3 years from the date of last use.",
+      "unit": 11,
+      "lesson": 4
+    },
+    {
+      "type": "qa",
+      "front": "Within how many days must Form U4 amendments generally be filed for material changes?",
+      "back": "Within 30 days of the firm learning of the material change.",
+      "unit": 12,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "When must a Form U5 be filed after a registered representative leaves a firm?",
+      "back": "Within 30 days of termination.",
+      "unit": 12,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the FINRA continuing education requirement for registered persons?",
+      "back": "Regulatory Element annually, and Firm Element on an ongoing basis as determined by the firm's annual needs analysis.",
+      "unit": 12,
+      "lesson": 2
+    }
+  ],
+  "tokens": {
+    "input": 7766,
+    "output": 6257
+  },
+  "cost_usd": 0.5858
+}

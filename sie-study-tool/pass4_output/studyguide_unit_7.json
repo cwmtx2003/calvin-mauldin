@@ -1,0 +1,89 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "sections": [
+    {
+      "title": "Lesson 7.1: Investment Risks",
+      "overview": "Investment risks are divided into two broad categories: systematic risk (market-wide, non-diversifiable) and nonsystematic risk (specific to an issuer/industry, reducible via diversification). Understanding the source of each risk type and how to mitigate it is fundamental to making suitable recommendations and judging portfolio exposure.",
+      "key_concepts": [
+        "Systematic Risk: affects the entire market; cannot be eliminated by diversification.",
+        "Market Risk: when the overall market declines, portfolios decline with it (the dominant systematic risk for equities).",
+        "Interest Rate Risk: bond prices move inversely to interest rates; longer-duration bonds are more sensitive. Often called the 'market risk for bonds.'",
+        "Reinvestment Risk: when rates fall, proceeds from coupons, calls, or maturities must be reinvested at lower yields.",
+        "Inflation (Purchasing Power) Risk: fixed payments lose buying power as prices rise; impacts all fixed-income securities \u2014 systematic.",
+        "Currency Risk: foreign-denominated securities lose value when the foreign currency weakens vs. the U.S. dollar; quoted at spot rate.",
+        "Call Risk: callable bonds may be redeemed early when rates fall; leads to reinvestment risk. Mitigated by call protection periods.",
+        "Nonsystematic Risk (Unsystematic): unique to an issuer/industry; can be reduced through diversification.",
+        "Default (Credit/Financial) Risk: issuer fails to pay interest/principal; primarily a debt-security risk.",
+        "Capital Risk: risk of not recovering original principal; minimal for Treasuries, high for options/DPPs.",
+        "Business Risk: operating risk from poor management decisions, lowering earnings or causing failure.",
+        "Prepayment Risk: borrowers repay loans early (e.g., GNMA mortgage refinancings), forcing reinvestment at lower rates.",
+        "Liquidity (Marketability) Risk: inability to sell quickly at a fair price; common in real estate, collectibles, thinly traded securities.",
+        "Regulatory Risk: changes in agency rules (e.g., FDA, EPA) damage a business or industry.",
+        "Legislative Risk: changes in law (e.g., tax code) impact investments \u2014 distinct from regulatory risk.",
+        "Political Risk: instability in a country's political system, especially in emerging markets.",
+        "Sovereign Risk: a country defaults on its sovereign debt obligations.",
+        "Mitigation of Systematic Risk: hedge with derivatives (e.g., buy index puts) \u2014 diversification does NOT eliminate it.",
+        "Mitigation of Nonsystematic Risk: diversification across issuers, sectors, asset classes, and geographies.",
+        "Beta: measures a security's volatility vs. the market (S&P 500 = beta of 1.00). >1.00 = more volatile; <1.00 = less volatile. Higher beta = riskier."
+      ],
+      "rules": [
+        "Systematic risk cannot be diversified away \u2014 it is built into the system.",
+        "Inverse price/yield relationship: when interest rates rise, bond prices fall, and vice versa.",
+        "Duration measures bond price sensitivity to interest rate changes \u2014 longer maturity = greater sensitivity.",
+        "U.S. Treasuries do not currently issue callable bonds."
+      ],
+      "formulas": [
+        "Beta of the market (S&P 500) = 1.00",
+        "Security Beta > 1.00 = more volatile than market; Beta < 1.00 = less volatile than market"
+      ],
+      "mnemonics": [
+        "Systematic risks (cannot diversify): 'PRIME-C' \u2014 Purchasing power, Reinvestment, Interest rate, Market, Exchange (currency), Call (with caveats).",
+        "Nonsystematic risks (can diversify): 'DECL-BR' \u2014 Default, Equity-specific, Credit, Liquidity, Business, Regulatory.",
+        "Regulatory = Rules (agencies); Legislative = Laws (legislatures)."
+      ]
+    },
+    {
+      "title": "Lesson 7.2: Recommendations and Suitability",
+      "overview": "Any recommendation of a securities transaction, investment strategy, or account type to a retail customer triggers an obligation to act in the customer's best interest under SEC Regulation Best Interest (Reg BI), effective June 30, 2020. Suitability requires gathering both financial and nonfinancial customer information, aligning recommendations with the customer's objectives, time horizon, and risk tolerance, and benchmarking performance against appropriate market indices.",
+      "key_concepts": [
+        "Recommendation: any communication that 'reasonably could be viewed as a call to action' to trade or hold a particular security or strategy \u2014 includes explicit hold recommendations.",
+        "Account Recommendation: recommending account type (IRA, margin) or transferring assets between account types (e.g., 401(k) rollover to IRA).",
+        "Customer (per FINRA): excludes other broker-dealers and non-clients receiving non-compensated advice.",
+        "Financial Considerations (quantifiable in dollars): income, home value, liquid net worth, debt payments, total debt, account balances.",
+        "Nonfinancial Considerations: age, marital status, dependents, employment status, family employment.",
+        "Customer Profile Questions: risk tolerance, liquidity needs, tax considerations, time horizon, investment experience, current holdings.",
+        "Investment Objective Matching: Safety \u2192 CDs, MMFs, government securities, investment-grade bonds; Growth \u2192 common stock, growth funds; Aggressive Growth \u2192 tech/sector funds; Income \u2192 bonds, REITs, CMOs; Tax-free income \u2192 munis, Roth IRAs; High-yield income \u2192 junk bonds; Liquidity \u2192 listed securities, mutual funds; Diversification \u2192 mutual funds, balanced/asset allocation; Speculation \u2192 options, DPPs, futures, junk bonds.",
+        "Regulation BI (Reg BI): broker-dealers and associated persons must act in the retail customer's best interest at the time a recommendation is made; cannot place firm/personal interest ahead of the customer.",
+        "Reg BI Four Component Obligations: (1) Disclosure, (2) Care, (3) Conflict of Interest, (4) Compliance.",
+        "Disclosure Obligation: written, full and fair disclosure of scope/terms of relationship, fees/costs, services, limitations on products, and conflicts of interest \u2014 at or before time of recommendation.",
+        "Care Obligation: exercise reasonable diligence, care, and skill; understand risks/rewards/costs; have reasonable basis for the recommendation; ensure series of recommendations isn't excessive.",
+        "Conflict of Interest Obligation (firm-level): written policies to identify, mitigate, or eliminate conflicts; must eliminate sales contests, quotas, bonuses tied to specific securities within a limited time period.",
+        "Compliance Obligation: firm-level requirement to maintain policies and procedures.",
+        "Title Restrictions: BD reps cannot use 'adviser' or 'advisor' in titles unless also registered as IA reps (Series 65/66).",
+        "Form CRS (Customer Relationship Summary): required delivery to retail investors \u2014 2 pages (BD or IA only), 4 pages (dual registrants); delivered at earliest of IA contract or brokerage account opening.",
+        "Reg BI applies only to retail customers \u2014 excludes institutional accounts (banks, S&Ls, insurance companies, registered investment companies).",
+        "Risk/Reward axiom: greater risk = greater potential reward; lower risk = lower potential reward.",
+        "Major Benchmarks: DJIA (30 large companies), S&P 500 (large-cap, primary benchmark), Russell 2000 (small-cap), Wilshire 5000 (broadest U.S. \u2014 ~3,500 components), Bloomberg Barclays U.S. Aggregate Bond Index ('Agg' \u2014 total bond market), MSCI EAFE (developed markets ex-U.S./Canada \u2014 Europe, Australasia, Far East)."
+      ],
+      "rules": [
+        "SEC Regulation Best Interest (Reg BI) \u2014 effective June 30, 2020, under Securities Exchange Act of 1934.",
+        "Reg BI applies only to recommendations made to RETAIL customers.",
+        "Conflict of Interest definition under Reg BI: any interest that might incline an associated person \u2014 consciously or unconsciously \u2014 to make a non-disinterested recommendation.",
+        "FINRA noncash compensation rule (modified for Reg BI): sales contests permitted only if applied equally across all products of a type (e.g., all mutual funds offered by the firm), not specific issuers.",
+        "Form CRS delivery timing: at or before entering into an IA contract or opening a brokerage account."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Reg BI's Four Obligations: 'DCCC' \u2014 Disclosure, Care, Conflict of Interest, Compliance.",
+        "Customer Profile: 'FIGURE IT' \u2014 Financial status, Investment objectives, Goals, Understanding/experience, Risk tolerance, Employment, Investment Time horizon.",
+        "Benchmarks by category: DJIA/S&P = large-cap U.S.; Russell 2000 = small-cap U.S.; Wilshire = total U.S. market; EAFE = foreign developed; Agg = bonds."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 13723,
+    "output": 3325
+  },
+  "cost_usd": 0.4552
+}

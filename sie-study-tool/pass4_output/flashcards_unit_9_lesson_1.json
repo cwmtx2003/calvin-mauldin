@@ -1,0 +1,345 @@
+{
+  "unit": 9,
+  "lesson": 1,
+  "lesson_title": "THE BUSINESS CYCLE",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What are the four phases of the business cycle, in order?",
+      "back": "Expansion, Peak, Contraction, Trough.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "List the characteristics of the expansion phase of the business cycle.",
+      "back": "Increased consumer demand for goods and services, increases in industrial production, rising stock prices, rising property values, and increasing GDP.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What characterizes the peak (prosperity) phase of the business cycle?",
+      "back": "Very low unemployment (high employment), a slowdown in inflation, a slowing of GDP growth, and steady consumer demand.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What characterizes the contraction phase of the business cycle?",
+      "back": "Rising bankruptcies and bond defaults, higher consumer debt, falling stock prices, rising inventories (slackening demand), and decreasing GDP.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What characterizes the trough phase of the business cycle?",
+      "back": "High unemployment, flat GDP, and low\u2014but not decreasing\u2014consumer demand.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Recession",
+      "back": "An extended period of economic contraction lasting six months (two consecutive quarters) or longer, as measured by declining GDP.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Depression",
+      "back": "A contraction in the economy that continues for 18 months or longer.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "scenario",
+      "front": "Economic data shows that GDP has been declining steadily over the past two quarters. What does this suggest?",
+      "back": "A recession. A recession is defined as two consecutive quarters (six months) or more of declining GDP.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "scenario",
+      "front": "Which phase of the business cycle is characterized by rising consumer demand, higher wages, and increased industrial production?",
+      "back": "Expansion.",
+      "lo": "9.a",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Gross Domestic Product (GDP)",
+      "back": "The total value of all goods and services produced within a nation's borders annually, including personal consumption, government spending, gross private investment, foreign investment, and net exports. Released quarterly by the U.S. Commerce Department.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "How does GNP differ from GDP?",
+      "back": "GDP measures economic activity within a nation's borders regardless of who owns the entity. GNP measures activity by the citizens and entities of a nation, wherever in the world that activity occurs.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "scenario",
+      "front": "A Japanese-based automaker builds a new auto assembly plant in Texas. Does this activity add to U.S. GDP, GNP, or both?",
+      "back": "U.S. GDP only. The activity occurs within U.S. borders (GDP) but the company is not a U.S. entity (so not GNP).",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Consumer Price Index (CPI)",
+      "back": "A monthly measure of the rate of increase or decrease in a sample of consumer prices (food, housing, transportation, medical care, clothing, etc.); the most prominent measure of inflation. Used to compute real (inflation-adjusted) GDP.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "Identify the three categories of economic indicators based on their timing.",
+      "back": "Leading indicators (change ahead of the economy), coincident indicators (change with the economy), and lagging indicators (change after the economy has begun a new trend; confirm trends).",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "Name several leading economic indicators that may appear on the SIE exam.",
+      "back": "M2 money supply, building permits/housing starts, average weekly initial unemployment claims, average work week in manufacturing, new orders for consumer goods, machine tool orders, changes in inventories of durable goods, changes in sensitive materials prices, S&P 500 stock prices, and changes in business/consumer borrowing.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "Name several coincident economic indicators.",
+      "back": "Number of hours worked, employment levels (unemployment rate), nonagricultural employment, personal income, industrial production, manufacturing and trade sales, and GDP.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "Name several lagging economic indicators.",
+      "back": "Corporate profits, average duration of unemployment, labor cost per unit of output, ratio of inventories to sales, commercial and industrial loans outstanding, and ratio of consumer installment credit to personal income.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Stagflation",
+      "back": "The unusual combination of inflation (rising prices) and high unemployment, often during periods of slow economic growth.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Hyperinflation",
+      "back": "An extremely high and accelerating rate of inflation that severely erodes a currency's purchasing power.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Deflation",
+      "back": "A general decline in prices, usually occurring during severe recessions when unemployment is rising.",
+      "lo": "9.b",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is a cyclical industry, and give examples.",
+      "back": "An industry highly sensitive to the business cycle\u2014does well in expansions, poorly in contractions. Examples: steel, auto, heavy equipment, and capital (durable) goods.",
+      "lo": "9.c",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is a noncyclical (defensive) industry, and give examples.",
+      "back": "Industries least affected by business cycles because they produce nondurable consumer goods (consumables). Examples: food, utilities, clothing, drugs, tobacco, and liquor.",
+      "lo": "9.c",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is a countercyclical industry, and what is the primary example?",
+      "back": "Industries that tend to rise when the economy turns down because investors seek safety. The primary example is gold (and other precious metals) mining and refining.",
+      "lo": "9.c",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "scenario",
+      "front": "Recession fears are increasing. Which of the following would likely produce the best returns: a trucking company, an airline, a gold/silver mining company, or a heavy equipment maker?",
+      "back": "The gold and silver mining company. Precious metals miners are countercyclical and tend to rise when the economy weakens, while trucking, airlines, and heavy equipment are cyclical.",
+      "lo": "9.c",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Growth industry",
+      "back": "An industry that appears disconnected from the business cycle and continues to grow regardless of the economy.",
+      "lo": "9.c",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the basic balance sheet equation?",
+      "back": "Assets = Liabilities + Net Worth (or Assets \u2212 Liabilities = Net Worth).",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three categories of assets on a balance sheet?",
+      "back": "Current assets (cash and assets easily converted to cash, e.g., securities, accounts receivable, inventory), fixed assets (real estate, furniture, equipment), and other/intangibles (trademarks, copyrights, goodwill).",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for working capital?",
+      "back": "Working Capital = Current Assets \u2212 Current Liabilities (expressed as a dollar amount).",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for the current ratio?",
+      "back": "Current Ratio = Current Assets / Current Liabilities (expressed as a ratio).",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for the acid-test (quick) ratio?",
+      "back": "Acid-Test Ratio = (Current Assets \u2212 Inventory) / Current Liabilities.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for the debt ratio (debt-to-equity)?",
+      "back": "Debt Ratio = Long-Term Debt / (Long-Term Debt + Net Worth), expressed as a percentage. A company with a debt ratio higher than its industry average is said to be highly leveraged.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "definition",
+      "front": "Retained earnings",
+      "back": "Corporate profits that have been earned but not distributed to shareholders as dividends; part of net worth (shareholder equity).",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What does an income statement show, and how does it differ from a balance sheet?",
+      "back": "The income statement (P&L) summarizes a corporation's revenues and expenses over a fiscal period and shows profitability. The balance sheet is a snapshot of assets, liabilities, and net worth at a single point in time and does not measure profitability.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for earnings per share (EPS)?",
+      "back": "EPS = Earnings Available to Common Shareholders / Number of Outstanding Common Shares.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "What is the formula for the price-to-earnings (P/E) ratio?",
+      "back": "P/E Ratio = Current Market Value (CMV) / EPS.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "scenario",
+      "front": "ABC Corporation has earnings of $20,000,000, 10,000,000 outstanding shares, and a current market value of $32. Calculate EPS and the P/E ratio.",
+      "back": "EPS = $20,000,000 / 10,000,000 = $2. P/E = $32 / $2 = 16.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    },
+    {
+      "type": "qa",
+      "front": "On an income statement, how is 'earnings available to common' calculated?",
+      "back": "Net Sales \u2212 COGS \u2212 Operating Costs = Operating Profit; + Nonoperating Income = Operating Income (EBIT); \u2212 Interest Expense = Pretax Income; \u2212 Taxes = Net Income After Taxes; \u2212 Preferred Dividends = Earnings Available to Common.",
+      "lo": "9.d",
+      "unit": 9,
+      "lesson": 1,
+      "lesson_title": "THE BUSINESS CYCLE"
+    }
+  ],
+  "tokens": {
+    "input": 9360,
+    "output": 3936
+  },
+  "cost_usd": 0.4356
+}

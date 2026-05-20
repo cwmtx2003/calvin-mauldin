@@ -1,0 +1,192 @@
+{
+  "unit": 4,
+  "lesson": 2,
+  "lesson_title": "LIFE INSURANCE-BASED PRODUCTS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Annuity",
+      "back": "An insurance contract designed to provide retirement income through a stream of payments guaranteed for some period of time (life of annuitant, until a certain age, or specified number of years). Includes a mortality guarantee.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "Why is a variable annuity considered a security while a fixed annuity is not?",
+      "back": "In a variable annuity, the investor (not the insurance company) assumes the investment risk because premiums are invested in the separate account whose returns are not guaranteed. A fixed annuity promises a stated rate of return, so the insurance company bears the investment risk.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "definition",
+      "front": "Separate Account (Variable Annuity)",
+      "back": "The account into which variable annuity premiums are invested. It is made up of various subaccounts (similar to mutual fund portfolios) with different objectives such as growth, income, or growth and income. Returns are not guaranteed.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "How must a variable annuity's separate account be registered if managed directly by the insurance company's investment manager vs. an outside manager?",
+      "back": "Directly managed: must register as an open-end management investment company under the Investment Company Act of 1940. Indirectly managed (passed to outside party): must register as a Unit Investment Trust (UIT) under the Act.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the death benefit provided during the accumulation period of a variable annuity?",
+      "back": "If the owner dies during the accumulation period, beneficiaries receive the greater of the total contributions made or the current account value.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What licenses are required to sell variable annuities?",
+      "back": "Both an insurance license and a securities license, because variable annuities are considered securities products.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the five factors (SAAPI) used by an insurance company to calculate the initial annuitization payout?",
+      "back": "Sex of annuitant, Age of annuitant, Account value (amount), Payout option selected, and the Assumed Interest Rate (AIR). Inflation is NOT a factor in the initial calculation.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "definition",
+      "front": "Annuitization",
+      "back": "A one-time, irreversible election by the annuity owner to give up ownership of the assets in exchange for a guaranteed lifetime income stream from the insurance company.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What determines whether monthly income from an annuitized variable annuity increases or decreases?",
+      "back": "The performance of the separate account (subaccounts). Payments fluctuate based on whether returns exceed or fall short of the assumed interest rate (AIR).",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "Are contributions to a nonqualified variable annuity subject to an annual contribution limit?",
+      "back": "No. Nonqualified (commercial) variable annuity contracts have no limit on annual contribution amounts. Qualified variable contracts used in employer plans are limited similar to 401(k) limits.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "scenario",
+      "front": "A client with a low risk tolerance, no other retirement savings, and who may need access to her lump sum to buy a home in 3 years asks about purchasing a variable annuity. Is this suitable?",
+      "back": "No. Variable annuities are unsuitable because: (1) the client has a low risk tolerance and VAs carry market risk via the separate account; (2) she has not maxed out other qualified retirement vehicles; and (3) she may need the lump sum for a near-term home purchase. VAs are for supplemental retirement income only.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "Is funding a variable annuity by cashing out an existing life insurance policy or refinancing/withdrawing equity from a home considered suitable?",
+      "back": "No. Funding a VA by surrendering another insurance product (which may incur surrender charges) is considered abusive. Refinancing or withdrawing home equity to fund a VA is never suitable.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "Before recommending a variable annuity, what other retirement savings step should typically be completed?",
+      "back": "The client should first maximize contributions to other qualified retirement savings vehicles (such as IRAs and 401(k)s). VAs are intended to supplement, not replace, other retirement income sources.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "When is growth in a nonqualified variable annuity taxed, and at what rate?",
+      "back": "Growth is tax-deferred and taxed only upon withdrawal, at ordinary income tax rates (not capital gains rates).",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "definition",
+      "front": "Exclusion Ratio",
+      "back": "When a variable annuity is annuitized, the portion of each payment that represents a return of the investor's original principal (cost basis) and is therefore not taxable. The remaining portion is taxed as ordinary income.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "How are random (non-annuitized) partial withdrawals from a nonqualified variable annuity taxed?",
+      "back": "On a LIFO basis \u2014 growth comes out first and is fully taxed as ordinary income. Only after all growth has been withdrawn does the nontaxable return of principal begin.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the tax penalty for withdrawing taxable amounts from a variable annuity before age 59\u00bd?",
+      "back": "A 10% penalty applies to the taxable portion of the withdrawal, in addition to ordinary income tax.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "definition",
+      "front": "1035 Exchange",
+      "back": "A tax-free transfer of funds from one annuity contract to another (or other allowed insurance products). No tax liability is triggered, but any applicable surrender charges under the original contract still apply.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "Within how many days can the decision to annuitize a variable or fixed annuity be reversed?",
+      "back": "0 days. Annuitization is a one-time, irrevocable election and cannot be reversed.",
+      "lo": "4.f",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    },
+    {
+      "type": "qa",
+      "front": "What fees and charges must be disclosed to a variable annuity buyer?",
+      "back": "All product-related charges, including administrative fees, investment advisory fees, custodial fees, and any surrender charges.",
+      "lo": "4.g",
+      "unit": 4,
+      "lesson": 2,
+      "lesson_title": "LIFE INSURANCE-BASED PRODUCTS"
+    }
+  ],
+  "tokens": {
+    "input": 5599,
+    "output": 2468
+  },
+  "cost_usd": 0.2691
+}

@@ -1,0 +1,219 @@
+{
+  "unit": 11,
+  "lesson": 2,
+  "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "Are any securities exempt from the antifraud provisions of the federal securities laws?",
+      "back": "No. No security is exempt from the antifraud provisions. Fraud and market manipulation are prohibited in the trading of any security, including exempt securities.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Pump and Dump",
+      "back": "A form of securities fraud where the perpetrator accumulates shares at low prices, then spreads false or misleading positive rumors to inflate (pump) the price, and sells (dumps) the overvalued shares at the higher price, leaving other investors with losses.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "scenario",
+      "front": "A mutual fund places an order with your firm to buy 300,000 shares of AABB at the market. Before entering the fund's order, an RR who knows about it places a buy order for 500 shares in his personal account. What violation is this?",
+      "back": "Front running \u2014 placing orders for one's own account ahead of known pending orders in an attempt to profit from the anticipated price movement.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Churning (Excessive Trading)",
+      "back": "Excessive trading in a customer's account to generate commissions rather than to meet the customer's investment objectives. It is an abuse of fiduciary responsibility, identified by trading frequency or size inconsistent with the client's history, objectives, or financial ability.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between marking the open and marking the close?",
+      "back": "Marking the open is entering orders (or falsely reporting trades) before the opening to influence a stock's opening price. Marking the close is effecting trades (or falsely reporting trades) at or near the close to influence the closing price (e.g., to boost portfolio valuation).",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Freeriding",
+      "back": "Purchasing securities and then selling them before paying for the purchase. Prohibited in both cash and margin accounts. Penalty: account frozen for 90 days, during which new purchases require cash or marginable securities in the account before the trade.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Matching Orders (Painting the Tape)",
+      "back": "A manipulation in which one party sells stock to another with the understanding that the stock will be repurchased later at virtually the same price, creating the false appearance of trading volume/activity.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Is the spreading of rumors via social media (e.g., Twitter, Reddit, chat rooms) by industry personnel permitted?",
+      "back": "No. Spreading false or misleading information or rumors\u2014through any medium, including social media\u2014to manipulate the price of a security is expressly prohibited.",
+      "lo": "11.c",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Inside Information",
+      "back": "Any material nonpublic information about a company\u2014information that would likely affect the price of the company's stock and has not been disseminated to, or is not readily available to, the general public.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Is the mere possession of inside information illegal?",
+      "back": "No. Possession of inside information is not illegal. It is the use of that information to make a gain or avoid a loss (or communicating it to another who trades on it) that constitutes insider trading.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Under the Insider Trading Act, who can be held liable when material nonpublic information is misused?",
+      "back": "Both the tipper (person who relays the information) and the tippee (person who receives and trades on it) are liable, as is anyone who trades on information they knew or should have known was nonpublic.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "What is an information barrier (firewall) and why must BDs maintain one?",
+      "back": "A firewall is a policy/procedure that restricts the flow of potentially material nonpublic information between departments of a firm (e.g., between investment banking and trading/research). BDs are required to establish written supervisory procedures to prevent the misuse of inside information.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "What civil and criminal penalties may be assessed against an individual for insider trading?",
+      "back": "Civil: up to three times the profit made or loss avoided (treble damages). Criminal: up to $5 million in fines and up to 20 years in prison.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "What penalties may a BD or controlling person face for insider trading violations by an employee?",
+      "back": "A controlling person may be fined the greater of $1 million or three times the profit made/loss avoided. The BD may be fined the greater of $25 million or three times the damages.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "definition",
+      "front": "Contemporaneous Traders",
+      "back": "Persons who trade on the opposite side of the market in the same security at or near the same time as someone trading on inside information. They may sue the violator, and suits may be brought up to five years after the violation.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Under Dodd-Frank, what bounty range is available to informants who provide original information about securities law violations, including insider trading?",
+      "back": "10% to 30% of the amounts recovered, based on the value of the information provided.",
+      "lo": "11.d",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three core purposes of FINRA Rule 5130?",
+      "back": "(1) Ensure members make a bona fide public offering at the POP; (2) prevent members from withholding new issues for their own benefit or to reward those who can direct business to the firm; (3) prevent industry insiders from using their status to obtain new issues at the expense of public customers.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "List the categories of restricted persons under Rule 5130 who may not purchase a new common stock IPO at the POP.",
+      "back": "1) Member firms (whether or not in the IPO); 2) Employees of member firms; 3) Finders and fiduciaries acting for the managing underwriter (attorneys, accountants, financial consultants, etc.); 4) Portfolio managers (those with authority to buy/sell securities for banks, S&Ls, insurance companies, or investment companies); 5) Any person owning 10% or more of a member firm; 6) Immediate family members of the above.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Under Rule 5130, who qualifies as an 'immediate family member' of a restricted person?",
+      "back": "Parents, in-laws, spouses, siblings, children, or any other person to whom the restricted person provides material support. Aunts, uncles, and grandparents are NOT immediate family unless they live in the same household as the restricted person.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Explain the de minimis exemption under Rule 5130.",
+      "back": "An account may purchase a new equity issue at the POP as long as the beneficial interests of restricted persons in the account do not exceed 10% in aggregate.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "scenario",
+      "front": "Daryl, a restricted person, owns 5% of an investment club account. His brother Larry then buys in, raising the brothers' combined ownership to 11%. Can the account still purchase IPOs at the POP?",
+      "back": "No. Because restricted persons (Daryl and his immediate-family brother Larry) now collectively own more than 10% of the account, the de minimis exemption is exceeded, and the account can no longer participate in new equity issues at the POP.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "scenario",
+      "front": "Jim is a restricted person under Rule 5130. Which of the following relatives may purchase a new issue at the POP: his brother Robert, his grandfather Farris, his sister DeAnn, or his daughter April?",
+      "back": "Jim's grandfather Farris \u2014 grandparents are not considered immediate family under Rule 5130 (unless they live in the same household as the restricted person). Brothers, sisters, and children ARE immediate family and are restricted.",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    },
+    {
+      "type": "qa",
+      "front": "Before a member firm may sell a new equity issue at the POP to an account, what must the representative obtain?",
+      "back": "A written representation from the account owner(s) that the account is eligible to purchase the new issue at the POP (i.e., that restricted persons do not have a beneficial interest exceeding the de minimis 10% threshold).",
+      "lo": "11.e",
+      "unit": 11,
+      "lesson": 2,
+      "lesson_title": "MARKET MANIPULATION AND INSIDER TRADING"
+    }
+  ],
+  "tokens": {
+    "input": 4799,
+    "output": 3108
+  },
+  "cost_usd": 0.3051
+}

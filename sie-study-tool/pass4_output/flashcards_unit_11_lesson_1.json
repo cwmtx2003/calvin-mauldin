@@ -1,0 +1,201 @@
+{
+  "unit": 11,
+  "lesson": 1,
+  "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Money laundering (post-USA PATRIOT Act definition)",
+      "back": "The process of disguising the source of illegally obtained funds to make them appear legitimate, AND/OR the use of legitimately obtained funds for illegal purposes such as terrorist financing.",
+      "lo": "11.a",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three stages of money laundering, in order?",
+      "back": "1) Placement \u2014 introducing illegal funds into the financial system (most detectable stage); 2) Layering \u2014 disguising the source through complex transactions; 3) Integration \u2014 funds re-enter the economy appearing as legitimate income.",
+      "lo": "11.a",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "Which stage of money laundering is most susceptible to detection, and why?",
+      "back": "Placement \u2014 this is when illegal cash first enters the financial system, making it the easiest stage for financial institutions to identify suspicious activity.",
+      "lo": "11.a",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "definition",
+      "front": "Financial Crimes Enforcement Network (FinCEN)",
+      "back": "A bureau of the U.S. Treasury Department that collects and analyzes financial transaction information to combat money laundering, terrorist financing, and other financial crimes. It is an intelligence agency with no direct enforcement authority.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What triggers the filing of a Currency Transaction Report (CTR), and within what timeframe must it be filed?",
+      "back": "A CTR must be filed when a firm receives more than $10,000 in currency from a customer on a single day. It must be filed within 15 days of receipt, and records retained for 5 years.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "Do CTR requirements apply to checks and wire transfers?",
+      "back": "No. CTRs apply only to currency (cash) deposits \u2014 not checks or wire transfers. The currency need not be U.S. dollars.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "definition",
+      "front": "Structuring",
+      "back": "The illegal practice of designing currency deposits or withdrawals to fall just below the $10,000 CTR reporting threshold to avoid detection.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer makes 25 separate cash deposits of $500 each on the same day to pay for a $12,500 securities purchase. What is this, and what should the firm do?",
+      "back": "This is structuring \u2014 an attempt to avoid the $10,000 CTR threshold. The firm should recognize this as suspicious activity and file a Suspicious Activity Report (SAR), and would also be required to file a CTR since aggregate cash exceeds $10,000.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What are the penalties for failing to file a required CTR?",
+      "back": "Fines of up to $500,000, up to 10 years in prison, or both.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "When must a Suspicious Activity Report (SAR) be filed, and what is the dollar threshold?",
+      "back": "A SAR must be filed within 30 days of the firm becoming aware of suspicious activity involving at least $5,000 in funds or assets (alone or in aggregate). Copies and supporting documentation must be retained for 5 years.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What four types of transactions require the filing of a SAR?",
+      "back": "1) Transactions involving funds from illegal activity; 2) Transactions designed to evade Bank Secrecy Act requirements; 3) Transactions with no apparent business or lawful purpose; 4) Transactions using the firm to facilitate criminal activity.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "Can a firm notify a customer that a SAR has been filed about them?",
+      "back": "No. SAR filings must remain confidential. The subject of the report cannot be notified. If subpoenaed, the firm must refuse and notify FinCEN, unless disclosure is required by FinCEN, the SEC, an SRO, or law enforcement.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What is the recordkeeping threshold for wire transfers under the USA PATRIOT Act?",
+      "back": "Firms must make and retain records of wire transfers of $3,000 or more, including names/addresses of sender and recipient, amount, financial institution name, and recipient's account number.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "Must the AML Compliance Officer be a registered representative or principal?",
+      "back": "No. The Bank Secrecy Act requires firms to designate a chief AML officer, but there is no requirement that this person be registered as a representative or principal.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "List common red flags suggesting possible money laundering.",
+      "back": "\u2022 Customer shows lack of concern about risk, commissions, or costs\n\u2022 Frequent or large currency deposits/withdrawals\n\u2022 Numerous wire transfers to unrelated third parties\n\u2022 Excessive journal entries between unrelated accounts\n\u2022 Structuring deposits/withdrawals below reporting thresholds",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "definition",
+      "front": "Office of Foreign Assets Control (OFAC)",
+      "back": "A division of the U.S. Treasury Department that administers and enforces economic and trade sanctions and maintains the Specially Designated Nationals (SDN) list of persons/entities U.S. persons are prohibited from doing business with.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "definition",
+      "front": "Specially Designated Nationals (SDN) List",
+      "back": "An OFAC-published list of individuals and companies (including terrorists, narcotics traffickers, and those acting on behalf of targeted countries) whose assets are blocked. U.S. persons and entities are prohibited from doing business with anyone on the list.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "What is a Customer Identification Program (CIP) and what must firms do under it?",
+      "back": "Required by the USA PATRIOT Act, the CIP requires firms to verify customer identity, maintain identification records, notify customers (verbally, in writing, or on the new account form) that information is being collected, and check names against the OFAC SDN list before opening accounts and periodically thereafter.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer deposits $1,000 in cash each week for many consecutive weeks. No single deposit exceeds $10,000. What action, if any, should the firm take?",
+      "back": "Although no CTR is triggered by any single deposit, the pattern is suspicious and may constitute structuring. The firm should file a Suspicious Activity Report (SAR) with FinCEN within 30 days of recognizing the suspicious pattern.",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "scenario",
+      "front": "Which of these single-day transactions would NOT require a CTR: (A) four $3,000 checks, (B) twenty-two $500 cash deposits, (C) four $3,000 cash deposits plus a $10,000 outbound wire, (D) a $12,000 cash deposit?",
+      "back": "A \u2014 four $3,000 checks. CTRs apply only to currency (cash), not checks or wire transfers. B aggregates to $11,000 cash (CTR required); C totals $12,000 cash (CTR required); D exceeds $10,000 cash (CTR required).",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    },
+    {
+      "type": "qa",
+      "front": "Which U.S. government department oversees the Bank Secrecy Act, FinCEN, and OFAC?",
+      "back": "The U.S. Treasury Department (not the Department of Justice).",
+      "lo": "11.b",
+      "unit": 11,
+      "lesson": 1,
+      "lesson_title": "ANTI-MONEY LAUNDERING AND THE BANK SECK"
+    }
+  ],
+  "tokens": {
+    "input": 4101,
+    "output": 2847
+  },
+  "cost_usd": 0.275
+}

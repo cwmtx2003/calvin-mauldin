@@ -1,0 +1,219 @@
+{
+  "unit": 9,
+  "lesson": 3,
+  "lesson_title": "THE FEDERAL RESERVE",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What legislation established the Federal Reserve System, and what is its purpose?",
+      "back": "The Federal Reserve Act of 1913 established the Federal Reserve System as the central bank of the United States to provide a safer, more flexible, and more stable monetary and financial system.",
+      "lo": "9.g",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "What are the two primary duties of the Federal Reserve Board (FRB)?",
+      "back": "(1) Conduct the nation's monetary policy to promote maximum employment, and (2) promote a stable price environment, keeping inflation under control.",
+      "lo": "9.g",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Monetary Policy",
+      "back": "The management of the money supply (the amount of cash available within the U.S. economy) by the Federal Reserve Board to influence employment and inflation.",
+      "lo": "9.g",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "Who is considered the founder of monetarist theory, on which much of the Fed's work is based?",
+      "back": "Milton Friedman, PhD.",
+      "lo": "9.g",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "M1 (Money Supply)",
+      "back": "The most readily available money to spend: cash (currency and coinage) and money in demand deposit accounts (DDAs) such as checking accounts.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "M2 (Money Supply)",
+      "back": "M1 plus consumer savings deposits \u2014 assets easily moved to a DDA and spent, including savings accounts, retail (nonnegotiable) CDs, money market funds, and overnight repos.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "M3 (Money Supply)",
+      "back": "M2 plus large time deposits \u2014 assets harder to move into a DDA, including negotiable (jumbo) CDs and multiday repos.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "scenario",
+      "front": "Seabird Airlines has money in a long-term jumbo CD. When the CD matures, Seabird deposits the funds into a checking account. What is the effect on the money supply (M1, M2, M3)?",
+      "back": "M1 increases (cash moves into a DDA). M2 also increases (because M1 is part of M2). M3 does not change \u2014 the funds never left M3, since M1 and M2 are components of M3.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "Which committee directs the Federal Reserve's open-market operations?",
+      "back": "The Federal Open Market Committee (FOMC).",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "When the Fed BUYS U.S. government securities in the open market, what is the effect on the money supply and interest rates?",
+      "back": "Money supply increases (money goes into the banking system, securities come out). Interest rates go down, borrowing and spending become easier, and the economy expands. This is an easy-money policy.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "When the Fed SELLS U.S. government securities in the open market, what is the effect on the money supply and interest rates?",
+      "back": "Money supply contracts (cash leaves banks, securities go in). Interest rates rise, borrowing becomes more difficult, and the economy contracts. This is a tight-money policy.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Regulation T",
+      "back": "FRB rule setting the minimum initial deposit an investor must make when buying securities on credit (margin). The current requirement is 50% of the purchase price (in place since 1974).",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Discount Rate",
+      "back": "The interest rate the Federal Reserve charges member banks for short-term loans (often via repos). Considered the base rate for the nation; raising it lifts overall rates, lowering it eases overall rates.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Reserve Requirement",
+      "back": "The amount a bank must maintain on deposit with the Federal Reserve. Lowering it frees up cash for loans (expansion); raising it reduces funds available for loans (contraction). Rarely changed due to its dramatic impact.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "List the FRB's tools to implement an EASY money policy.",
+      "back": "(1) Buy U.S. government securities in the open market, (2) lower the discount rate, and (3) lower reserve requirements.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "List the FRB's tools to implement a TIGHT money policy.",
+      "back": "(1) Sell U.S. government securities in the open market, (2) raise the discount rate, and (3) raise reserve requirements.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Federal Funds Rate",
+      "back": "The rate that commercial money center banks charge each other for overnight loans of $1 million or more. A barometer of short-term rate direction and one of the most volatile rates in the economy.",
+      "lo": "9.i",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Prime Rate",
+      "back": "The interest rate that large U.S. money center commercial banks charge their most creditworthy corporate borrowers for unsecured loans. Set by each bank individually.",
+      "lo": "9.i",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "definition",
+      "front": "Broker Call Loan Rate (Call Money Rate)",
+      "back": "The interest rate banks charge broker-dealers on money borrowed to lend to margin account customers. Usually about a percentage point above other short-term rates; loans callable on 24-hour notice.",
+      "lo": "9.i",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "Of the four prominent interest rates (federal funds, prime, broker call, and discount), which is the only one set by the federal government?",
+      "back": "The discount rate. The other three are set by the banks making the loans.",
+      "lo": "9.i",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "scenario",
+      "front": "The FRB raises the reserve requirement and raises the discount rate. What is the likely effect on interest rates?",
+      "back": "Interest rates will rise. Raising the reserve requirement reduces funds available for banks to lend, and raising the discount rate increases banks' borrowing costs, which is passed on to consumers \u2014 both contract the money supply.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "What asset is the key addition that moves M2 to M3?",
+      "back": "Large-denomination (negotiable/jumbo) time deposits of $100,000 or more, along with multiday repos.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    },
+    {
+      "type": "qa",
+      "front": "Which is the most frequently used tool of the FRB to influence the money supply?",
+      "back": "Open-market operations \u2014 the buying and selling of U.S. government securities by the FOMC.",
+      "lo": "9.h",
+      "unit": 9,
+      "lesson": 3,
+      "lesson_title": "THE FEDERAL RESERVE"
+    }
+  ],
+  "tokens": {
+    "input": 6742,
+    "output": 2538
+  },
+  "cost_usd": 0.2915
+}

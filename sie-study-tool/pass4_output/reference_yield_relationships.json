@@ -1,0 +1,148 @@
+{
+  "key": "yield_relationships",
+  "title": "Yield Relationships & Bond Math",
+  "sections": [
+    {
+      "heading": "The 4 Yields \u2014 Definitions",
+      "type": "bullets",
+      "items": [
+        "Nominal Yield (Coupon/Stated): FIXED % of par set at issue. Never changes. 6% coupon = $60/yr forever.",
+        "Current Yield (CY): Annual coupon \u00f7 Current Market Price. Ignores gain/loss at maturity.",
+        "Yield to Maturity (YTM): Annualized total return if held to maturity. Includes coupon + amortization of discount/premium. Also called 'basis'.",
+        "Yield to Call (YTC): Same as YTM but uses call date & call price. Accelerates discount gain OR premium loss."
+      ]
+    },
+    {
+      "heading": "Core Formulas",
+      "type": "formula",
+      "items": [
+        "CY = Annual Coupon \u00f7 Market Price",
+        "Tax-Equivalent Yield (TEY) = Muni Yield \u00f7 (1 \u2212 Tax Bracket)",
+        "Muni-Equivalent of Corp = Corp Yield \u00d7 (1 \u2212 Tax Bracket)",
+        "Bond Price ($) = Quoted Price \u00d7 10  (e.g., 'trading at 97' = $970)",
+        "1 point = $10 = 1% of par  |  1 basis point (bp) = 0.01% = 1/100 of 1%  |  100 bps = 1%"
+      ]
+    },
+    {
+      "heading": "Yield Relationships by Price (MEMORIZE)",
+      "type": "table",
+      "items": [
+        {
+          "Bond Trades At": "DISCOUNT (e.g., $900)",
+          "Order (low\u2192high)": "Nominal < CY < YTM < YTC",
+          "Memory Aid": "Going UP to par = gain accelerates if called"
+        },
+        {
+          "Bond Trades At": "PAR ($1,000)",
+          "Order": "Nominal = CY = YTM = YTC",
+          "Memory Aid": "All equal"
+        },
+        {
+          "Bond Trades At": "PREMIUM (e.g., $1,100)",
+          "Order (high\u2192low)": "Nominal > CY > YTC > YTM (some sources YTM > YTC)",
+          "Memory Aid": "Coming DOWN to par = loss accelerates if called \u2192 YTC is LOWEST for premium"
+        }
+      ]
+    },
+    {
+      "heading": "Premium Bond \u2014 Critical Exam Point",
+      "type": "rule",
+      "items": [
+        "For a PREMIUM callable bond: YTC is the LOWEST yield (worst case for investor).",
+        "For a DISCOUNT callable bond: YTC is the HIGHEST yield.",
+        "Rule: Quote the YIELD TO WORST \u2014 premium = YTC; discount = YTM."
+      ]
+    },
+    {
+      "heading": "Quick Numerical Examples",
+      "type": "bullets",
+      "items": [
+        "6% bond @ $900: CY = $60/$900 = 6.67%; YTM > 6.67% (gain $100 at maturity).",
+        "6% bond @ $1,100: CY = $60/$1,100 = 5.45%; YTM < 5.45% (lose $100 premium).",
+        "Investor in 30% bracket; muni yields 7% \u2192 TEY = 7%/(1\u2212.30) = 10%.",
+        "Corp yields 11%, 30% bracket \u2192 after-tax = 11% \u00d7 .70 = 7.7%.",
+        "'Bond trading on 5.83 basis' = YTM is 5.83%."
+      ]
+    },
+    {
+      "heading": "Points vs Basis Points (do NOT confuse)",
+      "type": "table",
+      "items": [
+        {
+          "Term": "Point",
+          "Measures": "PRICE",
+          "Value": "1% of par = $10"
+        },
+        {
+          "Term": "Basis Point (bp)",
+          "Measures": "YIELD",
+          "Value": "1/100 of 1% = 0.01%"
+        },
+        {
+          "Example": "",
+          "Bond up 2 points": "+$20 in price",
+          "Yield down 50 bps": "\u22120.50% in yield"
+        }
+      ]
+    },
+    {
+      "heading": "Accrued Interest Conventions",
+      "type": "table",
+      "items": [
+        {
+          "Security": "Corporate bonds",
+          "Day Count": "30/360",
+          "Settlement": "T+1"
+        },
+        {
+          "Security": "Municipal bonds",
+          "Day Count": "30/360",
+          "Settlement": "T+1"
+        },
+        {
+          "Security": "Treasury notes/bonds",
+          "Day Count": "Actual/Actual (actual days elapsed)",
+          "Settlement": "T+1"
+        },
+        {
+          "Security": "Zero-coupon bonds",
+          "Day Count": "NONE \u2014 no accrued interest paid",
+          "Settlement": "\u2014"
+        }
+      ]
+    },
+    {
+      "heading": "Accrued Interest Mechanics",
+      "type": "bullets",
+      "items": [
+        "Buyer PAYS seller accrued interest at settlement (added to price).",
+        "Buyer is reimbursed by receiving the FULL next coupon from issuer.",
+        "Interest accrues from last coupon date UP TO BUT NOT INCLUDING settlement date.",
+        "Bonds in default trade 'flat' (no accrued interest); income bonds also trade flat."
+      ]
+    },
+    {
+      "heading": "Inverse Price/Yield Relationship",
+      "type": "bullets",
+      "items": [
+        "Interest rates \u2191 \u2192 Bond prices \u2193 \u2192 CY, YTM, YTC all \u2191",
+        "Interest rates \u2193 \u2192 Bond prices \u2191 \u2192 CY, YTM, YTC all \u2193",
+        "Coupon (nominal) NEVER changes regardless of price movement.",
+        "Longer maturity + lower coupon = MORE volatile (higher duration)."
+      ]
+    }
+  ],
+  "common_traps": [
+    "Confusing POINTS ($10 = price) with BASIS POINTS (0.01% = yield). A bond 'up 30 basis points' is a YIELD move, not price.",
+    "Forgetting that on a PREMIUM bond, YTC is the LOWEST yield (issuer calls when rates fall = worst case). On a DISCOUNT bond, YTC is the HIGHEST.",
+    "Using the wrong tax formula: TEY = muni \u00f7 (1 \u2212 bracket). Don't multiply when going FROM muni TO corporate equivalent.",
+    "Saying coupon changes when price changes \u2014 it does NOT. Only CY/YTM/YTC move with price.",
+    "Charging accrued interest on zero-coupon bonds or bonds in default \u2014 neither pays accrued interest (trade flat).",
+    "Mixing day-count: Treasuries use actual/actual; corporates & munis use 30/360."
+  ],
+  "tokens": {
+    "input": 22111,
+    "output": 2317
+  },
+  "cost_usd": 0.5054
+}

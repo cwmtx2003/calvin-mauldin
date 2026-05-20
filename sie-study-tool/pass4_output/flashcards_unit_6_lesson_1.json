@@ -1,0 +1,237 @@
+{
+  "unit": 6,
+  "lesson": 1,
+  "lesson_title": "NONQUALIFIED ACCOUNTS",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What is the key distinction between a Tenants in Common (TIC) account and a Joint Tenants with Right of Survivorship (JTWROS) account when one tenant dies?",
+      "back": "In TIC, the deceased tenant's fractional interest passes to their estate (account is frozen until estate paperwork is processed). In JTWROS, the deceased tenant's interest passes directly to the surviving tenant(s).",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "definition",
+      "front": "Tenants in Common (TIC)",
+      "back": "A joint account ownership form where each tenant owns a specified fractional interest. Upon a tenant's death, that fractional interest passes to the decedent's estate, not the surviving tenants. If no percentages are specified, ownership is assumed equal.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "definition",
+      "front": "Joint Tenants with Right of Survivorship (JTWROS)",
+      "back": "A joint account where all tenants have an undivided interest. Upon the death of one tenant, that tenant's interest passes automatically to the surviving tenant(s). Common for married couples.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "scenario",
+      "front": "A client wants her account to pass directly to her three children at death, bypassing probate, but wants to retain full control during her lifetime and the ability to change beneficiaries. Which account type should you recommend?",
+      "back": "An individual account with a Transfer on Death (TOD) designation. TOD avoids probate, the owner retains full control during life, and beneficiaries/allocations can be changed. Note: TOD does not avoid estate tax.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "When does a Transfer on Death (TOD) designation become effective on a JTWROS account?",
+      "back": "Only after the death of the last surviving tenant.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a Full Power of Attorney (FPOA) and a Limited Power of Attorney (LPOA)?",
+      "back": "FPOA allows the appointee to deposit/withdraw cash and securities and make investment decisions\u2014essentially the same power as the owner. LPOA (limited trading authorization) allows only buy and sell orders\u2014no withdrawal of assets.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What events terminate a Power of Attorney, including a durable POA?",
+      "back": "All POAs\u2014including durable POAs\u2014terminate upon the death of either the grantor (account owner) or the appointee (\"attorney\"). A standard POA also ends upon incapacity of the grantor; a durable POA survives incapacity but still ends at death.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "definition",
+      "front": "Durable Power of Attorney",
+      "back": "A POA containing language allowing the authority to continue even if the account owner becomes incapacitated. It still terminates upon the death of either party.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What documents must a broker-dealer obtain to open a corporate brokerage account?",
+      "back": "A copy of the corporate charter (proof the corporation exists) and a corporate resolution from the board of directors authorizing the account and naming officers permitted to enter orders. If margin is desired, the charter must not prohibit it.",
+      "lo": "6.b",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What documentation is required to open a partnership account, and what is required annually?",
+      "back": "A written partnership agreement and an authorization identifying which partners may transact in the account. An amended partnership agreement must be obtained each year if changes occur. The agreement must permit margin if a margin account is desired.",
+      "lo": "6.b",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "definition",
+      "front": "d/b/a account",
+      "back": "A \"doing business as\" account opened for a sole proprietor that includes a fictitious business name in addition to the owner's name. Checks may be made payable to either the owner or the business name.",
+      "lo": "6.b",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Identify the three roles in a trust and what each does.",
+      "back": "Grantor (settlor): person who creates the trust and contributes the assets. Trustee: manages the trust assets according to the trust document. Beneficiary: person for whose benefit the assets are managed.",
+      "lo": "6.c",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a revocable and an irrevocable trust for estate tax purposes?",
+      "back": "Revocable trust: grantor retains control and the ability to modify/revoke; assets remain part of the grantor's estate. Irrevocable trust: grantor gives up control and cannot modify the trust; assets may be removed from the grantor's estate (the grantor cannot serve as trustee or beneficiary for this to apply).",
+      "lo": "6.c",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "In a typical revocable living trust, who often serves as grantor, trustee, and beneficiary?",
+      "back": "It is common for the same person (the grantor) to serve in all three roles\u2014grantor, trustee, and beneficiary\u2014while alive.",
+      "lo": "6.c",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a living trust and a decedent's trust?",
+      "back": "A living trust is created and funded by the grantor during their lifetime. A decedent's trust is funded by a will or other estate process after the grantor's death.",
+      "lo": "6.c",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "List four key restrictions on managing an UGMA/UTMA custodial account.",
+      "back": "1) Cash accounts only\u2014no margin and securities cannot be pledged as collateral. 2) Only one custodian and one minor per account. 3) No speculative/high-risk securities (no naked options, futures); covered calls allowed. 4) Cash, dividends, and interest must be reinvested within a reasonable time.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Whose Social Security number is used on a custodial UGMA/UTMA account, and who is responsible for paying taxes?",
+      "back": "The minor's Social Security number is used, and the account is taxed at the minor's tax rate. The minor is legally responsible for the taxes, but the custodian is responsible for seeing that they are paid.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What happens to a custodial account if the minor dies before reaching the age of majority?",
+      "back": "The securities pass to the minor's estate\u2014not to the parents or the custodian's estate.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the key differences between UGMA and UTMA accounts?",
+      "back": "UTMA allows real estate to be titled in custodial name; UGMA does not. UTMA assets may remain in custodial name until the beneficiary reaches 25 (21 in some states); UGMA assets must be released at the state's age of majority.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the key contribution and distribution rules for a Coverdell Education Savings Account (ESA)?",
+      "back": "After-tax contributions up to $2,000 per student per year until the beneficiary turns 18 (income limits may reduce or eliminate contributions). Growth is tax-deferred; distributions are tax-free if used for qualified K-12 or college expenses. Nonqualified distributions are subject to income tax plus a 10% penalty on earnings. Unused funds must be distributed or rolled to another beneficiary by age 30.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "List examples of persons considered fiduciaries for an account.",
+      "back": "Trustee, executor (named in a will), administrator (court-appointed for intestate estate), guardian (for minor or incompetent), custodian (UGMA/UTMA), receiver in bankruptcy, and conservator for an incompetent person.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What standard governs a fiduciary's investment decisions, and may a fiduciary share in account profits?",
+      "back": "The prudent investor rule requires wise and safe investments (many states publish a legal list of approved securities). A fiduciary may not share in account profits but may charge a reasonable fee for services.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "scenario",
+      "front": "Three individuals hold a TIC account. One dies. What happens to the account?",
+      "back": "The two surviving tenants continue as cotenants along with the deceased's estate (which holds the decedent's fractional interest). The account is frozen for the decedent's portion until proper estate paperwork is processed.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "scenario",
+      "front": "A custodian in an UGMA account wants to write uncovered (naked) call options to generate income for the minor. Is this permitted?",
+      "back": "No. Uncovered/naked options are speculative and inappropriate for a custodial account. Covered call writing is generally permitted, but buying options and writing naked options are not.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Can a registered representative typically be granted Full Power of Attorney over a non-family customer's account?",
+      "back": "It would be highly unusual, and most firms would not approve granting FPOA to an RR over an account that does not belong to a family member.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    }
+  ],
+  "tokens": {
+    "input": 8205,
+    "output": 3369
+  },
+  "cost_usd": 0.3757
+}

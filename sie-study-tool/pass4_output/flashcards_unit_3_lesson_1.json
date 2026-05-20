@@ -1,0 +1,300 @@
+{
+  "unit": 3,
+  "lesson": 1,
+  "lesson_title": "CHARACTERISTICS OF BONDS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Par value (face value) of a bond",
+      "back": "The principal amount repaid to the investor at maturity. Assume $1,000 par for most debt securities on the SIE exam.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Term bond",
+      "back": "A bond structured so the entire principal of the issue matures at one time. Issuers often establish a sinking fund to accumulate money to retire the bonds at maturity.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Serial bond",
+      "back": "A bond issue where portions of the principal mature at intervals over a period of years until the entire balance has been repaid.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Balloon maturity",
+      "back": "A bond structure combining serial and term features\u2014part of the principal is repaid before final maturity (like a serial bond), with the major portion paid off at the final maturity date.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the coupon (nominal/stated) yield of a bond?",
+      "back": "The fixed interest rate the issuer pays, calculated as a percentage of par value. A 6% coupon bond pays $60 per year ($30 semiannually) regardless of the bond's market price.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "How is accrued interest calculated for corporate and municipal bonds vs. Treasury bonds and notes?",
+      "back": "Corporate and municipal: 30-day month / 360-day year. Treasury bonds and notes: actual days elapsed / actual days in year. Zero-coupon bonds pay no accrued interest.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "A bond is quoted at 103. What is its dollar price?",
+      "back": "$1,030. Each point equals 1% of $1,000 par value ($10), so 103 \u00d7 $10 = $1,030.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the inverse relationship between bond prices and interest rates?",
+      "back": "When market interest rates rise, bond prices fall. When market interest rates fall, bond prices rise. The coupon rate itself never changes.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Current yield (CY)",
+      "back": "Annual coupon payment \u00f7 current market price. Measures a bond's annual interest payment relative to its market price.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Yield to maturity (YTM)",
+      "back": "The annualized return if the bond is held to maturity, accounting for the difference between purchase price and par value received at maturity. A bond trading 'on a basis of X%' means its YTM is X%.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "For a bond trading at a discount, rank the yields from lowest to highest: nominal, current yield, YTM, YTC.",
+      "back": "Discount bond: Nominal < Current Yield < YTM < YTC. (For premium bonds, the order reverses: Nominal > CY > YTM > YTC.)",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "A bond is purchased at $900 and held to maturity. How does the discount affect total return?",
+      "back": "At maturity the investor receives $1,000 par, gaining $100. The discount increases the investor's total return, so YTM exceeds the coupon rate.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Basis point",
+      "back": "1/100 of 1% (0.01%). 100 basis points = 1%. Used to measure yield (do not confuse with a 'point,' which equals 1% of face value, or $10).",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Call feature",
+      "back": "Allows the issuer to redeem the bond before maturity. Benefits the issuer (typically exercised when interest rates fall). Callable bonds carry a slightly higher coupon to compensate investors.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Put feature",
+      "back": "Allows the bondholder to sell (put) the bond back to the issuer before maturity. Benefits the investor (used when rates rise). Putable bonds carry a slightly lower coupon.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What is parity for a convertible bond?",
+      "back": "When the market value of the convertible bond equals the market value of the common shares the investor would receive upon conversion.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "How does a zero-coupon bond generate return, and what is 'phantom income'?",
+      "back": "Zeroes are issued at a deep discount and mature at par; the difference is the investor's return. Although interest is paid only at maturity, the IRS requires holders to pay tax annually on the accreted discount\u2014this annual taxable amount with no cash received is called phantom income.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Difference between Treasury STRIPS and Treasury receipts",
+      "back": "STRIPS are zero-coupon bonds issued by the U.S. Treasury and backed by its full faith and credit. Treasury receipts are zeros created by broker-dealers from a basket of Treasury bonds and are NOT backed by the U.S. Treasury.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Which bond ratings are considered investment grade (bank grade)?",
+      "back": "S&P: AAA, AA, A, BBB. Moody's: Aaa, Aa, A, Baa. Bonds rated BB/Ba or lower are speculative (high-yield/junk).",
+      "lo": "3.b",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "What two factors most affect a bond's price volatility (duration)?",
+      "back": "(1) Time to maturity\u2014longer maturity = more volatile. (2) Coupon rate\u2014lower coupon = more volatile. Duration combines both into a single measure of price sensitivity to interest rate changes.",
+      "lo": "3.b",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "Primary risks of owning debt securities",
+      "back": "(1) Default/credit/financial risk\u2014issuer fails to pay. (2) Interest rate risk\u2014price fluctuates with rate changes. (3) Purchasing power (inflation) risk\u2014fixed payments lose buying power over time.",
+      "lo": "3.b",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Mortgage bond",
+      "back": "A corporate secured bond backed by real estate and physical assets of the issuer. If the issuer defaults, the pledged real assets are sold to pay bondholders.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Equipment trust certificate",
+      "back": "Secured corporate debt (often issued by railroads/airlines) used to finance equipment. Title to the equipment is held by a trustee until the debt is paid; if the issuer defaults, the equipment is repossessed and sold.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Collateral trust bond",
+      "back": "A corporate bond secured by marketable securities (stocks/bonds of other issuers or the corporation itself) deposited with a trustee as collateral.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Debenture",
+      "back": "An unsecured corporate bond backed only by the issuer's full faith, credit, and general creditworthiness\u2014no collateral pledged.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Guaranteed bond",
+      "back": "An unsecured bond whose payments are guaranteed by a third party (such as a parent company). Despite the name, it is unsecured\u2014safety depends on the guarantor's financial strength.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Income (adjustment) bond",
+      "back": "An unsecured bond issued by a company reorganizing out of bankruptcy. Interest is paid ONLY if the company has sufficient income AND the board declares the payment. Not suitable for investors seeking income.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "definition",
+      "front": "Subordinated debenture",
+      "back": "Unsecured debt with a claim junior to other creditors. The lowest level of unsecured debt, but still senior to any stockholder. Carries a higher coupon to compensate for greater risk.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "State the corporate order of liquidation in bankruptcy.",
+      "back": "1) Secured creditors (then admin claims after secured), 2) Unsecured debt/general creditors (incl. wages, taxes), 3) Subordinated debt holders, 4) Preferred stockholders, 5) Common stockholders.",
+      "lo": "3.c",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer purchases 20 bonds at a price of 100. What is the total purchase cost before commissions?",
+      "back": "$20,000. Each bond at 100 = $1,000 (100% of par). 20 \u00d7 $1,000 = $20,000.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "scenario",
+      "front": "A 6% corporate bond is trading on a 7% basis. Is it at a premium or discount?",
+      "back": "At a discount. 'Basis' = YTM. When YTM (7%) exceeds the coupon (6%), the bond trades below par. Current yield will be between the coupon and YTM (above 6% but below 7%).",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    },
+    {
+      "type": "qa",
+      "front": "When does a zero-coupon bond pay interest, and when is it taxed?",
+      "back": "Interest is paid at maturity (as the difference between discount purchase price and par), but the accreted discount is taxed annually as phantom income.",
+      "lo": "3.a",
+      "unit": 3,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF BONDS"
+    }
+  ],
+  "tokens": {
+    "input": 12139,
+    "output": 3141
+  },
+  "cost_usd": 0.4177
+}

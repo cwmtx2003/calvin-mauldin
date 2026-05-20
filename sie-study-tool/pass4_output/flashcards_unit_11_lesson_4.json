@@ -1,0 +1,237 @@
+{
+  "unit": 11,
+  "lesson": 4,
+  "lesson_title": "COMMUNICATIONS WITH THE PUBLIC",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What are the three categories of communications with the public under FINRA Rule 2210?",
+      "back": "1) Institutional communications, 2) Retail communications, and 3) Correspondence.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "definition",
+      "front": "Retail communication",
+      "back": "Any written (including electronic) communication distributed or made available to more than 25 retail investors within any 30-calendar-day period. Requires principal approval before use and must be filed with FINRA (within 10 days of first use, or 10 days before use for new member firms in their first year).",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "definition",
+      "front": "Correspondence",
+      "back": "Any written (including electronic) communication distributed or made available to 25 or fewer retail investors within any 30-calendar-day period.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "definition",
+      "front": "Institutional communication",
+      "back": "Any written (including electronic) communication distributed or made available only to institutional investors. Does NOT include internal communications. If the firm has reason to believe it will be forwarded to retail investors, it must be treated as retail communication.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Who qualifies as an institutional investor under FINRA communication rules?",
+      "back": "Another member firm or RR, a bank, S&L, insurance company, registered investment company, employee benefit plan, government entity, person acting solely on behalf of an institutional investor, or any entity (including natural persons) with $50 million or more in total assets.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "scenario",
+      "front": "Seacoast Securities is in its first year of FINRA membership and is preparing a mass mail advertisement. What is the filing requirement?",
+      "back": "As a new member firm (first year), retail communications must be filed with FINRA at least 10 days BEFORE first use. Established firms file within 10 days of first use.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Do retail communications require principal approval before use?",
+      "back": "Yes. All retail communications must receive principal approval before use or before being filed with FINRA.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Must institutional communications and correspondence be approved by a principal before use?",
+      "back": "Not necessarily. Each firm decides whether to require pre-use principal approval or allow post-use approval. If pre-use approval is not required, the firm must provide and document education and training of associated persons regarding these communications.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "May a firm prominently display a regulator's logo or state that it is \"approved by the SEC\" in its retail communications?",
+      "back": "No. Communications may state that a firm is a FINRA member or registered with a regulator, but overly prominent statements or use of a regulator's logo that implies regulatory approval/endorsement is misleading and violates communication rules.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Under the TCPA of 1991, during what hours may cold calls be made?",
+      "back": "Between 8:00 am and 9:00 pm in the prospect's local time zone.",
+      "lo": "11.j",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What information must a cold caller disclose to a prospect under the TCPA of 1991?",
+      "back": "The caller's name, the firm's name, and the firm's telephone number or address.",
+      "lo": "11.j",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Which do-not-call lists must a representative check before making a telephone solicitation?",
+      "back": "Both the firm's internal do-not-call list AND the National Do Not Call Registry (maintained by the FTC). Neither list used may be more than 30 days old.",
+      "lo": "11.j",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What calls are exempt from the TCPA of 1991?",
+      "back": "Calls to parties with an established business relationship or prior express permission, calls on behalf of tax-exempt nonprofit organizations, non-commercial calls, and legitimate debt collection calls.",
+      "lo": "11.j",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "How often must FINRA member firms send account statements to customers?",
+      "back": "At least quarterly. However, if penny stocks are held in the account, statements must be sent monthly.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "By when must a customer receive a trade confirmation?",
+      "back": "At or before the completion of the transaction (the settlement date).",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Within how many days of opening an account must a firm send the customer a copy of their account record, and how often must the record be updated thereafter?",
+      "back": "Within 30 days of opening the account. The firm must also send an updated record within 30 days of receiving notice of any changes, and account updating must occur at least every 36 months.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What conditions must be met for a FINRA member firm to hold a customer's mail?",
+      "back": "(1) Written instructions from the customer specifying the time period (normally up to 3 months; longer for safety/security reasons but not convenience); (2) the firm informs the customer of alternate means to monitor account activity and obtains confirmation; and (3) the firm verifies at reasonable intervals that instructions still apply. The firm must also be able to contact the customer in a timely manner during the hold period.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What is required before a BD can electronically deliver confirmations and account statements to a customer?",
+      "back": "The customer must provide written consent. The firm must also have procedures to ensure delivery to the intended recipient, protect confidentiality/security, and provide paper copies upon request.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "definition",
+      "front": "Regulation SP",
+      "back": "SEC rule protecting the privacy of customers' nonpublic personal information (e.g., SSN, account balances, transaction history). Requires firms to provide a privacy notice at account opening and annually thereafter, give customers reasonable opt-out methods for disclosure to unaffiliated third parties, and safeguard customer information.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Under Regulation SP, what is the difference between a \"customer\" and a \"consumer\"?",
+      "back": "A customer has an ongoing relationship with the firm and must receive both an initial privacy notice AND an annual notice. A consumer has only a one-time, limited relationship and receives only the initial notice (no annual notice required).",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Under Regulation SP, which opt-out methods are considered reasonable?",
+      "back": "Providing a form with check-off boxes and prepaid return envelope, electronic opt-out for customers who agreed to e-delivery, or a toll-free phone number. Asking customers to write a letter is NOT reasonable.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What key items must a FINRA member firm's Business Continuity Plan (BCP) address?",
+      "back": "Data backup and recovery; alternate communications with customers, employees, and regulators; alternate physical location of employees; and prompt customer access to funds/securities if the firm cannot continue business.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "What are the FINRA requirements for emergency contacts under the BCP rules?",
+      "back": "Firms must provide FINRA with two emergency contacts\u2014both must be associated persons, at least one must be a principal AND part of senior management. If the second is not a principal, they must be part of senior management and knowledgeable about operations. Updates must be made promptly, no later than 30 days after any change.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "How must firms disclose their BCP to customers?",
+      "back": "In writing at account opening, posted on the firm's website, and mailed to customers upon request.",
+      "lo": "11.k",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    },
+    {
+      "type": "qa",
+      "front": "Are firms required to pre-approve individual posts on interactive social media forums?",
+      "back": "No. Interactive posts do not require pre-approval, but firms must have written supervisory procedures governing them. Static content (websites, blogs) typically must be pre-approved by a principal and may need to be filed with FINRA.",
+      "lo": "11.i",
+      "unit": 11,
+      "lesson": 4,
+      "lesson_title": "COMMUNICATIONS WITH THE PUBLIC"
+    }
+  ],
+  "tokens": {
+    "input": 7712,
+    "output": 3047
+  },
+  "cost_usd": 0.3442
+}

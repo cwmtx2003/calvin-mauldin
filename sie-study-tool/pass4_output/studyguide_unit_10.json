@@ -1,0 +1,106 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "sections": [
+    {
+      "title": "Lesson 10.1: Government Regulators",
+      "overview": "Government regulators sit at the top of the securities industry oversight structure, led by the SEC as the primary federal regulator. Additional U.S. Treasury branches (FinCEN, IRS, OCC), insurance entities (SIPC, FDIC), and state-level administrators (organized under NASAA) round out the government regulatory framework. Students must distinguish each agency's jurisdiction, enforcement powers, and insurance coverage scope.",
+      "key_concepts": [
+        "SEC: created by the Securities Exchange Act of 1934; primary federal securities regulator.",
+        "SEC jurisdiction: registers BDs that transact securities business; regulates exchanges, trading markets, securities information providers (SIPs); delegates representative licensing to FINRA.",
+        "SEC enforcement powers: censure, limit activities, suspend or revoke registration (including permanent bar), impose fines. SEC CANNOT make arrests \u2014 criminal cases are referred to the Justice Department.",
+        "A BD's SEC registration may NOT be represented as SEC approval of the firm's finances, business, or conduct \u2014 doing so is misrepresentation.",
+        "Security definition (for SIE): an intangible financial asset that may be bought, sold, or gifted, evidenced by paper certificate or electronic record. Commodities (gold, oil, OJ) and futures are NOT securities.",
+        "FinCEN: Treasury bureau combating money laundering; receives suspicious activity reports (SARs) and currency transaction reports (CTRs) from financial firms; promotes national security through financial intelligence.",
+        "IRS: primary federal tax enforcement agency; BDs must provide customer/firm information on demand; does NOT make tax law but enforces it.",
+        "Office of the Comptroller of the Currency (OCC \u2013 name, not abbreviation): supervises ~1,400 national banks, federal savings associations, and U.S. branches of foreign banks; serves as a director of the FDIC. NOTE: the abbreviation 'OCC' on the exam refers to the Options Clearing Corporation, not the Comptroller.",
+        "SIPC: nonprofit membership organization created by SIPA 1970; funded by member assessments; protects customers in BD bankruptcy.",
+        "SIPC mandatory membership for all SEC-registered BDs EXCEPT: (1) banks dealing exclusively in municipal securities, (2) firms dealing exclusively in U.S. government securities, (3) firms dealing exclusively in redeemable investment company securities.",
+        "SIPC coverage: $500,000 per separate customer (separate capacity), of which no more than $250,000 may be cash. Commodities, futures, and currency losses are NOT covered.",
+        "SIPC account aggregation: cash and margin accounts for the same person are combined; only margin equity (not full market value) is covered. Different registrations (individual, joint, IRA) each receive separate $500,000 coverage.",
+        "Customers with claims exceeding SIPC limits become general creditors of the failed BD for the excess.",
+        "SIPC disclosure rules: must be on advertising; the word 'SIPC' may not appear larger than the firm name; sign posted on premises; written disclosure to new customers at account opening and to all customers annually thereafter.",
+        "FDIC: independent federal agency insuring bank deposits (created during the Great Depression); insures $250,000 per depositor per ownership category per insured bank.",
+        "FDIC covers checking, savings, MMDAs, CDs, and self-directed IRA bank deposits. Does NOT cover mutual funds, annuities, life insurance, stocks, or bonds.",
+        "Key difference: FDIC = per owner per ownership category; SIPC = per separate customer/account capacity.",
+        "Uniform Securities Act (USA 1956): template for state securities laws adopted by all states.",
+        "State Administrator: state-level securities regulator; oversees state-level registration of securities, BDs, IAs, and representatives.",
+        "NASAA: North American Securities Administrators Association \u2014 represents state/provincial securities administrators in U.S., Canada, and Mexico; has NO direct regulatory authority but issues Model Rules used by administrators."
+      ],
+      "rules": [
+        "Securities Act of 1933 \u2014 governs new issue (primary) market; requires issuer registration.",
+        "Securities Exchange Act of 1934 \u2014 created SEC; governs secondary markets, BD/exchange registration, insider transactions, short sales, proxies, client accounts, customer protection rule, net capital rule, issuer reporting.",
+        "Investment Company Act of 1940 \u2014 regulates packaged products (mutual funds, closed-end funds, UITs).",
+        "Investment Advisers Act of 1940 \u2014 regulates firms earning fees for investment advice.",
+        "Securities Investor Protection Act of 1970 (SIPA) \u2014 created SIPC; protects customers in BD insolvency.",
+        "Insider Trading and Securities Fraud Enforcement Act of 1988 \u2014 penalties for misuse of material nonpublic information.",
+        "USA PATRIOT Act of 2001 (based partly on Bank Secrecy Act of 1970) \u2014 AML policies and procedures."
+      ],
+      "formulas": [
+        "SIPC max coverage per separate customer = $500,000 total, of which cash sub-limit = $250,000",
+        "FDIC coverage = $250,000 per depositor, per ownership category, per insured bank",
+        "Margin account SIPC coverage = equity in account (not full market value)"
+      ],
+      "mnemonics": [
+        "'FIO' Treasury regulators: FinCEN (money laundering), IRS (taxes), OCC-Comptroller (banks).",
+        "SIPC = 'Stocks/Securities' protection; FDIC = 'Funds on Deposit' protection.",
+        "SIPC '5-2-5': $500K total, $250K cash sub-limit, $500K per separate capacity.",
+        "OCC trap: 'Office of the Comptroller of the Currency' is spelled out; the acronym 'OCC' on the exam = Options Clearing Corporation."
+      ]
+    },
+    {
+      "title": "Lesson 10.2: Self-Regulatory Organizations (SROs)",
+      "overview": "SROs are industry-run regulators authorized by the SEC to write and enforce rules within their jurisdictions. The principal SROs tested are FINRA (BDs and associated persons), the MSRB (municipal securities rulemaking only \u2014 no enforcement), and the exchanges (e.g., NYSE). This lesson also covers FINRA's four rule categories, the disciplinary appeals path, and SEC/FINRA record-retention requirements.",
+      "key_concepts": [
+        "SRO purpose: industry self-policing under SEC oversight; SROs understand the industry best while protecting the public.",
+        "FINRA jurisdiction: investment banking (underwriting), OTC trading, exchange-listed trading, conduct of member firms and associated persons.",
+        "FINRA member firms may transact only with other FINRA members or qualifying exceptions (e.g., a bank in a municipal underwriting; a foreign firm that is a member of its national equivalent).",
+        "FINRA administers qualification exams (SIE and reps/principals) under SEC delegation.",
+        "Four FINRA rule categories: Conduct Rules, Code of Procedure (COP), Uniform Practice Code (UPC), Code of Arbitration (COA).",
+        "Conduct Rules: govern fair dealing with customers, compensation, communications, sales practices. Violations are serious.",
+        "Code of Procedure (COP): enforcement procedures for Conduct Rule violations; Department of Enforcement (DOE) investigates and holds hearings.",
+        "FINRA sanctions for violations: suspend, expel, or bar from membership; impose fines; censure; any other appropriate action. FINRA has NO arrest powers.",
+        "COP appeals path: DOE \u2192 National Adjudicatory Council (NAC) \u2192 SEC \u2192 federal appellate courts.",
+        "Uniform Practice Code (UPC): technical securities transaction rules (good delivery, settlement procedures, dividends, interest payments).",
+        "Code of Arbitration (COA): FINRA-administered dispute resolution for monetary disputes; faster/cheaper than court; decisions are FINAL and BINDING \u2014 NO APPEAL.",
+        "A customer CANNOT be forced into arbitration; customers may agree to arbitration before a dispute (most new account forms include a predispute arbitration agreement).",
+        "MSRB: writes rules for municipal securities (including ABLE accounts and 529 plans \u2014 not just muni debt). NO enforcement authority. NO authority over municipal issuers themselves.",
+        "MSRB rule enforcement: banks = Comptroller, Fed, FDIC; securities firms = SEC and FINRA.",
+        "Exchanges: regulate trading on their venue and oversee listed securities/issuers; can suspend trading or delist securities. NYSE is the exam model.",
+        "Record retention: SEC mandates what records, when prepared, and how long retained. Digital storage permitted if nonrewriteable/nonerasable (WORM format).",
+        "Lifetime records (kept indefinitely): partnership agreement, corporate charter/articles of incorporation, stock certificate books, board/partner meeting minutes, amendments, organizational records (e.g., Form BD).",
+        "Six-year records: blotters (records of original entry \u2014 trades, securities receipts/deliveries, cash receipts/disbursements, posted by event date no later than next business day); general ledger (assets, liabilities, net worth \u2014 at least monthly per net capital rule); stock record (securities long/short, location \u2014 posted no later than business day after settlement); customer ledgers (cash and margin accounts on separate ledgers \u2014 posted no later than settlement date); customer account records (new account form, margin agreement); designation of principals.",
+        "Four-year records: written customer complaints (retained for four years after resolution) \u2014 kept at the OSJ supervising the originating office, or at HQ if filed there. Applies to letters, email, text, IM, tweets, social media posts.",
+        "Three-year records: advertising; trial balances (monthly financials); U-4, U-5, fingerprint cards for terminated personnel; customer confirmations; order tickets; other ledgers (securities borrowed/loaned, monies borrowed/loaned, dividends/interest received); list of every office where each associated person regularly conducts business; associated persons' compensation records; firm's compliance and procedures manuals.",
+        "Accessibility rule: for 3- and 6-year records, most recent 2 years must be readily accessible (branch, OSJ, or HQ). After 2 years, may be stored offsite if retrievable.",
+        "SEC vs. FINRA complaint retention: FINRA = 4 years; SEC Rule 17a-3 = 3 years (with at least 2 years readily available). Default to FINRA's 4-year rule unless the question specifies SEC.",
+        "FINRA written complaint procedures cover written communication only; firms set their own procedures for verbal complaints (no regulatory standing for verbal complaints)."
+      ],
+      "rules": [
+        "SEC Rule 17a-3 / 17a-4 \u2014 books and records requirements and retention periods.",
+        "FINRA Code of Procedure \u2014 disciplinary process for Conduct Rule violations.",
+        "FINRA Code of Arbitration \u2014 final, binding dispute resolution.",
+        "FINRA membership rule \u2014 members deal only with other members except specified exceptions (banks in muni underwritings, qualifying foreign firms).",
+        "MSRB rules \u2014 apply to all municipal securities including 529 plans and ABLE accounts; enforced by SEC/FINRA/bank regulators."
+      ],
+      "formulas": [
+        "COP appeal sequence: DOE \u2192 NAC \u2192 SEC \u2192 Federal Courts",
+        "Arbitration appeal: NONE (final and binding)",
+        "Record retention quick reference: Lifetime (firm-foundation docs) | 6 yrs (blotters, ledgers, stock record, customer accounts) | 4 yrs (written complaints) | 3 yrs (most everything else)"
+      ],
+      "mnemonics": [
+        "FINRA's four rule books: 'CCUA' \u2014 Conduct, COP, UPC, Arbitration.",
+        "COP Appeal Ladder 'DNSF': DOE \u2192 NAC \u2192 SEC \u2192 Federal courts.",
+        "Arbitration = 'Final And Binding' \u2014 no F-A-B appeals.",
+        "Retention 'L-6-4-3': Lifetime / 6-year / 4-year (complaints) / 3-year (everything else).",
+        "MSRB = 'Makes Rules, Skips Busting' \u2014 writes muni rules but doesn't enforce them.",
+        "OCC alert: spelled-out 'Office of the Comptroller of the Currency' = bank regulator; abbreviated 'OCC' = Options Clearing Corporation."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 13105,
+    "output": 4471
+  },
+  "cost_usd": 0.5319
+}

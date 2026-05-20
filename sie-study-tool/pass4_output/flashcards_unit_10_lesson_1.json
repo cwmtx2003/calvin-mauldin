@@ -1,0 +1,237 @@
+{
+  "unit": 10,
+  "lesson": 1,
+  "lesson_title": "GOVERNMENT REGULATORS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Securities and Exchange Commission (SEC)",
+      "back": "The securities industry's primary federal regulator, created by the Securities Exchange Act of 1934. The SEC registers broker-dealers, regulates exchanges and trading markets, oversees SIPs, and has delegated representative licensing to FINRA.",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What sanctions can the SEC impose on a broker-dealer that fails to comply with its rules?",
+      "back": "Censure; limits on activities, functions, or operations; suspension of registration; revocation of registration (including permanent bar); and/or fines.",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "May a broker-dealer advertise that its SEC registration implies SEC approval of its financial standing or business conduct?",
+      "back": "No. Any claim or implication that SEC registration means the SEC has passed upon or approved the BD's financial standing, business, or conduct is misrepresentation.",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "List four key areas regulated under the Securities Exchange Act of 1934.",
+      "back": "Insider transactions, short sales, and proxies; client accounts; customer protection rule; net capital/financial responsibility rules for BDs; issuer reporting requirements (e.g., annual reports); and registration of BDs, exchanges, and associated persons.",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a security and a commodity?",
+      "back": "A security is an intangible financial asset that may be bought, sold, or gifted. A commodity is a hard asset (gold, oil, beef, orange juice). Futures based on commodities are not securities.",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "Financial Crimes Enforcement Network (FinCEN)",
+      "back": "A Treasury bureau that safeguards the financial system from illicit use, combats money laundering, and promotes national security through collection and analysis of financial intelligence. Financial firms report suspicious/unusual activity to FinCEN.",
+      "lo": "10.b",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the IRS's role with regard to the securities industry?",
+      "back": "The IRS is the federal government's primary tax enforcement agency. It investigates tax evasion and requires most financial firms, including BDs, to provide customer and firm information on demand. The IRS enforces \u2014 but does not make \u2014 tax law.",
+      "lo": "10.b",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "On the SIE exam, what does 'OCC' stand for, and how is it different from the Office of the Comptroller of the Currency?",
+      "back": "OCC refers to the Options Clearing Corporation, the self-regulator for the options market. The Office of the Comptroller of the Currency supervises national banks and federal savings associations and is referred to by its full name or 'Comptroller of the Currency' \u2014 never 'OCC' on the exam.",
+      "lo": "10.b",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "Match the federal act to its purpose: Securities Act of 1933, Securities Exchange Act of 1934, Investment Company Act of 1940, Investment Advisers Act of 1940, SIPA of 1970, Insider Trading Act of 1988, USA PATRIOT Act of 2001.",
+      "back": "1933: governs new issues (primary market) and issuer registration. 1934: governs secondary trading and registration of BDs/employees/exchanges. ICA 1940: regulates packaged products (mutual funds, CEFs, UITs). IAA 1940: regulates investment advisers. SIPA 1970: customer protection in BD bankruptcies. Insider Trading Act 1988: penalties for misuse of MNPI. USA PATRIOT Act 2001: AML policies and procedures.",
+      "lo": "10.b",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "Securities Investor Protection Corporation (SIPC)",
+      "back": "A nonprofit membership organization created under SIPA of 1970. SIPC members pay assessments into an insurance fund that meets customer claims in the event of a BD bankruptcy.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "Which broker-dealers registered with the SEC are NOT required to be SIPC members?",
+      "back": "Banks dealing exclusively in municipal securities; firms dealing exclusively in U.S. government securities; and firms dealing exclusively in redeemable investment company (mutual fund) securities.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the SIPC coverage limits per separate customer account?",
+      "back": "Up to $500,000 total per separate account, of which no more than $250,000 may be cash.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "scenario",
+      "front": "John Doe has a cash account and a margin account at the same BD, plus a joint account with his wife Mary, and an account as custodian for his daughter Jane. How does SIPC treat these accounts?",
+      "back": "The cash and margin accounts (same customer) are combined and covered up to $500,000 total. The joint account is a separate customer \u2014 covered up to $500,000. The custodial account is a separate customer \u2014 covered up to $500,000. Only the equity in the margin account is covered.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "Are commodities, futures contracts, and currency losses covered by SIPC?",
+      "back": "No. SIPC does not cover commodities, commodities futures contracts, or losses related to currencies, because they are not considered securities.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What happens to a customer whose claims exceed SIPC coverage limits when a BD fails?",
+      "back": "The customer becomes a general creditor of the failed BD for any uncovered amount.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "What SIPC disclosure must a BD provide to customers?",
+      "back": "BDs must disclose SIPC membership on advertising (without implying coverage greater than it is, and the term SIPC may not appear larger than the firm's own name), post a sign on premises, and provide written disclosure \u2014 including how to obtain the SIPC brochure \u2014 to new customers at account opening and to all customers at least annually thereafter.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "Federal Deposit Insurance Corporation (FDIC)",
+      "back": "An independent federal agency that insures deposits at member banks up to $250,000 per depositor, per ownership category, per insured bank. Funded by premiums paid by participating institutions.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "Which products are NOT covered by FDIC deposit insurance?",
+      "back": "Investment products such as mutual funds, annuities, life insurance policies, and stocks and bonds. FDIC covers traditional deposits: checking, savings, money market deposit accounts, CDs, and self-directed IRA deposit accounts.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "scenario",
+      "front": "Gabriel has $200,000 in an individual account at an FDIC bank, and he and Lisa have $450,000 in a joint account at the same bank. If the bank fails, how much FDIC coverage applies?",
+      "back": "Gabriel's individual account is covered in full ($200,000, under the $250,000 limit). The joint account is covered up to $250,000 per owner \u2014 so the full $450,000 is covered ($225,000 attributable to each). Total coverage: $650,000.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "How does FDIC coverage differ structurally from SIPC coverage?",
+      "back": "FDIC: $250,000 per owner, per ownership category, per insured bank (a joint account with two owners = $500,000). SIPC: $500,000 per separate account regardless of the number of owners; different account registrations (individual, joint, IRA) each get their own $500,000 limit.",
+      "lo": "10.c",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "Uniform Securities Act (USA)",
+      "back": "A 1956 template for state securities laws that all states have adopted (with minor variations). It provides for a state securities administrator with authority over registration of securities, BDs, investment advisers, and representatives in that state.",
+      "lo": "10.d",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "State Securities Administrator",
+      "back": "The official in each state (selected by appointment or election) with authority over the registration of securities, broker-dealers, investment advisers, and registered representatives within that state. Title varies by state; collectively referred to as 'the administrators.'",
+      "lo": "10.d",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "definition",
+      "front": "North American Securities Administrators Association (NASAA)",
+      "back": "An association representing state and provincial securities regulators in the U.S., Canada, and Mexico. NASAA has no direct regulatory authority but produces Model Rules used by state administrators in enforcing state securities laws.",
+      "lo": "10.d",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "To register a broker-dealer firm to do business in a particular state, with whom must the firm register?",
+      "back": "The state securities administrator of that state.",
+      "lo": "10.d",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    },
+    {
+      "type": "qa",
+      "front": "Which of these is NOT among the SEC's powers: revoking registration, arresting violators, imposing fines, or limiting a firm's activity?",
+      "back": "Arresting those in violation. The SEC is a civil regulator \u2014 it can censure, fine, suspend, revoke registration, and limit activities, but criminal arrests are handled by law enforcement (e.g., DOJ).",
+      "lo": "10.a",
+      "unit": 10,
+      "lesson": 1,
+      "lesson_title": "GOVERNMENT REGULATORS"
+    }
+  ],
+  "tokens": {
+    "input": 5652,
+    "output": 3501
+  },
+  "cost_usd": 0.3474
+}

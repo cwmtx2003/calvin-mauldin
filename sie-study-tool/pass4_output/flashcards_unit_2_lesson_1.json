@@ -1,0 +1,228 @@
+{
+  "unit": 2,
+  "lesson": 1,
+  "lesson_title": "CHARACTERISTICS OF COMMON STOCKS",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Common stock",
+      "back": "An equity security representing ownership in a corporation, entitling the holder to a share of earnings (dividends) and voting rights on major management decisions.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Authorized stock",
+      "back": "The maximum number of shares a corporation is permitted to issue, as specified in its corporate charter. Changing this number requires a stockholder vote to amend the charter.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Issued stock",
+      "back": "Authorized shares that have been sold to investors. The company has received payment, and investors have paid for the shares.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Outstanding stock",
+      "back": "Shares that have been issued by the corporation and are currently held by investors (issued shares minus treasury shares).",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Treasury stock",
+      "back": "Stock that a corporation has issued and subsequently reacquired. It carries no voting rights and receives no dividends. The company may hold, reissue, or retire it.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "How is a corporation's market capitalization calculated?",
+      "back": "Outstanding shares \u00d7 Current Market Value (CMV) per share.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Blue-chip stocks",
+      "back": "Large-cap companies with a long history of steady dividend payments.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "What defines a penny stock, and what key disclosure must broker-dealers provide?",
+      "back": "An unlisted equity security trading under $5 per share. Before a customer's initial penny stock transaction, the BD must deliver a risk disclosure document and obtain a signed, dated acknowledgment. Monthly account statements are also required when penny stocks are held.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "Who qualifies as an 'established customer' exempt from the penny stock suitability statement requirement?",
+      "back": "A customer who has either (1) held an account with the BD for at least one year and made a deposit of funds or securities, OR (2) made at least three penny stock purchases of different issuers on different days. Established customers are still subject to disclosure requirements.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "Do penny stock suitability and disclosure rules apply to unsolicited transactions?",
+      "back": "No. The penny stock rules apply only to solicited transactions (e.g., cold calls). Unsolicited transactions are exempt from suitability and disclosure requirements.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "List the four dividend dates in order and identify who sets each.",
+      "back": "DERP: Declaration \u2192 Ex-dividend \u2192 Record \u2192 Payable. The BOD sets the declaration, record, and payable dates; the regulator (FINRA or the exchange) sets the ex-dividend date.",
+      "lo": "2.b",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "To receive a declared cash dividend, by what date must an investor purchase the stock?",
+      "back": "The investor must purchase the stock before the ex-dividend date (which is one business day before the record date). Buying on or after the ex-date means buying the stock 'ex' \u2014 without the dividend.",
+      "lo": "2.b",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor buys 200 shares of XYZ at $60/share for $12,000. XYZ declares a 20% stock dividend. What is the investor's new cost basis per share?",
+      "back": "200 \u00d7 20% = 40 additional shares; total = 240 shares. $12,000 \u00f7 240 = $50 per share new cost basis. The stock dividend itself is not taxable, but the adjusted basis affects gain/loss when sold.",
+      "lo": "2.b",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "How are cash dividends taxed?",
+      "back": "They are taxed in the year paid (based on the payable date) as either nonqualified (ordinary income tax rates) or qualified (lower IRS-specified rates depending on the investor's tax bracket).",
+      "lo": "2.b",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Statutory voting",
+      "back": "A voting method allowing a stockholder to cast one vote per share owned for each item on the ballot. Benefits larger shareholders.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Cumulative voting",
+      "back": "A voting method allowing stockholders to allocate their total votes (shares owned \u00d7 seats up for election) in any manner they choose across candidates. Benefits smaller shareholders.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "scenario",
+      "front": "A shareholder owns 100 shares of XYZ, which is electing 3 directors. Under cumulative voting, what is the maximum number of votes the shareholder can cast for a single candidate?",
+      "back": "100 shares \u00d7 3 seats = 300 total votes, all of which may be cast for a single candidate under cumulative voting. Under statutory voting, the maximum for any one seat would be 100.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "definition",
+      "front": "Preemptive right",
+      "back": "The right of existing common stockholders to maintain their proportionate ownership in a corporation by purchasing a pro-rata share of any new shares issued.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "What is meant by 'limited liability' for common stockholders?",
+      "back": "A shareholder's maximum loss is limited to the amount invested. Personal assets are not at risk for the corporation's debts, even in bankruptcy.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the main benefits of owning common stock?",
+      "back": "Potential capital appreciation (growth), income from dividends, hedge against inflation, voting rights, limited liability, freely transferable shares, preemptive rights, and access to corporate information (e.g., annual 10-K).",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the principal risks of owning common stock?",
+      "back": "Value risk (price decline), decreased or no dividend income (dividends are not guaranteed), and lowest priority claim on assets in dissolution \u2014 common stockholders are paid only after debtholders and preferred shareholders.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "In a corporate liquidation, where do common stockholders rank in the priority of claims?",
+      "back": "Last. They have only residual rights to assets after all creditors (bondholders/debtholders) and preferred stockholders are paid.",
+      "lo": "2.c",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "scenario",
+      "front": "BigCompany, Inc., an NYSE-listed stock, declares a $0.50 dividend. Who declares the ex-dividend date?",
+      "back": "The exchange on which it is listed \u2014 the NYSE. (FINRA sets the ex-date for unlisted/OTC securities.)",
+      "lo": "2.b",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    },
+    {
+      "type": "qa",
+      "front": "Which corporate actions typically require a shareholder vote?",
+      "back": "Major decisions such as electing the Board of Directors, issuing additional shares beyond authorized amounts (charter amendment), and major changes to the corporation's identity or direction (e.g., name change, merger). Day-to-day decisions like hiring/firing executives or declaring dividends do not require shareholder approval.",
+      "lo": "2.a",
+      "unit": 2,
+      "lesson": 1,
+      "lesson_title": "CHARACTERISTICS OF COMMON STOCKS"
+    }
+  ],
+  "tokens": {
+    "input": 7807,
+    "output": 2408
+  },
+  "cost_usd": 0.2977
+}

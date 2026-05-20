@@ -1,0 +1,273 @@
+{
+  "unit": 7,
+  "lesson": 2,
+  "lesson_title": "RECOMMENDATIONS AND SUITABILITY",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "How can systematic (market) risk be mitigated in a portfolio?",
+      "back": "Systematic risk cannot be diversified away. It can only be hedged by holding assets that move opposite the market, typically through derivatives such as buying index puts (e.g., puts on the S&P 500 to hedge a large-cap stock portfolio).",
+      "lo": "7.b",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "How is nonsystematic risk reduced?",
+      "back": "Through diversification\u2014building a portfolio with securities of multiple issuers, industries, and asset types. Nonsystematic risk is unique to a specific issuer, industry, or investment type.",
+      "lo": "7.b",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Beta",
+      "back": "A measure of a security's volatility relative to the overall market (S&P 500 = 1.00). Beta > 1.00 = more volatile/riskier than market; beta < 1.00 = less volatile than market. Used to gauge a security's nonsystematic risk.",
+      "lo": "7.b",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer carefully researched a stock purchase. After buying, the market dropped 20% and the stock fell 15% along with it. What type of risk is illustrated?",
+      "back": "Market risk (a systematic risk). When the overall market falls, individual securities tend to fall with it regardless of company-specific research.",
+      "lo": "7.b",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What is the general relationship between risk and reward?",
+      "back": "The greater the risk, the greater the potential reward; the lower the risk, the lower the potential reward.",
+      "lo": "7.b",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Recommendation (FINRA)",
+      "back": "Any communication that reasonably could be viewed as a 'call to action' that would influence an investor to trade a particular security or group of securities. Includes explicit hold recommendations. Lack of an investment recommendation label does not prevent a communication from being treated as one.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer calls saying they think retail stocks will dip and asks how to act on this belief. The RR suggests placing a buy limit order on BuyStuff, Inc. Is this a recommendation?",
+      "back": "Yes. The RR suggested a specific security and a specific course of action, which constitutes a recommendation triggering suitability and Reg BI obligations.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "List examples of a customer's FINANCIAL circumstances relevant to suitability.",
+      "back": "Income, value of home, liquid net worth, debt payments, and total debt\u2014anything readily quantified in money.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "List examples of a customer's NONFINANCIAL circumstances relevant to suitability.",
+      "back": "Age, marital status, number and ages of dependents, employment status, and employment of immediate family members.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "When was Regulation Best Interest (Reg BI) effective, and what does it require?",
+      "back": "Effective June 30, 2020. Broker-dealers and associated persons must act in the best interest of a retail customer when recommending any securities transaction, investment strategy, or account type. They may not place their own financial or other interest ahead of the retail customer's.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "Name the four component obligations under Regulation Best Interest.",
+      "back": "1) Disclosure Obligation, 2) Care Obligation, 3) Conflict of Interest Obligation, 4) Compliance Obligation.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What must be disclosed in writing under Reg BI's Disclosure Obligation?",
+      "back": "Prior to or at the time of recommendation: all material facts about the scope/terms of the relationship, fees and costs, type and scope of services (including any material limitations on securities/strategies recommended), and all material facts relating to conflicts of interest.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What does the Care Obligation under Reg BI require?",
+      "back": "The member must exercise reasonable diligence, care, and skill to: understand potential risks/rewards/costs of the recommendation; have a reasonable basis the recommendation is in the best interest of the particular retail customer based on their profile; and ensure a series of recommendations is not excessive when viewed together.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What does Reg BI's Conflict of Interest Obligation require of the BD?",
+      "back": "The BD must establish, maintain, and enforce written policies and procedures to identify and mitigate (or eliminate) conflicts of interest, including eliminating sales contests, sales quotas, bonuses, and noncash compensation based on the sale of specific securities or specific types within a limited time period.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA's modified noncash compensation rule, can sales contests still occur?",
+      "back": "Yes, but if the contest is based on the sale of a type of product (e.g., mutual funds), the incentive must apply to ALL mutual funds sold by the firm\u2014not just one specific fund family. For example, a contest can reward sales of $X of any mutual fund the firm offers, but not just $X of the ABC Fund.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "Who is excluded from the definition of 'customer' under Reg BI?",
+      "back": "Other broker-dealers, institutional accounts (banks, S&Ls, insurance companies, registered investment companies), and potential investors who are not currently clients\u2014provided neither the RR nor firm receives direct or indirect compensation for the advice.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "Under Reg BI, who may use the title 'adviser' or 'advisor'?",
+      "back": "Only persons registered as an investment adviser representative (or BDs also registered as investment advisers). Use of these titles by an unregistered BD or associated person is presumed to be a violation of Reg BI's disclosure requirement.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What is Form CRS and when must it be delivered to new retail customers?",
+      "back": "Form CRS (Customer Relationship Summary) is a brief relationship summary delivered by BDs and IAs to retail investors. Delivery must occur at the earliest of: entering into an investment advisory contract with the retail investor, or the opening of a brokerage account. It is 2 pages for a BD or IA, 4 pages for dually registered firms.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "scenario",
+      "front": "Sam, age 77, is retired and wants additional income but is very nervous about losing money. Which is most suitable: a growth fund, an emerging markets fund, a Treasury bond fund, or a tech fund?",
+      "back": "A Treasury bond fund. It provides current income with very low risk, aligning with both his income objective and his low risk tolerance. The other choices are equity funds emphasizing growth, not income or safety.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What investments typically align with a customer objective of preservation of capital/safety?",
+      "back": "CDs, money market mutual funds, fixed annuities, government securities and government bond funds, agency issues, investment-grade corporate bonds, and investment-grade corporate bond funds.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What investments typically align with a speculation objective?",
+      "back": "Options contracts, DPPs, high-yield (junk) bonds, unlisted/non-Nasdaq stocks or bonds, sector funds, precious metals, commodities, and futures.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "qa",
+      "front": "What investments would be recommended for tax-free income?",
+      "back": "Municipal bonds, municipal bond funds, and Roth IRAs.",
+      "lo": "7.d",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Dow Jones Industrial Average (DJIA)",
+      "back": "The most widely cited measure of market performance in popular press; tracks 30 well-known large companies.",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "S&P 500 Index",
+      "back": "Tracks slightly more than 500 large U.S. company stocks. The benchmark most professionals use for overall U.S. large-cap market performance and basis for many index funds and ETFs.",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Russell 2000 Index",
+      "back": "Tracks approximately 2,000 small-company stocks; the benchmark for small-cap U.S. equities.",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Wilshire 5000",
+      "back": "The broadest measure of U.S. stock market performance; originally tracked over 5,000 stocks across all sizes and industries (now around 3,500 components).",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "Bloomberg Barclays U.S. Aggregate Bond Index",
+      "back": "The 'Agg'\u2014a composite index combining several bond indexes to represent the entire U.S. bond market.",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "definition",
+      "front": "MSCI EAFE Index",
+      "back": "Measures equity performance of developed markets outside the U.S. and Canada (Europe, Australasia, and Far East). The most widely recognized benchmark for foreign equities.",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer holds a diversified portfolio of domestic large-cap stocks and wants to compare her performance to the overall market. Which benchmark is best?",
+      "back": "The S&P 500 Index\u2014it tracks large U.S. companies and most closely matches the portfolio's composition. (Russell 2000 = small caps, EAFE = foreign equities, Barclays Agg = bonds.)",
+      "lo": "7.c",
+      "unit": 7,
+      "lesson": 2,
+      "lesson_title": "RECOMMENDATIONS AND SUITABILITY"
+    }
+  ],
+  "tokens": {
+    "input": 8183,
+    "output": 3681
+  },
+  "cost_usd": 0.3988
+}

@@ -1,0 +1,237 @@
+{
+  "unit": 7,
+  "lesson": 1,
+  "lesson_title": "INVESTMENT RISKS",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What is the key difference between systematic and nonsystematic risk?",
+      "back": "Systematic risk affects the entire market and cannot be diversified away. Nonsystematic risk is unique to a specific company, industry, or investment type and CAN be reduced through diversification.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Market Risk",
+      "back": "A systematic risk \u2014 the risk that when the overall market declines, a portfolio of securities from that market will also decline, regardless of diversification.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Interest Rate Risk",
+      "back": "A systematic risk \u2014 the potential change in bond prices caused by changes in market interest rates. Bond prices and interest rates have an inverse relationship. Also called market risk for bonds.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "How does duration relate to interest rate risk?",
+      "back": "Duration measures a bond's price sensitivity to interest rate changes. Bonds with longer maturities fluctuate more in price than shorter-maturity bonds when interest rates move.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Reinvestment Risk",
+      "back": "The risk that when interest rates decline, an investor will be unable to reinvest proceeds from redemptions, called securities, or distributions at the same level of income without taking on additional risk.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Inflation Risk (Purchasing Power Risk)",
+      "back": "A systematic risk \u2014 the effect of continually rising prices that erodes the purchasing power of a fixed investment income. Present in all securities that pay a fixed income.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "Which type of security is MOST affected by purchasing power (inflation) risk?",
+      "back": "Fixed-income securities, such as long-term bonds, because their fixed interest payments lose purchasing power as inflation rises.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Currency Risk",
+      "back": "A systematic risk \u2014 the possibility that an investment denominated in a foreign currency could decline if that currency weakens against the U.S. dollar (or relevant comparison currency).",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Call Risk",
+      "back": "The risk that a bond will be called before maturity, forcing the investor to reinvest principal at a lower rate of return. Most likely to occur when interest rates are falling and on bonds with higher coupon rates.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "How can investors protect themselves against call risk?",
+      "back": "By looking for bonds with call protection \u2014 a period during which the bond cannot be called. Most corporate and municipal issuers provide some years of call protection; U.S. Treasuries do not currently offer callable bonds.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "Can systematic risk be eliminated through diversification?",
+      "back": "No. No matter how diversified a portfolio is, it remains subject to systematic risk. Only nonsystematic risk can be reduced through diversification.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Default Risk (Credit/Financial Risk)",
+      "back": "A nonsystematic risk \u2014 the potential for an investor to lose some or all invested capital due to an issuer's financial weakness, including failure to make interest payments. Most commonly associated with debt securities.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Business Risk",
+      "back": "A nonsystematic operating risk generally caused by poor management decisions. Earnings may be lowered, or in the worst case, common stockholders could lose their entire investment.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Prepayment Risk",
+      "back": "A nonsystematic risk \u2014 the risk that a borrower will repay principal on a debt instrument before maturity, depriving the lender of future interest payments. Commonly associated with GNMAs and mortgage-backed securities when rates fall.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Liquidity Risk (Marketability Risk)",
+      "back": "A nonsystematic risk \u2014 the risk that an investor might not be able to sell an investment quickly at a fair market price. Real estate, fine art, and collectibles typically have high liquidity risk.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Regulatory Risk",
+      "back": "A nonsystematic risk arising from changes in rules issued by regulatory agencies (e.g., FDA, EPA) that can disrupt a company's business model.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Legislative Risk",
+      "back": "A nonsystematic risk resulting from changes in the law passed by a legislature, such as changes to the tax code. Differs from regulatory risk, which comes from agency rule changes.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between regulatory risk and legislative risk?",
+      "back": "Regulatory risk comes from changes to regulations made by government agencies (state or federal). Legislative risk results from changes in the law passed by a legislature.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Political Risk",
+      "back": "The risk of loss from instability in the political underpinnings of a country. Particularly significant in emerging economies but can also affect developed nations.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "definition",
+      "front": "Sovereign Risk",
+      "back": "The risk of a country defaulting on its debt obligations. When a country is at risk of default, the impact is felt on financial markets worldwide.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor holds a callable bond yielding 5%. Interest rates fall to 3%, and the issuer calls the bond. The investor receives the principal and reinvests it at 3%. Which two risks has the investor experienced?",
+      "back": "Call risk (the bond was called before maturity) and reinvestment risk (proceeds had to be reinvested at a lower rate of 3% instead of the original 5%).",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "scenario",
+      "front": "An investor owns shares of XYZ Pharmaceutical. The FDA orders an immediate halt to sales of XYZ's best-selling drug, and the stock price falls sharply. What type of risk does this illustrate?",
+      "back": "Regulatory risk \u2014 a change/action by a regulatory agency (FDA) negatively affected the company. This is a nonsystematic risk.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "scenario",
+      "front": "A U.S. investor purchases stock in a Japanese company denominated in yen. The yen weakens significantly against the U.S. dollar. What risk has materialized?",
+      "back": "Currency risk \u2014 the investor's holding loses value when converted back to U.S. dollars due to the unfavorable exchange rate movement. This is a systematic risk.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "Identify each as systematic or nonsystematic: market risk, business risk, inflation risk, liquidity risk, interest rate risk, default risk.",
+      "back": "Systematic: market risk, inflation risk, interest rate risk. Nonsystematic: business risk, liquidity risk, default risk.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    },
+    {
+      "type": "qa",
+      "front": "Why is prepayment risk a particular concern for GNMA investors?",
+      "back": "When interest rates fall, the underlying mortgages backing GNMAs are often refinanced, resulting in a partial pay-down of principal. The investor must then reinvest at lower prevailing rates.",
+      "lo": "7.a",
+      "unit": 7,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT RISKS"
+    }
+  ],
+  "tokens": {
+    "input": 4230,
+    "output": 2891
+  },
+  "cost_usd": 0.2803
+}

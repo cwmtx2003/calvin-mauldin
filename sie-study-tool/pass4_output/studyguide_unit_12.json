@@ -1,0 +1,125 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "sections": [
+    {
+      "title": "Lesson 12.1: Associating With and Leaving a Member Firm",
+      "overview": "Registration with FINRA requires the member firm to file Form U4 on behalf of the associated person; termination requires Form U5. These forms capture extensive background, employment, and disciplinary information, and FINRA retains jurisdiction over former registered persons for two years after termination. Certain disciplinary or criminal events trigger statutory disqualification from the industry.",
+      "key_concepts": [
+        "Form U4: filed by member firm to register an associated person with FINRA; registration not effective until qualification exam(s) passed.",
+        "Failed exam waiting periods: 30 days after 1st and 2nd failures; 180 days after 3rd consecutive failure before retesting.",
+        "Form U4 contains: name/aliases, 5-year residency history, 10-year employment history (full-time education counts within the 10-year employment), disclosure of charges/convictions related to investment business.",
+        "Affirmative (yes) disclosure answers require detailed explanation on Disclosure Reporting Pages (DRPs).",
+        "NOT required on U4: marital status, educational background, U.S. citizenship.",
+        "Two firm requirements for U4: (1) sponsorship by a BD member firm; (2) complete and truthful disclosure.",
+        "Member firm must investigate applicant's reputation, character, education, qualifications, experience (background check) and certify credentials.",
+        "Exam window: filing U4 requesting an exam opens a 120-day window; if it lapses, a new U4 is NOT required but a new exam window must be opened.",
+        "U4 amendments: must be filed via CRD within 30 days of the firm learning of the change; 10 business days if change involves a statutory disqualification.",
+        "Willful misstatement on U4 may result in a lifetime bar from the industry.",
+        "Fingerprinting: required for those involved in sales, handling cash/customer securities, and all directors, officers, partners; cards submitted to U.S. Attorney General (Justice Department).",
+        "Fingerprinting exemptions: clerical/ministerial personnel with no access to cash, securities, or books and records; persons selling only mutual funds, variable annuities, or DPPs.",
+        "Form U5: filed by member with CRD within 30 days of termination; copy provided to former employee within same period; late filing triggers a fee.",
+        "Five U5 termination reasons: Discharged, Permitted to Resign, Deceased, Voluntary, Other.",
+        "Detailed explanation required on U5 for: Discharged, Permitted to Resign, and Other. Voluntary and Deceased are self-explanatory.",
+        "Partial termination on U5: when a person ends some but not all registrations (e.g., principal stepping down to RR).",
+        "U5 amendment for statutory disqualification: within 10 business days of discovery.",
+        "Post-termination FINRA jurisdiction: 2 years to investigate; person may re-affiliate within 2 years without retaking qualification (top-off) exams.",
+        "SIE validity: passing SIE allows a person up to 4 years to pass a top-off and associate with a firm; 4 years after leaving the industry to re-affiliate before SIE must be retaken.",
+        "Military service: registered person on regular active duty placed in special inactive status; the 2-year clock begins 90 days after end of military service.",
+        "Continuing commissions: post-termination commissions allowed only under pre-existing contract for existing business (e.g., retirees, heirs); no new business.",
+        "Statutory Disqualification triggers: expulsion/suspension by SRO or foreign equivalent; SEC or foreign regulator order denying/suspending/revoking registration; being cause of another's expulsion/suspension; willful misstatement on application; felony conviction (domestic or foreign) within past 10 years; misdemeanor involving securities or money within past 10 years; court injunctions barring acting as IA, underwriter, BD, etc.",
+        "Bankruptcy or unsatisfied lien alone does NOT disqualify, but failure to disclose them does.",
+        "CRD maintains disciplinary history; public access via BrokerCheck (toll-free); link to BrokerCheck required on all FINRA member firm websites."
+      ],
+      "rules": [
+        "FINRA By-Laws Article III \u2013 Qualifications of Members and Associated Persons; Article V \u2013 Registered Representatives.",
+        "FINRA Rule 1122 \u2013 Filing of Misleading Information as to Membership or Registration.",
+        "FINRA Rule 3110(e) \u2013 Member's responsibility to investigate applicants for registration.",
+        "FINRA Rule 8312 \u2013 BrokerCheck Disclosure.",
+        "FINRA Rule 2263 \u2013 Arbitration Disclosure to Associated Persons Signing U4.",
+        "FINRA Rule 2267 \u2013 Investor Education and Protection (BrokerCheck link).",
+        "SEC Rule 17f-2 \u2013 Fingerprinting of Securities Industry Personnel; cards submitted to U.S. Attorney General.",
+        "Securities Exchange Act of 1934 \u00a73(a)(39) \u2013 Statutory Disqualification definition.",
+        "MSRB Rule G-7 \u2013 Information concerning associated persons."
+      ],
+      "formulas": [
+        "Exam retesting waits: 1st fail = 30 days; 2nd fail = 30 days; 3rd consecutive fail = 180 days.",
+        "U4/U5 amendment timing: standard event = 30 days; statutory disqualification = 10 business days.",
+        "U5 filing deadline = 30 days after termination.",
+        "Post-termination FINRA jurisdiction = 2 years; re-affiliation without retesting = 2 years; SIE validity = 4 years."
+      ],
+      "mnemonics": [
+        "U4 = 'You're Joining' (entering); U5 = 'You're Severing' (leaving).",
+        "DPDVO \u2013 the five U5 reasons: Discharged, Permitted to resign, Deceased, Voluntary, Other (only Deceased and Voluntary need no explanation).",
+        "'30 standard / 10 statutory' for U4/U5 amendments.",
+        "'2 / 4 / 10' \u2013 2-year FINRA jurisdiction; 4-year SIE validity; 10-year employment history and conviction lookback."
+      ]
+    },
+    {
+      "title": "Lesson 12.2: Ongoing Expectations of Representatives of Registered Persons",
+      "overview": "Principals supervise representatives and handle written customer complaints; firms must comply with continuing education, outside business activity, private securities transaction, gift, and political contribution rules. Failure to comply can result in deactivation, disciplinary action, or industry-wide prohibitions on doing business with municipal issuers.",
+      "key_concepts": [
+        "Principal role: supervises any part of member's investment banking/securities business, including training of associated persons.",
+        "Every member firm (except sole proprietorships) must employ at least two registered principals.",
+        "Principal duties: approve new accounts, approve margin/options accounts, approve/review communications, review trading activity, hire/train RRs, respond to written complaints.",
+        "Customer complaint definition: written statement by a customer (or someone acting on their behalf) alleging a grievance arising out of, or in connection with, a securities transaction; includes electronic communication.",
+        "Complaint handling: notify account RR, account principal, branch manager, or compliance; principal must address; if resolved, no further action.",
+        "Complaint reporting: report of all written complaints filed with FINRA within 15 days of end of each calendar quarter; copies retained for 4 years after resolution.",
+        "Continuing Education has two components: Firm Element and Regulatory Element.",
+        "Firm Element: annual training plan developed by the firm; covers regulatory developments, scope of firm's business, and personnel performance; applies to all registered persons with public contact; must be completed by December 31 (firm may set earlier date); failure may result in suspension of license.",
+        "Regulatory Element (current rule per Kaplan): completed within 120 days of 2nd registration anniversary and every 3 years thereafter (5th, 8th, 11th, etc.); content set by FINRA; differs for RRs vs. principals; failure leads to deactivation until completed.",
+        "(FINRA has proposed converting Regulatory Element to annual completion \u2014 check current FINRA notices.)",
+        "Outside Business Activity (OBA): any compensated activity outside scope of employment with the member; requires PRIOR WRITTEN NOTICE to the employing member.",
+        "Passive investments (e.g., owning stock or a single share/unit) are not OBAs.",
+        "Uncompensated activities (e.g., volunteering) generally do not require OBA notice.",
+        "Private Securities Transaction (PST / 'selling away'): any sale of securities outside the associated person's regular business and outside the employing member.",
+        "PST requirements: provide prior written notice to employer; describe transaction in detail; describe proposed role; disclose whether compensation will be received.",
+        "PST with compensation: employer may approve or disapprove; if approved, employer must record transaction on its own books and supervise as if its own; if disapproved, AP cannot participate.",
+        "PST without compensation: employer must acknowledge written notice; may impose conditions or prohibit; transactions for immediate family with no compensation are excluded from PST definition.",
+        "Supervisory responsibility for an approved PST rests with the employing member, not the accommodating BD.",
+        "Gifts and Gratuities: business-related gifts to employees of other member firms limited to $100 per person per year; not conditional on sales; employer's prior approval required.",
+        "Exceptions to $100 limit: occasional business entertainment (meals, seminars, tickets) when the giving firm's rep accompanies recipient; reminder advertising items (pens, mouse pads with logo); life-event gifts (wedding, birth, retirement); all must be reasonable.",
+        "Business entertainment example: dinners costing several hundred dollars are permitted if occasional and business is discussed with rep present; sending tickets without attending = violation (not occasional, no business).",
+        "Political Contributions / MSRB Rule G-37 ('pay-to-play'): applies to negotiated underwritings and financial advisory work, NOT competitive bid underwritings.",
+        "G-37 prohibition: municipal firm prohibited from engaging in municipal securities business with an issuer for 2 years after a contribution to an official of that issuer by the firm, an MFP, or a PAC controlled by the firm.",
+        "MFP (Municipal Finance Professional): associated person engaged in municipal underwriting, trading, sales, advisory, research, investment advice, or public investor communication; pure retail-only salespersons and clerical staff are NOT MFPs.",
+        "De minimis exemption: MFPs may contribute up to $250 per election to officials for whom they are eligible to vote; does not apply to firm contributions (firms cannot vote).",
+        "FINRA has rules paralleling MSRB G-37 but not commonly tested per Kaplan."
+      ],
+      "rules": [
+        "FINRA Rule 1240 \u2013 Continuing Education (Firm and Regulatory Elements).",
+        "FINRA Rule 4513 \u2013 Written Customer Complaints.",
+        "FINRA Rule 4530 \u2013 Reporting Requirements (quarterly complaint report within 15 days of quarter-end).",
+        "FINRA Rule 3270 \u2013 Outside Business Activities of Registered Persons (prior written notice).",
+        "FINRA Rule 3280 \u2013 Private Securities Transactions of an Associated Person.",
+        "FINRA Rule 3220 \u2013 Influencing or Rewarding Employees of Others ($100 gift limit).",
+        "FINRA Rules 2310(c), 2320(g)(4), 2341(l)(5), 5110(h) \u2013 Non-cash compensation provisions.",
+        "MSRB Rule G-20 \u2013 Gifts, Gratuities, and Non-cash Compensation.",
+        "MSRB Rule G-37 \u2013 Political Contributions; 2-year ban on municipal securities business; $250 de minimis for eligible voters.",
+        "MSRB Rule G-3 \u2013 Professional Qualification Requirements.",
+        "FINRA Rule 2060 \u2013 Use of Information Obtained in Fiduciary Capacity.",
+        "FINRA Rule 4330 \u2013 Permissible Use of Customers' Securities."
+      ],
+      "formulas": [
+        "Complaint report to FINRA = filed within 15 days of end of each calendar quarter.",
+        "Complaint record retention = 4 years after resolution.",
+        "Regulatory Element timing = within 120 days of 2nd registration anniversary, then every 3 years (5th, 8th, 11th...).",
+        "Gift limit to other firm's employees = $100 per person per year.",
+        "MSRB G-37 ban period = 2 years from contribution.",
+        "MSRB G-37 MFP de minimis = $250 per election, only if eligible to vote for that official."
+      ],
+      "mnemonics": [
+        "'Notice / Notice / Approve' \u2013 OBA = written notice; uncompensated PST = written notice + acknowledgment; compensated PST = written notice + approval + supervision.",
+        "'$100 / $250' \u2013 $100 gift cap (FINRA 3220); $250 MFP political contribution (MSRB G-37).",
+        "'2-5-8-11' \u2013 Regulatory Element anniversaries (every 3 years after 2nd).",
+        "'15 & 4' \u2013 Complaints reported within 15 days of quarter-end; kept 4 years.",
+        "G-37: 'Give and you can't get business for 2 years' (negotiated deals only)."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 10733,
+    "output": 4705
+  },
+  "cost_usd": 0.5139
+}

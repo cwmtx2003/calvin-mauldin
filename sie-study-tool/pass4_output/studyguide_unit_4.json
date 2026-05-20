@@ -1,0 +1,105 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "sections": [
+    {
+      "title": "Lesson 4.1: Investment Company Act of 1940",
+      "overview": "The Investment Company Act of 1940 classifies pooled investment vehicles into three categories: Face-Amount Certificate (FAC) companies, Unit Investment Trusts (UITs), and Management Investment Companies (open-end and closed-end). Mutual funds (open-end) are the most common type, offering continuous primary offerings of redeemable common shares priced by formula using forward pricing. Share classes (A, B, C, no-load) differ in how sales charges are assessed, and breakpoints, LOIs, and rights of accumulation can reduce sales charges for Class A shares.",
+      "key_concepts": [
+        "Three classes of investment companies under the 1940 Act: (1) Face-Amount Certificate (FAC), (2) Unit Investment Trust (UIT), (3) Management Investment Company (open-end or closed-end).",
+        "FAC: contract where issuer guarantees a stated face-amount future payment; fully paid if lump sum. Few exist today but are classified as investment companies.",
+        "UIT: organized under trust indenture, no BOD (has trustees), issues redeemable shares of beneficial interest representing undivided interest in a fixed portfolio; no active management, no management fees; can be fixed (debt or equity) or nonfixed (contractual plans investing in mutual funds).",
+        "FACs and UITs are not managed and do not trade in the secondary market - redeemed only through the issuer.",
+        "Closed-end fund: fixed number of shares via IPO; may issue common stock, preferred stock, and debt; trades in secondary market at market price (premium or discount to NAV); priced by supply/demand.",
+        "Open-end fund (mutual fund): issues only common stock (no preferred, no debt); continuous primary offering; unlimited capital raise; shares are redeemable; priced at NAV + sales charge (POP); ex-date set by BOD.",
+        "Forward pricing: orders receive next calculated NAV/POP after 4:00 pm ET cutoff.",
+        "Mutual fund share classes: Class A (front-end load), Class B (back-end CDSC, declining, converts to A), Class C (level load - 1% CDSC year 1, 0.75% 12b-1, 0.25% service fee), No-load (sold direct at NAV).",
+        "Class A best for large investments and long horizons; Class B for small investments and long horizons; Class C for short horizons (1-5 years).",
+        "Breakpoints: quantity discounts on Class A shares only; not standardized across funds; available to individuals, spouses, minor children, corporations - NOT investment clubs.",
+        "Breakpoint sale: a sale just below a breakpoint without disclosure - prohibited as inconsistent with just and equitable principles.",
+        "Letter of Intent (LOI): non-binding on customer, binding on fund; 13-month forward period; may be backdated up to 90 days; extra shares held in escrow; appreciation and reinvested dividends do NOT count.",
+        "Rights of Accumulation: apply to subsequent purchases; use higher of current NAV or total purchases to date; no time limit.",
+        "Combination privilege: combine investments across funds in same family to reach breakpoint. Exchange/conversion privilege: exchange within family at NAV but is a taxable event.",
+        "NAV per share = (Total Assets - Total Liabilities) / Shares Outstanding. NAV calculated at least once per business day, typically at 4:00 pm ET close.",
+        "Mutual fund dividend order: Declaration -> Record/Payable -> Ex-Date (ex-date is day AFTER record date and set by BOD).",
+        "Pipeline/Conduit theory (Subchapter M): fund must distribute at least 90% of net investment income (NII) to avoid taxation on distributed portion; fund pays tax only on retained amount.",
+        "Four prospectus types: Statutory (full), Summary (Rule 498), Statement of Additional Information (SAI - within 3 business days of request), Omitting prospectus (Rule 482 - tombstone ad).",
+        "Maximum sales charge on mutual funds under 1940 Act = 8.5% of POP.",
+        "Reinvestment of dividends and capital gains permitted at NAV (no sales charge) but still taxable; increases cost basis.",
+        "Reinstatement provision: investor may reinvest up to amount withdrawn within 30 days with no new sales charge - one-time use, must be in prospectus.",
+        "Variable annuity subaccounts are classified as either UITs (indirectly managed) or open-end management companies (directly managed)."
+      ],
+      "rules": [
+        "Investment Company Act of 1940 - classifies investment companies and regulates their operations.",
+        "Securities Act of 1933 - investment companies must register shares as issuers.",
+        "Subchapter M of the IRC - conduit/pipeline tax treatment requires 90% NII distribution.",
+        "SEC Rule 498 - Summary Prospectus requirements (cover must include fund name, share class, ticker, legend, toll-free number/website).",
+        "SEC Rule 482 - Omitting Prospectus (advertising) - delivery does not satisfy prospectus requirement for a sale.",
+        "Investment Company Act of 1940 - maximum sales load is 8.5% of POP.",
+        "SAI must be delivered within three business days of investor request, free of charge.",
+        "Full prospectus must show 1-, 5-, and 10-year performance (or life of fund if shorter).",
+        "FINRA Rule 2342 - prohibits breakpoint sales without disclosure.",
+        "Prospectus may NOT be altered (no highlighting, marking, or annotation)."
+      ],
+      "formulas": [
+        "NAV per Share = (Total Assets - Total Liabilities) / Shares Outstanding",
+        "Public Offering Price (POP) = NAV + Sales Charge (Class A)",
+        "Sales Charge % = (POP - NAV) / POP",
+        "Expense Ratio = Fund Expenses / Average Net Assets",
+        "Subchapter M minimum payout = 90% of Net Investment Income"
+      ],
+      "mnemonics": [
+        "FAC, UIT, Management - the three investment company types under the 1940 Act.",
+        "DERP order for stocks vs. mutual funds: stocks use DERP (Declaration, Ex, Record, Payable); mutual funds order is Declaration, Record/Payable, Ex (ex-date is AFTER record).",
+        "Class A = Amount (large) and Ages (long time); Class B = Big time frame, smaller buy; Class C = Cash out soon (short term).",
+        "90/10 Conduit Rule: 90% out to avoid tax, 10% can be retained (and taxed)."
+      ]
+    },
+    {
+      "title": "Lesson 4.2: Life Insurance-Based Products (Variable Annuities)",
+      "overview": "A variable annuity is an insurance product classified as a security because the investor bears the investment risk through the separate account. VAs provide tax-deferred growth and a guaranteed stream of income (mortality guarantee) with a death benefit during accumulation. Suitability emphasizes use as supplemental retirement income funded with cash after maximizing qualified plan contributions.",
+      "key_concepts": [
+        "Annuity = insurance contract providing a guaranteed stream of payments (mortality guarantee - paid for life of annuitant regardless of longevity).",
+        "Fixed annuity: insurance company assumes investment risk, stated rate of return - NOT a security.",
+        "Variable annuity: investor assumes investment risk via separate account - IS a security; requires both insurance and securities licenses to sell.",
+        "Separate account: invested in subaccounts resembling mutual funds; offers various objectives (growth, income, etc.); returns not guaranteed.",
+        "Separate account registration: directly managed = open-end management company; indirectly managed (sub-advised) = UIT.",
+        "Death benefit during accumulation phase: beneficiary receives the greater of total contributions or current account value.",
+        "Annuitization is a one-time, irreversible election - investor surrenders ownership of assets in exchange for lifetime income.",
+        "Payout calculation factors (SAAPI): Sex, Age, Account balance (Amount), Payout option, assumed Interest rate (AIR). Inflation is NOT a factor.",
+        "Variable annuity payments fluctuate based on separate account performance relative to the AIR.",
+        "No annual contribution limit on nonqualified (commercial) VAs; qualified VAs have plan-based limits.",
+        "Taxation: growth is tax-deferred; withdrawals of gains taxed as ordinary income (not capital gains).",
+        "Random/partial withdrawals: LIFO - growth comes out first and is fully taxable; principal comes out after all growth withdrawn.",
+        "Annuitized payments: each payment partly taxable (gain) and partly return of principal (exclusion ratio); return of principal is not taxed.",
+        "10% IRS penalty applies to taxable portion of withdrawals before age 59-1/2 (in addition to ordinary income tax).",
+        "1035 Exchange: tax-free transfer from one annuity to another; surrender charges of original contract still apply.",
+        "Suitability factors: VA appropriate when funded with cash, for supplemental retirement income, after maxing qualified plans; NOT appropriate for low risk tolerance, capital preservation, short-term needs (college, home), or by replacing existing insurance/annuity with surrender charges; never appropriate to fund via home equity/refinance.",
+        "Disclosures required: administrative fees, investment advisory fees, custodial fees, surrender charges."
+      ],
+      "rules": [
+        "Investment Company Act of 1940 - separate accounts register as either open-end management companies (directly managed) or UITs (indirectly managed).",
+        "FINRA Rule 2330 - Members' Responsibilities Regarding Deferred Variable Annuities (suitability, supervision, principal review).",
+        "IRC Section 1035 - tax-free exchanges between like insurance/annuity contracts.",
+        "IRC 10% penalty on early withdrawals (taxable portion) before age 59-1/2.",
+        "Variable annuity sales require both state insurance license AND securities (FINRA) registration."
+      ],
+      "formulas": [
+        "Annuitization payout factors: SAAPI = Sex + Age + Account balance + Payout option + AIR",
+        "Random withdrawal taxation order: Gain first (LIFO), then principal",
+        "Early withdrawal tax = Ordinary income tax + 10% penalty (if under 59-1/2, on taxable portion)",
+        "Death benefit (accumulation) = greater of (total contributions) or (current account value)"
+      ],
+      "mnemonics": [
+        "SAAPI - the five payout calculation factors (Sex, Age, Account balance, Payout option, Interest rate/AIR). Inflation is NOT included.",
+        "VA = Variable = Variable risk to the Annuitant (investor bears risk); FA = Fixed = Firm bears risk.",
+        "LIFO on withdrawals: Last In (gains/growth) First Out and taxable."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 21421,
+    "output": 3878
+  },
+  "cost_usd": 0.6122
+}

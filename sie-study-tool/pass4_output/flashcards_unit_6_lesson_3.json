@@ -1,0 +1,255 @@
+{
+  "unit": 6,
+  "lesson": 3,
+  "lesson_title": "ACCOUNT FEATURES",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Cash account",
+      "back": "The basic type of brokerage account in which a customer must pay in full for any securities purchased. Payment is required by settlement (T+2 for most corporate/municipal securities), and under Regulation T no later than two business days after settlement (T+4).",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Which types of accounts must be opened as cash accounts (margin not permitted)?",
+      "back": "Accounts with contribution limits (IRAs and other retirement plans) and custodial accounts under UTMA/UGMA must be cash accounts.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "What are the two types of margin accounts, and what does each allow?",
+      "back": "Long margin account \u2014 customer borrows cash to purchase securities, paying interest until the loan is repaid. Short margin account \u2014 customer borrows securities to sell short, profiting if the value declines. All short sales must occur in a margin account.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer buys 1,000 shares of ABC at $20 in a margin account, depositing $10,000 and borrowing $10,000. The stock rises to $30. What is the customer's percentage return, and how does it compare to a cash purchase?",
+      "back": "Gain = $10,000. Margin return = $10,000 / $10,000 = 100%. Cash return = $10,000 / $20,000 = 50%. Leverage doubles the return (and would similarly magnify losses).",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "definition",
+      "front": "Hypothecation",
+      "back": "The pledging of customer securities as collateral for a margin loan from the broker-dealer. The customer must sign a hypothecation agreement to open a margin account.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "definition",
+      "front": "Rehypothecation",
+      "back": "The broker-dealer's repledging of customer securities (previously hypothecated by the customer) as collateral for a bank loan used to fund the margin loan. Governed by Federal Reserve Regulation U.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Can a corporate or partnership account have margin?",
+      "back": "Only if the corporate charter (or partnership agreement) permits it. If the document prohibits margin, none is allowed; if silent, margin is allowed. (Trust accounts are opposite \u2014 must specifically authorize margin; silence = no margin.)",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three forms associated with opening a margin account, and which are mandatory?",
+      "back": "1) Credit agreement \u2014 mandatory; discloses terms of credit and interest. 2) Hypothecation agreement \u2014 mandatory; allows BD to pledge customer securities as collateral. 3) Consent to loan (loan consent) agreement \u2014 optional; allows BD to lend customer securities to others.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "When must a broker-dealer deliver the margin risk disclosure document to customers?",
+      "back": "Before opening the margin account, and annually thereafter to existing margin customers.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Which securities CAN be purchased on margin and used as collateral under Regulation T?",
+      "back": "Exchange-listed stocks and bonds, Nasdaq stocks, FRB-approved OTC issues, and warrants.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Which securities CANNOT be purchased on margin and CANNOT serve as collateral?",
+      "back": "Options (calls and puts), rights, non-NMS/OTC issues not approved by the FRB, and insurance contracts.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Which securities cannot be purchased on margin but can serve as collateral after being held 30 days?",
+      "back": "Mutual funds and new issues (if they meet the marginable security requirements).",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Which securities are exempt from Regulation T margin requirements?",
+      "back": "U.S. Treasury bills, notes, and bonds; government agency issues; and municipal securities.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Differentiate the terms 'margin' and 'marginable.'",
+      "back": "Margin = the equity a customer must deposit to buy securities in a margin account. Marginable = securities that can be used as collateral in a margin account.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "State the Regulation T and FINRA initial margin deposit requirements for a new margin account.",
+      "back": "Regulation T requires 50% of the purchase price. FINRA requires a minimum equity of $2,000 \u2014 or 100% of the purchase price if less than $2,000. The customer must deposit the greater of the two.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "scenario",
+      "front": "As the first purchase in a new margin account, a customer buys 100 shares at $50. How much must be deposited?",
+      "back": "Purchase price = $5,000. Reg T 50% = $2,500. FINRA min = $2,000. Deposit the greater: $2,500.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "scenario",
+      "front": "First purchase in a new margin account: 100 shares at $30 (total $3,000). Required deposit?",
+      "back": "Reg T 50% = $1,500; FINRA minimum = $2,000. Deposit the greater: $2,000.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "scenario",
+      "front": "First purchase in a new margin account: 100 shares at $15 (total $1,500). Required deposit?",
+      "back": "Since the purchase is less than $2,000, FINRA requires 100% of the purchase price. Deposit = $1,500 (full cash).",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "What is the FINRA minimum maintenance equity requirement for long and short margin accounts?",
+      "back": "Long account: 25% of market value. Short account: the greater of 30% of short market value (or $5 per share/100% for low-priced stock per house rules). A BD may impose a higher 'house' requirement.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "definition",
+      "front": "Fee-based account",
+      "back": "An account in which the customer pays a set monthly or quarterly fee (often a percentage of account value) covering all trading, in lieu of per-trade commissions. Suitable for active traders; unsuitable for buy-and-hold investors.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Differentiate a solicited trade from an unsolicited trade.",
+      "back": "Solicited \u2014 the BD or RR recommended the specific security to the customer. Unsolicited \u2014 the customer initiated the trade idea without any recommendation from the firm. The order ticket must accurately reflect which it is; mismarking is a regulatory violation.",
+      "lo": "6.h",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "What are the 'three As' of discretion?",
+      "back": "Action (buy or sell), Amount (shares or dollars), and Asset (specific security). If the customer does not specify all three, and the RR chooses one or more, it is a discretionary trade.",
+      "lo": "6.h",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "Is allowing a representative to choose the time or price of a trade considered discretion?",
+      "back": "No. Time and price alone are not discretion \u2014 this is called 'time and price' authority and does not require written discretionary authorization.",
+      "lo": "6.h",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "What is required before an RR can place discretionary trades in a customer's account?",
+      "back": "1) Customer's prior written authorization (limited power of attorney). 2) Written approval of the account by a firm principal. 3) Each discretionary order must be identified as such and reviewed promptly by a principal. Revocation by the client must be in writing.",
+      "lo": "6.h",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "qa",
+      "front": "If a registered representative with discretionary authority leaves the firm or dies, what happens to that authority?",
+      "back": "It ends. Discretion is granted to the individual representative, not to the broker-dealer.",
+      "lo": "6.h",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "definition",
+      "front": "Wrap account",
+      "back": "An account in which a firm bundles services (asset allocation, portfolio management, executions, administration) for a single fee, usually a percentage of AUM. Generally treated as an investment advisory account, requiring IA registration and fiduciary compliance under the Investment Advisers Act of 1940, plus disclosure that the same services may be available separately for less.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer purchases 200 shares of ABC at $9 in a cash account. How much must the customer deposit?",
+      "back": "Cash accounts require 100% payment. 200 \u00d7 $9 = $1,800.",
+      "lo": "6.g",
+      "unit": 6,
+      "lesson": 3,
+      "lesson_title": "ACCOUNT FEATURES"
+    }
+  ],
+  "tokens": {
+    "input": 8803,
+    "output": 3286
+  },
+  "cost_usd": 0.3785
+}

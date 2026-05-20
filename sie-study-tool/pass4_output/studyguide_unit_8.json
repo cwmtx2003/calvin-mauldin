@@ -1,0 +1,83 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "sections": [
+    {
+      "title": "Lesson 8.1: Calculating Yields and Returns",
+      "overview": "This lesson covers the core return calculations tested on the SIE: current yield (also called dividend yield for stocks), capital gains and losses from closing positions, and total return, which combines income with realized or unrealized gains/losses. All yields and returns are expressed on an annualized basis as a percentage of cost or market value.",
+      "key_concepts": [
+        "Current Yield (CY) measures annual income as a percentage of current market price; applies to both stocks and bonds.",
+        "When a stock pays a dividend on a quarterly basis, the quarterly dividend must be multiplied by 4 to annualize before computing CY.",
+        "For preferred stock, the stated dividend rate is applied to par value ($100 unless stated otherwise) to derive the annual dividend.",
+        "Open position = security still held; closed position = security sold (or bought back, in a short sale).",
+        "Capital gain/loss is realized only when a position is closed.",
+        "Adjusted cost basis reflects modifications from corporate actions such as stock splits or stock dividends.",
+        "Total return blends income (dividends/interest) with capital appreciation or depreciation, expressed as a % of cost basis.",
+        "Total return may use realized gains/losses (closed positions) or unrealized gains/losses (open positions).",
+        "Unrealized gains and losses have no immediate tax impact."
+      ],
+      "rules": [
+        "No specific FINRA/SEC rule citations for yield mechanics; calculations follow standard industry conventions.",
+        "Cost basis adjustments following stock splits and stock dividends are required for accurate gain/loss calculation."
+      ],
+      "formulas": [
+        "Current Yield (CY) = annual income (in dollars) / current market value",
+        "Dividend Yield (preferred) = (rate \u00d7 par) / current market price",
+        "Annual dividend = quarterly dividend \u00d7 4",
+        "Capital Gain or Loss = sales proceeds \u2212 adjusted cost basis  (positive = gain; negative = loss)",
+        "Total Return = (income + capital gains \u2212 capital losses) / cost basis",
+        "Adjusted Cost Basis after split = original cost basis / split ratio"
+      ],
+      "mnemonics": [
+        "\"AIM\" for Current Yield: Annual Income \u00f7 Market price.",
+        "\"PIG\" for Total Return: Proceeds-gain + Income, all over cost basis (Gain + Income).",
+        "Quarterly dividends \u2192 multiply by 4 (Q\u00d74 = annual)."
+      ]
+    },
+    {
+      "title": "Lesson 8.2: Taxation",
+      "overview": "This lesson distinguishes the categories of taxable income (earned, investment/portfolio, passive) and explains the treatment of capital gains and losses. It also covers holding-period rules for long- vs. short-term classification, the use of losses to offset gains and ordinary income, carryforward rules, and the wash sale rule.",
+      "key_concepts": [
+        "Ordinary income = earned income + investment (portfolio) income + passive income + short-term capital gains.",
+        "Earned income: salary, wages, bonuses, tips, self-employment income; only earned income qualifies for IRA contributions.",
+        "Investment/portfolio income: dividends and interest.",
+        "Passive income: derived primarily from DPPs/limited partnerships and many real estate investments.",
+        "Passive losses may offset ONLY passive income\u2014not earned or portfolio income.",
+        "Short-term capital gain: position held one year or less; taxed as ordinary income.",
+        "Long-term capital gain: position held MORE than one year; taxed at favorable (lower) rate.",
+        "Capital losses offset capital gains dollar-for-dollar.",
+        "Net capital losses may offset up to $3,000 of ordinary income per year.",
+        "Excess losses are carried forward indefinitely (no time limit) until used up.",
+        "Unrealized gains/losses (open positions) have NO tax impact.",
+        "Wash sale rule: a loss is disallowed if the same or substantially identical security is repurchased within 30 days before or after the sale establishing the loss (61-day window total).",
+        "Wash sale rule applies to recreating long positions AND short positions.",
+        "Substantially identical securities include call options, rights, warrants, and convertible bonds/preferred stock of the same issuer that can be converted/exercised into the security sold.",
+        "A wash sale is not illegal; only claiming the disallowed loss for tax purposes is illegal."
+      ],
+      "rules": [
+        "IRC wash sale rule: 30 days before and 30 days after the sale (61-day window); disallowed loss is added to basis of replacement security.",
+        "$3,000 annual limit on net capital losses applied against ordinary income.",
+        "Capital loss carryforward: indefinite.",
+        "IRA contribution eligibility based on earned income only."
+      ],
+      "formulas": [
+        "Net Capital Gain/Loss = total capital gains \u2212 total capital losses",
+        "If Net Loss: Ordinary income reduction = lesser of (net loss) or $3,000; remainder carried forward",
+        "Holding period test: > 1 year = long term; \u2264 1 year = short term",
+        "Wash sale window = sale date \u00b1 30 days (61 days total including sale date)"
+      ],
+      "mnemonics": [
+        "\"EIP\" components of ordinary income: Earned, Investment, Passive.",
+        "\"PLOP\": Passive Losses Offset Passive (income only).",
+        "\"30/30\" wash sale: 30 days before, 30 days after.",
+        "\"L-O-S-S\" carryforward: Losses Outlast Several Seasons (indefinite).",
+        "\"3K Rule\": $3,000 max ordinary income offset per year."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 8306,
+    "output": 2012
+  },
+  "cost_usd": 0.2755
+}

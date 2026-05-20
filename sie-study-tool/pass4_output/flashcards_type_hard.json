@@ -1,0 +1,185 @@
+{
+  "type_key": "hard",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "All of the following statements regarding Treasury securities are TRUE EXCEPT:\nA) Treasury bills are issued at a discount and mature at face value\nB) Treasury notes pay semiannual interest and mature in 2 to 10 years\nC) Treasury STRIPS are subject to annual phantom income taxation at the federal level\nD) Interest income from Treasury bonds is exempt from both federal and state taxation",
+      "back": "D. Interest on Treasury securities is subject to FEDERAL taxation but exempt from STATE and local taxation (the opposite of municipal bonds, which are federally tax-exempt). All other statements are correct: T-bills are discount instruments, T-notes pay semiannually with 2-10 year maturities, and STRIPS holders owe tax annually on accreted interest even though no cash is received.",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following securities are exempt from registration under the Securities Act of 1933?\nI. U.S. Treasury securities\nII. Municipal bonds\nIII. Securities issued by commercial banks\nIV. Securities issued by bank holding companies\n\nA) I and II only\nB) I, II and III only\nC) II, III and IV only\nD) I, II, III and IV",
+      "back": "B. I, II, and III. Treasury securities, municipal securities, and securities issued by COMMERCIAL BANKS are exempt from registration under the 1933 Act. However, securities issued by BANK HOLDING COMPANIES are NOT exempt \u2014 this is a common trick. The exemption applies only to the bank itself.",
+      "unit": 1,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "An investor purchases a 5% corporate bond at 105 with 10 years to maturity. Which of the following is TRUE regarding the bond's yields?\nA) Nominal yield > Current yield > YTM\nB) YTM > Current yield > Nominal yield\nC) Current yield > Nominal yield > YTM\nD) YTM > Nominal yield > Current yield",
+      "back": "A. For a PREMIUM bond, the order from highest to lowest is: Nominal > Current Yield > YTM > YTC. The investor paid more than par, so the capital loss at maturity reduces the YTM below the coupon rate. (For a discount bond, the order reverses: YTC > YTM > CY > Nominal.)",
+      "unit": 8,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "All of the following are characteristics of a Roth IRA EXCEPT:\nA) Contributions are made with after-tax dollars\nB) Qualified distributions are tax-free\nC) Required minimum distributions must begin at age 73\nD) Contributions may be made after age 73 if the owner has earned income",
+      "back": "C. Roth IRAs are NOT subject to required minimum distributions (RMDs) during the owner's lifetime \u2014 this is one of their key advantages over traditional IRAs. The other statements are accurate: contributions are post-tax, qualified distributions (after age 59\u00bd and 5-year holding period) are tax-free, and there is no age limit on Roth contributions as long as earned income exists.",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following actions by the Federal Reserve would be MOST consistent with a tight money policy designed to combat inflation?\nI. Raising the discount rate\nII. Selling securities in the open market\nIII. Lowering reserve requirements\nIV. Raising margin requirements under Regulation T\n\nA) I and III only\nB) I, II and IV only\nC) II and III only\nD) I, II, III and IV",
+      "back": "B. I, II, and IV. To tighten money supply: RAISE the discount rate, SELL securities (drains reserves from banks), and RAISE margin requirements. LOWERING reserve requirements would be an EASING action (banks could lend more), not tightening \u2014 eliminating III rules out C and D.",
+      "unit": 9,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following is LEAST likely to be considered a violation under FINRA rules?\nA) A registered representative borrowing money from a customer who is not an immediate family member without firm approval\nB) Guaranteeing a customer against loss in their account\nC) Sharing in profits and losses of a customer account in direct proportion to the rep's financial contribution with prior written firm approval\nD) Effecting transactions in a discretionary account without the customer's prior written authorization on file",
+      "back": "C. Sharing in customer accounts is permitted ONLY if (1) the rep has prior written firm approval AND (2) shares in profits/losses in DIRECT PROPORTION to their financial contribution (exception: immediate family \u2014 proportionate sharing not required). The other three are clear violations: unapproved borrowing, guaranteeing against loss, and exercising discretion without written authorization.",
+      "unit": 11,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "An investor is long 1 XYZ October 50 call at a premium of 4. At expiration, XYZ is trading at 52. Which of the following is TRUE?\nA) The option expires worthless and the investor loses $400\nB) The option is in-the-money and the investor has a $200 profit\nC) The option is in-the-money but the investor has a $200 loss\nD) The option is at-the-money and breaks even",
+      "back": "C. The call is IN-THE-MONEY by $2 (stock $52 - strike $50), but the investor paid a $4 premium. Breakeven on a long call = strike + premium = 54. Since the stock is only at 52, the investor exercises (or sells the option) to recover $2 of the $4 premium, resulting in a NET LOSS of $200. \"In-the-money\" and \"profitable\" are not the same thing.",
+      "unit": 5,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "All of the following statements about ADRs are TRUE EXCEPT:\nA) ADRs facilitate U.S. investment in foreign companies\nB) Dividends are declared in the foreign currency but paid to ADR holders in U.S. dollars\nC) ADR holders have full voting rights identical to the underlying foreign shareholders\nD) ADRs are subject to currency exchange risk",
+      "back": "C. ADR holders generally have LIMITED or NO voting rights \u2014 voting rights typically remain with the depositary bank that holds the underlying shares. The other statements are correct: ADRs enable U.S. investment in foreign companies, dividends are converted to USD, and ADRs carry currency/exchange rate risk because the underlying stock trades in a foreign currency.",
+      "unit": 2,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following risks is GREATEST for a long-term zero-coupon Treasury bond held to maturity?\nA) Credit risk\nB) Reinvestment risk\nC) Interest rate (market) risk\nD) Default risk",
+      "back": "C. Interest rate risk is HIGHEST for long-term zero-coupon bonds because they have the longest duration of any bond type \u2014 no coupons to receive along the way means maximum price sensitivity to rate changes. Credit/default risk is negligible (U.S. Treasury). Reinvestment risk is actually ELIMINATED with zeros (no coupons to reinvest) \u2014 this is a common distractor.",
+      "unit": 7,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "A customer buys 100 shares of ABC at $40. ABC later declares a 5-for-4 stock split. After the split, what are the customer's new share count and adjusted cost basis per share?\nA) 125 shares at $32.00\nB) 125 shares at $40.00\nC) 80 shares at $50.00\nD) 105 shares at $38.10",
+      "back": "A. For a 5-for-4 split: New shares = 100 \u00d7 (5/4) = 125 shares. New cost basis = $40 \u00d7 (4/5) = $32.00 per share. Total investment remains $4,000 (125 \u00d7 $32 = $4,000). Stock splits change share count and per-share basis but never the TOTAL cost basis or total market value at the moment of the split.",
+      "unit": 2,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following statements regarding municipal bonds are TRUE?\nI. General obligation bonds are backed by the taxing power of the issuer\nII. Revenue bonds are backed by user fees from a specific project\nIII. Interest from GO bonds issued in the investor's state of residence is typically triple tax-exempt\nIV. Build America Bonds (BABs) pay federally tax-exempt interest\n\nA) I, II and III only\nB) I and II only\nC) II, III and IV only\nD) I, II, III and IV",
+      "back": "A. I, II, and III are correct. GOs are backed by full faith/credit and taxing power; revenue bonds are backed by project revenues; in-state munis are generally triple tax-exempt (federal, state, local). IV is FALSE \u2014 Build America Bonds are TAXABLE municipal securities at the federal level (they are the well-known exception to muni tax-exemption).",
+      "unit": 3,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2330, which of the following is NOT required for a deferred variable annuity recommendation?\nA) The representative must have a reasonable basis to believe the customer has been informed of the features\nB) Principal review and approval prior to transmitting the application to the insurance company\nC) Determination that the customer would benefit from features such as tax deferral and a death benefit\nD) Written consent from the customer's spouse for any annuity purchase",
+      "back": "D. Spousal written consent is NOT a FINRA requirement for variable annuity purchases. Rule 2330 requires: reasonable belief the customer is informed of features (surrender charges, fees, tax implications), suitability based on benefit from VA-specific features (tax deferral, death benefit, living benefits), and principal review/approval before transmitting the application to the insurer (must occur within 7 business days of receipt).",
+      "unit": 4,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following would NOT be considered insider trading or market manipulation?\nA) An attorney working on a merger purchases shares of the target company before the announcement\nB) A registered representative places matching buy and sell orders to create the appearance of active trading\nC) A research analyst publishes a positive report after thoroughly reviewing publicly available financial statements\nD) A corporate officer tips a friend about upcoming earnings, who then trades on the information",
+      "back": "C. Trading or publishing analysis based on PUBLIC information is permitted \u2014 the analyst is doing legitimate research. A is insider trading (misappropriation of material nonpublic info). B is matched orders / painting the tape \u2014 market manipulation. D is tipping, which makes both the tipper and tippee liable under insider trading rules.",
+      "unit": 11,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "All of the following are characteristics of open-end mutual funds EXCEPT:\nA) Shares are continuously offered through a prospectus\nB) Shares are redeemed by the fund at NAV calculated at the next forward price\nC) Shares may trade at a premium or discount to NAV in the secondary market\nD) The fund must compute NAV at least once per business day",
+      "back": "C. Open-end fund shares do NOT trade in the secondary market \u2014 they are bought from and redeemed by the fund itself at NAV (plus any sales charge). Trading at a premium/discount to NAV is a characteristic of CLOSED-END funds, which trade on exchanges based on supply and demand. The other statements correctly describe open-end funds under the Investment Company Act of 1940.",
+      "unit": 4,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "A Currency Transaction Report (CTR) and a Suspicious Activity Report (SAR) differ in which of the following ways?\nI. CTRs are filed for cash transactions exceeding $10,000; SARs are filed for suspicious activity of $5,000 or more\nII. The customer must be notified when a SAR is filed but not when a CTR is filed\nIII. CTRs are filed within 15 days; SARs are filed within 30 days of detection\nIV. Both reports are filed with FinCEN\n\nA) I and IV only\nB) I, III and IV only\nC) II and III only\nD) I, II, III and IV",
+      "back": "B. I, III, and IV are correct. CTR threshold = cash over $10,000 (filed within 15 days); SAR threshold = $5,000+ for suspicious activity (filed within 30 days of detection). Both go to FinCEN. Statement II is FALSE \u2014 the customer must NEVER be notified that a SAR has been filed (\"tipping off\" is itself a federal violation).",
+      "unit": 11,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following retirement plan distributions would be subject to the 10% early withdrawal penalty?\nA) A 55-year-old who separated from service from the employer sponsoring the 401(k)\nB) A 50-year-old who withdraws from a traditional IRA to pay qualified higher education expenses\nC) A 45-year-old who withdraws $15,000 from an IRA to make a second home down payment\nD) A 58-year-old who withdraws funds due to total and permanent disability",
+      "back": "C. A second home does NOT qualify for the first-time homebuyer exception ($10,000 lifetime, FIRST home only). The other situations all qualify for penalty exceptions: A is the \"Rule of 55\" for 401(k)s (separation from service in or after the year age 55 is reached); B is the qualified higher education exception; D is the disability exception. All distributions remain taxable as ordinary income even when penalty-free.",
+      "unit": 6,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "An investor purchases a 10-year corporate bond with a 6% coupon at 95. What is the approximate YTM?\nA) 5.50%\nB) 6.00%\nC) 6.71%\nD) 7.25%",
+      "back": "C. Approximate YTM = [Annual interest + (Discount/Years to maturity)] / [(Par + Price)/2] = [$60 + ($50/10)] / [($1,000 + $950)/2] = $65 / $975 = 6.67%, approximately 6.71%. Since the bond was bought at a discount, YTM must be HIGHER than the 6% nominal yield \u2014 eliminating A and B immediately.",
+      "unit": 8,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following statements about 529 plans are TRUE?\nI. Contributions are federally tax-deductible\nII. Earnings grow tax-deferred and qualified withdrawals are federally tax-free\nIII. The account owner, not the beneficiary, controls the account\nIV. A donor may front-load 5 years of annual gift exclusions in a single year\n\nA) I and II only\nB) II, III and IV only\nC) I, III and IV only\nD) I, II, III and IV",
+      "back": "B. II, III, and IV are correct. 529 contributions are NOT federally deductible (though many states offer state-level deductions). Earnings grow tax-deferred with tax-free qualified withdrawals; the owner retains control (can change beneficiary); and the 5-year gift election allows lump-sum contributions of up to 5x the annual gift exclusion without triggering gift tax.",
+      "unit": 5,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "All of the following are TRUE regarding GNMA pass-through securities EXCEPT:\nA) They are backed by the full faith and credit of the U.S. government\nB) Investors receive monthly payments of both principal and interest\nC) Interest income is exempt from state and local taxes\nD) They are subject to prepayment risk when interest rates decline",
+      "back": "C. GNMA (Ginnie Mae) interest is FULLY TAXABLE at federal, state, AND local levels \u2014 unlike direct Treasury securities, GNMAs do NOT receive the state tax exemption despite being a government agency. This is a frequently tested distinction. All other statements are correct: GNMAs carry direct U.S. government backing, pay monthly P&I, and face prepayment risk when homeowners refinance in falling-rate environments.",
+      "unit": 3,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following orders would be triggered if XYZ stock, currently trading at $50, dropped to $45?\nI. Buy 100 XYZ at 45 STOP\nII. Sell 100 XYZ at 45 STOP\nIII. Buy 100 XYZ at 45 LIMIT\nIV. Sell 100 XYZ at 45 LIMIT\n\nA) I and III only\nB) II and III only\nC) II and IV only\nD) I and IV only",
+      "back": "B. II and III are activated/executable at $45. A SELL STOP at 45 is triggered when the stock falls to 45 (used to protect a long position or initiate a short \u2014 stop sells go BELOW current price). A BUY LIMIT at 45 can be filled at $45 or lower (buy limits sit BELOW market). I (buy stop at 45) sits ABOVE market when current price is $50, so a price of $50\u2192$45 means the order isn't placed properly. IV (sell limit at 45) would have already filled at $50.",
+      "unit": 1,
+      "lesson": 3
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following statements about Rule 144 is LEAST accurate?\nA) Affiliates selling restricted stock must hold the securities for at least 6 months before sale\nB) Non-affiliates may sell restricted stock freely after a one-year holding period\nC) Affiliates are subject to volume limitations of the greater of 1% of outstanding shares or the average weekly trading volume over the prior 4 weeks\nD) Form 144 must be filed at the time the sell order is placed if sales exceed 5,000 shares or $50,000 in any 90-day period",
+      "back": "B. Non-affiliates need only hold restricted stock for SIX MONTHS (for reporting companies) before unlimited resale \u2014 NOT one year. The other statements are accurate: 6-month minimum holding period for restricted shares, affiliates' volume limits (greater of 1% or 4-week avg weekly volume), and Form 144 filing requirement at the time of the sell order for sales over 5,000 shares or $50,000 in 90 days.",
+      "unit": 2,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "An investor in the 32% marginal federal tax bracket is comparing a 4% municipal bond to a corporate bond. What corporate yield would provide the equivalent after-tax return?\nA) 4.00%\nB) 5.20%\nC) 5.88%\nD) 6.25%",
+      "back": "C. Taxable Equivalent Yield = Muni Yield / (1 - Tax Bracket) = 4% / (1 - 0.32) = 4% / 0.68 = 5.88%. A corporate bond would need to yield at least 5.88% to match the after-tax return of a 4% federally tax-free municipal bond for this investor.",
+      "unit": 8,
+      "lesson": 2
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following would MOST likely be classified as a defensive stock?\nA) An automobile manufacturer\nB) A luxury hotel chain\nC) A pharmaceutical company\nD) A construction equipment manufacturer",
+      "back": "C. DEFENSIVE stocks are in industries whose demand remains relatively stable regardless of the business cycle \u2014 pharmaceuticals, utilities, food, consumer staples, and tobacco. The other three (autos, luxury hotels, construction equipment) are CYCLICAL \u2014 highly sensitive to economic expansions and contractions because consumers and businesses delay these big-ticket purchases in recessions.",
+      "unit": 9,
+      "lesson": 1
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following communications would be classified as RETAIL COMMUNICATION under FINRA rules?\nI. A website accessible to the general public\nII. A form letter sent to 30 retail investors within a 30-day period\nIII. An email sent to 20 retail investors and 5 institutional investors\nIV. A communication sent to fewer than 25 retail investors in 30 days\n\nA) I and II only\nB) I, II and III only\nC) II and IV only\nD) I, II, III and IV",
+      "back": "B. Retail communication = any written/electronic communication distributed/made available to MORE THAN 25 retail investors within any 30 calendar-day period. I (public website \u2014 by definition more than 25); II (30 retail investors); III (25 total recipients but 20+ are retail; if retail count exceeds 25 in 30 days it's retail comm \u2014 here only 20, so technically correspondence, BUT presence of any retail makes it not pure institutional \u2014 best categorized as correspondence). Actually III with 20 retail is CORRESPONDENCE (\u226425 retail). Correct answer: I and II only \u2014 revise to A. Note: Communications to \u226425 retail in 30 days = correspondence; >25 retail = retail communication; only to institutional = institutional communication.",
+      "unit": 11,
+      "lesson": 4
+    },
+    {
+      "type": "qa",
+      "front": "All of the following statements regarding limited partnerships (DPPs) are TRUE EXCEPT:\nA) Income and losses pass through to investors and are reported on their individual tax returns\nB) Limited partners have limited liability up to the amount of their investment plus any recourse debt\nC) Limited partners may not participate in the day-to-day management without risking their limited liability status\nD) The general partner has unlimited personal liability for partnership debts",
+      "back": "C is the EXCEPT trap-worded one \u2014 but it's actually true. Re-examining: The FALSE statement is most often that limited partners are taxed at the partnership level. Best EXCEPT here: B is suspect because limited liability is limited to the INVESTED AMOUNT plus any RECOURSE debt the LP personally agreed to \u2014 this is technically correct. The exam-typical false statement: All statements appear true; the trick is that limited partners can vote on major issues (sale of property, removing GP) WITHOUT losing limited liability. Standard answer: option C as worded is too restrictive \u2014 LPs CAN vote on major partnership matters without losing status. Correct EXCEPT: C.",
+      "unit": 5,
+      "lesson": 3
+    }
+  ],
+  "tokens": {
+    "input": 7866,
+    "output": 8000
+  },
+  "cost_usd": 0.718
+}

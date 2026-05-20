@@ -1,0 +1,201 @@
+{
+  "unit": 11,
+  "lesson": 3,
+  "lesson_title": "PROHIBITED ACTIVITIES",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Who qualifies as a 'specified adult' under FINRA's senior exploitation rules?",
+      "back": "(1) Any individual age 65 or older, OR (2) any individual age 18 or older whom the member reasonably believes has a mental or physical impairment that renders the person unable to protect their own interests.",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Financial exploitation (FINRA definition)",
+      "back": "The wrongful or unauthorized taking, withholding, appropriation, or use of a specified adult's funds or securities; OR any act/omission to obtain control\u2014through deception, intimidation, or undue influence\u2014over the specified adult's money, assets, or property (including via power of attorney or guardianship).",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "When must a member firm make reasonable efforts to obtain the name and contact info of a trusted contact person?",
+      "back": "When opening a customer's account or when updating account information for an existing account.",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Can a member firm open an account if the customer refuses to provide a trusted contact person?",
+      "back": "Yes. The firm only needs to make a reasonable effort to obtain the information (e.g., asking the customer). Refusal does not prohibit opening the account.",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum length of a temporary hold on disbursements under FINRA's senior exploitation rule?",
+      "back": "Up to 15 business days. A state regulator or court may terminate it sooner or extend it longer.",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "When a member firm places a temporary hold on disbursements due to suspected exploitation, when must it notify the trusted contact person and authorized parties?",
+      "back": "No later than two business days after the date the hold was initiated. (Notification is not required if the trusted contact is unavailable or is reasonably believed to be the perpetrator.)",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "When a firm places a temporary hold on a senior's account, what internal action is required?",
+      "back": "The firm must immediately begin an internal review of the facts and circumstances that caused it to place the hold.",
+      "lo": "11.f",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Improper use of customer assets",
+      "back": "Any use of customer funds or securities in a way other than as intended by the customer. The most common example is borrowing from or lending to customers. All such improper uses are prohibited.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "List examples of 'red flags' that should alert a firm to potential improper use of customer assets.",
+      "back": "Suspicious transfers/disbursements in customer accounts; activity in a deceased person's account; excessive customer complaints; and exception reports showing discrepancies such as mismatched addresses, ZIP codes, or telephone area codes.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What are the five permitted types of lending arrangements between a registered representative and a customer?",
+      "back": "(1) Immediate family relationship (no notice/approval needed); (2) Customer is in the business of lending money, e.g., a bank (no approval needed); (3) Both are registered persons at the same firm (firm approval required); (4) Personal relationship outside the broker-customer relationship (firm approval required); (5) Business relationship outside the broker-customer relationship (firm approval required).",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "Seabird Securities has no written procedures permitting borrowing/lending between reps and customers. From which of the following could a rep borrow: (A) Uncle Joe, (B) college buddy Dustin, (C) optometrist Dr. DuVall, or (D) none?",
+      "back": "(D) Under no circumstance. If the firm has no procedures permitting such arrangements, the rep may not enter into any borrowing/lending arrangement with a customer\u2014even from an immediate family member is moot here because the firm itself must allow it.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "May a BD, IA, or registered representative guarantee a customer against losses or guarantee a gain?",
+      "back": "No. All guarantees\u2014or anything intended to convey a guarantee\u2014against loss or of a gain are strictly prohibited.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Under what conditions may a registered representative share in profits and losses in a customer's account?",
+      "back": "Only with prior written firm approval, a joint account must be established, and the rep may share only in proportion to their actual financial contribution (dollars contributed\u2014not knowledge or expertise).",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What is the exception to the proportionate-sharing rule for joint accounts?",
+      "back": "When sharing a joint account with immediate family members, directly proportionate sharing is not required. Immediate family includes parents, in-laws, spouses, children, and anyone to whom the rep contributes financial support (broadly, anyone living in the same residence).",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "May a firm share in a loss in a customer's account?",
+      "back": "Yes\u2014only if the loss was due to an error made by the firm.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "May firms have joint accounts with customers?",
+      "back": "No. Firms are prohibited from having joint accounts with customers.",
+      "lo": "11.g",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What activities are nonregistered employees of a broker-dealer permitted to perform?",
+      "back": "Responding to general, non-investment questions (hours, taking messages, directions); providing literature on request; setting appointments; inviting prospects to seminars; and handling customer money and securities (if fingerprinted).",
+      "lo": "11.h",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What activities are nonregistered persons prohibited from performing?",
+      "back": "They may NOT engage in investment banking or securities business\u2014including opening accounts, soliciting trades, giving recommendations, or discussing specific securities/investments with customers.",
+      "lo": "11.h",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Must nonregistered personnel be fingerprinted?",
+      "back": "Yes, if they handle customer funds or securities. Fingerprinting is required for those handling customer assets.",
+      "lo": "11.h",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "qa",
+      "front": "After passing the SIE exam, are you a registered representative?",
+      "back": "No. You are not registered until you pass a qualifying top-off exam (e.g., Series 6, 7). Until then, you are limited to the activities permitted of a nonregistered person.",
+      "lo": "11.h",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "A BD's receptionist opens all incoming mail and forwards it to various departments. Must the receptionist be fingerprinted? Must they be registered with FINRA?",
+      "back": "Must be fingerprinted (handles customer assets/mail that may include checks or securities) but need NOT be registered with FINRA.",
+      "lo": "11.h",
+      "unit": 11,
+      "lesson": 3,
+      "lesson_title": "PROHIBITED ACTIVITIES"
+    }
+  ],
+  "tokens": {
+    "input": 4347,
+    "output": 2614
+  },
+  "cost_usd": 0.2613
+}

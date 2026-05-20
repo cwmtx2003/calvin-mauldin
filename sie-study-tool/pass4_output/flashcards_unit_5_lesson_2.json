@@ -1,0 +1,192 @@
+{
+  "unit": 5,
+  "lesson": 2,
+  "lesson_title": "MUNICIPAL FUND SECURITIES",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What three types of investments are classified as municipal fund securities under MSRB jurisdiction?",
+      "back": "1) Section 529 plans, 2) Local Government Investment Pools (LGIPs), and 3) ABLE accounts. All are sponsored by state or local governments.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Section 529 Plan",
+      "back": "A state-sponsored, tax-advantaged education savings account classified as a municipal fund security. Sales must be accompanied or preceded by an official statement (offering circular). Two types: prepaid tuition plans and college savings plans.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What is the annual K-12 qualified expense limit for a 529 plan, and does this limit apply to college costs?",
+      "back": "$10,000 per year for K-12 tuition (public, private, or religious). The $10,000 limit does NOT apply to post-secondary (college) qualified expenses.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Differentiate a 529 prepaid tuition plan from a 529 college savings plan.",
+      "back": "Prepaid tuition plan: Locks in current tuition rates by paying now for future education at a specific school/system \u2014 a guaranteed inflation hedge; usually limited to state residents. Savings plan: Donor invests contributions that grow based on investment performance, used later at any school; inflation hedge depends on performance.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "A father wants to save for his 10-year-old daughter's tuition at a specific small liberal arts school. He is most concerned about rising tuition costs at that school. Which plan best hedges this risk?",
+      "back": "A 529 prepaid tuition program. It locks in today's tuition rates at a specific school/system, providing a guaranteed hedge against tuition inflation.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How are contributions to a 529 plan treated for federal tax purposes, and how are earnings and withdrawals taxed?",
+      "back": "Contributions are made with after-tax dollars (no federal deduction) and are treated as gifts under federal tax law. Earnings grow tax-deferred. Withdrawals are federally tax free if used for qualified education expenses. Nonqualified withdrawals: taxes on gains plus a 10% penalty.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What tax advantage may be lost if a customer opens an out-of-state 529 plan?",
+      "back": "Most states only allow tax-free withdrawals and/or state tax deductions on contributions if the donor uses an in-state plan. Out-of-state plans may forfeit these state-level tax benefits.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "If the beneficiary of a 529 plan does not need the funds for school, what options does the donor have without tax penalty?",
+      "back": "The donor may change the designated beneficiary to a family member of the original beneficiary with no tax consequence. If the beneficiary receives a scholarship, the donor may withdraw the equivalent amount penalty free (income taxes on gains still apply).",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Who controls the assets in a 529 plan, and are there income limits for contributors?",
+      "back": "The donor (account owner) retains control of the assets even after the student reaches legal age. There are no income limitations on who can contribute.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How frequently can a 529 plan be rolled over from one state's plan to another?",
+      "back": "No more than once every 12 months.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "scenario",
+      "front": "Leo has 529 plans for his three nephews. The oldest receives a $15,000 athletic scholarship. Which of the following is NOT permitted: (A) withdraw earnings up to the scholarship value tax free, (B) transfer the account to a brother, (C) withdraw the scholarship value penalty free, (D) leave the money in the account?",
+      "back": "A \u2014 The donor may withdraw the scholarship-equivalent amount PENALTY free, but income taxes on the gains still apply. He may also transfer the account to a sibling or leave funds in for future use.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "Local Government Investment Pool (LGIP)",
+      "back": "A state-established trust providing other government entities (cities, counties, school districts, state agencies) with a short-term investment vehicle. Government entities purchase shares/units in the pool's portfolio. Not for retail investors.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Who are the investors in an LGIP?",
+      "back": "Other government entities \u2014 such as cities, counties, school districts, or state agencies \u2014 NOT retail investors.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Are LGIPs registered with the SEC, and do they issue a prospectus?",
+      "back": "No. LGIPs fall under the governmental exemption, so they are not required to register with the SEC and do not issue a prospectus. They do provide disclosure documents including an information statement, investment policy, and operating procedures.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How do LGIPs maintain stable share value, and how is this similar to another investment product?",
+      "back": "Most LGIPs operate similarly to money market funds, often maintaining a fixed $1 net asset value (NAV) to provide liquidity and minimize price volatility. However, an LGIP is NOT a money market fund.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "definition",
+      "front": "ABLE Account",
+      "back": "A tax-advantaged savings account for individuals with significant disabilities (and their families) created by the ABLE Act of 2014. The beneficiary is the account owner, and income earned by the account is not taxed.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "What is the age/onset eligibility requirement for an ABLE account?",
+      "back": "The onset of the significant disability must have occurred before age 26. The beneficiary themselves does not need to currently be under 26 \u2014 they just must have had disability onset before age 26.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Who is automatically eligible to establish an ABLE account?",
+      "back": "An individual who meets the age/onset criteria (disability onset before age 26) AND is receiving Social Security insurance (SSI) and/or Social Security disability insurance (SSDI) benefits.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How many ABLE accounts may a person have, and how are contributions taxed?",
+      "back": "Only one ABLE account per person is allowed. Contributions can be made by anyone (beneficiary, family, friends) using after-tax dollars. Contributions are not federally deductible, though some states allow a state income tax deduction. Annual contributions are capped at a specified dollar amount.",
+      "lo": "5.e",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "Which regulator has jurisdiction over the structure or sale of 529 plans: SEC, IRS, MSRB, or Department of Education?",
+      "back": "The Department of Education does NOT have jurisdiction. The SEC, IRS, and MSRB all have regulatory roles over 529 plans (as municipal fund securities, they fall under MSRB rules; the IRS oversees tax treatment; the SEC has anti-fraud authority).",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    }
+  ],
+  "tokens": {
+    "input": 3846,
+    "output": 2757
+  },
+  "cost_usd": 0.2645
+}

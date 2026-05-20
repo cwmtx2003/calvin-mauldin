@@ -1,0 +1,199 @@
+{
+  "key": "settlement_times",
+  "title": "Settlement, Delivery & Time Rules",
+  "sections": [
+    {
+      "heading": "Settlement Cycles (T+1 standard since 5/28/24)",
+      "type": "table",
+      "items": [
+        {
+          "Security": "Common/Preferred Stock",
+          "Regular Way": "T+1"
+        },
+        {
+          "Security": "Corporate Bonds",
+          "Regular Way": "T+1"
+        },
+        {
+          "Security": "Municipal Bonds",
+          "Regular Way": "T+1"
+        },
+        {
+          "Security": "Listed Options",
+          "Regular Way": "T+1"
+        },
+        {
+          "Security": "U.S. Treasuries (notes/bonds)",
+          "Regular Way": "T+1"
+        },
+        {
+          "Security": "U.S. T-Bills / Cash trades",
+          "Regular Way": "Same day (T+0)"
+        },
+        {
+          "Security": "Options exercise \u2192 stock delivery",
+          "Regular Way": "T+1 from exercise"
+        }
+      ]
+    },
+    {
+      "heading": "Reg T Payment Rule",
+      "type": "rule",
+      "items": [
+        "Customer payment due: S+1 (1 business day AFTER settlement) = effectively T+2",
+        "Total time from trade to payment deadline = 2 business days",
+        "Extensions: request from FINRA/DEA if customer can't pay",
+        "Non-payment \u2192 security sold out + account frozen 90 days (cash up front required)"
+      ]
+    },
+    {
+      "heading": "Prospectus Delivery \u2014 Aftermarket (post-effective)",
+      "type": "table",
+      "items": [
+        {
+          "Offering": "IPO \u2014 NMS (listed/Nasdaq)",
+          "Days": "25 calendar days"
+        },
+        {
+          "Offering": "IPO \u2014 Non-NMS (OTC)",
+          "Days": "90 calendar days"
+        },
+        {
+          "Offering": "APO/Follow-on \u2014 NMS",
+          "Days": "0 days (none)"
+        },
+        {
+          "Offering": "APO/Follow-on \u2014 Non-NMS",
+          "Days": "40 calendar days"
+        },
+        {
+          "Offering": "Access via SEC website",
+          "Days": "Satisfies delivery"
+        }
+      ]
+    },
+    {
+      "heading": "Cooling-Off Period (Securities Act of 1933)",
+      "type": "bullets",
+      "items": [
+        "MINIMUM 20 calendar days between registration filing and effective date",
+        "Deficiency letter PAUSES the clock \u2014 resumes where it left off (not restarted)",
+        "Permitted during cooling-off: tombstone ads, red herring (preliminary prospectus), indications of interest (non-binding), due diligence, blue-sky filings",
+        "PROHIBITED: sales, sales literature, advertising (other than tombstone), final prospectus"
+      ]
+    },
+    {
+      "heading": "Shelf Registration (Rule 415)",
+      "type": "bullets",
+      "items": [
+        "Standard issuer: 2 years to sell off the shelf",
+        "WKSI (well-known seasoned issuer): 3 years",
+        "Supplemental prospectus filed with SEC before each sale"
+      ]
+    },
+    {
+      "heading": "GTC Order Cancellation (NYSE)",
+      "type": "rule",
+      "items": [
+        "GTC orders auto-cancelled: LAST business day of APRIL and OCTOBER",
+        "Semi-annual purge \u2014 must be re-entered to remain active"
+      ]
+    },
+    {
+      "heading": "FINRA Form Filing Deadlines",
+      "type": "table",
+      "items": [
+        {
+          "Form": "U4 (registration application)",
+          "Deadline": "Filed before activity begins"
+        },
+        {
+          "Form": "U4 amendments (material changes)",
+          "Deadline": "30 days (10 days if statutorily disqualifying)"
+        },
+        {
+          "Form": "U5 (termination)",
+          "Deadline": "30 days after termination"
+        },
+        {
+          "Form": "U5 amendments",
+          "Deadline": "30 days after firm learns of new facts"
+        },
+        {
+          "Form": "Form D (Reg D private placement)",
+          "Deadline": "15 days after first sale"
+        },
+        {
+          "Form": "Customer complaint records",
+          "Deadline": "Retained 4 years"
+        }
+      ]
+    },
+    {
+      "heading": "Rule 147 (Intrastate) Resale Restriction",
+      "type": "rule",
+      "items": [
+        "No resale to non-residents for 6 months after initial purchase"
+      ]
+    },
+    {
+      "heading": "Quick Timeline Memory Grid",
+      "type": "table",
+      "items": [
+        {
+          "Number": "T+1",
+          "Meaning": "Standard settlement (stocks/bonds/options/Treasuries)"
+        },
+        {
+          "Number": "S+1",
+          "Meaning": "Reg T payment deadline"
+        },
+        {
+          "Number": "20 days",
+          "Meaning": "Cooling-off minimum"
+        },
+        {
+          "Number": "25 / 90",
+          "Meaning": "IPO prospectus delivery (NMS / non-NMS)"
+        },
+        {
+          "Number": "0 / 40",
+          "Meaning": "APO prospectus delivery (NMS / non-NMS)"
+        },
+        {
+          "Number": "30 days",
+          "Meaning": "U4/U5 filing & amendments"
+        },
+        {
+          "Number": "April & October last business day",
+          "Meaning": "GTC purge"
+        },
+        {
+          "Number": "2 / 3 years",
+          "Meaning": "Shelf reg (standard / WKSI)"
+        },
+        {
+          "Number": "6 months",
+          "Meaning": "Rule 147 resale; Reg D restricted holding"
+        },
+        {
+          "Number": "90 days",
+          "Meaning": "Frozen account after Reg T non-payment"
+        }
+      ]
+    }
+  ],
+  "common_traps": [
+    "Confusing T+1 (trade settlement) with S+1 (Reg T payment) \u2014 payment is 1 day AFTER settlement, not after trade.",
+    "Cooling-off deficiency does NOT restart the 20-day clock \u2014 it pauses and resumes.",
+    "APO of an NMS security has ZERO aftermarket prospectus delivery requirement (commonly missed).",
+    "Tombstone ads are the ONLY permitted advertisement during cooling-off; red herrings are prospecting tools, not ads.",
+    "GTC purge is the LAST BUSINESS DAY of April/October \u2014 not the first, not month-end calendar day.",
+    "U4 must be amended within 30 days of material change, but only 10 days for statutorily disqualifying events."
+  ],
+  "tokens": {
+    "input": 20493,
+    "output": 2176
+  },
+  "cost_usd": 0.4706
+}

@@ -1,0 +1,182 @@
+{
+  "key": "options_strategies",
+  "title": "Options Strategies & Breakevens",
+  "sections": [
+    {
+      "heading": "Core Concepts (Memorize)",
+      "type": "bullets",
+      "items": [
+        "1 contract = 100 shares; premium quoted per share (\u00d7100 = $ cost)",
+        "Buyer = Long = Holder = pays premium = HAS THE RIGHT",
+        "Seller = Short = Writer = receives premium = HAS THE OBLIGATION",
+        "Calls: Buyer BULLISH, Writer BEARISH",
+        "Puts: Buyer BEARISH, Writer BULLISH",
+        "Premium = Intrinsic Value (IV) + Time Value (TV)",
+        "IV is NEVER negative (min = 0); At/Out of money = IV of 0",
+        "Parity = premium equals intrinsic value exactly"
+      ]
+    },
+    {
+      "heading": "ITM / ATM / OTM (Buyers want ITM; Sellers want OTM)",
+      "type": "table",
+      "items": [
+        {
+          "Option": "Call",
+          "ITM": "Stock > Strike",
+          "ATM": "Stock = Strike",
+          "OTM": "Stock < Strike"
+        },
+        {
+          "Option": "Put",
+          "ITM": "Stock < Strike",
+          "ATM": "Stock = Strike",
+          "OTM": "Stock > Strike"
+        }
+      ]
+    },
+    {
+      "heading": "The 4 Basic Positions \u2014 BE / MG / ML",
+      "type": "table",
+      "items": [
+        {
+          "Position": "Long Call",
+          "Attitude": "Bullish",
+          "Breakeven": "Strike + Premium",
+          "Max Gain": "Unlimited",
+          "Max Loss": "Premium paid"
+        },
+        {
+          "Position": "Short Call (naked)",
+          "Attitude": "Bearish",
+          "Breakeven": "Strike + Premium",
+          "Max Gain": "Premium received",
+          "Max Loss": "Unlimited"
+        },
+        {
+          "Position": "Long Put",
+          "Attitude": "Bearish",
+          "Breakeven": "Strike \u2212 Premium",
+          "Max Gain": "Strike \u2212 Premium (\u00d7100)",
+          "Max Loss": "Premium paid"
+        },
+        {
+          "Position": "Short Put",
+          "Attitude": "Bullish",
+          "Breakeven": "Strike \u2212 Premium",
+          "Max Gain": "Premium received",
+          "Max Loss": "Strike \u2212 Premium (\u00d7100)"
+        }
+      ]
+    },
+    {
+      "heading": "Memory Aids \u2014 Breakeven",
+      "type": "formula",
+      "items": [
+        "CALL UP: Strike + Premium  (Call buyer needs stock to go UP past BE)",
+        "PUT DOWN: Strike \u2212 Premium (Put buyer needs stock to go DOWN past BE)",
+        "BE is SAME for buyer & seller; one's MG = other's ML"
+      ]
+    },
+    {
+      "heading": "Combined Strategies",
+      "type": "table",
+      "items": [
+        {
+          "Strategy": "Covered Call",
+          "Setup": "Long 100 shares + Short 1 call",
+          "Outlook": "Neutral/slightly bullish",
+          "BE": "Stock cost \u2212 Premium",
+          "Max Gain": "(Strike \u2212 Stock cost) + Premium",
+          "Max Loss": "Stock cost \u2212 Premium (large)",
+          "Purpose": "Income on owned stock"
+        },
+        {
+          "Strategy": "Protective Put",
+          "Setup": "Long 100 shares + Long 1 put",
+          "Outlook": "Bullish, hedging downside",
+          "BE": "Stock cost + Premium",
+          "Max Gain": "Unlimited",
+          "Max Loss": "(Stock cost \u2212 Strike) + Premium",
+          "Purpose": "Insurance on long stock"
+        },
+        {
+          "Strategy": "Protective Call",
+          "Setup": "Short stock + Long call",
+          "Outlook": "Bearish, hedging upside",
+          "BE": "Short sale price \u2212 Premium",
+          "Max Gain": "Short price \u2212 Premium",
+          "Max Loss": "(Strike \u2212 Short price) + Premium",
+          "Purpose": "Insurance on short stock"
+        },
+        {
+          "Strategy": "Long Straddle",
+          "Setup": "Long 1 call + Long 1 put (same strike/exp)",
+          "Outlook": "Volatile (big move either way)",
+          "BE": "Strike \u00b1 TOTAL premiums (2 BEs)",
+          "Max Gain": "Unlimited (upside)",
+          "Max Loss": "Total premiums paid",
+          "Purpose": "Profit from volatility"
+        },
+        {
+          "Strategy": "Short Straddle",
+          "Setup": "Short 1 call + Short 1 put (same strike/exp)",
+          "Outlook": "Neutral (no movement)",
+          "BE": "Strike \u00b1 TOTAL premiums (2 BEs)",
+          "Max Gain": "Total premiums received",
+          "Max Loss": "Unlimited (upside)",
+          "Purpose": "Income in flat market"
+        }
+      ]
+    },
+    {
+      "heading": "Intrinsic vs. Time Value",
+      "type": "bullets",
+      "items": [
+        "IV (Call) = Stock \u2212 Strike (if positive, else 0)",
+        "IV (Put) = Strike \u2212 Stock (if positive, else 0)",
+        "TV = Premium \u2212 IV",
+        "TV increases with: more time to expiration + higher volatility",
+        "At expiration: TV = 0; premium = IV only"
+      ]
+    },
+    {
+      "heading": "American vs. European Style Exercise",
+      "type": "table",
+      "items": [
+        {
+          "Style": "American",
+          "Exercise": "ANY time before expiration",
+          "Used for": "Equity options, most equity index options"
+        },
+        {
+          "Style": "European",
+          "Exercise": "ONLY on expiration day",
+          "Used for": "Foreign currency options, yield-based (interest rate) options"
+        }
+      ]
+    },
+    {
+      "heading": "Quick BE Examples",
+      "type": "formula",
+      "items": [
+        "Long 1 XYZ Jul 40 call @ 3 \u2192 BE = 43; MG = unlimited; ML = $300",
+        "Long 1 XYZ Jul 40 put @ 3 \u2192 BE = 37; MG = $3,700; ML = $300",
+        "Long 40 call + Long 40 put @ 2 each (straddle) \u2192 BEs = 36 & 44; ML = $400",
+        "Long stock @ 50 + Long 50 put @ 2 (protective put) \u2192 BE = 52; ML = $200"
+      ]
+    }
+  ],
+  "common_traps": [
+    "BE for protective put is Stock price + Premium (NOT strike \u2212 premium). The formula changes once stock is combined with the option.",
+    "Short naked CALL = UNLIMITED loss; Short naked PUT loss is LIMITED (Strike \u2212 Premium) \u2014 students often reverse these.",
+    "Straddle has TWO breakevens (Strike + total premium AND Strike \u2212 total premium); use TOTAL combined premium, not just one leg.",
+    "At-the-money and Out-of-the-money options have ZERO intrinsic value \u2014 all premium is time value. IV is never negative.",
+    "Yield-based and foreign currency options are EUROPEAN style (expiration day only) \u2014 easy trap when question implies early exercise.",
+    "Call BE = Strike + Premium for BOTH buyer and seller (same number); the buyer profits ABOVE BE, seller profits BELOW BE."
+  ],
+  "tokens": {
+    "input": 21730,
+    "output": 2487
+  },
+  "cost_usd": 0.5125
+}
