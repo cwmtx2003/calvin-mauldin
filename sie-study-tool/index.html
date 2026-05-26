@@ -77,6 +77,8 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .preset-btn.selected{background:#1a3a1a;color:#44ff88;border-color:#44ff88}
 @keyframes pomo-flash{0%,100%{opacity:1}50%{opacity:.2}}
 .pomo-flash{animation:pomo-flash .4s ease 3}
+.pomo-rest-chip{display:inline-block;font-family:'DM Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;padding:2px 10px;border-radius:4px;border:1px solid #2a4a2a;background:#0a1a0a;color:#44ff88;text-shadow:0 0 10px rgba(68,255,136,.5)}
+.pomo-rest-chip.over{color:#6b7a9e;border-color:var(--border2);text-shadow:none}
 
 /* STEP INDICATORS */
 .step-row{display:flex;gap:.5rem;margin-bottom:1.25rem;flex-wrap:wrap}
@@ -509,6 +511,26 @@ header{padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--border);display:fl
 .ci-empty{color:var(--muted);font-style:italic;text-align:center;padding:2rem;font-size:13px}
 mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:2px}
 
+/* EMBEDDED CALCULATOR (calculation-mode questions) */
+#calc-fab{position:fixed;right:18px;bottom:18px;z-index:200;display:flex;align-items:center;gap:.4rem;padding:.6rem .85rem;border-radius:30px;border:1px solid var(--gold);background:var(--gold);color:#09090a;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.5);transition:transform .12s,background .12s}
+#calc-fab:hover{background:var(--gold2);transform:translateY(-1px)}
+#calc-fab span{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.06em}
+#calc-panel{position:fixed;right:18px;bottom:74px;z-index:201;width:248px;background:var(--bg2);border:1px solid var(--border2);border-radius:10px;padding:.85rem;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+.calc-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem}
+.calc-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.calc-close{background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;line-height:1}
+.calc-close:hover{color:var(--text)}
+.calc-display{width:100%;padding:.6rem .7rem;margin-bottom:.6rem;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;font-family:'DM Mono',monospace;font-size:18px;color:var(--text);text-align:right;letter-spacing:.04em}
+.calc-display:focus{outline:none;border-color:var(--gold)}
+.calc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.calc-key{padding:.7rem 0;border-radius:6px;border:1px solid var(--border2);background:var(--bg3);color:var(--text);font-family:'DM Mono',monospace;font-size:15px;cursor:pointer;transition:all .1s}
+.calc-key:hover{border-color:var(--gold);background:var(--bg)}
+.calc-key:active{transform:scale(.95)}
+.calc-key.calc-op{color:var(--gold2)}
+.calc-key.calc-fn{color:var(--muted2);font-size:13px}
+.calc-key.calc-eq{background:var(--gold);color:#09090a;border-color:var(--gold);font-weight:700}
+.calc-key.calc-eq:hover{background:var(--gold2)}
+
 </style>
 </head>
 <body>
@@ -844,6 +866,7 @@ mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:
     </div>
     <div class="quiz-finish-row" id="quiz-act-row" style="display:none">
       <button class="act-btn act-btn-red" onclick="exitQuiz()">Exit quiz</button>
+      <button class="act-btn" id="quiz-prev-btn" onclick="quizPrev()" style="display:none">← Previous</button>
       <button class="quiz-submit-btn" id="quiz-next-btn" onclick="quizNext()">Next →</button>
     </div>
   </div>
@@ -853,6 +876,39 @@ mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:
 <div id="quiz-results"></div>
 
 </div><!-- /wrap -->
+
+<!-- EMBEDDED CALCULATOR — shown only on calculation-mode questions -->
+<button id="calc-fab" onclick="calcToggle()" aria-label="Open calculator" style="display:none">🧮<span>Calc</span></button>
+<div id="calc-panel" style="display:none">
+  <div class="calc-hdr">
+    <span class="calc-title">Calculator</span>
+    <button class="calc-close" onclick="calcToggle()" aria-label="Close calculator">✕</button>
+  </div>
+  <input id="calc-display" class="calc-display" value="" placeholder="0" inputmode="text" autocomplete="off" onkeydown="calcKey(event)"/>
+  <div class="calc-keys">
+    <button class="calc-key calc-fn" onclick="calcClear()">C</button>
+    <button class="calc-key calc-fn" onclick="calcBack()">⌫</button>
+    <button class="calc-key calc-op" onclick="calcInput('(')">(</button>
+    <button class="calc-key calc-op" onclick="calcInput(')')">)</button>
+    <button class="calc-key" onclick="calcInput('7')">7</button>
+    <button class="calc-key" onclick="calcInput('8')">8</button>
+    <button class="calc-key" onclick="calcInput('9')">9</button>
+    <button class="calc-key calc-op" onclick="calcInput('÷')">÷</button>
+    <button class="calc-key" onclick="calcInput('4')">4</button>
+    <button class="calc-key" onclick="calcInput('5')">5</button>
+    <button class="calc-key" onclick="calcInput('6')">6</button>
+    <button class="calc-key calc-op" onclick="calcInput('×')">×</button>
+    <button class="calc-key" onclick="calcInput('1')">1</button>
+    <button class="calc-key" onclick="calcInput('2')">2</button>
+    <button class="calc-key" onclick="calcInput('3')">3</button>
+    <button class="calc-key calc-op" onclick="calcInput('-')">−</button>
+    <button class="calc-key" onclick="calcInput('0')">0</button>
+    <button class="calc-key" onclick="calcInput('.')">.</button>
+    <button class="calc-key calc-op" onclick="calcInput('%')">%</button>
+    <button class="calc-key calc-op" onclick="calcInput('+')">+</button>
+    <button class="calc-key calc-eq" onclick="calcEval()" style="grid-column:span 4">=</button>
+  </div>
+</div>
 
 <!-- Phase 1 source material — extracted Kaplan Manual + FINRA Outline -->
 <script src="sie_sources.js"></script>
@@ -1002,6 +1058,7 @@ let pomoSecsLeft = 1500;
 let pomoRunning = false;
 let pomoIsWork = true;
 let pomoInterval = null;
+let pomoSessionEnded = false; // true while reviewing results after a focus block expired
 
 // ═══════════════════════════════════════════════════
 // QUIZ STATE (PASS 2 + PASS 3)
@@ -1179,7 +1236,24 @@ function pomoUpdateDisplay() {
     live.textContent = `${pomoIsWork ? 'FOCUS' : 'REST'} ${fmt}`;
     live.className = `pomo-live vis ${pomoIsWork ? 'focus' : 'rest'}`;
   }
+  const restChip = document.getElementById('pomo-rest-chip');
+  if (restChip && !restChip.classList.contains('over')) {
+    restChip.textContent = `${pomoIsWork ? 'FOCUS' : 'REST'} ${fmt}`;
+  }
   if (!quizActive) document.title = pomoRunning ? `${fmt} · SIE Study Tool` : 'SIE Study Tool';
+}
+
+function notifyRestOver() {
+  const chip = document.getElementById('pomo-rest-chip');
+  if (chip) { chip.textContent = 'Break over — ready when you are'; chip.classList.add('over'); }
+  try {
+    const a = new AudioContext(), o = a.createOscillator(), g = a.createGain();
+    o.connect(g); g.connect(a.destination);
+    o.frequency.value = 660;
+    g.gain.setValueAtTime(0.4, a.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, a.currentTime + 1.2);
+    o.start(); o.stop(a.currentTime + 1.2);
+  } catch(e) {}
 }
 
 function pomoSetPreset(w, b) {
@@ -1226,6 +1300,30 @@ function pomoStartInterval() {
       const disp = document.getElementById('pomo-display');
       disp.classList.add('pomo-flash');
       setTimeout(() => disp.classList.remove('pomo-flash'), 1400);
+
+      const wasWork = pomoIsWork;
+
+      if (wasWork && inSession) {
+        // FOCUS expired mid-drill → end the session, show results, keep the REST clock running during review
+        pomoSessionEnded = true;
+        pomoIsWork = false;
+        pomoSecsLeft = pomoBreakMins * 60;
+        finalizePomodoroSession();
+        pomoUpdateDisplay();
+        pomoStartInterval();
+        return;
+      }
+
+      if (!wasWork && pomoSessionEnded) {
+        // REST after a finished focus session ended → stop; don't auto-start another focus block
+        pomoSessionEnded = false;
+        pomoIsWork = true;
+        pomoSecsLeft = pomoWorkMins * 60;
+        pomoUpdateDisplay();
+        notifyRestOver();
+        return;
+      }
+
       pomoIsWork = !pomoIsWork;
       pomoSecsLeft = pomoIsWork ? pomoWorkMins * 60 : pomoBreakMins * 60;
       pomoUpdateDisplay();
@@ -1459,9 +1557,22 @@ async function callGenQuestion(unit, pickedMode, opts = {}) {
     surprise: 'Generate a question from any topic in this unit using a randomly chosen format — standard concept, definition, calculation, or EXCEPT/NOT style. Vary it each time.'
   };
 
-  const recentSource = opts.recentTopics || drillHistory.slice(-6).map(h => h.topic);
+  const recentSource = opts.recentTopics || drillHistory.slice(-10).map(h => h.topic);
   const recent = recentSource.join(', ');
-  const avoid = recent ? `Do NOT repeat these recently tested topics: ${recent}.` : '';
+  const avoid = recent ? `AVOID repeating these recently tested topics or close variations of them: ${recent}. Choose a genuinely different concept.` : '';
+
+  // Variety nudge — rotate which sub-area of the lesson gets tested so questions
+  // don't cluster on the same headline facts. Keeps content on-topic (still drawn
+  // from the lesson) while diversifying the angle each generation.
+  const varietyAngles = [
+    'Choose a specific sub-topic from the lesson that differs from the recently tested ones.',
+    'Pick a less commonly drilled but exam-relevant detail from this lesson.',
+    'Target a common exam trap, exception, or edge case within this lesson.',
+    'Center the question on a precise rule, number, threshold, or timeframe from the lesson.',
+    'Draw from a different part of the lesson than the most obvious headline concept.',
+    'Test how a rule from this lesson applies or what its consequence is, not just its definition.'
+  ];
+  const angle = varietyAngles[Math.floor(Math.random() * varietyAngles.length)];
 
   // ─── Phase 2: source grounding ───
   // If SIE_SOURCES is loaded and grounding is enabled, include the FINRA Outline
@@ -1488,6 +1599,7 @@ RULES:
 3. ${modeprompts[pickedMode] || modeprompts.standard}
 4. ${avoid}
 5. Keep questions concise and focused on one testable concept.
+6. VARIETY: ${angle} Vary the wording, scenario framing, named securities/people, and any numbers so this question feels distinct from previous ones — while staying strictly within this lesson's material.
 
 Respond ONLY with valid JSON — no markdown fences, no extra text:
 {"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect."}`;
@@ -1536,6 +1648,7 @@ function renderQ(q) {
   nb.classList.add('vis');
   nb.disabled = true;
   nb.textContent = 'Next →';
+  calcShow(((document.getElementById('q-mode').textContent) || '').trim().toLowerCase() === 'calculations');
   if (!pomoRunning) pomoStartInterval();
   prefetchedQ = null;
   prefetchNextQ();
@@ -1678,6 +1791,7 @@ async function sendFU() {
 // NAVIGATION (drill)
 // ═══════════════════════════════════════════════════
 function fullReset(keepSelections) {
+  calcShow(false);
   clearInterval(pomoInterval);
   pomoRunning = false;
   inSession = false;
@@ -1737,6 +1851,7 @@ function exitSession() {
 }
 
 function goBack() {
+  calcShow(false);
   document.getElementById('qarea').classList.remove('vis');
   document.getElementById('setup').style.display = 'block';
   document.getElementById('ticker-bar').style.display = '';
@@ -1782,6 +1897,112 @@ function finalizeSession() {
 function getHistory() {
   try { return JSON.parse(localStorage.getItem('sie_history') || '[]'); }
   catch(e) { return []; }
+}
+
+// Pomodoro FOCUS block expired → end the drill like a quiz: score it, persist, show reviewable results.
+function finalizePomodoroSession() {
+  inSession = false;
+  answered = true;
+  if (prefetching) prefetchedQ = null;
+
+  const records = currentSessionLog.map((r, i) => ({
+    idx: i,
+    question: r.question,
+    options: r.options,
+    correct: r.correct,
+    chosen: r.chosen,
+    ok: r.ok,
+    explanation: r.explanation,
+    unitNum: r.unitNum,
+    unitName: r.unitName,
+    jfShort: (r.mode || 'standard').toUpperCase(),
+    mode: r.mode,
+    unscored: false,
+    failed: false
+  }));
+
+  const correct = records.filter(r => r.ok).length;
+  const total = records.length;
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+  const entry = {
+    id: Date.now(),
+    type: 'pomodoro',
+    status: 'complete',
+    date: new Date().toLocaleString(),
+    focusMins: pomoWorkMins,
+    breakMins: pomoBreakMins,
+    correct, total, pct,
+    questions: records
+  };
+
+  const hist = getHistory();
+  hist.unshift(entry);
+  if (hist.length > 50) hist.pop();
+  localStorage.setItem('sie_history', JSON.stringify(hist));
+  clearCurrentSession();
+
+  currentResults = entry;
+  resultsFilter = records.some(q => !q.ok) ? 'wrong' : 'all';
+  renderPomodoroResults(entry);
+}
+
+function renderPomodoroResults(entry) {
+  calcShow(false);
+  document.getElementById('qarea').classList.remove('vis');
+  document.getElementById('quiz-prog-bar').style.display = 'none';
+  const root = document.getElementById('quiz-results');
+  root.classList.add('vis');
+
+  const banner = `
+    <div class="qr-banner ${entry.pct >= 70 ? 'pass' : 'fail'}">
+      <div class="qr-verdict">⏱ Focus block complete — time's up</div>
+      <div class="qr-score">${entry.pct}%</div>
+      <div class="qr-score-frac">${entry.correct} / ${entry.total} correct</div>
+      <div class="qr-time">${entry.focusMins}-min focus done · <span id="pomo-rest-chip" class="pomo-rest-chip rest">REST ${pomoFmt(pomoSecsLeft)}</span></div>
+    </div>`;
+
+  if (entry.questions.length === 0) {
+    root.innerHTML = banner + `
+      <div style="text-align:center;padding:2rem 1rem;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;line-height:1.7">
+        No questions answered this block.<br>Take your break — the clock above is counting down your rest.
+      </div>
+      <div class="qr-actions">
+        <button class="qr-btn qr-btn-primary" onclick="newQuiz()">Start another focus block</button>
+        <button class="qr-btn qr-btn-ghost" onclick="resultsBackHome()">← Back to home</button>
+      </div>`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
+  const wrongCount = entry.questions.filter(q => q.chosen && !q.ok).length;
+  const skippedCount = entry.questions.filter(q => !q.chosen).length;
+  const correctCount = entry.questions.filter(q => q.ok).length;
+
+  const filterRow = `
+    <div class="qr-filter-row">
+      <div class="qr-filter-group">
+        <button class="qr-filter-btn" data-f="all" onclick="setResultsFilter('all')">All <span class="qr-filter-count">${entry.questions.length}</span></button>
+        <button class="qr-filter-btn" data-f="wrong" onclick="setResultsFilter('wrong')">Wrong <span class="qr-filter-count">${wrongCount}</span></button>
+        <button class="qr-filter-btn" data-f="skipped" onclick="setResultsFilter('skipped')">Skipped <span class="qr-filter-count">${skippedCount}</span></button>
+        <button class="qr-filter-btn" data-f="correct" onclick="setResultsFilter('correct')">Correct <span class="qr-filter-count">${correctCount}</span></button>
+      </div>
+    </div>`;
+
+  root.innerHTML = banner + `
+    <div class="qr-section-title">Review questions</div>
+    ${filterRow}
+    <div id="qr-q-list" class="qr-q-list"></div>
+    <div class="qr-actions">
+      <button class="qr-btn qr-btn-primary" onclick="newQuiz()">Start another focus block</button>
+      <button class="qr-btn qr-btn-ghost" onclick="resultsBackHome()">← Back to home</button>
+    </div>`;
+
+  document.querySelectorAll('.qr-filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.f === resultsFilter);
+  });
+  renderResultsQList();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showErr(id, msg) {
@@ -2304,6 +2525,11 @@ function renderQuizQuestion(i) {
   document.getElementById('q-tag').textContent = `${slot.jfShort} · U${slot.unitNum}`;
   document.getElementById('q-num').textContent = `Question ${i + 1} of ${cfg.total}`;
 
+  const prevBtn = document.getElementById('quiz-prev-btn');
+  if (prevBtn) prevBtn.style.display = i > 0 ? '' : 'none';
+
+  calcShow(slot.mode === 'calculations');
+
   // If question not yet generated, show a generating state and poll
   if (!slot._ready && !slot._failed) {
     document.getElementById('qtext').innerHTML = `<span style="color:var(--muted);font-family:'DM Mono',monospace;font-size:14px">Generating question ${i + 1}...</span>`;
@@ -2359,10 +2585,18 @@ function quizNext() {
   }
 }
 
+function quizPrev() {
+  if (quizIdx > 0) {
+    renderQuizQuestion(quizIdx - 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
 function exitQuiz() {
   if (!confirm('Exit this quiz? Your progress will be lost.')) return;
   ptGenAbort = true;
   quizActive = false;
+  calcShow(false);
   clearInterval(quizTimerInterval);
   document.title = 'SIE Study Tool';
   document.getElementById('qarea').classList.remove('vis');
@@ -2498,6 +2732,7 @@ function submitQuiz(autoSubmitted) {
 function renderQuizResults(entry, autoSubmitted) {
   const isPracticeTest = entry.subtype === 'practice-test';
 
+  calcShow(false);
   document.getElementById('qarea').classList.remove('vis');
   document.getElementById('quiz-prog-bar').style.display = 'none';
   document.getElementById('quiz-timer').classList.remove('vis');
@@ -2683,6 +2918,15 @@ function escapeHtml(s) {
 }
 
 function newQuiz() {
+  if (pomoSessionEnded) {
+    clearInterval(pomoInterval);
+    pomoRunning = false;
+    pomoSessionEnded = false;
+    pomoIsWork = true;
+    pomoSecsLeft = pomoWorkMins * 60;
+    pomoUpdateDisplay();
+  }
+  calcShow(false);
   const root = document.getElementById('quiz-results');
   root.classList.remove('vis');
   root.innerHTML = '';
@@ -2696,6 +2940,81 @@ function newQuiz() {
 
 function resultsBackHome() {
   newQuiz();
+}
+
+// ═══════════════════════════════════════════════════
+// EMBEDDED CALCULATOR (calculation-mode questions)
+// ═══════════════════════════════════════════════════
+let calcOpen = false;
+
+function calcShow(on) {
+  const fab = document.getElementById('calc-fab');
+  if (!fab) return;
+  fab.style.display = on ? 'flex' : 'none';
+  if (!on) {
+    calcOpen = false;
+    const p = document.getElementById('calc-panel');
+    if (p) p.style.display = 'none';
+  }
+}
+
+function calcToggle() {
+  const p = document.getElementById('calc-panel');
+  if (!p) return;
+  calcOpen = !calcOpen;
+  p.style.display = calcOpen ? 'block' : 'none';
+  if (calcOpen) { const d = document.getElementById('calc-display'); if (d) d.focus(); }
+}
+
+function calcInput(ch) {
+  const d = document.getElementById('calc-display');
+  if (!d) return;
+  if (d.dataset.result === '1') {
+    // After '=', a digit/decimal/open-paren starts a new calc; an operator continues from the result.
+    if (/[0-9.(]/.test(ch)) d.value = '';
+    d.dataset.result = '';
+  }
+  d.value += ch;
+  d.focus();
+}
+
+function calcClear() {
+  const d = document.getElementById('calc-display');
+  if (!d) return;
+  d.value = ''; d.dataset.result = ''; d.focus();
+}
+
+function calcBack() {
+  const d = document.getElementById('calc-display');
+  if (!d) return;
+  d.value = d.value.slice(0, -1); d.dataset.result = ''; d.focus();
+}
+
+function calcEval() {
+  const d = document.getElementById('calc-display');
+  if (!d) return;
+  let expr = d.value.trim();
+  if (!expr) return;
+  expr = expr.replace(/×/g, '*').replace(/÷/g, '/').replace(/−/g, '-');
+  expr = expr.replace(/(\d+(?:\.\d+)?)%/g, '($1/100)'); // N% -> (N/100)
+  if (!/^[0-9+\-*/().\s]+$/.test(expr)) { d.value = 'Error'; d.dataset.result = '1'; return; }
+  try {
+    const val = Function('"use strict";return (' + expr + ')')();
+    if (val === null || val === undefined || Number.isNaN(val) || !Number.isFinite(val)) {
+      d.value = 'Error';
+    } else {
+      d.value = String(Math.round((val + Number.EPSILON) * 1e8) / 1e8);
+    }
+  } catch (e) {
+    d.value = 'Error';
+  }
+  d.dataset.result = '1';
+  d.focus();
+}
+
+function calcKey(e) {
+  if (e.key === 'Enter') { e.preventDefault(); calcEval(); }
+  else if (e.key === 'Escape') { e.preventDefault(); calcToggle(); }
 }
 
 // ═══════════════════════════════════════════════════
@@ -3021,15 +3340,22 @@ function dsOpenRefSheet(key) {
   const sectionsHtml = sheet.sections.map(sec => {
     let body = '';
     const items = sec.items || [];
-    if (sec.type === 'table' && Array.isArray(items) && items.length && typeof items[0] === 'object') {
-      // Render table
+    const isColRowTable = sec.type === 'table' && items && !Array.isArray(items) && Array.isArray(items.columns) && Array.isArray(items.rows);
+    if (isColRowTable) {
+      // Render table in {columns, rows} format
+      const cols = items.columns;
+      body = `<table class="rs-table"><thead><tr>${cols.map(c => `<th>${dsEsc(String(c))}</th>`).join('')}</tr></thead><tbody>${items.rows.map(row => `<tr>${(Array.isArray(row) ? row : cols.map(c => row[c])).map(cell => `<td>${dsEsc(String(cell ?? ''))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    } else if (sec.type === 'table' && Array.isArray(items) && items.length && typeof items[0] === 'object') {
+      // Render table in array-of-objects format
       const cols = Object.keys(items[0]);
       body = `<table class="rs-table"><thead><tr>${cols.map(c => `<th>${dsEsc(c)}</th>`).join('')}</tr></thead><tbody>${items.map(row => `<tr>${cols.map(c => `<td>${dsEsc(String(row[c] ?? ''))}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
     } else if (sec.type === 'formula') {
-      body = items.map(f => `<div class="rs-formula">${dsEsc(typeof f === 'string' ? f : JSON.stringify(f))}</div>`).join('');
+      const arr = Array.isArray(items) ? items : [];
+      body = arr.map(f => `<div class="rs-formula">${dsEsc(typeof f === 'string' ? f : JSON.stringify(f))}</div>`).join('');
     } else {
       // bullets or rule — render as list
-      const flat = items.map(it => typeof it === 'string' ? it : JSON.stringify(it));
+      const arr = Array.isArray(items) ? items : [];
+      const flat = arr.map(it => typeof it === 'string' ? it : JSON.stringify(it));
       body = `<ul class="rs-sec-items">${flat.map(t => `<li>${dsEsc(t)}</li>`).join('')}</ul>`;
     }
     return `<div class="rs-sec"><div class="rs-sec-head">${dsEsc(sec.heading || '')}</div>${body}</div>`;
