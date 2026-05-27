@@ -3,157 +3,176 @@
   "title": "Registration Exemptions & Offerings",
   "sections": [
     {
-      "heading": "Securities Act of 1933 \u2014 Purpose",
+      "heading": "Exempt ISSUERS (issuer's identity = exempt)",
       "type": "bullets",
       "items": [
-        "Regulates NEW ISSUES (primary market) \u2014 full & fair disclosure",
-        "Requires registration + prospectus UNLESS exempt",
-        "Issuer files S-1 \u2192 20-day cooling-off \u2192 effective date",
-        "SEC does NOT approve/disapprove \u2014 disclaimer required"
-      ]
-    },
-    {
-      "heading": "Exempt ISSUERS (issuer-based exemption)",
-      "type": "bullets",
-      "items": [
-        "U.S. government & agencies",
-        "Municipalities (state/local govt)",
-        "National & state BANKS (NOT bank holding companies)",
-        "Building & loans / S&Ls",
+        "U.S. Government & agencies",
+        "Municipalities (state/local)",
+        "National & state BANKS \u2014 NOT bank holding companies",
+        "Savings & Loans / Building & Loans",
         "Charitable, religious, educational, nonprofit",
-        "Common carriers (e.g., railroad equipment trust certs)"
+        "Common carriers (e.g., railroad equipment trust certificates)"
       ]
     },
     {
-      "heading": "Exempt SECURITIES (issue-based exemption)",
+      "heading": "Exempt SECURITIES (the instrument is exempt)",
       "type": "bullets",
       "items": [
         "Commercial paper, bankers' acceptances \u2014 maturity \u2264 270 days",
-        "Insurance policies & FIXED annuities (NOT variable \u2014 variables = securities)",
-        "Note: 'variable' or 'separate account' = MUST register"
+        "Fixed annuities & insurance policies (NOT variable products)",
+        "Variable annuities / VUL / separate accounts = SECURITIES (must register)"
       ]
     },
     {
-      "heading": "Exempt TRANSACTIONS \u2014 Quick Comparison",
+      "heading": "Regulation A \u2014 Small/Medium Offerings (12-month limits)",
       "type": "table",
       "items": [
         {
-          "Rule": "Reg A Tier 1",
-          "Cap (12 mo)": "$20M",
-          "Insider resale cap": "$6M",
-          "Review": "SEC + State",
-          "Investor Limits": "None",
-          "Advertising": "Allowed"
+          "Feature": "Max raise",
+          "Tier 1": "$20 million",
+          "Tier 2": "$75 million"
         },
         {
-          "Rule": "Reg A Tier 2",
-          "Cap (12 mo)": "$75M",
-          "Insider resale cap": "$22.5M",
-          "Review": "SEC only",
-          "Investor Limits": "Non-accredited: max 10% of greater of income/net worth",
-          "Advertising": "Allowed"
+          "Feature": "Max for selling shareholders",
+          "Tier 1": "$6M",
+          "Tier 2": "$22.5M"
         },
         {
-          "Rule": "Reg D 506(b)",
-          "Cap (12 mo)": "Unlimited",
-          "Insider resale cap": "N/A",
-          "Review": "Form D filing",
-          "Investor Limits": "Unlimited accredited + max 35 non-accredited",
-          "Advertising": "NOT allowed"
+          "Feature": "Review",
+          "Tier 1": "Coordinated SEC + state",
+          "Tier 2": "SEC only (no state)"
         },
         {
-          "Rule": "Reg D 506(c)",
-          "Cap (12 mo)": "Unlimited",
-          "Insider resale cap": "N/A",
-          "Review": "Form D filing",
-          "Investor Limits": "ALL must be accredited (verified)",
-          "Advertising": "Allowed"
+          "Feature": "Audited financials",
+          "Tier 1": "No",
+          "Tier 2": "Yes + annual/semi/current reports"
         },
         {
-          "Rule": "Rule 147 (Intrastate)",
-          "Cap (12 mo)": "N/A",
-          "Insider resale cap": "N/A",
-          "Review": "State only",
-          "Investor Limits": "All buyers in-state residents",
-          "Advertising": "In-state only"
+          "Feature": "Investor limits",
+          "Tier 1": "None",
+          "Tier 2": "Non-accredited capped at greater of 10% net worth or 10% income"
         },
         {
-          "Rule": "Rule 144A",
-          "Cap (12 mo)": "N/A",
-          "Insider resale cap": "N/A",
-          "Review": "N/A",
-          "Investor Limits": "QIBs only ($100M+ invested)",
-          "Advertising": "QIB-targeted"
+          "Feature": "Advertising/solicitation",
+          "Tier 1": "Allowed",
+          "Tier 2": "Allowed"
+        },
+        {
+          "Feature": "Excludes",
+          "Tier 1": "Investment companies (PE, VC, hedge)",
+          "Tier 2": "Same"
         }
       ]
     },
     {
-      "heading": "Accredited Investor (Rule 501) \u2014 Thresholds",
-      "type": "bullets",
+      "heading": "Regulation D \u2014 Private Placements",
+      "type": "table",
       "items": [
-        "INCOME: $200K individual OR $300K joint \u2014 past 2 yrs & expected current yr",
-        "NET WORTH: $1,000,000+ EXCLUDING primary residence",
-        "Insiders: officers, directors, 10%+ shareholders of issuer",
-        "Licensed: Series 7, 65, or 82 holders in good standing",
-        "Qualifying professional certifications/credentials",
-        "ALL institutional investors qualify",
-        "Need to meet only ONE criterion"
+        {
+          "Rule": "506(b)",
+          "Investors": "Unlimited accredited + up to 35 non-accredited (sophisticated)",
+          "Solicitation": "NO general solicitation/advertising",
+          "Cap": "Unlimited $"
+        },
+        {
+          "Rule": "506(c)",
+          "Investors": "Accredited ONLY \u2014 must verify",
+          "Solicitation": "General solicitation/advertising ALLOWED",
+          "Cap": "Unlimited $"
+        },
+        {
+          "Rule": "Form D",
+          "Investors": "File with SEC online",
+          "Solicitation": "Required",
+          "Cap": "\u2014"
+        }
       ]
     },
     {
-      "heading": "Rule 147 \u2014 Intrastate Requirements",
+      "heading": "Accredited Investor Thresholds (Rule 501)",
       "type": "bullets",
       "items": [
-        "Issuer HQ in state + 100% of buyers are state residents",
-        "Must meet ONE 80% test: 80% income / 80% assets / 80% proceeds used in state, OR majority of employees in state",
-        "If BD underwrites \u2014 BD must be in-state",
-        "Resale to nonresidents PROHIBITED for 6 months after purchase"
+        "Income: $200,000 individual OR $300,000 joint \u2014 past 2 yrs + expected current yr",
+        "Net worth: $1,000,000+ (EXCLUDES primary residence equity)",
+        "Insiders: officers, directors, 10%+ owners of the issuer",
+        "Licensed: holders in good standing of Series 7, 65, or 82",
+        "Knowledgeable employees of private funds; certain professional certifications",
+        "ALL institutional investors qualify"
       ]
     },
     {
-      "heading": "Rule 144A \u2014 QIB Market",
+      "heading": "Rule 144A \u2014 QIBs (Qualified Institutional Buyers)",
       "type": "bullets",
       "items": [
-        "QIB = institution that owns/invests min $100,000,000 in securities (discretionary)",
-        "Allows resale of restricted/private placement securities among QIBs",
-        "No holding period for QIB-to-QIB sales"
+        "QIB = institution owning/investing \u2265 $100 million in securities (discretionary)",
+        "Allows resale of restricted securities among QIBs without SEC registration",
+        "No retail involvement"
       ]
     },
     {
-      "heading": "Private Placement Stock \u2014 Synonyms",
+      "heading": "Rule 147 \u2014 Intrastate Offering",
       "type": "bullets",
       "items": [
-        "Restricted stock (6-month holding period)",
-        "Unregistered stock (no SEC registration)",
-        "Letter stock (investment letter signed)",
-        "Legend stock (legend on certificate)"
+        "Issuer HQ in state + ALL purchasers are state residents",
+        "Issuer must meet ONE of the 80% tests: 80% income IN-state / 80% assets IN-state / 80% of proceeds used IN-state / majority of employees in state",
+        "Underwriter (if any) must be based in the state",
+        "Resale to non-residents prohibited for 6 MONTHS after purchase"
       ]
     },
     {
-      "heading": "Key Numbers to Memorize",
+      "heading": "Private Placement Stock \u2014 Synonyms (all mean same thing)",
+      "type": "bullets",
+      "items": [
+        "Restricted stock (6-month holding under Rule 144)",
+        "Unregistered stock",
+        "Letter stock (investor signs investment letter)",
+        "Legend stock (legend on certificate restricts transfer)",
+        "Form 144 for affiliate resales \u2014 filed ELECTRONICALLY on EDGAR (paper no longer permitted as of 4/13/2023)"
+      ]
+    },
+    {
+      "heading": "Disclosure Documents by Offering Type",
+      "type": "table",
+      "items": [
+        {
+          "Offering": "Registered public offering",
+          "Document": "Prospectus"
+        },
+        {
+          "Offering": "Municipal securities",
+          "Document": "Official Statement"
+        },
+        {
+          "Offering": "Reg A / Reg D / other exempt",
+          "Document": "Offering Circular (a.k.a. Notice of Sale)"
+        }
+      ]
+    },
+    {
+      "heading": "Quick Number Recall",
       "type": "formula",
       "items": [
-        "Cooling-off period = 20 calendar days minimum",
-        "Commercial paper exempt if \u2264 270 days",
-        "Reg A Tier 1 = $20M / Tier 2 = $75M (12 months)",
-        "Reg D non-accredited cap = 35 investors",
-        "Accredited: $200K / $300K / $1M net worth (ex-home)",
-        "QIB = $100M in securities",
-        "Rule 147 = 80% rule + 6-month resale restriction"
+        "Commercial paper exemption: \u2264 270 days",
+        "Reg A Tier 1: $20M | Tier 2: $75M (per 12 mo)",
+        "Reg D 506(b): max 35 non-accredited",
+        "QIB minimum: $100M in securities",
+        "Accredited income: $200K / $300K joint | net worth $1M ex-home",
+        "Rule 147 resale restriction: 6 months",
+        "Rule 144 restricted stock holding period: 6 months"
       ]
     }
   ],
   "common_traps": [
-    "Bank securities are exempt BUT bank HOLDING COMPANY securities are NOT exempt",
-    "Fixed annuities = exempt; VARIABLE annuities/VUL = MUST register (separate account = security)",
-    "Net worth for accredited EXCLUDES primary residence \u2014 don't include the house",
-    "Reg D 506(b) allows up to 35 non-accredited investors BUT NO general solicitation; 506(c) allows advertising but ALL buyers must be accredited & verified",
-    "Commercial paper exempt only if maturity \u2264 270 days \u2014 271+ days requires registration",
-    "Rule 147 resale restriction = 6 months to nonresidents (not 12); all purchasers must be residents (100%, not 80%)"
+    "BANK securities are exempt, but BANK HOLDING COMPANY securities are NOT exempt.",
+    "FIXED annuities/insurance are exempt; VARIABLE annuities/VUL are SECURITIES and must be registered.",
+    "Primary residence equity is EXCLUDED from the $1M net-worth test (a common distractor includes it).",
+    "Reg D 506(b) = NO advertising; 506(c) = advertising OK but ALL buyers must be accredited AND verified.",
+    "Rule 147 = intrastate only; Rule 144A = resales to QIBs only \u2014 don't confuse the two '14x' rules.",
+    "Commercial paper is exempt only if maturity \u2264 270 days \u2014 longer maturities must register."
   ],
   "tokens": {
-    "input": 20499,
-    "output": 2241
+    "input": 21603,
+    "output": 2326
   },
-  "cost_usd": 0.4756
+  "cost_usd": 0.4985
 }

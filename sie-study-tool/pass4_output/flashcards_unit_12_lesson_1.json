@@ -6,7 +6,7 @@
     {
       "type": "qa",
       "front": "What form does a member firm file with FINRA to register an associated person, and when does registration become effective?",
-      "back": "Form U4 is filed by the member firm. Registration is not effective until the applicant passes the required qualification exam(s).",
+      "back": "The member firm files Form U4. Registration is not effective until the candidate passes the required qualification exam(s).",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -14,8 +14,8 @@
     },
     {
       "type": "qa",
-      "front": "How long must a candidate wait to retake a failed FINRA qualification exam, and what happens after three consecutive failures?",
-      "back": "30 days must elapse between attempts. After three consecutive failures, the candidate must wait 6 months (180 days) before the fourth attempt.",
+      "front": "If a candidate fails a qualification exam, how long must they wait before retesting? What if they fail three consecutive times?",
+      "back": "30 days must elapse before a retest. After three consecutive failures, the candidate must wait 6 months (180 days) before another attempt.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -23,8 +23,8 @@
     },
     {
       "type": "qa",
-      "front": "What information is required on Form U4?",
-      "back": "Name, address, and aliases; 5-year residency history; 10-year employment history (including full-time education); and disclosure of any charges or convictions related to the investment business. Affirmative answers require detailed explanation on Disclosure Reporting Pages (DRPs).",
+      "front": "What disclosure information is required on Form U4?",
+      "back": "Name, address, and aliases; 5-year residency history; 10-year employment history (including full-time education within that window); and any charges or convictions relating to the investment business. Affirmative answers require detailed explanation on Disclosure Reporting Pages (DRPs).",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -32,8 +32,8 @@
     },
     {
       "type": "qa",
-      "front": "Is marital status or educational background required disclosure on Form U4?",
-      "back": "No. However, full-time education is included within the 10-year employment history section.",
+      "front": "Is marital status, educational background, or U.S. citizenship required on Form U4?",
+      "back": "No. None are required. However, full-time education must be included within the 10-year employment history. The only U4 requirements are sponsorship by a member BD and complete, truthful disclosure.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -41,8 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "Within how many days must amendments to Form U4 be filed in the CRD for standard events vs. statutory disqualification events?",
-      "back": "Standard events (address change, new charges, etc.): within 30 days. Statutory disqualification events: within 10 business days.",
+      "front": "Once a Form U4 is filed requesting an exam, how long is the testing window?",
+      "back": "120 days. A new U4 is not required if the window lapses, but a fee must be paid to reopen the window.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -50,8 +50,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the two key requirements for filing Form U4?",
-      "back": "(1) Sponsorship by a FINRA member broker-dealer, and (2) complete and truthful disclosure on all required forms.",
+      "front": "Within how many days must a Form U4 amendment be filed for (a) standard changes and (b) events involving statutory disqualification?",
+      "back": "(a) Standard changes \u2014 within 30 days. (b) Statutory disqualification \u2014 within 10 business days.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -60,7 +60,7 @@
     {
       "type": "qa",
       "front": "What is the consequence of a willful misstatement on Form U4?",
-      "back": "It can result in being permanently barred from the securities industry.",
+      "back": "It can result in being barred from the industry for life.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -68,8 +68,8 @@
     },
     {
       "type": "qa",
-      "front": "Who at a registered broker-dealer must be fingerprinted?",
-      "back": "All directors, officers, partners, and any associated persons involved in sales or who handle cash, customer securities, or related books and records. Fingerprints are submitted to the U.S. Attorney General (Justice Department).",
+      "front": "Before submitting a U4 to register an associated person, what must the member firm do?",
+      "back": "The firm must ascertain (investigate) the applicant's business reputation, character, education, qualifications, and experience, and certify that the credentials are in order.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -77,8 +77,17 @@
     },
     {
       "type": "qa",
-      "front": "Which broker-dealer employees are exempt from the fingerprinting requirement?",
-      "back": "Persons selling only mutual funds, variable annuities, or DPPs, and clerical employees who: (1) are not involved in securities sales, (2) do not handle or have access to cash, securities, or books/records of original entry relating to money and securities, and (3) do not supervise others engaged in those activities.",
+      "front": "Who must be fingerprinted at a registered broker-dealer?",
+      "back": "Most employees involved in sales, those who handle cash or customer securities, and all directors, officers, and partners. Fingerprint cards are submitted to the U.S. Attorney General (Justice Department).",
+      "lo": "12.a",
+      "unit": 12,
+      "lesson": 1,
+      "lesson_title": "ASSOCIATING WITH AND LEAVING A MEMBER FIRM"
+    },
+    {
+      "type": "qa",
+      "front": "Which broker-dealer employees are exempt from fingerprinting?",
+      "back": "Clerical/ministerial persons who: are not involved in securities sales, do not handle or have access to cash, securities, or related books and records, and do not supervise others engaged in those activities. Reps selling only mutual funds, variable annuities, or DPPs are also exempt.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -86,8 +95,8 @@
     },
     {
       "type": "scenario",
-      "front": "A receptionist at a member firm handles incoming mail, which may include customer checks. Must she be fingerprinted?",
-      "back": "Yes. Because she handles mail that may contain cash or securities, she has access to customer funds/securities and must be fingerprinted. A receptionist who does not handle mail would not need to be fingerprinted.",
+      "front": "A receptionist at a member firm sorts and distributes incoming mail, which may contain customer checks. Must she be fingerprinted?",
+      "back": "Yes. Although clerical, her role gives her access to cash/securities, so fingerprinting is required. A receptionist with no access to mail or funds would be exempt.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -95,8 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "When must a member firm file Form U5 after an associated person's termination, and who else must receive a copy?",
-      "back": "Within 30 days of the termination date. A copy must also be provided to the former employee within the same 30-day window. Late filing results in a fee.",
+      "front": "When a registered person is terminated, within how long must the firm file Form U5, and what else must it do?",
+      "back": "Within 30 days of the termination date. The firm must also deliver a copy of Form U5 to the former employee within that same 30-day window. Late filing results in a late-filing fee.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -105,7 +114,7 @@
     {
       "type": "qa",
       "front": "What are the five reasons for termination listed on Form U5?",
-      "back": "(1) Discharged, (2) Permitted to resign, (3) Deceased, (4) Voluntary, and (5) Other.",
+      "back": "Discharged, Permitted to Resign, Deceased, Voluntary, and Other.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -114,7 +123,7 @@
     {
       "type": "qa",
       "front": "Which Form U5 termination reasons require a detailed explanation?",
-      "back": "Discharged, Permitted to resign, and Other. Voluntary and Deceased do not require additional explanation.",
+      "back": "Discharged, Permitted to Resign, and Other. Voluntary and Deceased do not require explanation.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -123,7 +132,7 @@
     {
       "type": "definition",
       "front": "Partial termination (Form U5)",
-      "back": "A filing used when a registered person ends some, but not all, of his/her registrations (e.g., a principal terminating principal registration while remaining a representative).",
+      "back": "A Form U5 filing used when an associated person ends some, but not all, of their registrations (e.g., a principal stepping down to act only as a representative).",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -131,8 +140,8 @@
     },
     {
       "type": "qa",
-      "front": "For how long does FINRA retain regulatory jurisdiction over a person after a full Form U5 termination is filed?",
-      "back": "Two years. During this period, FINRA can still require the former registrant to provide information and answer questions.",
+      "front": "How long does FINRA retain jurisdiction over a terminated registered person, and what is the requalification rule?",
+      "back": "FINRA retains jurisdiction for 2 years after termination. Within those 2 years, the person may re-affiliate with a member firm without retaking qualification exams. After 2 years, qualification exams must be retaken.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -140,8 +149,8 @@
     },
     {
       "type": "qa",
-      "front": "How long does a terminated representative have to re-associate with a member firm without retaking qualification exams?",
-      "back": "Two years from the date of termination. After two years, the qualification exams (top-off) must be retaken.",
+      "front": "How long after passing the SIE does a candidate have to pass a top-off (representative) exam without retaking the SIE? What about re-affiliating after termination?",
+      "back": "4 years in both cases. After passing the SIE, a person has 4 years to pass a top-off exam; and after terminating from a member firm, they have 4 years to re-affiliate before having to retake the SIE.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -149,8 +158,8 @@
     },
     {
       "type": "qa",
-      "front": "How long is an SIE exam pass valid before a top-off must be completed, and how long after terminating association can a person re-affiliate without retaking the SIE?",
-      "back": "The SIE remains valid for four years to take a top-off and associate with a firm. After termination, a person has four years to re-affiliate before being required to retake the SIE.",
+      "front": "How does military service affect a registered person's status with FINRA?",
+      "back": "A registered person leaving for active military duty is placed in special inactive status. The status continues until 90 days after discharge, and the 2-year re-affiliation clock does not begin until then \u2014 allowing extended service without requalification.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -158,8 +167,8 @@
     },
     {
       "type": "qa",
-      "front": "How does military service affect a registered representative's registration status?",
-      "back": "The representative is placed in a special inactive status during regular military service, continuing until 90 days after discharge. The two-year re-affiliation window begins at the end of that period \u2014 no retesting required to return.",
+      "front": "Can a terminated registered representative continue to receive commissions from their former firm?",
+      "back": "Only under a pre-existing contract entered into before termination, typically for retirees (and may extend to heirs). Payments may only relate to existing business \u2014 no commissions on new business.",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -167,17 +176,8 @@
     },
     {
       "type": "qa",
-      "front": "Can a terminated representative continue to receive commissions from a former member firm?",
-      "back": "Yes, if a pre-existing contract provides for continuing commissions (commonly for retirees, and payable to heirs). Payments are only for existing business relationships, not new business.",
-      "lo": "12.a",
-      "unit": 12,
-      "lesson": 1,
-      "lesson_title": "ASSOCIATING WITH AND LEAVING A MEMBER FIRM"
-    },
-    {
-      "type": "qa",
-      "front": "Name events that result in statutory disqualification from FINRA registration.",
-      "back": "Expulsion or suspension from an SRO or foreign equivalent; SEC or foreign financial regulator orders denying, suspending, revoking registration, or barring association with a BD; being found a cause of another firm or person's expulsion/suspension; willful misstatements on a registration application; a felony (domestic or foreign) or securities/money-related misdemeanor conviction within the past 10 years; or court injunctions barring securities-industry activity.",
+      "front": "List events that result in statutory disqualification from FINRA registration.",
+      "back": "Expulsion/suspension from an SRO or foreign equivalent; SEC or foreign regulator order denying, suspending, revoking registration, or barring association with a BD; being found a cause of another firm/person's suspension or expulsion; willful misstatements on a registration application; felony conviction (domestic or foreign) or a securities/money-related misdemeanor within the past 10 years; and certain court injunctions barring securities-industry activity.",
       "lo": "12.b",
       "unit": 12,
       "lesson": 1,
@@ -185,8 +185,8 @@
     },
     {
       "type": "scenario",
-      "front": "An applicant for registration discloses a felony conviction from 6 years ago for operating a Ponzi scheme. Is he eligible to register?",
-      "back": "No. A felony conviction involving money or fraud within the past 10 years results in statutory disqualification.",
+      "front": "An applicant for registration discloses a felony conviction 7 years ago for operating a Ponzi scheme. Is he statutorily disqualified?",
+      "back": "Yes. A felony conviction within the past 10 years \u2014 particularly one involving money and fraud \u2014 is a statutory disqualification.",
       "lo": "12.b",
       "unit": 12,
       "lesson": 1,
@@ -194,8 +194,8 @@
     },
     {
       "type": "qa",
-      "front": "Does a personal bankruptcy or unsatisfied lien cause statutory disqualification?",
-      "back": "No, a bankruptcy or unsatisfied lien alone does not disqualify an individual \u2014 but failure to disclose it on Form U4 would be a disqualifying event.",
+      "front": "Does a personal bankruptcy or unsatisfied lien result in statutory disqualification?",
+      "back": "No. A bankruptcy or unsatisfied lien alone does not disqualify a person. However, failing to disclose the facts on Form U4 would be disqualifying.",
       "lo": "12.b",
       "unit": 12,
       "lesson": 1,
@@ -204,7 +204,7 @@
     {
       "type": "definition",
       "front": "BrokerCheck",
-      "back": "FINRA's free public tool, maintained through the CRD, that provides disciplinary history and registration information on currently and formerly registered persons. A link to BrokerCheck must appear on all FINRA member firm websites.",
+      "back": "FINRA's free public tool, accessed through the CRD, that provides disciplinary and registration history of current and former registered persons. A link to BrokerCheck is required on all FINRA member firm websites.",
       "lo": "12.b",
       "unit": 12,
       "lesson": 1,
@@ -212,8 +212,8 @@
     },
     {
       "type": "qa",
-      "front": "Before submitting a U4 application, what must a member firm do regarding the applicant?",
-      "back": "The firm must investigate and verify the applicant's business reputation, character, education, qualifications, and experience (background check), and certify that the candidate's credentials are in order.",
+      "front": "Under the Maintaining Qualifications Program (MQP), how long can a terminated registered person extend the standard 2-year requalification window?",
+      "back": "Up to 5 years, by electing into the MQP through FinPro and completing annual continuing education. (Without MQP, the standard window remains 2 years.)",
       "lo": "12.a",
       "unit": 12,
       "lesson": 1,
@@ -221,8 +221,8 @@
     }
   ],
   "tokens": {
-    "input": 4681,
-    "output": 2503
+    "input": 6322,
+    "output": 2965
   },
-  "cost_usd": 0.2579
+  "cost_usd": 0.3172
 }

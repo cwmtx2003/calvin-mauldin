@@ -4,41 +4,40 @@
   "sections": [
     {
       "title": "Lesson 9.1: The Business Cycle",
-      "overview": "The business cycle describes the regular fluctuation of the economy through four phases: expansion, peak, contraction, and trough. Understanding which phase the economy occupies \u2014 and the economic indicators, industry sensitivities, and corporate financial statements that signal it \u2014 is essential for making suitable recommendations and analyzing securities.",
+      "overview": "The business cycle describes the regular fluctuation of the economy through four phases: expansion, peak, contraction, and trough. Understanding these phases, the indicators used to measure them, and how industries respond to them is foundational to fundamental analysis and making suitable recommendations. This lesson also introduces the balance sheet and income statement as tools to evaluate corporate financial health.",
       "key_concepts": [
-        "Four phases of the business cycle: Expansion \u2192 Peak \u2192 Contraction \u2192 Trough (some economists split expansion into Recovery + Expansion for a five-phase model).",
-        "Expansion: rising consumer demand, increasing industrial production, rising stock prices, rising property values, increasing GDP.",
-        "Peak (prosperity): very low unemployment, slowdown of inflation, slowing GDP growth, steady consumer demand.",
-        "Contraction: rising bankruptcies/bond defaults, higher consumer debt, falling stock prices, rising inventories, decreasing GDP.",
+        "Four phases of the business cycle: Expansion \u2192 Peak \u2192 Contraction \u2192 Trough \u2192 (back to Expansion).",
+        "Expansion: rising consumer demand, rising industrial production, rising stock prices, rising property values, increasing GDP.",
+        "Peak (prosperity): very low unemployment, slowdown in inflation growth, slowing GDP growth, steady consumer demand. Inflation pressure is typically highest near/during expansion as productive capacity is fully utilized.",
+        "Contraction: rising bankruptcies and bond defaults, higher consumer debt, falling stock prices, rising inventories, decreasing GDP.",
         "Trough: high unemployment, flat GDP, low but no longer decreasing consumer demand.",
-        "Recession = contraction lasting 6 months (2 quarters) or longer.",
-        "Depression = contraction lasting 18 months or longer.",
-        "Inflation is most likely to appear during expansion when productive capacity is fully utilized; deflation tends to appear during contractions.",
-        "GDP: total goods/services produced WITHIN the U.S. borders (regardless of who produces them); released quarterly by Commerce Department.",
-        "GNP: based on production by U.S. citizens/entities, wherever located in the world.",
-        "CPI: most prominent measure of price change; used to adjust nominal GDP into real (constant dollar) GDP.",
-        "Leading indicators (change BEFORE economy): M2 money supply, building permits/housing starts, initial unemployment claims, avg manufacturing workweek, new orders for consumer goods, machine tool orders, changes in durable goods inventories, sensitive materials prices, S&P 500, business/consumer borrowing changes.",
-        "Coincident indicators (change WITH economy): hours worked, employment levels, nonagricultural employment, personal income, industrial production, manufacturing/trade sales, GDP.",
-        "Lagging indicators (change AFTER economy): corporate profits, average duration of unemployment, labor cost per unit of output, inventory-to-sales ratio, commercial/industrial loans outstanding, consumer installment credit to personal income ratio.",
-        "Price movement terms: Inflation (general price rise), Deflation (general price decline, in recessions), Stagnation (slow growth + high unemployment), Hyperinflation (extreme/accelerating inflation), Stagflation (inflation + high unemployment simultaneously).",
-        "Cyclical industries: sensitive to business cycle; produce durable goods/raw materials (steel, autos, heavy equipment, capital goods).",
-        "Noncyclical/Defensive industries: nondurable consumables \u2014 food, utilities, clothing, drugs, tobacco, liquor.",
-        "Countercyclical industries: rise when economy declines \u2014 gold mining and precious metals.",
-        "Growth industries: outperform regardless of cycle (until they mature).",
-        "Special situation: nonrecurring circumstance affecting a specific company (takeover, cultural shift, etc.).",
-        "Balance Sheet: snapshot of financial position at a point in time \u2014 Assets, Liabilities, Net Worth (Equity).",
-        "Current Assets: cash, securities, accounts receivable, inventory.",
-        "Fixed Assets: real estate, furniture, equipment (hard to liquidate).",
-        "Other Assets/Intangibles: goodwill, trademarks, copyrights.",
-        "Current Liabilities: due within 12 months (accrued wages/taxes, accounts payable, interest).",
-        "Long-Term Liabilities: notes and bonds (principal due beyond 12 months).",
-        "Net Worth components: preferred stock, common stock (at par), capital in excess of par, retained earnings.",
-        "Income Statement (P&L): revenue vs. expenses over a period; measures profitability.",
-        "Highly leveraged = debt ratio above industry average."
+        "Recession: contraction lasting six months (two consecutive quarters of declining GDP) or longer.",
+        "Depression: contraction lasting 18 months or longer.",
+        "Some economists split expansion into 'recovery' (trough back to prior peak) and 'expansion' (growth beyond prior peak).",
+        "GDP: total value of all goods/services produced within U.S. borders (regardless of nationality of producer); released quarterly by Commerce Department.",
+        "GNP: total output of U.S. citizens/entities wherever produced (domestic or abroad).",
+        "Real GDP = GDP adjusted for inflation using CPI (constant-dollar measure).",
+        "CPI: Consumer Price Index \u2014 primary measure of inflation/deflation, computed monthly on a basket of consumer prices.",
+        "Leading indicators (predict future direction): M2 money supply, building permits/housing starts, initial unemployment claims, average manufacturing workweek, new orders for consumer goods, machine tool orders, changes in inventories of durable goods, sensitive materials prices, S&P 500 stock prices, changes in business/consumer borrowing.",
+        "Coincident indicators (move with economy): hours worked, employment levels, nonagricultural employment, personal income, industrial production, manufacturing and trade sales, GDP.",
+        "Lagging indicators (confirm trends): corporate profits, average duration of unemployment, labor cost per unit of output, inventory-to-sales ratio, commercial/industrial loans outstanding, consumer installment credit-to-personal-income ratio.",
+        "Price movement terminology: Inflation (general rise), Deflation (general decline, often during recession), Stagnation (slow growth + high unemployment), Hyperinflation (extreme accelerating inflation), Stagflation (inflation + high unemployment simultaneously).",
+        "Cyclical industries: sensitive to business cycle; produce durable/capital goods and raw materials (steel, autos, heavy equipment, washers/dryers).",
+        "Noncyclical (defensive) industries: relatively unaffected by cycle; produce nondurable consumables (food, utilities, clothing, drugs/pharma, tobacco, liquor).",
+        "Countercyclical industries: tend to rise when economy falls; classic example is gold/precious metals mining and refining.",
+        "Growth industries: appear disconnected from cycle, grow regardless of economy (until they mature).",
+        "Special situations: company- or industry-specific events (hostile takeover, technological/cultural shift) creating unusual profit potential or downside risk.",
+        "Balance Sheet: snapshot of financial position at a point in time; Assets = Liabilities + Net Worth.",
+        "Asset categories: Current assets (cash, securities, receivables, inventory), Fixed assets (real estate, equipment, furniture), Other/Intangible (goodwill, trademarks, copyrights).",
+        "Liability categories: Current liabilities (due within 12 months \u2014 accounts payable, accrued wages, accrued taxes, current interest), Long-term liabilities (notes, bonds).",
+        "Net Worth components: Preferred stock, Common stock (at par), Capital in excess of par (paid-in surplus), Retained earnings.",
+        "Income Statement (P&L): summarizes revenues and expenses over a fiscal period; measures profitability.",
+        "Income Statement flow: Net Sales \u2212 COGS \u2212 Operating Costs (incl. depreciation) = Operating Profit; + Nonoperating Income = EBIT; \u2212 Interest = Pretax Income; \u2212 Taxes = Net Income; \u2212 Preferred Dividends = Earnings Available to Common; \u2212 Common Dividends = Retained Earnings."
       ],
       "rules": [
-        "GDP is released quarterly by the U.S. Commerce Department.",
-        "CPI is computed monthly and is used to adjust nominal GDP to real (constant dollar) GDP."
+        "GDP figures are released quarterly by the U.S. Commerce Department.",
+        "CPI is computed monthly and is used to convert nominal GDP to real GDP.",
+        "Recession threshold (exam definition): two consecutive quarters (six months) of declining GDP."
       ],
       "formulas": [
         "Assets \u2212 Liabilities = Net Worth",
@@ -47,100 +46,109 @@
         "Current Ratio = Current Assets / Current Liabilities",
         "Acid-Test (Quick) Ratio = (Current Assets \u2212 Inventory) / Current Liabilities",
         "Debt Ratio = Long-Term Debt / (Long-Term Debt + Net Worth)",
-        "EPS = Earnings Available to Common / Outstanding Common Shares",
-        "P/E Ratio = CMV / EPS",
-        "Income Statement Flow: Net Sales \u2212 COGS \u2212 Operating Costs = Operating Profit; + Nonoperating Income = EBIT; \u2212 Interest = Pretax Income; \u2212 Taxes = Net Income; \u2212 Preferred Dividends = Earnings Available to Common; \u2212 Common Dividends = Retained Earnings"
+        "EPS = Earnings Available to Common / Common Shares Outstanding",
+        "P/E Ratio = Current Market Value (Price) / EPS",
+        "Real GDP = Nominal GDP adjusted by CPI"
       ],
       "mnemonics": [
-        "Cycle order: 'Every Peak Comes Tumbling' = Expansion, Peak, Contraction, Trough.",
-        "Defensive industries \u2014 'FUD CTL' (Food, Utilities, Drugs, Clothing, Tobacco, Liquor) \u2014 things people use up and consume.",
-        "Leading indicator hint: stock market (S&P 500) LEADS the economy; GDP is COINCIDENT; corporate profits LAG.",
-        "Recession = 2 quarters (6 mo); Depression = 18 months."
+        "Cycle order: 'Every Person Can Trough' \u2014 Expansion, Peak, Contraction, Trough.",
+        "Defensive = things you consume DAILY: Food, Drugs, Tobacco, Liquor, Utilities, Clothing (FUDD-LC).",
+        "Cyclical = BIG, HEAVY, DURABLE (steel, autos, capital goods).",
+        "Counter = GOLD goes UP when economy goes DOWN.",
+        "Leading indicators 'lead' \u2014 think Stock prices (S&P 500), housing permits, M2.",
+        "Lagging = 'Last' \u2014 corporate profits, duration of unemployment.",
+        "Recession = 'Six' months down; Depression = 'Eighteen' months."
       ]
     },
     {
-      "title": "Lesson 9.2: Economic Theories",
-      "overview": "Fiscal policy \u2014 set by the President and Congress \u2014 uses taxation and government spending to influence the economy. The two dominant fiscal theories are Keynesian (demand-side) and supply-side. Exchange rates and the balance of payments tie U.S. economic activity to the global market.",
+      "title": "Lesson 9.2: Economic Theories and International Trade",
+      "overview": "Fiscal policy is set by Congress and the President through taxation and spending decisions; monetary policy is set by the Federal Reserve. Two competing fiscal theories\u2014Keynesian (demand-side) and supply-side\u2014offer different prescriptions for government involvement. International trade is shaped by exchange rates, which directly affect the balance of trade and balance of payments.",
       "key_concepts": [
-        "Fiscal policy = government taxation and spending decisions; set by Congress and the President.",
-        "Fiscal policy is slow to implement, so it is not ideal for short-term economic problems.",
-        "Keynesian (Demand-Side) Theory: John Maynard Keynes \u2014 government must actively manage demand through taxes and spending. Demand for goods controls employment and prices.",
-        "To stimulate the economy (Keynesian): lower taxes, increase government spending \u2192 more disposable income \u2192 higher demand.",
-        "To slow the economy (Keynesian): raise taxes, cut spending \u2192 less demand \u2192 controls inflation.",
-        "Supply-Side Theory: government should reduce taxes, spending, and regulation; let market forces decide. Healthy businesses expand, create jobs, and drive sustainable growth.",
-        "Both theories agree: lower taxes stimulate; higher taxes slow.",
-        "They differ on government spending: Demand-side sees it as stimulus; Supply-side sees it as inefficient.",
-        "Exchange rate: relative value of one currency vs. another.",
-        "Weak/declining U.S. dollar: U.S. exports become cheaper abroad (exports rise); imports become more expensive (imports fall); tends to increase inflation in the U.S.",
-        "Strong U.S. dollar: U.S. exports become more expensive abroad (exports fall); imports become cheaper (imports rise); helps keep U.S. inflation in check.",
-        "Balance of Payments: net flow of money in/out of the U.S. (surplus or deficit).",
-        "Balance of Trade: largest component of balance of payments \u2014 exports vs. imports of merchandise.",
-        "Credit items (money flowing INTO U.S.): exports, foreign spending in U.S.",
-        "Debit items (money flowing OUT of U.S.): imports, U.S. investments abroad, U.S. bank loans abroad, U.S. foreign aid.",
-        "Deficit balance: debits exceed credits. Surplus: credits exceed debits.",
-        "High interest rates in foreign countries can pull capital out of the U.S. (deficit)."
+        "Fiscal policy = government taxation and spending decisions (Congress + President).",
+        "Monetary policy = money-supply and interest-rate decisions (Federal Reserve).",
+        "Keynesian (Demand-Side) Theory: John Maynard Keynes; government should actively manage demand through spending and taxation.",
+        "Keynesian logic: Lower taxes/higher government spending \u2192 more disposable income \u2192 more demand \u2192 economic growth. Higher taxes/lower spending \u2192 cools demand \u2192 controls inflation.",
+        "Supply-Side Theory: government should reduce taxes and regulatory burden on businesses; let market forces determine prices and output. Associated with Arthur Laffer.",
+        "Monetarist Theory: Milton Friedman; controlling the money supply is the key to economic stability \u2014 foundation of Federal Reserve policy.",
+        "Both demand-side and supply-side agree that LOWER TAXES encourage economic activity; they differ on the role/size of government spending.",
+        "Exchange Rate: relative value of one currency vs. another.",
+        "Strong U.S. dollar \u2192 U.S. exports become more expensive abroad (exports fall); foreign imports become cheaper in U.S. (imports rise); helps keep U.S. inflation in check.",
+        "Weak U.S. dollar \u2192 U.S. exports cheaper abroad (exports rise); imports more expensive in U.S. (imports fall); tends to increase U.S. inflation.",
+        "Balance of Payments: total flow of money between U.S. and foreign nations; surplus = net inflow, deficit = net outflow.",
+        "Balance of Trade: largest component of balance of payments \u2014 exports vs. imports of goods.",
+        "Credit items (money flowing IN): U.S. exports, foreign spending in the U.S., foreign investment in U.S.",
+        "Debit items (money flowing OUT): U.S. imports, U.S. investments abroad, U.S. bank loans abroad, U.S. foreign aid.",
+        "High foreign interest rates pull capital OUT of the U.S. (deficit pressure); high U.S. rates attract foreign capital IN (surplus pressure)."
       ],
       "rules": [
-        "Fiscal policy is determined by Congress and the President (not the Federal Reserve, which controls monetary policy)."
+        "Fiscal policy authority: Congress and the President \u2014 NOT the Federal Reserve.",
+        "Monetary policy authority: Federal Reserve Board \u2014 NOT Congress."
       ],
       "formulas": [
-        "Balance of Payments = Credit Items (exports + foreign spending in U.S.) \u2212 Debit Items (imports + U.S. investments abroad + U.S. loans abroad + U.S. foreign aid)"
+        "Balance of Payments = Credits (money in) \u2212 Debits (money out)",
+        "Balance of Trade = Exports \u2212 Imports"
       ],
       "mnemonics": [
-        "Keynes = 'K' for 'Kick demand up' via government spending/tax cuts.",
-        "Weak dollar = strong eXports (both have 'X'-like opposites). Strong dollar = strong iMports.",
-        "Fiscal = 'F'iscal = 'F'eds in Washington (Congress/President). Monetary = 'M'onetary = 'M'eeting at the Fed."
+        "Keynes = 'K' for Kongress/spending \u2014 government Knows best.",
+        "Supply-side = 'Supply businesses with lower taxes' (Laffer).",
+        "Monetarist = Money supply (Friedman) \u2014 basis of Fed action.",
+        "Strong dollar = Strong buying power abroad \u2192 imports IN, exports OUT (weak).",
+        "Weak dollar = Weak buying power abroad \u2192 exports STRONG, imports weak."
       ]
     },
     {
-      "title": "Lesson 9.3: The Federal Reserve",
-      "overview": "The Federal Reserve Board (FRB), established by the Federal Reserve Act of 1913, serves as the central bank of the United States. Its dual mandate is to promote maximum employment and maintain stable prices, which it accomplishes by setting monetary policy and managing the money supply through diagnostic and direct tools.",
+      "title": "Lesson 9.3: The Federal Reserve and Monetary Policy",
+      "overview": "The Federal Reserve Board (FRB), established by the Federal Reserve Act of 1913, is the U.S. central bank. Its dual mandate is to promote maximum employment and stable prices (control inflation). The Fed uses diagnostic tools (money supply measures M1, M2, M3) and active tools (open-market operations, the discount rate, IORB, Regulation T) to manage the money supply. Four key interest rates anchor the cost of money in the U.S. economy.",
       "key_concepts": [
-        "Established by the Federal Reserve Act of 1913 as the central bank of the U.S.",
-        "Structure: 12 regional Federal Reserve Banks plus member national and state banks.",
-        "FRB's dual mandate: (1) promote maximum employment, (2) maintain stable prices (control inflation).",
-        "Milton Friedman is the founder of monetarism, on which much Fed policy is based.",
-        "Diagnostic tools (measure money supply):",
+        "Federal Reserve Act of 1913 created the Federal Reserve System (12 regional Federal Reserve Banks + member national/state banks).",
+        "FRB dual mandate: (1) maximum employment, (2) stable prices / controlled inflation.",
+        "FOMC (Federal Open Market Committee): directs open-market operations; consists of 7 Board Governors + NY Fed President + 4 rotating regional Fed presidents.",
+        "Monetarist Milton Friedman's theories underlie much of Fed policy.",
+        "Diagnostic Tools \u2014 Money Supply Measures:",
         "M1 = currency in circulation + demand deposits (checking accounts) \u2014 most liquid.",
         "M2 = M1 + consumer savings deposits (savings accounts, retail/nonnegotiable CDs, money market funds, overnight repos).",
-        "M3 = M2 + large time deposits (negotiable/jumbo CDs, multiday repos).",
-        "Direct tools of the FRB (from most-used to least-used):",
-        "1) Open-Market Operations \u2014 FOMC buys/sells U.S. government securities. MOST FREQUENTLY USED tool.",
-        "  \u2022 Fed BUYS securities \u2192 money INTO economy \u2192 money supply UP \u2192 interest rates DOWN \u2192 economy expands.",
-        "  \u2022 Fed SELLS securities \u2192 money OUT of economy \u2192 money supply DOWN \u2192 interest rates UP \u2192 economy contracts.",
-        "2) Discount Rate \u2014 rate Fed charges member banks for short-term loans (often via repos). Raising = tightens; Lowering = eases. This is the rate the news refers to when the 'Fed raises/lowers interest rates.'",
-        "3) Reserve Requirement \u2014 amount banks must keep on deposit at the Fed. Lowering frees cash for loans (expansion); raising tightens. RARELY changed due to dramatic systemwide impact.",
-        "4) Regulation T \u2014 sets minimum customer deposit when buying securities on credit (currently 50%, unchanged since 1974).",
-        "Four prominent interest rates:",
-        "Federal Funds Rate: rate commercial money-center banks charge EACH OTHER for overnight loans of $1 million+. Most volatile short-term rate. Set by the banks themselves.",
-        "Prime Rate: rate large commercial banks charge their MOST CREDITWORTHY corporate customers for unsecured loans. Set by each bank.",
-        "Broker Call Loan Rate (call money rate): rate banks charge broker-dealers on loans used to fund customer margin accounts. Callable on 24-hour notice. Usually ~1% above other short-term rates.",
-        "Discount Rate: rate the FRB charges member banks. The ONLY one of the four set by the federal government (the Fed).",
-        "Easy Money Policy (stimulate): Buy securities, lower discount rate, lower reserve requirements.",
-        "Tight Money Policy (slow inflation): Sell securities, raise discount rate, raise reserve requirements."
+        "M3 = M2 + large time deposits (jumbo/negotiable CDs, multi-day repos).",
+        "M1 \u2282 M2 \u2282 M3 \u2014 moving funds within the hierarchy does not change the larger measure.",
+        "Active Tools of the Fed:",
+        "(1) Open-Market Operations (most frequently used): FOMC buys/sells U.S. Treasury securities. BUY = money INTO economy, supply UP, rates DOWN, economy expands. SELL = money OUT of economy, supply DOWN, rates UP, economy contracts.",
+        "(2) Discount Rate: rate the Fed charges member banks for short-term loans (often via repos). Lower rate = ease; Higher rate = tighten. It is the only one of the four key rates set by a government body.",
+        "(3) Reserve Requirement: historically, the percentage of deposits banks must hold in reserve. **IMPORTANT UPDATE: The Fed reduced the reserve requirement ratio to 0% effective March 26, 2020, and it remains at 0%.** Reserve requirements are no longer an active policy tool.",
+        "(4) Interest on Reserve Balances (IORB): the Fed pays interest on bank reserves held at the Fed. IORB is now the principal policy rate tool, functioning as the floor of the federal funds target range corridor (replaced the former IOER).",
+        "(5) Regulation T: sets the initial margin deposit (currently 50% since 1974); rarely changed in practice.",
+        "Four Prominent Interest Rates:",
+        "Federal Funds Rate: rate commercial money-center banks charge each other for overnight loans of $1 million+. Most volatile; set by the market (not the Fed directly, though Fed targets a range).",
+        "Prime Rate: rate large commercial banks charge their most creditworthy corporate customers for unsecured loans. Set by each bank.",
+        "Broker Call Loan Rate (Call Money Rate): rate banks charge broker-dealers on loans used to finance customer margin accounts. Typically ~1% above other short-term rates. Callable on 24-hour notice. Set by the lending bank.",
+        "Discount Rate: rate Fed charges member banks. Set by the Federal Reserve (the only one of the four set by the government).",
+        "Easy Money Policy (stimulate economy): BUY securities, LOWER discount rate, (historically) lower reserve requirement.",
+        "Tight Money Policy (cool economy/fight inflation): SELL securities, RAISE discount rate, (historically) raise reserve requirement."
       ],
       "rules": [
-        "Federal Reserve Act of 1913 established the Federal Reserve System.",
-        "Regulation T initial margin deposit is 50% of purchase price (set by the FRB).",
-        "FOMC (Federal Open Market Committee) directs open-market operations."
+        "Federal Reserve Act of 1913 \u2014 establishes the Federal Reserve System.",
+        "Regulation T (FRB) \u2014 current initial margin requirement: 50% of purchase price (unchanged since 1974).",
+        "Reserve requirement ratio = 0% effective March 26, 2020 (Federal Reserve action; still 0% as of 2026). Reserve requirements should NOT be cited as an active modern Fed tool.",
+        "Open-market operations are the Fed's most frequently used active tool."
       ],
       "formulas": [
-        "M1 = Currency + Demand Deposits",
-        "M2 = M1 + Consumer Savings Deposits (savings, retail CDs, MMFs, overnight repos)",
-        "M3 = M2 + Large Time Deposits (jumbo negotiable CDs, multiday repos)"
+        "Easy Money: Fed BUYS securities \u2192 Money Supply \u2191 \u2192 Interest Rates \u2193 \u2192 Economy \u2191",
+        "Tight Money: Fed SELLS securities \u2192 Money Supply \u2193 \u2192 Interest Rates \u2191 \u2192 Economy \u2193",
+        "M1 + Consumer Savings Deposits = M2",
+        "M2 + Large Time Deposits (jumbo CDs, multi-day repos) = M3"
       ],
       "mnemonics": [
-        "Money supply: M1 = Most liquid (1 step from spending); M3 = More restricted.",
-        "Fed BUYS = Boosts economy. Fed SELLS = Slows economy.",
-        "Discount rate is the only Fed-set rate among the 'big four' \u2014 D for 'Decided by the Fed.'",
-        "Easy money tools \u2014 'Buy Low Low': Buy securities, Lower discount rate, Lower reserve requirements.",
-        "Tight money tools \u2014 'Sell High High': Sell securities, raise discount rate (High), raise reserves (High)."
+        "'BLEED' for Easy Money: BUY securities, LOWER discount rate, EASE conditions, Economy Expands, Demand grows.",
+        "'STRIP' for Tight Money: SELL securities, Tighten, Raise rates, Inflation Prevented.",
+        "M1 = Money you can spend Immediately (cash + checking).",
+        "M2 = M1 + Mid-liquidity Money (savings, MMF, retail CDs).",
+        "M3 = M2 + Massive deposits (jumbo CDs).",
+        "Discount rate is the ONLY rate set by the GOVERNMENT \u2014 the other three are set by the lender (bank).",
+        "Four rates from most volatile/short to anchor: Fed Funds \u2192 Broker Call \u2192 Prime \u2192 Discount."
       ]
     }
   ],
   "tokens": {
-    "input": 20181,
-    "output": 4779
+    "input": 20966,
+    "output": 5528
   },
-  "cost_usd": 0.6611
+  "cost_usd": 0.7291
 }

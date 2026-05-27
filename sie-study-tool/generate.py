@@ -19,6 +19,7 @@ Cost tracking: every call appends to costs.log with token counts and $ spent.
 Budget cap: hard limit of $32 by default. Pass --budget XX to change.
 """
 import argparse
+import http.client
 import json
 import os
 import re
@@ -101,12 +102,16 @@ def call_opus(api_key: str, system: str, user: str, max_tokens: int = 6000,
                 time.sleep(wait)
                 continue
             raise SystemExit(f"API error {e.code}: {err_body}")
-        except urllib.error.URLError as e:
+        except (urllib.error.URLError, ConnectionError, TimeoutError, OSError,
+                http.client.HTTPException) as e:
+            # Covers connection resets (WinError 10054), timeouts, dropped
+            # responses, and other transient network failures.
             if attempt < max_retries:
-                print(f"  ! Network error: {e}; retrying...", flush=True)
-                time.sleep(5)
+                wait = 5 * (attempt + 1)
+                print(f"  ! Network error: {e}; retrying in {wait}s...", flush=True)
+                time.sleep(wait)
                 continue
-            raise SystemExit(f"Network error: {e}")
+            raise SystemExit(f"Network error after {max_retries} retries: {e}")
 
 
 def calc_cost(input_tokens: int, output_tokens: int) -> float:
@@ -191,6 +196,67 @@ def parse_json_response(text: str, api_key: str = None) -> dict:
     )
 
 
+# ─── Errata (corrections that OVERRIDE the Kaplan 3rd Ed. manual) ───────────
+ERRATA_PATH = Path(__file__).parent / "sie_errata.txt"
+_errata_cache = None
+
+
+def load_errata():
+    """Parse sie_errata.txt into {'global': [...], 'byUnit': {'3': [...]}}.
+    Sections are markdown headers like '## Global' or '## Unit 3'. Mirrors the
+    runtime parser in sie_app.js so offline and runtime grounding agree."""
+    global _errata_cache
+    if _errata_cache is not None:
+        return _errata_cache
+    out = {"global": [], "byUnit": {}}
+    if ERRATA_PATH.exists():
+        cur = None
+        for raw in ERRATA_PATH.read_text(encoding="utf-8").split("\n"):
+            line = raw.rstrip()
+            h = re.match(r"^#{1,6}\s*(.+?)\s*$", line)
+            if h:
+                head = h.group(1).lower()
+                um = re.search(r"unit\s+(\d+)", head)
+                if um:
+                    cur = um.group(1)
+                    out["byUnit"].setdefault(cur, [])
+                elif re.search(r"\b(global|general|all units|all)\b", head):
+                    cur = "global"
+                else:
+                    cur = None
+                continue
+            if re.match(r"^\|?[\s:|-]+\|?$", line) and "-" in line:
+                continue  # skip markdown table separators
+            item = re.sub(r"^\s*\d+\.\s+", "", re.sub(r"^\s*[-*+]\s+", "", line)).strip()
+            if not item:
+                continue
+            if cur == "global":
+                out["global"].append(item)
+            elif cur:
+                out["byUnit"][cur].append(item)
+    _errata_cache = out
+    return out
+
+
+def errata_block(unit_nums) -> str:
+    """Formatted errata block for the given units (plus Global). Empty if none."""
+    e = load_errata()
+    entries = list(e["global"])
+    for u in unit_nums:
+        entries += e["byUnit"].get(str(u), [])
+    if not entries:
+        return ""
+    body = "\n".join("- " + x for x in entries)
+    return (
+        "\n\nERRATA — AUTHORITATIVE CORRECTIONS to the Kaplan 3rd Edition manual. "
+        "The SOURCE MATERIAL above may be outdated or wrong where these entries apply; "
+        "THESE ENTRIES ARE CORRECT AND CURRENT. Where any errata entry conflicts with the "
+        "source, follow the errata — the content you produce MUST reflect the corrected, "
+        "up-to-date information and must never teach or affirm the outdated version:\n"
+        f"{body}"
+    )
+
+
 # ─── Prompt builders ───────────────────────────────────────────────────────
 
 FLASHCARD_SYSTEM = """You are an expert FINRA SIE exam tutor creating high-quality \
@@ -219,7 +285,7 @@ INSTRUCTIONS:
 7. Tag each card with the LO it primarily addresses (e.g. "3.a", "3.b") if identifiable.
 
 SOURCE MATERIAL (Kaplan SIE Manual 3rd Ed):
-{lesson['text']}
+{lesson['text']}{errata_block([lesson['unit']])}
 
 Respond ONLY with valid JSON. No markdown fences, no preamble:
 {{
@@ -270,7 +336,7 @@ LESSONS AVAILABLE:
 {lessons_preview}
 
 FINRA SIE CONTENT OUTLINE (use to ensure coverage breadth):
-{outline_full[:15000]}
+{outline_full[:15000]}{errata_block(range(1, 13))}
 
 Each card MUST be testable on the SIE. Tag with `unit` and `lesson` fields pointing to
 the lesson that covers the underlying concept.
@@ -317,7 +383,7 @@ SOURCE MATERIAL (Kaplan SIE Manual 3rd Ed):
 {lessons_text[:80000]}
 
 RELEVANT OUTLINE SECTION (FINRA, 2024):
-{outline_section[:8000]}
+{outline_section[:8000]}{errata_block([unit_num])}
 
 Respond ONLY with valid JSON:
 {{
@@ -413,7 +479,7 @@ INSTRUCTIONS:
 - Include a "Common Traps" section listing 2-5 things students get wrong on the exam.
 
 SOURCE MATERIAL:
-{relevant_text}
+{relevant_text}{errata_block(sheet['source_units'])}
 
 Respond ONLY with valid JSON:
 {{
@@ -585,6 +651,14 @@ def generate_reference_sheet(api_key: str, sheet: dict, sources: dict,
 # ─── Main ──────────────────────────────────────────────────────────────────
 
 def main():
+    # Windows consoles default to cp1252 and choke on the Unicode glyphs in our
+    # status prints (→, •, ✓). Force UTF-8 so the script runs everywhere.
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
     p = argparse.ArgumentParser(description="SIE Pass 4 content generator")
     p.add_argument("--sources", default="sie_sources.js",
                    help="Path to sie_sources.js (default: ./sie_sources.js)")

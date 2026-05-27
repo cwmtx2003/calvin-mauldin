@@ -6,7 +6,7 @@
     {
       "type": "definition",
       "front": "Fiscal policy",
-      "back": "Government budget decisions and tax policy enacted by the President and Congress, used to influence economic forces such as unemployment and inflation by adjusting overall demand.",
+      "back": "Government budget decisions and tax policy enacted by the president and Congress to influence economic forces such as unemployment and inflation by adjusting overall demand for goods and services.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -15,7 +15,7 @@
     {
       "type": "qa",
       "front": "Who sets fiscal policy in the United States?",
-      "back": "Congress and the President. (The FRB sets monetary policy, not fiscal policy.)",
+      "back": "Congress and the president. (The FRB sets monetary policy \u2014 not fiscal policy.)",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -24,7 +24,7 @@
     {
       "type": "qa",
       "front": "Why is fiscal policy considered inefficient for solving short-term economic problems?",
-      "back": "Because fiscal policy is determined through the political process, it takes significant time for economic conditions and solutions to be identified, debated, and implemented.",
+      "back": "Because it is determined through the political process, it takes time for conditions to be identified and for policy solutions to be enacted and implemented.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -32,8 +32,8 @@
     },
     {
       "type": "definition",
-      "front": "Keynesian (demand-side) theory",
-      "back": "Economic theory developed by John Maynard Keynes holding that active government involvement\u2014through taxation and spending\u2014is vital to managing aggregate demand, employment, and prices.",
+      "front": "Keynesian (demand-side) economic theory",
+      "back": "Theory developed by John Maynard Keynes holding that active government involvement \u2014 through adjusting taxation and spending \u2014 is essential to control aggregate demand, employment, and prices. Insufficient demand causes unemployment; excess demand causes inflation.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -41,17 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "According to Keynesian theory, what causes unemployment and what causes inflation?",
-      "back": "Insufficient demand for goods causes unemployment; excessive demand for goods causes inflation.",
-      "lo": "9.e",
-      "unit": 9,
-      "lesson": 2,
-      "lesson_title": "ECONOMIC THEORIES"
-    },
-    {
-      "type": "qa",
-      "front": "Under Keynesian theory, how would the government stimulate the economy?",
-      "back": "By decreasing taxes (increasing consumers' disposable income) and increasing government spending, both of which boost aggregate demand.",
+      "front": "Under Keynesian theory, what should the government do to stimulate private-sector demand?",
+      "back": "Decrease taxes (increasing consumers' disposable income) and increase government spending.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -60,7 +51,7 @@
     {
       "type": "qa",
       "front": "Under Keynesian theory, how would the government slow down an overheating economy?",
-      "back": "By increasing taxes (removing money from the private sector) and decreasing government spending to reduce aggregate demand.",
+      "back": "Increase taxes (reducing disposable income and demand) and decrease government spending.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -68,8 +59,8 @@
     },
     {
       "type": "definition",
-      "front": "Supply-side theory",
-      "back": "Economic theory advocating reduced taxes, reduced government spending, and reduced regulation. It holds that healthy businesses will expand, hire workers, and create sustainable economic growth.",
+      "front": "Supply-side economic theory",
+      "back": "Theory holding that government should reduce taxes, spending, and regulatory burden so market forces (supply, demand, pricing) determine economic activity. Healthy businesses expand, hire workers, and sustainably grow the economy.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -77,8 +68,8 @@
     },
     {
       "type": "qa",
-      "front": "How do supply-siders view government spending compared to Keynesians?",
-      "back": "Supply-siders see government spending as inefficient and temporary, and they favor holding down government debt. Keynesians see government spending as a key tool to stimulate economic activity.",
+      "front": "How do Keynesian and supply-side theorists differ on government spending?",
+      "back": "Demand-side (Keynesian) views government spending as a useful tool to stimulate economic activity. Supply-side views government spending as inefficient and temporary, and favors holding down government debt.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -86,17 +77,17 @@
     },
     {
       "type": "qa",
-      "front": "On what point do Keynesian and supply-side economists AGREE?",
+      "front": "Where do demand-side and supply-side theories direct economic stimulus?",
+      "back": "Demand-side focuses stimulus on the consumer (boosting purchasing power and demand). Supply-side focuses stimulus on businesses (lower taxes/regulation so they grow, hire, and create sustainable demand).",
+      "lo": "9.e",
+      "unit": 9,
+      "lesson": 2,
+      "lesson_title": "ECONOMIC THEORIES"
+    },
+    {
+      "type": "qa",
+      "front": "On what point do Keynesian and supply-side theories agree?",
       "back": "Both agree that decreasing taxes encourages economic activity and increasing taxes discourages economic activity.",
-      "lo": "9.e",
-      "unit": 9,
-      "lesson": 2,
-      "lesson_title": "ECONOMIC THEORIES"
-    },
-    {
-      "type": "qa",
-      "front": "Where does each theory focus its economic stimulus\u2014Keynesian vs. supply-side?",
-      "back": "Keynesian (demand-side) focuses stimulus on the consumer. Supply-side focuses on businesses, believing successful, expanding businesses create sustainable long-term growth.",
       "lo": "9.e",
       "unit": 9,
       "lesson": 2,
@@ -114,7 +105,7 @@
     {
       "type": "definition",
       "front": "Exchange rate",
-      "back": "The value of one nation's currency expressed in terms of another nation's currency. Exchange rates directly affect the balance of trade.",
+      "back": "The value of one currency expressed in terms of another. Changes in exchange rates directly affect a country's balance of trade.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -123,7 +114,7 @@
     {
       "type": "qa",
       "front": "What happens to U.S. exports and imports when the U.S. dollar weakens against foreign currencies?",
-      "back": "U.S. goods become cheaper abroad, so exports tend to increase. Foreign goods become more expensive in the U.S., so imports tend to decrease.",
+      "back": "U.S. products become cheaper in foreign currency terms, so exports tend to increase and imports tend to decrease.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -132,7 +123,7 @@
     {
       "type": "qa",
       "front": "What happens to U.S. exports and imports when the U.S. dollar strengthens against foreign currencies?",
-      "back": "U.S. goods become more expensive abroad, so exports tend to decrease. Foreign goods become cheaper in the U.S., so imports tend to increase.",
+      "back": "U.S. products become more expensive in foreign currency terms, so exports tend to decrease and imports tend to increase.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -141,7 +132,7 @@
     {
       "type": "qa",
       "front": "How does a strong U.S. dollar affect domestic inflation?",
-      "back": "A strong dollar makes imports cheaper, forcing U.S. companies to keep prices competitive. The net effect is that a strong dollar helps keep U.S. inflation in check.",
+      "back": "A strong dollar makes imports cheaper, pressuring U.S. companies to keep prices competitive \u2014 helping keep inflation in check. A weak dollar has the opposite effect and tends to increase inflation.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -149,8 +140,8 @@
     },
     {
       "type": "scenario",
-      "front": "The U.S. dollar strengthens significantly against the Japanese yen. What is the likely effect on sales of U.S.-built Ford Focus cars in Japan and Japanese-built Toyota Corollas in the U.S.?",
-      "back": "Focus sales in Japan DROP (the car costs more yen). Corolla sales in the U.S. INCREASE (the car costs fewer dollars).",
+      "front": "The U.S. dollar strengthens significantly against the Japanese yen. What is the likely impact on sales of a U.S.-built Ford in Japan and a Japanese-built Toyota in the United States?",
+      "back": "Ford sales in Japan drop (the Ford costs more yen). Toyota sales in the U.S. rise (the Toyota costs fewer dollars).",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -159,7 +150,7 @@
     {
       "type": "definition",
       "front": "Balance of payments",
-      "back": "The total flow of money between the U.S. and other countries. A surplus occurs when more money flows in than out; a deficit occurs when more money flows out than in.",
+      "back": "The total flow of money between the United States and other countries. A surplus means more money flows in than out; a deficit means more money flows out than in.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -168,7 +159,7 @@
     {
       "type": "definition",
       "front": "Balance of trade",
-      "back": "The largest component of the balance of payments, consisting of the export and import of merchandise. Exports are credits (money in); imports are debits (money out).",
+      "back": "The largest component of the balance of payments \u2014 the export and import of merchandise. Exports are credits (money in); imports are debits (money out).",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -176,17 +167,8 @@
     },
     {
       "type": "qa",
-      "front": "List the debit items (money flowing out of the U.S.) in the balance of payments.",
-      "back": "Imports, U.S. investments abroad, U.S. bank loans abroad, and U.S. foreign aid.",
-      "lo": "9.f",
-      "unit": 9,
-      "lesson": 2,
-      "lesson_title": "ECONOMIC THEORIES"
-    },
-    {
-      "type": "qa",
-      "front": "List the credit items (money flowing into the U.S.) in the balance of payments.",
-      "back": "Exports (U.S. products sold abroad) and foreign spending in the United States.",
+      "front": "Identify which of the following are debit items in the U.S. balance of payments: imports, exports, U.S. investments abroad, foreign spending in the U.S., U.S. foreign aid, U.S. bank loans abroad.",
+      "back": "Debits (money flowing out): imports, U.S. investments abroad, U.S. bank loans abroad, U.S. foreign aid. Credits (money flowing in): exports, foreign spending in the United States.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -194,8 +176,8 @@
     },
     {
       "type": "scenario",
-      "front": "Which of the following would NOT cause the U.S. dollar to fall in value relative to the Japanese yen: (A) Japanese investors buying U.S. Treasuries, (B) U.S. investors buying Japanese securities, (C) an increase in Japan's trade surplus over the U.S., (D) a general decrease in U.S. interest rates?",
-      "back": "(A) Japanese investors buying U.S. Treasuries. This creates demand for dollars (they must sell yen to buy dollars), strengthening the dollar. The other three actions all weaken the dollar.",
+      "front": "All of the following would tend to cause the U.S. dollar to fall in value against the Japanese yen EXCEPT: (A) Japanese investors buying U.S. Treasury securities, (B) U.S. investors buying Japanese securities, (C) an increase in Japan's trade surplus over the U.S., (D) a general decrease in U.S. interest rates.",
+      "back": "(A) Japanese investors buying U.S. Treasuries. This requires them to buy dollars (selling yen), which strengthens the dollar. The other three create demand for yen or reduce demand for dollars, weakening the dollar.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -203,8 +185,8 @@
     },
     {
       "type": "qa",
-      "front": "Why might a balance of payments deficit occur when another country has high interest rates?",
-      "back": "Money flows to where it earns the highest return. High foreign interest rates attract U.S. capital abroad, causing more money to flow out of the U.S. than in.",
+      "front": "Why might a foreign country's high interest rates cause a U.S. balance of payments deficit?",
+      "back": "Money flows to where it earns the highest return. High foreign interest rates draw capital out of the U.S., producing an outflow (deficit) in the balance of payments.",
       "lo": "9.f",
       "unit": 9,
       "lesson": 2,
@@ -212,8 +194,8 @@
     }
   ],
   "tokens": {
-    "input": 3613,
-    "output": 2565
+    "input": 4398,
+    "output": 2466
   },
-  "cost_usd": 0.2466
+  "cost_usd": 0.2509
 }

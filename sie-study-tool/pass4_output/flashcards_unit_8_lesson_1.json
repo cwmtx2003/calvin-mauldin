@@ -6,7 +6,7 @@
     {
       "type": "definition",
       "front": "Current Yield (CY)",
-      "back": "A measurement of annual income as a percentage of the current market value of a security. Formula: Annual Income \u00f7 Current Market Value. Applies to both stocks and bonds; when calculated on a stock dividend, it is also called dividend yield.",
+      "back": "A measure of annual income as a percentage of an investment's current market value. Formula: Annual Income \u00f7 Current Market Value. Applies to both stocks and bonds.",
       "lo": "8.a",
       "unit": 8,
       "lesson": 1,
@@ -14,7 +14,7 @@
     },
     {
       "type": "qa",
-      "front": "What is the formula for current yield (CY)?",
+      "front": "What is the formula for current yield (or dividend yield)?",
       "back": "Annual Income (in dollars) \u00f7 Current Market Value = Current Yield",
       "lo": "8.a",
       "unit": 8,
@@ -23,8 +23,8 @@
     },
     {
       "type": "scenario",
-      "front": "ABC Corporation pays a $0.25 quarterly dividend. ABC stock is trading at $20 per share. What is the current yield?",
-      "back": "Annualize the dividend: $0.25 \u00d7 4 = $1.00. CY = $1.00 \u00f7 $20 = 0.05 = 5%.",
+      "front": "ABC Corporation pays a $0.25 quarterly dividend. ABC stock trades at $20 per share. What is the current yield?",
+      "back": "Annual dividend = $0.25 \u00d7 4 = $1.00. CY = $1.00 \u00f7 $20 = 0.05, or 5%.",
       "lo": "8.a",
       "unit": 8,
       "lesson": 1,
@@ -32,7 +32,7 @@
     },
     {
       "type": "scenario",
-      "front": "Seabird Airlines pays a $0.40 quarterly dividend and is trading at $32 per share. What is the current yield?",
+      "front": "Seabird Airlines pays a $0.40 quarterly dividend and trades at $32 per share. What is the current yield?",
       "back": "Annual dividend = $0.40 \u00d7 4 = $1.60. CY = $1.60 \u00f7 $32 = 5%.",
       "lo": "8.a",
       "unit": 8,
@@ -41,8 +41,8 @@
     },
     {
       "type": "scenario",
-      "front": "ABC Corp. 6% preferred stock ($100 par) is currently trading at $120 per share. What is the dividend yield?",
-      "back": "Annual dividend = 6% \u00d7 $100 par = $6. Dividend yield = $6 \u00f7 $120 = 5%. (Preferred dividends are stated as a % of par, not market price.)",
+      "front": "ABC Corp. 6% preferred stock ($100 par) is trading at $120. What is the dividend yield?",
+      "back": "Annual dividend = 6% of $100 par = $6. Yield = $6 \u00f7 $120 = 5%. (Yield is always based on current market price, not par.)",
       "lo": "8.a",
       "unit": 8,
       "lesson": 1,
@@ -50,8 +50,8 @@
     },
     {
       "type": "qa",
-      "front": "When calculating current yield, why must you be careful with dividend amounts shown in a question?",
-      "back": "Dividends are often quoted as quarterly amounts, but CY uses annual income. You must multiply the quarterly dividend by 4 before dividing by the market price.",
+      "front": "When calculating current yield from a quarterly dividend, what step is essential before dividing?",
+      "back": "Annualize the dividend by multiplying the quarterly amount by 4. Current yield is always based on annual income.",
       "lo": "8.a",
       "unit": 8,
       "lesson": 1,
@@ -60,16 +60,7 @@
     {
       "type": "definition",
       "front": "Capital Gain / Capital Loss",
-      "back": "Capital gain = profit from closing an open position (sales proceeds exceed adjusted cost basis). Capital loss = negative result (cost basis exceeds sales proceeds). Formula: Sales Proceeds \u2212 Adjusted Cost Basis.",
-      "lo": "8.b",
-      "unit": 8,
-      "lesson": 1,
-      "lesson_title": "CALCULATING YIELDS AND RETURNS"
-    },
-    {
-      "type": "qa",
-      "front": "What is the formula for capital gain or loss?",
-      "back": "Sales Proceeds \u2212 Adjusted Cost Basis. A positive result is a capital gain; a negative result is a capital loss.",
+      "back": "The profit (gain) or loss realized when an open position is closed. Formula: Sales Proceeds \u2212 Adjusted Cost Basis. A positive result is a capital gain; negative is a capital loss.",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -78,7 +69,7 @@
     {
       "type": "definition",
       "front": "Adjusted Cost Basis",
-      "back": "The amount paid for a position, modified by any adjustments. Adjustments most commonly result from stock splits or stock dividends.",
+      "back": "The amount paid for a security, modified by any adjustments (most commonly from stock splits or stock dividends). Used to calculate capital gains/losses.",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -86,8 +77,8 @@
     },
     {
       "type": "scenario",
-      "front": "A customer bought 100 shares of ABC at $22 three years ago and sold them last week at $25. What is the capital gain or loss?",
-      "back": "Sales proceeds: 100 \u00d7 $25 = $2,500. Cost basis: 100 \u00d7 $22 = $2,200. Capital gain = $2,500 \u2212 $2,200 = $300 gain.",
+      "front": "A customer bought 100 shares of ABC at $22 three years ago and sold them at $25. What is the capital gain?",
+      "back": "Sales proceeds ($2,500) \u2212 Cost basis ($2,200) = $300 capital gain (or $3 per share).",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -95,8 +86,8 @@
     },
     {
       "type": "scenario",
-      "front": "Mickey bought 100 shares of Jim's Burger Shack at $55 and sold them at $67. During the holding period, the company paid a $0.25 quarterly dividend. What is the capital gain per share on the sale?",
-      "back": "Capital gain = $67 \u2212 $55 = $12 per share gain. (Dividends are income, not part of the capital gain calculation.)",
+      "front": "Mickey bought 100 shares of Jim's Burger Shack at $55 three years ago and sold at $67. What capital gain/loss is realized on the sale?",
+      "back": "$67 \u2212 $55 = $12 per share capital gain. (Dividends received are income, not part of the capital gain calculation.)",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -104,8 +95,8 @@
     },
     {
       "type": "scenario",
-      "front": "Kelly bought 10 shares of Finnish Furniture at $100 four years ago. Two years ago, the stock underwent a 4:1 split, adjusting cost basis to $25/share. Kelly now sells 10 shares at $30. What is the capital gain or loss?",
-      "back": "After the 4:1 split, Kelly owns 40 shares at $25 cost basis. Selling 10 shares: Proceeds = 10 \u00d7 $30 = $300. Cost basis = 10 \u00d7 $25 = $250. Capital gain = $50.",
+      "front": "Kelly bought 10 shares of Finnish Furniture at $100. The stock underwent a 4:1 split, adjusting her basis to $25/share. She sells 10 shares at $30. What is her capital gain or loss?",
+      "back": "After the 4:1 split, Kelly owns 40 shares at $25 basis. Selling 10 shares: Proceeds $300 \u2212 Basis $250 = $50 capital gain.",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -113,8 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "In a short sale, how is the position opened and closed?",
-      "back": "A short sale is opened by selling the security and closed by buying it back (the reverse of a long position).",
+      "front": "How is a short sale's open and closed position different from a long position?",
+      "back": "In a short sale, the position is OPENED by selling and CLOSED by buying \u2014 the reverse of a long position, which is opened by buying and closed by selling.",
       "lo": "8.b",
       "unit": 8,
       "lesson": 1,
@@ -123,7 +114,7 @@
     {
       "type": "definition",
       "front": "Total Return",
-      "back": "A measure of return that combines both income (dividends/interest) and capital gains or losses, expressed as a percentage of the cost basis. Formula: (Income + Gains or \u2212 Losses) \u00f7 Cost Basis.",
+      "back": "A measure of total investment return including both income and capital gains/losses, expressed as a percentage of cost basis. Formula: (Income \u00b1 Gain/Loss) \u00f7 Cost Basis.",
       "lo": "8.c",
       "unit": 8,
       "lesson": 1,
@@ -132,7 +123,7 @@
     {
       "type": "qa",
       "front": "What is the formula for total return?",
-      "back": "Total Return = (Income + Capital Gains or \u2212 Capital Losses) \u00f7 Cost Basis, expressed as a percentage.",
+      "back": "Total Return = (Income + Capital Gains \u2212 Capital Losses) \u00f7 Cost Basis, expressed as a percentage.",
       "lo": "8.c",
       "unit": 8,
       "lesson": 1,
@@ -140,8 +131,8 @@
     },
     {
       "type": "scenario",
-      "front": "Xavier bought 100 shares of Glengarry Real Estate at $20. After one year, he sold at $21. The company paid a $0.25 quarterly dividend. What is his total return?",
-      "back": "Income: $0.25 \u00d7 4 = $1. Capital gain: $21 \u2212 $20 = $1. Total = $2. Total return = $2 \u00f7 $20 = 10%.",
+      "front": "Xavier bought 100 shares of Glengarry at $20. After one year, he sold at $21. The company paid a $0.25 quarterly dividend. What is his total return?",
+      "back": "Income = $0.25 \u00d7 4 = $1. Capital gain = $21 \u2212 $20 = $1. Total return = ($1 + $1) \u00f7 $20 = 10%.",
       "lo": "8.c",
       "unit": 8,
       "lesson": 1,
@@ -149,8 +140,8 @@
     },
     {
       "type": "scenario",
-      "front": "A customer bought 100 shares of Odiferous Tobacco at $60 one year ago and sold at $62. The company paid a $0.25 quarterly dividend. What is the total return?",
-      "back": "Income: $0.25 \u00d7 4 = $1. Capital gain: $62 \u2212 $60 = $2. Total = $3. Total return = $3 \u00f7 $60 = 5%.",
+      "front": "A customer bought 100 shares of Odiferous Tobacco at $60 one year ago and sold at $62. The company paid a $0.25 quarterly dividend. What is the customer's total return?",
+      "back": "Income = $0.25 \u00d7 4 = $1. Capital gain = $62 \u2212 $60 = $2. Total return = ($1 + $2) \u00f7 $60 = $3 \u00f7 $60 = 5%.",
       "lo": "8.c",
       "unit": 8,
       "lesson": 1,
@@ -158,8 +149,8 @@
     },
     {
       "type": "qa",
-      "front": "Can total return be calculated using unrealized gains and losses?",
-      "back": "Yes. Total return can use realized gains/losses for closed positions or unrealized gains/losses for open positions.",
+      "front": "Can a total return calculation use unrealized gains or losses?",
+      "back": "Yes. Total return may use realized gains/losses on closed positions OR unrealized gains/losses on open positions.",
       "lo": "8.c",
       "unit": 8,
       "lesson": 1,
@@ -167,8 +158,8 @@
     }
   ],
   "tokens": {
-    "input": 2381,
-    "output": 2298
+    "input": 2986,
+    "output": 2070
   },
-  "cost_usd": 0.2081
+  "cost_usd": 0.2
 }

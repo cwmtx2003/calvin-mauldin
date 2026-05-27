@@ -3,180 +3,255 @@
   "title": "Options Strategies & Breakevens",
   "sections": [
     {
-      "heading": "Core Concepts (Memorize)",
+      "heading": "Core Vocabulary (memorize)",
       "type": "bullets",
       "items": [
-        "1 contract = 100 shares; premium quoted per share (\u00d7100 = $ cost)",
-        "Buyer = Long = Holder = pays premium = HAS THE RIGHT",
-        "Seller = Short = Writer = receives premium = HAS THE OBLIGATION",
-        "Calls: Buyer BULLISH, Writer BEARISH",
-        "Puts: Buyer BEARISH, Writer BULLISH",
-        "Premium = Intrinsic Value (IV) + Time Value (TV)",
-        "IV is NEVER negative (min = 0); At/Out of money = IV of 0",
-        "Parity = premium equals intrinsic value exactly"
+        "1 contract = 100 shares; premium quoted per share (\u00d7 100 = total $)",
+        "Buyer = long, holder, owner, pays premium, has the RIGHT",
+        "Seller = short, writer, receives premium, has the OBLIGATION",
+        "Calls: Buyer BULLISH / Writer BEARISH",
+        "Puts: Buyer BEARISH / Writer BULLISH",
+        "Premium = Intrinsic Value + Time Value (IV + TV = Prem)",
+        "Time value \u2191 with more time to expiration & higher volatility",
+        "Equity option exercise settles T+1 (post-5/28/2024); premium trades settle T+1"
       ]
     },
     {
-      "heading": "ITM / ATM / OTM (Buyers want ITM; Sellers want OTM)",
+      "heading": "ITM / ATM / OTM (intrinsic value never negative)",
       "type": "table",
-      "items": [
-        {
-          "Option": "Call",
-          "ITM": "Stock > Strike",
-          "ATM": "Stock = Strike",
-          "OTM": "Stock < Strike"
-        },
-        {
-          "Option": "Put",
-          "ITM": "Stock < Strike",
-          "ATM": "Stock = Strike",
-          "OTM": "Stock > Strike"
-        }
-      ]
+      "items": {
+        "columns": [
+          "Condition",
+          "Call",
+          "Put"
+        ],
+        "rows": [
+          [
+            "ITM (has IV)",
+            "Stock > Strike",
+            "Stock < Strike"
+          ],
+          [
+            "ATM (IV = 0)",
+            "Stock = Strike",
+            "Stock = Strike"
+          ],
+          [
+            "OTM (IV = 0)",
+            "Stock < Strike",
+            "Stock > Strike"
+          ],
+          [
+            "Buyer wants",
+            "ITM",
+            "ITM"
+          ],
+          [
+            "Writer wants",
+            "OTM/ATM",
+            "OTM/ATM"
+          ],
+          [
+            "Parity",
+            "Premium = IV",
+            "Premium = IV"
+          ]
+        ]
+      }
     },
     {
       "heading": "The 4 Basic Positions \u2014 BE / MG / ML",
       "type": "table",
-      "items": [
-        {
-          "Position": "Long Call",
-          "Attitude": "Bullish",
-          "Breakeven": "Strike + Premium",
-          "Max Gain": "Unlimited",
-          "Max Loss": "Premium paid"
-        },
-        {
-          "Position": "Short Call (naked)",
-          "Attitude": "Bearish",
-          "Breakeven": "Strike + Premium",
-          "Max Gain": "Premium received",
-          "Max Loss": "Unlimited"
-        },
-        {
-          "Position": "Long Put",
-          "Attitude": "Bearish",
-          "Breakeven": "Strike \u2212 Premium",
-          "Max Gain": "Strike \u2212 Premium (\u00d7100)",
-          "Max Loss": "Premium paid"
-        },
-        {
-          "Position": "Short Put",
-          "Attitude": "Bullish",
-          "Breakeven": "Strike \u2212 Premium",
-          "Max Gain": "Premium received",
-          "Max Loss": "Strike \u2212 Premium (\u00d7100)"
-        }
-      ]
+      "items": {
+        "columns": [
+          "Position",
+          "Attitude",
+          "Breakeven",
+          "Max Gain",
+          "Max Loss"
+        ],
+        "rows": [
+          [
+            "Long Call",
+            "Bullish",
+            "Strike + Premium",
+            "Unlimited",
+            "Premium paid"
+          ],
+          [
+            "Short Call",
+            "Bearish",
+            "Strike + Premium",
+            "Premium received",
+            "Unlimited"
+          ],
+          [
+            "Long Put",
+            "Bearish",
+            "Strike \u2212 Premium",
+            "Strike \u2212 Premium (\u00d7100)",
+            "Premium paid"
+          ],
+          [
+            "Short Put",
+            "Bullish",
+            "Strike \u2212 Premium",
+            "Premium received",
+            "Strike \u2212 Premium (\u00d7100)"
+          ]
+        ]
+      }
     },
     {
-      "heading": "Memory Aids \u2014 Breakeven",
+      "heading": "Calls BE Mnemonic: 'Call Up' / Puts BE: 'Put Down'",
       "type": "formula",
       "items": [
-        "CALL UP: Strike + Premium  (Call buyer needs stock to go UP past BE)",
-        "PUT DOWN: Strike \u2212 Premium (Put buyer needs stock to go DOWN past BE)",
-        "BE is SAME for buyer & seller; one's MG = other's ML"
+        "Call BE = Strike + Premium (add up)",
+        "Put BE  = Strike \u2212 Premium (subtract down)",
+        "Same BE for buyer & seller \u2014 one's MG is the other's ML"
       ]
     },
     {
-      "heading": "Combined Strategies",
+      "heading": "Combined Stock + Option Strategies",
       "type": "table",
-      "items": [
-        {
-          "Strategy": "Covered Call",
-          "Setup": "Long 100 shares + Short 1 call",
-          "Outlook": "Neutral/slightly bullish",
-          "BE": "Stock cost \u2212 Premium",
-          "Max Gain": "(Strike \u2212 Stock cost) + Premium",
-          "Max Loss": "Stock cost \u2212 Premium (large)",
-          "Purpose": "Income on owned stock"
-        },
-        {
-          "Strategy": "Protective Put",
-          "Setup": "Long 100 shares + Long 1 put",
-          "Outlook": "Bullish, hedging downside",
-          "BE": "Stock cost + Premium",
-          "Max Gain": "Unlimited",
-          "Max Loss": "(Stock cost \u2212 Strike) + Premium",
-          "Purpose": "Insurance on long stock"
-        },
-        {
-          "Strategy": "Protective Call",
-          "Setup": "Short stock + Long call",
-          "Outlook": "Bearish, hedging upside",
-          "BE": "Short sale price \u2212 Premium",
-          "Max Gain": "Short price \u2212 Premium",
-          "Max Loss": "(Strike \u2212 Short price) + Premium",
-          "Purpose": "Insurance on short stock"
-        },
-        {
-          "Strategy": "Long Straddle",
-          "Setup": "Long 1 call + Long 1 put (same strike/exp)",
-          "Outlook": "Volatile (big move either way)",
-          "BE": "Strike \u00b1 TOTAL premiums (2 BEs)",
-          "Max Gain": "Unlimited (upside)",
-          "Max Loss": "Total premiums paid",
-          "Purpose": "Profit from volatility"
-        },
-        {
-          "Strategy": "Short Straddle",
-          "Setup": "Short 1 call + Short 1 put (same strike/exp)",
-          "Outlook": "Neutral (no movement)",
-          "BE": "Strike \u00b1 TOTAL premiums (2 BEs)",
-          "Max Gain": "Total premiums received",
-          "Max Loss": "Unlimited (upside)",
-          "Purpose": "Income in flat market"
-        }
-      ]
+      "items": {
+        "columns": [
+          "Strategy",
+          "Position",
+          "Outlook",
+          "Breakeven",
+          "Max Gain",
+          "Max Loss"
+        ],
+        "rows": [
+          [
+            "Covered Call",
+            "Long stock + Short call",
+            "Neutral / mildly bullish; income",
+            "Stock cost \u2212 Premium",
+            "(Strike \u2212 Stock cost) + Premium",
+            "Stock cost \u2212 Premium (down to 0)"
+          ],
+          [
+            "Protective Put",
+            "Long stock + Long put",
+            "Bullish, want downside insurance",
+            "Stock cost + Premium",
+            "Unlimited",
+            "(Stock cost \u2212 Strike) + Premium"
+          ],
+          [
+            "Protective Call",
+            "Short stock + Long call",
+            "Bearish, hedge short",
+            "Short price \u2212 Premium",
+            "Short price \u2212 Premium",
+            "(Strike \u2212 Short price) + Premium"
+          ]
+        ]
+      }
     },
     {
-      "heading": "Intrinsic vs. Time Value",
+      "heading": "Long Straddle (buy 1 call + 1 put, same strike & expiration)",
       "type": "bullets",
       "items": [
-        "IV (Call) = Stock \u2212 Strike (if positive, else 0)",
-        "IV (Put) = Strike \u2212 Stock (if positive, else 0)",
-        "TV = Premium \u2212 IV",
-        "TV increases with: more time to expiration + higher volatility",
-        "At expiration: TV = 0; premium = IV only"
+        "Used when expecting BIG MOVE \u2014 direction unknown (high volatility play)",
+        "Upside BE = Strike + TOTAL premiums (both)",
+        "Downside BE = Strike \u2212 TOTAL premiums (both)",
+        "Max Gain = Unlimited (upside via call)",
+        "Max Loss = Total premiums paid (stock stays at strike)",
+        "Short Straddle = opposite: profits if stock stays still; UNLIMITED loss potential"
       ]
     },
     {
-      "heading": "American vs. European Style Exercise",
+      "heading": "Covered vs. Uncovered (Naked) Writes",
       "type": "table",
-      "items": [
-        {
-          "Style": "American",
-          "Exercise": "ANY time before expiration",
-          "Used for": "Equity options, most equity index options"
-        },
-        {
-          "Style": "European",
-          "Exercise": "ONLY on expiration day",
-          "Used for": "Foreign currency options, yield-based (interest rate) options"
-        }
-      ]
+      "items": {
+        "columns": [
+          "Write",
+          "Covered By",
+          "Risk"
+        ],
+        "rows": [
+          [
+            "Short Call",
+            "Long the underlying stock",
+            "Limited (stock already owned)"
+          ],
+          [
+            "Short Call (Naked)",
+            "Nothing",
+            "UNLIMITED"
+          ],
+          [
+            "Short Put",
+            "Cash = Strike \u00d7 100 (cash-secured)",
+            "Strike \u2212 Premium (stock to $0)"
+          ],
+          [
+            "Short Put (Naked)",
+            "No cash set aside",
+            "Substantial, not unlimited"
+          ]
+        ]
+      }
     },
     {
-      "heading": "Quick BE Examples",
+      "heading": "American vs. European Style",
+      "type": "table",
+      "items": {
+        "columns": [
+          "Style",
+          "When Exercisable",
+          "Typical Use"
+        ],
+        "rows": [
+          [
+            "American",
+            "Any time before expiration",
+            "Equity options, most equity index options"
+          ],
+          [
+            "European",
+            "ONLY on expiration day",
+            "Foreign currency options, yield-based (interest rate) options"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Quick Calc Examples",
       "type": "formula",
       "items": [
-        "Long 1 XYZ Jul 40 call @ 3 \u2192 BE = 43; MG = unlimited; ML = $300",
-        "Long 1 XYZ Jul 40 put @ 3 \u2192 BE = 37; MG = $3,700; ML = $300",
-        "Long 40 call + Long 40 put @ 2 each (straddle) \u2192 BEs = 36 & 44; ML = $400",
-        "Long stock @ 50 + Long 50 put @ 2 (protective put) \u2192 BE = 52; ML = $200"
+        "Long 1 XYZ 40 Call @ 3 \u2192 BE 43; MG unlimited; ML $300",
+        "Short 1 XYZ 40 Call @ 3 \u2192 BE 43; MG $300; ML unlimited",
+        "Long 1 XYZ 40 Put @ 3 \u2192 BE 37; MG $3,700; ML $300",
+        "Short 1 XYZ 40 Put @ 3 \u2192 BE 37; MG $300; ML $3,700",
+        "Long Straddle 50 strike, call 3 + put 2 \u2192 BEs 55 & 45; ML $500"
+      ]
+    },
+    {
+      "heading": "Exercise & Expiration Quick Facts",
+      "type": "bullets",
+      "items": [
+        "Options expire 3rd Friday of expiration month, 11:59 pm ET",
+        "Auto-exercise if ITM by \u2265 $0.01 at expiration (unless 'do not exercise')",
+        "OCC issues, guarantees, and standardizes listed options",
+        "Equity option exercise \u2192 stock settles T+1 (updated May 2024)"
       ]
     }
   ],
   "common_traps": [
-    "BE for protective put is Stock price + Premium (NOT strike \u2212 premium). The formula changes once stock is combined with the option.",
-    "Short naked CALL = UNLIMITED loss; Short naked PUT loss is LIMITED (Strike \u2212 Premium) \u2014 students often reverse these.",
-    "Straddle has TWO breakevens (Strike + total premium AND Strike \u2212 total premium); use TOTAL combined premium, not just one leg.",
-    "At-the-money and Out-of-the-money options have ZERO intrinsic value \u2014 all premium is time value. IV is never negative.",
-    "Yield-based and foreign currency options are EUROPEAN style (expiration day only) \u2014 easy trap when question implies early exercise.",
-    "Call BE = Strike + Premium for BOTH buyer and seller (same number); the buyer profits ABOVE BE, seller profits BELOW BE."
+    "Reversing the BE formulas \u2014 'Call Up, Put Down': Calls add premium, Puts subtract premium. Same BE for buyer AND writer.",
+    "Forgetting Long Put max gain is NOT unlimited \u2014 stock can only fall to $0, so MG = Strike \u2212 Premium.",
+    "Confusing market attitude: a PUT WRITER is BULLISH (wants stock up/flat); a CALL WRITER is BEARISH. Not the same as the buyer.",
+    "Naked CALL writing = unlimited loss; naked PUT writing = large but LIMITED loss (strike \u2212 premium). Don't call a short put 'unlimited risk.'",
+    "Straddle BE uses the SUM of both premiums (added to strike for upside, subtracted for downside) \u2014 not just one premium.",
+    "Currency and yield-based options are EUROPEAN style (expiration day only) \u2014 easy to mismark as American."
   ],
   "tokens": {
-    "input": 21730,
-    "output": 2487
+    "input": 22687,
+    "output": 2619
   },
-  "cost_usd": 0.5125
+  "cost_usd": 0.5367
 }

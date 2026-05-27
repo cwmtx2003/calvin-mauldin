@@ -13,15 +13,6 @@
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
     },
     {
-      "type": "qa",
-      "front": "In the primary market vs. the secondary market, who is the seller?",
-      "back": "In the primary market, the seller is always the issuer. In the secondary market, the seller is never the issuer \u2014 investors sell to other investors and keep the proceeds.",
-      "lo": "1.d",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
       "type": "definition",
       "front": "Liquidity",
       "back": "The ability to buy or sell a security easily at a fair price. Treasury bills and exchange-listed stocks are highly liquid; limited partnership units are typically illiquid.",
@@ -32,8 +23,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the four market centers of the U.S. secondary market?",
-      "back": "(1) The exchanges, (2) the OTC market, (3) the third market (Nasdaq Intermarket), and (4) the fourth market (ECNs).",
+      "front": "Who is the seller in a primary market transaction versus a secondary market transaction?",
+      "back": "Primary market: the seller is always the issuer. Secondary market: the seller is never the issuer (investors sell to other investors and keep the proceeds).",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -41,8 +32,17 @@
     },
     {
       "type": "qa",
-      "front": "How does an exchange (auction market) differ from the OTC market in terms of structure and pricing?",
-      "back": "Exchanges have a physical location (floor) and use a double-auction pricing system where buyers and sellers call out competing bids and offers. The OTC market is a decentralized electronic interdealer network with no physical location, in which multiple market makers compete by posting bid and ask prices.",
+      "front": "What are the four market centers of the U.S. secondary market?",
+      "back": "(1) The exchanges, (2) the OTC market, (3) the third market (Nasdaq Intermarket \u2014 exchange-listed securities traded OTC), and (4) the fourth market (ECNs \u2014 institutional trading without a BD).",
+      "lo": "1.d",
+      "unit": 1,
+      "lesson": 2,
+      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
+    },
+    {
+      "type": "qa",
+      "front": "What are the two defining characteristics of an exchange (such as the NYSE)?",
+      "back": "(1) A physical location (a trading floor), and (2) a double-auction pricing system in which buyers and sellers call out competing bids and offers to transact at the best price.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -51,52 +51,25 @@
     {
       "type": "definition",
       "front": "Designated Market Maker (DMM)",
-      "back": "An exchange member (formerly called a specialist) who acts as the dealer on the floor for a specific security, maintains an inventory in that security, and is responsible for maintaining a fair and orderly market.",
-      "lo": "1.d",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "definition",
-      "front": "Floor broker",
-      "back": "An exchange member who executes trades on the floor on behalf of their firm and the firm's customers.",
-      "lo": "1.d",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "definition",
-      "front": "Two-dollar broker",
-      "back": "An exchange member who executes trades for floor brokers when they become overwhelmed, in exchange for a fee.",
-      "lo": "1.d",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "definition",
-      "front": "Floor traders (Registered Floor Traders)",
-      "back": "Exchange members who buy and sell on the floor for their firm's own accounts (not customer accounts), helping to provide liquidity.",
-      "lo": "1.d",
+      "back": "An exchange member (formerly called a specialist) who acts as the dealer on the floor for a specific security, maintains an inventory in it, and is responsible for maintaining a fair and orderly market.",
+      "lo": "1.e",
       "unit": 1,
       "lesson": 2,
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
     },
     {
       "type": "qa",
-      "front": "Who actually trades on the floor of an exchange?",
-      "back": "Only members of the exchange (DMMs, floor brokers, two-dollar brokers, and floor traders). Employees of the exchange support operations but do not engage in trading.",
-      "lo": "1.d",
+      "front": "Distinguish between a floor broker, a two-dollar broker, and a floor trader on an exchange.",
+      "back": "Floor broker: represents their firm and its clients' orders on the floor. Two-dollar broker: handles overflow orders for floor brokers for a fee. Floor trader (RFT): trades for the firm's own account to help maintain liquidity.",
+      "lo": "1.e",
       "unit": 1,
       "lesson": 2,
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
     },
     {
       "type": "qa",
-      "front": "What types of securities trade in the OTC market?",
-      "back": "Unlisted stocks and most bonds, including municipal bonds, Treasury debt, and most corporate debt traded in the secondary market.",
+      "front": "Where does OTC trading occur, and how is it structured?",
+      "back": "In a decentralized electronic interdealer network with no physical floor. Multiple market makers compete by posting bid and ask quotes in the same security.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -104,8 +77,8 @@
     },
     {
       "type": "scenario",
-      "front": "A customer places an order through her BD to sell an OTC stock. At what price is the trade executed, and who is the buyer?",
-      "back": "The customer sells to a market maker (dealer) at the bid price. The dealer is buying at the bid. (If the customer were buying, they would pay the ask, and the difference \u2014 the spread \u2014 is the market maker's compensation.)",
+      "front": "A customer sells an OTC stock through their BD. At what price does the customer sell, and what does the difference between the dealer's bid and ask represent?",
+      "back": "The customer sells to the market maker at the bid price. The difference between the bid (where the dealer buys) and the ask (where the dealer sells) is the spread, which is the market maker's compensation.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -114,7 +87,7 @@
     {
       "type": "definition",
       "front": "Third Market (Nasdaq Intermarket)",
-      "back": "A market in which exchange-listed securities are traded OTC by registered OTC market makers. Trades must be reported to the Consolidated Tape within 10 seconds of execution.",
+      "back": "The market in which exchange-listed securities are traded OTC by registered OTC market makers. Trades must be reported to the Consolidated Tape within 10 seconds of execution.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -123,7 +96,7 @@
     {
       "type": "definition",
       "front": "Fourth Market",
-      "back": "A market for institutional investors trading large blocks of listed and unlisted stock directly with one another, unassisted by broker-dealers, through Electronic Communication Networks (ECNs), which operate 24 hours a day.",
+      "back": "A market for institutional investors trading large blocks of listed and unlisted securities directly with one another through ECNs (electronic communication networks), without the use of a broker-dealer. ECNs operate 24 hours a day.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -131,8 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "What is a dark pool, and why is it controversial?",
-      "back": "A dark pool is an alternative trading venue used primarily by institutions to execute large block orders anonymously, without impacting public quotes. Volume, price, and identity are not visible to the public, which raises concerns about reduced market transparency.",
+      "front": "What is a dark pool, and what is the primary regulatory concern about them?",
+      "back": "A dark pool is an alternative trading venue where large institutional block trades occur anonymously \u2014 volume, price, and identity are not displayed to the public. The concern is reduced market transparency, leaving other participants disadvantaged.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -140,18 +113,9 @@
     },
     {
       "type": "qa",
-      "front": "What are the normal trading hours of the NYSE, and what characterizes after-hours trading?",
-      "back": "9:30 am to 4:00 pm ET. After-hours trading is less liquid, has wider bid-ask spreads, and greater price volatility because of limited order flow.",
+      "front": "What are the standard NYSE trading hours, and what are the risks of after-hours trading?",
+      "back": "9:30 am to 4:00 pm ET on business days. After-hours trading has lower liquidity, wider bid-ask spreads, and greater price volatility due to limited order flow.",
       "lo": "1.d",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "An issuer repurchases its own shares from public investors via a tender offer. Why is this an exception to the rule that issuers are not in the secondary market?",
-      "back": "Normally, issuers are not parties to secondary-market trades, but in a buyback/tender offer, the issuer purchases its outstanding shares from investors in the secondary market.",
-      "lo": "1.e",
       "unit": 1,
       "lesson": 2,
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
@@ -159,7 +123,7 @@
     {
       "type": "definition",
       "front": "Fiduciary",
-      "back": "A person who manages assets for another (the beneficiary) and has a legal and moral duty to act in the beneficiary's best interest, placing the beneficiary's interest ahead of their own. Investment advisers are always fiduciaries.",
+      "back": "A person who manages assets for another (the beneficiary) and has a legal and moral duty to act in the beneficiary's best interest, placing the beneficiary's interests before their own. Examples: custodian, trustee, guardian, executor, investment adviser.",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -167,17 +131,8 @@
     },
     {
       "type": "qa",
-      "front": "Distinguish a custodian from a trustee on the SIE exam.",
-      "back": "A custodian manages a minor's account under UTMA/UGMA (or holds assets in a qualified retirement account like an IRA). A trustee is a fiduciary who oversees a trust (living, pension, or other). Both are fiduciaries.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "What is the three-prong test for who must register as an investment adviser?",
-      "back": "Anyone who (1) gives investment advice, (2) as a regular part of their business, and (3) for compensation, must register as an IA under the Investment Advisers Act of 1940.",
+      "front": "What is the three-prong test for who must register as an investment adviser under the Investment Advisers Act of 1940?",
+      "back": "A person who (1) provides investment advice, (2) as a regular part of their business, and (3) for compensation must register as an investment adviser. An IA is always a fiduciary to its clients.",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -185,8 +140,8 @@
     },
     {
       "type": "scenario",
-      "front": "A registered representative who currently charges commissions wants to begin charging a separate fee for investment advice, whether or not a trade occurs. What additional registration is required?",
-      "back": "The RR must register as an investment adviser representative (IAR) by passing the Series 65 or Series 66 exam.",
+      "front": "A registered representative already registered under the Securities Exchange Act of 1934 wants to begin charging clients separately for investment advice. What additional registration is required?",
+      "back": "The RR must register as an investment adviser representative (IAR) by passing the Series 65 (or Series 66 if already holding the Series 7). The individual would then be dually registered (RR and IAR).",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -194,8 +149,35 @@
     },
     {
       "type": "qa",
-      "front": "What are the three types of broker-dealer firms tested on the SIE?",
-      "back": "(1) Carrying (clearing) firms, (2) fully disclosed (introducing) firms, and (3) prime brokers.",
+      "front": "What is the difference between a carrying (clearing) firm and a fully disclosed (introducing) firm?",
+      "back": "A carrying/clearing firm holds customer cash and securities, executes and clears trades, and handles back-office functions; it has high net capital requirements. A fully disclosed/introducing firm passes its customers' accounts to a clearing firm and does not hold customer assets, so it has lower net capital requirements.",
+      "lo": "1.e",
+      "unit": 1,
+      "lesson": 2,
+      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
+    },
+    {
+      "type": "qa",
+      "front": "What is a prime brokerage account, and who typically uses one?",
+      "back": "An arrangement in which an institutional client (often a hedge fund) selects one member firm \u2014 the prime broker \u2014 to provide custody, clearing, statements, securities lending, and margin financing, while using multiple executing brokers to place trades. It centralizes the client's cash and securities in one master account.",
+      "lo": "1.e",
+      "unit": 1,
+      "lesson": 2,
+      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
+    },
+    {
+      "type": "qa",
+      "front": "What are the four core responsibilities of a transfer agent?",
+      "back": "(1) Ensure securities are issued in the correct owner's name, (2) cancel old and issue new certificates, (3) maintain records of ownership, and (4) handle lost, stolen, or destroyed certificates.",
+      "lo": "1.e",
+      "unit": 1,
+      "lesson": 2,
+      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
+    },
+    {
+      "type": "qa",
+      "front": "What is the role of the registrar, and why must it be separate from the issuer and transfer agent?",
+      "back": "The registrar audits and oversees the transfer agent and maintains a count of total authorized and outstanding shares. It must be a separate firm to provide independent oversight and prevent over-issuance of shares.",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -203,8 +185,8 @@
     },
     {
       "type": "definition",
-      "front": "Carrying (clearing) firm",
-      "back": "A BD that carries customer accounts, accepts customer funds and securities, executes and clears trades, and handles back-office functions. Must maintain higher net capital and segregate customer assets from firm assets.",
+      "front": "Depository Trust and Clearing Corporation (DTCC)",
+      "back": "The world's largest securities depository and a clearing agency. It provides custody, safekeeping, and clearing services for virtually all securities (except restricted securities) and is a member of the Federal Reserve System. Not in retail banking.",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -212,8 +194,8 @@
     },
     {
       "type": "definition",
-      "front": "Fully disclosed (introducing) firm",
-      "back": "A BD that introduces its customers to a clearing firm, which holds customer funds and securities and provides back-office functions. Introducing firms can execute trades but rely on the clearing firm for settlement; they have lower net capital requirements.",
+      "front": "Options Clearing Corporation (OCC)",
+      "back": "The clearing agent for listed options contracts. The OCC issues options, guarantees performance, standardizes contract terms (strike prices, expirations), and determines when new option series are introduced.",
       "lo": "1.e",
       "unit": 1,
       "lesson": 2,
@@ -221,62 +203,17 @@
     },
     {
       "type": "qa",
-      "front": "What is a prime brokerage account, and what type of client typically uses one?",
-      "back": "An account, generally for institutions such as hedge funds, in which one BD (the prime broker) provides custody, clearance/settlement, statements, securities lending, margin financing, and operational support, while the customer trades through multiple executing brokers. It centralizes the client's cash and securities in one master account.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "Can a broker-dealer act as both a broker and a dealer on the same transaction?",
+      "front": "Can a broker-dealer act as both broker and dealer on the same transaction?",
       "back": "No. A BD may act as either a broker (agent) or a dealer (principal) on a given transaction, but never both on the same trade.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "What are the responsibilities of a transfer agent?",
-      "back": "Ensuring securities are issued in the correct owner's name, canceling old certificates and issuing new ones, maintaining ownership records, and handling lost, stolen, or destroyed certificates.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "What is a registrar, and how does it differ from a transfer agent?",
-      "back": "The registrar is an independent firm (separate from the issuer and transfer agent) that audits and oversees the transfer agent and maintains a count of the total shares authorized and outstanding.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "definition",
-      "front": "Clearing agency (clearing corporation)",
-      "back": "An intermediary between the buy and sell sides of a transaction that receives and delivers payments and securities on behalf of both parties. Examples include the DTCC and the OCC.",
-      "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "What is the role of the Options Clearing Corporation (OCC)?",
-      "back": "The OCC is the clearing agent for listed options contracts. It issues, standardizes, and guarantees the performance of options contracts, and determines contract specifications such as strike prices and expiration months.",
-      "lo": "1.e",
+      "lo": "1.h",
       "unit": 1,
       "lesson": 2,
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
     },
     {
       "type": "scenario",
-      "front": "A large institutional investor executes a high-volume trade through an alternative trading system. The trade is entered anonymously, and the public cannot see the volume, price, or identity. Where did this trade occur?",
-      "back": "In a dark pool (dark pool of liquidity).",
+      "front": "An institutional investor executes a large block trade anonymously on an alternative trading system; the public sees no volume, price, or identity information. Where did this trade occur?",
+      "back": "In a dark pool (dark pool of liquidity). These venues allow institutions to trade large blocks without revealing strategy or moving public quotes.",
       "lo": "1.d",
       "unit": 1,
       "lesson": 2,
@@ -284,26 +221,17 @@
     },
     {
       "type": "scenario",
-      "front": "A BD maintains an inventory in XYZ stock and stands ready to buy and sell it throughout the day in the OTC market. In what capacity is the BD acting?",
-      "back": "As a market maker (dealer / principal).",
+      "front": "True or false: A designated market maker guarantees that customers will receive a profitable trade.",
+      "back": "False. The DMM guarantees liquidity and a fair and orderly market \u2014 not a profitable outcome for any customer.",
       "lo": "1.e",
-      "unit": 1,
-      "lesson": 2,
-      "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
-    },
-    {
-      "type": "qa",
-      "front": "Which of the following does the SEC NOT regulate: the NYSE, the CBOE, the London Stock Exchange, or the OTC market?",
-      "back": "The London Stock Exchange \u2014 it is a foreign exchange outside SEC jurisdiction. The SEC regulates the NYSE, CBOE, and the OTC market.",
-      "lo": "1.d",
       "unit": 1,
       "lesson": 2,
       "lesson_title": "TRADING SECURITIES IN THE SECONDARY MAR"
     }
   ],
   "tokens": {
-    "input": 9101,
-    "output": 3925
+    "input": 10205,
+    "output": 3196
   },
-  "cost_usd": 0.4309
+  "cost_usd": 0.3928
 }

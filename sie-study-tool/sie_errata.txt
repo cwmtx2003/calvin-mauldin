@@ -1,0 +1,541 @@
+# SIE Exam — Companion Errata & Updates
+
+**Purpose.** This document is a companion to a 3rd-edition SIE prep manual. It identifies the topic areas most likely to be out of date in any prep book published before mid-2023 and provides the current rule, effective date, and a citation to a primary source (SEC, FINRA, MSRB, FinCEN, or the Federal Register). It does **not** reproduce or paraphrase the manual itself — use the two side by side.
+
+**How to read each entry.**
+- **Affected SIE topic** — the section of the FINRA SIE content outline where this appears.
+- **What older prep books say** — the legacy state of the rule (described generically, not quoted).
+- **Current rule** — what is true as of May 2026.
+- **Effective date** — when the change took effect.
+- **Citation** — primary-source link.
+- **Exam-likelihood tag** — `HIGH` / `MEDIUM` / `LOW`, based on how central the topic is to the FINRA SIE content outline.
+
+**Scope.** This pass focuses on high-impact areas: settlement cycle, conduct standards, capital-formation caps, money-market reform, short-sale reporting, senior-investor protection, margin, marketing rule, beneficial-ownership reporting, and the trading-holiday calendar. Items judged unchanged (basic securities products, the structure of FINRA/SEC/MSRB, customer-account types, AML pillars, etc.) are intentionally omitted.
+
+---
+
+## Section 1 — Knowledge of Capital Markets
+
+### 1.1 Settlement cycle (T+2 → T+1)
+- **Affected SIE topic.** Settlement of equity, corporate-bond, and municipal-bond trades; regular-way vs. cash settlement; ex-dividend dating.
+- **What older prep books say.** Regular-way settlement for equities, corporate bonds, and municipals is **T+2**. Ex-dividend date is one business day before record date.
+- **Current rule.** Regular-way settlement is **T+1**. Because settlement is now one business day after trade date, the ex-dividend date is the **same business day as the record date** for regular-way trades (FINRA aligned ex-date rules to T+1 in conjunction with the SEC change). Government securities and options remained at T+1 and T+0 respectively; cash settlement is still same-day; when-issued settles on issuance.
+- **Effective date.** **May 28, 2024.**
+- **Citation.** SEC, Final Rule: Shortening the Securities Transaction Settlement Cycle, Rel. No. 34-96930 (amending Rule 15c6-1); FINRA Technical Notice, *Final Reminder — T+1 Settlement* (May 22, 2024), <https://www.finra.org/filing-reporting/technical-notice/final-reminder-t-1-settlement-052224>.
+- **Exam-likelihood: HIGH.** Settlement is tested on virtually every SIE form.
+
+### 1.2 Juneteenth as a market holiday
+- **Affected SIE topic.** Trading days, settlement-date arithmetic, ex-date arithmetic.
+- **What older prep books say.** Lists nine U.S. market holidays (New Year's Day, MLK Day, Presidents' Day, Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving, Christmas).
+- **Current rule.** **Juneteenth (June 19)** is a federal holiday and an observed NYSE/Nasdaq/SIFMA bond-market closure. Use it when counting settlement days.
+- **Effective date.** Federal-holiday status: June 17, 2021. First observed equity-market closure: 2022.
+- **Citation.** SIFMA Holiday Schedule, <https://www.sifma.org/resources/guides-playbooks/holiday-schedule>; FINRA Operating & Holiday Schedule, <https://www.finra.org/about/operating-holiday-schedule>.
+- **Exam-likelihood: MEDIUM.** Likely to surface inside a settlement-date counting question.
+
+### 1.3 Regulation A — Tier 2 cap
+- **Affected SIE topic.** Exempt offerings, "mini-IPO" framework.
+- **What older prep books say.** Tier 2 of Reg A permits offerings up to **$50 million** in a 12-month period.
+- **Current rule.** Tier 2 permits offerings up to **$75 million** in a 12-month period. Tier 1 remains at $20 million.
+- **Effective date.** **March 15, 2021.**
+- **Citation.** SEC, *Facilitating Capital Formation and Expanding Investment Opportunities by Improving Access to Capital in Private Markets*, Rel. No. 33-10884; SEC small-business resource page, <https://www.sec.gov/resources-small-businesses/exempt-offerings/regulation>.
+- **Exam-likelihood: MEDIUM.**
+
+### 1.4 Regulation Crowdfunding (Reg CF) — offering cap
+- **Affected SIE topic.** Exempt offerings; crowdfunding intermediaries (funding portals).
+- **What older prep books say.** The Reg CF cap is approximately **$1.07 million** (it was $1.07 M after the most recent pre-2021 inflation adjustment).
+- **Current rule.** The Reg CF cap is **$5 million** per 12-month period. Investment limits for non-accredited investors are based on the **greater** of annual income or net worth (older books say the lesser). Accredited investors have no Reg CF investment limit.
+- **Effective date.** **March 15, 2021** (same SEC rulemaking as the Reg A bump).
+- **Citation.** SEC Reg CF resource page, <https://www.sec.gov/resources-small-businesses/exempt-offerings/regulation-crowdfunding>.
+- **Exam-likelihood: MEDIUM.**
+
+### 1.5 Rule 144 — current state
+- **Affected SIE topic.** Resales of restricted and control securities.
+- **What older prep books say.** Six-month holding for reporting issuers, one-year for non-reporting issuers; volume limits for affiliates.
+- **Current rule.** The six-month / one-year holding-period framework is unchanged. The SEC's 2020 proposal to apply Rule 144 holding-period tolling to market-adjustable securities was adopted in part (Rel. No. 33-11070, Dec. 2022), and Form 144 must be filed **electronically on EDGAR** since the April 13, 2023 compliance date. If older material describes paper Form 144 filing, that is out of date.
+- **Effective date.** EDGAR-only Form 144: **April 13, 2023.**
+- **Citation.** SEC, *Electronic Submission of Applications for Orders under the Advisers Act and the Investment Company Act, Confidential Treatment Requests for Filings on Form 13F, and Form ACR*, Rel. No. 33-11070; SEC Rule 144 reference page, <https://www.sec.gov/reports/rule-144-selling-restricted-control-securities>.
+- **Exam-likelihood: MEDIUM.**
+
+---
+
+## Section 2 — Understanding Products and Their Risks
+
+### 2.1 Money-market fund reform (Rule 2a-7)
+- **Affected SIE topic.** Money-market funds; institutional vs. retail/government MMFs.
+- **What older prep books say.** Institutional prime and tax-exempt MMFs may impose **liquidity fees up to 2%** and **redemption gates up to 10 business days** when weekly liquid assets fall below 30%. Daily liquid assets ≥ 10%; weekly liquid assets ≥ 30%.
+- **Current rule.** The SEC's 2023 reform **removed the redemption-gate authority** and replaced the legacy discretionary-fee framework with:
+  - **Mandatory liquidity fee** for institutional prime and institutional tax-exempt funds when daily net redemptions **exceed 5%** of net assets (unless liquidity costs are less than one basis point).
+  - **Discretionary liquidity fee** of up to 2% available to non-government MMFs when the board determines it is in the best interest of the fund.
+  - **Higher minimum liquidity:** daily liquid assets raised to **25%** and weekly liquid assets raised to **50%**.
+- **Effective date.** Rules effective Oct. 2, 2023. Mandatory-fee compliance date: **Oct. 2, 2024.** Form N-MFP/N-CR amendments effective June 11, 2024.
+- **Citation.** SEC, *Money Market Fund Reforms*, Rel. No. IC-34959 (July 12, 2023), <https://www.federalregister.gov/documents/2023/08/03/2023-15124/money-market-fund-reforms-form-pf-reporting-requirements-for-large-liquidity-fund-advisers-technical>.
+- **Exam-likelihood: HIGH.** MMFs are a fixed SIE topic and the gate/fee language is exactly what older prep books drill.
+
+### 2.2 Variable annuity disclosure form (Form N-4)
+- **Affected SIE topic.** Variable annuities and the prospectus delivery requirement.
+- **What older prep books say.** Variable annuity prospectus is a single, lengthy statutory document delivered before or with the sale.
+- **Current rule.** Issuers of variable annuity and variable life contracts may satisfy prospectus delivery with a short-form **"Initial Summary Prospectus" (ISP)**, with the full statutory prospectus available online or on request — provided certain conditions are met.
+- **Effective date.** Rule effective **July 1, 2020**; compliance with the updated tagged-data and amendment cycle requirements was phased through Jan. 1, 2022.
+- **Citation.** SEC, *Updated Disclosure Requirements and Summary Prospectus for Variable Annuity and Variable Life Insurance Contracts*, Rel. No. 33-10765, <https://www.sec.gov/rules/final/2020/33-10765.pdf>.
+- **Exam-likelihood: MEDIUM.**
+
+### 2.3 Mutual fund "tailored shareholder reports" (Rule 30e-3 → Rule 30e-1/-3 redesign)
+- **Affected SIE topic.** Mutual fund disclosure, shareholder reports.
+- **What older prep books say.** Annual and semiannual reports are full statutory documents delivered in print or electronically under Rule 30e-3.
+- **Current rule.** Open-end funds (mutual funds and ETFs) must deliver concise **Tailored Shareholder Reports (TSRs)** to retail shareholders; lengthier financial data moves to Form N-CSR and the fund website. Rule 30e-3 was rescinded for open-end funds in the same release.
+- **Effective date.** Rules effective Jan. 24, 2023; **compliance date July 24, 2024.**
+- **Citation.** SEC, *Tailored Shareholder Reports for Mutual Funds and Exchange-Traded Funds*, Rel. No. 33-11125, <https://www.sec.gov/files/rules/final/2022/33-11125.pdf>.
+- **Exam-likelihood: LOW-MEDIUM.** Possible disclosure question.
+
+### 2.4 Digital assets / crypto in the brokerage context
+- **Affected SIE topic.** Securities products, alternative investments, custody.
+- **What older prep books say.** Treats crypto as outside FINRA jurisdiction or barely addresses it.
+- **Current rule (status, not a single bright-line rule).**
+  - **Spot Bitcoin ETPs** were approved by the SEC on Jan. 10, 2024; **spot Ether ETPs** approved May 23, 2024. These trade as registered '40 Act/exchange-traded products and are within scope of the FINRA-registered representative's universe.
+  - **SAB 121 was rescinded** by SAB 122 on Jan. 23, 2025, removing the on-balance-sheet treatment requirement for custodied crypto.
+  - Broker-dealers handling crypto-asset securities remain subject to FINRA Rule 3110 supervision and Reg BI when making recommendations involving these products.
+- **Citation.** SEC, *Order Granting Accelerated Approval of Proposed Rule Changes to List and Trade Bitcoin-Based Commodity-Based Trust Shares*, Rel. No. 34-99306 (Jan. 10, 2024), <https://www.sec.gov/files/rules/sro/nysearca/2024/34-99306.pdf>; SEC Staff Accounting Bulletin 122, <https://www.sec.gov/oca/staff-accounting-bulletin-122>.
+- **Exam-likelihood: LOW-MEDIUM.** Unlikely to dominate the exam but high-conceptual-relevance.
+
+---
+
+## Section 3 — Understanding Trading, Customer Accounts and Prohibited Activities
+
+### 3.1 Regulation Best Interest (Reg BI) and Form CRS
+- **Affected SIE topic.** Standards of conduct for broker-dealers; suitability vs. best-interest.
+- **What older prep books say.** Suitability (FINRA Rule 2111) is the governing standard for broker-dealer recommendations to retail customers.
+- **Current rule.** **Reg BI (Exchange Act Rule 15*l*-1)** is the governing standard for broker-dealer recommendations to retail customers. It imposes four obligations: **Disclosure, Care, Conflict of Interest, and Compliance.** Older "suitability" language is now subsumed within the Care Obligation. **Form CRS** (Form ADV Part 3 for advisers, Form CRS for BDs) must be delivered to each retail customer at or before the recommendation/account opening.
+- **Effective date.** **Compliance date June 30, 2020.**
+- **Citation.** SEC, *Regulation Best Interest: The Broker-Dealer Standard of Conduct*, Rel. No. 34-86031, <https://www.sec.gov/rules/final/2019/34-86031.pdf>; FINRA Reg BI key-topic page, <https://www.finra.org/rules-guidance/key-topics/regulation-best-interest>.
+- **Exam-likelihood: HIGH.** Reg BI is a tested SIE topic and prep books published before mid-2020 are wrong here.
+
+### 3.2 FINRA Rule 2165 — financial exploitation of specified adults
+- **Affected SIE topic.** Protection of senior investors and "specified adults"; temporary holds.
+- **What older prep books say.** A member firm may place a temporary hold on a **disbursement** of funds or securities for up to **15 business days**, extendable by 10 business days, when there is a reasonable belief of financial exploitation of a specified adult (age 65+, or 18+ with mental/physical impairment).
+- **Current rule.** A firm may now also place a temporary hold on a **securities transaction** (not just on a disbursement). The maximum hold may be extended an additional **30 business days** beyond the 25-business-day cap if the matter has been reported to a state regulator, agency, or court of competent jurisdiction — for a total of **up to 55 business days.**
+- **Effective date.** **March 17, 2022.**
+- **Citation.** FINRA, *Regulatory Notice 22-05* (Feb. 17, 2022), <https://www.finra.org/rules-guidance/notices/22-05>; SEC Order Approving SR-FINRA-2021-016 (Jan. 25, 2022), <https://www.sec.gov/files/rules/sro/finra/2022/34-94061.pdf>.
+- **Exam-likelihood: HIGH.** The 15/10/55-business-day arithmetic is a classic SIE trap.
+
+### 3.3 FINRA Rule 3241 — registered person as customer's beneficiary or in a position of trust
+- **Affected SIE topic.** Conflicts of interest, prohibited practices, senior-investor protection.
+- **What older prep books say.** Not present (rule did not exist in the 1st/2nd edition vintage). Often handled implicitly under firm policy.
+- **Current rule.** A registered person who is **named as a customer's beneficiary, executor, trustee, or attorney-in-fact, or who receives a bequest from a customer's estate**, must provide written notice to the firm and obtain firm review/approval before assuming that status. The rule does **not** apply where the customer is a member of the registered person's **immediate family** (as defined).
+- **Effective date.** **February 15, 2021.**
+- **Citation.** FINRA, *Regulatory Notice 20-38*, <https://www.finra.org/rules-guidance/notices/20-38>.
+- **Exam-likelihood: MEDIUM.** Often tested as a "trustee/POA" prohibited-practice scenario.
+
+### 3.4 FINRA Rule 4210 — covered agency transactions margin
+- **Affected SIE topic.** Margin requirements, mortgage-backed securities, TBA market.
+- **What older prep books say.** A 2% maintenance-margin requirement applies to non-exempt accounts for Covered Agency Transactions (TBA MBS, specified pools, certain agency CMOs).
+- **Current rule.** The **2% maintenance-margin requirement was eliminated.** Members must instead collect **variation margin** on mark-to-market losses on Covered Agency Transactions, subject to a **$250,000 per-counterparty threshold.** Members may, subject to conditions, take a capital charge in lieu of collecting variation margin.
+- **Effective date.** **May 22, 2024.**
+- **Citation.** FINRA, *Frequently Asked Questions Regarding Covered Agency Transaction Margin*, <https://www.finra.org/rules-guidance/key-topics/margin-accounts/4210faq>; SEC Order Approving SR-FINRA-2021-010 (July 27, 2023).
+- **Exam-likelihood: LOW-MEDIUM.** The SIE rarely drills the TBA mechanics, but the 2% number is wrong if cited.
+
+### 3.5 Short-sale reporting — Rule 13f-2 / Form SHO (status note)
+- **Affected SIE topic.** Reg SHO, short selling, public reporting of short positions.
+- **What older prep books say.** Short-position public reporting is limited to FINRA's twice-monthly aggregate-short-interest data.
+- **Current rule (with a caveat).** SEC adopted **Rule 13f-2** and **Form SHO**, requiring institutional investment managers above specified thresholds to file monthly short-position reports; the SEC will publish aggregated data publicly. Rule was effective Jan. 2, 2024 with a Jan. 2, 2025 compliance date — but the **SEC has extended the compliance/first-filing date several times; as of Dec. 2025 the first Form SHO filings are not due until Feb. 14, 2028,** pending the SEC's response to the Fifth Circuit's remand. The underlying rule remains on the books.
+- **Citation.** SEC, *Short Position and Short Activity Reporting by Institutional Investment Managers*, Rel. No. 34-98738 (Oct. 13, 2023); SEC Press Release 2025-37, <https://www.sec.gov/newsroom/press-releases/2025-37>; Morgan Lewis, *Short Sale Reporting on Form SHO: Compliance Date Further Extended to 2028* (Dec. 2025), <https://www.morganlewis.com/pubs/2025/12/short-sale-reporting-on-form-sho-compliance-date-further-extended-to-2028>.
+- **Exam-likelihood: LOW.** Tested at most as a "name the form" item; the extended compliance date means SIE writers are unlikely to lean on it.
+
+### 3.6 SEC Marketing Rule (Rule 206(4)-1) — note for adviser-side questions
+- **Affected SIE topic.** Investment adviser advertising. (Note: the SIE is primarily a BD-side exam, but the Investment Advisers Act framework is in scope.)
+- **What older prep books say.** Two separate rules govern adviser advertising and cash solicitation: the old Rule 206(4)-1 (advertising) and Rule 206(4)-3 (cash solicitation). Testimonials are effectively prohibited.
+- **Current rule.** The two old rules were **combined into a single Marketing Rule** (Rule 206(4)-1). Testimonials and endorsements are **permitted subject to disclosure, oversight, and disqualification conditions.** Performance presentations are subject to net-of-fees and time-period requirements.
+- **Effective date.** Rule effective May 4, 2021. **Compliance date November 4, 2022.**
+- **Citation.** SEC, *Investment Adviser Marketing*, Rel. No. IA-5653, <https://www.sec.gov/rules/final/2020/ia-5653.pdf>.
+- **Exam-likelihood: LOW-MEDIUM.**
+
+### 3.7 Beneficial-ownership reporting (Corporate Transparency Act) — status note for AML/KYC
+- **Affected SIE topic.** Anti-money-laundering, customer-identification program (CIP), beneficial-ownership identification.
+- **What older prep books say.** The 2018 FinCEN CDD Rule requires covered financial institutions to identify and verify the beneficial owners of legal-entity customers (25% equity / one control person).
+- **Current rule.**
+  - The **FinCEN CDD Rule for covered financial institutions remains in force unchanged** — broker-dealers must still identify and verify beneficial owners of legal-entity customers at account opening.
+  - Separately, the **Corporate Transparency Act (CTA)** required most U.S. entities to file Beneficial Ownership Information (BOI) reports directly with FinCEN. **As of the March 26, 2025 interim final rule, FinCEN has removed BOI reporting requirements for U.S. companies and U.S. persons;** only foreign reporting companies registered to do business in the U.S. remain subject. Multiple court challenges are pending. If your prep book treats CTA BOI as a universal U.S. requirement, that is now wrong.
+- **Effective dates.** FinCEN CDD Rule: May 11, 2018 (unchanged). CTA BOI scope reduction: **March 26, 2025** interim final rule.
+- **Citation.** FinCEN, *Beneficial Ownership Information Reporting*, <https://www.fincen.gov/boi>; FinCEN press release, *FinCEN Removes Beneficial Ownership Reporting Requirements for U.S. Companies and U.S. Persons* (Mar. 21, 2025), <https://www.fincen.gov/news/news-releases/fincen-removes-beneficial-ownership-reporting-requirements-us-companies-and-us>.
+- **Exam-likelihood: MEDIUM.** AML/BSA is a fixed SIE topic; the CDD Rule (not the CTA) is what the SIE actually tests, so the practical answer for exam purposes is: stick with the CDD Rule, ignore the CTA noise.
+
+---
+
+## Section 4 — Overview of the Regulatory Framework
+
+### 4.1 Consolidated Audit Trail (CAT) — operational
+- **Affected SIE topic.** Order-audit-trail systems (older books still reference OATS).
+- **What older prep books say.** Broker-dealers report equity order activity through **OATS** (Order Audit Trail System).
+- **Current rule.** **OATS was retired on September 1, 2021.** All in-scope order-event reporting moved to the **Consolidated Audit Trail (CAT).** FINRA Rule 6800 Series governs member compliance.
+- **Effective date.** OATS retirement: **Sept. 1, 2021.** CAT reporting has been operational and phased in since 2020.
+- **Citation.** FINRA, *2024 Annual Regulatory Oversight Report — CAT*, <https://www.finra.org/rules-guidance/guidance/reports/2024-finra-annual-regulatory-oversight-report/cat>; CAT NMS Plan, <https://www.catnmsplan.com/>.
+- **Exam-likelihood: MEDIUM.** "OATS" is a frequent wrong-answer choice on the current SIE; "CAT" is correct.
+
+### 4.2 SIPC coverage limits (unchanged — included as a guard against misremembered numbers)
+- **Affected SIE topic.** Securities Investor Protection Corporation.
+- **Current rule.** SIPC protects each customer up to **$500,000 in securities and cash, of which up to $250,000 may be cash.** Numbers have not changed since 2010; if a prep book lists different numbers, it is wrong.
+- **Citation.** SIPC, *What SIPC Protects*, <https://www.sipc.org/for-investors/what-sipc-protects>.
+- **Exam-likelihood: HIGH (always tested).**
+
+### 4.3 MSRB — Rule G-15 / G-12 alignment with T+1
+- **Affected SIE topic.** Municipal-bond settlement, MSRB rulebook.
+- **What older prep books say.** MSRB Rules G-12 (inter-dealer) and G-15 (customer) set regular-way municipal settlement at T+2.
+- **Current rule.** MSRB amended Rules G-12 and G-15 to align with the SEC's T+1 transition. Regular-way municipal settlement is **T+1.**
+- **Effective date.** **May 28, 2024.**
+- **Citation.** MSRB, *MSRB Files Amendments to Move Municipal Securities to T+1 Settlement Cycle*, <https://www.msrb.org/sites/default/files/2023-12/2023-19.pdf>.
+- **Exam-likelihood: HIGH.** Settlement is core SIE content.
+
+### 4.4 FINRA Rule 3110.19 — Residential Supervisory Location ("hybrid work" rule)
+- **Affected SIE topic.** Supervision and OSJ/branch-office classification.
+- **What older prep books say.** A registered representative's home location used for securities business is generally treated as a branch office or non-branch location subject to specified supervisory inspections.
+- **Current rule.** FINRA Rule 3110.19 created a new category — **Residential Supervisory Location (RSL)** — permitting a registered person's private residence to be classified as a non-branch location subject to a **periodic (rather than annual) inspection cycle**, provided enumerated conditions are met (no customer funds at the location, no public-facing signage, eligible-person status, etc.).
+- **Effective date.** **June 1, 2024.**
+- **Citation.** FINRA, *Regulatory Notice 24-02*, <https://www.finra.org/rules-guidance/notices/24-02>.
+- **Exam-likelihood: LOW-MEDIUM.**
+
+### 4.5 FINRA Rule 3110.18 — Remote Inspections Pilot Program
+- **Affected SIE topic.** Supervision and branch-office inspection.
+- **What older prep books say.** Branch-office inspections must be conducted **on-site** at the prescribed cadence.
+- **Current rule.** FINRA's three-year **Remote Inspections Pilot Program** permits eligible firms to satisfy Rule 3110(c) inspection obligations remotely, subject to enrollment, written supervisory procedures, and data reporting to FINRA.
+- **Effective date.** **July 1, 2024**, through June 30, 2027.
+- **Citation.** FINRA, *Regulatory Notice 24-02*, <https://www.finra.org/rules-guidance/notices/24-02>.
+- **Exam-likelihood: LOW.**
+
+---
+
+## What was removed (and why)
+
+The following older content categories typically appear in pre-2023 SIE prep manuals and should be **deleted or annotated as stale** when studying:
+
+1. **"T+2 regular-way settlement."** Replaced by T+1 (see §1.1). Any practice question keyed on T+2 ex-date arithmetic is now wrong.
+2. **"Suitability is the broker-dealer's standard for retail recommendations."** Reg BI superseded this (see §3.1). Suitability survives only inside Reg BI's Care Obligation and as a standalone rule for institutional accounts.
+3. **"Reg A Tier 2 is capped at $50 million" / "Reg CF is capped at ~$1.07 million."** Both caps were raised (§§1.3, 1.4).
+4. **"Form 144 may be filed in paper."** EDGAR-only since April 13, 2023 (§1.5).
+5. **"Money-market funds may impose redemption gates."** Gates were removed in the 2023 reform; the institutional-prime/tax-exempt liquidity-fee framework is now mandatory above the 5% net-redemption trigger (§2.1).
+6. **"OATS reporting."** OATS was retired Sept. 1, 2021 — replaced by CAT (§4.1).
+7. **"2% maintenance margin on Covered Agency Transactions."** Replaced by variation-margin requirement (§3.4).
+8. **"FINRA Rule 2165 hold is up to 25 business days and applies only to disbursements."** It now extends to transactions, and the cap can reach 55 business days with regulator notification (§3.2).
+9. **"Juneteenth is not a market holiday."** It is (§1.2).
+10. **"Investment-adviser testimonials are prohibited."** Permitted under conditions since Marketing Rule compliance date Nov. 4, 2022 (§3.6).
+11. **"MSRB Rules G-12 and G-15 require T+2 settlement for municipals."** Now T+1 (§4.3).
+12. **"A registered rep's home location is a branch unless explicitly excepted."** RSL classification now exists (§4.4).
+
+---
+
+## What was *not* changed (intentional non-edits)
+
+The following are commonly suspected of being out of date but **are not** as of May 2026, and any prep-book treatment of them is still correct:
+
+- The four pillars of an AML program plus the independent-test requirement (FINRA Rule 3310).
+- SIPC limits of $500,000 / $250,000-cash per separate-capacity customer.
+- The "two-out-of-three" test for U.S. tax residency / treatment of foreign investors is **not** an SIE topic — ignore conflicting prep-book content.
+- The Securities Act of 1933 / Exchange Act of 1934 / Investment Company Act of 1940 / Investment Advisers Act of 1940 / Trust Indenture Act of 1939 / Securities Investor Protection Act of 1970 framework.
+- FINRA registration exams (SIE + top-off Series 6 / 7 / 79 / 22, etc.) — structure unchanged.
+- Customer-identification program (CIP) elements: name, DOB, address, taxpayer ID number.
+- Standard order types (market, limit, stop, stop-limit), good-til-cancel duration.
+
+---
+
+## How to use this document during your prep
+
+1. Read the manual chapter normally.
+2. Cross-reference any section listed above and **annotate the manual margin with the corrected rule + effective date** (don't try to memorize two versions).
+3. Trust this document — not the manual — on every item in the "What was removed" list.
+4. For the items tagged **HIGH** in exam-likelihood (T+1, Reg BI, Rule 2165, MMF reform, MSRB T+1, SIPC limits), expect multiple questions on test day. Drill these to recognition speed.
+5. If a practice-question bank gives you an answer that conflicts with this document, the question is stale — not the rule.
+
+---
+
+---
+
+# APPENDIX A — Unit-by-Unit Audit of the Kaplan SIE LEM, 3rd Ed. (©2022, updated July 2023)
+
+This appendix walks the manual unit by unit. For each unit I list the stated **Learning Objectives** (as printed at the start of the unit), then flag every claim that is **STALE**, **OK** (current as printed), or **ADD** (a current rule the manual does not cover but the SIE may test). Page numbers refer to the printed page numbers in the Kaplan PDF.
+
+**Headline finding.** The 3rd Edition (updated July 2023) is **more current than a typical pre-2023 prep book** — it already reflects Reg BI, Form CRS, Reg A+ $75M, the Coverdell/529 framework, ADRs, and the post-2020 conduct rules. The principal gaps are:
+
+1. **Settlement is T+2 throughout the manual** (Units 1, 2, 3). The May 2024 T+1 transition is not reflected anywhere. This is the single biggest correction.
+2. **FINRA Rule 2165** (Unit 11) is described in pre-2022-amendment form — 15-business-day hold on disbursements only. The 2022 amendments (transaction holds; up to 55-business-day extension) are missing.
+3. **FINRA Rule 3241** (registered person as beneficiary/POA/trustee) is missing entirely from Unit 12.
+4. **2023 Money Market Fund reforms** (Unit 4) are not reflected — the manual still describes the legacy redemption-gate / discretionary-liquidity-fee framework where MMFs are discussed.
+5. **SECURE 2.0 retirement changes** (Unit 6) are partially or not reflected — RMD age moved to 73, the 50% RMD-missed penalty was reduced, and the IRA catch-up is now indexed.
+6. **FINRA Rule 3110.18 / 3110.19** (Unit 12) — Remote Inspections Pilot and Residential Supervisory Location are not mentioned (both took effect after the July 2023 update).
+7. **SEC Regulation S-P 2024 amendments** (Unit 11) — incident-response and 30-day customer notification requirements are not in the book.
+
+What follows is the unit-by-unit detail.
+
+---
+
+## Unit 1 — Primary Markets and Secondary Markets (p. 1)
+
+**LOs as printed.** 1.a Purpose/participants in primary markets; 1.b Process for selling new issues; 1.c Exempt issues/issuers/transactions; 1.d Secondary-market centers; 1.e Secondary-market participants; 1.f Components of a quote; 1.g Major order types; 1.h Principal vs. agency capacity; 1.i Settlement requirements.
+
+| # | Claim in the manual | Status | Correction / Citation |
+|---|---|---|---|
+| 1.1 | Regular-way corporate-stock settlement is **T+2** (pp. ~22–24, and the settlement table around p. 23). | **STALE** | Now **T+1** (effective 5/28/2024). SEC Rule 15c6-1 as amended; FINRA Technical Notice 5/22/2024. |
+| 1.2 | Ex-dividend date is **one business day before** the record date (so under T+2). | **STALE** | Ex-dividend date is now the **same business day as the record date** for regular-way trades under T+1. |
+| 1.3 | Treasury and option settlement remain T+1 / next business day. | **OK** | Unchanged. |
+| 1.4 | "When-issued" trades settle on issuance. | **OK** | Unchanged. |
+| 1.5 | Reg A Tier 1 = $20M / Tier 2 = $75M per 12 months. | **OK** | Already updated to the March 2021 figures. |
+| 1.6 | Regulation D / Rule 506(b) and 506(c) private placements; accredited-investor income tests ($200K / $300K joint / $1M net worth ex-residence). | **OK** | Unchanged. (Note: the SEC expanded the accredited-investor definition in 2020 to include holders of Series 7/65/82, knowledgeable employees of private funds, and certain "family clients" — already reflected in the manual.) |
+| 1.7 | Form 144 filing for affiliate resales. | **ADD** | Manual does not specifically state filing method. Since **April 13, 2023**, Form 144 must be filed **electronically on EDGAR**; paper filing is no longer permitted. SEC Rel. 33-11070. |
+| 1.8 | Order types (market / limit / stop / stop-limit / GTC / day). | **OK** | Unchanged. |
+| 1.9 | Principal vs. agency capacity, riskless principal. | **OK** | Unchanged. |
+| 1.10 | OATS or CAT? Manual does not reference OATS in this unit; CAT not detailed here either. | **ADD** | If the unit references **OATS** anywhere, treat as stale (OATS retired **9/1/2021**); current order-event reporting is to the **Consolidated Audit Trail (CAT)** under FINRA Rule 6800 Series. |
+
+---
+
+## Unit 2 — Equity Securities (p. 37)
+
+**LOs as printed.** 2.a Common stock characteristics; 2.b Preferred stock, ADRs, and other equities; 2.c Corporate actions.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 2.1 | Common stockholder rights (voting, residual claim, preemptive rights, limited liability). | **OK** | Unchanged. |
+| 2.2 | Preferred stock features (cumulative, participating, convertible, callable). | **OK** | Unchanged. |
+| 2.3 | **ADRs trade and settle T+2** (p. ~46). | **STALE** | Now **T+1** for U.S.-listed ADRs (same SEC Rule 15c6-1 amendment). |
+| 2.4 | Corporate actions (cash dividend, stock dividend, stock split, reverse split, tender offer, rights, warrants). | **OK** | Mechanics unchanged. Note that ex-date arithmetic in any worked example must shift to T+1 alignment (record-date-same-day rule above). |
+| 2.5 | Rights offerings — subscription period, cum-rights / ex-rights. | **OK** | Unchanged. |
+
+---
+
+## Unit 3 — Debt Securities (p. 63)
+
+**LOs as printed.** 3.a Bond basics/yields/prices; 3.b Bond risks; 3.c Corporate bonds and liquidation order; 3.d Municipal bonds; 3.e Treasury and agency debt; 3.f Money market and asset-backed securities; 3.g Taxation of bond interest.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 3.1 | **Corporate bonds settle T+2** (p. ~75) with accrued interest on a 30/360 basis. | **STALE** | Corporate bond settlement is now **T+1**; 30/360 accrual convention is unchanged. |
+| 3.2 | **Municipal bonds settle T+2** (p. ~76) with accrued interest 30/360. | **STALE** | MSRB Rules **G-12 and G-15** were amended to **T+1**, effective **5/28/2024**. Source: MSRB Notice 2023-19. |
+| 3.3 | **Treasury bonds/notes/bills settle T+1**. | **OK** | Unchanged (Treasuries were always T+1). |
+| 3.4 | **Asset-backed securities settle T+2** (p. ~80). | **STALE** | Now **T+1** for standard equity-like and corporate-debt-like ABS that trade under the general settlement-cycle rule. (Specific MBS/TBA timelines are governed by SIFMA's separate TBA schedule and were not part of the 15c6-1 amendment — but Kaplan's general statement should be updated.) |
+| 3.5 | Bond taxation: tax-equivalent yield formula; municipal interest federally tax-exempt; Treasury interest exempt from state/local. | **OK** | Unchanged. |
+| 3.6 | Money market instruments (CDs, commercial paper, BAs, repos, fed funds, T-bills, negotiable CDs). | **OK** | Unchanged. (FDIC insurance cap remains $250,000 per depositor per insured bank per ownership category — confirmed.) |
+| 3.7 | Issuer credit-rating agencies (S&P, Moody's, Fitch). | **OK** | Unchanged. |
+| 3.8 | LIBOR references, if any. | **ADD** | LIBOR was **permanently discontinued 6/30/2023** and replaced by SOFR (Secured Overnight Financing Rate) for USD reference. If the manual references LIBOR for floating-rate notes, update to SOFR. |
+
+---
+
+## Unit 4 — Investment Company and Insurance-Based Products (p. 87)
+
+**LOs as printed.** 4.a Investment Company Act of 1940; 4.b Life-insurance-based products.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 4.1 | Three classes of investment companies under '40 Act (FACs, UITs, management companies open/closed-end). | **OK** | Unchanged. |
+| 4.2 | Open-end (mutual fund) pricing at next computed NAV (forward pricing). | **OK** | Unchanged. |
+| 4.3 | Sales-charge / 12b-1 fee framework; FINRA cap of 8.5% maximum sales charge with breakpoints. | **OK** | Unchanged. |
+| 4.4 | Mutual fund prospectus and shareholder-report delivery. | **STALE** | Open-end funds (mutual funds + ETFs) must deliver concise **Tailored Shareholder Reports (TSRs)** to retail shareholders; Rule 30e-3 was rescinded for open-end funds. Compliance date **7/24/2024.** SEC Rel. 33-11125. |
+| 4.5 | Money market mutual funds — Rule 2a-7 framework: stable $1 NAV (retail/government) vs. floating NAV (institutional prime/tax-exempt); **discretionary liquidity fees up to 2%** and **redemption gates up to 10 business days** when weekly liquid assets fall below 30%; minimum daily liquid assets **10%**, weekly liquid assets **30%**. | **STALE** | The **2023 reform** removed the gate authority entirely. Replaced with: **mandatory liquidity fee** for institutional prime/tax-exempt funds when **daily net redemptions exceed 5%** of NAV; **discretionary fee** up to 2% for non-government MMFs at board discretion; minimum **daily liquid assets 25%** and **weekly liquid assets 50%**. Compliance date for mandatory fee: **10/2/2024**. SEC Rel. IC-34959. |
+| 4.6 | Variable annuity prospectus delivery (full statutory prospectus). | **ADD** | Issuers may now deliver an **Initial Summary Prospectus (ISP)** with the full statutory document available online or on request. Effective 7/1/2020. SEC Rel. 33-10765. |
+| 4.7 | Whole life / term life / universal / variable universal life products; 1035 exchange. | **OK** | Unchanged. |
+| 4.8 | Variable contracts as both an insurance product and a security; FINRA Rule 2330 deferred-VA exchange rules. | **OK** | Unchanged. |
+
+---
+
+## Unit 5 — Other Investment Vehicles (p. 107)
+
+**LOs as printed.** 5.a Options contract characteristics; 5.b Equity vs. nonequity options; 5.c Using options to meet client objectives; 5.d 529 college savings vs. prepaid tuition; 5.e LGIPs and ABLE accounts; 5.f General and limited partnerships; 5.g Partnership risks and taxation; 5.h Hedge fund suitability/risks; (REITs/ETFs/ETNs covered in Lesson 5.4).
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 5.1 | **Listed options settle T+1** (premium next business day); exercise of equity options settles **T+2**. | **STALE in part** | Options-premium settlement is still next business day (the manual is right on that). **Exercise of an equity option that delivers stock** now settles **T+1** (it tracked the underlying equity from T+2 to T+1 on 5/28/2024). |
+| 5.2 | Options characteristics — strike, expiration, contract size (100), OCC issues/guarantees options, OPRA, NYSE/CBOE. | **OK** | Unchanged. |
+| 5.3 | 529 plans — state-sponsored, federal tax-deferred / qualified-distribution tax-free, no income limits, beneficiary changeable within family. | **OK** | Unchanged. **ADD:** SECURE 2.0 permits tax- and penalty-free **rollover from a 529 to a Roth IRA** (subject to a $35,000 lifetime cap, 15-year-old-account rule, annual rollover capped at the IRA contribution limit). Effective for distributions in **2024**. |
+| 5.4 | Coverdell ESA — $2,000 annual contribution per beneficiary, age-30 distribution rule. | **OK** | Unchanged. |
+| 5.5 | ABLE accounts. | **OK** | Mechanics unchanged. |
+| 5.6 | REITs, ETFs, ETNs — characteristics. | **OK** | Unchanged. |
+| 5.7 | Crypto / digital-asset products. | **ADD** | **Spot Bitcoin ETPs** approved by the SEC on **1/10/2024** (Rel. 34-99306); **spot Ether ETPs** approved **5/23/2024**. These are part of the registered-product universe a representative may encounter. |
+
+---
+
+## Unit 6 — Customer Accounts (p. 139)
+
+**LOs as printed.** 6.a Individual vs. joint accounts; 6.b Business accounts; 6.c Trusts (living/revocable/irrevocable); 6.d Custodial and ESA accounts; 6.e Traditional and Roth IRA rules; 6.f Defined-benefit vs. defined-contribution plans; 6.g Cash vs. margin vs. fee-based accounts; 6.h Discretionary vs. nondiscretionary.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 6.1 | Manual says **"annual dollar limit not tested"** but lists the IRA **catch-up at $1,000**. | **STALE for the current tax year** | Under **SECURE 2.0**, the IRA catch-up is now **indexed for inflation in $100 increments**. For **tax year 2026** the catch-up is **$1,100** and the base IRA limit is **$7,500** (so $8,600 total at age 50+). IRS, *401(k) Limit Increases to $24,500 for 2026, IRA Limit Increases to $7,500*. The "limits not tested" disclaimer remains good study advice. |
+| 6.2 | Roth IRA — same contribution limits, no age limit for contributions, AGI phase-out applies. | **OK** | Unchanged. Note that the **traditional IRA also has no age limit** for contributions since the SECURE Act of 2019 — confirm the manual reflects this. |
+| 6.3 | RMD age **72** (pre-SECURE 2.0). | **STALE** | RMD beginning age is now **73** for individuals who reach 72 after 12/31/2022 (SECURE 2.0 §107); will rise to **75** for individuals who reach age 74 after 12/31/2032. |
+| 6.4 | Penalty for failure to take an RMD is **50% of the shortfall**. | **STALE** | Reduced to **25%** under SECURE 2.0, with further reduction to **10%** if the RMD is corrected during the correction window. Effective for tax years beginning after 12/29/2022. |
+| 6.5 | Coverdell ESA / 529 / UGMA-UTMA mechanics. | **OK** | Unchanged. |
+| 6.6 | Trust accounts (living, revocable, irrevocable). | **OK** | Unchanged. |
+| 6.7 | Margin account — Regulation T initial requirement **50%**, FINRA minimum equity **$2,000** (long) / **$5 (or 100%) per share** for low-priced stocks, FINRA maintenance **25% long / 30% short**. | **OK** | Reg T 50% has been in place since 1974; FINRA minimums unchanged. |
+| 6.8 | Pattern day trader (PDT) — 4+ day trades in 5 business days, $25,000 minimum equity. | **OK** | Unchanged (FINRA Rule 4210). |
+| 6.9 | Discretionary trading — written authorization required *before* discretionary use; principal must review promptly. | **OK** | Unchanged. |
+| 6.10 | Power of attorney — full vs. limited, expires on death/incompetency. | **OK** | Unchanged. |
+
+---
+
+## Unit 7 — Risk and Recommendations (p. 165)
+
+**LOs as printed.** 7.a Systematic vs. nonsystematic risk; 7.b Mitigation; 7.c Define an investment recommendation; 7.d Customer objectives vs. investment characteristics; 7.e Major market benchmarks/indices.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 7.1 | Reg BI is the conduct standard for retail recommendations; four obligations (Disclosure / Care / Conflict / Compliance); compliance date **6/30/2020**. | **OK** | Already covered correctly in the manual at p. ~167–171. |
+| 7.2 | Form CRS delivery — at or before account opening / recommendation; retail-only. | **OK** | Unchanged. |
+| 7.3 | Types of risk — systematic (market / interest-rate / inflation / currency / political) and nonsystematic (business / financial / regulatory / liquidity). | **OK** | Unchanged. |
+| 7.4 | Major indices — DJIA (30 price-weighted), S&P 500 (market-cap-weighted), Nasdaq Composite, Wilshire 5000, Russell 2000, MSCI EAFE. | **OK** | Unchanged. |
+| 7.5 | Customer profile — investment objectives, time horizon, liquidity, risk tolerance, tax status. | **OK** | Unchanged. |
+
+---
+
+## Unit 8 — Tax and Yields (p. 179)
+
+**LOs as printed.** 8.a Current/dividend yield; 8.b Capital gains/losses; 8.c Total return; 8.d Taxation of ordinary income, investment income, capital gains; 8.e Long- vs. short-term.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 8.1 | Current yield = annual income / current market value. | **OK** | Unchanged. |
+| 8.2 | Total return = (income + gain) / cost basis. | **OK** | Unchanged. |
+| 8.3 | LTCG holding period — **more than one year**; STCG taxed at ordinary rates. | **OK** | Unchanged. |
+| 8.4 | LTCG rates **0% / 15% / 20%** brackets; **3.8% Net Investment Income Tax** above MAGI thresholds. | **OK** | Brackets are adjusted annually for inflation; the 0/15/20% structure is unchanged. NIIT is unchanged. |
+| 8.5 | Qualified dividend treatment — must hold the underlying common stock more than **60 days within the 121-day window** around the ex-date. | **OK** | Unchanged. |
+| 8.6 | Wash sale rule — 30 days before/after, disallowed loss added to basis of replacement security. | **OK** | Unchanged. |
+
+---
+
+## Unit 9 — Economics (p. 187)
+
+**LOs as printed.** 9.a Four phases of business cycle; 9.b Major/minor economic indicators; 9.c Cyclical/defensive/countercyclical industries; 9.d Balance sheet and income statement; 9.e Two principal economic theories; 9.f Exchange rates and balance of trade; 9.g Purpose of the Fed; 9.h Active measures by the Fed; 9.i Four prominent interest rates.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 9.1 | Four phases of the business cycle (expansion, peak, contraction, trough); recession defined as two consecutive quarters of negative real GDP. | **OK** | Unchanged. |
+| 9.2 | Keynesian vs. supply-side / monetarist theory. | **OK** | Unchanged. |
+| 9.3 | **Federal Reserve tools**: discount rate, reserve requirements (**reserve-requirement ratio set to 0% effective 3/26/2020 — still 0% as of 2026**), open-market operations, **interest on reserve balances (IORB)** which is now the principal policy rate alongside the federal funds target range. | **STALE in part** | If the manual still describes "**reserve requirements**" as a primary active tool, that is misleading — the Fed has set the **reserve requirement ratio to zero since March 26, 2020** and is unlikely to restore it. IORB (formerly IOER) is now the floor of the policy rate corridor. Source: Federal Reserve, *Reserve Requirements*. |
+| 9.4 | Four prominent rates: discount rate, federal funds rate, prime rate, broker call (call money) rate. | **OK** | Unchanged. |
+| 9.5 | FOMC composition (7 governors + NY Fed president + 4 rotating regional presidents). | **OK** | Unchanged. |
+
+---
+
+## Unit 10 — Regulators (p. 211)
+
+**LOs as printed.** 10.a Role and authority of the SEC; 10.b Treasury branches with securities authority; 10.c SIPC vs. FDIC; 10.d State administrators / NASAA; 10.e FINRA scope; 10.f MSRB and exchanges; 10.g Record-retention requirements.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 10.1 | SEC — created by the Exchange Act of 1934; commissioners (5, no more than 3 from same party); five divisions and supporting offices. | **OK** | Unchanged. |
+| 10.2 | Treasury branches — **OCC** (national banks), **FinCEN** (BSA/AML), IRS. | **OK** | Unchanged. |
+| 10.3 | **SIPC limits** — up to **$500,000** per separate-capacity customer, of which **up to $250,000** may be cash. | **OK** | Unchanged since 2010. |
+| 10.4 | **FDIC limits** — **$250,000** per depositor per insured bank per ownership category. | **OK** | Unchanged. |
+| 10.5 | FINRA — successor to NASD (consolidation with NYSE Member Regulation in 2007); scope; FINRA Code of Procedure and Code of Arbitration. | **OK** | Unchanged. |
+| 10.6 | MSRB — writes rules; does not enforce (FINRA / SEC / banking regulators enforce MSRB rules against their respective members). | **OK** | Unchanged. |
+| 10.7 | NASAA — state administrators association; Uniform Securities Act. | **OK** | Unchanged. |
+| 10.8 | **Record retention** — SEA Rules **17a-3 / 17a-4**: most records **6 years**, certain records **3 years**, partnership/articles/stock certificates etc. for **life of firm**; communications and customer-account records mostly 6 years. | **OK** | Core retention periods unchanged. Note that **17a-4(f) was amended in 2023** to permit broker-dealers to use an **audit-trail alternative** to the legacy WORM (write-once-read-many) storage requirement. Mechanics unchanged for the SIE. SEC Rel. 34-96034. |
+| 10.9 | Order-event audit trail. | **ADD** | If the manual references **OATS**, replace with **CAT** (OATS retired 9/1/2021). |
+
+---
+
+## Unit 11 — Regulatory Issues and Ethics (p. 225)
+
+**LOs as printed.** 11.a Define money laundering; 11.b Required AML steps; 11.c Market manipulation; 11.d Insider trading; 11.e Rule 5130 restricted persons; 11.f Senior-client expectations; 11.g Improper use of customer assets; 11.h Limitations on nonregistered personnel; 11.i Public-communications categories; 11.j TCPA cold-call rules; 11.k Customer mail/statements, Reg SP, BCP.
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 11.1 | AML — three stages (placement / layering / integration); four required AML-program pillars + an **independent test** (so five elements); CIP requirements. | **OK** | Unchanged (FINRA Rule 3310). |
+| 11.2 | **CTR** filed for cash transactions **>$10,000** (single or aggregated same-day); not for checks or wires. | **OK** | Unchanged. |
+| 11.3 | **SAR** filed within **30 days** of becoming aware of suspicious activity (extension to 60 days if no suspect identified). SAR is confidential. | **OK** | Unchanged. |
+| 11.4 | OFAC — SDN List screening. | **OK** | Unchanged. |
+| 11.5 | Insider trading — material non-public information (MNPI); ITSA / ITSFEA penalties (criminal up to **$5M / 20 years**; civil treble damages). | **OK** | Unchanged. |
+| 11.6 | Selling-away, front-running, painting the tape, marking the close, freeriding. | **OK** | Unchanged. |
+| 11.7 | Rule 5130 / 5131 — restricted persons in IPO allocations; spinning prohibition. | **OK** | Unchanged. |
+| 11.8 | **FINRA Rule 2165 (financial exploitation of specified adults)** — temporary hold on **disbursements** for up to **15 business days**, extendable by a state regulator. | **STALE** | The 2022 amendments (effective **3/17/2022**) (a) added authority to place a hold on a **securities transaction** in addition to a disbursement, (b) permit an internal extension up to **25 business days total** (15 initial + 10 additional), and (c) permit a further **30-business-day** extension (up to **55 business days total**) where the matter has been reported to a state regulator, agency, or court of competent jurisdiction. FINRA *Regulatory Notice 22-05*. |
+| 11.9 | Trusted contact person — required to make reasonable effort to obtain at account opening. | **OK** | Unchanged (FINRA Rule 4512). |
+| 11.10 | **FINRA Rule 3241 (registered person named as customer's beneficiary / executor / trustee / POA)**. | **MISSING** | The 3rd Edition does not appear to cover Rule 3241. Add: registered person must give written notice to the firm and obtain firm approval before being named in such a role for a non-immediate-family customer. Effective **2/15/2021**. *Regulatory Notice 20-38*. |
+| 11.11 | TCPA cold-call rules — calls only **8 AM – 9 PM** local time of the called party; firm DNC list and National DNC Registry screening; identify caller, firm, phone number. | **OK** | Unchanged in substance. The **FCC's "one-to-one consent" amendment** (intended to restrict lead-generator consent) was vacated by the 11th Circuit in *IMC v. FCC* (Jan. 2025) — not in scope for SIE. |
+| 11.12 | **Public-communications categories** — retail / institutional / correspondence (FINRA Rule 2210); pre-use principal approval generally required for retail communications. | **OK** | Unchanged. |
+| 11.13 | Customer statements — quarterly minimum (monthly if account activity). | **OK** | Unchanged. |
+| 11.14 | Regulation SP — initial and annual privacy notice; opt-out for nonaffiliated third-party sharing. | **ADD** | **SEC amended Regulation S-P** on **5/15/2024** to require (a) an **incident-response program**, (b) **customer notification within 30 days** of unauthorized access or use of sensitive customer information, and (c) expanded vendor-oversight requirements. Large entities compliance date **12/3/2025**; small entities **6/3/2026**. SEC Rel. 34-100155 (Press Release 2024-58). |
+| 11.15 | Business continuity plan (BCP) — required, emergency contact persons disclosed to FINRA. | **OK** | Unchanged. |
+
+---
+
+## Unit 12 — Joining and Leaving a Member Firm and Ongoing Expectations (p. 249)
+
+**LOs as printed.** 12.a Associating with / leaving a member firm; 12.b Ongoing expectations (continuing education, etc.); 12.c Outside business activities / private securities transactions; (specific LOs include Form U4/U5 disclosure rules, fingerprinting, and supervision).
+
+| # | Claim | Status | Correction / Citation |
+|---|---|---|---|
+| 12.1 | Form U4 — sponsorship by member firm required; truthful disclosure; window of **120 days** to complete the qualification exam after filing. | **OK** | Unchanged. |
+| 12.2 | Form U4 amendments — most events **30 days**; **statutory disqualification** events **10 business days**. | **OK** | Unchanged. |
+| 12.3 | Form U5 — file with CRD within **30 days** of termination; copy to former associated person within same window. | **OK** | Unchanged. |
+| 12.4 | Fingerprinting required for most employees handling cash/securities; certain clerical exempt. | **OK** | Unchanged. |
+| 12.5 | Continuing Education — **Regulatory Element** annually within 120 days of registration anniversary; **Firm Element** at least annually. | **STALE in detail** | Under **FINRA Rule 1240 (amended 3/15/2022)**, the Regulatory Element became an **annual** requirement (replacing the prior 2nd/5th/10th-anniversary cycle), and the **Maintaining Qualifications Program (MQP)** permits a terminated registered person to extend the 2-year requalification window for up to **5 years** by completing annual CE through FinPro. Source: FINRA *Regulatory Notice 21-41*. |
+| 12.6 | **FINRA Rule 3270 (outside business activities)** — written notice to the firm before engaging in any non-firm business activity. | **OK** | Unchanged. |
+| 12.7 | **FINRA Rule 3280 (private securities transactions / "selling away")** — written notice; written approval needed if compensation is received. | **OK** | Unchanged. |
+| 12.8 | **FINRA Rule 3210** — registered-person accounts at other firms require firm notice/approval; duplicate confirms/statements available on request. | **OK** | Unchanged. |
+| 12.9 | Borrowing from/lending to customers — generally prohibited; permitted only under enumerated relationships (immediate family / bank lender / business relationship outside the BD relationship) **and** written firm approval. | **OK** | Unchanged (FINRA Rule 3240). |
+| 12.10 | **Branch office** = any location where one or more associated persons regularly conducts BD business; **OSJ** designation triggers heightened supervision. | **OK** | Unchanged. |
+| 12.11 | **Branch office inspection cycle** — annual for OSJs; every 3 years for non-OSJ branches; periodic for non-branch locations. | **OK as a general rule** | Cycle unchanged, BUT see additions below. |
+| 12.12 | **FINRA Rule 3110.18 (Remote Inspections Pilot Program)**. | **MISSING** | The 3rd Edition does not cover this. Three-year pilot effective **7/1/2024 – 6/30/2027** permits eligible firms to satisfy Rule 3110(c) inspection obligations remotely, subject to enrollment, written supervisory procedures, and reporting to FINRA. *Regulatory Notice 24-02*. |
+| 12.13 | **FINRA Rule 3110.19 (Residential Supervisory Location)**. | **MISSING** | The 3rd Edition does not cover this. Effective **6/1/2024**, a registered person's private residence may be classified as a **non-branch location** subject to a **periodic** (rather than annual) inspection cycle, provided enumerated conditions are met (no customer funds, no public signage, eligible-person status, etc.). *Regulatory Notice 24-02*. |
+| 12.14 | **FINRA Rule 4111 (Restricted Firm Obligations)**. | **MISSING / lower priority** | Effective **1/1/2022**. Annual FINRA process to designate "Restricted Firms" presenting heightened investor-protection risk and impose a Restricted Deposit Requirement. Currently a low-frequency SIE item but technically in scope as a FINRA enforcement tool. |
+
+---
+
+# APPENDIX B — Numeric-Figure Verification Log
+
+I checked every figure used in the manual against the current primary-source value. Items not listed below match the current rule.
+
+| Figure | Manual value | Current value (as of May 2026) | Status |
+|---|---|---|---|
+| SIPC max per separate-capacity customer | $500,000 | $500,000 | OK |
+| SIPC cash sublimit | $250,000 | $250,000 | OK |
+| FDIC deposit insurance | $250,000 / depositor / bank / ownership category | $250,000 | OK |
+| Reg T initial margin | 50% | 50% | OK |
+| FINRA long maintenance margin | 25% | 25% | OK |
+| FINRA short maintenance margin | 30% | 30% | OK |
+| FINRA minimum margin equity (long) | $2,000 | $2,000 | OK |
+| Pattern Day Trader minimum equity | $25,000 | $25,000 | OK |
+| Reg A Tier 1 cap | $20M / 12 months | $20M | OK |
+| Reg A Tier 2 cap | $75M / 12 months | $75M | OK |
+| Reg CF cap | (not detailed in 3rd Ed.) | **$5M** / 12 months | ADD (raised 3/15/2021) |
+| CTR threshold | >$10,000 same-day cash | >$10,000 | OK |
+| SAR filing window | 30 days (60 if no suspect) | 30 / 60 days | OK |
+| ITSA/ITSFEA max criminal | $5M / 20 years | $5M / 20 years | OK |
+| Mutual-fund maximum sales charge | 8.5% (with breakpoints) | 8.5% | OK |
+| Coverdell ESA annual contribution | $2,000 per beneficiary | $2,000 | OK |
+| IRA catch-up (age 50+) | $1,000 | **$1,100** for 2026 (SECURE 2.0 COLA, indexed) | STALE for tax year 2026 |
+| IRA base limit | (not listed — "not tested") | $7,500 (2026) | n/a; manual avoids quoting |
+| 401(k) elective deferral | (not listed) | $24,500 (2026) | n/a |
+| RMD age | 72 | **73** (SECURE 2.0 §107) | STALE |
+| RMD missed-distribution penalty | 50% of shortfall | **25% (10% if corrected)** | STALE |
+| Rule 2165 hold cap | 15 business days (+ regulator extension) | **25 business days standard; up to 55 with regulator notification; transaction holds permitted** | STALE |
+| Reg D Rule 506(c) accredited income | $200K individual / $300K joint / $1M NW ex-residence | unchanged + Series 7/65/82 holders + knowledgeable employees + family clients | OK (already updated) |
+| Statutory-disqualification U4/U5 window | 10 business days | 10 business days | OK |
+| Standard U4/U5 amendment window | 30 days | 30 days | OK |
+| Continuing Education Regulatory Element cycle | Within 120 days of anniversary | **Annual** (since 3/15/2022) | STALE |
+
+---
+
+# APPENDIX C — Items the Manual Already Got Right (Don't "Correct" Them)
+
+These are areas where it might look like older Kaplan content is wrong, but the 3rd Edition (updated July 2023) already reflects the current rule:
+
+- **Reg BI as the conduct standard** for retail recommendations, with the four obligations (Disclosure / Care / Conflict / Compliance) and a **6/30/2020** compliance date.
+- **Form CRS** delivery at or before account opening / recommendation.
+- **Reg A Tier 1 ($20M) and Tier 2 ($75M)** caps — already at the March 2021 figures.
+- **Accredited investor definition** as expanded by the SEC in 2020 (Series 7/65/82 holders, knowledgeable employees of private funds, family clients).
+- **SIPC and FDIC** dollar limits.
+- **CTR / SAR / OFAC** mechanics.
+- **TCPA cold-call window** (8 AM – 9 PM local time of the called party).
+- **Mutual-fund sales-charge cap** (8.5%) with breakpoint/rights-of-accumulation mechanics.
+- **Reg T 50% initial margin** and FINRA minimum equity / maintenance percentages.
+
+---
+
+# APPENDIX D — How to Use This Audit on Exam Day
+
+1. The **HIGH-likelihood** items (T+1 settlement, MMF reform, FINRA Rule 2165's 25/55-business-day arithmetic, SIPC limits, and the RMD-age / penalty changes from SECURE 2.0) are the corrections most likely to be tested. Drill these.
+2. The **MEDIUM** items (Form 144 EDGAR, Form CRS, Reg A/CF figures, FINRA Rule 3241, MSRB T+1, Reg S-P 2024 amendments) are tested less frequently but answer-eligible.
+3. The **LOW** items (Rule 4111, Remote Inspections Pilot, Residential Supervisory Location, SOFR/LIBOR transition) are unlikely to be drilled, but knowing them protects you against trick distractors.
+4. If the practice-question key says "T+2" or "15-business-day hold" or "RMD age 72," **the question is stale** — use the corrected rule.
+
+---
+
+*Last reviewed against primary sources: May 2026. Citations link to SEC.gov, FINRA.org, MSRB.org, FinCEN.gov, IRS.gov, or the Federal Register. The 3rd Edition Kaplan SIE LEM (©2022, updated July 2023) was reviewed unit by unit; each unit's stated Learning Objectives were mapped to the unit's substantive claims, and each claim was checked against current rules.*
+
+## Global
+- Option-exercise settlement: when an equity (stock) option is EXERCISED, the resulting stock delivery now settles T+1 (aligned with regular-way equity settlement, effective 5/28/2024) — NOT T+2. Index options settle the next business day in cash (intrinsic value). Any statement that an equity option exercise settles "T+2 after exercise" is STALE; use T+1.

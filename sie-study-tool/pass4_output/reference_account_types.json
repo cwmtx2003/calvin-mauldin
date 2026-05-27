@@ -3,96 +3,81 @@
   "title": "Account Types & Suitability",
   "sections": [
     {
-      "heading": "Individual & Joint Account Types",
+      "heading": "Ownership Account Types",
       "type": "table",
       "items": {
         "columns": [
-          "Type",
-          "Ownership",
-          "On Death"
+          "Account",
+          "Owners",
+          "On Death",
+          "Key Point"
         ],
         "rows": [
           [
             "Individual",
-            "1 owner",
-            "Assets \u2192 estate (probate) unless TOD"
+            "1",
+            "Passes via estate/will",
+            "TOD avoids probate"
           ],
           [
             "JTWROS",
-            "Undivided equal interest; common for spouses",
-            "Passes to surviving tenant(s), avoids probate"
+            "2+",
+            "Passes to survivor(s)",
+            "Undivided equal interest; common spouses"
           ],
           [
             "TIC",
-            "Specified % per tenant; unequal OK",
-            "Decedent's % \u2192 estate (frozen until paperwork); survivors continue"
-          ],
-          [
-            "TOD",
-            "Add-on to Indiv or JTWROS",
-            "Bypasses probate (not estate tax); JTWROS TOD triggers after LAST death"
+            "2+",
+            "Decedent's % \u2192 estate",
+            "Must specify each owner's %; account frozen until estate paperwork"
           ],
           [
             "UGMA/UTMA",
-            "1 custodian / 1 minor; minor's SSN",
-            "Assets \u2192 minor's estate (NOT custodian's)"
+            "1 custodian / 1 minor",
+            "Assets \u2192 minor's estate",
+            "Cash only, no margin, no options buying; covered calls OK"
           ],
           [
             "Trust",
             "Grantor/Trustee/Beneficiary",
-            "Per trust document"
-          ],
-          [
-            "Sole Prop (d/b/a)",
-            "Owner = business",
-            "Owner's estate"
-          ],
-          [
-            "Partnership",
-            "Per partnership agreement",
-            "Per agreement"
+            "Per trust doc",
+            "Margin only if doc allows"
           ],
           [
             "Corporate",
-            "Needs charter + resolution",
-            "Per resolution"
+            "Entity",
+            "Per resolution",
+            "Need charter + board resolution"
+          ],
+          [
+            "Partnership",
+            "Entity",
+            "Per agreement",
+            "Need partnership agreement (amended annually if changes)"
+          ],
+          [
+            "Sole Prop (d/b/a)",
+            "1",
+            "Owner's estate",
+            "Effectively individual account"
           ]
         ]
       }
     },
     {
-      "heading": "POA Quick Rules",
+      "heading": "Trusts & POA",
       "type": "bullets",
       "items": [
-        "FPOA = deposit/withdraw + trade; LPOA = trade only (no withdrawals)",
-        "Durable POA = survives incapacity, but ALL POAs END at DEATH of either party",
-        "POA granted to a PERSON, not a firm; fiduciary duty applies"
+        "Revocable living trust: grantor controls, assets still in estate; grantor often = trustee = beneficiary",
+        "Irrevocable trust: grantor CANNOT be trustee or beneficiary if removing from estate",
+        "FPOA = deposit/withdraw/trade; LPOA = trade only, no withdrawals",
+        "ALL POAs (incl. durable) END at death of either party",
+        "Durable POA survives grantor's INCAPACITY only, not death",
+        "TOD: available on individual & JTWROS; avoids probate, NOT estate tax"
       ]
     },
     {
-      "heading": "Custodial (UGMA/UTMA) Rules",
-      "type": "bullets",
-      "items": [
-        "CASH ONLY \u2014 no margin, no short sales, no naked options (covered calls OK)",
-        "1 custodian + 1 minor per account; donor can be custodian",
-        "Taxed at minor's rate; minor's SSN",
-        "UTMA: can hold real estate, held until 21\u201325 depending on state",
-        "UGMA: no real estate, released at age of majority",
-        "Custodian may be reimbursed for expenses (compensation only if NOT the donor)"
-      ]
-    },
-    {
-      "heading": "Trusts",
-      "type": "bullets",
-      "items": [
-        "Living trust = funded while grantor alive; Decedent's = funded after death",
-        "Revocable: grantor controls, assets STAY in estate (taxable)",
-        "Irrevocable: grantor gives up control, REMOVED from estate (grantor can't be trustee/beneficiary)",
-        "Margin only if trust document specifically permits"
-      ]
-    },
-    {
-      "heading": "IRAs: Traditional vs Roth",
+      "heading": "IRAs \u2014 Traditional vs Roth (2026)",
       "type": "table",
       "items": {
         "columns": [
@@ -102,234 +87,182 @@
         ],
         "rows": [
           [
-            "Contributions",
-            "Pre-tax (deductible if income limits met)",
-            "After-tax, NEVER deductible"
+            "Contribution limit",
+            "$7,500 + $1,100 catch-up (50+)",
+            "Same combined limit across all IRAs"
           ],
           [
-            "Income limits",
-            "Affects deductibility only",
-            "Affects ability to contribute"
+            "Deductible?",
+            "Yes (phases out if covered by plan)",
+            "Never"
           ],
           [
-            "Age limit",
+            "Income limit to contribute",
+            "No",
+            "Yes (phase-out at high AGI)"
+          ],
+          [
+            "Earned income required?",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Age limit on contributions",
             "None",
             "None"
           ],
           [
-            "Earnings",
-            "Tax-deferred",
-            "Tax-free if qualified"
+            "Qualified withdrawals",
+            "Ordinary income",
+            "TAX-FREE if 59\u00bd + 5-yr held"
           ],
           [
             "RMDs",
-            "Begin age 72",
+            "Begin age 73 (SECURE 2.0)",
             "NONE during owner's life"
           ],
           [
-            "Early w/d penalty",
-            "10% before 59\u00bd + tax",
-            "10% on gains only; principal always tax-free"
-          ],
-          [
-            "Qualified dist",
-            "After 59\u00bd",
-            "5-yr hold AND (59\u00bd OR death/disability/$10K 1st home)"
+            "Early withdrawal penalty",
+            "10% before 59\u00bd",
+            "10% on gains only"
           ]
         ]
       }
     },
     {
-      "heading": "IRA Numbers & Rules",
-      "type": "bullets",
+      "heading": "IRA Rules \u2014 Key Numbers",
+      "type": "rule",
       "items": [
-        "Contributions from EARNED income only (not dividends/interest)",
-        "Traditional + Roth share COMBINED annual limit; catch-up $1,000 at age 50+",
-        "Rollover: 60 calendar days, ONE per rolling 12 months (across all IRAs)",
-        "Transfer (custodian-to-custodian): unlimited",
-        "Excess contribution penalty: 6% per year until removed",
-        "Missed RMD penalty: 50% of shortfall",
-        "Penalty exceptions (59\u00bd): death, disability, $10K 1st home, education, medical",
-        "PROHIBITED in IRA: collectibles, life insurance, short sales, margin, muni bonds, speculative options"
+        "Rollover: 60-day window, ONE per rolling 12 months (across all IRAs)",
+        "Transfer (custodian-to-custodian): UNLIMITED",
+        "RMD age = 73 (rising to 75 in 2033); first RMD may be delayed to 4/1 of following year",
+        "Failure to take RMD penalty = 25% (10% if timely corrected) \u2014 was 50%",
+        "Excess contribution penalty = 6%/year until withdrawn",
+        "10% early-withdrawal exceptions: death, disability, 1st home ($10k), education, medical, unemployment health premiums",
+        "PROHIBITED in IRA: collectibles, life insurance, short sales, margin, naked options, munis (no benefit)"
       ]
     },
     {
-      "heading": "Employer Retirement Plans",
+      "heading": "Employer Plans",
       "type": "table",
       "items": {
         "columns": [
           "Plan",
           "Type",
-          "Key Feature"
+          "Key Point"
         ],
         "rows": [
           [
-            "Defined Benefit (Pension)",
-            "DB",
+            "Pension/DB",
+            "Defined Benefit",
             "Employer bears investment risk; formula-based payout"
           ],
           [
-            "401(k)",
-            "DC",
-            "Employee defers salary; employee bears risk"
-          ],
-          [
-            "403(b)",
-            "DC",
-            "Non-profits/schools"
+            "401(k)/403(b)",
+            "Defined Contribution",
+            "Employee bears risk; portable"
           ],
           [
             "SEP-IRA",
             "DC",
-            "Small biz, employer-funded, high limits"
+            "Employer-funded; small business; high limits"
           ],
           [
-            "SIMPLE",
+            "SIMPLE IRA",
             "DC",
-            "<100 employees, employee+employer contributions"
+            "<100 employees; employee + employer match"
           ],
           [
             "Profit-sharing/Money purchase",
             "DC",
             "Employer contributions"
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "529 vs Coverdell ESA vs ABLE",
-      "type": "table",
-      "items": {
-        "columns": [
-          "Feature",
-          "529",
-          "Coverdell ESA",
-          "ABLE"
-        ],
-        "rows": [
-          [
-            "Contribution limit",
-            "Very high (state-set)",
-            "$2,000/yr per beneficiary until 18",
-            "Annual gift exclusion amt"
           ],
           [
-            "Income limits",
-            "None",
-            "Yes (phased out)",
-            "None"
+            "Coverdell ESA",
+            "Education",
+            "$2,000/yr until age 18; must use by 30"
           ],
           [
-            "Use",
-            "Qualified ed (K-12 + college)",
-            "K-12, secondary, college",
-            "Disability expenses"
+            "529 Plan",
+            "Education (muni fund)",
+            "High limits; donor controls; no income cap"
           ],
           [
-            "Tax on growth",
-            "Tax-deferred; tax-free if qualified",
-            "Tax-deferred; tax-free if qualified",
-            "Tax-free if qualified"
-          ],
-          [
-            "Donor control",
-            "Donor retains control",
-            "Beneficiary takes over at majority",
-            "Beneficiary onset of disability before 26"
+            "ABLE",
+            "Disability",
+            "For disabled before age 26; tax-free growth for qualified disability expenses"
           ]
         ]
       }
     },
     {
       "heading": "Cash vs Margin (Reg T)",
-      "type": "bullets",
+      "type": "rule",
       "items": [
-        "Reg T = 50% initial margin requirement (issued by FRB)",
-        "FINRA initial minimum: $2,000 OR 100% of purchase if less",
-        "Initial deposit = GREATER of 50% Reg T or $2,000 FINRA min",
-        "Maintenance: 25% long / 30% short (FINRA); house calls can be stricter",
-        "Payment due T+4 under Reg T (T+2 settlement + 2 days)",
-        "Required forms: Credit Agreement + Hypothecation Agreement (mandatory); Loan Consent (OPTIONAL)",
-        "MUST be cash only: IRAs, all retirement plans, UGMA/UTMA, custodial",
-        "Marginable: listed stocks/bonds, Nasdaq, warrants; NOT marginable at purchase: options, rights, new issues, mutual funds (mutual funds & new issues become collateral after 30 days)"
+        "Reg T initial margin = 50% of purchase",
+        "FINRA minimum equity = $2,000 OR 100% of purchase if less",
+        "Initial deposit rule: purchase >$4,000 \u2192 50%; $2,000\u2013$4,000 \u2192 $2,000; <$2,000 \u2192 100%",
+        "Maintenance: 25% long / 30% short (FINRA); houses can require more",
+        "Payment deadline: Reg T = S+2 (i.e., T+4 since T+2 settlement)",
+        "Required forms: Credit Agreement + Hypothecation Agreement (MANDATORY); Loan Consent (OPTIONAL)",
+        "Risk disclosure required at opening AND annually",
+        "MARGINABLE: listed stocks/bonds, Nasdaq, warrants. Mutual funds & new issues = marginable after 30 days held",
+        "NOT marginable: options, rights, insurance products"
       ]
     },
     {
-      "heading": "Discretionary vs Non-Discretionary",
+      "heading": "Accounts That CANNOT Use Margin",
       "type": "bullets",
       "items": [
-        "3 A's of Discretion: Action (buy/sell), Amount (shares/$), Asset (which security)",
-        "If RR chooses ANY of the 3 A's \u2192 discretionary trade",
-        "Time & Price alone = NOT discretion",
-        "Required: written customer authorization + written principal approval BEFORE first trade",
-        "Each discretionary trade must be marked 'discretionary' and reviewed promptly by principal",
-        "Discretion granted to PERSON (RR), not the firm \u2014 ends if RR leaves"
+        "All IRAs and qualified retirement plans",
+        "UGMA/UTMA custodial accounts",
+        "Coverdell ESAs",
+        "Trusts/corporations/partnerships UNLESS document specifically permits"
       ]
     },
     {
-      "heading": "KYC / Suitability Essentials",
-      "type": "bullets",
+      "heading": "Discretion \u2014 The 3 A's",
+      "type": "rule",
       "items": [
-        "Required at account opening: name, SSN/TIN, DOB, address, employment, citizenship, ID verification",
-        "Financial: income, net worth, liquid net worth, tax status",
-        "Investment: objectives, time horizon, risk tolerance, experience, liquidity needs",
-        "Solicited trades must be marked solicited; mismarking = violation",
-        "Principal must approve new accounts in writing"
+        "Discretion exists if RR chooses ANY of: Action (buy/sell), Amount (shares/$), Asset (which security)",
+        "TIME and PRICE only = NOT discretion (no written auth needed, but good for that day only)",
+        "Requires: written customer authorization BEFORE first discretionary trade + principal approval",
+        "Each discretionary order must be marked 'discretionary' and reviewed promptly by principal",
+        "Discretion is granted to the RR personally \u2014 ends if RR leaves firm"
       ]
     },
     {
-      "heading": "Quick Suitability Matches",
-      "type": "table",
-      "items": {
-        "columns": [
-          "Objective",
-          "Suitable"
-        ],
-        "rows": [
-          [
-            "Income",
-            "Bonds, preferred stock, utilities, REITs"
-          ],
-          [
-            "Growth",
-            "Common stock, growth funds"
-          ],
-          [
-            "Safety/Preservation",
-            "Treasuries, money market"
-          ],
-          [
-            "Tax-free income",
-            "Municipal bonds (NOT in IRA)"
-          ],
-          [
-            "Liquidity",
-            "Money market, listed stocks (NOT DPPs, real estate)"
-          ],
-          [
-            "Young investor",
-            "Roth IRA, growth equities"
-          ],
-          [
-            "Retiree",
-            "Income securities, capital preservation"
-          ]
-        ]
-      }
+      "heading": "KYC / Suitability (Reg BI for retail)",
+      "type": "bullets",
+      "items": [
+        "Required at account opening: name, DOB, address, SSN/TIN, employment, citizenship, ID verification (CIP/Patriot Act)",
+        "Investment profile: objectives, time horizon, risk tolerance, liquidity needs, tax status, net worth, income, experience",
+        "Update profile at least every 36 months",
+        "Forms signed by customer: Margin (credit + hypothec), Options agreement (within 15 days of approval), W-9",
+        "New account form signed by PRINCIPAL (not required of customer); customer signature optional but best practice"
+      ]
+    },
+    {
+      "heading": "Fee-Based / Wrap Accounts",
+      "type": "bullets",
+      "items": [
+        "Flat fee or % of AUM covers advice + execution + admin",
+        "Suitable for ACTIVE traders; UNSUITABLE for buy-and-hold (reverse churning)",
+        "Generally investment advisory \u2014 fiduciary standard, Form ADV delivery required"
+      ]
     }
   ],
   "common_traps": [
-    "JTWROS = undivided equal interest; TIC = specified % (can be unequal) \u2014 decedent's % goes to ESTATE in TIC, to survivors in JTWROS",
-    "ALL POAs end at death \u2014 including DURABLE POAs (durable only survives incapacity, NOT death)",
-    "Custodial account assets pass to the MINOR's estate if minor dies, NOT to parent/custodian",
-    "Roth IRA principal is ALWAYS tax-free on withdrawal; only gains face tax/penalty if non-qualified. No RMDs on Roth.",
-    "IRA rollover = 60 days, ONE per 12 months across ALL IRAs; transfers (custodian-to-custodian) are unlimited",
-    "Loan Consent Agreement is OPTIONAL for margin; Credit + Hypothecation are MANDATORY",
-    "Letting RR choose time/price is NOT discretion \u2014 only Action/Amount/Asset triggers discretion rules"
+    "RMD age is now 73 (NOT 70\u00bd or 72) and penalty is 25% (NOT 50%) \u2014 exam may still test old numbers; know both",
+    "Roth IRA has NO RMDs during owner's lifetime; Traditional does",
+    "TOD avoids PROBATE but NOT estate tax \u2014 students confuse these",
+    "Loan Consent Agreement is OPTIONAL; only Credit + Hypothecation are mandatory for margin",
+    "Time & Price discretion is NOT discretion \u2014 no written authorization needed (valid for that day only)",
+    "UGMA/UTMA: tax ID is the MINOR's SSN, taxed at minor's rate; cash account only \u2014 no margin, no buying options (covered calls OK)"
   ],
   "tokens": {
-    "input": 21233,
-    "output": 3540
+    "input": 22474,
+    "output": 3046
   },
-  "cost_usd": 0.584
+  "cost_usd": 0.5656
 }

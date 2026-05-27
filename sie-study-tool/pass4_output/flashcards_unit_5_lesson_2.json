@@ -5,8 +5,8 @@
   "cards": [
     {
       "type": "qa",
-      "front": "What three types of investments are classified as municipal fund securities under MSRB jurisdiction?",
-      "back": "1) Section 529 plans, 2) Local Government Investment Pools (LGIPs), and 3) ABLE accounts. All are sponsored by state or local governments.",
+      "front": "Why are 529 plans, LGIPs, and ABLE accounts regulated by the MSRB?",
+      "back": "All three are sponsored by state or local governments, making them municipal fund securities under MSRB jurisdiction.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -15,7 +15,7 @@
     {
       "type": "definition",
       "front": "Section 529 Plan",
-      "back": "A state-sponsored, tax-advantaged education savings account classified as a municipal fund security. Sales must be accompanied or preceded by an official statement (offering circular). Two types: prepaid tuition plans and college savings plans.",
+      "back": "A state-sponsored, tax-advantaged education savings account classified as a municipal fund security. Funds can be used for qualified K-12 expenses (up to $10,000/year) and qualified post-secondary expenses. Sales must be accompanied or preceded by an official statement/offering circular.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -23,17 +23,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the annual K-12 qualified expense limit for a 529 plan, and does this limit apply to college costs?",
-      "back": "$10,000 per year for K-12 tuition (public, private, or religious). The $10,000 limit does NOT apply to post-secondary (college) qualified expenses.",
-      "lo": "5.d",
-      "unit": 5,
-      "lesson": 2,
-      "lesson_title": "MUNICIPAL FUND SECURITIES"
-    },
-    {
-      "type": "qa",
-      "front": "Differentiate a 529 prepaid tuition plan from a 529 college savings plan.",
-      "back": "Prepaid tuition plan: Locks in current tuition rates by paying now for future education at a specific school/system \u2014 a guaranteed inflation hedge; usually limited to state residents. Savings plan: Donor invests contributions that grow based on investment performance, used later at any school; inflation hedge depends on performance.",
+      "front": "What are the two basic types of 529 plans, and how do they differ?",
+      "back": "(1) Prepaid tuition plan \u2014 locks in current tuition rates at specific schools/systems for state residents; acts as a guaranteed inflation hedge. (2) College savings plan \u2014 allows contributions to be invested for later withdrawal for qualified education expenses at any eligible school; may or may not outpace inflation depending on performance.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -41,8 +32,8 @@
     },
     {
       "type": "scenario",
-      "front": "A father wants to save for his 10-year-old daughter's tuition at a specific small liberal arts school. He is most concerned about rising tuition costs at that school. Which plan best hedges this risk?",
-      "back": "A 529 prepaid tuition program. It locks in today's tuition rates at a specific school/system, providing a guaranteed hedge against tuition inflation.",
+      "front": "A parent is most concerned about rising tuition costs at a specific in-state university over the next 8 years. Which 529 option best hedges this risk?",
+      "back": "A 529 prepaid tuition plan. It locks in current tuition rates at the specific school/system, providing a guaranteed hedge against tuition inflation (the savings plan only might keep pace, depending on investment performance).",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -50,8 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "How are contributions to a 529 plan treated for federal tax purposes, and how are earnings and withdrawals taxed?",
-      "back": "Contributions are made with after-tax dollars (no federal deduction) and are treated as gifts under federal tax law. Earnings grow tax-deferred. Withdrawals are federally tax free if used for qualified education expenses. Nonqualified withdrawals: taxes on gains plus a 10% penalty.",
+      "front": "How are 529 plan contributions and withdrawals treated for federal tax purposes?",
+      "back": "Contributions are made with after-tax dollars and are treated as gifts under federal tax law. Earnings grow tax-deferred. Withdrawals for qualified education expenses are tax-free federally. Nonqualified withdrawals are subject to income tax on earnings plus a 10% penalty.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -59,8 +50,8 @@
     },
     {
       "type": "qa",
-      "front": "What tax advantage may be lost if a customer opens an out-of-state 529 plan?",
-      "back": "Most states only allow tax-free withdrawals and/or state tax deductions on contributions if the donor uses an in-state plan. Out-of-state plans may forfeit these state-level tax benefits.",
+      "front": "What tax disadvantage may exist if a client opens an out-of-state 529 plan?",
+      "back": "The client may lose state tax advantages such as state income tax deductions on contributions and/or tax-free withdrawals available only to in-state plan participants. Reps must disclose this to customers.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -68,8 +59,8 @@
     },
     {
       "type": "qa",
-      "front": "If the beneficiary of a 529 plan does not need the funds for school, what options does the donor have without tax penalty?",
-      "back": "The donor may change the designated beneficiary to a family member of the original beneficiary with no tax consequence. If the beneficiary receives a scholarship, the donor may withdraw the equivalent amount penalty free (income taxes on gains still apply).",
+      "front": "If a 529 beneficiary receives a scholarship, what can the donor do without incurring the 10% penalty?",
+      "back": "The donor may withdraw an amount equal to the scholarship value penalty-free. Ordinary income tax on the earnings portion still applies.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -77,8 +68,8 @@
     },
     {
       "type": "qa",
-      "front": "Who controls the assets in a 529 plan, and are there income limits for contributors?",
-      "back": "The donor (account owner) retains control of the assets even after the student reaches legal age. There are no income limitations on who can contribute.",
+      "front": "What happens if a 529 beneficiary does not use the funds for education?",
+      "back": "The donor can change the beneficiary to a family member of the original beneficiary with no tax consequences. Additionally, under SECURE 2.0 (effective 2024), unused funds may be rolled tax- and penalty-free to a Roth IRA for the beneficiary, subject to a $35,000 lifetime cap, a 15-year account age requirement, and the annual IRA contribution limit.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -86,7 +77,16 @@
     },
     {
       "type": "qa",
-      "front": "How frequently can a 529 plan be rolled over from one state's plan to another?",
+      "front": "Who controls the assets in a 529 plan, and are there income limits on contributors?",
+      "back": "The donor retains control of the account assets even after the beneficiary reaches legal age. There are no income limitations on contributors.",
+      "lo": "5.d",
+      "unit": 5,
+      "lesson": 2,
+      "lesson_title": "MUNICIPAL FUND SECURITIES"
+    },
+    {
+      "type": "qa",
+      "front": "How often may 529 plan assets be rolled over from one state's plan to another?",
       "back": "No more than once every 12 months.",
       "lo": "5.d",
       "unit": 5,
@@ -94,9 +94,9 @@
       "lesson_title": "MUNICIPAL FUND SECURITIES"
     },
     {
-      "type": "scenario",
-      "front": "Leo has 529 plans for his three nephews. The oldest receives a $15,000 athletic scholarship. Which of the following is NOT permitted: (A) withdraw earnings up to the scholarship value tax free, (B) transfer the account to a brother, (C) withdraw the scholarship value penalty free, (D) leave the money in the account?",
-      "back": "A \u2014 The donor may withdraw the scholarship-equivalent amount PENALTY free, but income taxes on the gains still apply. He may also transfer the account to a sibling or leave funds in for future use.",
+      "type": "qa",
+      "front": "Does the $10,000 annual qualified-expense limit on 529 plans apply to college costs?",
+      "back": "No. The $10,000 annual limit applies only to K-12 tuition. There is no $10,000 cap on qualified post-secondary expenses.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -105,7 +105,7 @@
     {
       "type": "definition",
       "front": "Local Government Investment Pool (LGIP)",
-      "back": "A state-established trust providing other government entities (cities, counties, school districts, state agencies) with a short-term investment vehicle. Government entities purchase shares/units in the pool's portfolio. Not for retail investors.",
+      "back": "A trust established by a state to give other government entities (cities, counties, school districts, state agencies) a short-term investment vehicle. Participants buy shares/units of the pool's portfolio. Not a money market fund, but often operates similarly with a stable $1 NAV.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
@@ -114,7 +114,7 @@
     {
       "type": "qa",
       "front": "Who are the investors in an LGIP?",
-      "back": "Other government entities \u2014 such as cities, counties, school districts, or state agencies \u2014 NOT retail investors.",
+      "back": "Other government entities (cities, counties, school districts, state agencies) \u2014 NOT retail investors.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
@@ -122,17 +122,8 @@
     },
     {
       "type": "qa",
-      "front": "Are LGIPs registered with the SEC, and do they issue a prospectus?",
-      "back": "No. LGIPs fall under the governmental exemption, so they are not required to register with the SEC and do not issue a prospectus. They do provide disclosure documents including an information statement, investment policy, and operating procedures.",
-      "lo": "5.e",
-      "unit": 5,
-      "lesson": 2,
-      "lesson_title": "MUNICIPAL FUND SECURITIES"
-    },
-    {
-      "type": "qa",
-      "front": "How do LGIPs maintain stable share value, and how is this similar to another investment product?",
-      "back": "Most LGIPs operate similarly to money market funds, often maintaining a fixed $1 net asset value (NAV) to provide liquidity and minimize price volatility. However, an LGIP is NOT a money market fund.",
+      "front": "Are LGIPs required to register with the SEC?",
+      "back": "No. LGIPs fall within the governmental exemption, just like other municipal securities. There is no prospectus, but disclosure documents (information statement, investment policy, operating procedures) are provided. Oversight varies by state.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
@@ -141,7 +132,7 @@
     {
       "type": "definition",
       "front": "ABLE Account",
-      "back": "A tax-advantaged savings account for individuals with significant disabilities (and their families) created by the ABLE Act of 2014. The beneficiary is the account owner, and income earned by the account is not taxed.",
+      "back": "A tax-advantaged savings account, created by the ABLE Act of 2014, for individuals with significant disabilities whose disability onset occurred before age 26. The beneficiary is the account owner; earnings grow tax-free.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
@@ -149,8 +140,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the age/onset eligibility requirement for an ABLE account?",
-      "back": "The onset of the significant disability must have occurred before age 26. The beneficiary themselves does not need to currently be under 26 \u2014 they just must have had disability onset before age 26.",
+      "front": "Who is eligible to establish an ABLE account?",
+      "back": "An individual with a significant disability whose onset occurred before age 26. The beneficiary may currently be older than 26 \u2014 only the onset must have happened before age 26. Individuals already receiving SSI or SSDI who meet the age-onset criteria automatically qualify. Only one ABLE account per person is allowed.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
@@ -158,26 +149,26 @@
     },
     {
       "type": "qa",
-      "front": "Who is automatically eligible to establish an ABLE account?",
-      "back": "An individual who meets the age/onset criteria (disability onset before age 26) AND is receiving Social Security insurance (SSI) and/or Social Security disability insurance (SSDI) benefits.",
+      "front": "How are contributions to an ABLE account treated for federal tax purposes?",
+      "back": "Contributions are made with after-tax dollars and are NOT federally tax deductible. Anyone (the beneficiary, family, friends) may contribute. Total annual contributions are capped at a specified dollar amount (adjusted periodically for inflation). Earnings grow tax-free. Some states allow a state income tax deduction.",
       "lo": "5.e",
       "unit": 5,
       "lesson": 2,
       "lesson_title": "MUNICIPAL FUND SECURITIES"
     },
     {
-      "type": "qa",
-      "front": "How many ABLE accounts may a person have, and how are contributions taxed?",
-      "back": "Only one ABLE account per person is allowed. Contributions can be made by anyone (beneficiary, family, friends) using after-tax dollars. Contributions are not federally deductible, though some states allow a state income tax deduction. Annual contributions are capped at a specified dollar amount.",
-      "lo": "5.e",
+      "type": "scenario",
+      "front": "A customer's nephew, the beneficiary of a 529 plan, receives a $15,000 athletic scholarship. Which of the following is NOT a permissible option? (a) Withdraw earnings up to the scholarship value tax-free; (b) Transfer the account to a sibling; (c) Withdraw $15,000 penalty-free; (d) Leave funds in the account.",
+      "back": "(a) is NOT permitted. The donor may withdraw up to the scholarship amount penalty-free, but ordinary income tax on earnings still applies \u2014 the withdrawal is not tax-free. Options (b), (c), and (d) are all permissible.",
+      "lo": "5.d",
       "unit": 5,
       "lesson": 2,
       "lesson_title": "MUNICIPAL FUND SECURITIES"
     },
     {
       "type": "qa",
-      "front": "Which regulator has jurisdiction over the structure or sale of 529 plans: SEC, IRS, MSRB, or Department of Education?",
-      "back": "The Department of Education does NOT have jurisdiction. The SEC, IRS, and MSRB all have regulatory roles over 529 plans (as municipal fund securities, they fall under MSRB rules; the IRS oversees tax treatment; the SEC has anti-fraud authority).",
+      "front": "Which regulator does NOT have jurisdiction over the structure or sale of 529 plans: SEC, IRS, MSRB, or Department of Education?",
+      "back": "Department of Education. The SEC (anti-fraud), IRS (tax treatment), and MSRB (rules governing sales of municipal fund securities) all have jurisdiction.",
       "lo": "5.d",
       "unit": 5,
       "lesson": 2,
@@ -185,8 +176,8 @@
     }
   ],
   "tokens": {
-    "input": 3846,
-    "output": 2757
+    "input": 4803,
+    "output": 2678
   },
-  "cost_usd": 0.2645
+  "cost_usd": 0.2729
 }

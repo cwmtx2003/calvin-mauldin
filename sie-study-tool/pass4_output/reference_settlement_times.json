@@ -3,100 +3,96 @@
   "title": "Settlement, Delivery & Time Rules",
   "sections": [
     {
-      "heading": "Settlement Cycles (T+1 standard since 5/28/24)",
+      "heading": "Settlement Cycles (Reg-Way)",
       "type": "table",
       "items": [
         {
-          "Security": "Common/Preferred Stock",
-          "Regular Way": "T+1"
+          "Security": "Equities (stocks)",
+          "Settlement": "T+1"
         },
         {
-          "Security": "Corporate Bonds",
-          "Regular Way": "T+1"
+          "Security": "Corporate bonds",
+          "Settlement": "T+1"
         },
         {
-          "Security": "Municipal Bonds",
-          "Regular Way": "T+1"
+          "Security": "Municipal bonds",
+          "Settlement": "T+1"
         },
         {
-          "Security": "Listed Options",
-          "Regular Way": "T+1"
+          "Security": "Options",
+          "Settlement": "T+1"
         },
         {
-          "Security": "U.S. Treasuries (notes/bonds)",
-          "Regular Way": "T+1"
+          "Security": "U.S. Treasuries",
+          "Settlement": "T+1"
         },
         {
-          "Security": "U.S. T-Bills / Cash trades",
-          "Regular Way": "Same day (T+0)"
+          "Security": "Cash trade (same-day)",
+          "Settlement": "Same day"
         },
         {
-          "Security": "Options exercise \u2192 stock delivery",
-          "Regular Way": "T+1 from exercise"
+          "Security": "When-issued",
+          "Settlement": "On issuance"
         }
       ]
     },
     {
-      "heading": "Reg T Payment Rule",
+      "heading": "Ex-Dividend Date (under T+1)",
       "type": "rule",
       "items": [
-        "Customer payment due: S+1 (1 business day AFTER settlement) = effectively T+2",
-        "Total time from trade to payment deadline = 2 business days",
-        "Extensions: request from FINRA/DEA if customer can't pay",
-        "Non-payment \u2192 security sold out + account frozen 90 days (cash up front required)"
+        "Ex-date = SAME business day as record date (regular-way)",
+        "Buy ON or AFTER ex-date \u2192 DO NOT receive dividend",
+        "Declaration \u2192 Ex = Record \u2192 Payable"
       ]
     },
     {
-      "heading": "Prospectus Delivery \u2014 Aftermarket (post-effective)",
+      "heading": "Prospectus Delivery After Effective Date",
       "type": "table",
       "items": [
         {
-          "Offering": "IPO \u2014 NMS (listed/Nasdaq)",
-          "Days": "25 calendar days"
+          "Offering": "IPO \u2013 NMS (listed/Nasdaq)",
+          "Days": "25"
         },
         {
-          "Offering": "IPO \u2014 Non-NMS (OTC)",
-          "Days": "90 calendar days"
+          "Offering": "IPO \u2013 Non-NMS",
+          "Days": "90"
         },
         {
-          "Offering": "APO/Follow-on \u2014 NMS",
-          "Days": "0 days (none)"
+          "Offering": "APO \u2013 NMS",
+          "Days": "0 (none)"
         },
         {
-          "Offering": "APO/Follow-on \u2014 Non-NMS",
-          "Days": "40 calendar days"
-        },
-        {
-          "Offering": "Access via SEC website",
-          "Days": "Satisfies delivery"
+          "Offering": "APO \u2013 Non-NMS",
+          "Days": "40"
         }
       ]
     },
     {
-      "heading": "Cooling-Off Period (Securities Act of 1933)",
+      "heading": "Cooling-Off Period",
       "type": "bullets",
       "items": [
-        "MINIMUM 20 calendar days between registration filing and effective date",
-        "Deficiency letter PAUSES the clock \u2014 resumes where it left off (not restarted)",
-        "Permitted during cooling-off: tombstone ads, red herring (preliminary prospectus), indications of interest (non-binding), due diligence, blue-sky filings",
-        "PROHIBITED: sales, sales literature, advertising (other than tombstone), final prospectus"
+        "MINIMUM 20 calendar days between registration filing & effective date",
+        "Deficiency letter PAUSES the clock; resumes where it left off (does NOT restart)",
+        "Allowed: tombstone ads, red herrings, indications of interest, due diligence, blue-sky filings",
+        "Prohibited: sales, sales literature, advertising (other than tombstone), accepting money"
       ]
     },
     {
-      "heading": "Shelf Registration (Rule 415)",
-      "type": "bullets",
+      "heading": "Regulation T (Payment)",
+      "type": "rule",
       "items": [
-        "Standard issuer: 2 years to sell off the shelf",
-        "WKSI (well-known seasoned issuer): 3 years",
-        "Supplemental prospectus filed with SEC before each sale"
+        "Customer payment due: S+1 (1 business day after settlement)",
+        "Under T+1 settlement \u2192 effectively T+2 for customer payment",
+        "Extensions: request from FINRA/SRO; non-payment \u2192 90-day frozen account"
       ]
     },
     {
       "heading": "GTC Order Cancellation (NYSE)",
       "type": "rule",
       "items": [
-        "GTC orders auto-cancelled: LAST business day of APRIL and OCTOBER",
-        "Semi-annual purge \u2014 must be re-entered to remain active"
+        "Auto-cancel: LAST business day of APRIL & OCTOBER",
+        "Must be re-entered after cancellation",
+        "Day orders expire end of trading day"
       ]
     },
     {
@@ -104,96 +100,90 @@
       "type": "table",
       "items": [
         {
-          "Form": "U4 (registration application)",
-          "Deadline": "Filed before activity begins"
+          "Form/Event": "U4 amendments (most events)",
+          "Deadline": "30 days"
         },
         {
-          "Form": "U4 amendments (material changes)",
-          "Deadline": "30 days (10 days if statutorily disqualifying)"
+          "Form/Event": "U4 \u2013 statutory disqualification event",
+          "Deadline": "10 business days"
         },
         {
-          "Form": "U5 (termination)",
-          "Deadline": "30 days after termination"
+          "Form/Event": "U5 (termination)",
+          "Deadline": "30 days; copy to RR same window"
         },
         {
-          "Form": "U5 amendments",
-          "Deadline": "30 days after firm learns of new facts"
+          "Form/Event": "Exam window after U4 filed",
+          "Deadline": "120 days"
         },
         {
-          "Form": "Form D (Reg D private placement)",
-          "Deadline": "15 days after first sale"
+          "Form/Event": "Requalification window after termination",
+          "Deadline": "2 years (extendable to 5 via MQP)"
         },
         {
-          "Form": "Customer complaint records",
-          "Deadline": "Retained 4 years"
+          "Form/Event": "Form 144 (affiliate resale)",
+          "Deadline": "File electronically on EDGAR at time of sale order"
         }
       ]
     },
     {
-      "heading": "Rule 147 (Intrastate) Resale Restriction",
-      "type": "rule",
-      "items": [
-        "No resale to non-residents for 6 months after initial purchase"
-      ]
-    },
-    {
-      "heading": "Quick Timeline Memory Grid",
+      "heading": "Other Key Time Rules",
       "type": "table",
       "items": [
         {
-          "Number": "T+1",
-          "Meaning": "Standard settlement (stocks/bonds/options/Treasuries)"
+          "Item": "Reg D 506 \u2013 restricted stock holding",
+          "Time": "6 months (reporting issuer)"
         },
         {
-          "Number": "S+1",
-          "Meaning": "Reg T payment deadline"
+          "Item": "Rule 147 intrastate resale to nonresidents",
+          "Time": "6 months after purchase"
         },
         {
-          "Number": "20 days",
-          "Meaning": "Cooling-off minimum"
+          "Item": "Shelf offering validity",
+          "Time": "2 years (3 for WKSI)"
         },
         {
-          "Number": "25 / 90",
-          "Meaning": "IPO prospectus delivery (NMS / non-NMS)"
+          "Item": "Confirmation delivery to customer",
+          "Time": "At or before completion (settlement)"
         },
         {
-          "Number": "0 / 40",
-          "Meaning": "APO prospectus delivery (NMS / non-NMS)"
+          "Item": "Regulatory Element CE (Rule 1240)",
+          "Time": "Annually"
         },
         {
-          "Number": "30 days",
-          "Meaning": "U4/U5 filing & amendments"
+          "Item": "Branch inspections \u2013 OSJ",
+          "Time": "Annual"
         },
         {
-          "Number": "April & October last business day",
-          "Meaning": "GTC purge"
+          "Item": "Branch inspections \u2013 non-OSJ",
+          "Time": "Every 3 years"
         },
         {
-          "Number": "2 / 3 years",
-          "Meaning": "Shelf reg (standard / WKSI)"
-        },
-        {
-          "Number": "6 months",
-          "Meaning": "Rule 147 resale; Reg D restricted holding"
-        },
-        {
-          "Number": "90 days",
-          "Meaning": "Frozen account after Reg T non-payment"
+          "Item": "Trade reporting to Consolidated Tape",
+          "Time": "Within 10 seconds"
         }
+      ]
+    },
+    {
+      "heading": "Timeline Anchor (Quick Recall)",
+      "type": "formula",
+      "items": [
+        "T = trade | T+1 = settle | S+1 = pay (Reg T)",
+        "20 cal days cooling off \u2192 Effective Date",
+        "Apr/Oct last biz day \u2192 GTC purge",
+        "30 days = U4/U5 standard amendment window"
       ]
     }
   ],
   "common_traps": [
-    "Confusing T+1 (trade settlement) with S+1 (Reg T payment) \u2014 payment is 1 day AFTER settlement, not after trade.",
-    "Cooling-off deficiency does NOT restart the 20-day clock \u2014 it pauses and resumes.",
-    "APO of an NMS security has ZERO aftermarket prospectus delivery requirement (commonly missed).",
-    "Tombstone ads are the ONLY permitted advertisement during cooling-off; red herrings are prospecting tools, not ads.",
-    "GTC purge is the LAST BUSINESS DAY of April/October \u2014 not the first, not month-end calendar day.",
-    "U4 must be amended within 30 days of material change, but only 10 days for statutorily disqualifying events."
+    "T+2 is OUTDATED \u2014 all equities, corps, munis, options & Treasuries now settle T+1 (eff. 5/28/2024). Ex-date = record date, NOT one day before.",
+    "Reg T payment is S+1 (1 day AFTER settlement), so effectively T+2 from trade date \u2014 students confuse it with T+2 settlement.",
+    "Deficiency letter does NOT restart the 20-day cooling-off clock \u2014 it pauses and resumes.",
+    "APO of NMS securities has NO prospectus delivery requirement post-effective date (0 days) \u2014 easy to forget; most often confused with the 25-day IPO rule.",
+    "GTC orders auto-cancel only in April & October (not quarterly, not monthly) on the LAST business day."
   ],
   "tokens": {
-    "input": 20493,
-    "output": 2176
+    "input": 24171,
+    "output": 2014
   },
-  "cost_usd": 0.4706
+  "cost_usd": 0.5136
 }

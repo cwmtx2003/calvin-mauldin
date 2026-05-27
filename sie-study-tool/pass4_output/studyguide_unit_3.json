@@ -4,131 +4,164 @@
   "sections": [
     {
       "title": "Lesson 3.1: Characteristics of Bonds",
-      "overview": "Bonds are debt securities representing a loan from investor to issuer (corporations, federal government, agencies, or municipalities). This lesson covers the basic mechanics of bonds \u2014 par value, maturity structures, coupons, accrued interest, pricing, yields, features (call/put/convertible), zero-coupon bonds, bond ratings, volatility, benefits/risks of ownership, types of corporate bonds (secured vs. unsecured), and the order of liquidation in bankruptcy.",
+      "overview": "Bonds are debt securities representing a loan from investor to issuer (corporations, federal government, agencies, or municipalities). Investors must understand par value, maturities, coupons, pricing conventions, the inverse relationship between bond prices and interest rates, the various yield measurements, common bond features (call, put, convert), credit ratings, volatility (duration), and the benefits/risks of bond ownership.",
       "key_concepts": [
-        "Par Value: Most debt securities have a par (face/principal) value of $1,000 \u2014 the amount returned at maturity. Assume $1,000 par on the exam unless told otherwise.",
-        "Maturity Types: (1) Term bond \u2014 entire principal matures at once (issuer may use sinking fund); (2) Serial bond \u2014 portions of principal mature at intervals; (3) Balloon bond \u2014 combines serial repayments before maturity with a large final principal payment. 'Series bonds' refers to savings bonds (not a maturity type).",
-        "Coupon Rate (a.k.a. nominal yield, stated yield): The fixed annual interest rate as a percentage of par. A 6% coupon = $60/year in interest; usually paid semiannually ($30 every six months).",
-        "Accrued Interest: Buyer pays seller interest earned since last coupon; new owner receives full next coupon. Corporate and municipal bonds use 30-day month / 360-day year. Treasury notes/bonds use actual days / actual year. Zero-coupon bonds do NOT accrue interest.",
-        "Pricing: Quoted in points (1 point = 1% of par = $10). A bond at 90 = $900; at 103 = $1,030. Multiply quote by 10 to get dollar price. Bonds trade at par, premium (>par), or discount (<par).",
-        "Inverse Price/Yield Relationship: Bond prices move inversely to market interest rates. Coupon rate is always fixed regardless of market price.",
-        "Yields: (1) Nominal Yield \u2014 fixed coupon; (2) Current Yield (CY) \u2014 annual coupon \u00f7 market price; (3) Yield to Maturity (YTM, a.k.a. basis) \u2014 annualized return if held to maturity; (4) Yield to Call (YTC) \u2014 return if called early.",
-        "Yield Hierarchy (Discount Bond): Nominal < CY < YTM < YTC. Yield Hierarchy (Premium Bond): YTC < YTM < CY < Nominal. At par, all yields are equal.",
-        "Basis Point: 1/100 of 1% (100 bps = 1%). A bond on a '5.83 basis' has YTM of 5.83%.",
-        "Call Feature: Issuer can redeem early \u2014 benefits issuer; bonds have higher coupon. Issuers call when rates fall.",
-        "Put Feature: Holder can force early redemption \u2014 benefits investor; bonds have lower coupon. Investors put when rates rise.",
-        "Convertible Feature: Allows conversion of bond into common stock of issuer. Bond at 'parity' when bond value = value of underlying shares. Convertibles pay lower coupons.",
-        "Zero-Coupon Bonds (ZR): Sold at deep discount, mature at par, pay no periodic interest. Interest taxed annually (phantom income / annual accretion of discount). More volatile than coupon bonds of same maturity.",
-        "STRIPS: Treasury-issued zero-coupon bonds \u2014 backed by full faith and credit of U.S. government.",
-        "Treasury Receipts: Zero-coupon bonds built by broker-dealers from baskets of Treasuries \u2014 NOT backed by U.S. government.",
-        "Bond Ratings: Three major NRSROs \u2014 Moody's, S&P, Fitch. Investment grade = BBB/Baa and higher. Speculative (junk/high-yield) = BB/Ba and lower. D = default. Higher rating = lower yield (risk/reward).",
-        "Volatility: Longer maturity = more volatile; lower coupon = more volatile. Duration combines both into one measure.",
-        "Benefits of Bonds: Steady income (issuer obligated to pay), greater safety/seniority over equity in liquidation.",
-        "Risks of Bonds: Default/credit risk, interest rate risk, purchasing power (inflation) risk, call risk, reinvestment risk.",
-        "Secured Corporate Debt: (1) Mortgage bonds (backed by real estate); (2) Equipment trust certificates (backed by equipment, e.g., railroad rolling stock); (3) Collateral trust bonds (backed by securities held in trust).",
-        "Unsecured Corporate Debt: (1) Debentures \u2014 backed by full faith/credit of corporation; (2) Guaranteed bonds \u2014 backed by a third party (still unsecured); (3) Income/adjustment bonds \u2014 pay interest only if BOD declares and earnings sufficient (NOT suitable for income-seeking investors); (4) Subordinated debentures \u2014 junior to other unsecured debt.",
-        "Order of Liquidation: (1) Secured debt holders; (2) Unsecured debt/general creditors (including wages, taxes); (3) Subordinated debt; (4) Preferred stockholders; (5) Common stockholders. Administrative claimants paid after secured but before other unsecured.",
-        "Settlement: Corporate and municipal bonds settle T+2; Treasuries settle T+1."
+        "Par value (face/principal): standardly $1,000 per bond; amount repaid at maturity.",
+        "Maturity types: Term (entire principal at once; may use sinking fund), Serial (principal matures in portions over time), Balloon (combines serial payments with large final maturity payment). Series bonds refer to savings bonds, not a maturity structure.",
+        "Coupon rate = nominal yield = stated yield; fixed percentage of par paid as interest (typically semiannually).",
+        "Accrued interest: buyer pays seller interest earned since last coupon. Corporate and municipal bonds use 30-day month / 360-day year. Treasury notes/bonds use actual days/actual days. Zero-coupon bonds pay no accrued interest.",
+        "Pricing in points: 1 point = 1% of par = $10. Bond quoted at 90 = $900; quoted at 103 = $1,030.",
+        "Trading levels: par ($1,000), premium (above par), discount (below par).",
+        "Inverse relationship: bond prices and interest rates move in opposite directions.",
+        "Yields: Nominal (coupon, fixed), Current Yield (annual coupon \u00f7 market price), Yield to Maturity (annualized total return if held to maturity, including discount/premium amortization), Yield to Call (return if called early).",
+        "Yield relationships at a DISCOUNT: Nominal < CY < YTM < YTC.",
+        "Yield relationships at a PREMIUM: YTC < YTM < CY < Nominal.",
+        "Yield relationships at PAR: all yields are equal.",
+        "Basis point = 1/100 of 1%; 'trading on a basis of' refers to YTM.",
+        "Call feature: benefits issuer (called when rates fall); requires higher coupon to attract investors.",
+        "Put feature: benefits investor (put back when rates rise); allows lower coupon.",
+        "Convertible feature: corporate bonds convertible into common stock; benefits investor; bond at 'parity' when bond value = value of underlying convertible shares.",
+        "Zero-coupon bonds (ZR): issued at deep discount, mature at par; no periodic interest; more volatile than comparable coupon bonds. Treasury STRIPS are Treasury-issued zeros; Treasury Receipts are dealer-created from baskets of Treasuries (NOT backed by U.S. government).",
+        "Phantom income: zero-coupon bondholders pay tax annually on accreted (imputed) interest despite no cash received.",
+        "Credit rating agencies (NRSROs): Standard & Poor's, Moody's, Fitch (A.M. Best rates insurance issues).",
+        "Investment-grade ratings: S&P AAA/AA/A/BBB; Moody's Aaa/Aa/A/Baa.",
+        "Speculative/high-yield (junk) ratings: BB/Ba and below.",
+        "Volatility: longer maturity = more volatile; lower coupon = more volatile.",
+        "Duration: measure combining maturity and coupon to gauge price volatility to interest-rate change; higher duration = more volatile.",
+        "Benefits of bonds: steady income, senior to equity in liquidation, less price volatility than stocks.",
+        "Risks: default/credit risk, interest rate risk, purchasing power (inflation) risk, call risk, reinvestment risk."
       ],
       "rules": [
-        "Bond pricing convention: 1 point = $10 (1% of $1,000 par).",
-        "Corporate/municipal accrued interest: 30/360 day count.",
-        "Treasury accrued interest: actual/actual day count.",
-        "Zero-coupon bonds: no accrued interest paid on purchase; phantom interest taxed annually."
+        "Settlement (CURRENT): Corporate bonds settle T+1 (per SEC Rule 15c6-1 amendment effective 5/28/2024). Accrual convention 30/360 unchanged.",
+        "Treasury notes/bonds settle T+1 (unchanged).",
+        "SEC-recognized NRSROs include S&P, Moody's, and Fitch.",
+        "Savings bonds, although debt of the U.S. government, do not trade in the secondary market and are exempt from many securities laws."
       ],
       "formulas": [
-        "Annual Coupon Payment = Coupon Rate \u00d7 Par Value (e.g., 6% \u00d7 $1,000 = $60)",
-        "Current Yield (CY) = Annual Coupon Payment / Market Price",
-        "Dollar Price of Bond = Quoted Price \u00d7 10 (e.g., quote of 95 = $950)",
-        "Basis Point: 1 bp = 0.01% (100 bps = 1%)"
+        "Annual Coupon Income = Coupon Rate \u00d7 Par Value (e.g., 6% \u00d7 $1,000 = $60/year)",
+        "Semiannual Coupon Payment = Annual Coupon \u00f7 2",
+        "Current Yield (CY) = Annual Coupon Payment \u00f7 Market Price",
+        "Bond Price in Dollars = Quoted Price \u00d7 10 (e.g., quote of 95 = $950)",
+        "1 Point = 1% of par = $10 ; 1 Basis Point = 1/100 of 1% = 0.01%",
+        "At Discount: Nominal < CY < YTM < YTC",
+        "At Premium: YTC < YTM < CY < Nominal",
+        "At Par: Nominal = CY = YTM = YTC"
       ],
       "mnemonics": [
-        "Discount bond yields \u2014 'NCMC' going up: Nominal < Current < YTM < YTC (yields rise as price falls below par).",
-        "Premium bond yields \u2014 reverse order: YTC < YTM < CY < Nominal.",
-        "'Call when rates Crash; Put when rates Pop' \u2014 issuers call in falling rates; investors put in rising rates.",
-        "Secured corporate debt: MEC \u2014 Mortgage, Equipment trust, Collateral trust.",
-        "Unsecured corporate debt: DIGS \u2014 Debentures, Income, Guaranteed, Subordinated.",
-        "Liquidation order: 'Some Underground Stockholders Pay Cash' \u2014 Secured, Unsecured (general creditors), Subordinated, Preferred, Common."
+        "'DIPN \u2194 PYNE': at Discount, yields ascend Nominal\u2192CY\u2192YTM\u2192YTC; at Premium, yields descend (flip the order).",
+        "Call = issuer's Choice; Put = investor's Power.",
+        "Issuer-friendly features (Call) = Higher coupon; Investor-friendly features (Put, Convert) = Lower coupon.",
+        "'Bills, Notes, Bonds \u2014 Buy at Discount, No Coupon, Be Patient' (T-bills only) for identifying zero-style Treasuries.",
+        "Volatility drivers: 'Long & Low' \u2014 Long maturity + Low coupon = high volatility."
       ]
     },
     {
-      "title": "Lesson 3.2: Government-Issued Bonds",
-      "overview": "This lesson covers municipal securities (issued by state/local governments) and U.S. government securities (Treasuries and agencies). Municipals offer federal tax-exempt interest and divide into general obligation (GO) and revenue bonds. Treasuries (bills, notes, bonds, TIPS, STRIPS) are the safest investments available, while agency securities (GNMA, FNMA, FHLMC, FCS) provide mortgage and agricultural financing.",
+      "title": "Lesson 3.1 (cont.): Corporate Bonds and Order of Liquidation",
+      "overview": "Corporate debt may be secured (backed by specific assets) or unsecured (backed only by issuer's credit). When a corporation fails, the bankruptcy court liquidates assets and pays claims according to a strict statutory priority order \u2014 secured creditors first, common stockholders last.",
       "key_concepts": [
-        "Municipal Bonds: Issued by states, local governments, U.S. territories, authorities, special districts. Interest generally federal-tax-exempt; state-tax-exempt if investor resides in issuing state. Capital gains still taxable. Settle T+2, 30/360 accrued interest.",
-        "General Obligation (GO) Bonds: Backed by full faith, credit, and taxing power of issuer. State GOs backed by income/sales/license taxes; local GOs backed by ad valorem (property) taxes. Subject to statutory debt limits; usually require voter approval.",
-        "Revenue Bonds: Self-supporting; paid from revenues of the financed project (utilities, toll roads, airports, hospitals, stadiums, dorms). NOT subject to statutory debt limits; generally no voter approval needed.",
-        "Territory Bonds: Issued by Guam, U.S. Virgin Islands, Puerto Rico \u2014 triple tax-exempt (federal, state, local) for all U.S. taxpayers.",
-        "Short-Term Municipal Notes (Anticipation Notes): TANs (tax), RANs (revenue), TRANs (tax & revenue), BANs (bond), CLNs (construction loan), GANs (grant), tax-exempt commercial paper, variable-rate demand notes.",
-        "Treasury Bills (T-Bills): Maturities of 4, 8, 13, 26, 52 weeks. Issued at a discount, mature at par. No coupon. Highly liquid; 13-week T-bill is the benchmark risk-free rate.",
-        "Treasury Notes (T-Notes): Maturities 2\u201310 years. Pay semiannual interest at percentage of par; mature at par.",
-        "Treasury Bonds (T-Bonds): Maturities >10 to 30 years. Pay semiannual interest; mature at par.",
-        "All Treasuries: Issued in book-entry form, settle T+1, accrued interest on actual/actual basis.",
-        "Treasury STRIPS: Treasury-issued zero-coupon bonds; backed by full faith and credit of U.S. government. Issued at discount, no stated coupon.",
-        "Treasury Receipts: Created by broker-dealers from Treasury securities; NOT backed by U.S. government, only by underlying Treasuries held in trust.",
-        "TIPS (Treasury Inflation-Protected Securities): 5, 10, or 20-year maturities. Fixed coupon rate, but principal adjusts semiannually for inflation/deflation (CPI). Interest payments fluctuate with principal. Final principal payment never less than original $1,000 par.",
-        "Agency Securities: FCA (Farm Credit Administration), GNMA (Ginnie Mae), FNMA (Fannie Mae), FHLMC (Freddie Mac), SLMA (Sallie Mae). Settle T+2.",
-        "GNMA (Ginnie Mae): Government-owned corporation; ONLY agency security backed by full faith and credit of U.S. government. Mortgage-backed; subject to prepayment risk; pays monthly.",
-        "FNMA (Fannie Mae) / FHLMC (Freddie Mac): Publicly held, government-sponsored enterprises (GSEs). Not backed by full faith and credit of U.S. government. Interest taxable at federal, state, and local levels.",
-        "Tax-Equivalent Yield: Used to compare tax-free municipal yields to taxable corporate yields. Municipal yield will always be lower than equivalent corporate yield.",
-        "Taxation of Bond Interest: Treasuries \u2014 federal taxable, state/local exempt. Municipals \u2014 federal exempt, state depends on residency. FNMA/FHLMC \u2014 taxable at all levels. GNMA \u2014 taxable at all levels. Territory bonds \u2014 exempt at all levels."
+        "SECURED corporate debt: Mortgage bonds (backed by real estate), Equipment trust certificates (backed by equipment, often railroad/airline rolling stock, title held by trustee), Collateral trust bonds (backed by securities deposited in trust \u2014 must be marketable).",
+        "UNSECURED corporate debt: Debentures (backed only by issuer's full faith/credit), Guaranteed bonds (backed by a third party such as a parent company \u2014 still unsecured), Income/adjustment bonds (pay interest ONLY if BOD declares; used by companies in reorganization \u2014 NOT suitable for income-seekers), Subordinated debentures (junior to other unsecured debt).",
+        "All debt is senior to all equity.",
+        "Order of liquidation: (1) Secured debt holders, (2) Administrative claimants (attorneys, court costs, liquidators), (3) Unsecured debt holders and general creditors (including wages and taxes), (4) Subordinated debt holders, (5) Preferred stockholders, (6) Common stockholders.",
+        "Courts may shift priority of wages/taxes upward if needed."
       ],
       "rules": [
-        "GO bonds typically require voter approval and are subject to statutory debt limits.",
-        "Revenue bonds do not require voter approval and are not subject to debt limits.",
-        "Treasury securities: book-entry only, T+1 settlement, actual/actual day count.",
-        "Agency securities: T+2 settlement."
+        "Settlement for corporate bonds: T+1 (effective 5/28/2024).",
+        "Accrued interest on corporate bonds calculated on 30-day month / 360-day year basis."
       ],
       "formulas": [
-        "Tax-Equivalent Yield = Tax-Free (Municipal) Yield / (100% \u2212 Investor's Tax Bracket)",
-        "Equivalent Municipal Yield = Corporate Yield \u00d7 (100% \u2212 Investor's Tax Bracket)",
-        "After-Tax Yield (taxable bond) = Taxable Yield \u00d7 (1 \u2212 Tax Bracket)"
+        "Accrued Interest (Corp/Muni) = Par \u00d7 Coupon Rate \u00d7 (Days from last coupon to settlement using 30/360) \u00f7 360"
       ],
       "mnemonics": [
-        "Anticipation Notes: 'TRB-CGT' \u2014 TAN, RAN, TRAN, BAN, CLN, GAN, Tax-exempt CP.",
-        "GNMA is the 'GoNuts for Mortgage Association' \u2014 the ONLY agency with full U.S. government backing.",
-        "'Bills are Bare, Notes earn iNterest, Bonds last a Bunch' \u2014 T-bills (discount, no coupon), T-notes (2\u201310 yrs), T-bonds (10\u201330 yrs).",
-        "'GO with taxes, Revenue with use' \u2014 GOs backed by taxes; revenue bonds backed by user fees.",
-        "Triple-tax-free: Territories (Puerto Rico, Guam, USVI)."
+        "Liquidation order: 'Secured Admins Use Subordinated Preferred Common' = Secured \u2192 Administrative \u2192 Unsecured/General creditors \u2192 Subordinated \u2192 Preferred \u2192 Common.",
+        "'Guaranteed \u2260 Secured' \u2014 guaranteed bonds are unsecured.",
+        "'Income bonds give NO income guarantee' \u2014 never recommend for income."
+      ]
+    },
+    {
+      "title": "Lesson 3.2: Government-Issued Bonds (Municipal, Treasury, and Agency)",
+      "overview": "This lesson covers debt issued by governmental entities: municipal securities (state/local, generally tax-advantaged), direct U.S. Treasury obligations (T-bills, T-notes, T-bonds, TIPS, STRIPS), and agency securities (FNMA, FHLMC, GNMA, FCS). Investors must master tax treatment, settlement, and structural differences.",
+      "key_concepts": [
+        "MUNICIPAL BONDS: issued by states, local governments, U.S. territories, authorities, special districts.",
+        "Federal tax treatment: most muni interest is federally tax-exempt; capital gains remain taxable. State tax: exempt if investor resides in state of issuance. U.S. territory bonds (Guam, USVI, PR) are 'triple tax-exempt' \u2014 federal, state, AND local.",
+        "General Obligation (GO) bonds: backed by full faith, credit, and taxing power of issuer; finance non-revenue-producing public projects; typically require voter approval; subject to statutory debt limits. State GO backed by income/sales tax; local GO backed by ad valorem (property) taxes.",
+        "Revenue bonds: self-supporting; backed by revenues from specific facility (toll roads, airports, hospitals, utilities, stadiums); no voter approval needed; not subject to statutory debt limits.",
+        "Short-term municipal notes: TANs (tax anticipation), RANs (revenue anticipation), TRANs (tax & revenue), BANs (bond anticipation), CLNs (construction loan), GANs (grant anticipation), VRDNs (variable rate demand \u2014 with put feature), tax-exempt commercial paper (typically \u2264270 days).",
+        "TREASURY SECURITIES \u2014 backed by full faith and credit of U.S. government; book-entry only; settle T+1.",
+        "T-Bills: \u226452 weeks; issued at discount, mature at par; no stated coupon; the 13-week T-bill is the benchmark 'risk-free' rate.",
+        "T-Notes: 2\u201310 year maturities; semiannual interest; priced as % of par.",
+        "T-Bonds: >10\u201330 year maturities; semiannual interest; priced as % of par.",
+        "TIPS (Treasury Inflation-Protected Securities): 5, 10, or 20-year maturities; fixed coupon; principal adjusted semiannually for inflation/deflation; final principal never below original par.",
+        "Treasury STRIPS: zero-coupon Treasuries; backed by U.S. government; created via Treasury's stripping program.",
+        "Treasury Receipts: zero-coupon products created by broker-dealers from a basket of Treasuries; NOT backed by full faith and credit of U.S. government.",
+        "Accrued interest on Treasury notes/bonds: actual days / actual days.",
+        "AGENCY SECURITIES: GNMA (Ginnie Mae) \u2014 only agency fully backed by U.S. government; FNMA (Fannie Mae) and FHLMC (Freddie Mac) \u2014 publicly-held GSEs; SLMA (Sallie Mae); FCS (Farm Credit System).",
+        "GNMA pass-throughs pay monthly principal + interest; subject to prepayment risk.",
+        "Agency MBS settle T+1 under current SEC 15c6-1 amendments (specific TBA mortgage trades follow separate SIFMA schedules).",
+        "Tax-equivalent yield: used to compare a tax-exempt municipal yield to a fully-taxable yield."
+      ],
+      "rules": [
+        "Treasury settlement: T+1 (always).",
+        "Municipal bond settlement: T+1 (MSRB Rules G-12 and G-15 amended effective 5/28/2024 \u2014 MSRB Notice 2023-19).",
+        "Agency security settlement: generally T+1 under current rules.",
+        "Municipal interest: federally tax-exempt; state-tax-exempt if resident; territory bonds tax-exempt at all levels.",
+        "Treasury interest: federally taxable; exempt from state and local taxes."
+      ],
+      "formulas": [
+        "Tax-Equivalent Yield = Tax-Free (Muni) Yield \u00f7 (100% \u2212 Investor's Marginal Tax Rate)",
+        "Municipal-Equivalent Yield = Corporate (Taxable) Yield \u00d7 (100% \u2212 Investor's Marginal Tax Rate)",
+        "After-Tax Yield (taxable bond) = Taxable Yield \u00d7 (1 \u2212 Tax Rate)",
+        "Example: 7% muni, 30% bracket \u2192 7% \u00f7 0.70 = 10% TEY"
+      ],
+      "mnemonics": [
+        "'GO = Government's Obligation' (taxes); 'Revenue = Revenue from the project'.",
+        "'Ginnie is the Government's' \u2014 only GNMA has full U.S. backing among agencies.",
+        "Treasury terms by length: 'BILLS short, NOTES middle, BONDS long' (\u22641 yr / 2\u201310 yr / >10\u201330 yr).",
+        "'Triple-tax-free Territories' \u2014 Puerto Rico, Guam, USVI.",
+        "TANs/RANs/BANs/CLNs/GANs \u2014 'short-term munis are all ANs (Anticipation Notes)'."
       ]
     },
     {
       "title": "Lesson 3.3: Money Market and Asset-Backed Securities",
-      "overview": "Money market securities are short-term (one year or less), highly liquid, relatively safe debt instruments offering low returns. Asset-backed securities (ABS), including CMOs and CDOs, are created through securitization \u2014 pooling underlying assets like mortgages or loans and selling tranches with varying risk and maturity profiles to investors.",
+      "overview": "Money market instruments are short-term (\u22641 year), highly liquid, low-yield debt used for cash management. Asset-backed securities (ABS), including CMOs and CDOs, are created by pooling and securitizing underlying assets into tranches with varying risk and maturity profiles. This lesson also summarizes bond interest taxation across issuer types.",
       "key_concepts": [
-        "Money Market Securities: Fixed-income debt with one year or less to maturity. Highly liquid, very safe, low yield. Most issued at a discount, mature at face value (no separate interest payments) \u2014 exception: jumbo CDs.",
-        "Jumbo (Negotiable) CDs: Issued by banks with minimum face value of $100,000 (often $1 million+); most mature in 1 year or less. Issued at face value, pay interest. Negotiable CDs trade in secondary market \u2014 these are the money market instruments. Retail CDs are not negotiable.",
-        "Bankers' Acceptances (BAs): Short-term time draft drawn on a bank; used to finance international trade (import/export). Maturity 1\u2013180 days, max 270 days. Issued at a discount. A.k.a. bill of exchange or letter of credit.",
-        "Commercial Paper (Prime Paper, Promissory Notes): Unsecured corporate short-term debt to finance accounts receivable or seasonal inventory. Maturity 1\u2013270 days (most under 90 days). Issued at a discount. Issued by high-credit-quality corporations.",
-        "T-Bills: Money market Treasury security; covered in Lesson 3.2. T-notes/T-bonds with less than 1 year to maturity also count as money market instruments.",
-        "Repurchase Agreements (Repos): A financial institution sells assets with agreement to repurchase later at slightly higher price. Used to raise short-term capital. Reverse repo = dealer buys securities with agreement to resell.",
-        "Federal Funds: Excess bank reserves above FRB requirements lent overnight from one member bank to another. Very short-term; federal funds rate is the interbank lending rate.",
-        "Money Market Suitability: Suitable for liquidity, safety, short-term needs. Not suitable for long-term investors due to low yield and reinvestment risk (frequent maturity = changing reinvestment rates).",
-        "Asset-Backed Securities (ABS): Securities whose value derives from a pool of underlying assets (mortgages, auto loans, credit card receivables, leases). Created via securitization \u2014 diversifies risk and improves liquidity of underlying assets.",
-        "Collateralized Mortgage Obligations (CMOs): Asset-backed security pooling residential mortgages, divided into tranches by maturity. Pays interest to all tranches monthly, but principal payments go to one tranche at a time (shortest first). Sensitive to interest-rate-driven prepayment risk. Often backed by GNMA/FNMA/FHLMC pass-throughs.",
-        "Collateralized Debt Obligations (CDOs): Complex ABS backed by pools of nonmortgage debt \u2014 bonds, auto loans, leases, credit card debt, receivables, derivatives. Sliced into tranches by risk/return profile. Higher risk tranches pay higher yields.",
-        "Taxation Summary: Treasuries \u2014 federal yes, state/local no, interest at maturity or biannually. Municipalities \u2014 federal no, state depends, biannually. FNMA/FHLMC \u2014 taxed at all levels, biannually. GNMA \u2014 taxed at all levels, monthly. Territory bonds \u2014 exempt at all levels, biannually."
+        "Money market securities: maturities \u22641 year; highly liquid; generally very safe; low return; usually issued at a discount (jumbo CDs are an exception \u2014 pay interest).",
+        "Jumbo (negotiable) CDs: \u2265$100,000 face (often $1M+); fixed rate; tradable in secondary market; FDIC insurance is capped at $250,000 per depositor per insured bank per ownership category.",
+        "Bankers' Acceptances (BAs): time draft used in import/export trade; max 270 days (typically 1\u2013180); issued at discount.",
+        "Commercial paper: unsecured corporate promissory notes; 1\u2013270 days (most \u226490); issued at discount; high-credit issuers only.",
+        "T-Bills: covered as both Treasury and money market instrument.",
+        "T-notes/T-bonds become money market instruments when \u22641 year remains to maturity.",
+        "Repurchase agreements (Repos): seller of securities agrees to repurchase later at higher price; used by banks/dealers/Fed for short-term financing.",
+        "Reverse Repos: dealer buys securities with agreement to resell later.",
+        "Federal Funds: overnight loans between member banks of excess reserves; the fed funds rate is set by the market.",
+        "SOFR (Secured Overnight Financing Rate): the USD reference rate that replaced LIBOR, which was permanently discontinued 6/30/2023. Floating-rate notes and many derivatives now reference SOFR.",
+        "Money market suitability: appropriate for short-term cash needs, liquidity, safety \u2014 NOT suitable for long-term growth or income because of low and fluctuating yields and reinvestment risk.",
+        "ASSET-BACKED SECURITIES (ABS): pool of loans/receivables securitized into investable tranches; diversifies risk; settles T+1 under current rules.",
+        "Collateralized Mortgage Obligations (CMOs): pool of residential mortgages organized into tranches; each tranche receives principal sequentially (one tranche at a time); interest paid to all tranches monthly; subject to prepayment risk (faster payoffs when rates fall) and extension risk (slower payoffs when rates rise); principal repaid in $1,000 increments to randomly selected bonds within a tranche; often backed by GNMA/FNMA/FHLMC pass-throughs.",
+        "Collateralized Debt Obligations (CDOs): pools of NON-mortgage debt (corporate bonds, auto loans, leases, credit card receivables, derivatives); structured into tranches with varying risk/return.",
+        "BOND INTEREST TAXATION SUMMARY: Treasury \u2014 federally taxable, state/local exempt; Municipal \u2014 federal exempt, state depends on residency; FNMA/FHLMC \u2014 fully taxable (federal + state/local); GNMA \u2014 fully taxable (federal + state/local), pays monthly; U.S. territory bonds \u2014 exempt at all levels."
       ],
       "rules": [
-        "Money market instruments by definition have maturity of one year or less.",
-        "Commercial paper exempt from Securities Act of 1933 registration if maturity \u2264 270 days.",
-        "Bankers' acceptances maximum maturity of 270 days."
+        "ABS and similar securities settle T+1 under amended SEC Rule 15c6-1 (effective 5/28/2024).",
+        "LIBOR permanently discontinued 6/30/2023 \u2014 replaced by SOFR for USD reference rates.",
+        "FDIC insurance limit: $250,000 per depositor, per insured bank, per ownership category."
       ],
       "formulas": [
-        "Discount Yield (money market) = (Face Value \u2212 Purchase Price) / Face Value \u00d7 (360 / Days to Maturity)"
+        "Discount-Basis Yield (T-bill style) = [(Face \u2212 Purchase Price) \u00f7 Face] \u00d7 (360 \u00f7 Days to Maturity)",
+        "Approximate Yield on Discount Money Market Instrument = (Discount \u00f7 Purchase Price) \u00d7 (365 \u00f7 Days to Maturity)"
       ],
       "mnemonics": [
-        "Money market characteristics: 'SHLS' \u2014 Short-term, Highly liquid, Low yield, Safe.",
-        "Money market instruments: 'BCD-RTF' \u2014 Bankers' acceptances, Commercial paper, CDs (negotiable), Repos, T-bills, Fed funds.",
-        "CMO = 'M for Mortgage'; CDO = 'D for Debt' (non-mortgage).",
-        "Tranche order in CMO: shortest-maturity tranche gets all principal first (FIFO principal).",
-        "Only GNMA pays MONTHLY interest (mortgage-style); all other Treasury/agency securities pay biannually."
+        "Money market = 'Short, Safe, Sub-par yield' (the 3 S's).",
+        "CMO = 'C for Collateralized, M for Mortgage' \u2014 only mortgages.",
+        "CDO = 'C for Collateralized, D for Debt (non-mortgage)'.",
+        "Taxation: 'Treasury = Federal only; Muni = State possible; Agency = All taxable (except GNMA full faith but still fully taxed)'.",
+        "'GNMA pays Gradually Monthly' \u2014 monthly P&I distributions."
       ]
     }
   ],
   "tokens": {
-    "input": 24556,
-    "output": 6164
+    "input": 25556,
+    "output": 6355
   },
-  "cost_usd": 0.8306
+  "cost_usd": 0.86
 }

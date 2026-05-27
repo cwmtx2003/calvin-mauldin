@@ -4,15 +4,6 @@
   "lesson_title": "INVESTMENT COMPANY ACT OF 1940",
   "cards": [
     {
-      "type": "definition",
-      "front": "Investment company",
-      "back": "A corporation or trust that pools investors' money and invests it in securities on their behalf based on a stated investment objective. Regulated under the Investment Company Act of 1940.",
-      "lo": "4.a",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
       "type": "qa",
       "front": "What are the three classifications of investment companies under the Investment Company Act of 1940?",
       "back": "1) Face-Amount Certificate (FAC) companies, 2) Unit Investment Trusts (UITs), and 3) Management Investment Companies (open-end and closed-end).",
@@ -24,7 +15,7 @@
     {
       "type": "definition",
       "front": "Face-Amount Certificate (FAC)",
-      "back": "A contract in which the issuer guarantees payment of a stated face amount to the investor at a future date, in return for either a lump-sum or periodic payments. A fully paid FAC is paid in a lump sum.",
+      "back": "A contract in which the issuer guarantees payment of a stated (face) amount to the investor at a set future date in exchange for a lump sum or periodic payments. Classified as an investment company under the 1940 Act, though few operate today.",
       "lo": "4.a",
       "unit": 4,
       "lesson": 1,
@@ -33,7 +24,7 @@
     {
       "type": "definition",
       "front": "Unit Investment Trust (UIT)",
-      "back": "An investment company organized under a trust indenture. It has trustees (not a board of directors), issues redeemable units representing an undivided interest in a fixed portfolio, is not actively managed, and terminates on a set date or at portfolio maturity.",
+      "back": "An investment company organized under a trust indenture with trustees (no board of directors). Sells redeemable units representing an undivided interest in a fixed, unmanaged portfolio of securities. Terminates at bond maturity or a preset date.",
       "lo": "4.a",
       "unit": 4,
       "lesson": 1,
@@ -41,8 +32,8 @@
     },
     {
       "type": "qa",
-      "front": "How do FACs and UITs differ from managed investment companies regarding management and secondary trading?",
-      "back": "FACs and UITs are not actively managed \u2014 once portfolios are composed they do not change. Neither trades in the secondary market; they are redeemable only through the issuer.",
+      "front": "How does a closed-end fund differ from an open-end fund in terms of capitalization and securities issued?",
+      "back": "Closed-end: fixed capitalization (one-time IPO), may issue common stock, preferred stock, and bonds, and trades in the secondary market. Open-end: unlimited capitalization (continuous offering), issues only common stock (no debt or preferred), and shares are redeemed by the fund only.",
       "lo": "4.a",
       "unit": 4,
       "lesson": 1,
@@ -50,8 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the key structural difference between a closed-end and an open-end management company?",
-      "back": "A closed-end company offers a fixed number of shares in a single IPO, then trades in the secondary market. An open-end company (mutual fund) continuously issues new shares and redeems shares directly through the fund.",
+      "front": "How is the price of a closed-end fund share determined versus an open-end fund share?",
+      "back": "Closed-end shares trade at current market value (CMV) determined by supply and demand on an exchange or OTC \u2014 may trade at a premium or discount to NAV. Open-end (mutual fund) shares are priced by formula at NAV + sales charge (POP) using forward pricing.",
       "lo": "4.a",
       "unit": 4,
       "lesson": 1,
@@ -59,27 +50,9 @@
     },
     {
       "type": "qa",
-      "front": "What types of securities may a closed-end investment company issue versus an open-end company?",
-      "back": "Closed-end: common stock, preferred stock, and debt securities. Open-end (mutual fund): common stock only (one class).",
+      "front": "Why are FACs, UITs, and open-end funds (mutual funds) NOT traded in the secondary market?",
+      "back": "All three are redeemable securities \u2014 investors must redeem shares through the issuer rather than sell them to other investors in the secondary market.",
       "lo": "4.a",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "How is the price of closed-end fund shares determined in the secondary market?",
-      "back": "By supply and demand. Shares may trade at a premium to or discount from NAV. Investors pay CMV plus a commission.",
-      "lo": "4.a",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "How are mutual fund shares priced for purchases and redemptions?",
-      "back": "By forward pricing \u2014 orders entered before 4:00 pm ET receive that day's next-calculated NAV (redemptions) or POP (purchases). Orders after 4:00 pm ET get the next business day's price.",
-      "lo": "4.d",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
@@ -95,8 +68,8 @@
     },
     {
       "type": "definition",
-      "front": "Class A (front-end load) shares",
-      "back": "Mutual fund shares with a sales charge deducted at the time of purchase. Best suited for investors with large investment amounts (to access breakpoints) and long time horizons. Lower ongoing expenses than B or C shares.",
+      "front": "Class A mutual fund shares",
+      "back": "Front-end load shares. Sales charge is deducted from the investment at the time of purchase. Best for investors with large investments (to access breakpoints) and longer time horizons. Typically have lower ongoing expenses than B or C shares.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -104,8 +77,8 @@
     },
     {
       "type": "definition",
-      "front": "Class B (back-end load) shares",
-      "back": "Mutual fund shares with a contingent deferred sales charge (CDSC) that declines annually and typically reaches zero after 5\u20137 years, at which time they convert to Class A. Best for smaller investments with a long time horizon.",
+      "front": "Class B mutual fund shares",
+      "back": "Back-end load shares with a Contingent Deferred Sales Charge (CDSC) that declines annually and typically reaches zero after 5\u20137 years, after which they convert to Class A shares. Best for smaller investments held for long periods. Higher ongoing expenses than Class A.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -113,8 +86,8 @@
     },
     {
       "type": "definition",
-      "front": "Class C (level-load) shares",
-      "back": "Mutual fund shares with a 1-year 1% CDSC, a 0.75% 12b-1 fee, and a 0.25% shareholder services fee. Ongoing fees never disappear. Best for investors with short time horizons (1\u20135 years).",
+      "front": "Class C mutual fund shares",
+      "back": "Level-load shares \u2014 typically a 1% CDSC for one year, plus an ongoing 0.75% 12b-1 fee and 0.25% shareholder services fee. Best for investors with short time horizons (1\u20135 years) because ongoing fees never end.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -122,17 +95,17 @@
     },
     {
       "type": "qa",
-      "front": "What is a no-load mutual fund, and what fees may it still charge?",
-      "back": "A fund sold directly to the public at NAV with no sales charge. It may still charge non-sales fees such as purchase fees, account fees, exchange fees, and redemption fees.",
+      "front": "Which class of mutual fund shares qualifies for breakpoints?",
+      "back": "Only Class A (front-end load) shares qualify for breakpoint discounts.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
     },
     {
-      "type": "definition",
-      "front": "Breakpoint",
-      "back": "A quantity discount on Class A mutual fund shares \u2014 the larger the investment, the lower the sales charge. Breakpoint schedules vary by fund family. Investment clubs are not eligible for breakpoints.",
+      "type": "scenario",
+      "front": "A customer wishes to invest $23,000 in a fund where breakpoints reduce the sales charge from 6.5% to 4.0% at the $25,000 level. What is the registered representative required to do?",
+      "back": "The RR must inform the customer that investing an additional $2,000 would qualify for the next breakpoint and reduce the sales charge to 4%. Failing to disclose this constitutes a 'breakpoint sale' violation.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -141,16 +114,7 @@
     {
       "type": "definition",
       "front": "Letter of Intent (LOI)",
-      "back": "A non-binding agreement (binding only on the fund) in which an investor states the intention to invest enough additional money within 13 months to qualify for a breakpoint. May be backdated up to 90 days. Shares from the discount are held in escrow until the LOI is completed.",
-      "lo": "4.b",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "definition",
-      "front": "Rights of accumulation",
-      "back": "A feature allowing reduced sales charges on subsequent purchases when the total value (higher of current NAV or total purchases made) exceeds a breakpoint level. No time limit; allows appreciation to count toward breakpoints.",
+      "back": "A one-sided agreement (binding only on the fund) in which the investor commits to invest enough additional money to reach a breakpoint within 13 months. May be backdated up to 90 days. The fund holds extra shares in escrow until the LOI is completed.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -159,25 +123,7 @@
     {
       "type": "qa",
       "front": "How do rights of accumulation differ from a Letter of Intent?",
-      "back": "Rights of accumulation: apply only to subsequent purchases, allow appreciation to count, have no time limit. LOI: applies to initial and subsequent purchases within 13 months, does not count appreciation/reinvested dividends, has a 13-month deadline.",
-      "lo": "4.b",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "definition",
-      "front": "Combination privilege",
-      "back": "Allows an investor to combine separate investments in two or more funds within the same fund family to reach a breakpoint and reduce the sales charge.",
-      "lo": "4.b",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "Are exchanges between funds within the same family a taxable event?",
-      "back": "Yes. Although exchange privileges typically allow conversion without a new sales charge, the exchange is treated as a sale and is a taxable event.",
+      "back": "Rights of accumulation: apply to subsequent (not initial) investments, allow prior share appreciation to count toward breakpoints, and have no time limit. LOI: must be completed within 13 months, may be backdated 90 days, and appreciation/reinvested dividends do NOT count.",
       "lo": "4.b",
       "unit": 4,
       "lesson": 1,
@@ -185,26 +131,8 @@
     },
     {
       "type": "scenario",
-      "front": "The ABC Fund has total assets of $100 million and $5 million in liabilities, with 10 million shares outstanding. What is the NAV per share?",
-      "back": "Net assets = $100M \u2212 $5M = $95M. NAV per share = $95M / 10M shares = $9.50 per share.",
-      "lo": "4.c",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "What is the formula for the public offering price (POP) of a Class A mutual fund share?",
-      "back": "POP = NAV + Sales Charge. The sales charge is expressed as a percentage of POP.",
-      "lo": "4.c",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "scenario",
-      "front": "An investor invests $10,000 in a fund with a 5% front-end sales charge. How much actually purchases shares?",
-      "back": "Sales charge = $10,000 \u00d7 5% = $500. Amount available to purchase shares = $10,000 \u2212 $500 = $9,500.",
+      "front": "A mutual fund has total assets of $100 million, liabilities of $5 million, and 10 million shares outstanding. Calculate the NAV per share.",
+      "back": "Net assets = $100M \u2212 $5M = $95M. NAV per share = $95M \u00f7 10M shares = $9.50 per share.",
       "lo": "4.c",
       "unit": 4,
       "lesson": 1,
@@ -213,7 +141,7 @@
     {
       "type": "qa",
       "front": "What expenses are included in a mutual fund's expense ratio?",
-      "back": "Manager's (investment adviser's) fee, administrative fees (trading, transfer agents, accountants, attorneys), board of directors' costs, and 12b-1 fees. It does NOT include sales charges/loads.",
+      "back": "Manager's (investment adviser's) fee, administrative fees (transfer agents, accountants, attorneys), board of directors' costs, and 12b-1 fees. Sales charges (loads) are NOT included in the expense ratio.",
       "lo": "4.c",
       "unit": 4,
       "lesson": 1,
@@ -221,17 +149,26 @@
     },
     {
       "type": "qa",
-      "front": "How is a mutual fund's expense ratio calculated?",
-      "back": "Expense ratio = Fund's annual expenses \u00f7 average net assets. Stock funds typically run 1%\u20131.5%; bond funds typically 0.5%\u20131%.",
-      "lo": "4.c",
+      "front": "What is forward pricing for mutual fund shares?",
+      "back": "Purchase and redemption orders are executed at the next NAV calculated after the order is received. Funds compute NAV at least once per business day, typically at 4:00 pm ET. Orders received after the cutoff are priced at the next business day's NAV.",
+      "lo": "4.d",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
     },
     {
       "type": "qa",
-      "front": "What is the order of dividend distribution dates for a mutual fund?",
-      "back": "Declaration date \u2192 Record date and Payable date (same day) \u2192 Ex-dividend date (the day after the record date). The ex-date is set by the fund's Board of Directors.",
+      "front": "What is a 'breakpoint sale' and why is it a violation?",
+      "back": "A breakpoint sale is soliciting a mutual fund purchase in an amount just below a breakpoint to generate a higher sales charge (and commission). It violates just and equitable principles of trade. The violation is the failure to disclose the breakpoint, not the customer's choice to invest a lower amount.",
+      "lo": "4.d",
+      "unit": 4,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
+    },
+    {
+      "type": "qa",
+      "front": "What is the order of dividend distribution dates for a mutual fund, and who sets the ex-date?",
+      "back": "Declaration date \u2192 Record date / Payable date (same day) \u2192 Ex-dividend date (day AFTER record date). The mutual fund's Board of Directors sets the ex-date \u2014 not FINRA or an exchange.",
       "lo": "4.d",
       "unit": 4,
       "lesson": 1,
@@ -239,17 +176,35 @@
     },
     {
       "type": "definition",
-      "front": "Breakpoint sale (violation)",
-      "back": "A sale made just below a breakpoint without disclosing to the customer that a slightly larger investment would qualify for a reduced sales charge. It violates just and equitable principles of trade. The violation is the failure to disclose, not the customer's choice to invest below the breakpoint.",
-      "lo": "4.d",
+      "front": "Statutory (full) prospectus",
+      "back": "The full and fair disclosure document containing all material information needed to make an informed investment decision: fund objective, policies, sales charges, expenses, services, and 1-, 5-, and 10-year performance history (or life of fund if shorter). Must be delivered before or during solicitation.",
+      "lo": "4.e",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
     },
     {
-      "type": "qa",
-      "front": "What are the four mutual fund disclosure documents?",
-      "back": "1) Full (statutory) prospectus, 2) Summary prospectus (Rule 498), 3) Statement of Additional Information (SAI), 4) Omitting prospectus / advertisement (Rule 482).",
+      "type": "definition",
+      "front": "Summary prospectus (Rule 498)",
+      "back": "A standardized short-form summary of key information from the full prospectus that may include a purchase application. Investors who buy via the summary must have access to the full prospectus no later than the trade confirmation.",
+      "lo": "4.e",
+      "unit": 4,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
+    },
+    {
+      "type": "definition",
+      "front": "Statement of Additional Information (SAI)",
+      "back": "Supplemental document containing the fund's history, policies, consolidated financial statements (balance sheet, income statement, statement of operations, portfolio list). Must be available without charge within three business days of an investor's request.",
+      "lo": "4.e",
+      "unit": 4,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
+    },
+    {
+      "type": "definition",
+      "front": "Omitting prospectus (Rule 482)",
+      "back": "A mutual fund advertisement (sometimes called a tombstone ad). It does not provide full and fair disclosure, so delivery of an omitting prospectus is NOT sufficient to execute a trade.",
       "lo": "4.e",
       "unit": 4,
       "lesson": 1,
@@ -257,35 +212,8 @@
     },
     {
       "type": "qa",
-      "front": "What information must be included in a mutual fund's statutory prospectus?",
-      "back": "Fund objective, investment policies, sales charges, management expenses, services offered, and 1-, 5-, and 10-year performance (or life of the fund if shorter).",
-      "lo": "4.e",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "When must the Statement of Additional Information (SAI) be delivered, and what does it contain?",
-      "back": "It must be made available within three business days of an investor's request, at no charge. It contains the fund's history, policies, balance sheet, statement of operations, income statement, and portfolio list.",
-      "lo": "4.e",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "When a summary prospectus is used to sell mutual fund shares, when must the full prospectus be available to the investor?",
-      "back": "No later than the confirmation of the sale. It may be delivered online.",
-      "lo": "4.e",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "Under Subchapter M of the IRC (pipeline/conduit theory), what percentage of net investment income must a mutual fund distribute to avoid taxation at the fund level?",
-      "back": "At least 90% of net investment income. The fund still pays tax on any retained income; shareholders pay tax on what they receive.",
+      "front": "Under Subchapter M (conduit/pipeline tax theory), what percentage of net investment income must a mutual fund distribute to avoid taxation at the fund level?",
+      "back": "At least 90% of net investment income (NII) must be distributed to shareholders. The fund then pays tax only on the undistributed portion. If less than 90% is distributed, the fund is taxed on 100% of NII.",
       "lo": "4.e",
       "unit": 4,
       "lesson": 1,
@@ -293,53 +221,44 @@
     },
     {
       "type": "scenario",
-      "front": "A fund receives $500,000 in dividends and $600,000 in interest, with $100,000 in expenses. To qualify under Subchapter M, what minimum amount must it distribute, and what is it taxed on if it distributes only 89%?",
-      "back": "NII = $1,100,000 \u2212 $100,000 = $1,000,000. Must distribute at least 90% = $900,000. If it distributes less than 90%, it is taxed on the full $1,000,000 of NII.",
+      "front": "A balanced fund earned $500,000 in dividends and $600,000 in interest, with $100,000 in expenses. To qualify as a regulated investment company under Subchapter M, what is the minimum it must distribute to shareholders?",
+      "back": "Net Investment Income = $500,000 + $600,000 \u2212 $100,000 = $1,000,000. Minimum required distribution = 90% \u00d7 $1,000,000 = $900,000. The fund will still pay tax on any NII it retains; shareholders pay tax on what they receive.",
       "lo": "4.e",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
     },
     {
-      "type": "scenario",
-      "front": "A customer wants to invest $48,000 in a mutual fund that has a breakpoint at $50,000. What is the least appropriate action by the representative?",
-      "back": "Simply placing the order without disclosure. The RR must explain breakpoints and options (LOI, combination privilege) that would let the customer reach the $50,000 breakpoint for a lower sales charge. Failing to disclose = breakpoint sale violation.",
+      "type": "qa",
+      "front": "Are reinvested mutual fund dividend and capital gains distributions taxable to the shareholder?",
+      "back": "Yes. Although reinvestments are made at NAV (no sales charge) and add to the investor's cost basis, all distributions \u2014 whether taken in cash or reinvested \u2014 are taxable in the year received.",
+      "lo": "4.e",
+      "unit": 4,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
+    },
+    {
+      "type": "qa",
+      "front": "May a registered representative highlight or annotate a mutual fund prospectus to draw attention to key sections?",
+      "back": "No. A prospectus may never be altered in any way \u2014 no highlighting, writing in, or marking. It must be delivered exactly as published.",
+      "lo": "4.e",
+      "unit": 4,
+      "lesson": 1,
+      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
+    },
+    {
+      "type": "qa",
+      "front": "Can investment clubs combine purchases to qualify for mutual fund breakpoints?",
+      "back": "No. Individuals, spouses, minor children, and corporations (including divisions and subsidiaries) may combine purchases to qualify for breakpoints. Investment clubs may NOT.",
       "lo": "4.b",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "What rights do mutual fund shareholders have?",
-      "back": "Dividends when declared, voting rights (e.g., on changes to the BOD, investment adviser, investment objective, sales charges, fund liquidation), and the right to redeem shares. They do NOT have preemptive rights (closed-end shareholders do).",
-      "lo": "4.a",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "How are variable annuity subaccounts classified under the Investment Company Act of 1940?",
-      "back": "As either Unit Investment Trusts (UITs) or open-end management investment companies.",
-      "lo": "4.a",
-      "unit": 4,
-      "lesson": 1,
-      "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
-    },
-    {
-      "type": "qa",
-      "front": "Identify which is NOT a management investment company: an S&P 500 Index fund, a VA growth subaccount, the Windmill Income UIT, or a listed closed-end fund.",
-      "back": "The Windmill Income UIT \u2014 a UIT is a separate classification under the Act of 1940, not a management company. The other three are managed.",
-      "lo": "4.a",
       "unit": 4,
       "lesson": 1,
       "lesson_title": "INVESTMENT COMPANY ACT OF 1940"
     }
   ],
   "tokens": {
-    "input": 14509,
-    "output": 4003
+    "input": 15564,
+    "output": 3823
   },
-  "cost_usd": 0.5179
+  "cost_usd": 0.5202
 }

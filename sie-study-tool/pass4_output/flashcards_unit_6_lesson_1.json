@@ -4,27 +4,18 @@
   "lesson_title": "NONQUALIFIED ACCOUNTS",
   "cards": [
     {
+      "type": "definition",
+      "front": "Individual account",
+      "back": "An account with one beneficial owner who is the only person who can control investments and request distributions. Upon death, assets pass through the owner's estate unless other arrangements (e.g., TOD) have been made.",
+      "lo": "6.a",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
       "type": "qa",
-      "front": "What is the key distinction between a Tenants in Common (TIC) account and a Joint Tenants with Right of Survivorship (JTWROS) account when one tenant dies?",
-      "back": "In TIC, the deceased tenant's fractional interest passes to their estate (account is frozen until estate paperwork is processed). In JTWROS, the deceased tenant's interest passes directly to the surviving tenant(s).",
-      "lo": "6.a",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "definition",
-      "front": "Tenants in Common (TIC)",
-      "back": "A joint account ownership form where each tenant owns a specified fractional interest. Upon a tenant's death, that fractional interest passes to the decedent's estate, not the surviving tenants. If no percentages are specified, ownership is assumed equal.",
-      "lo": "6.a",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "definition",
-      "front": "Joint Tenants with Right of Survivorship (JTWROS)",
-      "back": "A joint account where all tenants have an undivided interest. Upon the death of one tenant, that tenant's interest passes automatically to the surviving tenant(s). Common for married couples.",
+      "front": "What is the key difference between Tenants in Common (TIC) and Joint Tenants with Right of Survivorship (JTWROS) accounts when one owner dies?",
+      "back": "TIC: the decedent's fractional interest passes to the decedent's estate. JTWROS: the decedent's interest passes to the surviving tenant(s). All JTWROS tenants have an undivided interest; TIC tenants each specify a percentage interest.",
       "lo": "6.a",
       "unit": 6,
       "lesson": 1,
@@ -32,8 +23,8 @@
     },
     {
       "type": "scenario",
-      "front": "A client wants her account to pass directly to her three children at death, bypassing probate, but wants to retain full control during her lifetime and the ability to change beneficiaries. Which account type should you recommend?",
-      "back": "An individual account with a Transfer on Death (TOD) designation. TOD avoids probate, the owner retains full control during life, and beneficiaries/allocations can be changed. Note: TOD does not avoid estate tax.",
+      "front": "A widow opens an account and wants any remaining assets to bypass probate and go directly to her two children at her death, while she retains full control during her lifetime. What account feature should be added?",
+      "back": "A Transfer on Death (TOD) designation. TOD avoids probate but does not avoid estate tax. It can be added to individual or JTWROS accounts (on JTWROS, it takes effect after the death of the last surviving tenant).",
       "lo": "6.a",
       "unit": 6,
       "lesson": 1,
@@ -41,8 +32,8 @@
     },
     {
       "type": "qa",
-      "front": "When does a Transfer on Death (TOD) designation become effective on a JTWROS account?",
-      "back": "Only after the death of the last surviving tenant.",
+      "front": "What events terminate a power of attorney (POA), including a durable POA?",
+      "back": "The death of either party (the account owner/grantor or the appointed attorney). A durable POA continues through the incapacity of the grantor but still terminates at death.",
       "lo": "6.a",
       "unit": 6,
       "lesson": 1,
@@ -50,8 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the difference between a Full Power of Attorney (FPOA) and a Limited Power of Attorney (LPOA)?",
-      "back": "FPOA allows the appointee to deposit/withdraw cash and securities and make investment decisions\u2014essentially the same power as the owner. LPOA (limited trading authorization) allows only buy and sell orders\u2014no withdrawal of assets.",
+      "front": "Distinguish a Full Power of Attorney (FPOA) from a Limited Power of Attorney (LPOA).",
+      "back": "FPOA: appointee can deposit/withdraw cash or securities and make investment decisions\u2014essentially the same authority as the owner. LPOA (limited trading authorization): appointee can enter buy/sell orders only; no withdrawal of cash or securities.",
       "lo": "6.a",
       "unit": 6,
       "lesson": 1,
@@ -59,26 +50,8 @@
     },
     {
       "type": "qa",
-      "front": "What events terminate a Power of Attorney, including a durable POA?",
-      "back": "All POAs\u2014including durable POAs\u2014terminate upon the death of either the grantor (account owner) or the appointee (\"attorney\"). A standard POA also ends upon incapacity of the grantor; a durable POA survives incapacity but still ends at death.",
-      "lo": "6.a",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "definition",
-      "front": "Durable Power of Attorney",
-      "back": "A POA containing language allowing the authority to continue even if the account owner becomes incapacitated. It still terminates upon the death of either party.",
-      "lo": "6.a",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What documents must a broker-dealer obtain to open a corporate brokerage account?",
-      "back": "A copy of the corporate charter (proof the corporation exists) and a corporate resolution from the board of directors authorizing the account and naming officers permitted to enter orders. If margin is desired, the charter must not prohibit it.",
+      "front": "What documents must a corporation provide to open a brokerage account, and what is required to open a margin account?",
+      "back": "A corporate charter (proof of existence) and a corporate resolution (authorizing the account and naming officers who may trade). To open a margin account, the corporate charter must not prohibit margin trading.",
       "lo": "6.b",
       "unit": 6,
       "lesson": 1,
@@ -87,7 +60,7 @@
     {
       "type": "qa",
       "front": "What documentation is required to open a partnership account, and what is required annually?",
-      "back": "A written partnership agreement and an authorization identifying which partners may transact in the account. An amended partnership agreement must be obtained each year if changes occur. The agreement must permit margin if a margin account is desired.",
+      "back": "A written partnership agreement specifying which partners may transact, plus authorization from the partners. An amended partnership agreement must be obtained each year if any changes have been made. If margin is desired, the partnership agreement must not prohibit it.",
       "lo": "6.b",
       "unit": 6,
       "lesson": 1,
@@ -95,8 +68,8 @@
     },
     {
       "type": "definition",
-      "front": "d/b/a account",
-      "back": "A \"doing business as\" account opened for a sole proprietor that includes a fictitious business name in addition to the owner's name. Checks may be made payable to either the owner or the business name.",
+      "front": "Sole proprietor (d/b/a) account",
+      "back": "An account opened for a sole proprietor that may include a fictitious business name (\"doing business as\"). Checks may be made payable to either the owner or the business name. The account is effectively the property of the business owner.",
       "lo": "6.b",
       "unit": 6,
       "lesson": 1,
@@ -104,8 +77,8 @@
     },
     {
       "type": "qa",
-      "front": "Identify the three roles in a trust and what each does.",
-      "back": "Grantor (settlor): person who creates the trust and contributes the assets. Trustee: manages the trust assets according to the trust document. Beneficiary: person for whose benefit the assets are managed.",
+      "front": "Identify the three roles in a trust and the function of each.",
+      "back": "Grantor (settlor): the person who creates and funds the trust with assets. Trustee: manages the trust assets for the beneficiary and owes a fiduciary duty. Beneficiary: receives the benefit of the trust assets.",
       "lo": "6.c",
       "unit": 6,
       "lesson": 1,
@@ -113,8 +86,17 @@
     },
     {
       "type": "qa",
-      "front": "What is the difference between a revocable and an irrevocable trust for estate tax purposes?",
-      "back": "Revocable trust: grantor retains control and the ability to modify/revoke; assets remain part of the grantor's estate. Irrevocable trust: grantor gives up control and cannot modify the trust; assets may be removed from the grantor's estate (the grantor cannot serve as trustee or beneficiary for this to apply).",
+      "front": "How does a revocable living trust differ from an irrevocable trust for estate tax purposes?",
+      "back": "Revocable trust: grantor retains control, may modify or revoke; assets remain part of the grantor's estate. Irrevocable trust: grantor gives up control and cannot modify; assets may be removed from the estate, but the grantor cannot serve as trustee or beneficiary.",
+      "lo": "6.c",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "definition",
+      "front": "Living trust vs. decedent's trust",
+      "back": "Living trust: created and funded during the grantor's lifetime. Decedent's trust: funded through a will or estate process after the owner has died.",
       "lo": "6.c",
       "unit": 6,
       "lesson": 1,
@@ -122,26 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "In a typical revocable living trust, who often serves as grantor, trustee, and beneficiary?",
-      "back": "It is common for the same person (the grantor) to serve in all three roles\u2014grantor, trustee, and beneficiary\u2014while alive.",
-      "lo": "6.c",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What is the difference between a living trust and a decedent's trust?",
-      "back": "A living trust is created and funded by the grantor during their lifetime. A decedent's trust is funded by a will or other estate process after the grantor's death.",
-      "lo": "6.c",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "List four key restrictions on managing an UGMA/UTMA custodial account.",
-      "back": "1) Cash accounts only\u2014no margin and securities cannot be pledged as collateral. 2) Only one custodian and one minor per account. 3) No speculative/high-risk securities (no naked options, futures); covered calls allowed. 4) Cash, dividends, and interest must be reinvested within a reasonable time.",
+      "front": "Who is the beneficial owner of an UTMA/UGMA custodial account, and whose Social Security number is used?",
+      "back": "The minor is the beneficial owner. The account is registered under the minor's Social Security number, and all tax liability belongs to the minor (taxed at the minor's rate).",
       "lo": "6.d",
       "unit": 6,
       "lesson": 1,
@@ -149,8 +113,8 @@
     },
     {
       "type": "qa",
-      "front": "Whose Social Security number is used on a custodial UGMA/UTMA account, and who is responsible for paying taxes?",
-      "back": "The minor's Social Security number is used, and the account is taxed at the minor's tax rate. The minor is legally responsible for the taxes, but the custodian is responsible for seeing that they are paid.",
+      "front": "List the key restrictions on a custodial (UGMA/UTMA) account.",
+      "back": "Cash account only\u2014no margin and securities may not be pledged as collateral. One custodian and one minor per account. Cash/dividends must be reinvested within a reasonable time. No speculative investments (no naked options, no futures); covered call writing is generally permitted. Stock rights/warrants must be exercised or sold. Custodian may be reimbursed for expenses (and compensated only if not the donor).",
       "lo": "6.d",
       "unit": 6,
       "lesson": 1,
@@ -158,44 +122,8 @@
     },
     {
       "type": "qa",
-      "front": "What happens to a custodial account if the minor dies before reaching the age of majority?",
-      "back": "The securities pass to the minor's estate\u2014not to the parents or the custodian's estate.",
-      "lo": "6.d",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What are the key differences between UGMA and UTMA accounts?",
-      "back": "UTMA allows real estate to be titled in custodial name; UGMA does not. UTMA assets may remain in custodial name until the beneficiary reaches 25 (21 in some states); UGMA assets must be released at the state's age of majority.",
-      "lo": "6.d",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What are the key contribution and distribution rules for a Coverdell Education Savings Account (ESA)?",
-      "back": "After-tax contributions up to $2,000 per student per year until the beneficiary turns 18 (income limits may reduce or eliminate contributions). Growth is tax-deferred; distributions are tax-free if used for qualified K-12 or college expenses. Nonqualified distributions are subject to income tax plus a 10% penalty on earnings. Unused funds must be distributed or rolled to another beneficiary by age 30.",
-      "lo": "6.d",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "List examples of persons considered fiduciaries for an account.",
-      "back": "Trustee, executor (named in a will), administrator (court-appointed for intestate estate), guardian (for minor or incompetent), custodian (UGMA/UTMA), receiver in bankruptcy, and conservator for an incompetent person.",
-      "lo": "6.d",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What standard governs a fiduciary's investment decisions, and may a fiduciary share in account profits?",
-      "back": "The prudent investor rule requires wise and safe investments (many states publish a legal list of approved securities). A fiduciary may not share in account profits but may charge a reasonable fee for services.",
+      "front": "What are the principal differences between UGMA and UTMA accounts?",
+      "back": "UTMA permits real estate to be titled in custodial name; UGMA does not. UTMA accounts may be held in custodial name until the beneficiary is up to 25 (21 in some states); UGMA assets transfer at the state's age of majority. Nearly all states now use UTMA.",
       "lo": "6.d",
       "unit": 6,
       "lesson": 1,
@@ -203,17 +131,8 @@
     },
     {
       "type": "scenario",
-      "front": "Three individuals hold a TIC account. One dies. What happens to the account?",
-      "back": "The two surviving tenants continue as cotenants along with the deceased's estate (which holds the decedent's fractional interest). The account is frozen for the decedent's portion until proper estate paperwork is processed.",
-      "lo": "6.a",
-      "unit": 6,
-      "lesson": 1,
-      "lesson_title": "NONQUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "scenario",
-      "front": "A custodian in an UGMA account wants to write uncovered (naked) call options to generate income for the minor. Is this permitted?",
-      "back": "No. Uncovered/naked options are speculative and inappropriate for a custodial account. Covered call writing is generally permitted, but buying options and writing naked options are not.",
+      "front": "The minor beneficiary of a UTMA account dies before reaching the age of majority. To whom do the securities pass?",
+      "back": "To the minor's estate\u2014not to the custodian or to the parents (unless they are heirs of the minor's estate).",
       "lo": "6.d",
       "unit": 6,
       "lesson": 1,
@@ -221,8 +140,44 @@
     },
     {
       "type": "qa",
-      "front": "Can a registered representative typically be granted Full Power of Attorney over a non-family customer's account?",
-      "back": "It would be highly unusual, and most firms would not approve granting FPOA to an RR over an account that does not belong to a family member.",
+      "front": "State the contribution rules and tax treatment for a Coverdell Education Savings Account (ESA).",
+      "back": "After-tax contributions up to $2,000 per beneficiary per year until the beneficiary's age 18 (contribution limit phased out at higher incomes). Growth is tax-deferred; qualified distributions for K\u201312, secondary, or college expenses are tax-free. Nonqualified distributions are subject to income tax plus a 10% penalty on the earnings portion. Funds remaining at age 30 must be distributed (taxed + 10% penalty) or rolled to another family member's ESA.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Name at least five types of fiduciaries who may open an account on behalf of another party.",
+      "back": "Trustee of a trust; executor of an estate; administrator (when decedent died intestate); guardian of a minor or incompetent; custodian (UGMA/UTMA); receiver in bankruptcy; conservator of an incompetent person.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the \"prudent investor rule\" as it applies to fiduciary accounts, and may a fiduciary share in account profits?",
+      "back": "A fiduciary must make wise, safe investments consistent with the beneficiary's needs; speculative transactions are generally prohibited, and many states publish a \"legal list\" of approved securities. A fiduciary may not share in account profits but may charge a reasonable fee for services.",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Under what condition may a fiduciary account (including a trust account) be opened as a margin account?",
+      "back": "Only if margin trading is specifically authorized by the legal documents that establish the fiduciary relationship (e.g., the trust agreement).",
+      "lo": "6.d",
+      "unit": 6,
+      "lesson": 1,
+      "lesson_title": "NONQUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "scenario",
+      "front": "A customer wants the account statements to show only a number rather than her name because she is a public figure. Is this permitted?",
+      "back": "Yes\u2014\"numbered accounts\" are permitted in exceptional cases for privacy (e.g., celebrities, politicians). The customer must sign a statement acknowledging ownership, and the member firm must maintain a record of the actual owner's identity.",
       "lo": "6.a",
       "unit": 6,
       "lesson": 1,
@@ -230,8 +185,8 @@
     }
   ],
   "tokens": {
-    "input": 8205,
-    "output": 3369
+    "input": 9446,
+    "output": 2929
   },
-  "cost_usd": 0.3757
+  "cost_usd": 0.3614
 }

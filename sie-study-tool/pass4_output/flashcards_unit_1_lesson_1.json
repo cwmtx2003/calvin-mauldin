@@ -6,7 +6,7 @@
     {
       "type": "definition",
       "front": "Primary market",
-      "back": "The market where securities are sold by the issuer (corporation or government) to the investing public in issuer transactions. The issuer receives the proceeds from the sale.",
+      "back": "The market where securities are sold by the issuer (corporation or government) directly to the investing public in issuer transactions. The issuer receives the proceeds from the sale.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -14,8 +14,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the key distinction between a primary market transaction and a secondary market transaction?",
-      "back": "In a primary market transaction, the issuer receives the proceeds. In the secondary market, securities trade between investors and the issuer does not receive proceeds.",
+      "front": "What is the key distinction between the primary market and the secondary market?",
+      "back": "In the primary market, the issuer receives the proceeds of the sale. In the secondary market, securities trade between investors and the issuer is not involved in the proceeds.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -24,7 +24,7 @@
     {
       "type": "definition",
       "front": "Initial Public Offering (IPO)",
-      "back": "The first time an issuer distributes its securities to the public. All proceeds go to the issuer.",
+      "back": "The first time an issuer distributes (sells) securities to the public. Proceeds go to the issuer.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -33,7 +33,7 @@
     {
       "type": "definition",
       "front": "Additional Public Offering (APO) / Follow-on Offering",
-      "back": "Any primary offering by an issuer that occurs after its IPO. Also called subsequent public offering. Proceeds go to the issuer.",
+      "back": "A primary market offering of additional shares by an issuer that has already conducted an IPO. Proceeds still go to the issuer. May also be called a subsequent public offering.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -42,16 +42,16 @@
     {
       "type": "qa",
       "front": "What is the primary purpose of the Securities Act of 1933?",
-      "back": "To require full and fair disclosure in connection with the sale of new securities to the public. It requires registration with the SEC (unless exempt) and delivery of a prospectus before sale.",
-      "lo": "1.b",
+      "back": "To require full and fair disclosure in connection with the sale of new securities to the public. Non-exempt new issues must be registered with the SEC, and a prospectus must be delivered to all purchasers.",
+      "lo": "1.a",
       "unit": 1,
       "lesson": 1,
       "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
     },
     {
       "type": "qa",
-      "front": "In a best efforts underwriting, who bears the risk of unsold shares?",
-      "back": "The issuer. The underwriter acts only as an agent and is not committed to purchasing the shares. No underwriter capital is at risk.",
+      "front": "Identify the three categories of issuers in the primary market.",
+      "back": "(1) Corporations (issue stocks and bonds); (2) Municipalities (state/local governments issuing munis); (3) The federal government and its agencies (largest issuer of debt \u2014 the Treasury).",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -59,8 +59,17 @@
     },
     {
       "type": "definition",
-      "front": "All-or-none (AON) underwriting",
-      "back": "A type of best efforts underwriting in which the underwriter must sell ALL the shares or the entire offering is canceled. Customer funds collected during the offering must be held in escrow.",
+      "front": "Underwriter (Investment Banker)",
+      "back": "A broker-dealer that works with an issuer to bring securities to market and sell them to the investing public. May form a syndicate with other underwriters to spread risk.",
+      "lo": "1.a",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "In a best efforts underwriting, who bears the risk if shares are not sold?",
+      "back": "The issuer bears the risk. The underwriter acts as an agent and is not committed to purchasing unsold shares \u2014 it only commits to its best effort. No underwriter capital is at risk.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -68,8 +77,17 @@
     },
     {
       "type": "definition",
-      "front": "Mini-max underwriting",
-      "back": "A best efforts arrangement that sets a minimum amount the issuer needs to raise (floor) and a maximum amount it is willing to sell (ceiling). The underwriting proceeds only if the minimum is met.",
+      "front": "All-or-None (AON) Underwriting",
+      "back": "A type of best efforts underwriting in which the underwriter must sell ALL shares offered or cancel the underwriting entirely. Investor funds collected during the offering must be held in escrow.",
+      "lo": "1.a",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "definition",
+      "front": "Mini-Max Underwriting",
+      "back": "A best efforts arrangement with a minimum floor (must be met for the offering to proceed) and a maximum ceiling of shares the issuer is willing to sell. Investor funds are held in escrow until the minimum is reached.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -78,7 +96,7 @@
     {
       "type": "qa",
       "front": "In a firm commitment underwriting, who bears the risk of unsold shares?",
-      "back": "The underwriters. They act as principals, buying the entire issue from the issuer and reselling it to the public. Any unsold shares go into their inventory.",
+      "back": "The underwriters. They act as principals, buying the entire issue from the issuer and reselling to the public. Any unsold shares are placed in the syndicate's inventory at the underwriters' risk.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -86,17 +104,8 @@
     },
     {
       "type": "definition",
-      "front": "Underwriting spread",
-      "back": "The price differential between what the underwriters pay the issuer for securities and the public offering price (POP) at which they resell them to the public.",
-      "lo": "1.a",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "definition",
-      "front": "Syndicate",
-      "back": "A group of broker-dealers that joins together in a firm commitment underwriting to share both the risk and profits of bringing an issue to market. One member acts as the managing (lead) underwriter.",
+      "front": "Public Offering Price (POP) Spread",
+      "back": "In a firm commitment underwriting, the difference between the price the underwriter pays the issuer and the public offering price at which it sells to investors. This spread is the underwriter's compensation.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -104,16 +113,16 @@
     },
     {
       "type": "qa",
-      "front": "How does a selling group differ from a syndicate?",
-      "back": "Selling group members assist in distribution but do NOT commit capital and do not take securities into inventory. Syndicate members commit capital and bear the risk on unsold shares.",
+      "front": "What is the difference between a syndicate member and a selling group member?",
+      "back": "Syndicate members commit capital and share both the risk and profits of the offering (and can take shares into inventory in a firm commitment). Selling group members do not commit capital and do not take inventory \u2014 they simply assist in selling.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
       "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
     },
     {
-      "type": "definition",
-      "front": "Qualified Institutional Buyer (QIB)",
+      "type": "qa",
+      "front": "What is a Qualified Institutional Buyer (QIB)?",
       "back": "An institutional investor that owns and invests at least $100 million in securities on a discretionary basis.",
       "lo": "1.a",
       "unit": 1,
@@ -122,8 +131,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the financial criteria for an individual to qualify as an accredited investor under Rule 501 of Regulation D?",
-      "back": "Income of $200,000+ in each of the past two years (or $300,000 joint) with expectation of the same in the current year, OR net worth of $1,000,000+ excluding primary residence equity.",
+      "front": "List the financial criteria for a natural person to qualify as an accredited investor under Rule 501 of Regulation D.",
+      "back": "Income of at least $200,000 in each of the past two years ($300,000 joint) with the same reasonably expected in the current year, OR net worth of $1,000,000+ excluding primary residence. Also qualifies: insiders of the issuer, holders in good standing of Series 7/65/82, and persons with certain professional credentials.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -131,8 +140,8 @@
     },
     {
       "type": "qa",
-      "front": "Aside from financial thresholds, who else qualifies as an accredited investor?",
-      "back": "All institutional investors; insiders of the issuer (officers, directors, 10%+ shareholders); holders in good standing of Series 7, 65, or 82 licenses; and persons with certain professional certifications/credentials recognized by the SEC.",
+      "front": "Can a municipal advisor serve as the underwriter on an issue it advised on?",
+      "back": "No. A municipal advisor may not switch roles and be compensated as an underwriter on an offering it advised on. It may assist with certain functions (like preparing the official notice) but cannot be paid as part of the sale.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -140,17 +149,8 @@
     },
     {
       "type": "qa",
-      "front": "May a municipal advisor also serve as the underwriter on an issue they advised on?",
-      "back": "No. Municipal advisors may not be compensated as part of the underwriting (sale) of any issue they provide advice on\u2014they cannot switch roles from advisor to underwriter.",
-      "lo": "1.a",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "qa",
-      "front": "Place the steps of a new issue offering in correct order: cooling-off period, registration statement filed, effective date, final prospectus delivery.",
-      "back": "1) Registration statement (S-1) filed with SEC, 2) Cooling-off period (minimum 20 days), 3) Effective/release date, 4) Final prospectus delivered with sales.",
+      "front": "Place the following steps in correct order: cooling-off period, effective date, filing of registration statement, delivery of final prospectus.",
+      "back": "(1) File registration statement (S-1) with SEC; (2) Cooling-off period (minimum 20 calendar days); (3) Effective/release date \u2014 SEC allows sales; (4) Final prospectus delivered to purchasers.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -159,7 +159,7 @@
     {
       "type": "qa",
       "front": "Who is responsible for the accuracy and adequacy of the registration statement and prospectus?",
-      "back": "The issuer. Underwriters may assist in preparation, but legal responsibility for accuracy rests with the issuer.",
+      "back": "The issuer. Underwriters may assist in preparing these documents, but ultimate responsibility for accuracy lies with the issuer.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -167,8 +167,8 @@
     },
     {
       "type": "qa",
-      "front": "What happens to the 20-day cooling-off period if the SEC issues a deficiency letter?",
-      "back": "The period is suspended. When the issuer files a corrected registration statement, the cooling-off period resumes where it left off\u2014it does not restart.",
+      "front": "How long is the minimum cooling-off period, and what happens if the SEC issues a deficiency letter?",
+      "back": "Minimum 20 calendar days. If a deficiency letter is issued, the cooling-off period is suspended and resumes (does NOT start over) when the issuer submits a corrected registration statement.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -176,17 +176,8 @@
     },
     {
       "type": "qa",
-      "front": "During the cooling-off period, what activities are permitted?",
-      "back": "Tombstone advertisements, distributing the preliminary prospectus (red herring), gathering nonbinding indications of interest, performing due diligence, and blue-sky filings. Solicitation of sales and money collection are NOT permitted.",
-      "lo": "1.b",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "qa",
-      "front": "What information is permitted in a tombstone advertisement?",
-      "back": "Name of the issuer, type of security, number of shares, POP (or a range), and names of underwriters. Must include disclaimer that it is neither an offer to sell nor solicitation, and offers can only be made by prospectus.",
+      "front": "What activities are permitted during the cooling-off period?",
+      "back": "(1) Publishing tombstone ads; (2) Distributing a preliminary prospectus (red herring); (3) Gathering nonbinding indications of interest; (4) Conducting due diligence; (5) Blue-sky (state) filings. NO sales and NO sales solicitations are allowed.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -194,35 +185,8 @@
     },
     {
       "type": "definition",
-      "front": "Preliminary prospectus (red herring)",
-      "back": "A disclosure document used during the cooling-off period to gauge investor interest. Contains most information found in the final prospectus EXCEPT the final POP and effective date. Used to gather nonbinding indications of interest.",
-      "lo": "1.b",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "qa",
-      "front": "Is an indication of interest a binding commitment?",
-      "back": "No. An indication of interest is nonbinding to both the investor and the underwriter. No money changes hands, and sales cannot occur until the effective date.",
-      "lo": "1.b",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "qa",
-      "front": "What two pieces of information appear in the final prospectus but NOT in the preliminary prospectus?",
-      "back": "The effective (release) date and the final public offering price (POP).",
-      "lo": "1.b",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "qa",
-      "front": "What is the standard SEC disclaimer that must appear on a prospectus?",
-      "back": "\"These securities have not been approved or disapproved by the SEC, nor have any representations been made about the accuracy or the adequacy of the information.\"",
+      "front": "Tombstone Advertisement",
+      "back": "The only form of advertising permitted during the cooling-off period. Contains bare-bones info: issuer name, type of security, number of shares, POP (or range), and underwriter names. Not required and not filed with the SEC.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -230,8 +194,44 @@
     },
     {
       "type": "definition",
-      "front": "Shelf offering (Rule 415)",
-      "back": "Allows an already publicly traded issuer to register new securities and sell them in portions over a 2-year period (3 years for a Well-Known Seasoned Issuer / WKSI) without re-registering. A supplemental prospectus must be filed before each sale.",
+      "front": "Preliminary Prospectus (Red Herring)",
+      "back": "A disclosure document used during the cooling-off period to gauge investor interest. Contains substantially all the information of the final prospectus EXCEPT the final POP and the effective date. Used to solicit nonbinding indications of interest.",
+      "lo": "1.b",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "Is an indication of interest binding on the investor or the underwriter?",
+      "back": "No \u2014 it is nonbinding on both parties. No money changes hands. Sales cannot occur until the effective date.",
+      "lo": "1.b",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "What two items appear in the final prospectus that were NOT in the preliminary prospectus (red herring)?",
+      "back": "(1) The effective (release) date and (2) the final public offering price (POP).",
+      "lo": "1.b",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "What is the required SEC disclaimer that must appear in a prospectus?",
+      "back": "\"These securities have not been approved or disapproved by the SEC, nor have any representations been made about the accuracy or the adequacy of the information.\" The SEC does not approve or endorse new issues.",
+      "lo": "1.b",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "definition",
+      "front": "Shelf Offering (Shelf Registration)",
+      "back": "A registration that allows an already-public issuer to register securities and sell portions over time without re-registering. Generally valid for 2 years (3 years for a Well-Known Seasoned Issuer/WKSI). A supplemental prospectus must be filed with the SEC before each sale.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -239,8 +239,8 @@
     },
     {
       "type": "scenario",
-      "front": "An investor buys NMS shares of a corporation in the secondary market 20 days after the company's IPO release date. Is the investor entitled to a final prospectus?",
-      "back": "Yes. For IPOs of NMS securities, a prospectus must be delivered for purchases within 25 days of the release date.",
+      "front": "An investor buys shares of an NMS IPO in the secondary market 20 days after the effective date. Is a prospectus required?",
+      "back": "Yes. For an IPO of an NMS security, the aftermarket prospectus delivery requirement is 25 days from the effective date. The purchase falls within that window.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -248,8 +248,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the prospectus delivery requirements for aftermarket purchases of new issues?",
-      "back": "IPO of NMS security: 25 days. APO of NMS security: 0 days (none). IPO of non-NMS security: 90 days. APO of non-NMS security: 40 days.",
+      "front": "State the aftermarket prospectus delivery periods for corporate offerings.",
+      "back": "IPO of NMS security: 25 days. APO of NMS security: 0 days (none). IPO of non-NMS security: 90 days. APO of non-NMS security: 40 days. Access on the SEC website satisfies the requirement.",
       "lo": "1.b",
       "unit": 1,
       "lesson": 1,
@@ -257,8 +257,8 @@
     },
     {
       "type": "qa",
-      "front": "Which issuers are exempt from the registration requirements of the Securities Act of 1933?",
-      "back": "U.S. government; municipalities; national and state banks (not bank holding companies); savings and loans/building and loans; charitable, religious, educational, nonprofit organizations; and common carriers.",
+      "front": "Identify the major exempt issuers under the Securities Act of 1933.",
+      "back": "U.S. government; municipalities; national and state banks (NOT bank holding companies); building and loans/S&Ls; charitable, religious, educational, and nonprofit associations; common carriers (e.g., railroad equipment trust certificates).",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -266,8 +266,8 @@
     },
     {
       "type": "qa",
-      "front": "Are securities of a bank holding company exempt from registration?",
-      "back": "No. The bank exemption applies only to securities issued directly by banks, not to securities of bank holding companies.",
+      "front": "Are securities of a bank holding company exempt from registration under the Securities Act of 1933?",
+      "back": "No. The bank exemption applies only to securities issued by the bank itself, not to securities issued by its parent bank holding company.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -275,8 +275,8 @@
     },
     {
       "type": "qa",
-      "front": "What types of securities are exempt from registration under the Securities Act of 1933?",
-      "back": "Commercial paper, bankers' acceptances, and other securities with maturities of 270 days or less; and insurance policies/fixed annuity contracts (NOT variable annuities or variable life).",
+      "front": "Identify two important categories of exempt issues (securities) under the Securities Act of 1933.",
+      "back": "(1) Commercial paper, bankers' acceptances, and other short-term debt with maturities of 270 days or less; (2) Insurance policies and fixed annuity contracts (but NOT variable annuities/variable life \u2014 those must be registered).",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -284,8 +284,8 @@
     },
     {
       "type": "qa",
-      "front": "Why must variable annuities and variable life insurance be registered as securities?",
-      "back": "Because they are funded by separate accounts invested in securities. The general rule: if you see \"variable\" or \"separate account product,\" the product must be registered with the SEC.",
+      "front": "Are variable annuities exempt from SEC registration?",
+      "back": "No. Variable annuities, variable life, and variable universal life are funded by separate accounts invested in securities, so they must be registered with the SEC. The word \"variable\" or \"separate account\" signals the product must be registered.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -293,8 +293,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the offering limits under Regulation A Tier 1 and Tier 2?",
-      "back": "Tier 1: Up to $20 million in a 12-month period (no more than $6 million from selling shareholders). Tier 2: Up to $75 million in a 12-month period (no more than $22.5 million from selling shareholders).",
+      "front": "Compare Regulation A Tier 1 and Tier 2 offering ceilings.",
+      "back": "Tier 1: up to $20 million in a 12-month period (no more than $6M from selling shareholders); coordinated SEC and state review. Tier 2: up to $75 million in a 12-month period (no more than $22.5M from selling shareholders); SEC review only, with ongoing reporting requirements.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -302,8 +302,8 @@
     },
     {
       "type": "qa",
-      "front": "What investor limitations apply to Regulation A Tier 2 offerings?",
-      "back": "Nonaccredited investors must limit their investment to the greater of 10% of net worth or 10% of net income per offering. Accredited investors have no limit. Tier 1 has no investment limits.",
+      "front": "Who may invest in a Regulation A Tier 2 offering?",
+      "back": "Any investor, but non-accredited investors must limit their investment per offering to the greater of 10% of annual income OR 10% of net worth. Accredited investors have no limit. Tier 1 has no investment limits.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -311,8 +311,8 @@
     },
     {
       "type": "qa",
-      "front": "What are the basic requirements for an issuer to qualify for the Rule 147 intrastate offering exemption?",
-      "back": "Principal office in the state; all purchasers must be state residents; and the issuer must meet one of: 80% of income in-state, 80% of assets in-state, 80% of proceeds used in-state, OR majority of employees work in-state.",
+      "front": "What types of issuers are excluded from using Regulation A?",
+      "back": "Investment companies \u2014 including private equity funds, venture capital funds, and hedge funds. Regulation A is intended for small- and medium-sized operating companies.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -320,8 +320,8 @@
     },
     {
       "type": "qa",
-      "front": "Under Rule 147, when may a resident purchaser resell the securities to a nonresident?",
-      "back": "Only after a holding period of at least six months from the date of purchase.",
+      "front": "List the requirements for a Rule 147 intrastate offering exemption.",
+      "back": "Issuer principal office in the state; all purchasers are residents of the state; issuer meets one of: 80% of income in the state, 80% of assets in the state, 80% of proceeds used in the state, or majority of employees in the state. Any BD underwriter must be based in the state. Resale to nonresidents prohibited for 6 months after purchase.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -329,8 +329,8 @@
     },
     {
       "type": "qa",
-      "front": "Under Regulation D Rule 506(b), how many nonaccredited investors are permitted, and is there a dollar limit?",
-      "back": "Up to 35 nonaccredited investors are permitted, with no limit on the number of accredited investors. There is NO limit on the amount of capital raised.",
+      "front": "Under Rule 506(b) of Regulation D, how many non-accredited investors may participate, and is there a dollar limit?",
+      "back": "Up to 35 non-accredited investors may participate, with unlimited accredited investors. There is no dollar limit on the amount that can be raised. General solicitation/advertising is NOT permitted.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -338,8 +338,8 @@
     },
     {
       "type": "qa",
-      "front": "Under Rule 506(c), what is required to use general solicitation/advertising in a private placement?",
-      "back": "ALL purchasers must be accredited investors (or reasonably believed to be), and the issuer must take reasonable steps to verify accredited status of each purchaser.",
+      "front": "Under Rule 506(c) of Regulation D, what are the requirements when general solicitation and advertising are used?",
+      "back": "ALL purchasers must be accredited investors (or reasonably believed to be), and the issuer must take reasonable steps to verify accredited status (reviewing income documentation, net worth, etc.).",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -347,8 +347,26 @@
     },
     {
       "type": "qa",
-      "front": "What terms are synonymous with private placement stock?",
-      "back": "Restricted stock (6-month holding period), unregistered stock, letter stock (investment letter signed), and legend stock (legend on certificate restricting transfer).",
+      "front": "Identify four synonymous terms used for private placement stock.",
+      "back": "Restricted stock (must be held \u2014 generally 6 months); unregistered stock (no registration statement on file); letter stock (investor signed an investment letter); legend stock (certificate bears a legend restricting transfer).",
+      "lo": "1.c",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "What form must be filed with the SEC for a Regulation D private placement?",
+      "back": "Form D, filed electronically with the SEC. Amended Form Ds must be filed to correct errors or reflect changes in information.",
+      "lo": "1.c",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "qa",
+      "front": "What is the primary disclosure document for a municipal securities offering?",
+      "back": "The official statement. It contains information similar to a prospectus but is used for municipal issues, which are exempt from the Securities Act of 1933 registration requirements.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -356,17 +374,8 @@
     },
     {
       "type": "definition",
-      "front": "Official statement",
-      "back": "The primary disclosure document for a municipal securities offering, similar in purpose to a prospectus for corporate offerings.",
-      "lo": "1.b",
-      "unit": 1,
-      "lesson": 1,
-      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
-    },
-    {
-      "type": "definition",
-      "front": "Offering circular",
-      "back": "The disclosure document used for Regulation A and other exempt offerings (e.g., private placements). Similar to a prospectus but typically less detailed.",
+      "front": "Offering Circular",
+      "back": "The disclosure document used for many exempt offerings, such as Regulation A and private placements. Similar to a prospectus but typically less detailed in its disclosures. Sometimes called a notice of sale.",
       "lo": "1.c",
       "unit": 1,
       "lesson": 1,
@@ -374,8 +383,17 @@
     },
     {
       "type": "scenario",
-      "front": "A registered representative wants to purchase shares of an IPO at the POP for their own account. Is this permitted?",
-      "back": "No. Industry insiders such as registered representatives (and immediate family members in many cases) are restricted from purchasing IPO shares at the POP. Non-industry relatives like a chef niece or retired father may purchase.",
+      "front": "Seabird Airlines is selling shares to the public for the first time and will use the proceeds to buy new aircraft. What type of offering is this?",
+      "back": "An initial public offering (IPO). It is the issuer's first public sale of securities, and the proceeds go directly to the issuer \u2014 making it a primary market transaction.",
+      "lo": "1.a",
+      "unit": 1,
+      "lesson": 1,
+      "lesson_title": "NEW ISSUES AND THE PRIMARY MARKET"
+    },
+    {
+      "type": "scenario",
+      "front": "Jim is a registered representative at a member firm participating in an IPO. May Jim purchase shares of the IPO at the POP?",
+      "back": "No. Industry insiders (registered representatives, their immediate family, and other restricted persons) are prohibited from buying new equity IPOs at the POP under FINRA's new issue rules.",
       "lo": "1.a",
       "unit": 1,
       "lesson": 1,
@@ -383,8 +401,8 @@
     }
   ],
   "tokens": {
-    "input": 12069,
-    "output": 4859
+    "input": 13173,
+    "output": 5564
   },
-  "cost_usd": 0.5455
+  "cost_usd": 0.6149
 }

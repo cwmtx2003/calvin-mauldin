@@ -6,7 +6,7 @@
     {
       "type": "definition",
       "front": "Qualified account",
-      "back": "A retirement account that qualifies for tax-deferred growth. Some require employer sponsorship; others (like IRAs) do not. Technically, IRAs are not 'qualified plans' under the IRS, but they share most of the same rules.",
+      "back": "A retirement savings account that qualifies for tax-deferred growth. Some require employer sponsorship; IRAs are self-sponsored and not technically 'qualified' by the IRS but follow similar rules.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -14,8 +14,8 @@
     },
     {
       "type": "qa",
-      "front": "What type of income must be used to fund IRA contributions?",
-      "back": "Earned income only (salary, wages, tips, commissions). Ordinary income items such as dividends, interest, and capital gains do not qualify.",
+      "front": "What type of income must be used to make IRA contributions?",
+      "back": "Earned income (salary, wages, tips). Contributions cannot come from ordinary income items such as dividends, interest, or capital gains.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -23,8 +23,8 @@
     },
     {
       "type": "qa",
-      "front": "Is there an age limit for making contributions to a traditional or Roth IRA?",
-      "back": "No. There is no age limit for IRA contributions, but the contributor must have earned income.",
+      "front": "By when must IRA contributions for a given tax year be made?",
+      "back": "By the first tax filing deadline of the following year (normally April 15). No extensions apply to contribution deadlines.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -32,8 +32,8 @@
     },
     {
       "type": "qa",
-      "front": "By what date must IRA contributions for a given tax year be made?",
-      "back": "By the first tax filing deadline of the following year (normally April 15). No extensions.",
+      "front": "Is there an age limit for making IRA contributions?",
+      "back": "No. There is no age limit for contributing to either a traditional or Roth IRA, provided the contributor has earned income.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -41,8 +41,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the catch-up contribution amount for IRA owners age 50 or older?",
-      "back": "An additional $1,000 above the normal annual contribution limit.",
+      "front": "When is a traditional IRA contribution fully tax deductible?",
+      "back": "When the individual is not actively participating in another qualified plan (such as a 401(k)). If covered by another plan, deductibility phases out as AGI rises, but nondeductible contributions may still be made and grow tax deferred.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -50,8 +50,8 @@
     },
     {
       "type": "qa",
-      "front": "Which investments are NOT permitted inside an IRA?",
-      "back": "Collectibles (antiques, gems, rare coins, art, stamps) and life insurance contracts. (U.S.-minted gold and silver coins ARE permitted.)",
+      "front": "Which investments and strategies are NOT permitted inside an IRA?",
+      "back": "Collectibles (antiques, gems, rare coins, art, stamps), life insurance, short sales, speculative options, margin trading, and municipal (tax-exempt) bonds. Covered call writing IS permitted as a conservative income strategy.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -59,8 +59,8 @@
     },
     {
       "type": "qa",
-      "front": "Which investment practices are considered inappropriate for IRAs and other retirement plans?",
-      "back": "Short selling stock, speculative option strategies, buying tax-exempt municipal securities, and margin trading. Covered call writing IS permitted (conservative income generation).",
+      "front": "Are annuities permitted inside an IRA?",
+      "back": "Yes, annuities are allowed inside an IRA, though FINRA has raised suitability concerns about placing a tax-favored product inside a tax-favored account.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -69,7 +69,7 @@
     {
       "type": "definition",
       "front": "IRA rollover",
-      "back": "When a customer withdraws and takes possession of IRA assets and returns them to an IRA (or other qualified account) within 60 calendar days. Limited to one rollover per rolling 12-month period per person (not per account).",
+      "back": "When a customer takes possession of IRA assets and redeposits them into an IRA (or other qualified account) within 60 calendar days. Limited to one rollover per rolling 12-month period per person (not per IRA, not per calendar year).",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -77,8 +77,8 @@
     },
     {
       "type": "qa",
-      "front": "How does an IRA transfer (custodian-to-custodian) differ from a rollover?",
-      "back": "In a transfer, assets move directly between custodians and the owner never takes possession. There is no limit on the number of transfers per year, and no 60-day rule applies. A move from a 401(k) to an IRA is technically a transfer (sometimes called a 'direct rollover').",
+      "front": "How does an IRA transfer differ from a rollover?",
+      "back": "In a transfer (custodian-to-custodian), the customer never takes possession of the assets. There is no limit on the number of transfers per year. Moving 401(k) assets directly to an IRA is technically a transfer (sometimes called a direct rollover).",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -86,8 +86,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the tax treatment of withdrawals from a traditional IRA before age 59\u00bd?",
-      "back": "Taxed as ordinary income PLUS a 10% premature distribution penalty, unless an exception applies.",
+      "front": "What is the penalty for taking a traditional IRA distribution before age 59\u00bd?",
+      "back": "10% premature distribution penalty plus ordinary income tax on the distribution.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -95,8 +95,8 @@
     },
     {
       "type": "qa",
-      "front": "List the exceptions allowing penalty-free traditional IRA withdrawals before age 59\u00bd.",
-      "back": "Death of the owner; disability of the owner; first-time home purchase (up to $10,000); qualified education expenses (taxpayer, spouse, child, or grandchild); medical insurance premiums for the unemployed; medical expenses exceeding defined AGI limits.",
+      "front": "List the exceptions to the 10% premature IRA distribution penalty.",
+      "back": "Death of the owner, disability of the owner, first-time home purchase (up to $10,000), education expenses for taxpayer/spouse/child/grandchild, medical insurance premiums for the unemployed, and medical expenses above defined AGI limits.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -104,17 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "When must required minimum distributions (RMDs) begin from a traditional IRA?",
-      "back": "Beginning in the year the owner turns 72, and annually by December 31 thereafter. The first RMD may be delayed until April 1 of the following year, but then a second RMD must also be taken by December 31 of that same year.",
-      "lo": "6.e",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What is the penalty for failing to take a required minimum distribution (RMD) from a traditional IRA?",
-      "back": "50% of the difference between the required amount and the amount actually withdrawn.",
+      "front": "At what age must required minimum distributions (RMDs) from a traditional IRA begin?",
+      "back": "Age 73 (under SECURE 2.0, for individuals reaching age 72 after 12/31/2022). RMDs must be taken by December 31 each year. The first RMD may be delayed until April 1 of the year following the year the owner turns 73, but a second RMD will then be required by December 31 of that same year.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -122,8 +113,8 @@
     },
     {
       "type": "scenario",
-      "front": "An investor age 75 has three traditional IRAs at a bank, an insurance company, and a broker-dealer. The combined RMD is $20,000. How may the investor satisfy the RMD?",
-      "back": "The full $20,000 can be taken from any one account or split in any combination among the three accounts, as long as the total withdrawn equals $20,000.",
+      "front": "A 75-year-old has three traditional IRAs (bank, insurance company, broker-dealer) with combined RMDs totaling $20,000. How may the RMD be satisfied?",
+      "back": "The full $20,000 may be taken from any one account, or split in any combination across the three accounts, as long as the aggregate $20,000 is withdrawn by the deadline.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -131,8 +122,8 @@
     },
     {
       "type": "qa",
-      "front": "Are contributions to a Roth IRA tax-deductible?",
-      "back": "No. Roth contributions are made with after-tax dollars and are NOT deductible from current income. However, qualified distributions (including growth) are tax-free.",
+      "front": "What is the penalty for failing to take a required minimum distribution (RMD)?",
+      "back": "Under SECURE 2.0, the penalty is 25% of the shortfall (reduced from the prior 50%), and may be further reduced to 10% if corrected within the correction window.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -140,44 +131,8 @@
     },
     {
       "type": "qa",
-      "front": "If the annual IRA contribution limit is $6,000, can an investor contribute $6,000 to a traditional IRA AND $6,000 to a Roth IRA in the same year?",
-      "back": "No. The limit is a combined limit across all IRAs. The investor could split the $6,000 in any combination (e.g., $4,000 traditional + $2,000 Roth).",
-      "lo": "6.e",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What two conditions must be met for a Roth IRA distribution to be 'qualified' (tax-free)?",
-      "back": "(1) The account must have been held for at least 5 years, AND (2) the owner must be at least 59\u00bd. Exceptions to the age requirement: death, disability, or first-time home purchase (up to $10,000).",
-      "lo": "6.e",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "How are nonqualified distributions of earnings from a Roth IRA taxed?",
-      "back": "Taxed as ordinary income AND subject to a 10% premature distribution penalty. Distributions of cost basis (contributions) are always tax-free.",
-      "lo": "6.e",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "Do Roth IRAs have required minimum distributions (RMDs)?",
-      "back": "No. Roth IRAs have no RMD requirement. The owner may leave the funds in the account for life.",
-      "lo": "6.e",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "What is the penalty for making an excess contribution to an IRA?",
-      "back": "A 6% penalty assessed on the excess contribution amount every year until it is withdrawn.",
+      "front": "Are Roth IRA contributions tax deductible?",
+      "back": "No. Roth contributions are made with after-tax dollars and are never deductible. The benefit is tax-free qualified distributions of both contributions and earnings.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -185,8 +140,53 @@
     },
     {
       "type": "scenario",
-      "front": "Chris, age 60, opened a Roth IRA 10 years ago contributing $3,000/year. The account is now worth $60,000. He withdraws $5,000. What is the tax treatment?",
-      "back": "No tax is owed. Chris is over 59\u00bd and has held the Roth more than 5 years, so the distribution is qualified and entirely tax-free.",
+      "front": "If the IRA annual contribution limit is $7,000, can a customer contribute $7,000 to a traditional IRA AND $7,000 to a Roth IRA in the same year?",
+      "back": "No. The limit is a combined cap across ALL of a person's IRAs. The customer could, for example, put $4,000 in the traditional and $3,000 in the Roth \u2014 but the total cannot exceed the annual limit.",
+      "lo": "6.e",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What two conditions must be met for a Roth IRA distribution to be 'qualified' (fully tax free)?",
+      "back": "(1) The Roth has been open at least 5 years, AND (2) the account holder is at least age 59\u00bd. Exceptions to the age requirement: death, disability, or first-time home purchase (up to $10,000).",
+      "lo": "6.e",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "How are nonqualified Roth IRA distributions of earnings taxed?",
+      "back": "Earnings portions of nonqualified distributions are taxed as ordinary income AND subject to a 10% penalty. Distributions of cost basis (contributions) are always tax free, since they were made with after-tax dollars.",
+      "lo": "6.e",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "Do Roth IRAs require minimum distributions (RMDs)?",
+      "back": "No. The owner may leave funds in a Roth IRA indefinitely \u2014 there is no RMD requirement during the owner's lifetime.",
+      "lo": "6.e",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "For whom is a Roth IRA typically most suitable?",
+      "back": "Younger investors (more years of tax-free growth), those in lower current tax brackets (the deduction has little value), and anyone unable to deduct traditional IRA contributions due to income or plan coverage.",
+      "lo": "6.e",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is the penalty for excess contributions to an IRA?",
+      "back": "6% per year on the excess amount, charged every year until the excess is withdrawn.",
       "lo": "6.e",
       "unit": 6,
       "lesson": 2,
@@ -195,7 +195,7 @@
     {
       "type": "definition",
       "front": "Defined benefit plan",
-      "back": "A qualified employer-sponsored retirement plan (traditional pension) that defines the retirement benefit the employee will receive, typically based on years of service, age, and salary. The employer bears the investment risk and must fund the plan to meet promised benefits.",
+      "back": "An employer-sponsored qualified retirement plan (traditional pension) that defines the benefit a retiree will receive, typically based on years of service, age, and salary. The employer bears the investment risk and must fund the plan to meet the promised payout.",
       "lo": "6.f",
       "unit": 6,
       "lesson": 2,
@@ -204,16 +204,7 @@
     {
       "type": "definition",
       "front": "Defined contribution plan",
-      "back": "A qualified employer-sponsored plan that defines the amount that may be contributed each year. Employees direct the investments and bear the investment risk. The retirement benefit depends on contributions and investment performance. Examples: 401(k), 403(b), profit-sharing, money purchase, SIMPLE plans.",
-      "lo": "6.f",
-      "unit": 6,
-      "lesson": 2,
-      "lesson_title": "QUALIFIED ACCOUNTS"
-    },
-    {
-      "type": "qa",
-      "front": "In a defined benefit plan vs. a defined contribution plan, who bears the investment risk?",
-      "back": "Defined benefit: the employer bears the investment risk (must fund the promised benefit). Defined contribution: the employee bears the investment risk.",
+      "back": "An employer-sponsored qualified retirement plan that defines what may be contributed (not the final benefit). The employee bears the investment risk; the balance at retirement depends on contributions and investment performance. Examples: 401(k), 403(b), profit-sharing, money purchase, SIMPLE.",
       "lo": "6.f",
       "unit": 6,
       "lesson": 2,
@@ -221,8 +212,8 @@
     },
     {
       "type": "scenario",
-      "front": "Joe retires at age 65 after 40 years at Rick & Ty's Furniture. The plan pays 2% per year of service \u00d7 average salary of last 5 years, capped at 70%. His 5-year average salary is $60,000. What is his annual pension?",
-      "back": "40 \u00d7 2% = 80%, which exceeds the 70% cap, so 70% applies. 70% \u00d7 $60,000 = $42,000 per year for life.",
+      "front": "Joe retires at age 65 after 40 years of service. His employer's pension pays 2% per year of service \u00d7 average salary of last 5 years ($60,000), capped at 70%. What is Joe's annual benefit?",
+      "back": "40 \u00d7 2% = 80%, but capped at 70%. 70% \u00d7 $60,000 = $42,000 per year for life.",
       "lo": "6.f",
       "unit": 6,
       "lesson": 2,
@@ -230,8 +221,8 @@
     },
     {
       "type": "qa",
-      "front": "Why are defined contribution plans more popular today than traditional pensions?",
-      "back": "The investment risk shifts from employer to employee (lower employer liability), and assets are portable between employer plans, which benefits a mobile workforce.",
+      "front": "In a defined benefit pension plan, who bears the investment risk \u2014 employer or employee?",
+      "back": "The employer. The employer must fund the plan adequately to meet the promised benefits, regardless of investment performance. This is a key reason employers have shifted toward defined contribution plans.",
       "lo": "6.f",
       "unit": 6,
       "lesson": 2,
@@ -239,17 +230,35 @@
     },
     {
       "type": "qa",
-      "front": "What risk does a retiree from a private-sector defined benefit pension typically bear?",
-      "back": "Purchasing power (inflation) risk \u2014 the fixed monthly benefit does not adjust for inflation. Government pensions often include a cost-of-living adjustment (COLA).",
+      "front": "Name the major types of defined contribution plans.",
+      "back": "401(k) plans, 403(b) plans, profit-sharing plans, money purchase plans, and SIMPLE plans.",
       "lo": "6.f",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What is purchasing power risk in the context of a private pension?",
+      "back": "Private pensions pay a fixed benefit that does not change once payments begin, so inflation erodes the purchasing power of the payments. Government pensions often include a cost-of-living adjustment (COLA) to mitigate this.",
+      "lo": "6.f",
+      "unit": 6,
+      "lesson": 2,
+      "lesson_title": "QUALIFIED ACCOUNTS"
+    },
+    {
+      "type": "qa",
+      "front": "What income type is required to contribute to both a traditional IRA and a Roth IRA in the same year?",
+      "back": "Earned income. All IRA contributions (traditional or Roth) must be funded from earned income such as wages, salary, or tips \u2014 not from passive, portfolio, or ordinary investment income.",
+      "lo": "6.e",
       "unit": 6,
       "lesson": 2,
       "lesson_title": "QUALIFIED ACCOUNTS"
     }
   ],
   "tokens": {
-    "input": 5651,
-    "output": 3301
+    "input": 6892,
+    "output": 3499
   },
-  "cost_usd": 0.3323
+  "cost_usd": 0.3658
 }

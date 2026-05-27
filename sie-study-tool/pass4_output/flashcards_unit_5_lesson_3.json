@@ -6,7 +6,7 @@
     {
       "type": "definition",
       "front": "General Partnership",
-      "back": "An unincorporated business where all partners share management responsibility and have unlimited personal liability. Business results flow through to partners proportional to ownership. The partnership is a tax-reporting (not tax-paying) entity.",
+      "back": "An unincorporated business in which all partners share management responsibility and have unlimited personal liability for the partnership's debts and actions. Business results flow through to partners for tax purposes; the partnership is a tax-reporting but not a tax-paying entity.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -14,8 +14,8 @@
     },
     {
       "type": "qa",
-      "front": "What document must a partnership complete when opening an account, and what must it state?",
-      "back": "A partnership agreement, which must state which partners are authorized to make transactions for the account. For margin accounts, any investment limitations must also be disclosed. An amended agreement is required annually if changes are made.",
+      "front": "How does the liability of a general partner (GP) differ from that of a limited partner (LP) in a limited partnership?",
+      "back": "The GP has unlimited liability and can be held personally liable for business losses and debts. The limited partner has limited liability and cannot lose more than the amount invested.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -23,17 +23,8 @@
     },
     {
       "type": "qa",
-      "front": "In a limited partnership (LP), how many of each type of partner are required?",
-      "back": "At least one general partner (GP) and at least one limited partner.",
-      "lo": "5.f",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "definition",
-      "front": "Direct Participation Program (DPP)",
-      "back": "An investment vehicle (most commonly a limited partnership) that passes income, gains, losses, and tax benefits directly through to investors. LPs are the most common type of DPP.",
+      "front": "What is a direct participation program (DPP), and what is the most common form?",
+      "back": "A DPP is a business structure that passes income, gains, losses, and tax benefits directly through to investors rather than being taxed at the entity level. The limited partnership (LP) is the most common type of DPP.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -41,8 +32,17 @@
     },
     {
       "type": "qa",
-      "front": "What are the responsibilities and liability of a general partner (GP) in an LP?",
-      "back": "GPs manage the partnership, have a fiduciary duty to investors, make binding decisions, and buy/sell partnership property. They have UNLIMITED liability. They cannot compete with the business, borrow from the partnership, or commingle partnership funds with personal assets.",
+      "front": "What activity can cause a limited partner to lose limited-liability status and be treated as a general partner?",
+      "back": "Participating in the day-to-day management of the partnership's business.",
+      "lo": "5.f",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "List the key duties and restrictions placed on a general partner (GP) in a limited partnership.",
+      "back": "Duties: Manage the partnership, make binding decisions, buy/sell partnership property, act as a fiduciary to investors. Restrictions: May not compete with the partnership, borrow from the partnership, or commingle partnership funds with personal assets.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -51,7 +51,7 @@
     {
       "type": "qa",
       "front": "What rights do limited partners have in an LP?",
-      "back": "Limited partners can vote on overall business objectives, receive cash distributions/capital gains/tax deductions, inspect books and records, and sue the GP for failure to act in the best interest of the business. They have limited liability (cannot lose more than invested).",
+      "back": "Right to vote on overall business objectives, receive cash distributions/capital gains/tax deductions, inspect books and records, and sue the GP if the GP fails to act in the partnership's best interest.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -59,53 +59,35 @@
     },
     {
       "type": "qa",
-      "front": "What happens if a limited partner participates in day-to-day management of the LP?",
-      "back": "They can lose their limited liability status and be treated as a general partner, exposing them to unlimited liability.",
-      "lo": "5.f",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "List the order of payment when an LP is dissolved.",
-      "back": "1) Secured lenders, 2) Other (unsecured) creditors, 3) Limited partners \u2014 first for claims to shares of profits, then for return of contributed capital, 4) General partners.",
-      "lo": "5.f",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "How are LPs sold to investors, and what disclosure document is used?",
-      "back": "LPs may be sold via private placement (using a Private Placement Memorandum, typically to accredited investors making large contributions) or via public offering (using a prospectus, with smaller contributions of roughly $1,000\u2013$5,000 from non-accredited investors).",
-      "lo": "5.f",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "Why are limited partnerships considered highly illiquid?",
-      "back": "There is virtually no secondary market for LP interests, and any transfer of interest requires permission of the general partner. An investor should assume they will hold the program until it ends.",
+      "front": "Why are limited partnerships generally considered highly illiquid?",
+      "back": "There is virtually no secondary market for LP interests, and any transfer of interest requires the GP's permission. Investors should assume they will hold the interest until the program ends.",
       "lo": "5.g",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "When an LP is dissolved, in what order must the general partner settle accounts?",
+      "back": "1) Secured lenders, 2) Other (unsecured) creditors, 3) Limited partners \u2014 first for shares of profits, then for return of contributed capital, 4) General partners.",
+      "lo": "5.f",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "How does an LP sold via private placement differ from one sold via public offering?",
+      "back": "Private placement: Disclosure via private placement memorandum; smaller group of accredited investors, each contributing a large sum, with substantial investment experience. Public offering: Disclosure via prospectus; larger number of nonaccredited investors making smaller contributions (typically $1,000\u2013$5,000).",
+      "lo": "5.f",
       "unit": 5,
       "lesson": 3,
       "lesson_title": "PARTNERSHIPS"
     },
     {
       "type": "definition",
-      "front": "Passive Income / Passive Loss",
-      "back": "Income and losses generated by an LP/DPP. Passive losses may only be used to offset passive income \u2014 they cannot be used to offset ordinary income or portfolio income.",
-      "lo": "5.g",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "Name four common non-cash deductions used by DPPs to reduce taxable income.",
-      "back": "1) Depreciation (loss of value of a fixed asset over time), 2) Depletion (loss of value of natural resources as used up), 3) Accelerated depreciation (greater early-life deductions), 4) Intangible drilling costs (drilling expenses in oil/gas programs).",
+      "front": "Passive income / Passive loss",
+      "back": "Income or losses generated by a limited partnership or other DPP. Passive losses may be used only to offset passive income \u2014 they cannot be deducted against ordinary or portfolio income. Passive income itself is taxed as part of the investor's ordinary income.",
       "lo": "5.g",
       "unit": 5,
       "lesson": 3,
@@ -113,17 +95,89 @@
     },
     {
       "type": "scenario",
-      "front": "An LP has revenue of $300,000 and costs of: maintenance $50,000, loan interest $70,000, operations $160,000, and depreciation $50,000. What is the partnership's reported profit/loss, and what is the actual cash flow?",
-      "back": "Profit/loss = $300,000 \u2212 $330,000 = \u2212$30,000 (loss for tax purposes). Cash flow = \u2212$30,000 + $50,000 depreciation added back = +$20,000. The partnership reports a passive loss while generating positive cash flow.",
+      "front": "An LP reports: Revenue $300,000; Maintenance $50,000; Loan interest $70,000; Operations $160,000; Depreciation $50,000. What is the partnership's reported profit/loss, and what is its cash flow?",
+      "back": "Profit/loss = $300,000 \u2212 $330,000 = \u2212$30,000 (loss). Cash flow = \u2212$30,000 + $50,000 depreciation (a non-cash deduction) = +$20,000. A 10% limited partner would report a $3,000 passive loss for tax purposes, even though the partnership has positive cash flow.",
       "lo": "5.g",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "Name four common non-cash deductions a DPP uses to reduce taxable income.",
+      "back": "1) Depreciation (loss of value of fixed assets like buildings), 2) Depletion (loss of value of natural resources as they are used), 3) Accelerated depreciation (faster write-off for assets like computers), 4) Intangible drilling costs (drilling-related costs in oil/gas programs).",
+      "lo": "5.g",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "What is recapture of a tax benefit in a DPP, and who bears the consequences?",
+      "back": "If the IRS disallows a previously claimed tax benefit (e.g., depreciation), the disallowed deduction flows back through to the limited partners as additional taxable income. The LPs are responsible for back taxes, interest, and penalties \u2014 because the LP is a tax-reporting, not a tax-paying, entity.",
+      "lo": "5.g",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "What are the three principal advantages of being a limited partner?",
+      "back": "1) Professional management by the GP, 2) Limited liability (can lose only the amount invested), 3) Flow-through of income and certain expenses for tax purposes.",
+      "lo": "5.f",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "definition",
+      "front": "Hedge fund",
+      "back": "A pooled investment vehicle typically organized as a limited partnership and sold via private placement. Not subject to the rules governing mutual funds/investment companies. Uses aggressive strategies (leverage, short selling, derivatives, currency/commodity speculation, emerging markets) targeting high returns and carrying substantial risk.",
+      "lo": "5.h",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "What is a hedge fund lockup provision?",
+      "back": "A required minimum holding period (often one year or longer) during which an investor cannot redeem their interest in the fund. Lockups contribute to a hedge fund's illiquidity.",
+      "lo": "5.h",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "Identify common high-risk strategies used by hedge funds.",
+      "back": "Highly leveraged (borrowed) portfolios, short selling, derivatives (options/futures), currency speculation, commodity speculation, and investing in politically unstable international markets.",
+      "lo": "5.h",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "Why are hedge funds generally suitable only for sophisticated investors?",
+      "back": "They are aggressively managed with high-risk strategies, sold as unregistered private placements requiring accredited-investor status, require large minimum investments, and are illiquid due to lockup provisions \u2014 all of which make them unsuitable for typical retail investors.",
+      "lo": "5.h",
+      "unit": 5,
+      "lesson": 3,
+      "lesson_title": "PARTNERSHIPS"
+    },
+    {
+      "type": "qa",
+      "front": "What documentation must a partnership provide to open a brokerage account, and what must occur if changes are made?",
+      "back": "A partnership agreement stating which partners are authorized to transact in the account (and any investment limitations if a margin account). An amended partnership agreement must be obtained each year if any changes have been made.",
+      "lo": "5.f",
       "unit": 5,
       "lesson": 3,
       "lesson_title": "PARTNERSHIPS"
     },
     {
       "type": "scenario",
-      "front": "A limited partner owns 10% of an LP that reports a $30,000 loss for tax purposes (after $50,000 in depreciation). What is the investor's tax impact?",
-      "back": "The investor receives a $3,000 passive loss (10% of $30,000), which can be used to offset passive income \u2014 even though the partnership had a positive cash flow.",
+      "front": "A limited partner has $40,000 of passive income from one DPP and $50,000 of passive losses from another DPP. She also has $100,000 of ordinary wage income. How much of the passive loss can she deduct?",
+      "back": "$40,000 \u2014 passive losses may only offset passive income. The remaining $10,000 of passive loss cannot be used to reduce ordinary wage income; it is carried forward to offset future passive income.",
       "lo": "5.g",
       "unit": 5,
       "lesson": 3,
@@ -131,53 +185,8 @@
     },
     {
       "type": "qa",
-      "front": "What is recapture of tax benefit in a limited partnership?",
-      "back": "If the IRS later disallows a prior tax deduction (e.g., depreciation), the disallowed amount flows through to limited partners as additional income for that prior year, triggering back taxes, interest, and possibly penalties. The LP is a tax-reporting, not tax-paying, entity, so investors bear the cost.",
-      "lo": "5.g",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "How are hedge funds typically organized and sold?",
-      "back": "Most hedge funds are organized as limited partnerships and sold as private placements. This structure exempts them from rules governing mutual funds and other investment companies and allows them to limit the number of investors and require large minimum investments.",
-      "lo": "5.h",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "What is a lockup provision in a hedge fund?",
-      "back": "A requirement that investors maintain their investment in the fund for a minimum length of time (e.g., one year or longer) before they can redeem. This contributes to hedge fund illiquidity.",
-      "lo": "5.h",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "Despite the name 'hedge,' what is the primary objective of most hedge funds, and what strategies do they commonly use?",
-      "back": "Most hedge funds aim to generate high returns (not limit risk). Common strategies include: high leverage (borrowing), short selling, derivatives (options/futures), currency speculation, commodity speculation, and investment in politically unstable international markets.",
-      "lo": "5.h",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "Why are hedge funds generally unsuitable for many retail investors?",
-      "back": "They are aggressively managed with high-risk strategies, are largely unregulated, require accredited investor status with large minimum investments, often have lockup provisions limiting liquidity, and use complex strategies that may not be transparent.",
-      "lo": "5.h",
-      "unit": 5,
-      "lesson": 3,
-      "lesson_title": "PARTNERSHIPS"
-    },
-    {
-      "type": "qa",
-      "front": "What are the three primary benefits limited partners enjoy in a DPP?",
-      "back": "1) An investment managed by others (the GP), 2) Limited liability (can only lose the amount invested), 3) Flow-through of income and certain expenses (including passive losses and tax-sheltering deductions).",
+      "front": "How is property typically held in a limited partnership, and what protection does this provide limited partners?",
+      "back": "Property is usually held as tenants in common (TIC), which provides limited liability and no management responsibility to the limited partners.",
       "lo": "5.f",
       "unit": 5,
       "lesson": 3,
@@ -185,8 +194,8 @@
     }
   ],
   "tokens": {
-    "input": 10191,
-    "output": 2633
+    "input": 11148,
+    "output": 2870
   },
-  "cost_usd": 0.3503
+  "cost_usd": 0.3825
 }

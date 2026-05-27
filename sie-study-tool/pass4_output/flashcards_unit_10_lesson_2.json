@@ -15,7 +15,7 @@
     {
       "type": "definition",
       "front": "FINRA Conduct Rules",
-      "back": "Rules establishing the relationship between member firms and their customers. They cover fair dealing, compensation, communications, and sales practice violations. Violations are considered serious.",
+      "back": "Rules that establish the relationship between member firms and their customers. They cover fair dealing, compensation-related issues, communications, and sales practice violations. Violations are considered serious.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -24,7 +24,7 @@
     {
       "type": "definition",
       "front": "FINRA Code of Procedure (COP)",
-      "back": "Covers the enforcement of FINRA rules and punishment of members who violate the Conduct Rules. The Department of Enforcement (DOE) investigates suspected violations and holds hearings.",
+      "back": "Covers the enforcement of FINRA rules and the punishment of members who violate Conduct Rules. The Department of Enforcement (DOE) investigates suspected violations.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -32,8 +32,8 @@
     },
     {
       "type": "qa",
-      "front": "What sanctions may FINRA impose on a member firm or associated person found in violation of its rules?",
-      "back": "FINRA may suspend, expel, or bar from membership; impose fines; censure; or take any other action deemed appropriate. FINRA does NOT have arrest powers.",
+      "front": "What sanctions may FINRA impose on a member firm or associated person upon finding a violation?",
+      "back": "FINRA may: (1) suspend, expel, or bar from membership; (2) impose fines; (3) censure; or (4) take any other action deemed appropriate. FINRA does NOT have arrest powers.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -41,7 +41,7 @@
     },
     {
       "type": "qa",
-      "front": "What is the proper appeal route for a DOE decision under the Code of Procedure?",
+      "front": "What is the appeal path for a FINRA Department of Enforcement decision regarding a Code of Procedure violation?",
       "back": "DOE decision \u2192 National Adjudicatory Council (NAC) \u2192 SEC \u2192 federal appellate courts.",
       "lo": "10.e",
       "unit": 10,
@@ -50,8 +50,8 @@
     },
     {
       "type": "definition",
-      "front": "Uniform Practice Code (UPC)",
-      "back": "FINRA rules covering technical aspects of securities transactions between member firms, such as settlement, good delivery, payment procedures, dividends, and interest.",
+      "front": "FINRA Uniform Practice Code (UPC)",
+      "back": "Rules covering the technical aspects of securities transactions between member firms, such as good delivery, settlement, ex-dividend dates, and accrued interest on bond trades.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -59,8 +59,8 @@
     },
     {
       "type": "definition",
-      "front": "Code of Arbitration (COA)",
-      "back": "FINRA-run dispute resolution forum for monetary disputes. Provides a faster, cheaper alternative to court. COA decisions are final and binding \u2014 there is no appeal.",
+      "front": "FINRA Code of Arbitration (COA)",
+      "back": "A FINRA-run dispute resolution forum for monetary disputes. Designed to be faster and cheaper than court. COA decisions are final and binding \u2014 there is no appeal.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -68,8 +68,8 @@
     },
     {
       "type": "scenario",
-      "front": "A customer has a monetary dispute with their broker-dealer. The new account form contains a predispute arbitration agreement. Can the customer take the dispute to court instead of arbitration?",
-      "back": "No. By signing a predispute arbitration agreement, the customer has agreed to settle disputes through arbitration. The customer cannot be compelled to arbitration unless they agreed to it, but once agreed, the arbitration decision is final and binding with no appeal.",
+      "front": "A customer has a monetary dispute with their broker-dealer. Can the BD compel the customer to settle through arbitration?",
+      "back": "No. A customer cannot be compelled to arbitration, but may agree to arbitration via a predispute arbitration agreement (typically included in the new account form). Once agreed to, the arbitration decision is binding with no appeal.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -77,8 +77,8 @@
     },
     {
       "type": "qa",
-      "front": "With whom may FINRA member firms conduct securities business at member-firm pricing?",
-      "back": "Only with other FINRA member firms or with institutions meeting a listed exception, such as a bank in the underwriting of a municipal issue or a foreign firm that is a member of its nation's FINRA equivalent.",
+      "front": "May a FINRA member firm conduct securities business with non-member firms?",
+      "back": "Generally no. FINRA members may only do business with other FINRA members, except in limited cases such as a bank in a municipal underwriting or a foreign firm that is a member of its country's FINRA equivalent.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -86,8 +86,8 @@
     },
     {
       "type": "qa",
-      "front": "What is the role of the Municipal Securities Rulemaking Board (MSRB)?",
-      "back": "The MSRB writes rules governing the underwriting and trading of state and municipal securities (including non-debt municipal securities like 529 plans and ABLE accounts). It has NO enforcement authority and NO regulatory power over the municipal issuers themselves.",
+      "front": "What is the scope of authority of the Municipal Securities Rulemaking Board (MSRB)?",
+      "back": "The MSRB is the primary SRO that writes rules for the underwriting and trading of municipal securities (including ABLE accounts and 529 plans). The MSRB has NO enforcement powers and NO authority over issuing municipalities.",
       "lo": "10.f",
       "unit": 10,
       "lesson": 2,
@@ -96,7 +96,7 @@
     {
       "type": "qa",
       "front": "Who enforces MSRB rules?",
-      "back": "MSRB rules are enforced by the SEC and FINRA (for securities firms) and by the Comptroller of the Currency, the Federal Reserve, and the FDIC (for banks). The MSRB itself has no enforcement powers.",
+      "back": "MSRB rules are enforced by other regulators: SEC and FINRA enforce against securities firms; the Comptroller of the Currency, Federal Reserve, and FDIC enforce against banks.",
       "lo": "10.f",
       "unit": 10,
       "lesson": 2,
@@ -104,8 +104,8 @@
     },
     {
       "type": "qa",
-      "front": "What regulatory authority do the exchanges (e.g., NYSE) have?",
-      "back": "Exchanges regulate trading activity occurring on the exchange, exercise authority over listed securities and their issuers, and have the power to suspend trading or delist a security.",
+      "front": "What regulatory powers do the exchanges (e.g., NYSE) have over listed securities?",
+      "back": "Exchanges regulate trading activity occurring on the exchange, have authority over listed securities and their issuers, and have the power to delist a security or suspend trading in a listed security.",
       "lo": "10.f",
       "unit": 10,
       "lesson": 2,
@@ -113,8 +113,8 @@
     },
     {
       "type": "qa",
-      "front": "Which BD records must be retained for the life of the firm?",
-      "back": "Partnership agreement, corporate charter/articles of incorporation, stock certificate books, board/partner meeting minutes, amendments to these documents, and organizational records (e.g., Form BD).",
+      "front": "Which broker-dealer records must be retained for the life of the firm?",
+      "back": "Partnership agreement, corporate charter/articles of incorporation, stock certificate books, minutes of board/partner meetings, all amendments to these records, and organizational records (e.g., Form BD).",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -123,16 +123,7 @@
     {
       "type": "qa",
       "front": "Which broker-dealer records must be retained for six years?",
-      "back": "Blotters, general ledger, stock record, customer ledgers (customer statements \u2014 cash and margin on separate ledgers), customer account records, and designation of principals records.",
-      "lo": "10.g",
-      "unit": 10,
-      "lesson": 2,
-      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
-    },
-    {
-      "type": "definition",
-      "front": "Blotter",
-      "back": "A record of original entry showing purchases and sales of securities, receipts and deliveries of securities, and receipts and disbursements of cash. Must be prepared no later than the business day following the transaction. Retained for six years.",
+      "back": "Blotters (records of original entry), general ledger, stock record, customer ledgers (account statements), customer account records, and designation of principals.",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -140,8 +131,8 @@
     },
     {
       "type": "qa",
-      "front": "How long must written customer complaints be retained under FINRA rules?",
-      "back": "Four years after resolution. (Note: the SEC rule is three years; firms typically retain four years to satisfy both.)",
+      "front": "Under FINRA rules, how long must written customer complaints be retained?",
+      "back": "Four years after resolution, normally maintained at the OSJ for the office where the complaint originated. (Note: SEC Rule 17a-3 requires three years; firms typically keep four to satisfy both.)",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -149,8 +140,8 @@
     },
     {
       "type": "qa",
-      "front": "Name records that must be retained for three years.",
-      "back": "Advertising, trial balances, U4/U5 and fingerprint cards for terminated personnel, customer confirmations, order tickets, other ledgers (securities/monies borrowed and loaned, dividends and interest received), list of every office where each associated person regularly conducts business, associated persons' compensation records, and the firm's compliance and procedures manuals.",
+      "front": "What constitutes a 'written' complaint for record-retention purposes?",
+      "back": "Any communication organized by letters or words \u2014 letters, email, text, instant message, tweet, social media posts, etc. Only written complaints carry record-retention requirements; verbal complaints do not.",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -158,8 +149,8 @@
     },
     {
       "type": "qa",
-      "front": "For three- and six-year records, where must they be kept and for how long must they be readily accessible?",
-      "back": "The most recent two years must be readily accessible (at the branch office, OSJ, or headquarters where they would normally be stored). After two years they may be stored offsite as long as they remain retrievable.",
+      "front": "List examples of records that must be retained for three years.",
+      "back": "Advertising, trial balances, U4s/U5s and fingerprint cards for terminated personnel, customer confirmations, order tickets, other ledgers (securities borrowed/loaned, dividends/interest), list of every office, associated persons' compensation, and the firm's compliance and procedures manual.",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -167,8 +158,17 @@
     },
     {
       "type": "qa",
-      "front": "When BD records are kept on digital storage media, what format requirement must be met?",
-      "back": "The storage media must keep records in a nonrewriteable and nonerasable format (WORM \u2014 write once, read many).",
+      "front": "Where must three- and six-year records be stored, and for how long must they be readily accessible?",
+      "back": "The most recent two years must be readily accessible (at the branch office, OSJ, or headquarters where they are normally stored). After two years, they may be stored off-site as long as they can be retrieved.",
+      "lo": "10.g",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "qa",
+      "front": "What format requirement applies to electronic storage of broker-dealer records under SEC Rule 17a-4?",
+      "back": "Records must be preserved in a non-rewriteable, non-erasable (WORM) format. A 2023 amendment also permits an audit-trail alternative to legacy WORM storage.",
       "lo": "10.g",
       "unit": 10,
       "lesson": 2,
@@ -176,8 +176,8 @@
     },
     {
       "type": "scenario",
-      "front": "An arbitration panel rules that Seacoast Securities owes a customer $50,000. Seacoast believes the ruling was wrong and wants to appeal. What options does Seacoast have?",
-      "back": "None. Arbitration findings under the FINRA Code of Arbitration are final and binding \u2014 there is no appeal.",
+      "front": "A FINRA Department of Enforcement panel finds a registered representative violated the Code of Procedure. The rep wishes to appeal. Where is the first appeal filed?",
+      "back": "With the National Adjudicatory Council (NAC). From the NAC, further appeals go to the SEC, and then to the federal courts.",
       "lo": "10.e",
       "unit": 10,
       "lesson": 2,
@@ -185,17 +185,26 @@
     },
     {
       "type": "scenario",
-      "front": "A registered representative is found in a DOE hearing to have violated the Code of Procedure. Where does the first appeal go?",
-      "back": "To the National Adjudicatory Council (NAC). From there, appeals may proceed to the SEC and then to federal appellate courts.",
+      "front": "A FINRA arbitration panel rules that Seacoast Securities owes a customer $50,000. Seacoast wants to appeal. What are its options?",
+      "back": "None. Arbitration decisions are final and binding \u2014 there is no appeal.",
       "lo": "10.e",
+      "unit": 10,
+      "lesson": 2,
+      "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
+    },
+    {
+      "type": "scenario",
+      "front": "The City of New Orleans issues municipal bonds through several broker-dealer underwriters. If MSRB rules are violated, who enforces them against the BDs?",
+      "back": "FINRA (and the SEC). The MSRB writes the rules but has no enforcement authority. The MSRB also has no authority over the issuing municipality itself.",
+      "lo": "10.f",
       "unit": 10,
       "lesson": 2,
       "lesson_title": "SELF-REGULATORY ORGANIZATIONS"
     }
   ],
   "tokens": {
-    "input": 6381,
-    "output": 2606
+    "input": 7360,
+    "output": 2786
   },
-  "cost_usd": 0.2912
+  "cost_usd": 0.3194
 }

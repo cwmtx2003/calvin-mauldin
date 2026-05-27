@@ -3,135 +3,170 @@
   "title": "AML / Reporting Thresholds",
   "sections": [
     {
-      "heading": "KEY DOLLAR & DAY THRESHOLDS (MEMORIZE)",
+      "heading": "Key Dollar Thresholds & Deadlines",
       "type": "table",
-      "items": [
-        {
-          "Report/Rule": "CTR",
-          "Trigger": ">$10,000 cash, single day",
-          "File Within": "15 days",
-          "Retain": "5 years"
-        },
-        {
-          "Report/Rule": "SAR",
-          "Trigger": "$5,000+ suspicious (NO min for terrorist financing)",
-          "File Within": "30 days",
-          "Retain": "5 years"
-        },
-        {
-          "Report/Rule": "Wire transfer recordkeeping",
-          "Trigger": "$3,000+",
-          "File Within": "N/A (record only)",
-          "Retain": "5 years"
-        },
-        {
-          "Report/Rule": "FINRA 3220 Gifts",
-          "Trigger": "$100/person/year max",
-          "File Within": "N/A",
-          "Retain": "Log required"
-        },
-        {
-          "Report/Rule": "Political contributions (MSRB G-37)",
-          "Trigger": "$250 in-district / $0 out-of-district",
-          "File Within": "2-yr ban if exceeded",
-          "Retain": "\u2014"
-        }
-      ]
+      "items": {
+        "columns": [
+          "Report/Rule",
+          "Trigger $",
+          "Filing Deadline",
+          "Recordkeeping",
+          "Filed With"
+        ],
+        "rows": [
+          [
+            "CTR (Currency Transaction Report)",
+            "> $10,000 cash, single day (aggregated)",
+            "15 days of receipt",
+            "5 years",
+            "FinCEN"
+          ],
+          [
+            "SAR (Suspicious Activity Report)",
+            "$5,000+ suspicious (NO min for terrorist financing)",
+            "30 days of detection (60 if no suspect)",
+            "5 years from filing",
+            "FinCEN"
+          ],
+          [
+            "Wire Transfer Recordkeeping",
+            "$3,000+ (sender + recipient info)",
+            "At time of transfer",
+            "5 years",
+            "Internal"
+          ],
+          [
+            "FINRA Rule 3220 Gifts",
+            "$100/person/year max",
+            "N/A",
+            "Log all gifts",
+            "Internal"
+          ],
+          [
+            "Rule 2165 Temp Hold (disbursement OR transaction)",
+            "Reasonable belief of exploitation of specified adult",
+            "Up to 15 business days; +10 internal = 25; +30 if reported to regulator/court = 55 total",
+            "Document",
+            "Internal + notify trusted contact"
+          ]
+        ]
+      }
     },
     {
-      "heading": "3 STAGES OF MONEY LAUNDERING (P-L-I)",
+      "heading": "CTR \u2014 Critical Facts",
       "type": "bullets",
       "items": [
-        "1. PLACEMENT \u2014 dirty cash enters system (MOST detectable stage)",
-        "2. LAYERING \u2014 series of transactions to disguise origin/ownership",
-        "3. INTEGRATION \u2014 funds re-emerge as 'legitimate' income"
+        "CASH only \u2014 NOT checks, NOT wires (wires have separate $3,000 recordkeeping rule)",
+        "Aggregates multiple cash transactions same day, same customer",
+        "Need not be U.S. dollars",
+        "Penalties: up to $500,000 fine + 10 years prison",
+        "Filed by BD; goes to FinCEN (Treasury bureau, not DOJ)"
       ]
     },
     {
-      "heading": "CTR DETAILS",
+      "heading": "SAR \u2014 Four Triggers ($5,000+)",
       "type": "bullets",
       "items": [
-        "Triggered by CURRENCY only (cash) \u2014 NOT checks, NOT wires",
-        "More than $10,000 in ONE DAY (aggregate, single customer)",
-        "Filed with FinCEN (bureau of U.S. Treasury, NOT DOJ)",
-        "Penalty: up to $500,000 fine, 10 yrs prison, or both",
-        "Structuring = breaking deposits to dodge $10K = ILLEGAL (e.g., 25 \u00d7 $500)"
+        "1) Funds derived from illegal activity",
+        "2) Designed to evade Bank Secrecy Act (e.g., structuring)",
+        "3) No business or apparent lawful purpose",
+        "4) Use of firm to facilitate criminal activity",
+        "CONFIDENTIAL \u2014 never tell the subject; if subpoenaed, refuse & notify FinCEN",
+        "NO dollar minimum for suspected terrorist financing"
       ]
     },
     {
-      "heading": "SAR DETAILS",
-      "type": "bullets",
-      "items": [
-        "$5,000+ if suspect: illegal funds, BSA evasion, no business purpose, or facilitating crime",
-        "NO minimum for suspected terrorist financing",
-        "30 days from awareness to file with FinCEN",
-        "CONFIDENTIAL \u2014 do NOT tell customer; if subpoenaed, refuse & notify FinCEN",
-        "Filing is at firm's discretion based on suspicion \u2014 no certainty needed"
-      ]
-    },
-    {
-      "heading": "OFAC / SDN LIST",
-      "type": "bullets",
-      "items": [
-        "Office of Foreign Assets Control = Treasury Dept",
-        "SDN = Specially Designated Nationals (terrorists, drug traffickers, sanctioned parties)",
-        "Must screen ALL new customers against SDN list BEFORE opening account",
-        "If match: BLOCK assets, refuse business, recheck periodically",
-        "Required under USA PATRIOT Act / CIP rules"
-      ]
-    },
-    {
-      "heading": "RED FLAGS \u2192 REPORT TO AML OFFICER",
-      "type": "bullets",
-      "items": [
-        "Indifference to risk, commissions, or costs",
-        "Frequent/large cash deposits or wire transfers to unrelated 3rd parties",
-        "Excessive journal entries between unrelated accounts",
-        "Structuring \u2014 designing deposits/withdrawals under $10K",
-        "Pattern of small recurring deposits (e.g., $1,000/wk for many weeks)"
-      ]
-    },
-    {
-      "heading": "AGENCY MAP",
+      "heading": "Three Stages of Money Laundering (P-L-I)",
       "type": "table",
+      "items": {
+        "columns": [
+          "Stage",
+          "What Happens",
+          "Key Point"
+        ],
+        "rows": [
+          [
+            "1. Placement",
+            "Dirty cash enters financial system (deposits, buying chips, etc.)",
+            "MOST DETECTABLE stage"
+          ],
+          [
+            "2. Layering",
+            "Series of complex transactions to disguise source",
+            "Trades make no business sense"
+          ],
+          [
+            "3. Integration",
+            "Funds re-enter economy looking legitimate",
+            "Front companies, real estate, etc."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Structuring (ILLEGAL)",
+      "type": "bullets",
       "items": [
-        {
-          "Agency": "FinCEN",
-          "Role": "Treasury bureau \u2014 collects CTRs/SARs (intel, no enforcement)"
-        },
-        {
-          "Agency": "OFAC",
-          "Role": "Treasury \u2014 maintains SDN list"
-        },
-        {
-          "Agency": "Treasury + Fed Reserve",
-          "Role": "Enforce BSA money laundering rules"
-        }
+        "Breaking cash deposits into amounts under $10,000 to evade CTR filing",
+        "Example: 25 deposits of $500 to pay for $12,500 trade = structuring",
+        "Triggers SAR filing; criminal offense even if underlying funds are legal"
       ]
     },
     {
-      "heading": "FINRA RULE 3220 \u2014 GIFTS",
+      "heading": "OFAC / SDN List",
       "type": "bullets",
       "items": [
-        "Max $100 per person per year to employees of other firms",
-        "Applies to non-cash gifts given/received in connection with business",
+        "Office of Foreign Assets Control \u2014 division of TREASURY (not State, not DOJ)",
+        "SDN = Specially Designated Nationals \u2014 terrorists, narco-traffickers, sanctioned individuals/countries",
+        "All U.S. persons + entities PROHIBITED from doing business with anyone on SDN list",
+        "Check at account opening AND periodically thereafter",
+        "Assets of SDN persons are BLOCKED/FROZEN"
+      ]
+    },
+    {
+      "heading": "AML Program \u2014 Required Elements (Rule 3310)",
+      "type": "bullets",
+      "items": [
+        "Designated AML Compliance Officer (need NOT be a registered principal)",
+        "Written policies & procedures",
+        "Ongoing employee training",
+        "Independent annual testing",
+        "Customer Identification Program (CIP) \u2014 verify ID before opening account"
+      ]
+    },
+    {
+      "heading": "FINRA Rule 3220 \u2014 Gifts & Gratuities",
+      "type": "rule",
+      "items": [
+        "$100 max per person, per year, to employees of other member firms",
+        "Applies to business-related gifts; personal gifts (weddings, etc.) generally excluded",
+        "Must log all gifts given/received",
         "Promotional items <$50 with firm logo typically excluded",
-        "Personal gifts (weddings, etc.) generally exempt if not business-related",
-        "Bereavement gifts exempt"
+        "Bereavement gifts excluded",
+        "Does NOT cap business entertainment (meals/events) if rep is present and reasonable"
+      ]
+    },
+    {
+      "heading": "FinCEN at a Glance",
+      "type": "bullets",
+      "items": [
+        "Bureau of U.S. TREASURY (not DOJ, not SEC)",
+        "Intelligence agency \u2014 NO law-enforcement arm",
+        "Collects CTRs, SARs to combat money laundering & terrorist financing"
       ]
     }
   ],
   "common_traps": [
-    "CTR = CASH ONLY. Checks and wire transfers do NOT trigger a CTR even if over $10K.",
-    "CTR is >$10,000 in 15 days to file; SAR is $5,000+ in 30 days to file. Don't swap the numbers/days.",
-    "SAR for suspected terrorist financing has NO dollar minimum.",
-    "FinCEN and OFAC are both TREASURY (not DOJ, not SEC). FinCEN has no enforcement arm.",
-    "Possession of inside info / suspicious behavior is reported \u2014 but SAR filing must NEVER be disclosed to the customer.",
-    "Structuring is illegal even if the underlying money is clean \u2014 the act of evasion itself is the crime."
+    "CTR is CASH ONLY \u2014 checks and wire transfers do NOT trigger a CTR (wires have their own $3,000 recordkeeping rule).",
+    "Mixing up deadlines: CTR = 15 days, SAR = 30 days. Don't flip them.",
+    "SAR has NO dollar minimum for suspected terrorist financing \u2014 the $5,000 threshold does not apply.",
+    "OFAC is part of TREASURY, not Justice or State Department. FinCEN is also Treasury.",
+    "PLACEMENT (not layering) is the stage most susceptible to detection \u2014 cash entering the system is the easiest red flag.",
+    "Rule 3220 gift limit is $100 per person PER YEAR \u2014 not per gift, not per occasion."
   ],
   "tokens": {
-    "input": 18881,
-    "output": 1928
+    "input": 20616,
+    "output": 2150
   },
-  "cost_usd": 0.4278
+  "cost_usd": 0.4705
 }

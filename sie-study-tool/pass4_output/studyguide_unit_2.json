@@ -4,118 +4,138 @@
   "sections": [
     {
       "title": "Lesson 2.1: Characteristics of Common Stock",
-      "overview": "Common stock represents an ownership (equity) interest in a corporation. Shareholders benefit from capital appreciation, dividend income, voting rights, and limited liability, but bear the risks of price decline, dividend reduction, and the lowest priority in liquidation. This lesson covers the classes of stock, dividend mechanics, and the rights and risks of common shareholders.",
+      "overview": "Common stock represents an ownership (equity) interest in a corporation, entitling holders to vote on major issues, share in profits through dividends, and benefit from capital appreciation. Shareholders enjoy limited liability but stand last in the liquidation hierarchy. The unit also covers the four classes of stock (authorized, issued, outstanding, treasury), market-cap categories, the dividend process, and the penny stock rules.",
       "key_concepts": [
-        "Classes of stock: Authorized (max permitted by corporate charter), Issued (sold to investors), Outstanding (issued minus treasury, held by public), Treasury (reacquired by corporation \u2014 no voting rights, no dividends).",
-        "Market capitalization = Outstanding Shares \u00d7 Current Market Value (CMV). Categories: large-cap (blue chips are large caps with long dividend history), mid-cap, small-cap.",
-        "Penny stocks: Unlisted equities trading under $5/share. SEC requires risk disclosure document signed and dated before initial solicited transaction; monthly account statements required when penny stocks are held.",
-        "Penny stock cold-call rules apply only to SOLICITED transactions. Required disclosures: name of stock, number of shares, current quotation, and amount of commission to firm and rep.",
-        "Established customer (exempt from suitability statement, but not disclosure): held account \u22651 year with a deposit, OR made \u22653 penny stock purchases of different issuers on different days.",
-        "Dividends may be paid in: cash (taxed in year paid), stock (not taxed until shares sold; cost basis adjusts), or product.",
-        "Qualified dividends taxed at favorable rates; nonqualified dividends taxed as ordinary income.",
-        "Four dividend dates: Declaration \u2192 Ex-Dividend \u2192 Record \u2192 Payable. Ex-date is set by FINRA/exchange; the other three are set by the BOD.",
-        "Ex-dividend date = one business day before record date (regular-way T+2 settlement). Buy BEFORE ex-date to receive the dividend; buy ON or AFTER ex-date = no dividend.",
-        "Voting: Statutory voting (one vote per share per seat \u2014 favors large shareholders); Cumulative voting (total votes can be allocated freely across seats \u2014 favors small shareholders).",
-        "Benefits of common stock ownership: voting rights, freely transferable shares, limited access to corporate books (10-K annual report), preemptive rights, capital appreciation, income, limited liability (loss capped at amount invested), inflation hedge.",
-        "Risks of common stock: market/value risk, dividend reduction or elimination (dividends never guaranteed), lowest priority at liquidation (residual claim after creditors and preferred holders)."
+        "Equity = ownership; each share = proportional ownership of the corporation.",
+        "Authorized stock: maximum shares the corporate charter permits the company to issue; amendable only by stockholder vote.",
+        "Issued stock: authorized shares actually sold to investors.",
+        "Outstanding stock: issued shares currently held by the public (Issued \u2212 Treasury = Outstanding).",
+        "Treasury stock: reacquired by the issuer; carries no voting rights and pays no dividends.",
+        "Market capitalization = Outstanding shares \u00d7 Current Market Value (CMV). Categories: large-cap (often 'blue chip' if mature dividend payers), mid-cap, small-cap.",
+        "Penny stock: unlisted equity trading under $5/share; classified as highly speculative.",
+        "Dividend forms: cash (default, quarterly), stock (non-taxable at receipt; cost basis adjusts), or product (rare).",
+        "Cash dividends are taxed in the year paid: nonqualified (ordinary income rates) or qualified (lower IRS-specified rate).",
+        "Four dividend dates in order: Declaration \u2192 Ex-dividend \u2192 Record \u2192 Payable.",
+        "Declaration, record, and payable dates are set by the BOD; the ex-date is set by FINRA or the listing exchange.",
+        "Ex-dividend date under T+1 settlement: same day as the record date (buy before the ex-date to receive the dividend).",
+        "Benefits of common stock: voting rights, capital appreciation, dividend income, limited liability, preemptive rights, freely transferable shares, right to inspect books and receive Form 10-K.",
+        "Voting methods: Statutory (one vote per share per seat \u2014 favors large holders); Cumulative (total votes = shares \u00d7 seats, allocated freely \u2014 favors small holders).",
+        "Risks: market/value risk (price decline), dividend reduction or elimination, last priority in liquidation (residual claim)."
       ],
       "rules": [
-        "SEC penny stock rules: written risk disclosure document required before initial solicited transaction; monthly statements required when penny stocks held.",
-        "Suitability statement: must be obtained and signed/dated for non-established customers before initial penny stock trade (solicited transactions only).",
+        "SEC Rule 3a11-1 (Securities Exchange Act of 1934): defines 'equity security.'",
+        "SEC Penny Stock Rules: Before initial solicited penny stock transaction, BD must deliver a risk disclosure document and obtain signed/dated acknowledgment; must determine suitability and obtain a signed suitability statement; must disclose the name of the stock, number of shares, current quotation, and commissions to firm and rep.",
+        "Penny stock monthly statements: required for any account holding penny stocks, regardless of activity, showing market value, share count, and issuer for each penny stock held.",
+        "Established customer exemption (penny stocks): customer with account \u22651 year (with a deposit) OR \u22653 penny stock purchases of different issuers on different days \u2014 exempt from suitability statement but NOT from disclosure.",
         "Unsolicited penny stock transactions are exempt from suitability and disclosure rules.",
-        "Form 10-K (audited annual financials) must be made available to common shareholders."
+        "Settlement: U.S.-listed equity trades settle T+1 (SEC Rule 15c6-1, as amended)."
       ],
       "formulas": [
-        "Market Capitalization = Outstanding Shares \u00d7 Current Market Value per share",
         "Outstanding Shares = Issued Shares \u2212 Treasury Shares",
-        "Stock Dividend new cost basis = Original Total Cost \u00f7 New Total Number of Shares",
-        "Cumulative voting maximum on one seat = Shares Owned \u00d7 Number of Seats up for election",
-        "Ex-Dividend Date = Record Date \u2212 1 business day (under T+2 settlement)"
+        "Market Capitalization = Outstanding Shares \u00d7 Current Market Value per share",
+        "Stockholder's Votes (Cumulative) = Shares Owned \u00d7 Number of Board Seats up for election",
+        "Stockholder's Votes per Seat (Statutory) = Shares Owned (max per seat)"
       ],
       "mnemonics": [
-        "DERP \u2014 Dividend dates in order: Declaration, Ex-dividend, Record, Payable.",
-        "Big shareholders prefer Statutory; Small shareholders prefer Cumulative (S=S, C=C... think 'Cumulative helps the little guy combine votes').",
-        "Penny stock cold-call disclosures: 'Name, Number, Quote, Commission' (NNQC)."
+        "DERP \u2014 order of dividend dates: Declaration, Ex-date, Record, Payable.",
+        "BOD sets D-R-P; Regulator (FINRA/exchange) sets E.",
+        "'Cumulative helps the small guy' \u2014 cumulative voting favors small shareholders."
       ]
     },
     {
-      "title": "Lesson 2.2: Preferred Stock, ADRs, and Other Considerations for Equities",
-      "overview": "Preferred stock is an equity security with fixed-income characteristics \u2014 a stated fixed dividend, dividend preference, and liquidation priority over common stock, but no voting or preemptive rights. American Depositary Receipts (ADRs) allow U.S. investors to hold foreign securities domestically. SEC Rule 144 governs the resale of restricted and control (affiliate) stock.",
+      "title": "Lesson 2.2: Preferred Stock, ADRs, and Other Equity Considerations",
+      "overview": "Preferred stock is an equity security with bond-like fixed-income characteristics: a stated dividend (% of par; assume $100 par unless told otherwise), priority over common in dividends and liquidation, but generally no voting or preemptive rights. ADRs allow U.S. investors to hold foreign equities in dollar-denominated form. Rule 144 governs the resale of restricted and control (affiliate) stock.",
       "key_concepts": [
-        "Preferred stock par value is assumed to be $100 unless stated otherwise; dividend is stated as a % of par (e.g., 6% preferred = $6/year) or as a dollar amount for no-par.",
-        "Preferred features: fixed dividend, dividend preference over common, priority at dissolution ahead of common (but behind all creditors), generally NO voting rights, NO preemptive rights.",
-        "Types of preferred stock: Straight/Noncumulative (missed dividends lost forever); Cumulative (unpaid dividends accumulate in arrears and must be paid before any common dividend); Callable (issuer can redeem after a date, typically at small premium \u2014 used to refinance high-rate preferred); Convertible (exchangeable into fixed number of common shares; lower dividend rate due to upside); Adjustable-rate (dividend tied to benchmark \u2014 price stays stable, NOT for fixed-income seekers); Participating (receives extra dividend from corporate profits beyond stated rate).",
-        "Preferred stock risks: purchasing power risk (inflation), interest rate sensitivity (prices fall as rates rise), dividend reduction/elimination, junior to all creditors at liquidation.",
-        "ADRs: facilitate U.S. investment in foreign companies. Foreign shares held in custody at U.S. bank's foreign branch; receipts issued and traded on U.S. markets in U.S. dollars; settle T+2.",
-        "ADR characteristics: priced/traded/dividends in USD; subject to currency risk (exchange rate affects dividend value and ADR price), political risk, and market risk; foreign country may withhold tax on dividends (often credited against U.S. tax); holder may request the underlying foreign shares from the depositary bank; ADR holders generally do NOT receive voting rights.",
-        "Rule 144 \u2014 Restricted Stock: acquired via private placement (legended certificates). Holding period = 6 months fully paid before any sale; after sale by an unaffiliated holder, shares are effectively registered and free of further restriction.",
-        "Rule 144 \u2014 Control Stock (affiliate): owned by officers, directors, or 10%+ shareholders. Family member holdings are aggregated. Control persons are ALWAYS subject to Rule 144 volume limits when selling, regardless of how shares were acquired.",
-        "Form 144 must be filed at time of sale by an affiliate; sales spread over a 90-day period.",
-        "Nonaffiliate selling registered stock: no Rule 144 restriction. Nonaffiliate selling restricted stock: subject to 6-month holding period only; no volume limit after 6 months."
+        "Preferred stock: equity ownership with a fixed dividend rate; assume par = $100 unless stated.",
+        "Dividend computation: % rate \u00d7 $100 par = annual dividend (paid quarterly).",
+        "Preferred shareholders generally have NO voting rights and NO preemptive rights.",
+        "Benefits: dividend preference over common; priority over common at dissolution.",
+        "Risks: purchasing power (inflation) risk, interest rate sensitivity (prices fall when rates rise), dividend may be reduced/eliminated, paid behind all creditors at dissolution.",
+        "Straight (noncumulative): missed dividends are gone forever.",
+        "Cumulative: unpaid dividends accrue as 'dividends in arrears' and must be paid in full before any common dividend.",
+        "Callable: issuer can redeem at a stated price after a stated date; often called when rates fall; dividend stops at the call date; usually includes a call premium.",
+        "Convertible: exchangeable for a fixed number of common shares; carries lower stated dividend due to upside; price tracks common once the common rises above the conversion parity.",
+        "Adjustable (variable) rate: dividend resets to a benchmark (e.g., T-bills); price is relatively stable \u2014 NOT ideal for investors seeking a FIXED income.",
+        "Participating: in addition to stated dividend, receives extra dividends up to a stated cap when profits permit.",
+        "ADR (American Depositary Receipt): negotiable U.S. security representing shares of a foreign company on deposit at a U.S. bank's foreign branch; issued and dividends paid in U.S. dollars.",
+        "ADRs trade and settle T+1 (per current SEC Rule 15c6-1 \u2014 updated from prior T+2).",
+        "ADR holder rights: may request the depositary bank cancel the ADR and deliver the underlying foreign shares; voting rights are NOT automatically passed through.",
+        "ADR risks: currency risk (dividends converted from foreign currency), political risk, market risk of underlying.",
+        "ADR dividends may be subject to foreign withholding tax; often creditable against U.S. tax liability. Capital gains taxed only in the U.S.",
+        "Rule 144 (Securities Act of 1933): governs sales of restricted securities and control (affiliate) securities.",
+        "Restricted stock: acquired in unregistered transaction (e.g., private placement); 6-month holding period (fully paid) required before resale; certificates carry a restrictive legend.",
+        "Control stock (affiliate): held by directors, officers, or 10%+ owners; family holdings aggregate.",
+        "After holding restrictions: nonaffiliates selling restricted stock have NO volume limit after 6 months; affiliates ALWAYS subject to volume limits regardless of holding period.",
+        "Form 144 filing required when an affiliate sells; allows sales over a 90-day window."
       ],
       "rules": [
-        "SEC Rule 144 (Securities Act of 1933) \u2014 governs sale of restricted and control securities.",
-        "Rule 144 volume limit (greater of): 1% of outstanding shares, OR average weekly trading volume over the most recent 4 weeks.",
-        "Restricted stock 6-month holding period must be fully paid.",
-        "Form 144 filing is valid for a 90-day selling window."
+        "Rule 144 volume limit (every 90 days): greater of 1% of outstanding shares OR average weekly trading volume over the most recent 4 weeks.",
+        "Rule 144 holding period for restricted stock: 6 months (fully paid).",
+        "Form 144 must be filed at the time of placing an order to sell by an affiliate."
       ],
       "formulas": [
-        "Annual Preferred Dividend = Stated % \u00d7 Par Value (par = $100 unless stated)",
-        "Rule 144 Volume Limit = GREATER of (1% \u00d7 Outstanding Shares) OR (Average Weekly Volume over prior 4 weeks)",
-        "Cumulative Preferred Dividend Owed = (Years Skipped \u00d7 Annual Dividend) + Current Year Dividend"
+        "Annual Preferred Dividend = Stated Rate \u00d7 Par Value (assume $100 par unless told otherwise)",
+        "Quarterly Preferred Dividend = Annual Preferred Dividend \u00f7 4",
+        "Rule 144 Maximum Shares Sellable (90 days) = greater of (0.01 \u00d7 Outstanding Shares) OR (Average Weekly Volume over prior 4 weeks)",
+        "Average Weekly Volume = Sum of last 4 weeks' volume \u00f7 4"
       ],
       "mnemonics": [
-        "Preferred has NO Votes, NO Preemptive rights \u2014 'No V, No P'.",
-        "Rule 144 holding period for restricted stock = 6 months ('Six for Stuck').",
-        "Control persons file Form 144 \u2014 '144 for affiliates, always limited'.",
-        "ADRs eliminate currency conversion HASSLE but NOT currency RISK."
+        "Preferred = 'Bond-like equity' \u2014 fixed income, no vote, no preemptive right.",
+        "Cumulative = 'Catches up' \u2014 arrears must be paid first.",
+        "Affiliates ALWAYS limited; nonaffiliates LIMITED only during the 6-month restricted holding window.",
+        "Greater of 1% or 4-week average \u2014 the '1%-or-Average' rule."
       ]
     },
     {
-      "title": "Lesson 2.3: Corporate Actions",
-      "overview": "Corporate actions are events initiated by the issuer that materially affect shareholders. They include rights and warrants offerings, stock splits and dividends, mergers, acquisitions, spin-offs, buybacks, and tender offers. This lesson covers cost basis and share-price adjustments, the tax treatment of each action, and proxy voting procedures.",
+      "title": "Lesson 2.3: Corporate Actions (Rights, Warrants, Splits, Dividends, M&A, Buybacks, Proxies)",
+      "overview": "Corporate actions are issuer-initiated events that affect outstanding securities \u2014 including issuing rights or warrants, paying stock dividends, splitting shares, merging, acquiring, spinning off, or buying back stock. Candidates must recognize whether each action is taxable, how it alters share count and cost basis, and the SEC notification and proxy procedures.",
       "key_concepts": [
-        "Stock Rights (Preemptive Rights): SHORT-term (typically 30\u201345 days), issued to EXISTING common shareholders, allow purchase of new shares BELOW current market price; one right per share owned. Shareholder may exercise, sell (rights are negotiable), or let expire.",
-        "Warrants: LONG-term (often years) instruments, exercise price ABOVE current market at issuance; commonly bundled with bonds/preferred stock as a 'sweetener'; not issued to existing shareholders for free.",
-        "Stock Dividend: shareholder receives additional shares; total position value unchanged; per-share cost basis is reduced. Not taxable until shares are sold.",
-        "Forward Stock Split (e.g., 2:1, 3:2): MORE shares at a LOWER price per share; total value unchanged; cost basis per share decreases. Done to attract investors with lower share price.",
-        "Reverse Stock Split (e.g., 1:4): FEWER shares at a HIGHER price per share; total value unchanged; cost basis per share increases. Done to avoid delisting or improve stock perception.",
+        "Stock (Preemptive) Rights: short-term (typically 30\u201345 day subscription); given to existing common shareholders; one right per share owned; subscription price is BELOW current market price; rights are tradable.",
+        "Three options for a rights holder: exercise, sell in the secondary market, or let expire.",
+        "Warrants: LONG-term (often years); usually issued as 'sweeteners' attached to bonds or preferred stock; exercise price is ABOVE the current market price at issuance.",
+        "Stock dividend: shareholder receives more shares; total position value unchanged; cost basis per share DECREASES; not taxable when received.",
+        "Forward stock split: more shares at a lower price; cost basis per share decreases; not taxable.",
+        "Reverse stock split: fewer shares at a higher price; cost basis per share increases; not taxable; often used to maintain exchange listing minimum price.",
+        "Merger: two companies combine; old shares canceled and replaced with shares of the new combined company.",
+        "Acquisition: acquirer absorbs target; target shareholders typically receive acquirer shares.",
+        "Spin-off: parent creates a new subsidiary and distributes its shares to existing parent shareholders; parent shares retained.",
+        "Buyback: issuer repurchases its own shares in the secondary market; reduces supply, can boost EPS and share price; alternative to dividends.",
+        "Tender offer: direct offer to buy securities from current owners (not through the open market); typically all-cash; used to retire debt, acquire targets, or buy convertibles.",
+        "Tax treatment summary \u2014 receive STOCK = generally non-taxable; receive CASH = generally taxable (capital gain/loss).",
         "Stock splits and stock dividends are NEVER taxable events at the time of distribution.",
-        "Merger: two companies combine; old shares canceled, new combined-company shares issued.",
-        "Acquisition: one company takes over another; acquired company's shares canceled, replaced with acquiring company's shares.",
-        "Spin-off: subsidiary spun out as new company; shareholders receive shares of new entity AND keep original shares.",
-        "Buyback (share repurchase): issuer repurchases its own shares from the secondary market, reducing supply, often to increase shareholder value.",
-        "Tender Offer: offer to buy securities directly from holders, bypassing the secondary market; commonly used for takeovers or to retire debt early; almost always all-cash.",
-        "Taxation summary: Stock-for-stock corporate actions (splits, stock dividends, mergers, acquisitions, spin-offs) \u2014 generally NOT taxable. Cash-receipt actions (cash dividends, buybacks, tender offers, cash portion of M&A) \u2014 taxable.",
-        "SEC corporate-action notice required no later than 10 days before the record date (or, for rights offerings if impractical, on or before the record date and no later than effective date). Notice includes title of security, declaration date, record date, payment/distribution date, and amount/rate.",
-        "Proxy voting: limited power of attorney from shareholder to vote on their behalf; automatically revoked if shareholder votes in person or signs a later proxy.",
-        "Street name proxies: member firm must forward proxy materials to beneficial owners and vote per the customer's instructions.",
-        "If customer signs and returns proxy WITHOUT marking votes: member must vote as recommended by issuer's management.",
-        "If customer does NOT return proxy by 10 days before the meeting: member may vote ONLY on MINOR matters as it sees fit; for MAJOR matters (e.g., merger, issuing new shares), shares are NOT voted."
+        "Buybacks and tender offers (cash) ARE taxable \u2014 treated as a sale.",
+        "Mergers, acquisitions, and spin-offs are typically non-taxable when shares are received, but any cash portion of the consideration is taxable.",
+        "Notification: issuer must provide notice no later than 10 days before the record date (or by the record date, and never later than the effective date, in cases like rights offerings where 10 days is impractical).",
+        "Notice content: title of security, declaration date, record date, payment/distribution date, amount (cash dividend) or rate (stock dividend, split).",
+        "Proxy: limited power of attorney granting another party the right to vote a shareholder's shares; auto-revoked if shareholder attends meeting or executes a later proxy.",
+        "Street name shares: BD acts as forwarding agent for proxies and corporate communications to beneficial owners.",
+        "If a customer returns a signed proxy but does NOT indicate how to vote: the member must vote as RECOMMENDED BY MANAGEMENT.",
+        "If proxy is NOT returned by the 10th day before the meeting AND matters are MINOR: member may vote as it sees fit.",
+        "If proxy is NOT returned AND matters are MAJOR (e.g., merger, additional issuance): member may NEVER vote \u2014 shares go unvoted."
       ],
       "rules": [
-        "SEC notification rule for corporate actions: notice no later than 10 days prior to record date.",
-        "Proxy rules require SEC review of solicitation materials; all participants in a proxy contest must register with the SEC.",
-        "Member firms must forward proxies and corporate communications to beneficial owners of street-name stock."
+        "SEC Rule 10b-18 (Exchange Act): safe harbor for issuer repurchases of its own equity securities (buybacks).",
+        "SEC notification of corporate actions: required disclosures to shareholders, generally at least 10 days before the record date.",
+        "Settlement for equities affected by corporate actions: T+1 (per current SEC Rule 15c6-1)."
       ],
       "formulas": [
-        "New Shares After Split = Original Shares \u00d7 (First Split Number \u00f7 Second Split Number)",
-        "New Price After Split = Original Price \u00d7 (Second Split Number \u00f7 First Split Number)",
-        "Total Position Value Before = Total Position Value After (splits and stock dividends)",
-        "New Cost Basis per Share = Original Total Cost \u00f7 New Total Shares",
-        "Rights Needed Per New Share = Existing Outstanding Shares \u00f7 New Shares Offered"
+        "Stock Dividend \u2014 New Cost Basis per Share = Original Total Cost \u00f7 New Total Shares",
+        "Forward Split (a-for-b) \u2014 New Shares = Old Shares \u00d7 (a \u00f7 b); New Price = Old Price \u00d7 (b \u00f7 a)",
+        "Reverse Split (a-for-b, where a<b) \u2014 New Shares = Old Shares \u00d7 (a \u00f7 b); New Price = Old Price \u00d7 (b \u00f7 a)",
+        "Total Position Value Before Split = Total Position Value After Split (always)",
+        "Rights \u2014 Shares Purchasable = Rights Held \u00f7 Rights Required per New Share"
       ],
       "mnemonics": [
-        "Rights = Right Now (short term, existing shareholders, below market). Warrants = Wait (long term, attached to bonds, above market at issue).",
-        "Forward split = 'Forward = More shares, Lower price'. Reverse split = 'Reverse = Fewer shares, Higher price'.",
-        "Stock = no tax; Cash = tax (for corporate actions).",
-        "Proxy with NO instructions \u2192 vote with MANAGEMENT; No proxy returned + MAJOR issue \u2192 DO NOT vote."
+        "Rights = Right Now (short term, below market); Warrants = Wait (long term, above market).",
+        "Stock for stock = no tax; cash = tax.",
+        "Splits/stock dividends: 'Same pie, more slices' \u2014 value unchanged, basis per share adjusted.",
+        "Unsigned proxy + major issue = NO VOTE. Signed-but-blank proxy = vote with MANAGEMENT."
       ]
     }
   ],
   "tokens": {
-    "input": 23869,
-    "output": 4666
+    "input": 24423,
+    "output": 4923
   },
-  "cost_usd": 0.708
+  "cost_usd": 0.7356
 }
