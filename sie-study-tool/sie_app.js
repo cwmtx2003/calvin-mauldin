@@ -770,9 +770,14 @@ RULES:
 4. ${avoid}
 5. Keep questions concise and focused on one testable concept.
 6. VARIETY: ${angle} Vary the wording, scenario framing, named securities/people, and any numbers so this question feels distinct from previous ones — while staying strictly within this lesson's material.${errataRule}
+8. CITATIONS: Provide 1–3 citations to OFFICIAL PRIMARY sources the student can use to verify the explanation. Each citation is a structured object with three fields:
+   - "source": one of "FINRA" (FINRA rule or guidance), "MSRB" (Municipal Securities Rulemaking Board rule), "SEC" (SEC rule/release/staff guidance), "SA33" (Securities Act of 1933 section), "SEA34" (Securities Exchange Act of 1934 section), "ICA40" (Investment Company Act of 1940 section), "IAA40" (Investment Advisers Act of 1940 section), "IRC" (Internal Revenue Code section), "FRB" (Federal Reserve regulation, e.g. Reg T), "SIPC", "USC" (other US Code), or "OUTLINE" (FINRA SIE Content Outline section)
+   - "ref": the rule/section identifier the user can search on. Examples: "Rule 2090", "Rule 2111", "Rule G-17", "Reg BI / Rule 15l-1", "Reg T", "Section 5", "Rule 10b-5", "Section 26(c)", "Outline §2.1"
+   - "title": a short plain-English label naming what the rule covers, e.g. "Know Your Customer", "Suitability", "Customer Identification Program (CIP)", "Initial margin requirement", "Prohibition on fraudulent conduct"
+   Cite only rules/sections you are confident actually cover the tested concept — never fabricate a rule number. Do NOT cite Kaplan, study guides, or third-party material. Do NOT include URLs (URLs are built for you from the structured fields).
 
 Respond ONLY with valid JSON — no markdown fences, no extra text:
-{"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect."}`;
+{"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect.","citations":[{"source":"FINRA","ref":"Rule 2090","title":"Know Your Customer"}]}`;
 
   const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nCURATED TOPIC SUMMARY (use this for the unit's key facts and exam-tested points):\n${unit.topics}${outlineBlock}${groundingBlock}${errataBlock}`;
 
@@ -800,7 +805,77 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
   if (lesson) {
     q._lesson = { unit: lesson.unit, lesson: lesson.lesson, title: lesson.title };
   }
+  // Normalize citations to a clean array (model may omit, return null, or return malformed entries)
+  if (!Array.isArray(q.citations)) q.citations = [];
+  q.citations = q.citations.filter(c => c && typeof c === 'object' && (c.source || c.ref || c.title)).slice(0, 4);
   return q;
+}
+
+// ─── Source citation links ───
+// Build a verified URL for a structured citation. We map source/ref to the
+// official regulator's site rather than asking the model for URLs directly,
+// so the link always lands on a real page even if the model picks the wrong
+// rule (the user can still see the citation didn't match).
+function buildSourceUrl(c) {
+  if (!c) return null;
+  const src = String(c.source || '').toUpperCase().trim();
+  const ref = String(c.ref || '').trim();
+  const refQ = encodeURIComponent(ref);
+
+  if (src === 'FINRA') {
+    const m = ref.match(/(\d{3,5})(?:\.\d+)?/);
+    if (m) return `https://www.finra.org/rules-guidance/rulebooks/finra-rules/${m[1]}`;
+    return `https://www.finra.org/search?keys=${refQ}`;
+  }
+  if (src === 'MSRB') {
+    const m = ref.match(/G-?\s*(\d+)/i);
+    if (m) return `https://www.msrb.org/rules-and-interpretations/msrb-rules/general/rule-g-${m[1]}`;
+    return `https://www.msrb.org/search?q=${refQ}`;
+  }
+  if (src === 'SEC') {
+    return `https://www.google.com/search?q=${encodeURIComponent('site:sec.gov ' + ref)}`;
+  }
+  if (src === 'SA33') {
+    return `https://www.google.com/search?q=${encodeURIComponent('"Securities Act of 1933" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
+  }
+  if (src === 'SEA34') {
+    return `https://www.google.com/search?q=${encodeURIComponent('"Securities Exchange Act of 1934" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
+  }
+  if (src === 'ICA40') {
+    return `https://www.google.com/search?q=${encodeURIComponent('"Investment Company Act of 1940" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
+  }
+  if (src === 'IAA40') {
+    return `https://www.google.com/search?q=${encodeURIComponent('"Investment Advisers Act of 1940" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
+  }
+  if (src === 'IRC') {
+    return `https://www.google.com/search?q=${encodeURIComponent('Internal Revenue Code ' + ref + ' site:irs.gov OR site:law.cornell.edu')}`;
+  }
+  if (src === 'FRB' || src === 'FED') {
+    return `https://www.google.com/search?q=${encodeURIComponent('site:federalreserve.gov ' + ref)}`;
+  }
+  if (src === 'SIPC') {
+    return `https://www.google.com/search?q=${encodeURIComponent('site:sipc.org ' + ref)}`;
+  }
+  if (src === 'USC') {
+    return `https://www.google.com/search?q=${encodeURIComponent(ref + ' site:law.cornell.edu')}`;
+  }
+  if (src === 'OUTLINE') {
+    return `https://www.finra.org/sites/default/files/2024-04/SIE_Content_Outline.pdf`;
+  }
+  return `https://www.google.com/search?q=${encodeURIComponent(ref + ' FINRA SIE')}`;
+}
+
+function renderCitationsHtml(citations) {
+  if (!Array.isArray(citations) || !citations.length) return '';
+  const items = citations.map(c => {
+    const url = buildSourceUrl(c);
+    const head = [c.source, c.ref].filter(Boolean).join(' ');
+    const title = c.title ? ` — ${c.title}` : '';
+    const label = escapeHtml(head + title);
+    if (!url) return `<li>${label}</li>`;
+    return `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`;
+  }).join('');
+  return `<div class="expl-sources"><div class="expl-sources-hdr">Verify with official sources</div><ul class="expl-sources-list">${items}</ul><div class="expl-sources-note">Links go to the regulator's site. Citations are AI-generated — confirm the rule actually covers what's claimed.</div></div>`;
 }
 
 function renderQ(q) {
@@ -888,6 +963,7 @@ function answer(chosen) {
     chosen,
     ok,
     explanation: curQ.explanation,
+    citations: curQ.citations || [],
     unitNum: curQ._unitNum,
     unitName: curQ.unitName || UNITS.find(u => u.num === curQ._unitNum)?.name,
     mode: curQ.mode || 'standard',
@@ -906,7 +982,7 @@ function answer(chosen) {
   const hdr = document.getElementById('expl-hdr');
   hdr.className = 'expl-hdr ' + (ok ? 'ok' : 'no');
   hdr.innerHTML = ok ? `✓ Correct — answer ${correct}` : `✗ Incorrect — correct answer is ${correct}`;
-  document.getElementById('expl-body').innerHTML = curQ.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  document.getElementById('expl-body').innerHTML = curQ.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') + renderCitationsHtml(curQ.citations);
   document.getElementById('expl').classList.add('vis');
   const nb = document.getElementById('next-btn');
   nb.disabled = false;
@@ -1083,6 +1159,7 @@ function finalizePomodoroSession() {
     chosen: r.chosen,
     ok: r.ok,
     explanation: r.explanation,
+    citations: r.citations || [],
     unitNum: r.unitNum,
     unitName: r.unitName,
     jfShort: (r.mode || 'standard').toUpperCase(),
@@ -1546,7 +1623,7 @@ async function startQuiz(config) {
     _planLesson: p.lesson || null,
     _ready: false,
     _failed: false,
-    question: null, options: null, correct: null, explanation: null
+    question: null, options: null, correct: null, explanation: null, citations: []
   }));
 
   // Generator: pulls next un-generated slot
@@ -1570,6 +1647,7 @@ async function startQuiz(config) {
         slot.options = q.options;
         slot.correct = q.correct;
         slot.explanation = q.explanation;
+        slot.citations = q.citations || [];
         slot._ready = true;
         ptReadyCount++;
 
@@ -1816,6 +1894,7 @@ function submitQuiz(autoSubmitted) {
       chosen,
       ok: !!ok,
       explanation: slot.explanation,
+      citations: slot.citations || [],
       jf: slot.jf, jfName: slot.jfName, jfShort: slot.jfShort,
       unitNum: slot.unitNum, unitName: slot.unitName,
       mode: slot.mode,
@@ -2057,7 +2136,7 @@ function renderResultsQList() {
       <button class="qr-q-expand" onclick="toggleExpl(${q.idx})">
         <span id="expl-toggle-${q.idx}">▸ Show explanation</span>
       </button>
-      <div class="qr-q-expl" id="expl-${q.idx}">${q.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>` : '';
+      <div class="qr-q-expl" id="expl-${q.idx}">${q.explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}${renderCitationsHtml(q.citations)}</div>` : '';
 
     return `
       <div class="qr-q-card ${cls}">
