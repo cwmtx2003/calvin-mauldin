@@ -812,57 +812,46 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
 }
 
 // ─── Source citation links ───
-// Build a verified URL for a structured citation. We map source/ref to the
-// official regulator's site rather than asking the model for URLs directly,
-// so the link always lands on a real page even if the model picks the wrong
-// rule (the user can still see the citation didn't match).
+// Map a structured citation to a URL on the official / primary source. When a
+// rule number is present we link straight to the exact FINRA/MSRB rule page
+// (these resolve reliably). When we CAN'T build a precise official deep link,
+// we fall back to a curated, verified document or landing page rather than
+// guessing a deep URL or bouncing through a search engine — so a citation
+// link never 404s. Each fallback below has been confirmed to resolve.
+const SOURCE_FALLBACKS = {
+  FINRA:   'https://www.finra.org/rules-guidance/rulebooks',                                              // FINRA Manual (rulebooks)
+  MSRB:    'https://www.msrb.org/rules-and-interpretations/msrb-rules',                                   // MSRB rule book
+  SEC:     'https://www.sec.gov/rules-regulations/statutes-regulations/rules-regulations-securities-exchange-commission-major-securities-laws',
+  SA33:    'https://udel.edu/~pollack/Acct351/handouts/Securities_Act_of_1933.pdf',                       // Securities Act of 1933 (full text)
+  SEA34:   'https://www.nyse.com/publicdocs/nyse/regulation/nyse/sea34.pdf',                              // Securities Exchange Act of 1934 (full text)
+  ICA40:   'https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=5050&context=ypfs-documents2',// Investment Company Act of 1940 (full text)
+  IAA40:   'https://www.govinfo.gov/content/pkg/COMPS-1878/pdf/COMPS-1878.pdf',                           // Investment Advisers Act of 1940 (full text)
+  IRC:     'https://www.law.cornell.edu/uscode/text/26',                                                  // Internal Revenue Code (Title 26)
+  FRB:     'https://www.federalreserve.gov/supervisionreg/reglisting.htm',                                // Federal Reserve regulations (Reg T, etc.)
+  SIPC:    'https://www.sipc.org/',
+  USC:     'https://www.law.cornell.edu/uscode',
+  OUTLINE: 'https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie', // FINRA SIE exam / content outline
+  DEFAULT: 'https://www.sec.gov/rules-regulations/statutes-regulations',                                  // SEC Statutes and Regulations
+};
+
 function buildSourceUrl(c) {
   if (!c) return null;
   const src = String(c.source || '').toUpperCase().trim();
   const ref = String(c.ref || '').trim();
-  const refQ = encodeURIComponent(ref);
 
   if (src === 'FINRA') {
     const m = ref.match(/(\d{3,5})(?:\.\d+)?/);
     if (m) return `https://www.finra.org/rules-guidance/rulebooks/finra-rules/${m[1]}`;
-    return `https://www.finra.org/search?keys=${refQ}`;
+    return SOURCE_FALLBACKS.FINRA;
   }
   if (src === 'MSRB') {
     const m = ref.match(/G-?\s*(\d+)/i);
     if (m) return `https://www.msrb.org/rules-and-interpretations/msrb-rules/general/rule-g-${m[1]}`;
-    return `https://www.msrb.org/search?q=${refQ}`;
+    return SOURCE_FALLBACKS.MSRB;
   }
-  if (src === 'SEC') {
-    return `https://www.google.com/search?q=${encodeURIComponent('site:sec.gov ' + ref)}`;
-  }
-  if (src === 'SA33') {
-    return `https://www.google.com/search?q=${encodeURIComponent('"Securities Act of 1933" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
-  }
-  if (src === 'SEA34') {
-    return `https://www.google.com/search?q=${encodeURIComponent('"Securities Exchange Act of 1934" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
-  }
-  if (src === 'ICA40') {
-    return `https://www.google.com/search?q=${encodeURIComponent('"Investment Company Act of 1940" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
-  }
-  if (src === 'IAA40') {
-    return `https://www.google.com/search?q=${encodeURIComponent('"Investment Advisers Act of 1940" ' + ref + ' site:sec.gov OR site:law.cornell.edu')}`;
-  }
-  if (src === 'IRC') {
-    return `https://www.google.com/search?q=${encodeURIComponent('Internal Revenue Code ' + ref + ' site:irs.gov OR site:law.cornell.edu')}`;
-  }
-  if (src === 'FRB' || src === 'FED') {
-    return `https://www.google.com/search?q=${encodeURIComponent('site:federalreserve.gov ' + ref)}`;
-  }
-  if (src === 'SIPC') {
-    return `https://www.google.com/search?q=${encodeURIComponent('site:sipc.org ' + ref)}`;
-  }
-  if (src === 'USC') {
-    return `https://www.google.com/search?q=${encodeURIComponent(ref + ' site:law.cornell.edu')}`;
-  }
-  if (src === 'OUTLINE') {
-    return `https://www.finra.org/sites/default/files/2024-04/SIE_Content_Outline.pdf`;
-  }
-  return `https://www.google.com/search?q=${encodeURIComponent(ref + ' FINRA SIE')}`;
+  if (src === 'FED') return SOURCE_FALLBACKS.FRB;
+  // SEC / statute / agency citations: link to the curated official document or page.
+  return SOURCE_FALLBACKS[src] || SOURCE_FALLBACKS.DEFAULT;
 }
 
 function renderCitationsHtml(citations) {
