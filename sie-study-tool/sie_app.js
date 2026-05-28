@@ -830,7 +830,7 @@ const SOURCE_FALLBACKS = {
   FRB:     'https://www.federalreserve.gov/supervisionreg/reglisting.htm',                                // Federal Reserve regulations (Reg T, etc.)
   SIPC:    'https://www.sipc.org/',
   USC:     'https://www.law.cornell.edu/uscode',
-  OUTLINE: 'https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie', // FINRA SIE exam / content outline
+  OUTLINE: 'https://www.finra.org/rules-guidance/rulebooks/finra-rules',                                 // FINRA Rules (verify the actual rule, not the exam page)
   DEFAULT: 'https://www.sec.gov/rules-regulations/statutes-regulations',                                  // SEC Statutes and Regulations
 };
 
