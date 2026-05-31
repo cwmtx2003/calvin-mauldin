@@ -253,6 +253,7 @@ window.addEventListener('DOMContentLoaded', () => {
   renderUnits();
   renderQuizCards();
   renderHistory();
+  renderDashboard();
   loadErrata();
   pomoUpdateDisplay();
   const saved = sessionStorage.getItem('sie_key');
@@ -2173,6 +2174,8 @@ function newQuiz() {
   document.getElementById('drill-act-row').style.display = '';
   document.getElementById('quiz-act-row').style.display = 'none';
   document.getElementById('back-arrow').style.display = '';
+  renderHistory();
+  renderDashboard();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -2229,6 +2232,7 @@ function clearHistory() {
   if (!confirm('Clear all saved activity history on this device? This cannot be undone.')) return;
   localStorage.removeItem('sie_history');
   renderHistory();
+  renderDashboard();
 }
 
 function openHistoryEntry(id) {
@@ -2307,8 +2311,304 @@ function historyBackHome() {
   root.innerHTML = '';
   document.getElementById('setup').style.display = 'block';
   renderHistory();
+  renderDashboard();
   const sec = document.getElementById('history-section');
   if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ═══════════════════════════════════════════════════
+// PASS 6 — PROGRESS DASHBOARD (Chart.js)
+// ═══════════════════════════════════════════════════
+
+// Reverse map: unit number → job-function key (lets pomodoro/drill records,
+// which only store unitNum, be aggregated by job function too).
+const UNIT_JF = {};
+Object.entries(JF_UNITS).forEach(([jf, units]) => units.forEach(u => { UNIT_JF[u] = jf; }));
+
+let dashChartInstances = [];
+
+function dashScoreCls(pct) {
+  return pct >= 70 ? 'ok' : (pct >= 50 ? 'mid' : 'bad');
+}
+function dashColorFor(pct) {
+  if (pct == null) return 'rgba(107,122,158,0.25)';
+  return pct >= 70 ? '#4ade80' : (pct >= 50 ? '#d4621a' : '#f87171');
+}
+function dashPct(o) {
+  return o.attempted > 0 ? Math.round(o.correct / o.attempted * 100) : null;
+}
+
+// Walk every saved session and tally correct/attempted by unit, job function,
+// and question mode. Only answered questions (chosen set) count toward accuracy.
+function aggregateProgress() {
+  const hist = getHistory();
+  const byUnit = {}, byJF = {}, byMode = {};
+  UNITS.forEach(u => { byUnit[u.num] = { correct: 0, attempted: 0 }; });
+  Object.keys(JF_NAMES).forEach(k => { byJF[k] = { correct: 0, attempted: 0 }; });
+  ['standard', 'hard', 'definitions', 'calculations'].forEach(m => { byMode[m] = { correct: 0, attempted: 0 }; });
+
+  let totalAttempted = 0, totalCorrect = 0;
+  const sessions = [];
+
+  // history is newest-first; reverse for chronological score trend
+  [...hist].reverse().forEach(e => {
+    (e.questions || []).forEach(q => {
+      if (!q.chosen) return; // skipped/unanswered don't count toward accuracy
+      totalAttempted++;
+      const ok = !!q.ok;
+      if (ok) totalCorrect++;
+      const u = q.unitNum;
+      if (u != null && byUnit[u]) { byUnit[u].attempted++; if (ok) byUnit[u].correct++; }
+      const jf = q.jf || UNIT_JF[u];
+      if (jf && byJF[jf]) { byJF[jf].attempted++; if (ok) byJF[jf].correct++; }
+      const m = q.mode || 'standard';
+      if (byMode[m]) { byMode[m].attempted++; if (ok) byMode[m].correct++; }
+    });
+    sessions.push({
+      id: e.id,
+      date: e.date || '',
+      pct: typeof e.pct === 'number' ? e.pct : 0,
+      type: e.type,
+      label: historyLabel(e)
+    });
+  });
+
+  return { byUnit, byJF, byMode, totalAttempted, totalCorrect, sessions, sessionCount: hist.length };
+}
+
+const DASH_MODE_LABELS = { standard: 'Standard', hard: 'Hard (EXCEPT/NOT)', definitions: 'Definitions', calculations: 'Calculations' };
+
+function renderDashboard() {
+  const host = document.getElementById('dashboard-host');
+  if (!host) return;
+
+  // tear down any existing charts before re-rendering
+  dashChartInstances.forEach(c => { try { c.destroy(); } catch (e) {} });
+  dashChartInstances = [];
+
+  const A = aggregateProgress();
+
+  if (A.totalAttempted === 0) {
+    host.innerHTML = `<div class="dash-empty">📊 No performance data yet.<br>Finish a pomodoro block, timed quiz, or practice test and your score trend, strengths, and weak areas will chart here automatically.</div>`;
+    return;
+  }
+
+  const overallPct = Math.round(A.totalCorrect / A.totalAttempted * 100);
+  const readiness = overallPct >= 70 ? 'On track' : (overallPct >= 55 ? 'Getting there' : 'Keep drilling');
+
+  // Weak/strong areas by unit, requiring a minimum sample so a single miss
+  // doesn't flag a unit as weak.
+  const MIN = 4;
+  const unitStats = UNITS
+    .map(u => ({ num: u.num, name: u.name, ...A.byUnit[u.num], pct: dashPct(A.byUnit[u.num]) }))
+    .filter(x => x.attempted >= MIN);
+  const ranked = [...unitStats].sort((a, b) => a.pct - b.pct);
+  const weak = ranked.slice(0, 3).filter(x => x.pct < 70);
+  const strong = [...ranked].reverse().slice(0, 3).filter(x => x.pct >= 70);
+
+  const calloutRow = (x) => `
+    <div class="dash-callout-row">
+      <div class="dash-callout-unit">${escapeHtml(x.name)}<small>Unit ${x.num} · ${x.correct}/${x.attempted} correct</small></div>
+      <span class="dash-callout-pct ${dashScoreCls(x.pct)}">${x.pct}%</span>
+      <button class="dash-drill-btn" onclick="dashDrillUnit(${x.num})">Drill →</button>
+    </div>`;
+
+  const weakHTML = weak.length
+    ? weak.map(calloutRow).join('')
+    : `<div class="dash-callout-empty">No weak spots yet — every unit with enough attempts is at 70%+. Keep it up.</div>`;
+  const strongHTML = strong.length
+    ? strong.map(calloutRow).join('')
+    : `<div class="dash-callout-empty">No unit has hit 70% with ${MIN}+ attempts yet. Keep drilling to build mastery.</div>`;
+
+  const insufficient = unitStats.length === 0
+    ? `<div class="dash-note">Answer at least ${MIN} questions in a unit to surface it as a strong or weak area.</div>`
+    : '';
+
+  const chartsAvailable = typeof Chart !== 'undefined';
+  const chartsHTML = chartsAvailable ? `
+    <div class="dash-charts">
+      <div class="dash-card span2">
+        <div class="dash-card-title">Score trend — last ${A.sessions.length} session${A.sessions.length === 1 ? '' : 's'}</div>
+        <div class="dash-chart-wrap"><canvas id="dash-trend"></canvas></div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-card-title">Accuracy by job function</div>
+        <div class="dash-chart-wrap"><canvas id="dash-jf"></canvas></div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-card-title">Accuracy by question type</div>
+        <div class="dash-chart-wrap"><canvas id="dash-mode"></canvas></div>
+      </div>
+      <div class="dash-card span2">
+        <div class="dash-card-title">Accuracy by unit</div>
+        <div class="dash-chart-wrap tall"><canvas id="dash-unit"></canvas></div>
+      </div>
+    </div>`
+    : `<div class="dash-note">Charts need an internet connection (Chart.js failed to load). Your stats and weak/strong areas below still work offline.</div>`;
+
+  host.innerHTML = `
+    <div class="dash-kpis">
+      <div class="dash-kpi"><div class="dash-kpi-val">${A.totalAttempted}</div><div class="dash-kpi-label">Questions answered</div></div>
+      <div class="dash-kpi"><div class="dash-kpi-val ${dashScoreCls(overallPct)}">${overallPct}%</div><div class="dash-kpi-label">Overall accuracy</div></div>
+      <div class="dash-kpi"><div class="dash-kpi-val">${A.sessionCount}</div><div class="dash-kpi-label">Sessions logged</div></div>
+      <div class="dash-kpi"><div class="dash-kpi-val ${dashScoreCls(overallPct)}">${readiness}</div><div class="dash-kpi-label">Exam readiness</div></div>
+    </div>
+    ${chartsHTML}
+    <div class="dash-callouts">
+      <div class="dash-callout-card weak">
+        <div class="dash-callout-hdr">⚠ Focus areas</div>
+        ${weakHTML}
+      </div>
+      <div class="dash-callout-card strong">
+        <div class="dash-callout-hdr">★ Strengths</div>
+        ${strongHTML}
+      </div>
+    </div>
+    ${insufficient}`;
+
+  if (chartsAvailable) dashBuildCharts(A);
+}
+
+function dashBuildCharts(A) {
+  const gridColor = 'rgba(255,255,255,0.06)';
+  const tickColor = '#6b7a9e';
+  const font = { family: "'DM Mono', monospace", size: 10 };
+
+  // Fresh option objects per chart — Chart.js can normalize these in place,
+  // so the same reference must not be shared across instances.
+  const pctScale = () => ({
+    beginAtZero: true, max: 100,
+    grid: { color: gridColor }, border: { color: gridColor },
+    ticks: { color: tickColor, font: { ...font }, callback: v => v + '%' }
+  });
+  const catScale = (over) => ({
+    grid: { display: false }, border: { color: gridColor },
+    ticks: { color: tickColor, font: { ...font }, ...(over || {}) }
+  });
+
+  // ── Score trend (line) ──
+  const trendEl = document.getElementById('dash-trend');
+  if (trendEl) {
+    const labels = A.sessions.map(s => (s.date.split(',')[0] || '').trim() || '—');
+    const data = A.sessions.map(s => s.pct);
+    dashChartInstances.push(new Chart(trendEl, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Session score', data, tension: 0.3, fill: true,
+            borderColor: '#d4621a', backgroundColor: 'rgba(212,98,26,0.12)',
+            pointRadius: 3, pointHoverRadius: 5,
+            pointBackgroundColor: data.map(dashColorFor), pointBorderColor: data.map(dashColorFor)
+          },
+          {
+            label: 'Pass (70%)', data: labels.map(() => 70),
+            borderColor: 'rgba(74,222,128,0.5)', borderDash: [5, 4], pointRadius: 0, fill: false
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: (items) => A.sessions[items[0].dataIndex]?.label || '',
+              label: (item) => item.datasetIndex === 1 ? 'Pass line · 70%' : `Score · ${item.parsed.y}%`
+            }
+          }
+        },
+        scales: { y: pctScale(), x: catScale({ maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }) }
+      }
+    }));
+  }
+
+  // ── By job function (bar) ──
+  const jfEl = document.getElementById('dash-jf');
+  if (jfEl) {
+    const keys = Object.keys(JF_NAMES);
+    const data = keys.map(k => dashPct(A.byJF[k]));
+    const meta = keys.map(k => A.byJF[k]);
+    dashChartInstances.push(new Chart(jfEl, {
+      type: 'bar',
+      data: {
+        labels: keys.map(k => JF_SHORT[k]),
+        datasets: [{ data, backgroundColor: data.map(dashColorFor), borderRadius: 4, maxBarThickness: 56 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (it) => meta[it.dataIndex].attempted ? `${it.parsed.y}% · ${meta[it.dataIndex].correct}/${meta[it.dataIndex].attempted}` : 'No attempts yet' } }
+        },
+        scales: { y: pctScale(), x: catScale() }
+      }
+    }));
+  }
+
+  // ── By question type (bar) ──
+  const modeEl = document.getElementById('dash-mode');
+  if (modeEl) {
+    const keys = ['standard', 'hard', 'definitions', 'calculations'];
+    const data = keys.map(k => dashPct(A.byMode[k]));
+    const meta = keys.map(k => A.byMode[k]);
+    dashChartInstances.push(new Chart(modeEl, {
+      type: 'bar',
+      data: {
+        labels: keys.map(k => DASH_MODE_LABELS[k]),
+        datasets: [{ data, backgroundColor: data.map(dashColorFor), borderRadius: 4, maxBarThickness: 56 }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (it) => meta[it.dataIndex].attempted ? `${it.parsed.y}% · ${meta[it.dataIndex].correct}/${meta[it.dataIndex].attempted}` : 'No attempts yet' } }
+        },
+        scales: { y: pctScale(), x: catScale({ font: { ...font, size: 9 } }) }
+      }
+    }));
+  }
+
+  // ── By unit (horizontal bar) ──
+  const unitEl = document.getElementById('dash-unit');
+  if (unitEl) {
+    const data = UNITS.map(u => dashPct(A.byUnit[u.num]));
+    const meta = UNITS.map(u => A.byUnit[u.num]);
+    dashChartInstances.push(new Chart(unitEl, {
+      type: 'bar',
+      data: {
+        labels: UNITS.map(u => `U${u.num}`),
+        datasets: [{ data, backgroundColor: data.map(dashColorFor), borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: (items) => `Unit ${UNITS[items[0].dataIndex].num} — ${UNITS[items[0].dataIndex].name}`,
+              label: (it) => meta[it.dataIndex].attempted ? `${it.parsed.x}% · ${meta[it.dataIndex].correct}/${meta[it.dataIndex].attempted}` : 'No attempts yet'
+            }
+          }
+        },
+        scales: { x: pctScale(), y: catScale() }
+      }
+    }));
+  }
+}
+
+// Weak-area "Drill →" deep link: select that unit and jump to the drill setup.
+function dashDrillUnit(n) {
+  Array.from(selUnits).forEach(u => {
+    const b = document.querySelector(`[data-u="${u}"]`);
+    if (b) b.classList.remove('active');
+  });
+  selUnits.clear();
+  toggleUnit(n); // re-selects the unit and runs checkCanStart()
+  const grid = document.getElementById('unit-grid');
+  if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 // ═══════════════════════════════════════════════════

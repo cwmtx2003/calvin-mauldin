@@ -552,6 +552,47 @@ mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:
 .history-card-score.bad{color:var(--red)}
 .history-card-frac{font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.03em}
 
+/* PROGRESS DASHBOARD (PASS 6) */
+.dash-host{margin-top:.5rem}
+.dash-empty{color:var(--muted);font-size:13px;line-height:1.7;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.75rem 1.5rem;text-align:center}
+.dash-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1rem}
+.dash-kpi{background:var(--bg2);border:.5px solid var(--border);border-radius:8px;padding:.95rem .7rem;text-align:center}
+.dash-kpi-val{font-family:'DM Mono',monospace;font-size:1.7rem;font-weight:700;line-height:1.1;color:var(--gold2)}
+.dash-kpi-val.ok{color:var(--green)}
+.dash-kpi-val.mid{color:var(--gold2)}
+.dash-kpi-val.bad{color:var(--red)}
+.dash-kpi-label{font-size:10px;color:var(--muted);margin-top:.3rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.3}
+.dash-charts{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1rem}
+.dash-card{background:var(--bg2);border:.5px solid var(--border);border-radius:8px;padding:1rem 1.1rem}
+.dash-card.span2{grid-column:1 / -1}
+.dash-card-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2);font-weight:500;margin-bottom:.75rem}
+.dash-chart-wrap{position:relative;width:100%;height:230px}
+.dash-chart-wrap.tall{height:300px}
+.dash-callouts{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.dash-callout-card{background:var(--bg2);border:.5px solid var(--border);border-radius:8px;padding:1rem 1.1rem}
+.dash-callout-card.weak{border-color:rgba(248,113,113,.3)}
+.dash-callout-card.strong{border-color:rgba(74,222,128,.3)}
+.dash-callout-hdr{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.dash-callout-card.weak .dash-callout-hdr{color:var(--red)}
+.dash-callout-card.strong .dash-callout-hdr{color:var(--green)}
+.dash-callout-row{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.5rem 0;border-top:.5px solid var(--border)}
+.dash-callout-row:first-of-type{border-top:none}
+.dash-callout-unit{min-width:0;font-size:12.5px;color:var(--text);line-height:1.35}
+.dash-callout-unit small{display:block;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+.dash-callout-pct{font-family:'DM Mono',monospace;font-size:14px;font-weight:700;white-space:nowrap}
+.dash-callout-pct.ok{color:var(--green)}
+.dash-callout-pct.mid{color:var(--gold2)}
+.dash-callout-pct.bad{color:var(--red)}
+.dash-drill-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.04em;color:var(--muted);background:none;border:1px solid var(--border);padding:3px 8px;border-radius:3px;cursor:pointer;white-space:nowrap;transition:all .14s}
+.dash-drill-btn:hover{border-color:var(--gold);color:var(--gold2)}
+.dash-callout-empty{font-size:12px;color:var(--muted);line-height:1.6}
+.dash-note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:.25rem}
+@media(max-width:640px){
+  .dash-kpis{grid-template-columns:repeat(2,1fr)}
+  .dash-charts{grid-template-columns:1fr}
+  .dash-callouts{grid-template-columns:1fr}
+}
+
 /* ERRATA — corrections callout in Deep Study panes */
 .errata-callout{background:rgba(191,87,0,.08);border:1px solid rgba(191,87,0,.3);border-radius:8px;padding:.9rem 1.1rem;margin-bottom:1rem}
 .errata-callout-hdr{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);font-weight:700;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
