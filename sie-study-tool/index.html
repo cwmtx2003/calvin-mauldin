@@ -30,6 +30,7 @@
   </div>
   <div class="hdr-right">
     <div class="score-display">Score: <span class="score-val" id="score-text">—</span></div>
+    <button class="reset-link" id="forget-key-btn" onclick="forgetKey()" style="display:none">Forget key</button>
   </div>
 </header>
 
@@ -402,8 +403,8 @@
 <script src="sie_sources.js"></script>
 <!-- Pass 4 offline study data — flashcards, study guides, reference sheets, concept index -->
 <script src="sie_study_data.js"></script>
-<!-- Pass 6 progress dashboard charts -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<!-- Pass 6 progress dashboard charts (SRI-pinned: a tampered CDN file won't execute) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" integrity="sha384-Sse/HDqcypGpyTDpvZOJNnG0TT3feGQUkF9H+mnRvic+LjR+K1NhTt8f51KIQ3v3" crossorigin="anonymous"></script>
 <script src="sie_app.js"></script>
 </body>
 </html>

@@ -256,8 +256,16 @@ window.addEventListener('DOMContentLoaded', () => {
   renderDashboard();
   loadErrata();
   pomoUpdateDisplay();
-  const saved = sessionStorage.getItem('sie_key');
-  if (saved) { apiKey = saved; } else { document.getElementById('api-prompt').classList.add('vis'); }
+  // Key now persists in localStorage; migrate any older session-only key.
+  const saved = localStorage.getItem('sie_key') || sessionStorage.getItem('sie_key');
+  if (saved) {
+    apiKey = saved;
+    try { localStorage.setItem('sie_key', saved); } catch (e) {}
+    sessionStorage.removeItem('sie_key');
+  } else {
+    document.getElementById('api-prompt').classList.add('vis');
+  }
+  updateKeyUI();
   updateScore();
 });
 
@@ -330,9 +338,33 @@ function saveKey() {
   const v = document.getElementById('api-key-input').value.trim();
   if (!v.startsWith('sk-ant-')) { alert('Please enter a valid Anthropic API key (starts with sk-ant-)'); return; }
   apiKey = v;
-  sessionStorage.setItem('sie_key', v);
+  try { localStorage.setItem('sie_key', v); } catch (e) {}
+  sessionStorage.removeItem('sie_key');
   document.getElementById('api-ok').classList.add('vis');
+  updateKeyUI();
   setTimeout(() => { document.getElementById('api-prompt').style.display = 'none'; }, 1500);
+}
+
+// Wipe the saved key from this device on demand and re-prompt.
+function forgetKey() {
+  if (!confirm("Forget your saved API key on this device? You'll need to paste it again to generate new questions (your study history stays).")) return;
+  apiKey = '';
+  try { localStorage.removeItem('sie_key'); } catch (e) {}
+  sessionStorage.removeItem('sie_key');
+  const input = document.getElementById('api-key-input');
+  if (input) input.value = '';
+  document.getElementById('api-ok').classList.remove('vis');
+  const prompt = document.getElementById('api-prompt');
+  prompt.style.display = '';
+  prompt.classList.add('vis');
+  updateKeyUI();
+  prompt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Show the "Forget key" control only while a key is actually saved.
+function updateKeyUI() {
+  const btn = document.getElementById('forget-key-btn');
+  if (btn) btn.style.display = apiKey ? '' : 'none';
 }
 
 // ═══════════════════════════════════════════════════
