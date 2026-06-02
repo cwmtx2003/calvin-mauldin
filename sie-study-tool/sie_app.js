@@ -113,7 +113,7 @@ function parseErrata(text) {
 
 async function loadErrata() {
   // Source of truth is sie_errata.txt; .md kept as a fallback name.
-  for (const fname of ['sie_errata.txt', 'sie_errata.md']) {
+  for (const fname of ['/sie-study-tool/sie_errata.txt', '/sie-study-tool/sie_errata.md']) {
     try {
       const r = await fetch(fname, { cache: 'no-cache' });
       if (!r.ok) continue;
