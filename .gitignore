@@ -5,3 +5,25 @@ __pycache__/
 *.bak
 *.pre-ci
 *.pre-errata
+
+# === SIE corpus: offline-only by default ===
+# SRO rulebooks (FINRA/MSRB/CBOE) and full OpenStax books must NEVER be committed/shipped.
+# Default-deny the whole corpus, then allow-list only public-domain shippable sources.
+sie-study-tool/corpus/*
+
+# Allow-list: public-domain statutes, CFR, IRS, FINRA SIE outline, investor.gov glossary
+!sie-study-tool/corpus/Securities_Act_of_1933.txt
+!sie-study-tool/corpus/sea34.txt
+!sie-study-tool/corpus/Investment Company Act of 1940.txt
+!sie-study-tool/corpus/INVESTMENT ADVISERS ACT OF 1940.txt
+!sie-study-tool/corpus/sipa70.txt
+!sie-study-tool/corpus/STATUTE-102-Pg4677.txt
+!sie-study-tool/corpus/PLAW-107publ56.txt
+!sie-study-tool/corpus/17 CFR Part *.txt
+!sie-study-tool/corpus/12 CFR Part 220*.txt
+!sie-study-tool/corpus/16 CFR Part 310*.txt
+!sie-study-tool/corpus/CFR-*.txt
+!sie-study-tool/corpus/FinCEN_31CFR1023.220_CIP_Rule.txt
+!sie-study-tool/corpus/IRS_Pub590A-B_IRA_Retirement_Figures_2025.txt
+!sie-study-tool/corpus/SIE_Content_Outline.txt
+!sie-study-tool/corpus/Investor.gov_Glossary_Complete.txt
