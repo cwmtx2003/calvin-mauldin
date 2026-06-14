@@ -1,0 +1,2457 @@
+{
+  "_README": "Edit topic_sources/openstax/glossary_terms, then re-run build_sources.py --use-map. section_sources are auto-derived; do not edit.",
+  "version": "2.0.0",
+  "topics": {
+    "1.1": {
+      "title": "Regulatory Entities, Agencies and Market Participants",
+      "jf": "km",
+      "units": [
+        1,
+        9
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2266",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2269",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-11",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-32",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-34",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 7",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 8",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 23",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "215",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "431",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 12",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144A",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "145",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "147",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "164",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "1.2": {
+      "title": "Market Structure",
+      "jf": "km",
+      "units": [
+        1,
+        9
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2266",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2269",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-11",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-32",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-34",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 7",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 8",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 23",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "215",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "431",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 12",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144A",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "145",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "147",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "164",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "1.3": {
+      "title": "Economic Factors",
+      "jf": "km",
+      "units": [
+        1,
+        9
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2266",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2269",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-11",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-32",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-34",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 7",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 8",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 23",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "215",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "431",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 12",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144A",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "145",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "147",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "164",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "1.4": {
+      "title": "Offerings",
+      "jf": "km",
+      "units": [
+        1,
+        9
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2266",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2269",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-11",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-32",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-34",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 7",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 8",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SA33",
+          "ref": "Section 23",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "215",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "431",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 12",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "144A",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "145",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "147",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_230",
+          "ref": "164",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "2.1": {
+      "title": "Products",
+      "jf": "pr",
+      "units": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2261",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2262",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2330",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2342",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2360",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule D-12",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-17",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-30",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-45",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "CBOE",
+          "ref": "Rule 1.1",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "3a11-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-18",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 4",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 5",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "12b-1",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "2.2": {
+      "title": "Investment Risks",
+      "jf": "pr",
+      "units": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2261",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2262",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2330",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2342",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2360",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule D-12",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-17",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-30",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-45",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "CBOE",
+          "ref": "Rule 1.1",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "3a11-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-18",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 3(a)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 4",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 5",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "12b-1",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "3.1": {
+      "title": "Trading, Settlement and Corporate Actions",
+      "jf": "tc",
+      "units": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2010",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2020",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2040",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2090",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2111",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2120",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2165",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2231",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2251",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2264",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2232",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3260",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4370",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4511",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4512",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4514",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5130",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5220",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5270",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5280",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5290",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5320",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 6438",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-8",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-9",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-13",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-14",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-15",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-18",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-21",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-25",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-39",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-41",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-47",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 11(d)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 14",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 20A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 21A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-5",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-10",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c2-12",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15l-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-4",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-14",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-6",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-7",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 314",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 326",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 352",
+          "ship": true,
+          "type": "statute"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "3.2": {
+      "title": "Customer Accounts and Compliance Considerations",
+      "jf": "tc",
+      "units": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2010",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2020",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2040",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2090",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2111",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2120",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2165",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2231",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2251",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2264",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2232",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3260",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4370",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4511",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4512",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4514",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5130",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5220",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5270",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5280",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5290",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5320",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 6438",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-8",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-9",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-13",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-14",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-15",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-18",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-21",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-25",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-39",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-41",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-47",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 11(d)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 14",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 20A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 21A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-5",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-10",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c2-12",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15l-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-4",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-14",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-6",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-7",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 314",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 326",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 352",
+          "ship": true,
+          "type": "statute"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "3.3": {
+      "title": "Prohibited Activities",
+      "jf": "tc",
+      "units": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 2010",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2020",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2040",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2090",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2111",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2120",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2165",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2231",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2251",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2264",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2232",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3150",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3250",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3260",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4370",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4511",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4512",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4514",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5130",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5210",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5220",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5230",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5270",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5280",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5290",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5310",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5320",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 6438",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-8",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-9",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-13",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-14",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-15",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-18",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-21",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-25",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-39",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-41",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-47",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 10",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 11(d)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 14",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 15",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 20A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 21A",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-5",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b5-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "10b-10",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-2",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c1-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15c2-12",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "15l-1",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-3",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-4",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17a-14",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-6",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "17_CFR_Part_270",
+          "ref": "17a-7",
+          "ship": true,
+          "type": "cfr"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 314",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 326",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "ICA40",
+          "ref": "Section 352",
+          "ship": true,
+          "type": "statute"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "4.1": {
+      "title": "SRO Regulatory Requirements for Associated Persons",
+      "jf": "rf",
+      "units": [
+        10,
+        12
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 1122",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 1240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2060",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2263",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2267",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2310(c)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2320(g)(4)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2341(l)(5)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3110(e)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3220",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3270",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3280",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4513",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4330",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4530",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5110(h)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 8312",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-2",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-3",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-7",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-10",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-20",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-37",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "CBOE",
+          "ref": "Rule 7.10",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)(39)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17f-2",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    },
+    "4.2": {
+      "title": "Employee Conduct and Reportable Events",
+      "jf": "rf",
+      "units": [
+        10,
+        12
+      ],
+      "section_sources": [
+        {
+          "id": "FINRA",
+          "ref": "Rule 1122",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 1240",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2060",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2263",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2267",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2310(c)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2320(g)(4)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 2341(l)(5)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3110(e)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3220",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3270",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 3280",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4513",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4330",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 4530",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 5110(h)",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "FINRA",
+          "ref": "Rule 8312",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-2",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-3",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-7",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-10",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-20",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "MSRB",
+          "ref": "Rule G-37",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "CBOE",
+          "ref": "Rule 7.10",
+          "ship": false,
+          "type": "sro"
+        },
+        {
+          "id": "SEA34",
+          "ref": "Section 3(a)(39)",
+          "ship": true,
+          "type": "statute"
+        },
+        {
+          "id": "17_CFR_Part_240",
+          "ref": "17f-2",
+          "ship": true,
+          "type": "cfr"
+        }
+      ],
+      "topic_sources": [],
+      "openstax": [],
+      "glossary_terms": []
+    }
+  }
+}
