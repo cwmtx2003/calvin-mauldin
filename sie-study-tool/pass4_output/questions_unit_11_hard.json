@@ -1,0 +1,583 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "jf": "tc",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Which of the following activities would LEAST likely be considered prohibited market manipulation?",
+      "choices": [
+        "A registered representative placing a large buy order in the final minutes of trading to inflate the closing price of a thinly traded stock",
+        "Two traders coordinating offsetting buy and sell orders to create the appearance of active trading in a security",
+        "A market maker quoting a two-sided market and executing customer orders at the displayed prices in the ordinary course of business",
+        "A representative spreading unverified rumors about an impending merger to drive up share price before selling personal holdings"
+      ],
+      "answer": 2,
+      "explanation": "A market maker quoting a bona fide two-sided market and executing at displayed prices is engaging in legitimate market-making, not manipulation. Marking the close, painting the tape (matched orders), and spreading rumors are all prohibited manipulative practices under Section 10(b) and Rule 10b-5.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a710",
+        "17 CFR 240.10b-5",
+        "Rule 5210"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A registered representative learns from her spouse, an attorney working on an unannounced acquisition, that Company X will be acquired at a substantial premium next week. Which of the following is TRUE?",
+      "choices": [
+        "Only the attorney spouse can be liable, because the representative had no direct duty to Company X",
+        "The representative may trade as long as she does not tell any clients",
+        "Both the tipper and tippee may face civil penalties of up to three times the profit gained or loss avoided",
+        "Liability requires that the representative work directly for Company X or its acquirer"
+      ],
+      "answer": 2,
+      "explanation": "Under Section 21A and Rule 10b5-2, a duty of trust or confidence exists between spouses, and both tipper and tippee are liable. Civil penalties may be up to three times the profit gained or loss avoided. Insider trading liability does not require employment by the issuer.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A",
+        "17 CFR 240.10b5-2",
+        "17 CFR 240.10b-5"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following must be filed or maintained under AML and Bank Secrecy Act requirements EXCEPT:",
+      "choices": [
+        "A Currency Transaction Report for cash transactions exceeding $10,000 in a single business day",
+        "A Suspicious Activity Report within 30 days of detecting suspicious activity",
+        "A Customer Identification Program meeting the requirements of Section 326",
+        "A Currency Transaction Report for any wire transfer exceeding $3,000 sent outside the United States"
+      ],
+      "answer": 3,
+      "explanation": "CTRs are filed for currency (cash) transactions over $10,000, not for wire transfers. SARs must be filed within 30 days, and a CIP is mandated by Section 326 of the USA PATRIOT Act.",
+      "citations": [
+        "USA PATRIOT Act \u00a7326",
+        "USA PATRIOT Act \u00a7352",
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA Rule 2165 as currently in effect, a member firm that reasonably believes a specified adult is being financially exploited may place a temporary hold on:",
+      "choices": [
+        "Only disbursements, for a maximum of 15 business days, with no possibility of extension",
+        "Disbursements and securities transactions, with an internal extension permitting holds up to 25 business days, and up to 55 business days where the matter has been reported to a state regulator, agency, or court",
+        "Any account activity indefinitely until the trusted contact person responds in writing",
+        "Only securities transactions, capped at 30 calendar days regardless of regulatory involvement"
+      ],
+      "answer": 1,
+      "explanation": "As amended in 2022, Rule 2165 permits holds on both disbursements and securities transactions, with an internal extension up to 25 business days total and up to 55 business days where the matter has been reported to a state regulator, agency, or court of competent jurisdiction.",
+      "citations": [
+        "Rule 2165"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following persons is NOT a restricted person under FINRA Rule 5130 and may therefore purchase an IPO of common equity?",
+      "choices": [
+        "A registered representative at a broker-dealer",
+        "The spouse of a portfolio manager at a hedge fund",
+        "A retired schoolteacher with no securities industry affiliation",
+        "An immediate family member who is materially supported by a registered representative"
+      ],
+      "answer": 2,
+      "explanation": "Rule 5130 restricts industry insiders and their immediate family receiving or providing material support. A retired schoolteacher with no industry connection is not a restricted person. Reps, portfolio manager spouses, and materially supported family members are restricted.",
+      "citations": [
+        "Rule 5130"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A registered representative wishes to borrow $20,000 from a customer. Which of the following is MOST accurate?",
+      "choices": [
+        "Borrowing is permitted only if the customer is a member of the representative's immediate family or the firm's written procedures otherwise permit the loan, and required notice/approval procedures are followed",
+        "Borrowing from any customer is absolutely prohibited under all circumstances",
+        "Borrowing is permitted as long as the representative repays the loan within 30 days",
+        "Borrowing is permitted as long as the loan amount does not exceed the customer's account equity"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 3240 generally prohibits borrowing from customers unless the customer falls within a permitted category (such as immediate family or a financial institution) and the firm's written procedures permit it with proper notice/approval. Choice B overstates the prohibition.",
+      "citations": [
+        "Rule 3240"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under Regulation Best Interest and FINRA communications rules, which of the following is LEAST likely to require principal approval before first use?",
+      "choices": [
+        "A retail communication distributed to more than 25 retail investors within a 30-day period",
+        "An advertisement to be posted on the firm's public website",
+        "Correspondence sent to 15 existing retail customers about a specific security recommendation",
+        "A sales brochure mailed to 500 prospective retail clients"
+      ],
+      "answer": 2,
+      "explanation": "Correspondence (communications to 25 or fewer retail investors within 30 days) is subject to supervision and review but does not require pre-use principal approval like retail communications generally do. The other choices are retail communications.",
+      "citations": [
+        "Rule 2210"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A broker-dealer paying transaction-based compensation to an unregistered person would MOST likely be violating which of the following?",
+      "choices": [
+        "Section 14 of the Exchange Act, governing proxies",
+        "Section 15 of the Exchange Act and FINRA Rule 2040",
+        "Rule 10b-10, governing trade confirmations",
+        "Rule 5130, governing IPO allocations"
+      ],
+      "answer": 1,
+      "explanation": "Section 15 of the Exchange Act requires registration of broker-dealers and associated persons engaged in transaction-based activity. FINRA Rule 2040 prohibits paying commissions or transaction-based compensation to unregistered persons. The other rules address unrelated subjects.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a715",
+        "Rule 2040"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under the SEC's amendments to Regulation S-P adopted in 2024, covered firms must do all of the following EXCEPT:",
+      "choices": [
+        "Maintain an incident-response program reasonably designed to detect, respond to, and recover from unauthorized access to customer information",
+        "Notify affected individuals as soon as practicable, but not later than 30 days, after becoming aware that sensitive customer information has been or is reasonably likely to have been accessed without authorization",
+        "Oversee service providers that receive, maintain, or process customer information",
+        "Obtain customer opt-in consent before sharing any nonpublic personal information with affiliates"
+      ],
+      "answer": 3,
+      "explanation": "Reg S-P, as amended in 2024, requires an incident-response program, customer notification within 30 days of qualifying incidents, and vendor oversight. Reg S-P does not require opt-in consent for affiliate sharing; the opt-out framework applies to nonaffiliated third parties.",
+      "citations": [],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following practices is NOT a form of prohibited market manipulation?",
+      "choices": [
+        "Front-running a customer's large block order by trading the security for the firm's own account first",
+        "Placing successive small buy orders at increasing prices at the end of the day to influence the closing print",
+        "Refusing to honor a firm quotation by backing away when contacted by another broker-dealer",
+        "Executing a customer's market order promptly at the best available price after disclosing capacity"
+      ],
+      "answer": 3,
+      "explanation": "Executing a customer's market order promptly at the best available price with proper disclosure is required best-execution conduct, not manipulation. Front-running, marking the close, and backing away are prohibited manipulative practices.",
+      "citations": [
+        "Rule 5270",
+        "Rule 5210",
+        "Rule 5310",
+        "17 CFR 240.10b-5"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A representative is named as executor in a non-family customer's will. Under current FINRA rules, the representative must:",
+      "choices": [
+        "Decline the appointment under all circumstances, as serving in such a role is absolutely prohibited",
+        "Provide written notice to the member firm and receive written approval from the firm before serving in that capacity",
+        "Notify FINRA directly within 30 days of being named",
+        "Take no action because executor appointments are outside the scope of securities regulation"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 3241 (effective 2/15/2021) requires a registered person to provide written notice to the member firm and receive the firm's written approval before being named as executor, trustee, beneficiary, or holding a similar position for a non-immediate-family customer.",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A representative cold-calling consumers to solicit new brokerage business must comply with all of the following EXCEPT:",
+      "choices": [
+        "Limiting calls to the hours of 8:00 a.m. to 9:00 p.m. local time of the called party",
+        "Screening numbers against the firm's do-not-call list and the National Do-Not-Call Registry",
+        "Identifying the caller, the firm, and providing a telephone number or address where the firm can be contacted",
+        "Obtaining the prospect's written consent to be called before placing any initial cold call"
+      ],
+      "answer": 3,
+      "explanation": "TCPA/FINRA telemarketing rules require time-of-day restrictions, DNC screening, and caller identification, but do not require prior written consent before placing an initial cold call to a consumer (subject to the DNC framework).",
+      "citations": [
+        "Rule 3230"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 14334,
+    "output": 3841
+  },
+  "cost_usd": 0.5031
+}

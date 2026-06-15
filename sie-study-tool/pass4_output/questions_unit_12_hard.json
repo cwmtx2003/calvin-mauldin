@@ -1,0 +1,352 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "jf": "rf",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "All of the following Form U4 disclosures must be updated within 30 days EXCEPT:",
+      "choices": [
+        "An event that subjects the registered person to statutory disqualification",
+        "A change in the registered person's residential address",
+        "A new outside business activity disclosed by the representative",
+        "A change in the representative's middle name following marriage"
+      ],
+      "answer": 0,
+      "explanation": "Statutory disqualification events require amendment within 10 business days, not the general 30-day window applicable to most other Form U4 updates. The other items are routine amendments completed within 30 days.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about the Regulatory Element of Continuing Education is LEAST accurate?",
+      "choices": [
+        "It must be completed annually by December 31 for each registration category held",
+        "Failure to complete within the prescribed calendar year causes the registration to be deemed inactive",
+        "Content is tailored to each representative or principal registration category",
+        "A registered person whose registration is deemed inactive may continue to solicit new business while completing the Regulatory Element"
+      ],
+      "answer": 3,
+      "explanation": "A person whose registration is deemed inactive must cease all activities requiring registration and may not solicit business or receive compensation for new transactions. The other choices accurately describe the annual Regulatory Element framework under Rule 1240.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA rules, written notice to the member firm is required in each of the following situations EXCEPT when an associated person:",
+      "choices": [
+        "Accepts part-time employment as a paid bookkeeper for an unaffiliated company",
+        "Participates in a private securities transaction outside the regular course of business at the firm",
+        "Purchases shares of a publicly traded ETF in a brokerage account held at the employing firm",
+        "Opens a securities account at another broker-dealer"
+      ],
+      "answer": 2,
+      "explanation": "Routine purchases in an account at the employing firm do not trigger separate written notice requirements. Outside business activities (Rule 3270), private securities transactions (Rule 3280), and opening accounts at other firms (Rule 3210) each require written notice to the employer.",
+      "citations": [
+        "Rule 3270",
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following gifts would MOST likely violate FINRA Rule 3220?",
+      "choices": [
+        "A $250 gift basket sent to a client's office at year-end",
+        "A $400 watch given to an employee of an institutional customer in connection with the customer's business",
+        "A $100 promotional pen-and-notebook set bearing the firm's logo",
+        "Meals and tickets provided to a client where the registered representative is personally present"
+      ],
+      "answer": 1,
+      "explanation": "Rule 3220 caps gifts at $300 per person per year when given in relation to the recipient's employer's business; a $400 watch exceeds the limit. Business entertainment where the registered person is present is generally not treated as a gift, and the other amounts fall within the $300 limit.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "An associated person leaves a member firm. With respect to Form U5, which statement is MOST accurate?",
+      "choices": [
+        "The firm must file Form U5 within 30 days of termination and deliver a copy to the former associated person within the same period",
+        "The firm must file Form U5 only if the person is terminated for cause",
+        "The former associated person is responsible for filing Form U5 with FINRA",
+        "Form U5 must be filed within 10 business days of termination regardless of reason"
+      ],
+      "answer": 0,
+      "explanation": "The member firm must file Form U5 within 30 days of termination and provide a copy to the former associated person within the same window. Filing applies to all terminations and is the firm's obligation, not the individual's.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which scenario would NOT, by itself, trigger a statutory disqualification under the Securities Exchange Act of 1934?",
+      "choices": [
+        "Conviction within the past 10 years of a felony involving the purchase or sale of a security",
+        "A SEC order barring the person from association with a broker-dealer",
+        "An unsatisfied judgment lien against the associated person for unpaid consumer debt",
+        "Conviction within the past 10 years of a misdemeanor involving embezzlement"
+      ],
+      "answer": 2,
+      "explanation": "Unsatisfied liens are reportable on Form U4 but do not, standing alone, trigger statutory disqualification under Section 3(a)(39). Felony convictions, financial-related misdemeanors within the lookback period, and SEC bars are enumerated disqualifying events.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Regarding fingerprinting of associated persons under SEC Rule 17f-2, which statement is MOST accurate?",
+      "choices": [
+        "Only registered representatives who handle customer funds must be fingerprinted",
+        "Persons regularly handling securities, money, or original books and records, and supervisors of such persons, generally must be fingerprinted",
+        "Fingerprinting is required only at the request of a state securities regulator",
+        "Fingerprinting requirements apply only to principals of the member firm"
+      ],
+      "answer": 1,
+      "explanation": "Rule 17f-2 generally requires fingerprinting of partners, directors, officers, and employees who regularly handle securities or money, access original books and records, or supervise such persons. Limited clerical exemptions exist but the scope is much broader than just registered reps or principals.",
+      "citations": [
+        "17 CFR 240.17f-2"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "An associated person wishes to participate in a private securities transaction for which she will receive selling compensation. Which of the following is required?",
+      "choices": [
+        "Written notice to the firm only; no approval is needed because the transaction is outside the firm",
+        "Written notice to the firm and the firm's written approval; the transaction must be recorded on the firm's books and supervised as if executed on behalf of the firm",
+        "Oral notice to a supervising principal is sufficient if the customer is the representative's relative",
+        "Only post-transaction notification is required so long as the firm earns no commission"
+      ],
+      "answer": 1,
+      "explanation": "Under Rule 3280, private securities transactions involving selling compensation require prior written notice AND written approval from the firm, and the transaction must be recorded on the firm's books and supervised as if executed for the firm. Mere notice or oral consent is insufficient when compensation is involved.",
+      "citations": [
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following filings or actions would MOST likely violate FINRA Rule 1122?",
+      "choices": [
+        "Amending Form U4 within 30 days to report a newly disclosed customer complaint",
+        "Failing to correct a previously filed Form U4 after learning it omitted a felony charge",
+        "Disclosing a pending bankruptcy on Form U4 at the time of initial registration",
+        "Filing Form U5 to reflect the voluntary resignation of a registered representative"
+      ],
+      "answer": 1,
+      "explanation": "Rule 1122 prohibits filing incomplete or misleading registration information and requires correction once the inaccuracy is known. Failing to correct an omission of a felony charge violates the rule. The other choices are proper, timely disclosures.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about the Form U4 arbitration disclosure required by FINRA Rule 2263 is LEAST accurate?",
+      "choices": [
+        "It informs the associated person that arbitration awards are generally final and binding",
+        "It explains that the right to a jury trial is generally waived for disputes subject to mandatory arbitration",
+        "It states that statutory employment discrimination claims must be arbitrated at FINRA regardless of party agreement",
+        "It notes that discovery in arbitration is generally more limited than in court proceedings"
+      ],
+      "answer": 2,
+      "explanation": "Rule 2263 states that statutory employment discrimination claims are NOT required to be arbitrated under FINRA rules and may be arbitrated only if the parties agree. The other points accurately reflect the required disclosures.",
+      "citations": [
+        "Rule 2263"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "An associated person engages in two activities: (1) tutoring high school math on weekends for pay, and (2) selling limited partnership interests in an outside real estate venture to several investors for a commission. Which statement is MOST accurate?",
+      "choices": [
+        "Both activities require only post-event notification to the firm",
+        "Neither activity requires notice because both occur outside the firm",
+        "The tutoring requires prior written notice as an outside business activity; the partnership sales require both prior written notice and written firm approval as private securities transactions for compensation",
+        "Both activities require firm approval under Rule 3270"
+      ],
+      "answer": 2,
+      "explanation": "The tutoring is an outside business activity governed by Rule 3270, requiring prior written notice. The compensated sale of securities outside the firm is a private securities transaction under Rule 3280, requiring both written notice and written firm approval, with supervision as if executed for the firm.",
+      "citations": [
+        "Rule 3270",
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is NOT, by itself, an event that an associated person is required to report under FINRA rules governing registration disclosures?",
+      "choices": [
+        "Being charged with a felony",
+        "Filing a personal bankruptcy petition",
+        "Receiving an unsolicited written customer compliment praising service",
+        "Becoming subject to a customer-initiated written complaint alleging theft"
+      ],
+      "answer": 2,
+      "explanation": "Customer compliments are not reportable events. Felony charges, bankruptcy filings, and customer complaints alleging theft or other enumerated misconduct are reportable on Form U4 or by the firm under Rule 4530.",
+      "citations": [
+        "Rule 4530"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12767,
+    "output": 3513
+  },
+  "cost_usd": 0.455
+}

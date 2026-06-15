@@ -1,0 +1,573 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "jf": "tc",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Which of the following risks would LEAST likely be reduced by diversifying a portfolio across many different industries and issuers?",
+      "choices": [
+        "Business risk associated with a single issuer's management decisions",
+        "Financial risk tied to one company's capital structure",
+        "Purchasing power (inflation) risk affecting the entire market",
+        "Regulatory risk affecting a single industry sector"
+      ],
+      "answer": 2,
+      "explanation": "Inflation/purchasing power risk is a systematic (market-wide) risk and cannot be eliminated through diversification. Business, financial, and regulatory risks are nonsystematic and can be reduced by spreading investments across many issuers and sectors.",
+      "citations": [
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A registered representative is reviewing recommendations for a 67-year-old retiree whose primary objective is current income with capital preservation. Which recommendation is MOST consistent with this profile?",
+      "choices": [
+        "A portfolio of investment-grade corporate bonds and blue-chip dividend-paying stocks",
+        "A concentrated position in small-cap growth equities",
+        "Long-dated equity call options on technology issuers",
+        "A leveraged inverse exchange-traded product tracking a high-yield index"
+      ],
+      "answer": 0,
+      "explanation": "Investment-grade bonds and blue-chip dividend stocks generate income while limiting volatility and credit risk \u2014 appropriate for income and preservation objectives. The other choices emphasize speculation, leverage, or growth and conflict with both stated objectives under the Care Obligation of Reg BI and FINRA suitability requirements.",
+      "citations": [
+        "Rule 2111",
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are examples of systematic risk EXCEPT:",
+      "choices": [
+        "Interest-rate risk",
+        "Market risk",
+        "Business risk",
+        "Inflation risk"
+      ],
+      "answer": 2,
+      "explanation": "Business risk is nonsystematic (specific to an individual issuer) and can be diversified away. Interest-rate, market, and inflation risks affect the broad market and are systematic.",
+      "citations": [
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about major U.S. market indices is MOST accurate?",
+      "choices": [
+        "The Dow Jones Industrial Average is price-weighted, while the S&P 500 is market-capitalization-weighted",
+        "Both the DJIA and the S&P 500 are price-weighted",
+        "The S&P 500 contains 30 large-cap stocks and is market-cap weighted",
+        "The Russell 2000 is a price-weighted index of large-cap issuers"
+      ],
+      "answer": 0,
+      "explanation": "The DJIA tracks 30 industrial stocks on a price-weighted basis; the S&P 500 contains 500 large-cap issuers weighted by market capitalization. The other statements misstate the construction or composition of these benchmarks.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA's suitability rule, a recommendation to a customer must be based on the customer's investment profile. Which factor is NOT explicitly part of that profile?",
+      "choices": [
+        "Tax status",
+        "Investment time horizon",
+        "Liquidity needs",
+        "Marital status of the customer's parents"
+      ],
+      "answer": 3,
+      "explanation": "The suitability profile includes age, financial situation, tax status, investment objectives, experience, time horizon, liquidity needs, and risk tolerance. The marital status of a customer's parents is not a profile element.",
+      "citations": [
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following would MOST clearly be considered a \"recommendation\" triggering Reg BI's Care Obligation when made to a retail customer?",
+      "choices": [
+        "A general advertisement promoting the firm's research department",
+        "A specific call from a representative urging the customer to buy 500 shares of XYZ stock today",
+        "A market commentary newsletter sent to all customers describing economic conditions",
+        "A statement on the firm's website listing the most actively traded stocks of the day"
+      ],
+      "answer": 1,
+      "explanation": "An individualized communication that would reasonably be viewed as a \"call to action\" \u2014 such as urging a specific customer to buy a particular security \u2014 is a recommendation under Reg BI. General advertising, market commentary, and lists of active stocks lack the individualized call-to-action element.",
+      "citations": [
+        "17 CFR 240.15l-1",
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer tells a registered representative: \"I want maximum growth, I have a 25-year time horizon, and I can tolerate substantial volatility.\" Which recommendation is LEAST consistent with this profile?",
+      "choices": [
+        "A diversified portfolio of small- and mid-cap growth equities",
+        "An aggressive growth equity mutual fund",
+        "An emerging-markets equity ETF",
+        "A short-term Treasury bill ladder"
+      ],
+      "answer": 3,
+      "explanation": "T-bill ladders provide safety and liquidity but virtually no capital appreciation \u2014 inconsistent with a long horizon and aggressive growth objective. The other choices align with growth-oriented, long-horizon, high-risk-tolerance investors.",
+      "citations": [
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following pairs of risks are BOTH classified as nonsystematic?",
+      "choices": [
+        "Credit (business) risk and liquidity risk",
+        "Interest-rate risk and inflation risk",
+        "Market risk and political risk",
+        "Currency risk and market risk"
+      ],
+      "answer": 0,
+      "explanation": "Credit/business risk and liquidity risk are issuer- or security-specific (nonsystematic) and can be reduced through diversification. Interest-rate, inflation, market, currency, and political risks are systematic and affect the market broadly.",
+      "citations": [
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A registered representative recommends that a customer with a moderate risk tolerance invest 90% of liquid net worth in a single speculative biotech stock because the rep believes the company will be acquired. Under Reg BI, this recommendation MOST likely violates which obligation?",
+      "choices": [
+        "Disclosure Obligation only",
+        "Care Obligation",
+        "Compliance Obligation only",
+        "No obligation is violated because the customer can decline the recommendation"
+      ],
+      "answer": 1,
+      "explanation": "The Care Obligation requires that recommendations be in the retail customer's best interest based on the customer's profile and that the rep understand potential risks, rewards, and costs. Concentrating 90% of liquid assets in a single speculative position for a moderate-risk customer breaches that obligation regardless of the customer's right to decline.",
+      "citations": [
+        "17 CFR 240.15l-1",
+        "Rule 2111"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about benchmarks is MOST accurate?",
+      "choices": [
+        "The Wilshire 5000 is designed as a narrow measure of only the 30 largest U.S. industrial firms",
+        "The MSCI EAFE Index is commonly used as a benchmark for developed-market international equities outside the U.S. and Canada",
+        "The Nasdaq Composite is a price-weighted index of only 30 stocks",
+        "The Russell 2000 tracks the largest 2,000 U.S. companies by market capitalization"
+      ],
+      "answer": 1,
+      "explanation": "MSCI EAFE (Europe, Australasia, Far East) benchmarks developed international equities excluding the U.S. and Canada. The Wilshire 5000 is a broad U.S. market index; the Nasdaq Composite is a broad market-cap-weighted index; the Russell 2000 covers small-cap U.S. issuers.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following customer situations would MOST likely require the registered representative to update the customer's investment profile before making additional recommendations?",
+      "choices": [
+        "The customer changed her email address",
+        "The customer retired, lost her primary income, and her time horizon for needing funds shortened significantly",
+        "The customer moved to a new apartment in the same city",
+        "The market closed lower for three consecutive sessions"
+      ],
+      "answer": 1,
+      "explanation": "A material change in financial situation, income, and time horizon directly affects suitability factors and must be reflected in the profile before additional recommendations are made. Address or email updates are recordkeeping items, and short-term market movement is not customer-specific information.",
+      "citations": [
+        "Rule 2111",
+        "Rule 4512"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer holds a portfolio entirely in long-term, fixed-rate U.S. Treasury bonds. Which combination of risks is the customer MOST exposed to?",
+      "choices": [
+        "Significant credit (default) risk and minimal interest-rate risk",
+        "Significant interest-rate risk and purchasing-power (inflation) risk",
+        "Significant business risk and currency risk",
+        "Significant liquidity risk and default risk"
+      ],
+      "answer": 1,
+      "explanation": "Long-term Treasuries carry essentially no default/credit risk because they are backed by the U.S. government, and they are highly liquid. However, their long duration creates substantial interest-rate risk, and their fixed payments are eroded by inflation (purchasing-power risk).",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13222,
+    "output": 3310
+  },
+  "cost_usd": 0.4466
+}

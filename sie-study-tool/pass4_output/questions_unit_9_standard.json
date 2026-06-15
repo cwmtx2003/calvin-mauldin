@@ -1,0 +1,301 @@
+{
+  "unit": 9,
+  "unit_name": "Economics",
+  "jf": "km",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Which of the following best describes the sequence of the four phases of the business cycle?",
+      "choices": [
+        "Expansion, peak, contraction, trough",
+        "Trough, contraction, peak, expansion",
+        "Peak, expansion, trough, contraction",
+        "Contraction, expansion, peak, trough"
+      ],
+      "answer": 0,
+      "explanation": "The business cycle moves from expansion to a peak, then into contraction, bottoming at a trough before the next expansion. The other sequences are out of order.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "A recession is most commonly defined as:",
+      "choices": [
+        "Any single quarter in which the unemployment rate rises",
+        "Two consecutive quarters of declining real gross domestic product (GDP)",
+        "A 10% or greater decline in a broad stock index",
+        "A period in which the Federal Reserve raises the discount rate"
+      ],
+      "answer": 1,
+      "explanation": "A recession is generally defined as two consecutive quarters of negative real GDP growth. Stock-market declines and Fed actions are not, by themselves, the definition of a recession.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is considered a LEADING economic indicator?",
+      "choices": [
+        "Gross domestic product (GDP)",
+        "Average duration of unemployment",
+        "Stock prices (S&P 500)",
+        "Corporate profits"
+      ],
+      "answer": 2,
+      "explanation": "Stock prices are a classic leading indicator because they tend to anticipate changes in economic activity. GDP and corporate profits are coincident, and average duration of unemployment is a lagging indicator.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "An industry whose revenues and earnings are largely unaffected by the business cycle\u2014such as food, utilities, and basic household products\u2014is BEST classified as:",
+      "choices": [
+        "Cyclical",
+        "Defensive",
+        "Growth",
+        "Speculative"
+      ],
+      "answer": 1,
+      "explanation": "Defensive industries provide goods and services consumers continue to buy regardless of economic conditions. Cyclical industries are highly sensitive to the business cycle.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which economic theory emphasizes the use of government spending and taxation (fiscal policy) to manage aggregate demand and smooth the business cycle?",
+      "choices": [
+        "Monetarist theory",
+        "Supply-side theory",
+        "Keynesian theory",
+        "Classical theory"
+      ],
+      "answer": 2,
+      "explanation": "Keynesian economics emphasizes active fiscal policy\u2014government spending and taxation\u2014to influence aggregate demand. Monetarists focus on controlling the money supply, and supply-siders emphasize tax cuts to boost production.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is the principal monetary-policy responsibility of the Federal Reserve Board?",
+      "choices": [
+        "Setting federal tax rates",
+        "Regulating the money supply and credit conditions in the U.S. economy",
+        "Insuring deposits at commercial banks",
+        "Approving registration statements for new securities offerings"
+      ],
+      "answer": 1,
+      "explanation": "The Federal Reserve conducts monetary policy by regulating the money supply and credit. Tax policy is set by Congress, deposit insurance is provided by the FDIC, and the SEC reviews registration statements.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Through open-market operations, when the Federal Open Market Committee (FOMC) directs the purchase of U.S. Treasury securities in the open market, the most likely effect is to:",
+      "choices": [
+        "Decrease bank reserves and raise short-term interest rates",
+        "Increase bank reserves and put downward pressure on short-term interest rates",
+        "Leave reserves unchanged but raise the discount rate",
+        "Reduce the money supply and slow inflation"
+      ],
+      "answer": 1,
+      "explanation": "Buying Treasuries injects reserves into the banking system, increasing the money supply and putting downward pressure on short-term rates. Selling securities would have the opposite effect.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "The interest rate the Federal Reserve charges depository institutions that borrow directly from the Fed's discount window is called the:",
+      "choices": [
+        "Federal funds rate",
+        "Prime rate",
+        "Discount rate",
+        "Broker call rate"
+      ],
+      "answer": 2,
+      "explanation": "The discount rate is charged by the Fed on loans to depository institutions. The federal funds rate is the rate banks charge each other for overnight loans of reserves; the prime rate is charged by banks to their best corporate customers; and the broker call rate is charged by banks to broker-dealers on margin loans.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which rate is the interest rate that commercial banks charge each other for overnight loans of reserve balances?",
+      "choices": [
+        "Discount rate",
+        "Federal funds rate",
+        "Prime rate",
+        "Broker call rate"
+      ],
+      "answer": 1,
+      "explanation": "The federal funds rate is the rate at which banks lend reserves to each other overnight. The discount rate is set by the Fed for loans from the discount window.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "The voting membership of the Federal Open Market Committee (FOMC) consists of:",
+      "choices": [
+        "All 12 Federal Reserve Bank presidents",
+        "The 7 members of the Board of Governors only",
+        "The 7 members of the Board of Governors, the president of the New York Fed, and 4 rotating regional Fed presidents",
+        "The Secretary of the Treasury and the 7 members of the Board of Governors"
+      ],
+      "answer": 2,
+      "explanation": "The FOMC has 12 voting members: the 7 Board Governors, the New York Fed president (permanent voter), and 4 of the remaining 11 regional Fed presidents who rotate annually.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "If the U.S. dollar strengthens significantly against the euro, the most likely effect on U.S. trade is that:",
+      "choices": [
+        "U.S. exports to Europe become cheaper for European buyers",
+        "U.S. imports from Europe become more expensive for U.S. buyers",
+        "U.S. exports to Europe become more expensive for European buyers, while European imports become cheaper for U.S. buyers",
+        "Both U.S. exports and imports become more expensive"
+      ],
+      "answer": 2,
+      "explanation": "A stronger dollar means each dollar buys more foreign currency, so European-made imports become cheaper for Americans, while U.S. exports become more expensive for Europeans and tend to decline.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "On a corporation's balance sheet, the basic accounting equation states that:",
+      "choices": [
+        "Assets = Liabilities + Stockholders' Equity",
+        "Revenues \u2212 Expenses = Net Income",
+        "Assets \u2212 Revenues = Liabilities",
+        "Stockholders' Equity = Assets + Liabilities"
+      ],
+      "answer": 0,
+      "explanation": "The balance sheet equation is Assets = Liabilities + Stockholders' Equity. The revenues-minus-expenses formulation describes the income statement, not the balance sheet.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12075,
+    "output": 2600
+  },
+  "cost_usd": 0.3761
+}

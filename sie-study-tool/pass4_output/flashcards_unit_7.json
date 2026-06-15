@@ -1,0 +1,580 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "jf": "tc",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Systematic risk",
+      "back": "Risk affecting the entire market that cannot be eliminated through diversification. Includes market risk, interest-rate risk, inflation (purchasing power) risk, currency/exchange-rate risk, and political/legislative risk.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Nonsystematic (unsystematic) risk",
+      "back": "Risk unique to a specific issuer, industry, or sector that CAN be reduced through diversification. Includes business risk, financial (credit) risk, regulatory risk, and liquidity risk.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "How can systematic risk and nonsystematic risk each be mitigated?",
+      "back": "Nonsystematic risk is mitigated through diversification across issuers, industries, sectors, and asset classes. Systematic (market) risk cannot be diversified away within the same asset class; it is mitigated through asset allocation, hedging (e.g., options), and adjusting time horizon.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Market risk",
+      "back": "A systematic risk that the price of a security will decline due to overall market movements, regardless of the issuer's fundamentals. Most directly applicable to equity securities.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Interest-rate risk",
+      "back": "A systematic risk that the value of a fixed-income security will decline when interest rates rise. Longer-duration bonds carry greater interest-rate risk.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Inflation (purchasing power) risk",
+      "back": "A systematic risk that returns will not keep pace with inflation, eroding real purchasing power. Most acute for fixed-income securities and cash equivalents; equities historically offer better long-term protection.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Reinvestment risk",
+      "back": "The risk that interim cash flows (coupons or called principal) must be reinvested at lower prevailing rates. Heightened in declining-rate environments and for callable bonds. Zero-coupon bonds eliminate reinvestment risk on coupons.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Credit (financial/default) risk",
+      "back": "Nonsystematic risk that an issuer will fail to make timely interest or principal payments. Measured by ratings from NRSROs (e.g., Moody's, S&P, Fitch); U.S. Treasuries are considered to have negligible credit risk.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Liquidity (marketability) risk",
+      "back": "Risk that an investor cannot sell a security quickly at a fair price. Higher for thinly traded securities, limited partnerships, certain municipal bonds, and private placements.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Business risk",
+      "back": "Nonsystematic risk that a specific company's operations will underperform, hurting earnings and share price. Diversifiable by holding multiple issuers across industries.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Legislative/regulatory risk",
+      "back": "Risk that changes in laws, regulations, or tax policy will adversely affect an investment (e.g., loss of tax-exempt status, new industry regulations).",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Currency (exchange-rate) risk",
+      "back": "Risk that fluctuations in foreign exchange rates will reduce the U.S.-dollar value of investments denominated in foreign currencies. Affects ADRs, foreign bonds, and international funds.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "Under Regulation Best Interest, what is a 'recommendation' to a retail customer?",
+      "back": "A communication that, viewed objectively, would reasonably be viewed as a 'call to action' to engage in a specific securities transaction or investment strategy. Triggers the four Reg BI obligations: Disclosure, Care, Conflict of Interest, and Compliance.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "What are the four obligations a broker-dealer must satisfy under Regulation Best Interest when making a recommendation to a retail customer?",
+      "back": "(1) Disclosure Obligation \u2013 disclose material facts about the relationship and the recommendation; (2) Care Obligation \u2013 exercise reasonable diligence, care, and skill; (3) Conflict of Interest Obligation \u2013 identify and mitigate/eliminate conflicts; (4) Compliance Obligation \u2013 establish written policies and procedures reasonably designed to achieve compliance.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "When must Form CRS be delivered, and to whom?",
+      "back": "Broker-dealers must deliver Form CRS (Customer Relationship Summary) to retail investors at or before the earliest of: recommending an account type, security or strategy; placing an order; or opening a brokerage account. It is required only for retail investors.",
+      "citation": "17 CFR 240.17a-14",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2111 (suitability), what three suitability components must a recommendation satisfy?",
+      "back": "(1) Reasonable-basis suitability \u2013 the recommendation is suitable for at least some investors based on reasonable diligence; (2) Customer-specific suitability \u2013 it is suitable for the particular customer based on their profile; (3) Quantitative suitability \u2013 a series of recommendations is not excessive in light of the customer's profile.",
+      "citation": "Rule 2111",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2090 (Know Your Customer), what must a firm do?",
+      "back": "Use reasonable diligence to know the essential facts concerning every customer and the authority of persons acting on behalf of the customer when opening and maintaining each account.",
+      "citation": "Rule 2090",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "What key components make up a customer's investment profile used to evaluate suitability and Reg BI?",
+      "back": "Age, other investments, financial situation and needs, tax status, investment objectives, investment experience, investment time horizon, liquidity needs, and risk tolerance.",
+      "citation": "Rule 2111",
+      "unit": 7
+    },
+    {
+      "type": "scenario",
+      "front": "A 68-year-old retiree relies on portfolio income for living expenses, has low risk tolerance, and needs principal preservation. A registered rep recommends a portfolio heavily weighted in small-cap growth stocks and high-yield bonds. Is this consistent with Reg BI/Rule 2111?",
+      "back": "No. The recommendation fails customer-specific suitability and Reg BI's Care Obligation. The investments' high volatility, credit risk, and lack of reliable income conflict with the customer's objectives (income, preservation), short time horizon, and low risk tolerance.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Dow Jones Industrial Average (DJIA)",
+      "back": "A price-weighted index of 30 large U.S. blue-chip stocks. Higher-priced stocks have greater influence on the index value.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "S&P 500 Index",
+      "back": "A market-capitalization-weighted index of 500 large-cap U.S. stocks; widely regarded as the primary benchmark for U.S. large-cap equity performance.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Nasdaq Composite Index",
+      "back": "A market-cap-weighted index of all common stocks listed on the Nasdaq Stock Market; heavily weighted toward technology companies.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Russell 2000 Index",
+      "back": "A market-cap-weighted index of approximately 2,000 small-cap U.S. stocks; the principal benchmark for U.S. small-cap equity performance.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "Wilshire 5000 Total Market Index",
+      "back": "A market-cap-weighted index designed to capture the total U.S. equity market across all capitalizations.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "definition",
+      "front": "MSCI EAFE Index",
+      "back": "A market-cap-weighted index tracking large- and mid-cap equity performance across developed markets in Europe, Australasia, and the Far East \u2014 the standard benchmark for developed international (non-U.S./Canada) equities.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "Match the benchmark to its weighting method: DJIA, S&P 500, Nasdaq Composite, Russell 2000.",
+      "back": "DJIA \u2014 price-weighted. S&P 500 \u2014 market-cap-weighted. Nasdaq Composite \u2014 market-cap-weighted. Russell 2000 \u2014 market-cap-weighted.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "scenario",
+      "front": "A customer asks which index best benchmarks an actively managed small-cap U.S. equity mutual fund. Which would you recommend, and why?",
+      "back": "The Russell 2000, because it is the primary U.S. small-cap benchmark. The S&P 500 and DJIA reflect large-cap performance and would not provide a meaningful comparison for a small-cap strategy.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a 'recommendation' and an unsolicited order, and why does the distinction matter?",
+      "back": "A recommendation is a call to action by the firm/rep to buy, sell, or hold a specific security or strategy; an unsolicited order originates from the customer. Reg BI and Rule 2111 suitability obligations attach only to recommendations, not to unsolicited transactions, though KYC (Rule 2090) still applies.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "Which type of investment is most exposed to interest-rate risk, and how does duration relate to that exposure?",
+      "back": "Long-term, low-coupon (especially zero-coupon) fixed-income securities. The longer the duration, the greater the price decline for a given rise in interest rates.",
+      "citation": null,
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "A customer wants high current income with low credit risk and minimal interest-rate risk. Which investment characteristics best match?",
+      "back": "Short-term, high-credit-quality fixed-income securities (e.g., short-term Treasuries, high-grade short-term corporates). They provide income while limiting both default risk and price volatility from rate changes.",
+      "citation": null,
+      "unit": 7
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13187,
+    "output": 3881
+  },
+  "cost_usd": 0.4889
+}

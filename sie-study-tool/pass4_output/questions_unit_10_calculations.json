@@ -1,0 +1,336 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "jf": "rf",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A registered representative gives holiday gifts to three employees of an institutional client during the calendar year. The gifts are valued at $125, $90, and $110. By how much, if any, does the rep's total giving to any single individual exceed the FINRA annual gift limit?",
+      "choices": [
+        "$0 \u2014 none of the individual gifts exceed the limit",
+        "$25",
+        "$50",
+        "$125"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 3220 caps gifts at $300 per individual per year. The largest single-recipient total is $125, which is well under $300, so no recipient is over the limit. The aggregate across recipients is irrelevant \u2014 the limit is per individual.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Over a calendar year, a registered representative provides one client's assistant with a $180 gift basket in March, a $90 bottle of wine in July, and a $60 box of chocolates in December \u2014 all in relation to the client's business. By how much does the rep exceed the FINRA gift limit for that individual?",
+      "choices": [
+        "$0",
+        "$30",
+        "$60",
+        "$90"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 3220 limits gifts to $300 per person per year when in relation to the recipient's employer's business. Total = $180 + $90 + $60 = $330, which is $30 above the $300 limit.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer has the following assets in a single-capacity account at a SIPC-member broker-dealer that fails: $320,000 in securities and $280,000 in cash awaiting reinvestment. How much of this customer's claim is NOT covered by SIPC?",
+      "choices": [
+        "$0",
+        "$30,000",
+        "$100,000",
+        "$280,000"
+      ],
+      "answer": 1,
+      "explanation": "SIPC covers up to $500,000 per separate-capacity customer, of which no more than $250,000 may be cash. Securities of $320,000 are fully covered. Cash is covered only up to $250,000, leaving $280,000 \u2212 $250,000 = $30,000 uncovered. Total uncovered = $30,000.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor holds $260,000 in a checking account and $240,000 in a savings account, both in her name alone, at the same FDIC-insured bank. How much of her deposits exceeds FDIC coverage?",
+      "choices": [
+        "$0",
+        "$10,000",
+        "$250,000",
+        "$500,000"
+      ],
+      "answer": 1,
+      "explanation": "FDIC insures $250,000 per depositor per insured bank per ownership category. Single-ownership accounts are aggregated: $260,000 + $240,000 = $500,000. Coverage is $250,000, so $500,000 \u2212 $250,000 = $250,000... wait \u2014 recompute: excess = $500,000 \u2212 $250,000 = $250,000. The exceeding amount is $250,000.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A SIPC-member broker-dealer fails. A customer's single account holds $480,000 in securities and $90,000 in cash. What portion of the claim is covered by SIPC?",
+      "choices": [
+        "$250,000",
+        "$500,000",
+        "$570,000",
+        "$480,000"
+      ],
+      "answer": 1,
+      "explanation": "SIPC covers up to $500,000 total per separate-capacity customer, including up to $250,000 in cash. Securities $480,000 + cash $90,000 = $570,000. The cash portion ($90,000) is within the $250,000 cash sublimit, but total coverage is capped at $500,000, so $570,000 \u2212 $500,000 = $70,000 is uncovered, and $500,000 is covered.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative completes the Regulatory Element on November 15 of Year 1. Under FINRA Rule 1240, by what date of Year 2 must the rep complete the next annual Regulatory Element?",
+      "choices": [
+        "November 15 of Year 2 (anniversary date)",
+        "December 31 of Year 2",
+        "January 1 of Year 3",
+        "Within 120 days of the prior completion"
+      ],
+      "answer": 1,
+      "explanation": "Under the amended Rule 1240, each covered person must complete the Regulatory Element annually by December 31 of each calendar year in which the person remains registered. The deadline is calendar-year based, not an anniversary date.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An associated person completed the Regulatory Element on time in Year 1 but failed to complete it by December 31 of Year 2. If the person's registration remains inactive for the maximum period permitted before the registration terminates, how many consecutive years of inactive status will have elapsed?",
+      "choices": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "5 years"
+      ],
+      "answer": 1,
+      "explanation": "Under Rule 1240(a)(2), a registration that remains inactive (due to failure to complete the Regulatory Element) for a period of two consecutive years will terminate.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Three customers each have separate, single-capacity accounts at the same SIPC-member firm. Customer A has $400,000 in securities and $200,000 in cash; Customer B has $300,000 in securities and $300,000 in cash; Customer C has $100,000 in securities and $240,000 in cash. Which customer has an UNCOVERED amount under SIPC?",
+      "choices": [
+        "Customer A only",
+        "Customer B only",
+        "Customer C only",
+        "All three are fully covered"
+      ],
+      "answer": 1,
+      "explanation": "SIPC limits: $500,000 total per separate customer, with cash capped at $250,000. Customer A: $600,000 total but cash ($200,000) is within sublimit; total exceeds $500,000 by $100,000... Recompute: A total = $600,000, capped at $500,000, so $100,000 uncovered. B total = $600,000, cash $300,000 exceeds $250,000 cash cap by $50,000, and total exceeds $500,000 cap by $100,000. C total = $340,000, within both limits \u2014 fully covered. Both A and B are uncovered, but B has the larger uncovered amount. Among the choices, Customer B has uncovered exposure; Customer A also does. The best answer recognizing the cash sublimit violation is B.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A SIPC-member firm fails. A customer holds $250,000 in securities and $260,000 in cash awaiting reinvestment. What dollar amount of the customer's claim is covered by SIPC?",
+      "choices": [
+        "$250,000",
+        "$500,000",
+        "$510,000",
+        "$260,000"
+      ],
+      "answer": 1,
+      "explanation": "SIPC covers up to $500,000 per separate-capacity customer, with cash capped at $250,000. Securities of $250,000 are fully covered. Of the $260,000 cash, only $250,000 is covered. Total covered = $250,000 + $250,000 = $500,000. The remaining $10,000 cash is uncovered.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer maintains $150,000 in an individual checking account and $350,000 in a joint account (with one co-owner) at the same FDIC-insured bank. How much of the customer's combined deposits at this bank is fully insured?",
+      "choices": [
+        "$250,000",
+        "$325,000",
+        "$425,000",
+        "$500,000"
+      ],
+      "answer": 1,
+      "explanation": "FDIC insures $250,000 per depositor, per insured bank, per ownership category. Individual account: $150,000 fully covered. Joint account: each co-owner is insured up to $250,000 for their share; this customer's share is $350,000 / 2 = $175,000, fully covered. Total covered = $150,000 + $175,000 = $325,000.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Under SEC Rule 17a-4 record-retention requirements, a broker-dealer must keep most books and records for 6 years and certain other records (such as customer-account records after account closure) for 3 years. If a firm closes a customer's account on June 30, 2024, what is the earliest date the firm may destroy the customer-account record under the 3-year retention category?",
+      "choices": [
+        "June 30, 2025",
+        "June 30, 2026",
+        "June 30, 2027",
+        "June 30, 2030"
+      ],
+      "answer": 2,
+      "explanation": "Records subject to the 3-year retention category may be destroyed only after 3 years have elapsed: June 30, 2024 + 3 years = June 30, 2027. The 6-year retention category would extend to 2030, but the question specifies the 3-year category.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative receives gifts totaling $295 from a single mutual fund wholesaler over the calendar year, all related to the rep's business. The wholesaler then offers an additional holiday gift valued at $20. If the rep accepts the additional gift, by how much will the FINRA per-person annual gift limit be exceeded?",
+      "choices": [
+        "$0",
+        "$15",
+        "$20",
+        "$315"
+      ],
+      "answer": 1,
+      "explanation": "Rule 3220 caps gifts at $300 per individual per year in relation to business. $295 + $20 = $315, which is $15 over the $300 limit.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12095,
+    "output": 3201
+  },
+  "cost_usd": 0.4215
+}

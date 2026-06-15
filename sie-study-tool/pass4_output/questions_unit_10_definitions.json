@@ -1,0 +1,338 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "jf": "rf",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes the self-regulatory organization that writes rules governing the activities of broker-dealers transacting in municipal securities but does not itself enforce those rules against its registrants?",
+      "choices": [
+        "FINRA",
+        "SEC",
+        "MSRB",
+        "NASAA"
+      ],
+      "answer": 2,
+      "explanation": "The MSRB writes rules for the municipal securities industry, but enforcement is carried out by FINRA, the SEC, and the federal bank regulators against their respective members. FINRA is itself an enforcement SRO, not the rule-writer for municipals.",
+      "citations": [
+        "Rule G-2"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term best describes the federal agency created by the Securities Exchange Act of 1934 and charged with administering the federal securities laws?",
+      "choices": [
+        "FINRA",
+        "Securities and Exchange Commission (SEC)",
+        "Federal Reserve Board",
+        "Securities Investor Protection Corporation (SIPC)"
+      ],
+      "answer": 1,
+      "explanation": "The SEC was created by the Exchange Act of 1934 to administer federal securities laws. FINRA is an SRO, the Fed handles monetary policy and margin (Reg T), and SIPC provides limited customer protection in a broker-dealer liquidation.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The term \"statutory disqualification\" as used in the Exchange Act refers to a status that:",
+      "choices": [
+        "Disqualifies a person from receiving SIPC coverage",
+        "Prohibits a person from being a member of, or associated with a member of, a self-regulatory organization based on specified disciplinary or criminal events",
+        "Bars a customer from filing a FINRA arbitration claim",
+        "Disqualifies a security from being listed on a national securities exchange"
+      ],
+      "answer": 1,
+      "explanation": "Section 3(a)(39) of the Exchange Act defines statutory disqualification \u2014 events (such as certain felonies, expulsions, or bars) that make a person ineligible to be an SRO member or to associate with one. The other choices describe unrelated regimes.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the nonprofit, member-funded corporation that provides limited protection to customers of a failed broker-dealer, with separate-capacity coverage up to $500,000 (of which up to $250,000 may be cash)?",
+      "choices": [
+        "FDIC",
+        "SIPC",
+        "FINRA",
+        "OCC"
+      ],
+      "answer": 1,
+      "explanation": "SIPC provides up to $500,000 per separate-capacity customer (of which up to $250,000 may be cash) in a broker-dealer liquidation. FDIC insures bank deposits, FINRA is the broker-dealer SRO, and the OCC supervises national banks.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The association of state securities regulators that promotes coordination among state administrators and supports the Uniform Securities Act is known as:",
+      "choices": [
+        "NASAA",
+        "NASD",
+        "MSRB",
+        "SIPC"
+      ],
+      "answer": 0,
+      "explanation": "NASAA (North American Securities Administrators Association) is the organization of state securities administrators and is associated with the Uniform Securities Act. NASD was the FINRA predecessor; MSRB writes municipal rules; SIPC is the broker-dealer customer protection corporation.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the federal Treasury bureau that administers the Bank Secrecy Act and is the federal regulator to which suspicious activity reports (SARs) are filed?",
+      "choices": [
+        "OCC",
+        "FinCEN",
+        "IRS",
+        "SEC"
+      ],
+      "answer": 1,
+      "explanation": "FinCEN, a bureau of the Treasury, administers the Bank Secrecy Act and is the recipient of SAR filings. The OCC supervises national banks, the IRS administers tax law, and the SEC enforces federal securities laws.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the self-regulatory organization that was formed in 2007 by the consolidation of NASD with the member regulation functions of the NYSE, and that today is the SRO for U.S. broker-dealers?",
+      "choices": [
+        "MSRB",
+        "FINRA",
+        "SIPC",
+        "CBOE"
+      ],
+      "answer": 1,
+      "explanation": "FINRA was created in 2007 from the consolidation of NASD with NYSE Member Regulation and is the principal SRO for U.S. broker-dealers. MSRB writes municipal rules, SIPC handles broker-dealer liquidations, and CBOE is an options exchange.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The FINRA continuing education component that consists of training tailored by a member firm to its own business and supervisory needs is known as the:",
+      "choices": [
+        "Regulatory Element",
+        "Firm Element",
+        "Permitted Activities Element",
+        "Outside Business Element"
+      ],
+      "answer": 1,
+      "explanation": "The Firm Element of CE is the in-house training developed by a member to address its specific products, services, and customer base. The Regulatory Element is the standardized FINRA-administered component.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the FINRA-administered, content-standardized continuing education requirement that registered persons must complete annually by year-end?",
+      "choices": [
+        "Firm Element",
+        "Regulatory Element",
+        "Investor Education Element",
+        "Supervisory Element"
+      ],
+      "answer": 1,
+      "explanation": "The Regulatory Element is FINRA's standardized CE that registered persons must complete annually by December 31. The Firm Element is the firm-designed training. The other choices are not CE components.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under SRO rules, the term \"member\" of FINRA refers to:",
+      "choices": [
+        "Any registered representative who has passed a qualification exam",
+        "Any broker or dealer admitted to membership in FINRA and subject to its rules",
+        "Any customer who maintains an account at a FINRA firm",
+        "Any officer of the SEC"
+      ],
+      "answer": 1,
+      "explanation": "Exchange Act \u00a73(a)(39) and related definitions treat a \"member\" of a registered securities association as a broker or dealer that has agreed to be regulated by, and is subject to enforcement by, the association. Individual registered persons are \"associated persons,\" not members.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the federal bureau within the Department of the Treasury that charters and supervises national banks?",
+      "choices": [
+        "OCC (Office of the Comptroller of the Currency)",
+        "FinCEN",
+        "FDIC",
+        "SEC"
+      ],
+      "answer": 0,
+      "explanation": "The OCC, a bureau of the Treasury, charters and supervises national banks. FinCEN administers the BSA, FDIC insures bank deposits, and the SEC regulates securities markets.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the consolidated, SEC-mandated audit trail that, effective September 1, 2021, replaced OATS for tracking the lifecycle of orders in NMS securities and listed options?",
+      "choices": [
+        "CAT (Consolidated Audit Trail)",
+        "TRACE",
+        "RTRS",
+        "EMMA"
+      ],
+      "answer": 0,
+      "explanation": "CAT replaced OATS as the order-event audit trail effective 9/1/2021. TRACE reports corporate/agency bond transactions, RTRS reports municipal trades, and EMMA is the MSRB's disclosure portal.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12095,
+    "output": 2697
+  },
+  "cost_usd": 0.3837
+}

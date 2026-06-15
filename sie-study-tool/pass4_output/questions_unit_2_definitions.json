@@ -1,0 +1,285 @@
+{
+  "unit": 2,
+  "unit_name": "Equity Securities",
+  "jf": "pr",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes a security that represents ownership in a foreign corporation but trades in U.S. markets and is denominated in U.S. dollars?",
+      "choices": [
+        "American Depositary Receipt (ADR)",
+        "Warrant",
+        "Preemptive right",
+        "Convertible debenture"
+      ],
+      "answer": 0,
+      "explanation": "An ADR is a negotiable certificate issued by a U.S. bank representing shares of a foreign company, allowing it to trade in U.S. markets in U.S. dollars. A warrant is a long-term right to buy stock from the issuer, not foreign ownership.",
+      "citations": [
+        "17 CFR 240.3a11-1"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The term \"limited liability\" as applied to common stockholders is best defined as:",
+      "choices": [
+        "The right to vote only on limited matters affecting the corporation",
+        "The maximum potential loss being limited to the amount invested in the shares",
+        "A cap on the amount of dividends that may be received in any year",
+        "A restriction limiting the number of shares any single holder may own"
+      ],
+      "answer": 1,
+      "explanation": "Limited liability means a common stockholder cannot lose more than the amount invested; personal assets are not at risk for corporate debts. The other choices misuse the term.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a security that gives the holder a long-term right, typically issued by a corporation as a sweetener attached to a bond or preferred stock, to purchase the issuer's common stock at a fixed price?",
+      "choices": [
+        "Right",
+        "Warrant",
+        "Call option",
+        "ADR"
+      ],
+      "answer": 1,
+      "explanation": "A warrant is a long-term instrument issued by the corporation granting the right to buy its stock at a stated price; warrants are commonly attached to senior securities as sweeteners. A right is short-term and issued in connection with a preemptive offering.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "\"Cumulative\" preferred stock is best defined as preferred stock that:",
+      "choices": [
+        "Allows the holder to participate in additional dividends beyond the stated rate when the issuer is profitable",
+        "Accrues any unpaid stated dividends, which must be paid in full before any common stock dividends may be paid",
+        "Can be exchanged into a fixed number of common shares at the holder's option",
+        "May be redeemed by the issuer at a predetermined price before maturity"
+      ],
+      "answer": 1,
+      "explanation": "Cumulative preferred stock accumulates any skipped dividends (\"in arrears\"), which must be paid before common dividends. Participating describes sharing in extra dividends; convertible describes exchange into common; callable describes issuer redemption.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following best describes \"convertible\" preferred stock?",
+      "choices": [
+        "Preferred stock that may be redeemed by the issuer at a fixed price",
+        "Preferred stock whose dividend rate adjusts periodically with market rates",
+        "Preferred stock that can be exchanged for a specified number of shares of the issuer's common stock",
+        "Preferred stock that accumulates unpaid dividends until they are paid"
+      ],
+      "answer": 2,
+      "explanation": "Convertible preferred stock gives the holder the right to exchange the preferred shares for a fixed number of the issuer's common shares. Callable describes issuer redemption; cumulative describes dividend accrual.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "In a corporate liquidation, the order of payment to security holders is best described as:",
+      "choices": [
+        "Common stockholders, then preferred stockholders, then bondholders",
+        "Preferred stockholders, then bondholders, then common stockholders",
+        "Secured creditors and bondholders, then preferred stockholders, then common stockholders",
+        "Common stockholders and preferred stockholders pro rata, then bondholders"
+      ],
+      "answer": 2,
+      "explanation": "In liquidation, secured creditors and bondholders are paid before preferred stockholders, who are paid before common stockholders (the residual claimants). The other orderings reverse the priority.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under SEC Rule 144, the term \"restricted securities\" is best defined as securities that:",
+      "choices": [
+        "Are owned by an officer, director, or 10% shareholder of the issuer regardless of how acquired",
+        "Were acquired directly or indirectly from the issuer or an affiliate in an unregistered transaction",
+        "Have been delisted from a national securities exchange",
+        "Are subject to a transfer agent stop-order due to lost certificates"
+      ],
+      "answer": 1,
+      "explanation": "Restricted securities under Rule 144 are those acquired in unregistered (private) transactions from the issuer or an affiliate. Securities held by affiliates are \"control securities,\" which may or may not also be restricted.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a short-term security, typically issued to existing shareholders, allowing them to purchase additional shares of the issuer's stock at a discount to the current market price in order to maintain proportionate ownership?",
+      "choices": [
+        "Warrant",
+        "Preemptive right",
+        "Convertible bond",
+        "American Depositary Receipt"
+      ],
+      "answer": 1,
+      "explanation": "A preemptive right (issued in a rights offering) is short-term and issued to existing shareholders at a subscription price below market, preserving proportionate ownership. Warrants are long-term and not tied to maintaining proportional ownership.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An \"equity security\" under SEC rules is best defined as:",
+      "choices": [
+        "Any debt obligation of a corporation that is convertible into stock",
+        "Any stock or similar security, or any security convertible into or carrying a right to subscribe to or purchase such a security",
+        "Only common stock listed on a national securities exchange",
+        "Any security issued by a U.S. corporation, whether debt or stock"
+      ],
+      "answer": 1,
+      "explanation": "SEC Rule 3a11-1 defines an equity security broadly to include any stock or similar security, plus securities convertible into or carrying rights to purchase such a security (e.g., warrants, rights, convertibles). It is not limited to listed common stock.",
+      "citations": [
+        "17 CFR 240.3a11-1"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The term \"statutory voting\" as used with common stock means that a shareholder:",
+      "choices": [
+        "May cast all of his or her votes for a single director in a board election",
+        "Must vote in person at the annual meeting and may not vote by proxy",
+        "Receives one vote per share owned for each separate item or director position being voted on",
+        "Has voting rights only on matters affecting the capital structure of the corporation"
+      ],
+      "answer": 2,
+      "explanation": "Under statutory voting, a shareholder receives one vote per share for each director or matter, voted separately. Cumulative voting (not statutory) allows concentrating votes on a single candidate.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following best describes an American Depositary Receipt (ADR) holder's typical rights?",
+      "choices": [
+        "Full voting rights in the foreign company identical to domestic shareholders",
+        "Receipt of dividends in U.S. dollars but generally limited or no direct voting rights in the foreign company",
+        "Guaranteed U.S. tax exemption on dividends received",
+        "Direct ownership of the underlying foreign shares held in the holder's own name"
+      ],
+      "answer": 1,
+      "explanation": "ADR holders receive dividends in U.S. dollars (converted by the depositary bank) and generally have limited or no voting rights, since the depositary bank holds the underlying shares. The bank, not the investor, is the direct shareholder of record.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes preferred stock whose holders may, in addition to receiving the stated dividend, share in additional dividend distributions along with common stockholders when corporate earnings exceed specified levels?",
+      "choices": [
+        "Cumulative preferred",
+        "Participating preferred",
+        "Callable preferred",
+        "Convertible preferred"
+      ],
+      "answer": 1,
+      "explanation": "Participating preferred stock entitles holders to receive the stated dividend plus an additional share of dividends paid to common stockholders. Cumulative preferred only accrues unpaid stated dividends; it does not share in extra distributions.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12502,
+    "output": 2861
+  },
+  "cost_usd": 0.4021
+}

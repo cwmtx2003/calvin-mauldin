@@ -1,0 +1,283 @@
+{
+  "unit": 2,
+  "unit_name": "Equity Securities",
+  "jf": "pr",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "In the event a corporation is liquidated, which class of security holders has the highest priority claim on the remaining assets?",
+      "choices": [
+        "Common stockholders",
+        "Preferred stockholders",
+        "Secured bondholders",
+        "Subordinated debenture holders"
+      ],
+      "answer": 2,
+      "explanation": "Secured creditors (such as secured bondholders) are paid first in liquidation, ahead of unsecured creditors, preferred stockholders, and common stockholders. Preferred stock ranks ahead of common but behind all debt.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which feature of preferred stock entitles the holder to receive all skipped dividends before any dividend may be paid to common stockholders?",
+      "choices": [
+        "Participating",
+        "Callable",
+        "Convertible",
+        "Cumulative"
+      ],
+      "answer": 3,
+      "explanation": "Cumulative preferred requires that any dividends in arrears be paid before common shareholders receive a dividend. Participating shares allow extra dividends beyond the stated rate; convertible allows exchange into common; callable allows the issuer to redeem.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "An American Depositary Receipt (ADR) is best described as a security that:",
+      "choices": [
+        "Represents ownership of shares of a foreign company held by a U.S. depositary bank",
+        "Is issued directly by a foreign government to finance infrastructure",
+        "Allows U.S. investors to purchase foreign currency at a fixed rate",
+        "Gives the holder the right to buy foreign stock at a fixed price for a set period"
+      ],
+      "answer": 0,
+      "explanation": "An ADR is a negotiable receipt issued by a U.S. depositary bank representing a specified number of shares of a foreign corporation, allowing those shares to trade in U.S. markets in U.S. dollars. The other choices describe sovereign debt, FX contracts, and warrants/options.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which equity-related security typically has the longest life when originally issued?",
+      "choices": [
+        "A subscription right",
+        "A warrant",
+        "A call option listed on the CBOE",
+        "A put option listed on the CBOE"
+      ],
+      "answer": 1,
+      "explanation": "Warrants are long-term instruments, often issued with maturities of several years. Rights typically expire in a few weeks, and listed options generally have much shorter lives than warrants.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A holder of common stock generally has which of the following rights?",
+      "choices": [
+        "The right to receive a fixed dividend each quarter",
+        "The right to vote on major corporate matters such as the election of directors",
+        "The right to demand repayment of par value at any time",
+        "Priority over bondholders in the event of liquidation"
+      ],
+      "answer": 1,
+      "explanation": "Common stockholders have voting rights, including election of directors. Common dividends are not fixed or guaranteed, shareholders cannot demand redemption, and they stand last in liquidation behind creditors and preferred stockholders.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which term refers to stock that was acquired in an unregistered, private sale from the issuer and is therefore subject to SEC Rule 144 holding-period requirements before public resale?",
+      "choices": [
+        "Treasury stock",
+        "Restricted stock",
+        "Authorized stock",
+        "Issued stock"
+      ],
+      "answer": 1,
+      "explanation": "Restricted stock is acquired in a private (unregistered) transaction and must satisfy the holding-period and other conditions of Rule 144 before being resold publicly. Treasury stock is stock the company has repurchased; authorized and issued describe share counts.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A liability of a common shareholder for the debts of the corporation is generally limited to:",
+      "choices": [
+        "The shareholder's pro-rata share of the corporation's outstanding debt",
+        "The amount the shareholder originally invested in the stock",
+        "Twice the par value of the shares held",
+        "The market value of the shareholder's total portfolio"
+      ],
+      "answer": 1,
+      "explanation": "Limited liability means a shareholder can lose no more than what was invested in the shares. Shareholders are not personally responsible for corporate debts beyond their investment.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor exercises a listed equity call option and takes delivery of the underlying stock. The stock delivery from the exercise will settle:",
+      "choices": [
+        "Same day as exercise",
+        "T+1 after exercise",
+        "T+2 after exercise",
+        "T+3 after exercise"
+      ],
+      "answer": 1,
+      "explanation": "Following the SEC's amendment to Rule 15c6-1 effective May 28, 2024, regular-way equity settlement is T+1, and stock delivered as a result of exercising an equity option settles on that same T+1 basis.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A convertible preferred stock has a par value of $100 and a conversion ratio of 4. The conversion price of the common stock is:",
+      "choices": [
+        "$4.00",
+        "$25.00",
+        "$100.00",
+        "$400.00"
+      ],
+      "answer": 1,
+      "explanation": "Conversion price equals par value divided by conversion ratio: $100 \u00f7 4 = $25. The other figures confuse par, ratio, and total value.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes a subscription right issued to existing common stockholders?",
+      "choices": [
+        "A short-term privilege to buy additional shares of the issuer at a fixed price before a stated expiration",
+        "A long-term right, typically several years, to buy shares at a fixed price",
+        "An obligation to purchase additional shares at the current market price",
+        "A debt security convertible into common stock at the holder's option"
+      ],
+      "answer": 0,
+      "explanation": "A subscription right gives existing shareholders a short-term opportunity (typically a few weeks) to buy new shares at a set subscription price, preserving their proportional ownership. Warrants are long-term, and rights are not obligations.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which statement about preferred stock is correct?",
+      "choices": [
+        "Preferred shareholders typically have full voting rights equal to common shareholders",
+        "Preferred dividends, if declared, must be paid before common dividends",
+        "Preferred stock has a maturity date at which par value must be returned",
+        "Preferred stock ranks below common stock in claims on corporate assets"
+      ],
+      "answer": 1,
+      "explanation": "Preferred shareholders receive their stated dividend before common shareholders may be paid. Preferred typically has no or limited voting rights, no maturity date, and ranks above common (not below) in liquidation.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under SEC Rule 10b-18, the rule provides a safe harbor for:",
+      "choices": [
+        "An issuer's repurchases of its own common stock in the open market",
+        "An insider's resale of restricted securities",
+        "A broker-dealer's principal trading in municipal bonds",
+        "An investment company's distribution of fund shares"
+      ],
+      "answer": 0,
+      "explanation": "Rule 10b-18 provides a non-exclusive safe harbor from manipulation liability when an issuer (or affiliated purchaser) repurchases its own common stock and meets the rule's conditions on manner, timing, price, and volume.",
+      "citations": [
+        "17 CFR 240.10b-18"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12498,
+    "output": 2437
+  },
+  "cost_usd": 0.3702
+}

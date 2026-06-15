@@ -3,187 +3,812 @@
   "title": "Settlement, Delivery & Time Rules",
   "sections": [
     {
-      "heading": "Settlement Cycles (Reg-Way)",
+      "heading": "Regular-Way Settlement (Effective 5/28/2024)",
       "type": "table",
       "items": [
         {
-          "Security": "Equities (stocks)",
-          "Settlement": "T+1"
+          "Product": "Corporate stocks/bonds, ETFs, Muni bonds",
+          "Settlement": "T+1",
+          "Source": "17 CFR 240.15c6-1 (as amended)"
         },
         {
-          "Security": "Corporate bonds",
-          "Settlement": "T+1"
+          "Product": "U.S. Treasuries, options (premium)",
+          "Settlement": "T+1 (next business day)",
+          "Source": "17 CFR 240.15c6-1"
         },
         {
-          "Security": "Municipal bonds",
-          "Settlement": "T+1"
+          "Product": "Equity option EXERCISE \u2192 stock delivery",
+          "Settlement": "T+1 (NOT T+2)",
+          "Source": "OCC / 17 CFR 240.15c6-1"
         },
         {
-          "Security": "Options",
-          "Settlement": "T+1"
+          "Product": "Index option exercise (cash)",
+          "Settlement": "Next business day, cash (intrinsic value)",
+          "Source": "OCC"
         },
         {
-          "Security": "U.S. Treasuries",
-          "Settlement": "T+1"
+          "Product": "Cash settlement (same-day)",
+          "Settlement": "Trade date",
+          "Source": "17 CFR 240.15c6-1"
         },
         {
-          "Security": "Cash trade (same-day)",
-          "Settlement": "Same day"
-        },
-        {
-          "Security": "When-issued",
-          "Settlement": "On issuance"
+          "Product": "When-issued / when-distributed",
+          "Settlement": "Date set by NSCC/issuer (on issuance)",
+          "Source": "FINRA Uniform Practice Code"
         }
       ]
     },
     {
-      "heading": "Ex-Dividend Date (under T+1)",
-      "type": "rule",
-      "items": [
-        "Ex-date = SAME business day as record date (regular-way)",
-        "Buy ON or AFTER ex-date \u2192 DO NOT receive dividend",
-        "Declaration \u2192 Ex = Record \u2192 Payable"
-      ]
-    },
-    {
-      "heading": "Prospectus Delivery After Effective Date",
-      "type": "table",
-      "items": [
-        {
-          "Offering": "IPO \u2013 NMS (listed/Nasdaq)",
-          "Days": "25"
-        },
-        {
-          "Offering": "IPO \u2013 Non-NMS",
-          "Days": "90"
-        },
-        {
-          "Offering": "APO \u2013 NMS",
-          "Days": "0 (none)"
-        },
-        {
-          "Offering": "APO \u2013 Non-NMS",
-          "Days": "40"
-        }
-      ]
-    },
-    {
-      "heading": "Cooling-Off Period",
+      "heading": "Dividend Dates Under T+1",
       "type": "bullets",
       "items": [
-        "MINIMUM 20 calendar days between registration filing & effective date",
-        "Deficiency letter PAUSES the clock; resumes where it left off (does NOT restart)",
-        "Allowed: tombstone ads, red herrings, indications of interest, due diligence, blue-sky filings",
-        "Prohibited: sales, sales literature, advertising (other than tombstone), accepting money"
+        "Ex-Dividend Date = SAME business day as Record Date (regular-way trades, T+1).",
+        "Sequence: Declaration \u2192 Ex/Record (same day) \u2192 Payable.",
+        "Buy ON or AFTER ex-date = NOT entitled to dividend."
       ]
     },
     {
-      "heading": "Regulation T (Payment)",
-      "type": "rule",
-      "items": [
-        "Customer payment due: S+1 (1 business day after settlement)",
-        "Under T+1 settlement \u2192 effectively T+2 for customer payment",
-        "Extensions: request from FINRA/SRO; non-payment \u2192 90-day frozen account"
-      ]
-    },
-    {
-      "heading": "GTC Order Cancellation (NYSE)",
-      "type": "rule",
-      "items": [
-        "Auto-cancel: LAST business day of APRIL & OCTOBER",
-        "Must be re-entered after cancellation",
-        "Day orders expire end of trading day"
-      ]
-    },
-    {
-      "heading": "FINRA Form Filing Deadlines",
+      "heading": "Reg T \u2014 Payment & Margin (Federal Reserve)",
       "type": "table",
       "items": [
         {
-          "Form/Event": "U4 amendments (most events)",
+          "Item": "Reg T initial margin",
+          "Value": "50% of purchase price"
+        },
+        {
+          "Item": "Reg T payment deadline (customer)",
+          "Value": "S+1 (2 business days after settlement = T+2 under T+1)"
+        },
+        {
+          "Item": "Extension request",
+          "Value": "To FINRA/DEA if customer cannot pay"
+        },
+        {
+          "Item": "Failure to pay \u2192 freeze account",
+          "Value": "90 calendar days (cash up-front for buys)"
+        },
+        {
+          "Item": "FINRA min equity (long margin)",
+          "Value": "$2,000"
+        },
+        {
+          "Item": "FINRA maintenance \u2014 long / short",
+          "Value": "25% / 30%"
+        },
+        {
+          "Item": "Pattern Day Trader min equity",
+          "Value": "$25,000 (FINRA Rule 4210)"
+        }
+      ]
+    },
+    {
+      "heading": "Prospectus Delivery \u2014 Aftermarket Windows (Securities Act \u00a710)",
+      "type": "table",
+      "items": [
+        {
+          "Offering Type": "IPO \u2014 listed (NYSE/Nasdaq)",
+          "Delivery Period": "25 days after effective date"
+        },
+        {
+          "Offering Type": "IPO \u2014 non-listed / OTC",
+          "Delivery Period": "90 days after effective date"
+        },
+        {
+          "Offering Type": "Add-on / follow-on (already public)",
+          "Delivery Period": "40 days"
+        },
+        {
+          "Offering Type": "Add-on, non-reporting issuer",
+          "Delivery Period": "90 days"
+        },
+        {
+          "Offering Type": "Mutual fund / continuous offering",
+          "Delivery Period": "Ongoing \u2014 at or before confirmation"
+        },
+        {
+          "Offering Type": "Prospectus staleness limit",
+          "Delivery Period": "Info \u226416 months old if used >9 months after effective (\u00a710(a)(3))"
+        }
+      ]
+    },
+    {
+      "heading": "Registration / Cooling-Off Period (Securities Act \u00a78)",
+      "type": "bullets",
+      "items": [
+        "Cooling-off = 20 calendar days minimum between filing of registration statement and effective date (\u00a78(a)).",
+        "Amendment filed before effective date restarts the 20-day clock unless SEC consents.",
+        "SEC stop order: 15-day notice to issue suspending effectiveness (\u00a78(d)).",
+        "During cooling-off: red-herring preliminary prospectus OK; NO sales, NO advertising, NO confirmations. Indications of interest only (non-binding).",
+        "Tombstone ads permitted (\u00a72(a)(10)).",
+        "\u00a723: SEC does not approve/disapprove \u2014 cannot represent otherwise."
+      ]
+    },
+    {
+      "heading": "Order Duration / GTC",
+      "type": "bullets",
+      "items": [
+        "DAY order: expires at market close same day if not executed.",
+        "GTC (Good-Til-Canceled): remains open until executed or canceled by customer.",
+        "Most firms/exchanges purge GTC orders periodically (firm-specific); SIE: GTC stays until executed or canceled.",
+        "GTC adjusted on ex-date for cash dividends (buy limits, sell stops reduced) unless marked DNR (Do Not Reduce)."
+      ]
+    },
+    {
+      "heading": "FINRA Filing / Registration Deadlines",
+      "type": "table",
+      "items": [
+        {
+          "Form/Event": "Form U4 \u2014 amendments (most events)",
           "Deadline": "30 days"
         },
         {
-          "Form/Event": "U4 \u2013 statutory disqualification event",
+          "Form/Event": "Form U4 \u2014 statutory disqualification events",
           "Deadline": "10 business days"
         },
         {
-          "Form/Event": "U5 (termination)",
+          "Form/Event": "Form U5 \u2014 termination filing to CRD",
           "Deadline": "30 days; copy to RR same window"
         },
         {
-          "Form/Event": "Exam window after U4 filed",
-          "Deadline": "120 days"
+          "Form/Event": "Form U5 amendment after filing",
+          "Deadline": "30 days of learning new facts"
         },
         {
-          "Form/Event": "Requalification window after termination",
-          "Deadline": "2 years (extendable to 5 via MQP)"
+          "Form/Event": "Qualification exam after U4",
+          "Deadline": "Within 120 days of filing"
         },
         {
-          "Form/Event": "Form 144 (affiliate resale)",
-          "Deadline": "File electronically on EDGAR at time of sale order"
+          "Form/Event": "Regulatory Element CE",
+          "Deadline": "Annually (Rule 1240, amended 3/15/2022)"
+        },
+        {
+          "Form/Event": "MQP requalification window",
+          "Deadline": "Up to 5 years w/ annual CE"
+        },
+        {
+          "Form/Event": "2-year tail jurisdiction for FINRA after U5",
+          "Deadline": "24 months post-termination"
+        },
+        {
+          "Form/Event": "Form 144 (affiliate resales)",
+          "Deadline": "Electronically via EDGAR (since 4/13/2023)"
         }
       ]
     },
     {
-      "heading": "Other Key Time Rules",
+      "heading": "Other Time Rules Worth Memorizing",
       "type": "table",
       "items": [
         {
-          "Item": "Reg D 506 \u2013 restricted stock holding",
-          "Time": "6 months (reporting issuer)"
+          "Rule": "Confirmation delivery (Rule 10b-10)",
+          "Time": "At or before completion of transaction (settlement)"
         },
         {
-          "Item": "Rule 147 intrastate resale to nonresidents",
-          "Time": "6 months after purchase"
+          "Rule": "Customer account statements",
+          "Time": "Quarterly minimum; monthly if activity"
         },
         {
-          "Item": "Shelf offering validity",
-          "Time": "2 years (3 for WKSI)"
+          "Rule": "Books & records (17a-4)",
+          "Time": "3 yrs / 6 yrs / lifetime depending on record"
         },
         {
-          "Item": "Confirmation delivery to customer",
-          "Time": "At or before completion (settlement)"
+          "Rule": "Reg D Form D filing",
+          "Time": "Within 15 days of first sale"
         },
         {
-          "Item": "Regulatory Element CE (Rule 1240)",
-          "Time": "Annually"
+          "Rule": "Mutual fund forward pricing",
+          "Time": "Next computed NAV after order receipt"
         },
         {
-          "Item": "Branch inspections \u2013 OSJ",
-          "Time": "Annual"
+          "Rule": "Mutual fund payment of redemption",
+          "Time": "Within 7 calendar days (ICA \u00a722(e))"
         },
         {
-          "Item": "Branch inspections \u2013 non-OSJ",
-          "Time": "Every 3 years"
-        },
-        {
-          "Item": "Trade reporting to Consolidated Tape",
-          "Time": "Within 10 seconds"
+          "Rule": "Broker-dealer registration (SEC)",
+          "Time": "45 days to grant or institute proceedings (\u00a715(b)(1))"
         }
-      ]
-    },
-    {
-      "heading": "Timeline Anchor (Quick Recall)",
-      "type": "formula",
-      "items": [
-        "T = trade | T+1 = settle | S+1 = pay (Reg T)",
-        "20 cal days cooling off \u2192 Effective Date",
-        "Apr/Oct last biz day \u2192 GTC purge",
-        "30 days = U4/U5 standard amendment window"
       ]
     }
   ],
   "common_traps": [
-    "T+2 is OUTDATED \u2014 all equities, corps, munis, options & Treasuries now settle T+1 (eff. 5/28/2024). Ex-date = record date, NOT one day before.",
-    "Reg T payment is S+1 (1 day AFTER settlement), so effectively T+2 from trade date \u2014 students confuse it with T+2 settlement.",
-    "Deficiency letter does NOT restart the 20-day cooling-off clock \u2014 it pauses and resumes.",
-    "APO of NMS securities has NO prospectus delivery requirement post-effective date (0 days) \u2014 easy to forget; most often confused with the 25-day IPO rule.",
-    "GTC orders auto-cancel only in April & October (not quarterly, not monthly) on the LAST business day."
+    "Saying equity option EXERCISE settles T+2 \u2014 it is T+1 since 5/28/2024 (aligned with stock).",
+    "Confusing ex-date with record date \u2014 under T+1 they are the SAME business day for regular-way trades.",
+    "Mixing up prospectus aftermarket windows: 25 days (listed IPO), 40 days (follow-on reporting), 90 days (non-listed IPO or non-reporting add-on).",
+    "Thinking the 20-day cooling-off is business days \u2014 it is 20 CALENDAR days (\u00a78(a)).",
+    "Confusing U4 amendment deadlines: 30 days standard, but 10 BUSINESS days for statutory disqualification events.",
+    "Reg T payment is S+2 (two business days after settlement) \u2014 under T+1 that is 3 business days after trade, not 4."
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 24171,
-    "output": 2014
+    "input": 15421,
+    "output": 2718
   },
-  "cost_usd": 0.5136
+  "cost_usd": 0.4352
 }

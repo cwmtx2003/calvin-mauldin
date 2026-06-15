@@ -1,0 +1,299 @@
+{
+  "unit": 5,
+  "unit_name": "Other Investment Vehicles",
+  "jf": "pr",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes an investment company that is organized under a trust indenture, does not have a board of directors, and issues only redeemable securities representing an undivided interest in a unit of specified securities?",
+      "choices": [
+        "Open-end management company",
+        "Closed-end management company",
+        "Unit investment trust (UIT)",
+        "Face-amount certificate company"
+      ],
+      "answer": 2,
+      "explanation": "The Investment Company Act of 1940 \u00a74 defines a UIT as an investment company organized under a trust indenture, lacking a board of directors, and issuing only redeemable securities representing an undivided interest in a unit of specified securities. A management company (open- or closed-end) does have a board.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a management company that is offering for sale, or has outstanding, any redeemable security of which it is the issuer?",
+      "choices": [
+        "Closed-end company",
+        "Open-end company",
+        "Unit investment trust",
+        "Face-amount certificate company"
+      ],
+      "answer": 1,
+      "explanation": "Under \u00a75 of the Investment Company Act of 1940, an open-end company is defined as a management company that offers or has outstanding a redeemable security. Closed-end companies issue non-redeemable shares that trade in the secondary market.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A program that provides for flow-through tax consequences regardless of the legal entity used \u2014 for example an oil and gas, real estate, or agricultural limited partnership \u2014 is best described as a:",
+      "choices": [
+        "Real estate investment trust (REIT)",
+        "Direct participation program (DPP)",
+        "Exchange-traded note (ETN)",
+        "Unit investment trust (UIT)"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2310 defines a direct participation program as one providing flow-through tax consequences, including oil and gas, real estate, and agricultural programs. REITs are expressly excluded from the DPP definition.",
+      "citations": [
+        "Rule 2310"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term identifies a municipal security issued by an issuer that, but for the application of Section 2(b) of the Investment Company Act of 1940, would constitute an investment company?",
+      "choices": [
+        "General obligation bond",
+        "Revenue bond",
+        "Municipal fund security",
+        "Bank-qualified bond"
+      ],
+      "answer": 2,
+      "explanation": "MSRB Rule D-12 defines a \"Municipal Fund Security\" exactly in those terms. 529 plans, LGIPs, and ABLE programs are the classic examples. GO and revenue bonds are conventional debt obligations, not investment-company-like products.",
+      "citations": [
+        "Rule D-12"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The reduced sales charge available on a mutual fund purchase when the dollar amount invested reaches a specified level is known as a:",
+      "choices": [
+        "Breakpoint",
+        "Letter of intent",
+        "Right of accumulation",
+        "12b-1 fee"
+      ],
+      "answer": 0,
+      "explanation": "A breakpoint is the dollar level at which the sales charge on investment company shares is reduced. A letter of intent is a written commitment to reach a breakpoint, and ROA aggregates prior holdings; both are mechanisms to qualify for breakpoints, but the discount level itself is the breakpoint.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes an option contract under which the holder has the right to purchase the number of units of the underlying security covered by the contract?",
+      "choices": [
+        "Put",
+        "Call",
+        "Warrant",
+        "Right"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2360 defines a \"call\" as an option contract under which the holder has the right to purchase the underlying. A put gives the right to sell. Warrants and rights are issuer-issued equity instruments, not standardized listed options.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A management company that has at least 75% of its assets in cash, government securities, securities of other investment companies, and other securities limited (per issuer) to not more than 5% of total assets and 10% of the issuer's voting securities is classified as a:",
+      "choices": [
+        "Non-diversified company",
+        "Diversified company",
+        "Unit investment trust",
+        "Face-amount certificate company"
+      ],
+      "answer": 1,
+      "explanation": "\u00a75(b)(1) of the Investment Company Act sets out the 75-5-10 test that defines a diversified management company. A non-diversified company is any management company that does not meet those thresholds.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the asset-based annual fee charged by an open-end fund to cover distribution and shareholder servicing expenses, paid out of fund assets pursuant to a written plan?",
+      "choices": [
+        "Front-end load",
+        "Contingent deferred sales charge",
+        "12b-1 fee",
+        "Surrender charge"
+      ],
+      "answer": 2,
+      "explanation": "SEC Rule 12b-1 under the Investment Company Act authorizes an open-end fund to use fund assets to pay distribution expenses pursuant to a written plan; the resulting charge is the \"12b-1 fee.\" Front-end loads and CDSCs are sales charges paid by the investor at purchase/redemption, not asset-based distribution fees.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An issuer that is engaged primarily in the business of investing, reinvesting, or trading in securities \u2014 or that owns investment securities exceeding 40% of total assets (exclusive of government securities and cash items) \u2014 meets the statutory definition of a(n):",
+      "choices": [
+        "Broker-dealer",
+        "Investment company",
+        "Direct participation program",
+        "Municipal advisor"
+      ],
+      "answer": 1,
+      "explanation": "Section 3(a) of the Investment Company Act of 1940 defines an \"investment company\" using these primary-engagement and 40% investment-securities tests. The other choices are unrelated regulated entities.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a73(a)"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a hedge-fund-type pooled vehicle that is typically organized as a limited partnership, requires a high minimum investment, and is generally illiquid?",
+      "choices": [
+        "Open-end mutual fund",
+        "Exchange-traded fund",
+        "Hedge fund",
+        "Unit investment trust"
+      ],
+      "answer": 2,
+      "explanation": "Per the SIE outline, hedge funds are characterized by a high minimum investment, partnership structure, and general illiquidity. Mutual funds and ETFs are registered, liquid pooled vehicles, and a UIT issues redeemable units of a fixed portfolio.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term identifies an exchange-traded product that is an unsecured debt obligation of an issuer whose return is linked to the performance of a specified index or benchmark?",
+      "choices": [
+        "Exchange-traded fund (ETF)",
+        "Exchange-traded note (ETN)",
+        "Closed-end fund",
+        "Real estate investment trust (REIT)"
+      ],
+      "answer": 1,
+      "explanation": "An ETN is an unsecured debt instrument whose return tracks a referenced index; an ETF is a pooled investment that holds a portfolio of securities. Closed-end funds and REITs are equity-based investment vehicles.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a real estate investment vehicle that distributes the bulk of its taxable income to shareholders and thereby avoids taxation at the entity level, providing tax-advantaged income without double taxation?",
+      "choices": [
+        "C-corporation",
+        "Real estate investment trust (REIT)",
+        "Exchange-traded note (ETN)",
+        "Face-amount certificate company"
+      ],
+      "answer": 1,
+      "explanation": "The SIE outline identifies REITs as vehicles that pass income to shareholders and avoid double taxation when distribution requirements are met. C-corporations are taxed at both the entity and shareholder level; ETNs are debt instruments; face-amount certificate companies are a separate class of investment company.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12908,
+    "output": 2849
+  },
+  "cost_usd": 0.4073
+}

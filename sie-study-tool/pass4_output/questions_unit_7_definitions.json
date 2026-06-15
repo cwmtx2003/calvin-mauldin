@@ -1,0 +1,557 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "jf": "tc",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes the type of risk that affects the entire market and cannot be eliminated through diversification?",
+      "choices": [
+        "Business risk",
+        "Systematic risk",
+        "Financial risk",
+        "Liquidity risk"
+      ],
+      "answer": 1,
+      "explanation": "Systematic risk (also called market risk) impacts the broad market and cannot be diversified away. Business risk is a nonsystematic risk specific to a particular company and can be reduced through diversification.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An investor is concerned that rising consumer prices will erode the future buying power of the fixed interest payments she receives from her bond portfolio. Which type of risk is she describing?",
+      "choices": [
+        "Credit risk",
+        "Reinvestment risk",
+        "Inflation (purchasing power) risk",
+        "Call risk"
+      ],
+      "answer": 2,
+      "explanation": "Inflation risk, also called purchasing power risk, is the risk that the real value of fixed payments will decline as prices rise. Credit risk relates to issuer default, not the erosion of purchasing power.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following is best described as a nonsystematic risk?",
+      "choices": [
+        "Interest-rate risk",
+        "Inflation risk",
+        "Market risk",
+        "Business risk"
+      ],
+      "answer": 3,
+      "explanation": "Business risk is specific to an individual company or industry and can be reduced through diversification, making it nonsystematic. Interest-rate, inflation, and market risks are systematic risks that affect the broad market.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the risk that an investor will be unable to sell a security quickly at a price close to its fair market value?",
+      "choices": [
+        "Liquidity risk",
+        "Legislative risk",
+        "Currency risk",
+        "Political risk"
+      ],
+      "answer": 0,
+      "explanation": "Liquidity (marketability) risk is the risk that an investor cannot readily convert an investment to cash without a significant price concession. Currency risk relates to exchange-rate fluctuations on foreign investments.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A U.S. investor holds shares of a Japanese corporation. The risk that a decline in the value of the yen versus the dollar will reduce the U.S.-dollar value of those shares is known as:",
+      "choices": [
+        "Political risk",
+        "Currency (exchange-rate) risk",
+        "Regulatory risk",
+        "Reinvestment risk"
+      ],
+      "answer": 1,
+      "explanation": "Currency risk arises when an investor holds securities denominated in a foreign currency and that currency depreciates against the investor's home currency. Political risk concerns instability in a foreign government, not exchange-rate movement.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under FINRA rules, which of the following best describes the term \"investment recommendation\"?",
+      "choices": [
+        "Any general educational material provided to customers",
+        "A communication from a member or associated person to a particular customer that reasonably would be viewed as a suggestion to engage in or refrain from a securities transaction or investment strategy",
+        "Any solicited order entered by a customer through an online platform",
+        "Any market commentary distributed broadly to retail and institutional investors"
+      ],
+      "answer": 1,
+      "explanation": "A recommendation is a communication that, based on its content, context, and presentation, reasonably would be viewed as a suggestion to a particular customer that the customer engage in or refrain from a securities transaction or strategy. General educational materials and broad market commentary do not constitute recommendations.",
+      "citations": [
+        "Rule 2111",
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the practice of holding a portfolio of securities across multiple asset classes, industries, and issuers in order to reduce nonsystematic risk?",
+      "choices": [
+        "Hedging",
+        "Speculation",
+        "Diversification",
+        "Arbitrage"
+      ],
+      "answer": 2,
+      "explanation": "Diversification spreads investments across different securities and asset classes to mitigate company- and industry-specific (nonsystematic) risk. Hedging uses offsetting positions (such as options) to limit downside, but is not the same as diversification.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following is a price-weighted index composed of 30 large U.S. industrial stocks?",
+      "choices": [
+        "S&P 500",
+        "Russell 2000",
+        "Dow Jones Industrial Average",
+        "Wilshire 5000"
+      ],
+      "answer": 2,
+      "explanation": "The Dow Jones Industrial Average (DJIA) is a price-weighted index made up of 30 large-cap U.S. stocks. The S&P 500 and Wilshire 5000 are market-capitalization-weighted, and the Russell 2000 measures small-cap stocks.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An index that tracks the performance of 500 large-capitalization U.S. companies and is weighted by market capitalization is best described as:",
+      "choices": [
+        "The Dow Jones Industrial Average",
+        "The S&P 500",
+        "The Russell 2000",
+        "The MSCI EAFE Index"
+      ],
+      "answer": 1,
+      "explanation": "The S&P 500 is a market-cap-weighted index of 500 large U.S. companies. The Russell 2000 tracks small-cap U.S. stocks, and the MSCI EAFE measures developed-market non-U.S. equities.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the risk that an issuer will redeem a bond prior to maturity, forcing the investor to reinvest the proceeds at lower prevailing interest rates?",
+      "choices": [
+        "Credit risk",
+        "Call risk",
+        "Inflation risk",
+        "Market risk"
+      ],
+      "answer": 1,
+      "explanation": "Call risk is the risk that a callable bond will be redeemed early by the issuer when interest rates fall, exposing the holder to reinvestment at lower rates. Credit risk relates instead to issuer default.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following terms refers to the customer-specific information \u2014 including investment objectives, time horizon, risk tolerance, liquidity needs, and tax status \u2014 that a firm must gather to support suitable recommendations?",
+      "choices": [
+        "Form CRS",
+        "Customer investment profile",
+        "Customer identification program",
+        "Privacy notice"
+      ],
+      "answer": 1,
+      "explanation": "The customer investment profile is the collection of factors a member must consider when making a recommendation under the suitability/best interest framework. Form CRS is a separate relationship-summary disclosure document, not the profile itself.",
+      "citations": [
+        "Rule 2111",
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term best describes the risk that changes in laws, regulations, or tax policy will adversely affect the value of an investment?",
+      "choices": [
+        "Legislative (regulatory) risk",
+        "Reinvestment risk",
+        "Liquidity risk",
+        "Business risk"
+      ],
+      "answer": 0,
+      "explanation": "Legislative or regulatory risk is the risk that new or changed laws, rules, or tax treatment will negatively affect an investment. Business risk is specific to a company's operations rather than to changes in the regulatory environment.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13216,
+    "output": 2492
+  },
+  "cost_usd": 0.3851
+}

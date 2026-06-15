@@ -3,266 +3,525 @@
   "title": "Account Types & Suitability",
   "sections": [
     {
-      "heading": "Ownership Account Types",
+      "heading": "Ownership Registrations",
       "type": "table",
-      "items": {
-        "columns": [
-          "Account",
-          "Owners",
-          "On Death",
-          "Key Point"
-        ],
-        "rows": [
-          [
-            "Individual",
-            "1",
-            "Passes via estate/will",
-            "TOD avoids probate"
-          ],
-          [
-            "JTWROS",
-            "2+",
-            "Passes to survivor(s)",
-            "Undivided equal interest; common spouses"
-          ],
-          [
-            "TIC",
-            "2+",
-            "Decedent's % \u2192 estate",
-            "Must specify each owner's %; account frozen until estate paperwork"
-          ],
-          [
-            "UGMA/UTMA",
-            "1 custodian / 1 minor",
-            "Assets \u2192 minor's estate",
-            "Cash only, no margin, no options buying; covered calls OK"
-          ],
-          [
-            "Trust",
-            "Grantor/Trustee/Beneficiary",
-            "Per trust doc",
-            "Margin only if doc allows"
-          ],
-          [
-            "Corporate",
-            "Entity",
-            "Per resolution",
-            "Need charter + board resolution"
-          ],
-          [
-            "Partnership",
-            "Entity",
-            "Per agreement",
-            "Need partnership agreement (amended annually if changes)"
-          ],
-          [
-            "Sole Prop (d/b/a)",
-            "1",
-            "Owner's estate",
-            "Effectively individual account"
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "Trusts & POA",
-      "type": "bullets",
       "items": [
-        "Revocable living trust: grantor controls, assets still in estate; grantor often = trustee = beneficiary",
-        "Irrevocable trust: grantor CANNOT be trustee or beneficiary if removing from estate",
-        "FPOA = deposit/withdraw/trade; LPOA = trade only, no withdrawals",
-        "ALL POAs (incl. durable) END at death of either party",
-        "Durable POA survives grantor's INCAPACITY only, not death",
-        "TOD: available on individual & JTWROS; avoids probate, NOT estate tax"
+        {
+          "Type": "Individual",
+          "Key Features": "One owner; assets pass via will/probate at death"
+        },
+        {
+          "Type": "JTWROS",
+          "Key Features": "Equal undivided interest; survivor takes 100%; bypasses probate; common spouses"
+        },
+        {
+          "Type": "JT TIC",
+          "Key Features": "Specified % interest; decedent's share to estate (NOT survivor); for unequal owners"
+        },
+        {
+          "Type": "UGMA/UTMA",
+          "Key Features": "One minor, one custodian; irrevocable gift; taxed to minor (kiddie tax); UTMA allows more asset types & later age of majority"
+        },
+        {
+          "Type": "Revocable (Living) Trust",
+          "Key Features": "Grantor can amend/revoke; assets in grantor's estate; avoids probate"
+        },
+        {
+          "Type": "Irrevocable Trust",
+          "Key Features": "Cannot be changed; assets removed from grantor estate; separate TIN"
+        },
+        {
+          "Type": "Corporate",
+          "Key Features": "Corp resolution + charter required; identify auth. persons; margin needs charter authorization"
+        },
+        {
+          "Type": "Partnership",
+          "Key Features": "Partnership agreement required; must be amended annually if margin"
+        }
       ]
     },
     {
-      "heading": "IRAs \u2014 Traditional vs Roth (2026)",
+      "heading": "Retirement Accounts \u2014 Key Numbers (per ERRATA)",
       "type": "table",
-      "items": {
-        "columns": [
-          "Feature",
-          "Traditional",
-          "Roth"
-        ],
-        "rows": [
-          [
-            "Contribution limit",
-            "$7,500 + $1,100 catch-up (50+)",
-            "Same combined limit across all IRAs"
-          ],
-          [
-            "Deductible?",
-            "Yes (phases out if covered by plan)",
-            "Never"
-          ],
-          [
-            "Income limit to contribute",
-            "No",
-            "Yes (phase-out at high AGI)"
-          ],
-          [
-            "Earned income required?",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Age limit on contributions",
-            "None",
-            "None"
-          ],
-          [
-            "Qualified withdrawals",
-            "Ordinary income",
-            "TAX-FREE if 59\u00bd + 5-yr held"
-          ],
-          [
-            "RMDs",
-            "Begin age 73 (SECURE 2.0)",
-            "NONE during owner's life"
-          ],
-          [
-            "Early withdrawal penalty",
-            "10% before 59\u00bd",
-            "10% on gains only"
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "IRA Rules \u2014 Key Numbers",
-      "type": "rule",
       "items": [
-        "Rollover: 60-day window, ONE per rolling 12 months (across all IRAs)",
-        "Transfer (custodian-to-custodian): UNLIMITED",
-        "RMD age = 73 (rising to 75 in 2033); first RMD may be delayed to 4/1 of following year",
-        "Failure to take RMD penalty = 25% (10% if timely corrected) \u2014 was 50%",
-        "Excess contribution penalty = 6%/year until withdrawn",
-        "10% early-withdrawal exceptions: death, disability, 1st home ($10k), education, medical, unemployment health premiums",
-        "PROHIBITED in IRA: collectibles, life insurance, short sales, margin, naked options, munis (no benefit)"
+        {
+          "Plan": "Traditional IRA",
+          "Limit 2026": "$7,500 + $1,100 catch-up (50+)",
+          "Tax": "Pre-tax contrib; ordinary income on withdrawal; no age cap on contrib (SECURE Act)"
+        },
+        {
+          "Plan": "Roth IRA",
+          "Limit 2026": "$7,500 + $1,100 catch-up",
+          "Tax": "After-tax; qualified withdrawals tax-free; AGI phase-out applies; no RMDs for owner"
+        },
+        {
+          "Plan": "401(k)",
+          "Limit 2026": "$24,500 + catch-up (50+)",
+          "Tax": "Pre-tax (or Roth); employer-sponsored DC plan"
+        },
+        {
+          "Plan": "SEP-IRA",
+          "Limit 2026": "Lesser of 25% comp or IRS cap",
+          "Tax": "Employer-funded; for self-employed/small biz"
+        },
+        {
+          "Plan": "SIMPLE IRA",
+          "Limit 2026": "Lower elective deferral + employer match",
+          "Tax": "<100 employees; mandatory employer contribution"
+        }
       ]
     },
     {
-      "heading": "Employer Plans",
+      "heading": "IRA/Plan Rules (post-SECURE 2.0)",
+      "type": "bullets",
+      "items": [
+        "Early withdrawal penalty: 10% if <59\u00bd (exceptions: 1st home $10K, higher ed, death, disability, medical, SEPP 72(t))",
+        "RMD age = 73 (rising to 75 for those turning 74 after 12/31/2032)",
+        "RMD failure penalty = 25% of shortfall (10% if corrected timely)",
+        "Roth IRA: no RMD for original owner; 5-year rule for qualified distributions",
+        "Rollover: 60-day rule; one indirect rollover per 12 months; trustee-to-trustee unlimited",
+        "Contributions allowed up to tax filing deadline (April 15) for prior year",
+        "IRA prohibited investments: collectibles, life insurance, most metals (gold/silver eagles OK)"
+      ]
+    },
+    {
+      "heading": "Cash vs Margin (Reg T / FINRA 4210)",
+      "type": "bullets",
+      "items": [
+        "Reg T initial margin = 50% of purchase (Fed Reserve)",
+        "FINRA minimum equity: $2,000 long; short account also $2,000 min",
+        "Maintenance: 25% long / 30% short (FINRA 4210)",
+        "Pattern Day Trader: 4+ day trades in 5 business days \u2192 $25,000 min equity required",
+        "Margin docs: Credit Agreement (required), Hypothecation Agreement (required), Loan Consent (optional)",
+        "Margin disclosure statement delivered at account opening and annually (FINRA 2264)",
+        "Cash account: full payment by S+1 (Reg T) \u2014 no borrowing; IRAs/UGMA/UTMA must be CASH only"
+      ]
+    },
+    {
+      "heading": "Education / Disability Accounts",
       "type": "table",
-      "items": {
-        "columns": [
-          "Plan",
-          "Type",
-          "Key Point"
-        ],
-        "rows": [
-          [
-            "Pension/DB",
-            "Defined Benefit",
-            "Employer bears investment risk; formula-based payout"
-          ],
-          [
-            "401(k)/403(b)",
-            "Defined Contribution",
-            "Employee bears risk; portable"
-          ],
-          [
-            "SEP-IRA",
-            "DC",
-            "Employer-funded; small business; high limits"
-          ],
-          [
-            "SIMPLE IRA",
-            "DC",
-            "<100 employees; employee + employer match"
-          ],
-          [
-            "Profit-sharing/Money purchase",
-            "DC",
-            "Employer contributions"
-          ],
-          [
-            "Coverdell ESA",
-            "Education",
-            "$2,000/yr until age 18; must use by 30"
-          ],
-          [
-            "529 Plan",
-            "Education (muni fund)",
-            "High limits; donor controls; no income cap"
-          ],
-          [
-            "ABLE",
-            "Disability",
-            "For disabled before age 26; tax-free growth for qualified disability expenses"
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "Cash vs Margin (Reg T)",
-      "type": "rule",
       "items": [
-        "Reg T initial margin = 50% of purchase",
-        "FINRA minimum equity = $2,000 OR 100% of purchase if less",
-        "Initial deposit rule: purchase >$4,000 \u2192 50%; $2,000\u2013$4,000 \u2192 $2,000; <$2,000 \u2192 100%",
-        "Maintenance: 25% long / 30% short (FINRA); houses can require more",
-        "Payment deadline: Reg T = S+2 (i.e., T+4 since T+2 settlement)",
-        "Required forms: Credit Agreement + Hypothecation Agreement (MANDATORY); Loan Consent (OPTIONAL)",
-        "Risk disclosure required at opening AND annually",
-        "MARGINABLE: listed stocks/bonds, Nasdaq, warrants. Mutual funds & new issues = marginable after 30 days held",
-        "NOT marginable: options, rights, insurance products"
+        {
+          "Account": "529 Plan",
+          "Features": "State-sponsored; high contrib limits; tax-free qualified ed withdrawals; donor retains control; 5-yr gift-tax election available; K-12 up to $10K/yr"
+        },
+        {
+          "Account": "Coverdell ESA",
+          "Features": "$2,000/yr max; AGI phase-out; beneficiary <18; must use by age 30; K-12 + higher ed"
+        },
+        {
+          "Account": "ABLE (529A)",
+          "Features": "For individuals disabled before age 26; tax-free growth for qualified disability expenses; does not disqualify SSI/Medicaid (within limits)"
+        },
+        {
+          "Account": "UGMA/UTMA",
+          "Features": "Custodial; irrevocable gift; not education-restricted; counts heavily in financial aid"
+        }
       ]
     },
     {
-      "heading": "Accounts That CANNOT Use Margin",
+      "heading": "Discretionary vs Non-Discretionary",
       "type": "bullets",
       "items": [
-        "All IRAs and qualified retirement plans",
-        "UGMA/UTMA custodial accounts",
-        "Coverdell ESAs",
-        "Trusts/corporations/partnerships UNLESS document specifically permits"
+        "Discretion = RM chooses Asset, Action, or Amount (the 3 A's) without prior contact",
+        "Requires: written customer authorization + firm acceptance BEFORE first discretionary trade",
+        "Each discretionary order marked 'discretionary'; principal must review promptly",
+        "Price and Time alone are NOT discretion (not-held order)",
+        "Exchange member discretionary trades regulated under Exchange Act \u00a711(d)/\u00a711(a)(1)(H)",
+        "Excessive trading in discretionary account = churning (prohibited, Rule 2010/2020)"
       ]
     },
     {
-      "heading": "Discretion \u2014 The 3 A's",
-      "type": "rule",
-      "items": [
-        "Discretion exists if RR chooses ANY of: Action (buy/sell), Amount (shares/$), Asset (which security)",
-        "TIME and PRICE only = NOT discretion (no written auth needed, but good for that day only)",
-        "Requires: written customer authorization BEFORE first discretionary trade + principal approval",
-        "Each discretionary order must be marked 'discretionary' and reviewed promptly by principal",
-        "Discretion is granted to the RR personally \u2014 ends if RR leaves firm"
-      ]
-    },
-    {
-      "heading": "KYC / Suitability (Reg BI for retail)",
+      "heading": "KYC & Suitability (FINRA 2090 / 2111 / Reg BI 15l-1)",
       "type": "bullets",
       "items": [
-        "Required at account opening: name, DOB, address, SSN/TIN, employment, citizenship, ID verification (CIP/Patriot Act)",
-        "Investment profile: objectives, time horizon, risk tolerance, liquidity needs, tax status, net worth, income, experience",
-        "Update profile at least every 36 months",
-        "Forms signed by customer: Margin (credit + hypothec), Options agreement (within 15 days of approval), W-9",
-        "New account form signed by PRINCIPAL (not required of customer); customer signature optional but best practice"
+        "Rule 2090 KYC: use reasonable diligence to know essential facts re every customer and persons with authority over account",
+        "Rule 2111 Suitability \u2014 3 obligations: (1) Reasonable-basis, (2) Customer-specific, (3) Quantitative",
+        "Customer-specific factors: age, other investments, financial situation/needs, tax status, objectives, experience, time horizon, liquidity needs, risk tolerance",
+        "Reg BI (17 CFR 240.15l-1): broker-dealers must act in retail customer's best interest at time of recommendation; 4 obligations \u2014 Disclosure, Care, Conflict of Interest, Compliance",
+        "Form CRS (17 CFR 240.17a-14) delivered to retail investors at/before recommendation or account opening",
+        "New account form (Rule 4512): name, DOB, SSN/TIN, occupation/employer, citizenship, signature of registered rep & principal; trusted contact required to be requested"
       ]
     },
     {
-      "heading": "Fee-Based / Wrap Accounts",
+      "heading": "Account Opening Requirements",
       "type": "bullets",
       "items": [
-        "Flat fee or % of AUM covers advice + execution + admin",
-        "Suitable for ACTIVE traders; UNSUITABLE for buy-and-hold (reverse churning)",
-        "Generally investment advisory \u2014 fiduciary standard, Form ADV delivery required"
+        "CIP (PATRIOT Act \u00a7326): name, DOB, address, SSN/TIN \u2014 verify identity",
+        "Principal approval required BEFORE first trade (signature not required from customer to open cash account)",
+        "Records retention (17 CFR 240.17a-3/17a-4): account records kept life of account + 6 years; some 3 years",
+        "Customer signature required for: margin agreement, options agreement (within 15 days), discretionary authorization"
       ]
     }
   ],
   "common_traps": [
-    "RMD age is now 73 (NOT 70\u00bd or 72) and penalty is 25% (NOT 50%) \u2014 exam may still test old numbers; know both",
-    "Roth IRA has NO RMDs during owner's lifetime; Traditional does",
-    "TOD avoids PROBATE but NOT estate tax \u2014 students confuse these",
-    "Loan Consent Agreement is OPTIONAL; only Credit + Hypothecation are mandatory for margin",
-    "Time & Price discretion is NOT discretion \u2014 no written authorization needed (valid for that day only)",
-    "UGMA/UTMA: tax ID is the MINOR's SSN, taxed at minor's rate; cash account only \u2014 no margin, no buying options (covered calls OK)"
+    "JTWROS vs TIC: JTWROS \u2192 survivor gets all; TIC \u2192 decedent's share goes to estate. Unmarried unequal owners typically use TIC.",
+    "UGMA/UTMA is IRREVOCABLE and assets belong to the MINOR; cannot be margin; one custodian/one minor per account.",
+    "RMD age is 73 (NOT 72) and penalty is 25% (NOT 50%) under SECURE 2.0 \u2014 old SIE prep books are stale.",
+    "Discretion = A/A/A (Asset, Action, Amount). Choosing only Price/Time = NOT discretion. Written auth must precede first discretionary trade.",
+    "Roth IRA owner has NO RMD during lifetime; Traditional IRA does. Both now allow contributions at any age (post-SECURE)."
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 22474,
-    "output": 3046
+    "input": 13812,
+    "output": 2883
   },
-  "cost_usd": 0.5656
+  "cost_usd": 0.4234
 }

@@ -1,0 +1,563 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "jf": "tc",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Which of the following is best described as a systematic risk?",
+      "choices": [
+        "The risk that a specific company's earnings will decline due to poor management",
+        "The risk that an issuer will default on its bond obligations",
+        "The risk that overall market prices will decline due to a recession",
+        "The risk that a single industry will face new regulatory burdens"
+      ],
+      "answer": 2,
+      "explanation": "Systematic risk (market risk) affects the entire market and cannot be eliminated through diversification. A broad market decline due to a recession is a classic example. Company-specific management or default issues are nonsystematic risks that can be mitigated through diversification.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "The primary method used to mitigate nonsystematic risk in a portfolio is:",
+      "choices": [
+        "Hedging with index options",
+        "Diversification across securities and industries",
+        "Dollar-cost averaging into a single stock",
+        "Holding only U.S. Treasury securities"
+      ],
+      "answer": 1,
+      "explanation": "Nonsystematic (unsystematic) risk is security- or industry-specific and can be reduced by diversifying holdings across many securities and sectors. Hedging addresses systematic/market risk; concentrating in one stock or one asset class does not reduce unsystematic exposure.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under Regulation Best Interest, when must a broker-dealer comply with the standard of conduct?",
+      "choices": [
+        "When making a recommendation of any securities transaction or investment strategy involving securities to a retail customer",
+        "Only when executing unsolicited transactions for institutional clients",
+        "Only when the customer has discretionary authority",
+        "Only when the recommended product is a variable annuity"
+      ],
+      "answer": 0,
+      "explanation": "Regulation Best Interest applies when a broker-dealer or associated person makes a recommendation of any securities transaction or investment strategy involving securities to a retail customer. Unsolicited orders are not recommendations, and Reg BI is specifically a retail-customer standard.",
+      "citations": [
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative sends a retail customer a personalized email suggesting she purchase shares of XYZ stock. Under FINRA rules, this communication is most likely considered:",
+      "choices": [
+        "General market commentary, not subject to suitability",
+        "A recommendation triggering the firm's best-interest and KYC obligations",
+        "An unsolicited transaction",
+        "A research report exempt from supervisory review"
+      ],
+      "answer": 1,
+      "explanation": "A communication that could reasonably be viewed as a call to action regarding a specific security to a specific customer is a recommendation, triggering KYC and Reg BI/suitability obligations. General market commentary lacks the specific call to action, and unsolicited orders originate with the customer.",
+      "citations": [
+        "Rule 2111",
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which index is price-weighted, meaning higher-priced stocks have a greater influence on the index value?",
+      "choices": [
+        "S&P 500",
+        "Nasdaq Composite",
+        "Dow Jones Industrial Average",
+        "Russell 2000"
+      ],
+      "answer": 2,
+      "explanation": "The DJIA is composed of 30 large U.S. companies and is price-weighted, so higher-priced stocks move the index more. The S&P 500, Nasdaq Composite, and Russell 2000 are market-capitalization-weighted.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is an example of nonsystematic risk?",
+      "choices": [
+        "A general rise in interest rates",
+        "Inflation reducing the purchasing power of fixed-income payments",
+        "A pharmaceutical company losing patent protection on its leading drug",
+        "A geopolitical event causing global equity markets to fall"
+      ],
+      "answer": 2,
+      "explanation": "Loss of patent protection affects only the specific company (or possibly its industry) and is a nonsystematic, diversifiable risk. Interest-rate, inflation, and broad geopolitical/market risks affect the entire market and are systematic.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA's Know-Your-Customer rule, a member must use reasonable diligence to know the essential facts concerning every customer in order to:",
+      "choices": [
+        "Guarantee the customer against investment loss",
+        "Effectively service the account and comply with regulatory requirements",
+        "Eliminate the need for a written customer agreement",
+        "Avoid having to verify the customer's identity under AML rules"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2090 requires reasonable diligence to know essential facts about each customer to effectively service the account, act on customer instructions, and comply with regulatory obligations. Firms cannot guarantee against loss, and KYC does not replace AML CIP requirements.",
+      "citations": [
+        "Rule 2090"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A retail customer states that her primary investment objective is preservation of capital with current income, and she has a low risk tolerance. Which recommendation is most consistent with her profile?",
+      "choices": [
+        "Speculative small-cap growth stocks",
+        "Leveraged inverse ETFs",
+        "Investment-grade bonds and money market instruments",
+        "Out-of-the-money long-term call options"
+      ],
+      "answer": 2,
+      "explanation": "Investment-grade bonds and money market instruments provide income with relatively low principal risk, matching preservation of capital and low risk tolerance. The other choices involve significant price volatility or speculative exposure inconsistent with the customer's objectives.",
+      "citations": [
+        "Rule 2111",
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which type of risk is generally the greatest concern for an investor holding long-term fixed-rate bonds?",
+      "choices": [
+        "Business risk of the issuer's competitors",
+        "Interest-rate risk",
+        "Currency risk on domestic Treasury securities",
+        "Regulatory risk of the bond's transfer agent"
+      ],
+      "answer": 1,
+      "explanation": "Long-term fixed-rate bonds are highly sensitive to interest-rate changes \u2014 when rates rise, bond prices fall, and the longer the maturity, the greater the price impact. The other risks are either irrelevant to a domestic bond or not the primary concern for a fixed-rate holder.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Inflation risk is most damaging to which type of investment?",
+      "choices": [
+        "Common stock of a growing company",
+        "A long-term fixed-rate corporate bond",
+        "Real estate held for appreciation",
+        "Commodities such as gold"
+      ],
+      "answer": 1,
+      "explanation": "Inflation (purchasing-power) risk erodes the real value of fixed payments, making long-term fixed-rate bonds particularly vulnerable. Equities, real estate, and commodities historically tend to provide some inflation hedge.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which benchmark would be most appropriate for measuring the performance of a portfolio of small-capitalization U.S. equities?",
+      "choices": [
+        "Dow Jones Industrial Average",
+        "MSCI EAFE Index",
+        "Russell 2000 Index",
+        "Bloomberg U.S. Aggregate Bond Index"
+      ],
+      "answer": 2,
+      "explanation": "The Russell 2000 tracks approximately 2,000 small-cap U.S. stocks and is the standard benchmark for small-cap equity performance. The DJIA tracks 30 large-caps, MSCI EAFE tracks developed non-U.S. equities, and the Aggregate Bond Index tracks fixed income.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under Regulation Best Interest, the Care Obligation requires a broker-dealer making a recommendation to a retail customer to:",
+      "choices": [
+        "Guarantee that the recommended security will outperform its benchmark",
+        "Exercise reasonable diligence, care, and skill to understand the recommendation and have a reasonable basis to believe it is in the customer's best interest",
+        "Recommend only proprietary products of the broker-dealer",
+        "Obtain prior written approval from the customer for every transaction"
+      ],
+      "answer": 1,
+      "explanation": "The Care Obligation under Reg BI requires the firm and associated person to exercise reasonable diligence, care, and skill to understand the product and to have a reasonable basis to believe the recommendation is in the retail customer's best interest. Performance cannot be guaranteed, and the rule does not require proprietary-only recommendations or per-trade written consent.",
+      "citations": [
+        "17 CFR 240.15l-1"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13212,
+    "output": 3080
+  },
+  "cost_usd": 0.4292
+}

@@ -1,0 +1,305 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "jf": "pr",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes an investment company that is organized under a trust indenture, has no board of directors, and issues only redeemable securities representing an undivided interest in a unit of specified securities?",
+      "choices": [
+        "Face-amount certificate company",
+        "Unit investment trust",
+        "Closed-end management company",
+        "Open-end management company"
+      ],
+      "answer": 1,
+      "explanation": "Section 4 of the Investment Company Act of 1940 defines a unit investment trust precisely by these three characteristics. A face-amount certificate company issues face-amount certificates of the installment type and is a separate class under Section 4.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under the Investment Company Act of 1940, the term \"open-end company\" is defined as a management company which:",
+      "choices": [
+        "Has no board of directors and issues units of specified securities",
+        "Is offering for sale or has outstanding any redeemable security of which it is the issuer",
+        "Issues face-amount certificates of the installment type",
+        "Trades on a national securities exchange at a price set by supply and demand"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(a)(1) of the Investment Company Act defines an open-end company as a management company offering for sale or having outstanding any redeemable security of which it is the issuer. The trust-indenture description refers to a UIT, not an open-end fund.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following BEST describes a \"diversified company\" under the Investment Company Act of 1940?",
+      "choices": [
+        "A management company whose portfolio is invested across at least three different industry sectors",
+        "A management company with at least 75% of its total assets in cash, government securities, securities of other investment companies, and other securities subject to per-issuer limits of 5% of assets and 10% of the issuer's voting securities",
+        "Any management company that holds no more than 25% of its assets in any single security",
+        "An open-end company that maintains a portfolio of at least 100 different issuers"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(b)(1) defines a diversified company using the 75%/5%/10% test. The other choices describe concentration concepts not codified in the Act's definition.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The term \"municipal fund security\" is defined under MSRB rules as:",
+      "choices": [
+        "Any municipal security issued by a local government investment pool only",
+        "A municipal security issued by an issuer that, but for Section 2(b) of the Investment Company Act of 1940, would constitute an investment company within the meaning of Section 3 of that Act",
+        "A registered investment company that invests primarily in municipal bonds",
+        "Any tax-exempt security purchased through a 529 plan"
+      ],
+      "answer": 1,
+      "explanation": "MSRB Rule D-12 defines a municipal fund security exactly as described in choice B. A municipal bond mutual fund is itself a registered investment company and is not a \"municipal fund security.\"",
+      "citations": [
+        "Rule D-12"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under FINRA Rule 2310, a \"direct participation program\" is BEST described as:",
+      "choices": [
+        "A program providing flow-through tax consequences regardless of the structure of the legal entity, excluding REITs and registered investment companies",
+        "Any limited partnership that is registered with the SEC and listed on an exchange",
+        "A pooled investment vehicle that is taxed at both the entity and investor level",
+        "Any tax-advantaged retirement plan such as a 401(k) or IRA"
+      ],
+      "answer": 0,
+      "explanation": "Rule 2310(a)(4) defines a DPP as a program providing flow-through tax consequences regardless of legal structure, expressly excluding REITs, qualified retirement plans, and registered investment companies. DPPs are not double-taxed and are generally unlisted.",
+      "citations": [
+        "Rule 2310"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the fee paid by an open-end investment company out of fund assets to cover distribution and shareholder-service expenses, authorized under SEC rule?",
+      "choices": [
+        "Front-end load",
+        "Contingent deferred sales charge",
+        "12b-1 fee",
+        "Management fee"
+      ],
+      "answer": 2,
+      "explanation": "SEC Rule 12b-1 under the Investment Company Act permits an open-end fund to use fund assets to pay for distribution of its shares pursuant to a written plan. A front-end load is paid by the investor at purchase, and a management fee compensates the adviser for portfolio management.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "In options terminology, a \"call\" is defined as an option contract under which the holder has the right to:",
+      "choices": [
+        "Sell the underlying security at the strike price",
+        "Purchase the number of units of the underlying security, or receive a dollar equivalent of the underlying index, covered by the option contract",
+        "Receive a dividend equal to the strike price",
+        "Require the writer to repurchase the option at intrinsic value"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2360 defines a \"call\" as an option giving the holder the right to purchase the underlying units, or receive the dollar equivalent of an underlying index. The right to sell describes a put.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which practice is defined by FINRA as a prohibited \"breakpoint sale\"?",
+      "choices": [
+        "Selling mutual fund shares in dollar amounts just below the point at which the sales charge is reduced, so as to share in the higher sales charge",
+        "Aggregating a customer's purchases under a letter of intent to qualify for a reduced sales charge",
+        "Combining family member accounts under a right of accumulation",
+        "Charging a contingent deferred sales charge on Class B shares"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 2342 prohibits selling investment company shares in dollar amounts just below a breakpoint so as to share in higher sales charges. LOIs and ROA are legitimate means of obtaining breakpoint discounts.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under the Investment Company Act of 1940, into which three principal classes are investment companies divided?",
+      "choices": [
+        "Diversified, non-diversified, and balanced companies",
+        "Open-end, closed-end, and exchange-traded companies",
+        "Face-amount certificate companies, unit investment trusts, and management companies",
+        "Mutual funds, hedge funds, and REITs"
+      ],
+      "answer": 2,
+      "explanation": "Section 4 of the Act divides investment companies into FACs, UITs, and management companies. Open/closed-end and diversified/non-diversified are sub-classifications of management companies under Section 5, not the three principal classes.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following BEST identifies the term \"closed-end company\" under the Investment Company Act of 1940?",
+      "choices": [
+        "A management company that continuously offers redeemable securities",
+        "Any management company that is not an open-end company",
+        "A trust that issues units representing undivided interests in a fixed portfolio",
+        "A non-diversified investment company that invests in private placements"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(a)(2) defines a closed-end company simply as any management company other than an open-end company. Choice A is the open-end definition; choice C describes a UIT.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "FINRA Rule 2330 governing deferred variable annuities applies to:",
+      "choices": [
+        "Any reallocation among subaccounts after the initial purchase",
+        "Recommended purchases and exchanges of deferred variable annuities and recommended initial subaccount allocations",
+        "All immediate annuity recommendations",
+        "Only variable annuities sold inside ERISA-qualified plans"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2330(a)(1) states the rule applies to recommended purchases and exchanges of deferred VAs and recommended initial subaccount allocations. It expressly does not apply to subsequent reallocations or to funds paid after the initial purchase.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under Section 3(a) of the Investment Company Act of 1940, the term \"investment company\" includes an issuer that:",
+      "choices": [
+        "Owns investment securities having a value exceeding 40% of its total assets (exclusive of Government securities and cash items) on an unconsolidated basis",
+        "Holds at least 25% of its assets in cash equivalents",
+        "Maintains a diversified portfolio of at least 100 securities",
+        "Is registered as a broker-dealer with the SEC"
+      ],
+      "answer": 0,
+      "explanation": "Section 3(a)(1)(C) captures an issuer engaged in investing/trading in securities that owns investment securities exceeding 40% of total assets (excluding Government securities and cash items) on an unconsolidated basis. The other thresholds are not part of the definition.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a73(a)"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13008,
+    "output": 3178
+  },
+  "cost_usd": 0.4335
+}

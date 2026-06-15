@@ -1,0 +1,326 @@
+{
+  "unit": 1,
+  "unit_name": "Primary & Secondary Markets",
+  "jf": "km",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Each of the following statements about the SEC's review of a registration statement is accurate EXCEPT:",
+      "choices": [
+        "The SEC may issue a stop order suspending effectiveness if the statement contains a material misstatement or omission.",
+        "The SEC's declaration of effectiveness constitutes its endorsement of the merits of the security.",
+        "The effective date is generally the twentieth day after filing unless the Commission accelerates it.",
+        "An amendment filed before the effective date may cause the statement to be deemed filed as of the amendment date."
+      ],
+      "answer": 1,
+      "explanation": "Section 23 expressly prohibits any representation that SEC effectiveness means the Commission has passed on the merits or approved the security. The other three statements accurately reflect Sections 8(a), 8(d), and 8(a).",
+      "citations": [
+        "Securities Act of 1933 \u00a78",
+        "Securities Act of 1933 \u00a723"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following would LEAST likely be considered an activity of the primary market?",
+      "choices": [
+        "An issuer selling newly authorized common stock to investors through an underwriting syndicate",
+        "A follow-on offering of additional shares by an already public company",
+        "An affiliate selling restricted stock to the public in reliance on Rule 144",
+        "A best-efforts distribution by an investment bank of a new corporate bond issue"
+      ],
+      "answer": 2,
+      "explanation": "Rule 144 governs resales of restricted/control stock by persons deemed not to be underwriters; these are secondary-market transactions because the issuer receives no proceeds. The other three involve the issuer raising new capital, which is the defining feature of the primary market.",
+      "citations": [
+        "17 CFR 230.144"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following statements regarding a statutory (Section 10(a)) prospectus are correct EXCEPT:",
+      "choices": [
+        "It must contain the information in the registration statement, subject to items the SEC permits to be omitted.",
+        "When used more than nine months after the effective date, the information generally must be as of a date not more than sixteen months prior to use.",
+        "The SEC may by rule permit the use of a summary prospectus that omits or summarizes information.",
+        "Delivery of the final prospectus is required only for sales to accredited investors."
+      ],
+      "answer": 3,
+      "explanation": "Section 10 imposes prospectus content/currency requirements for registered public offerings generally; nothing limits delivery to accredited investors. Choices A, B, and C track Section 10(a)(1), 10(a)(3), and 10(b) respectively.",
+      "citations": [
+        "Securities Act of 1933 \u00a710",
+        "17 CFR 230.431"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following pairs is MOST accurately matched?",
+      "choices": [
+        "Third market \u2014 trading of exchange-listed securities in the OTC market",
+        "Fourth market \u2014 retail investors trading through a broker-dealer on an exchange",
+        "Primary market \u2014 investor-to-investor trading of outstanding securities",
+        "Secondary market \u2014 issuer's initial sale of newly registered securities"
+      ],
+      "answer": 0,
+      "explanation": "The third market is OTC trading of exchange-listed securities. The fourth market is direct institution-to-institution trading. The primary market is issuer-to-investor; the secondary market is investor-to-investor.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "A broker-dealer wishing to effect transactions in a non-exempt security on a national securities exchange must satisfy which of the following?",
+      "choices": [
+        "The security must be registered on that exchange under Section 12, and the broker-dealer must be registered under Section 15 and a member of an SRO.",
+        "Only the issuer must be registered under the Investment Company Act of 1940.",
+        "The broker-dealer must register with SIPC and the FDIC.",
+        "The security must be registered under Section 5 of the Exchange Act, and the broker-dealer must register with the Federal Reserve."
+      ],
+      "answer": 0,
+      "explanation": "Section 12(a) requires effective exchange registration of the security, and Section 15 requires the broker-dealer to be registered with the SEC and a member of a registered securities association or the exchange. The other choices cite the wrong statutes or agencies.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a712",
+        "Securities Exchange Act of 1934 \u00a715"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Each of the following is a function performed in the primary market EXCEPT:",
+      "choices": [
+        "An underwriter assisting an issuer in pricing a new issue",
+        "A syndicate distributing newly issued securities to investors on a firm-commitment basis",
+        "A market maker quoting two-sided markets in already-issued securities",
+        "A municipal advisor advising an issuer on the structure of a new bond issue"
+      ],
+      "answer": 2,
+      "explanation": "Market makers providing continuous quotes in outstanding securities operate in the secondary market. The other activities \u2014 underwriting, syndicate distribution, and municipal advisory work on a new issue \u2014 are core primary-market functions.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about Rule 144A is MOST accurate?",
+      "choices": [
+        "It permits public resales of restricted securities to retail investors after a six-month holding period.",
+        "It provides a safe harbor for resales of restricted securities to qualified institutional buyers (QIBs).",
+        "It allows the issuer to register securities for sale on a national securities exchange.",
+        "It exempts the issuer from filing a registration statement for any offering under Section 5."
+      ],
+      "answer": 1,
+      "explanation": "Rule 144A is a safe harbor permitting resales of restricted securities to QIBs without registration. It does not permit retail public resales, does not register securities for exchange listing, and does not itself exempt issuer offerings.",
+      "citations": [
+        "17 CFR 230.144A"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Each of the following statements about Rule 147 intrastate offerings is correct EXCEPT:",
+      "choices": [
+        "The offering is made to residents of a single state in which the issuer is also a resident and doing business.",
+        "Because the exemption is federal, blue-sky registration with the state is not required.",
+        "Resales outside the state are restricted for a period after the offering.",
+        "The exemption is available only when the issuer satisfies specified in-state business and resident-purchaser conditions."
+      ],
+      "answer": 1,
+      "explanation": "Rule 147 provides only an exemption from federal Section 5 registration; state blue-sky laws still apply. The remaining choices reflect actual Rule 147 conditions.",
+      "citations": [
+        "17 CFR 230.147"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is NOT a function of a self-regulatory organization registered under Section 15A?",
+      "choices": [
+        "Adopting rules designed to prevent fraudulent and manipulative acts",
+        "Promoting just and equitable principles of trade among members",
+        "Enforcing compliance by member firms with the federal securities laws and SRO rules",
+        "Setting national monetary policy to control inflation"
+      ],
+      "answer": 3,
+      "explanation": "Monetary policy is a function of the Federal Reserve, not an SRO. Sections 15A(b)(6) and (b)(2) require an SRO's rules to prevent fraud, promote just and equitable principles, and provide for enforcement of the securities laws and SRO rules.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a715A"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following BEST describes the difference between a firm-commitment and a best-efforts underwriting?",
+      "choices": [
+        "In a firm commitment the underwriter acts as agent; in best efforts the underwriter acts as principal.",
+        "In a firm commitment the underwriter buys the entire issue from the issuer and bears the resale risk; in best efforts the underwriter only agrees to use reasonable efforts to sell, with unsold shares returned to the issuer.",
+        "Both methods require the underwriter to purchase the entire issue, differing only in the commission rate.",
+        "Best-efforts offerings are required for all IPOs, while firm-commitment offerings are limited to follow-ons."
+      ],
+      "answer": 1,
+      "explanation": "In a firm commitment the syndicate takes the issue into inventory and bears market risk. In best efforts the syndicate acts as agent for the issuer and is not obligated to buy unsold shares. The capacities in choice A are reversed.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Each of the following statements regarding free writing prospectuses under Rule 164 is accurate EXCEPT:",
+      "choices": [
+        "A free writing prospectus may be used after a registration statement has been filed.",
+        "An ineligible issuer is generally not permitted to use a free writing prospectus.",
+        "Use of a free writing prospectus eliminates the need to deliver a Section 10(a) statutory prospectus.",
+        "Conditions in Rule 164 and Rule 433 must be satisfied for the safe harbor to apply."
+      ],
+      "answer": 2,
+      "explanation": "Rule 164 permits a free writing prospectus to be used in addition to \u2014 not in lieu of \u2014 the Section 10(a) prospectus delivery requirement. The other choices reflect Rule 164's conditions.",
+      "citations": [
+        "17 CFR 230.164",
+        "Securities Act of 1933 \u00a710"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "An issuer files a registration statement that the SEC staff believes is materially misleading. Which combination of SEC actions is MOST consistent with the Securities Act of 1933?",
+      "choices": [
+        "Issue a refusal order before effectiveness under Section 8(b) and, if the defect appears after effectiveness, issue a stop order under Section 8(d).",
+        "Automatically declare the statement effective and then sue the issuer for damages.",
+        "Approve the security on its merits and require the underwriter to indemnify investors.",
+        "Refer the matter exclusively to FINRA for arbitration before any administrative action."
+      ],
+      "answer": 0,
+      "explanation": "Section 8(b) authorizes a pre-effective refusal order for facially incomplete or inaccurate filings; Section 8(d) authorizes a post-effective stop order for material misstatements or omissions. The SEC never passes on the merits (Section 23), and these matters are not referred to FINRA arbitration.",
+      "citations": [
+        "Securities Act of 1933 \u00a78",
+        "Securities Act of 1933 \u00a723"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12412,
+    "output": 3291
+  },
+  "cost_usd": 0.433
+}

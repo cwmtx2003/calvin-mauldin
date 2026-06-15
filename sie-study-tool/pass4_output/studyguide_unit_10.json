@@ -3,97 +3,316 @@
   "unit_name": "Regulators",
   "sections": [
     {
-      "title": "Lesson 10.1: Government Regulators",
-      "overview": "Federal regulation of the U.S. securities industry is anchored by the SEC, created under the Securities Exchange Act of 1934, with supporting roles played by Treasury branches (FinCEN, IRS, OCC), state administrators coordinated through NASAA, and the two principal insurance regimes\u2014SIPC for broker-dealer customers and FDIC for bank depositors. Understanding each regulator's jurisdiction, the major federal securities acts, and the distinction between SIPC and FDIC coverage limits is foundational for the SIE exam.",
+      "title": "1. The Securities and Exchange Commission (SEC)",
+      "overview": "The SEC is the federal agency created by the Securities Exchange Act of 1934 with statutory authority over the U.S. securities markets. It administers and enforces the federal securities laws (1933 Act, 1934 Act, Trust Indenture Act of 1939, Investment Company Act of 1940, Investment Advisers Act of 1940, Sarbanes-Oxley, Dodd-Frank, JOBS Act) and oversees SROs, broker-dealers, investment advisers, transfer agents, clearing agencies, and registered investment companies.",
       "key_concepts": [
-        "SEC: primary federal securities regulator; created by the Securities Exchange Act of 1934; composed of 5 commissioners (no more than 3 from the same political party).",
-        "SEC jurisdiction: registration of broker-dealers, exchanges, trading markets, SIPs; delegates representative licensing to FINRA.",
-        "SEC enforcement powers: censure, limit activities, suspend/revoke registration (including permanent industry bar), impose fines. SEC has NO arrest power \u2014 criminal cases are referred to the Department of Justice.",
-        "A BD may not claim that SEC registration implies SEC approval of its financial standing or conduct (misrepresentation).",
-        "Security defined: an intangible financial asset that may be bought, sold, or gifted, represented by a paper certificate or electronic record. Commodities (gold, oil, beef) and futures are NOT securities.",
-        "FinCEN (Treasury): collects/analyzes financial intelligence; receives suspicious activity and large cash transaction reports under BSA/AML.",
-        "IRS (Treasury): primary federal tax enforcement; BDs must provide customer/firm information on demand.",
-        "Office of the Comptroller of the Currency (OCC, Treasury): supervises ~1,400 national banks, federal savings associations, and U.S. branches of foreign banks; Comptroller also serves as an FDIC director. WARNING: do not confuse with Options Clearing Corporation (also abbreviated OCC).",
-        "SIPC: nonprofit membership corporation created under the Securities Investor Protection Act of 1970 (SIPA); funded by member assessments; protects customers in BD bankruptcy.",
-        "SIPC coverage: up to $500,000 per separate customer (separate capacity), of which a MAXIMUM of $250,000 may be cash.",
-        "SIPC separate capacities: individual, joint, custodial, IRA each receive separate $500,000 coverage; cash + margin accounts of same customer are COMBINED; only margin equity (not full market value) is covered.",
-        "SIPC does NOT cover: commodities, commodity futures, currency contracts/losses. Excess claims make the customer a general creditor of the BD.",
-        "SIPC membership required for all SEC-registered BDs EXCEPT: (1) banks dealing exclusively in municipal securities, (2) firms dealing exclusively in U.S. government securities, (3) firms dealing exclusively in redeemable investment company (mutual fund) securities.",
-        "SIPC disclosure: written disclosure at account opening AND annually thereafter; SIPC sign posted on premises; 'SIPC' may not appear larger than the firm's own name in advertising.",
-        "FDIC: independent federal agency insuring bank deposits; funded by premiums from member banks.",
-        "FDIC coverage: $250,000 per depositor, per insured bank, per ownership category.",
-        "FDIC covers: checking, savings, MMDA, CDs, self-directed IRA bank deposits. FDIC does NOT cover: mutual funds, annuities, life insurance, stocks, bonds.",
-        "Uniform Securities Act (USA, 1956): federal template adopted by all states; mandates a state securities Administrator in each state with authority over registration of securities, BDs, IAs, and reps.",
-        "NASAA: North American Securities Administrators Association \u2014 represents state/provincial regulators in U.S., Canada, Mexico; issues Model Rules; has NO independent regulatory authority."
+        "Created by the Securities Exchange Act of 1934 \u2014 not an SRO; it is a federal regulator with civil enforcement authority (criminal matters are referred to the DOJ).",
+        "Five Commissioners, appointed by the President with Senate confirmation, serving staggered 5-year terms; no more than 3 may be from the same political party. The President designates one as Chair.",
+        "Five operating divisions: Corporation Finance, Trading and Markets, Investment Management, Enforcement, and Economic and Risk Analysis.",
+        "Authority includes registering securities offerings (1933 Act), registering and overseeing broker-dealers and SROs (1934 Act), approving SRO rules, granting/denying registrations, and issuing no-action letters and interpretive guidance.",
+        "SEC reviews disciplinary actions of SROs and rule filings; SRO rules become effective only upon SEC approval (or filing under self-effectuating categories)."
       ],
       "rules": [
-        "Securities Act of 1933 \u2014 primary (new issue) market; issuer registration.",
-        "Securities Exchange Act of 1934 \u2014 secondary markets; created SEC; insider transactions, short sales, proxies; customer protection rule; net capital rule; issuer reporting (e.g., annual reports); BD/exchange registration.",
-        "Investment Company Act of 1940 \u2014 mutual funds, closed-end funds, UITs.",
-        "Investment Advisers Act of 1940 \u2014 firms earning fees for investment advice.",
-        "Securities Investor Protection Act of 1970 (SIPA) \u2014 created SIPC; customer protection on BD bankruptcy.",
-        "Insider Trading and Securities Fraud Enforcement Act of 1988 \u2014 penalties for misuse of material nonpublic information.",
-        "USA PATRIOT Act of 2001 (built on Bank Secrecy Act of 1970) \u2014 AML policies/procedures."
-      ],
-      "formulas": [
-        "SIPC max coverage per separate customer = $500,000 total, with cash component capped at $250,000",
-        "FDIC max coverage = $250,000 per depositor, per insured bank, per ownership category",
-        "Margin account SIPC coverage = equity in the account (not market value)"
-      ],
-      "mnemonics": [
-        "'33 = New issues; '34 = eXchanges & SEC; '40 = funds & advisers; '70 = SIPC; '88 = Insider; '01 = PATRIOT.",
-        "SIPC = Securities (BDs) | FDIC = Funds in Deposit accounts (Banks).",
-        "SIPC '5-2-5-0 / 2-5-0' \u2014 Five hundred K total, Two-Fifty cash.",
-        "OCC has two meanings: Office of Comptroller of Currency (banks) vs. Options Clearing Corporation (options) \u2014 read the question carefully."
-      ]
-    },
-    {
-      "title": "Lesson 10.2: Self-Regulatory Organizations (SROs)",
-      "overview": "SROs are industry bodies authorized by the SEC to write and enforce rules for their members. FINRA is the dominant SRO for broker-dealers and their associated persons; the MSRB writes (but does not enforce) rules for municipal securities; and the exchanges regulate trading on their own venues. This lesson also covers FINRA's four rulebooks, the disciplinary appeals chain, and SEC/FINRA record-retention requirements under Rules 17a-3 and 17a-4.",
-      "key_concepts": [
-        "FINRA: successor to NASD (consolidated with NYSE Member Regulation in 2007); primary SRO for BDs and associated persons.",
-        "FINRA jurisdiction: investment banking (underwriting), OTC trading, exchange-listed trading, conduct of member firms and associated persons; SEC-delegated administration of qualification exams (e.g., SIE, Series 6, 7).",
-        "FINRA member firms may only do business with other FINRA members, with limited exceptions (e.g., bank in a municipal underwriting; foreign firm that is a member of its country's FINRA equivalent).",
-        "FINRA's Four Rulebooks: Conduct Rules, Code of Procedure (COP), Uniform Practice Code (UPC), Code of Arbitration (COA).",
-        "Conduct Rules: fair dealing, compensation, communications, sales practice violations.",
-        "Code of Procedure (COP): disciplinary process. Department of Enforcement (DOE) investigates and holds hearings; sanctions include suspension, expulsion, bar, fines, censure, any other appropriate action. FINRA has NO arrest powers.",
-        "COP Appeals Chain: DOE \u2192 National Adjudicatory Council (NAC) \u2192 SEC \u2192 Federal Appellate Courts.",
-        "Uniform Practice Code (UPC): technical aspects of securities transactions (good delivery, settlement dates, ex-dividend dates, accrued interest, etc.).",
-        "Code of Arbitration (COA): mandatory dispute resolution for MONETARY disputes between members and between members and associated persons; voluntary for customers (but customers usually agree via predispute arbitration clause in new account form). Arbitration decisions are FINAL AND BINDING \u2014 no appeal.",
-        "MSRB: primary SRO for municipal securities (debt AND non-debt municipal securities like 529 plans and ABLE accounts). MSRB writes rules but has NO enforcement authority.",
-        "MSRB rule enforcement: against banks \u2192 OCC, Federal Reserve, FDIC; against securities firms \u2192 SEC and FINRA. MSRB has NO authority over municipal issuers themselves.",
-        "Exchanges (e.g., NYSE) are both market centers AND SROs; regulate trading on the exchange; may delist or suspend trading on listed securities.",
-        "Order audit trail: the Consolidated Audit Trail (CAT) is the current audit-trail system (OATS was retired September 1, 2021).",
-        "RECORD RETENTION \u2014 Life of the Firm (Indefinite): partnership agreement, corporate charter/articles of incorporation, stock certificate books, board/partner meeting minutes, amendments to these records, organizational records (e.g., Form BD).",
-        "RECORD RETENTION \u2014 6 Years: blotters (records of original entry \u2014 trades, securities receipts/deliveries, cash receipts/disbursements), general ledger, stock record, customer ledgers/statements, customer account records (new account form, margin agreement), designation of principals.",
-        "RECORD RETENTION \u2014 4 Years (FINRA): written customer complaints (retained 4 years after resolution at the OSJ where the complaint originated). NOTE: SEC Rule 17a-4 requires only 3 years for complaints; most firms follow the stricter 4-year FINRA rule.",
-        "RECORD RETENTION \u2014 3 Years: advertising, trial balances, U4/U5 and fingerprint cards (for terminated personnel), customer confirmations, order tickets, other ledgers (securities borrowed/loaned, money borrowed/loaned, dividends and interest received), list of every office, associated persons' compensation records, firm's compliance and procedures manuals.",
-        "Accessibility: For 3- and 6-year records, the most recent 2 years must be easily accessible (branch, OSJ, or headquarters).",
-        "Storage media: Digital storage permitted; must preserve records in a non-rewriteable, non-erasable format (WORM). SEC amended Rule 17a-4(f) in 2023 to permit an 'audit-trail alternative' to traditional WORM storage (Rel. 34-96034).",
-        "Definition of 'written' complaint is broad \u2014 includes letters, email, text, IM, tweets, social media posts. Verbal complaints have no recordkeeping standing."
-      ],
-      "rules": [
-        "FINRA Conduct Rules \u2014 customer-facing fair dealing, communications, sales practices.",
-        "FINRA Code of Procedure \u2014 disciplinary process for rule violations.",
-        "FINRA Uniform Practice Code \u2014 technical/operational transaction rules.",
-        "FINRA Code of Arbitration \u2014 binding dispute resolution.",
-        "SEC Rule 17a-3 \u2014 required books and records to be created.",
-        "SEC Rule 17a-4 \u2014 record preservation periods and storage media requirements (amended 2023 to allow audit-trail alternative to WORM).",
-        "MSRB Rules \u2014 enforced by FINRA/SEC (securities firms) or OCC/Federal Reserve/FDIC (banks)."
+        "Securities Exchange Act of 1934 \u00a73(a)(39) \u2014 defines 'statutory disqualification,' the conditions under which a person is barred from association with an SRO member (includes specified felony/securities-related misdemeanor convictions within 10 years, SEC/SRO bars, willful false statements on registration forms, and certain injunctions).",
+        "17 CFR 240.17f-2 \u2014 SEC fingerprinting rule for securities-industry personnel; submission via an authorized SRO/agency."
       ],
       "formulas": [],
       "mnemonics": [
-        "COP Appeals: 'DOE NACks SEC in Court' \u2014 DOE \u2192 NAC \u2192 SEC \u2192 Courts.",
-        "FINRA's 4 books: 'Cops Use Arbitration Codes' \u2014 Conduct, UPC, Arbitration, Code of Procedure.",
-        "Retention 'Life-6-4-3': Life-of-firm (foundational docs) \u2192 6 yrs (customer & financial records) \u2192 4 yrs (written complaints, FINRA) \u2192 3 yrs (everything else).",
-        "MSRB: 'Makes rules, Skips Regulating, Banks/BDs enforce' \u2014 writes rules, no enforcement of its own.",
-        "Arbitration is FINAL \u2014 no appeal; COP rulings CAN be appealed."
+        "SEC Commissioners: '5 / 5 / 3' \u2014 5 Commissioners, 5-year staggered terms, no more than 3 from one party.",
+        "Divisions \u2014 'CITE-E': Corp Finance, Investment Management, Trading & Markets, Enforcement, Economic & Risk Analysis."
+      ]
+    },
+    {
+      "title": "2. U.S. Treasury Branches with Securities-Related Authority",
+      "overview": "Several bureaus inside the Department of the Treasury exercise authority that touches the securities industry, particularly in the areas of banking, AML, and tax. The SIE expects candidates to know which Treasury bureau performs which function.",
+      "key_concepts": [
+        "OCC (Office of the Comptroller of the Currency) \u2014 charters, regulates, and supervises all national banks and federal savings associations; oversees bank securities activities conducted under bank exceptions.",
+        "FinCEN (Financial Crimes Enforcement Network) \u2014 administers the Bank Secrecy Act (BSA) and AML rules; receives Currency Transaction Reports (CTRs over $10,000) and Suspicious Activity Reports (SARs); designated as the U.S. Financial Intelligence Unit under the USA PATRIOT Act.",
+        "IRS (Internal Revenue Service) \u2014 administers the Internal Revenue Code; oversees retirement-account tax rules, cost-basis reporting, and information returns (1099, 5498, etc.).",
+        "These bureaus are not SROs and do not enforce FINRA rules, but BSA/AML compliance and tax-reporting obligations are integral to BD operations."
+      ],
+      "rules": [],
+      "formulas": [],
+      "mnemonics": [
+        "Treasury trio for the SIE: 'OFI' \u2014 OCC (banks), FinCEN (AML), IRS (tax)."
+      ]
+    },
+    {
+      "title": "3. SIPC vs. FDIC \u2014 Customer Protection Coverage",
+      "overview": "SIPC (Securities Investor Protection Corporation) protects customers of failed broker-dealers; FDIC (Federal Deposit Insurance Corporation) protects depositors of failed insured banks. Both are limited to defined coverage amounts and do NOT protect against investment losses from market movement.",
+      "key_concepts": [
+        "SIPC was created by the Securities Investor Protection Act of 1970 (SIPA); membership is mandatory for nearly all registered U.S. broker-dealers.",
+        "SIPC coverage: up to $500,000 per separate customer (per separate capacity), of which a maximum of $250,000 may be cash. Securities held in 'street name' are protected; commodities futures, fixed annuities, and unregistered investment contracts are NOT covered.",
+        "Separate capacities (each gets its own limit): individual, joint, IRA, Roth IRA, custodian (UTMA/UGMA), corporate, trust, etc.",
+        "If a BD fails, SIPC may petition a court to appoint a trustee to liquidate the firm; customer claims have priority over general creditors.",
+        "FDIC coverage: $250,000 per depositor, per insured bank, per ownership category. Covers deposit products (checking, savings, CDs, MMDA) \u2014 NOT securities, mutual funds, or annuities, even if purchased at a bank.",
+        "Bank-sweep money market deposit accounts are FDIC-insured; money market mutual funds in a brokerage account are SIPC-protected but not FDIC-insured."
+      ],
+      "rules": [],
+      "formulas": [
+        "SIPC max per separate capacity = $500,000 total securities + cash, with cash sub-limit = $250,000",
+        "FDIC max = $250,000 per depositor / per insured bank / per ownership category"
+      ],
+      "mnemonics": [
+        "SIPC: '5-and-2.5' (500k total / 250k cash).",
+        "FDIC: '2.5 per category, per bank, per depositor.'",
+        "SIPC \u2260 insurance against losing money \u2014 it's protection against the BD's failure."
+      ]
+    },
+    {
+      "title": "4. State Administrators and NASAA",
+      "overview": "State (or 'blue-sky') securities regulation operates in parallel with federal regulation. State administrators register securities, broker-dealers, agents (registered reps), and investment adviser representatives under the Uniform Securities Act, and they coordinate through the North American Securities Administrators Association (NASAA).",
+      "key_concepts": [
+        "Blue-sky laws \u2014 state securities statutes; typically modeled on the Uniform Securities Act (1956/2002).",
+        "Three-pronged state registration: (1) the security, (2) the broker-dealer/investment adviser firm, (3) the agent / IAR.",
+        "NSMIA (1996) preempted state registration of 'covered securities' (e.g., NYSE/Nasdaq-listed securities, investment company shares) but left states authority over fraud enforcement and notice-filing fees.",
+        "State administrators may deny, suspend, or revoke a registration; sanctions can include statutory disqualification from FINRA.",
+        "NASAA \u2014 not a regulator itself; an association of state administrators that drafts model rules and the Series 63/65/66 exams.",
+        "Form U4 / Form U10 are filed via FINRA's CRD system, which interfaces with state regulators."
+      ],
+      "rules": [],
+      "formulas": [],
+      "mnemonics": [
+        "Three to register at the state level: 'Security \u2013 Firm \u2013 Agent.'"
+      ]
+    },
+    {
+      "title": "5. FINRA \u2014 Scope and Authority",
+      "overview": "FINRA (Financial Industry Regulatory Authority) is the largest non-governmental SRO for U.S. broker-dealers. It was formed in 2007 by the consolidation of NASD with the member regulation, enforcement, and arbitration functions of the NYSE. FINRA writes rules subject to SEC approval, examines members, enforces its rules and the federal securities laws against members, and operates the BrokerCheck system and the dispute-resolution forum.",
+      "key_concepts": [
+        "Definition of 'member' \u2014 Securities Exchange Act of 1934 \u00a73(a)(3)(B): a broker or dealer who agrees to be regulated by the association.",
+        "FINRA jurisdiction covers member firms and their associated persons; FINRA does not directly regulate issuers, investors, or non-member banks.",
+        "FINRA Code of Procedure (Rule 9000 series) \u2014 handles disciplinary proceedings (complaints, hearings, sanctions, appeals).",
+        "FINRA Code of Arbitration (Rule 12000/13000) \u2014 mandatory forum for disputes between members, between members and associated persons, and between members and customers (when the customer signs an arbitration agreement or files a claim).",
+        "Sanctions FINRA may impose: censure, fine, suspension, bar (permanent), expulsion of the firm, restitution.",
+        "BrokerCheck \u2014 public disclosure tool (Rule 8312) showing registration and disciplinary history of firms and registered persons.",
+        "Customer education: members must annually furnish customers the FINRA BrokerCheck hotline number, website, and brochure availability (Rule 2267)."
+      ],
+      "rules": [
+        "Rule 1122 \u2014 Prohibits filing of misleading membership/registration information; failure to correct is itself a violation.",
+        "Rule 1240 \u2014 Continuing Education: Regulatory Element (annually, by Dec. 31, per registration category) and Firm Element (annual needs analysis and written training plan for covered registered persons). Failure to complete Regulatory Element renders registration inactive; two consecutive years of inactivity terminates the registration.",
+        "Rule 2060 \u2014 Prohibits use of customer/security-ownership information obtained in a fiduciary capacity (e.g., as transfer agent or paying agent) to solicit business.",
+        "Rule 2263 \u2014 Arbitration disclosure must be provided when an associated person signs or acknowledges Form U4 (disclosing waiver of jury trial, limited discovery, finality of awards, etc.).",
+        "Rule 2267 \u2014 Annual delivery of FINRA BrokerCheck information to customers.",
+        "Rule 2310(c) \u2014 Non-cash compensation limits for direct participation programs.",
+        "Rule 2320(g)(4) \u2014 Non-cash compensation limits for variable contracts.",
+        "Rule 2341(l)(5) \u2014 Non-cash compensation limits for investment company securities.",
+        "Rule 3110(e) \u2014 Background investigation of registration applicants; member must verify the accuracy and completeness of the information on Form U4, including a search of public records, within 30 calendar days of filing.",
+        "Rule 3220 \u2014 'Gifts Rule': gifts or gratuities to employees of others related to the recipient's business are limited to $300 per person, per year; written employment-agreement exception requires prior written consent of the recipient's employer.",
+        "Rule 3270 \u2014 Outside business activities of registered persons: prior written notice to the member required before engaging.",
+        "Rule 3280 \u2014 Private securities transactions ('selling away'): prior written notice and, if compensation is received, prior written approval of the member; firm must record on its books if approved.",
+        "Rule 4513 \u2014 Records of written customer complaints (retain at each OSJ for at least 4 years).",
+        "Rule 4330 \u2014 Customer-securities lending; permission and disclosures required for firms borrowing from customers (fully paid / excess-margin securities).",
+        "Rule 4530 \u2014 Reporting obligations of members: must report to FINRA specified events (criminal charges/convictions, customer complaints, regulatory actions, etc.); statistical/summary complaint reporting quarterly; certain events within 30 days.",
+        "Rule 5110(h) \u2014 Non-cash compensation in connection with public offerings.",
+        "Rule 8312 \u2014 BrokerCheck disclosure of information by FINRA."
+      ],
+      "formulas": [
+        "FINRA Rule 3220 gift cap = $300 per individual per year",
+        "Rule 4530 reporting deadline for specified events = within 30 calendar days of knowledge",
+        "Rule 3110(e) background-check completion = within 30 calendar days of Form U4 filing"
+      ],
+      "mnemonics": [
+        "FINRA sanctions ladder \u2014 'CFSBE': Censure, Fine, Suspension, Bar, Expulsion.",
+        "Reportable conduct deadlines: 'Thirty for the firm, Thirty for the rep' \u2014 30 days under Rule 4530 / Form U4 amendments.",
+        "Selling-away vs. moonlighting: 'Securities = approval (3280); Other = notice (3270).'"
+      ]
+    },
+    {
+      "title": "6. MSRB and the Exchanges",
+      "overview": "The MSRB (Municipal Securities Rulemaking Board) writes rules governing municipal securities dealers, brokers, and municipal advisors, but it does NOT examine or enforce. The national securities exchanges (NYSE, Nasdaq, CBOE) are SROs that operate marketplaces and write rules governing their members.",
+      "key_concepts": [
+        "MSRB created by the Securities Acts Amendments of 1975; SEC-overseen, self-regulatory, but does NOT enforce its own rules.",
+        "MSRB rules are enforced by: FINRA (for securities firms), the SEC, the OCC (national banks), the Federal Reserve (state member banks), and the FDIC (insured state non-member banks).",
+        "Exchanges (Securities Exchange Act \u00a73(a)(1)) \u2014 organizations that bring together purchasers and sellers; must register with the SEC as national securities exchanges. Examples: NYSE, Nasdaq Stock Market, Cboe BZX, NYSE Arca.",
+        "CBOE (Cboe Options Exchange) writes options-trading rules; FINRA enforces options rules at non-Cboe member firms.",
+        "Member definitions: SEA \u00a73(a)(3)(A) (exchange member) and \u00a73(a)(3)(B) (association member)."
+      ],
+      "rules": [
+        "MSRB Rule G-2 \u2014 Standards of professional qualification; persons engaging in municipal securities activities must be qualified per MSRB rules.",
+        "MSRB Rule G-3 \u2014 Classification of municipal securities representatives (Series 52) and principals (Series 53); CE requirements parallel to FINRA's (Regulatory and Firm Element).",
+        "MSRB Rule G-7 \u2014 Information concerning associated persons (analog to Form U4 disclosures for muni personnel).",
+        "MSRB Rule G-10 \u2014 Annual investor-education notice and disclosure to customers regarding MSRB website, investor brochure, and complaint procedures.",
+        "MSRB Rule G-20 \u2014 Gifts, gratuities, non-cash compensation, and expenses of issuance \u2014 the muni equivalent of FINRA Rule 3220; $100 per person per year limit on gifts in relation to municipal securities/advisory business.",
+        "MSRB Rule G-37 \u2014 Political contributions and prohibitions on municipal securities business: a dealer is banned from engaging in municipal securities business with an issuer for two years if the dealer or a 'municipal finance professional' makes a non-de-minimis contribution to an issuer official with influence over the award of business. De minimis: contributions of $250 or less per election to an official for whom the MFP is entitled to vote do not trigger the ban; quarterly Form G-37 disclosure required.",
+        "Cboe Rule 7.10 \u2014 Disciplinary rules / sanctions for exchange members (used as authority for CBOE enforcement actions)."
+      ],
+      "formulas": [
+        "MSRB G-20 gift cap = $100 per individual per year (vs. FINRA $300)",
+        "MSRB G-37 de minimis contribution = $250 per election, per official the MFP can vote for; ban for violations = 2 years from the issuer"
+      ],
+      "mnemonics": [
+        "MSRB 'writes but doesn't fight' \u2014 it writes rules but does not examine/enforce.",
+        "Gift caps: 'Munis $100, Members $300' (G-20 vs. 3220).",
+        "G-37 = 'Two-50, Two-year ban' \u2014 $250 de minimis / 2-year MFAB prohibition."
+      ]
+    },
+    {
+      "title": "7. Record-Retention Requirements",
+      "overview": "SEC Rules 17a-3 (records to be made) and 17a-4 (records to be preserved) under the Exchange Act establish the federal record-keeping framework for broker-dealers. Retention periods vary by document type; certain core organizational records must be kept for the life of the firm.",
+      "key_concepts": [
+        "SEA Rule 17a-3 \u2014 specifies which records a BD must create (blotters, ledgers, order tickets, trade confirmations, account records, etc.).",
+        "SEA Rule 17a-4 \u2014 specifies how long each record must be preserved and the storage format (immediate accessibility for a specified period, then off-site).",
+        "Life-of-firm records \u2014 partnership articles, articles of incorporation, charter, minute books, stock certificate books.",
+        "6-year records \u2014 blotters, general ledgers, stock records (securities position records), customer account ledgers (often kept 6 years after account closed).",
+        "3-year records \u2014 most other records, including order tickets, trade confirmations, customer correspondence, communications with the public, advertising, employment applications (3 years after termination), Forms U4 (after termination), trial balances, and FOCUS reports. Communications typically 3 years, the first 2 years in an easily accessible place.",
+        "Rule 17a-4(f) was amended in 2023 (SEC Release No. 34-96034) to permit broker-dealers to use an 'audit-trail alternative' to the legacy WORM (write-once-read-many) electronic storage requirement; the underlying retention periods are unchanged for SIE purposes.",
+        "FINRA Rule 4513 \u2014 written customer complaints retained at the OSJ for at least 4 years.",
+        "Audit-trail reporting \u2014 the Consolidated Audit Trail (CAT) replaced OATS effective September 1, 2021; CAT captures the full lifecycle of an order across markets."
+      ],
+      "rules": [
+        "17 CFR 240.17a-3 \u2014 books and records to be made.",
+        "17 CFR 240.17a-4 \u2014 preservation of records; 17a-4(f) audit-trail/electronic storage requirements.",
+        "FINRA Rule 4513 \u2014 customer complaint records (4 years at OSJ).",
+        "FINRA Rule 4530 \u2014 interfaces with retention by setting reporting deadlines for specified events."
+      ],
+      "formulas": [
+        "Common retention periods (SEA 17a-4): Lifetime \u2192 org/charter docs; 6 years \u2192 blotters, GL, stock record, customer account ledgers; 3 years \u2192 most other records (order tickets, confirms, correspondence, ads, U4/U5 after termination)",
+        "FINRA Rule 4513 customer complaint records = 4 years at the OSJ"
+      ],
+      "mnemonics": [
+        "Retention ladder \u2014 'Life / 6 / 4 / 3': Life-of-firm (charter); 6 yrs (blotters, ledgers, stock record); 4 yrs (complaints \u2013 Rule 4513); 3 yrs (everything else / communications).",
+        "OATS \u2192 CAT: 'Old Audit Trail System' was replaced by the 'Consolidated Audit Trail' on 9/1/2021.",
+        "WORM is no longer the only option \u2014 audit-trail alternative permitted under amended 17a-4(f)."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 14084,
-    "output": 4314
+    "input": 12015,
+    "output": 6811
   },
-  "cost_usd": 0.5348
+  "cost_usd": 0.691
 }

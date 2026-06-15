@@ -1,0 +1,551 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "jf": "tc",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "An investor purchased a corporate bond at par with a 5% coupon. The bond now trades at $1,250 in the secondary market. What is the bond's current yield?",
+      "choices": [
+        "4.00%",
+        "5.00%",
+        "5.25%",
+        "6.25%"
+      ],
+      "answer": 0,
+      "explanation": "Current yield equals annual interest income divided by current market price: $50 / $1,250 = 4.00%. The 5.00% figure is the nominal (coupon) yield based on par, not current market value.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor bought 100 shares of common stock at $40 per share and sold them 10 months later at $55 per share. How is the $1,500 gain taxed?",
+      "choices": [
+        "As a long-term capital gain at preferential rates",
+        "As a short-term capital gain at ordinary income tax rates",
+        "As a qualified dividend at preferential rates",
+        "As tax-exempt return of capital"
+      ],
+      "answer": 1,
+      "explanation": "To qualify as a long-term capital gain, the security must be held for more than one year. A 10-month holding period results in a short-term capital gain taxed as ordinary income.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes an investor's total return on a security?",
+      "choices": [
+        "Only the realized capital gain divided by cost basis",
+        "Only the income received divided by current market price",
+        "The sum of income received plus capital appreciation, divided by cost basis",
+        "The coupon rate stated on the face of the security"
+      ],
+      "answer": 2,
+      "explanation": "Total return measures the entire return from an investment, combining both income (interest or dividends) and capital appreciation, expressed as a percentage of the cost basis. Current yield captures only income.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor sells stock at a $3,000 loss on March 10 and repurchases the same stock on March 25. What is the tax consequence?",
+      "choices": [
+        "The full $3,000 loss is deductible in the current year",
+        "The loss is disallowed under the wash sale rule and added to the basis of the replacement shares",
+        "The loss is recognized but limited to $1,500 in the current year",
+        "The loss is reclassified as a long-term capital loss"
+      ],
+      "answer": 1,
+      "explanation": "A wash sale occurs when substantially identical securities are repurchased within 30 days before or after the sale at a loss. The disallowed loss is added to the cost basis of the replacement security.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "For a dividend to receive qualified dividend tax treatment, the investor generally must hold the underlying common stock for:",
+      "choices": [
+        "At least 30 days before the ex-date",
+        "More than 60 days during the 121-day period surrounding the ex-dividend date",
+        "At least one year after the payable date",
+        "Any holding period, as all common stock dividends are qualified"
+      ],
+      "answer": 1,
+      "explanation": "Qualified dividends require the investor to hold the underlying common stock for more than 60 days during the 121-day period that begins 60 days before the ex-dividend date. Otherwise, the dividend is taxed at ordinary income rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A bond is purchased at a discount to par. Which yield will be the highest?",
+      "choices": [
+        "Nominal yield",
+        "Current yield",
+        "Yield to maturity",
+        "Yield to call (with call at par)"
+      ],
+      "answer": 2,
+      "explanation": "When a bond trades at a discount, yields rank from lowest to highest: nominal < current < YTM. YTM reflects accretion of the discount to par at maturity, producing the highest yield.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Long-term capital gains for individual taxpayers are currently taxed at which set of preferential federal rates?",
+      "choices": [
+        "0%, 10%, or 20%",
+        "0%, 15%, or 20%",
+        "10%, 20%, or 28%",
+        "15%, 25%, or 35%"
+      ],
+      "answer": 1,
+      "explanation": "Long-term capital gains (on assets held more than one year) are taxed at preferential rates of 0%, 15%, or 20%, depending on the taxpayer's taxable income bracket. A 3.8% Net Investment Income Tax may also apply above certain MAGI thresholds.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor purchased 200 shares of stock at $30 per share, paying a $40 commission. What is the investor's adjusted cost basis per share?",
+      "choices": [
+        "$30.00",
+        "$30.20",
+        "$29.80",
+        "$30.40"
+      ],
+      "answer": 1,
+      "explanation": "Cost basis includes the purchase price plus commissions paid: (200 \u00d7 $30) + $40 = $6,040, divided by 200 shares = $30.20 per share. Commissions are added to basis on purchase.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor has $9,000 in net capital losses for the year and no other capital gains. What is the maximum amount that can be deducted against ordinary income in the current tax year?",
+      "choices": [
+        "$1,500",
+        "$3,000",
+        "$5,000",
+        "$9,000"
+      ],
+      "answer": 1,
+      "explanation": "Individuals may deduct up to $3,000 of net capital losses against ordinary income per year. The remaining $6,000 is carried forward to subsequent tax years indefinitely.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Interest received from which of the following is generally exempt from federal income tax?",
+      "choices": [
+        "U.S. Treasury notes",
+        "Corporate bonds",
+        "General obligation municipal bonds",
+        "Certificates of deposit"
+      ],
+      "answer": 2,
+      "explanation": "Interest on municipal bonds (such as general obligation bonds issued by states and municipalities) is generally exempt from federal income tax. Treasury interest is federally taxable but exempt at the state level; corporate bond and CD interest is fully taxable.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor in the 32% federal tax bracket is comparing a corporate bond yielding 6% to a tax-exempt municipal bond. What is the tax-equivalent yield the municipal bond must offer to match the corporate bond on an after-tax basis?",
+      "choices": [
+        "The municipal must yield approximately 4.08%",
+        "The municipal must yield approximately 6.00%",
+        "The municipal must yield approximately 8.82%",
+        "The municipal must yield approximately 1.92%"
+      ],
+      "answer": 0,
+      "explanation": "After-tax yield on the corporate bond = 6% \u00d7 (1 \u2212 0.32) = 4.08%. A municipal bond yielding 4.08% tax-free would produce an equivalent after-tax return for the investor.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor sells stock for a $2,000 gain after holding the shares for 14 months. The gain is properly classified as:",
+      "choices": [
+        "Short-term capital gain taxed at ordinary income rates",
+        "Long-term capital gain taxed at preferential rates",
+        "Ordinary dividend income",
+        "Return of capital, not currently taxable"
+      ],
+      "answer": 1,
+      "explanation": "A holding period of more than one year qualifies the gain as long-term, eligible for preferential capital gains rates (0%, 15%, or 20%). Short-term treatment applies only when the asset is held one year or less.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13191,
+    "output": 2440
+  },
+  "cost_usd": 0.3809
+}

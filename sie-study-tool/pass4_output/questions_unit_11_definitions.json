@@ -1,0 +1,575 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "jf": "tc",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source?",
+      "choices": [
+        "Money laundering",
+        "Insider trading",
+        "Front running",
+        "Market manipulation"
+      ],
+      "answer": 0,
+      "explanation": "Money laundering is specifically defined as concealing the illicit source of funds. Insider trading involves trading on material non-public information, which is a different prohibited activity.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The stage of money laundering in which illicit cash is first introduced into the financial system is known as:",
+      "choices": [
+        "Layering",
+        "Integration",
+        "Placement",
+        "Structuring"
+      ],
+      "answer": 2,
+      "explanation": "Placement is the initial stage where illicit funds enter the financial system. Layering, by contrast, occurs later and involves moving the funds through a series of transactions to obscure their origin.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to information about an issuer that has not been released to the public and that a reasonable investor would consider important in making an investment decision?",
+      "choices": [
+        "Selective disclosure",
+        "Material non-public information",
+        "Restricted information",
+        "Confidential research"
+      ],
+      "answer": 1,
+      "explanation": "Material non-public information (MNPI) is the precise term used in the insider-trading rules. \"Selective disclosure\" describes the act of releasing such information to a select group and is not the definition of the information itself.",
+      "citations": [
+        "17 CFR 240.10b5-1",
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The practice of a registered representative entering an order for his or her own account ahead of a known imminent block order from a customer is called:",
+      "choices": [
+        "Marking the close",
+        "Front running",
+        "Backing away",
+        "Freeriding"
+      ],
+      "answer": 1,
+      "explanation": "Front running is trading ahead of a customer's pending block order to profit from the anticipated market impact. Marking the close involves transactions at the end of the day to influence the closing price.",
+      "citations": [
+        "Rule 5270"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the manipulative practice of executing transactions at or near the end of the trading day for the purpose of influencing the closing price of a security?",
+      "choices": [
+        "Painting the tape",
+        "Marking the close",
+        "Capping",
+        "Pegging"
+      ],
+      "answer": 1,
+      "explanation": "Marking the close is defined as end-of-day transactions intended to affect the closing price. Painting the tape involves coordinated trades among parties to create the appearance of active trading throughout the session.",
+      "citations": [
+        "Rule 5210"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under FINRA Rule 5130, a person whose ability to purchase a new issue (IPO) of common stock at the public offering price is prohibited is known as a:",
+      "choices": [
+        "Control person",
+        "Restricted person",
+        "Statutory underwriter",
+        "Disqualified investor"
+      ],
+      "answer": 1,
+      "explanation": "Rule 5130 uses the term \"restricted person\" for those (such as broker-dealers and their associated persons) who may not buy new issues at the offering price. \"Control person\" is a separate concept under Rule 144.",
+      "citations": [
+        "Rule 5130"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to an individual that a customer authorizes the firm to contact about possible financial exploitation or to confirm specifics of the customer's current contact information?",
+      "choices": [
+        "Trusted contact person",
+        "Power of attorney",
+        "Beneficial owner",
+        "Designated beneficiary"
+      ],
+      "answer": 0,
+      "explanation": "A trusted contact person is the term used in FINRA Rule 4512 for the individual a member must make reasonable efforts to identify at account opening. A power of attorney, by contrast, has authority to act on the account.",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A written report that a firm must file with FinCEN when it knows, suspects, or has reason to suspect that a transaction involves funds derived from illegal activity is called a:",
+      "choices": [
+        "Currency Transaction Report (CTR)",
+        "Suspicious Activity Report (SAR)",
+        "Form CRS",
+        "Customer Identification Record"
+      ],
+      "answer": 1,
+      "explanation": "A SAR is filed for suspicious transactions. A CTR is a different report filed for cash transactions exceeding the regulatory threshold, regardless of whether the activity appears suspicious.",
+      "citations": [
+        "USA PATRIOT Act \u00a7352",
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The list maintained by OFAC that identifies individuals and entities with whom U.S. persons are generally prohibited from doing business is known as the:",
+      "choices": [
+        "Specially Designated Nationals and Blocked Persons List",
+        "FinCEN Watch List",
+        "National Do-Not-Call Registry",
+        "Restricted Persons List"
+      ],
+      "answer": 0,
+      "explanation": "OFAC publishes the SDN List for sanctions screening. The National Do-Not-Call Registry is a separate telemarketing list, and the \"Restricted Persons List\" is not an OFAC term.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "FINRA Rule 2210 classifies a written communication distributed or made available to 25 or more retail investors within any 30-calendar-day period as a:",
+      "choices": [
+        "Correspondence",
+        "Institutional communication",
+        "Retail communication",
+        "Public appearance"
+      ],
+      "answer": 2,
+      "explanation": "Under Rule 2210, communications reaching more than 25 retail investors in 30 days are retail communications. Correspondence is limited to 25 or fewer retail investors in the same period.",
+      "citations": [
+        "Rule 2210"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A written plan that a member firm must maintain to address how it will continue operations and meet obligations to customers in the event of a significant business disruption is called a:",
+      "choices": [
+        "Anti-money laundering program",
+        "Business continuity plan",
+        "Customer protection plan",
+        "Net capital contingency plan"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 4370 requires each member to maintain a business continuity plan (BCP) covering significant business disruptions. An AML program addresses money laundering, not operational continuity.",
+      "citations": [
+        "Rule 4370"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes nonpublic personal financial information that a broker-dealer collects from a customer and is required to safeguard under Regulation S-P?",
+      "choices": [
+        "Material non-public information",
+        "Nonpublic personal information",
+        "Restricted customer data",
+        "Confidential issuer information"
+      ],
+      "answer": 1,
+      "explanation": "Regulation S-P uses the defined term \"nonpublic personal information\" for customer financial data subject to privacy and safeguard requirements. \"Material non-public information\" is an insider-trading concept relating to issuers, not customer privacy.",
+      "citations": [],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 14328,
+    "output": 2413
+  },
+  "cost_usd": 0.3959
+}

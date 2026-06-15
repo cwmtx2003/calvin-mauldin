@@ -1,0 +1,322 @@
+{
+  "unit": 1,
+  "unit_name": "Primary & Secondary Markets",
+  "jf": "km",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes the market in which an issuer sells newly created securities directly to investors and receives the proceeds?",
+      "choices": [
+        "Secondary market",
+        "Primary market",
+        "Third market",
+        "Fourth market"
+      ],
+      "answer": 1,
+      "explanation": "The primary market is where issuers sell new securities and receive the proceeds. The secondary market involves investor-to-investor trading of already-issued securities; proceeds do not go to the issuer.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An issuer's very first sale of its stock to the public is best described as which of the following?",
+      "choices": [
+        "Follow-on offering",
+        "Secondary offering",
+        "Initial public offering (IPO)",
+        "Private placement"
+      ],
+      "answer": 2,
+      "explanation": "An IPO is the issuer's first registered sale of stock to the public. A follow-on offering occurs after a company is already publicly traded, and a private placement is sold to a limited group without a registered public offering.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes an underwriting commitment in which the underwriter purchases the entire offering from the issuer and assumes the risk of reselling the securities to the public?",
+      "choices": [
+        "Best efforts",
+        "Firm commitment",
+        "All-or-none",
+        "Mini-maxi"
+      ],
+      "answer": 1,
+      "explanation": "In a firm-commitment underwriting, the underwriter buys the whole issue from the issuer and bears the resale risk. In a best-efforts arrangement, the underwriter acts only as an agent and does not buy the issue.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the formal disclosure document that must be delivered to investors in a registered public offering of corporate securities?",
+      "choices": [
+        "Official statement",
+        "Program disclosure document",
+        "Prospectus",
+        "Offering memorandum"
+      ],
+      "answer": 2,
+      "explanation": "A prospectus is the disclosure document required under the Securities Act of 1933 for registered offerings of corporate securities. An official statement is used for municipal offerings, and an offering memorandum is used for private placements.",
+      "citations": [
+        "Securities Act of 1933 \u00a710"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following best defines the term \"exchange\" under the Securities Exchange Act of 1934?",
+      "choices": [
+        "Any broker-dealer that executes customer orders",
+        "Any organization or group that provides a marketplace or facilities for bringing together purchasers and sellers of securities",
+        "Any clearing corporation that settles securities trades",
+        "Any transfer agent that records changes in beneficial ownership"
+      ],
+      "answer": 1,
+      "explanation": "Section 3(a)(1) of the Exchange Act defines an exchange as any organization, association, or group of persons that constitutes, maintains, or provides a marketplace or facilities for bringing together purchasers and sellers of securities. The other choices describe different market participants.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the trading of exchange-listed securities in the over-the-counter market?",
+      "choices": [
+        "First market",
+        "Second market",
+        "Third market",
+        "Fourth market"
+      ],
+      "answer": 2,
+      "explanation": "The third market is the OTC trading of exchange-listed securities. The fourth market refers to direct institution-to-institution trading, typically through electronic communication networks.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Direct trading of securities between institutional investors, often via electronic communication networks and without the involvement of a broker-dealer intermediary, is known as which of the following?",
+      "choices": [
+        "Primary market",
+        "Third market",
+        "Fourth market",
+        "Secondary distribution"
+      ],
+      "answer": 2,
+      "explanation": "The fourth market refers to direct institution-to-institution securities trading, generally via ECNs. The third market involves OTC trading of listed securities through dealers.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a registration procedure that allows an eligible issuer to register a large amount of securities and sell portions of them into the market over time as conditions warrant?",
+      "choices": [
+        "Shelf registration",
+        "Tombstone registration",
+        "Intrastate registration",
+        "Blank-check registration"
+      ],
+      "answer": 0,
+      "explanation": "Shelf registration permits an eligible issuer to register securities once and then issue them in tranches over time. Intrastate offerings and blank-check offerings refer to different concepts, and a tombstone is merely an advertisement, not a registration method.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Under SEC rules, a person who meets specified income or net worth thresholds, or otherwise satisfies the SEC's qualifications, and is therefore eligible to participate in certain private offerings is referred to as which of the following?",
+      "choices": [
+        "Institutional investor",
+        "Qualified institutional buyer",
+        "Accredited investor",
+        "Retail investor"
+      ],
+      "answer": 2,
+      "explanation": "Rule 215 defines an accredited investor, including individuals meeting income or net worth tests. A qualified institutional buyer is a separate category used in Rule 144A resales to large institutions.",
+      "citations": [
+        "17 CFR 230.215",
+        "17 CFR 230.144A"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a firm that participates in the distribution of a new issue by purchasing securities from the issuer for resale to the public, or by offering them on behalf of the issuer?",
+      "choices": [
+        "Transfer agent",
+        "Underwriter",
+        "Custodian",
+        "Municipal advisor"
+      ],
+      "answer": 1,
+      "explanation": "An underwriter participates in the distribution of a new issue, either by purchasing from the issuer for resale or by offering securities on the issuer's behalf. The other roles do not perform that distribution function.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a written communication relating to a registered offering that meets the SEC's definition for use after a registration statement has been filed and that may be used in addition to the statutory prospectus?",
+      "choices": [
+        "Free writing prospectus",
+        "Red herring",
+        "Tombstone advertisement",
+        "Summary prospectus"
+      ],
+      "answer": 0,
+      "explanation": "Rule 164 governs the use of free writing prospectuses in connection with certain registered offerings. A red herring is a preliminary prospectus used before effectiveness, and a summary prospectus serves a different statutory purpose.",
+      "citations": [
+        "17 CFR 230.164"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Statements by the Commission, the act of registration, and the absence of a stop order being interpreted as SEC approval or endorsement of an offering are addressed by which principle of the Securities Act of 1933?",
+      "choices": [
+        "The SEC must certify that the registration statement is accurate before securities may be sold",
+        "Neither the filing nor the effectiveness of a registration statement may be represented as SEC approval of the security or finding that disclosures are accurate",
+        "The SEC reviews the investment merits of each registered security",
+        "Effectiveness of a registration statement constitutes a federal guarantee against loss"
+      ],
+      "answer": 1,
+      "explanation": "Section 23 of the Securities Act prohibits representing that registration or the absence of a stop order means the SEC has approved the security or found the disclosures accurate. The SEC does not pass on merits or guarantee securities.",
+      "citations": [
+        "Securities Act of 1933 \u00a723"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12406,
+    "output": 2611
+  },
+  "cost_usd": 0.3819
+}

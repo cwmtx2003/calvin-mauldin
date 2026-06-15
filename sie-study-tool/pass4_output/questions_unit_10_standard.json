@@ -1,0 +1,338 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "jf": "rf",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Which federal statute created the Securities and Exchange Commission?",
+      "choices": [
+        "The Securities Act of 1933",
+        "The Securities Exchange Act of 1934",
+        "The Investment Company Act of 1940",
+        "The Securities Investor Protection Act"
+      ],
+      "answer": 1,
+      "explanation": "The SEC was created by the Securities Exchange Act of 1934. The Securities Act of 1933 governs new issues but did not create the SEC; the FTC briefly administered the 1933 Act until the SEC was established the following year.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A customer has a cash and securities account at a failed broker-dealer carrying $300,000 in securities and $260,000 in cash. What is the maximum SIPC coverage available to this customer?",
+      "choices": [
+        "$250,000 total",
+        "$500,000, of which up to $250,000 may be cash",
+        "$500,000, all of which may be cash",
+        "$1,000,000, of which up to $500,000 may be cash"
+      ],
+      "answer": 1,
+      "explanation": "SIPC protects up to $500,000 per separate-capacity customer, of which no more than $250,000 may be cash. The $260,000 cash portion is capped at $250,000; FDIC limits are irrelevant because SIPC, not FDIC, covers brokerage accounts.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes the role of the Municipal Securities Rulemaking Board (MSRB)?",
+      "choices": [
+        "It writes rules for municipal securities firms and enforces them against broker-dealers and banks",
+        "It writes rules governing municipal securities activities but does not enforce them",
+        "It registers municipal issuers prior to a primary offering",
+        "It insures municipal bonds against issuer default"
+      ],
+      "answer": 1,
+      "explanation": "The MSRB writes rules for firms transacting in municipal securities but has no enforcement authority. Enforcement is carried out by FINRA, the SEC, and the federal banking regulators against their respective members.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 3220, what is the maximum value of a gift that a registered representative may give to an employee of another firm, per individual per year, in relation to the recipient's business?",
+      "choices": [
+        "$100",
+        "$200",
+        "$300",
+        "$500"
+      ],
+      "answer": 2,
+      "explanation": "FINRA Rule 3220 limits gifts and gratuities to $300 per person per year when given in relation to the business of the recipient's employer. The lower figures predate the current limit.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which regulator is the primary federal supervisor of nationally chartered commercial banks?",
+      "choices": [
+        "The Office of the Comptroller of the Currency (OCC)",
+        "The Financial Crimes Enforcement Network (FinCEN)",
+        "The Securities and Exchange Commission (SEC)",
+        "The Federal Deposit Insurance Corporation (FDIC)"
+      ],
+      "answer": 0,
+      "explanation": "The OCC, a bureau of the U.S. Treasury, charters and supervises national banks. FinCEN administers the BSA/AML regime; the SEC oversees securities; the FDIC insures bank deposits but is not the primary chartering authority for national banks.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which organization is a voluntary association of state securities administrators that supports administration of state blue-sky laws and the Uniform Securities Act?",
+      "choices": [
+        "FINRA",
+        "SIPC",
+        "NASAA",
+        "MSRB"
+      ],
+      "answer": 2,
+      "explanation": "NASAA (the North American Securities Administrators Association) is the association of state securities regulators. FINRA is a national SRO; SIPC provides customer account protection; the MSRB writes municipal rules.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 1240, a registered person who fails to complete the Regulatory Element within the prescribed calendar year will have his or her registration:",
+      "choices": [
+        "Automatically revoked with no opportunity to reactivate",
+        "Deemed inactive until the required Regulatory Element is completed",
+        "Suspended for a mandatory 30-day period",
+        "Converted to non-registered status permanently"
+      ],
+      "answer": 1,
+      "explanation": "Rule 1240 provides that a covered person who does not complete the Regulatory Element within the prescribed calendar year will have his or her registration deemed inactive until completion. The registration is not automatically revoked, and there is no fixed 30-day suspension.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "FINRA was formed in 2007 as the successor to which prior self-regulatory organization, consolidated with the member-regulation functions of the NYSE?",
+      "choices": [
+        "The SEC",
+        "The NASD",
+        "The MSRB",
+        "NASAA"
+      ],
+      "answer": 1,
+      "explanation": "FINRA is the successor to the NASD, which consolidated in 2007 with NYSE Member Regulation. The SEC is a federal agency, not an SRO; the MSRB writes only municipal rules; NASAA is a state regulator association.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2267, how often must a firm provide its customers, in writing, with information about FINRA BrokerCheck, including the BrokerCheck hotline number and FINRA's website?",
+      "choices": [
+        "Once each calendar year",
+        "Once each calendar quarter",
+        "Only at account opening",
+        "Only upon customer request"
+      ],
+      "answer": 0,
+      "explanation": "Rule 2267 requires firms to provide BrokerCheck information to each customer in writing once every calendar year. Quarterly delivery is not required, and account-opening-only delivery applies only in limited circumstances for certain introducing firms.",
+      "citations": [
+        "Rule 2267"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under Section 3(a)(39) of the Securities Exchange Act of 1934, a person who is subject to a statutory disqualification is generally:",
+      "choices": [
+        "Permitted to associate with a member firm without restriction",
+        "Ineligible to become or remain associated with a member firm absent relief",
+        "Required to register only as a non-registered fingerprinted person",
+        "Required to retake the SIE examination within 90 days"
+      ],
+      "answer": 1,
+      "explanation": "Section 3(a)(39) defines statutory disqualification. A statutorily disqualified person is generally barred from becoming or remaining associated with a member unless relief is granted. The other options misstate the consequence.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under SEC Rule 17f-2, individuals engaged in the securities business of a broker-dealer are generally required to be:",
+      "choices": [
+        "Bonded by a surety company",
+        "Fingerprinted",
+        "Polygraph tested annually",
+        "Personally insured by SIPC"
+      ],
+      "answer": 1,
+      "explanation": "SEC Rule 17f-2 requires fingerprinting of securities industry personnel. Bonding, polygraphs, and personal SIPC insurance are not required by this rule.",
+      "citations": [
+        "17 CFR 240.17f-2"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 1122, a member or associated person who has filed information with FINRA regarding membership or registration that is incomplete or misleading must:",
+      "choices": [
+        "Wait until the next annual amendment cycle to make corrections",
+        "Correct the filing after notice of the deficiency",
+        "Withdraw the filing entirely and resubmit only if requested",
+        "Disclose the deficiency only to customers, not to FINRA"
+      ],
+      "answer": 1,
+      "explanation": "Rule 1122 prohibits filing incomplete or misleading membership/registration information and requires correction of such filings after notice. Waiting for an annual cycle, withdrawing, or disclosing only to customers does not satisfy the rule.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12091,
+    "output": 2756
+  },
+  "cost_usd": 0.3881
+}

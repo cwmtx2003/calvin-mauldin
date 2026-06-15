@@ -1,0 +1,351 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "jf": "rf",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "An associated person receives 4 individual gifts during the calendar year from a mutual fund wholesaler valued at $90, $75, $80, and $85. What is the total value of gifts received, and does it comply with FINRA's gift limit?",
+      "choices": [
+        "$330; exceeds the $100 per person per year limit",
+        "$330; exceeds the $300 per person per year limit",
+        "$330; complies with the $300 per person per year limit",
+        "$250; complies with the $300 per person per year limit"
+      ],
+      "answer": 1,
+      "explanation": "The sum is $90 + $75 + $80 + $85 = $330. FINRA Rule 3220 caps gifts at $300 per individual per year in relation to the recipient's employer's business, so $330 exceeds the limit by $30. The $100 figure is incorrect; the FINRA limit is $300.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative terminates employment with her firm on March 10. The firm files Form U5 with CRD on April 12. How many days after termination did the firm file, and was this within the regulatory window?",
+      "choices": [
+        "33 days; outside the 30-day window",
+        "33 days; within the 30-day window",
+        "30 days; within the 30-day window",
+        "33 days; outside the 10-business-day window"
+      ],
+      "answer": 0,
+      "explanation": "From March 10 to April 12 is 33 days (21 days remaining in March + 12 days in April). FINRA requires Form U5 to be filed within 30 days of termination, so filing on day 33 is 3 days late. The 10-business-day window applies to statutory disqualification events on Form U4 amendments, not the U5 filing deadline.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered person becomes subject to a statutory disqualification event on June 1. By what date (at the latest) must the Form U4 amendment be filed, assuming each business day is a weekday and no holidays occur within the period?",
+      "choices": [
+        "June 11",
+        "June 15",
+        "July 1",
+        "June 8"
+      ],
+      "answer": 1,
+      "explanation": "Statutory disqualification events require Form U4 amendment within 10 business days. Counting 10 business days from June 1 (event date): days 1-10 of business days fall on June 2, 3, 4, 5, 8, 9, 10, 11, 12, and 15 (skipping weekends June 6-7 and 13-14). The amendment is due by June 15. July 1 reflects the 30-day window for most events, not the 10-business-day window for SD events.",
+      "citations": [
+        "Rule 1122",
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative was first registered on August 15, 2023. Under the current Regulatory Element CE requirement, by what date must she complete her first Regulatory Element?",
+      "choices": [
+        "December 31, 2023",
+        "August 15, 2024",
+        "December 31, 2024",
+        "December 31, 2025"
+      ],
+      "answer": 2,
+      "explanation": "Under amended Rule 1240, persons registering on or after January 1, 2023 must complete the Regulatory Element annually by December 31 of the calendar year following the year in which they became registered. Registered in 2023 \u2192 first deadline is December 31, 2024. December 31, 2023 would apply only if she were registered prior to January 1, 2023; the anniversary-date approach reflects the pre-2022 rule.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A municipal securities dealer associate makes the following non-de minimis political contributions to an official of a municipal issuer with whom his firm seeks business: $150 in March and $200 in September of the same year. Total contributions equal what amount, and what is the consequence under MSRB pay-to-play rules?",
+      "choices": [
+        "$350; no consequence because under $500 aggregate",
+        "$350; triggers a two-year ban on municipal securities business with that issuer because the $250 de minimis threshold (for officials the contributor can vote for) was exceeded",
+        "$350; triggers a two-year ban because contributions exceed $300",
+        "$50; under the de minimis amount"
+      ],
+      "answer": 1,
+      "explanation": "The contributions total $150 + $200 = $350. MSRB Rule G-37's de minimis exception permits contributions of up to $250 per election per official only if the contributor is entitled to vote for that official; contributions in excess of the de minimis amount trigger a two-year ban on the dealer engaging in municipal securities business with that issuer. The $300 figure relates to FINRA Rule 3220 gifts, not G-37.",
+      "citations": [
+        "Rule G-37"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A non-OSJ branch office was last inspected on May 1, 2022. Under the standard branch inspection cycle, by what date must the next inspection occur?",
+      "choices": [
+        "May 1, 2023",
+        "May 1, 2024",
+        "May 1, 2025",
+        "May 1, 2027"
+      ],
+      "answer": 2,
+      "explanation": "Non-OSJ branch offices must be inspected at least every 3 years under FINRA Rule 3110(c). May 1, 2022 + 3 years = May 1, 2025. May 1, 2023 reflects the annual cycle applicable to OSJs, not non-OSJ branches.",
+      "citations": [
+        "Rule 3110(e)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative submitted his Form U4 and was sponsored by his firm on February 1. By what date must he pass his qualification exam to avoid having to refile?",
+      "choices": [
+        "May 2 (90 days)",
+        "June 1 (120 days)",
+        "August 1 (180 days)",
+        "February 1 of the following year (1 year)"
+      ],
+      "answer": 1,
+      "explanation": "After filing Form U4, an applicant has 120 days to pass the required qualification examination. February 1 + 120 days = approximately June 1 (28 days in February + 31 in March + 30 in April + 31 in May = 120 days). 90 days and 180 days are not the regulatory window.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative held 3 outside accounts during the year. At firm A she had account values of $25,000 and $40,000; at firm B she had an account valued at $15,000. How many of these accounts require the representative to provide written notice to her employer member firm under FINRA's outside-account rule?",
+      "choices": [
+        "Only the account over $25,000",
+        "Only accounts at firm A",
+        "All 3 accounts",
+        "None, because aggregate is under $100,000"
+      ],
+      "answer": 2,
+      "explanation": "Under FINRA Rule 3210, ALL securities accounts held by a registered person at any firm other than the employer member require prior written notice to the employer\u2014there is no dollar threshold. Counting: 3 accounts total. The dollar-threshold distractors are fabrications; no such threshold exists in Rule 3210.",
+      "citations": [
+        "Rule 3110(e)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A representative wishes to participate in a private securities transaction for which she will receive $2,500 in selling compensation. Her firm's compliance officer is reviewing the request. What is required under FINRA Rule 3280?",
+      "choices": [
+        "Written notice only; no approval needed",
+        "Oral notice only; written approval not required for amounts under $5,000",
+        "Prior written notice AND prior written approval from the firm; the transaction must be recorded on the firm's books",
+        "No notice required because the compensation is under $10,000"
+      ],
+      "answer": 2,
+      "explanation": "FINRA Rule 3280 requires prior written notice to the firm before participating in any private securities transaction. Because she will receive selling compensation of $2,500 (any compensation triggers the heightened requirements), the firm must give prior written approval and record the transaction on its books and records. There are no dollar de minimis amounts under Rule 3280 for compensation.",
+      "citations": [
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative borrows $10,000 from a customer who is also the representative's sister. The representative does not notify the firm in writing. Under FINRA's borrowing rule, is this loan permissible?",
+      "choices": [
+        "Yes, because immediate family is an enumerated permitted relationship \u2014 no firm involvement needed",
+        "No, because borrowing from any customer is absolutely prohibited",
+        "Yes, but only because the amount is under $25,000",
+        "No, because even for immediate family the firm's written procedures must be followed and the firm must be notified/approve as required by those procedures"
+      ],
+      "answer": 3,
+      "explanation": "FINRA Rule 3240 permits borrowing from a customer who is an immediate family member, BUT the firm must have written procedures addressing such loans and the representative must comply with those procedures (which typically require notice and/or approval). The relationship alone is not sufficient; firm compliance is also required. There is no $25,000 threshold in the rule.",
+      "citations": [
+        "Rule 3110(e)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative wishes to give year-end gifts to three contacts at an institutional client: $125, $200, and $275. The total spent is what amount, and is each individual gift compliant with FINRA Rule 3220?",
+      "choices": [
+        "Total $600; all three are compliant because each is under $300",
+        "Total $600; only the $275 gift is non-compliant",
+        "Total $600; none are compliant because the aggregate exceeds $300",
+        "Total $500; all three are non-compliant"
+      ],
+      "answer": 0,
+      "explanation": "Total: $125 + $200 + $275 = $600. FINRA Rule 3220 limits gifts to $300 per individual per year. Each of the three gifts ($125, $200, $275) is below $300, so all three are individually compliant. The $300 cap is per recipient, not an aggregate cap across all recipients.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered person's Regulatory Element CE became due in 2024 but was not completed by year-end. Her registration is deemed inactive. If she remains inactive for the full statutory period without completing CE, after how long will her registration be terminated?",
+      "choices": [
+        "1 year",
+        "2 consecutive years",
+        "3 consecutive years",
+        "5 consecutive years"
+      ],
+      "answer": 1,
+      "explanation": "Under Rule 1240(a)(2), a registration that remains inactive due to failure to complete the Regulatory Element for 2 consecutive years will be terminated. 5 years relates to the optional Maintaining Qualifications Program (MQP) extension after voluntary termination, not the CE-inactive termination period.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12761,
+    "output": 3759
+  },
+  "cost_usd": 0.4733
+}

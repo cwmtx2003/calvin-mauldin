@@ -3,158 +3,448 @@
   "unit_name": "Primary & Secondary Markets",
   "sections": [
     {
-      "title": "Lesson 1.1: New Issues and the Primary Market",
-      "overview": "The primary market is where issuers (corporations, municipalities, federal government/agencies) sell securities directly to investors to raise capital, receiving the proceeds themselves. The Securities Act of 1933 ('Paper Act') governs new issues by requiring full and fair disclosure via SEC registration and prospectus delivery \u2014 unless an exemption applies. This lesson covers issuer types, underwriting commitments, the IPO process (registration, cooling-off, effective date), shelf offerings, prospectus delivery rules, and exempt issuers/issues/transactions.",
+      "title": "1. Primary Market: Purpose, Participants, and the Capital-Raising Process",
+      "overview": "The primary market is where issuers raise capital by selling newly created securities directly to investors, with proceeds flowing to the issuer. Investment bankers structure the offering, underwriters distribute it, and the Securities Act of 1933 governs the registration and disclosure framework. The primary market converts issuer capital needs (debt or equity) into investable securities.",
       "key_concepts": [
-        "Primary market = issuer transactions; issuer receives proceeds. Secondary market = investor-to-investor; issuer is NOT involved (exception: corporate buybacks/tender offers).",
-        "IPO = first public offering of an issuer; APO (follow-on / subsequent / additional primary offering) = subsequent primary offerings by an already-public issuer.",
-        "Combination/split/hybrid offering = mix of newly issued shares (proceeds to issuer) and existing shareholder shares (proceeds to selling holders).",
-        "Issuers: corporations (stocks/bonds), municipalities (munis), U.S. Treasury (govies), federal agencies.",
-        "NMS securities = listed on a national exchange or Nasdaq; non-NMS = not so listed.",
-        "Underwriters = broker-dealers/investment bankers that bring issues to market, often as a syndicate (joint venture sharing risk/profit) with a managing underwriter; selling group members assist without capital commitment or inventory risk.",
-        "Firm commitment underwriting: underwriters act as PRINCIPAL \u2014 they buy the entire issue from the issuer and resell at POP, earning the spread; underwriters bear the risk of unsold shares. Firms may NEVER guarantee repurchase at POP.",
-        "Best efforts underwriting: underwriters act as AGENT \u2014 no commitment to buy; issuer bears the risk. Subtypes: All-or-None (AON: sell all or cancel; funds held in escrow) and Mini-Max (must hit minimum floor before any sale; can expand up to maximum ceiling).",
-        "Investor classes: Retail (own assets, less sophisticated, higher disclosure standards); Institutional (banks, insurance cos., pensions, hedge funds, mutual funds, investment advisers); QIBs (institutions owning/investing \u2265$100M on discretionary basis); Accredited (used only in primary market).",
-        "Accredited investor (Rule 501, Reg D): all institutionals; insiders (officers, directors, 10%+ owners); income \u2265$200K individually (or $300K joint) for last 2 years with same expected this year; net worth \u2265$1M excluding primary residence; certain professional licenses (Series 7, 65, 82) in good standing.",
-        "Municipal advisors: advise municipalities on debt issuance; CANNOT switch to underwriter role on the same issue and cannot be compensated as underwriter.",
-        "Registration statement (S-1) discloses: business description, officers/directors (names, addresses, salaries, 5-year history), insider ownership and 10%+ owners, capitalization, use of proceeds, legal proceedings. Issuer (not underwriter) is responsible for accuracy.",
-        "Cooling-off period: minimum 20 calendar days from filing; SEC may issue a deficiency letter (clock pauses and resumes where left off, does NOT restart).",
-        "During cooling-off: NO sales/solicitations; permitted activities = tombstone ads, preliminary prospectus (red herring), gathering indications of interest (nonbinding), due diligence meetings, blue-sky (state) registration.",
-        "Tombstone ad: only advertisement permitted during cooling-off; optional; not filed with SEC; limited content (issuer name, security type, # shares, POP or range, syndicate members) plus required disclaimer that offer is made only by prospectus.",
-        "Red herring (preliminary prospectus): used to gather indications of interest; no final POP required; must be provided to any interested customer during cooling-off.",
-        "Final prospectus: delivered on/after effective date; adds POP and effective date; must precede or accompany all sales confirmations; contains SEC disclaimer.",
-        "SEC does NOT approve, endorse, or pass on the merits of any new issue \u2014 language is that SEC 'allows' or 'releases.'",
-        "Shelf registration: lets a seasoned public issuer register now, sell later \u2014 good for 2 years (3 years for a WKSI; any major-exchange-listed issuer typically qualifies). A supplemental prospectus must be filed before each takedown.",
-        "Post-effective prospectus delivery in secondary market: IPO NMS = 25 days; APO NMS = 0 days; IPO non-NMS = 90 days; APO non-NMS = 40 days. SEC-website access satisfies delivery.",
-        "Exempt issuers (issuer-based exemption): U.S. government; municipalities; national & state banks (NOT bank holding companies); S&Ls/building & loans; charitable, religious, educational, nonprofit; common carriers (e.g., railroad equipment trust certificates).",
-        "Exempt issues (security-based): commercial paper, bankers' acceptances, and other short-term debt with maturity \u2264270 days; fixed insurance policies and fixed annuities (NOT variable products \u2014 variable annuities, VLI, VUL must be registered).",
-        "Reg A (Tier 1): up to $20M in 12 months (max $6M from selling shareholders); coordinated SEC + state review; no investment limit.",
-        "Reg A (Tier 2): up to $75M in 12 months (max $22.5M from selling shareholders); SEC review only (preempts state); audited financials; ongoing reports. Non-accredited Tier 2 investors limited to greater of 10% of net worth or 10% of annual net income (self-certification).",
-        "Reg A excludes investment companies (private equity, VC, hedge funds). Both tiers permit general solicitation/advertising.",
-        "Rule 147 (intrastate): exempt if issuer's principal office is in-state AND all purchasers are state residents; issuer must meet one 80% test (80% income, 80% assets, or 80% proceeds in-state) OR majority of employees in-state; any underwriting BD must be in-state; resales restricted to in-state residents for 6 months.",
-        "Reg D Rule 506(b) (private placement): unlimited capital; unlimited accredited investors; up to 35 non-accredited (must be sophisticated and receive disclosure equivalent to a prospectus); no general solicitation; Form D filed with SEC.",
-        "Reg D Rule 506(c): permits general solicitation/advertising BUT ALL purchasers must be accredited AND issuer must take reasonable steps to verify accredited status.",
-        "Private placement stock = restricted / unregistered / letter stock / legend stock \u2014 investor signs an investment letter; certificate bears a legend restricting transfer; minimum 6-month holding period.",
-        "Disclosure documents by offering type: registered = prospectus; municipal = official statement; Reg A/private placement/other exempt = offering circular (sometimes 'notice of sale')."
+        "Issuer: corporation, municipality, or government raising capital; receives net proceeds.",
+        "Investment banker / underwriter: advises issuer on structure, price, timing; assumes distribution risk under firm commitment.",
+        "Syndicate: group of underwriters sharing distribution risk; led by the managing/lead underwriter (book-running manager).",
+        "Selling group: broker-dealers who help sell shares but bear no underwriting liability.",
+        "Municipal advisor: fiduciary to municipal issuers (separate from underwriter role).",
+        "Methods of distribution: (a) Firm commitment \u2014 underwriter buys entire issue and resells (capital at risk); (b) Best efforts \u2014 underwriter acts as agent, returns unsold shares; (c) All-or-none (AON) \u2014 entire issue must sell or deal cancelled; (d) Mini-max \u2014 minimum must sell before any proceeds released.",
+        "Types of offerings: IPO (issuer's first public sale); Follow-on / additional primary offering (issuer sells new shares post-IPO); Secondary offering (existing large holders sell \u2014 proceeds to them, not issuer); Combined / split offering (mix of primary and secondary).",
+        "Public vs. private offering: public requires registration under the 1933 Act unless exempt; private uses exemptions (Reg D, Reg A, Rule 147, etc.).",
+        "Shelf registration (Rule 415): issuer registers securities once and sells in tranches over time (up to 3 years for most issuers), allowing rapid market access.",
+        "Tombstone ad: limited announcement permitted during registration; identifies issue, price, syndicate.",
+        "Indication of interest (IOI): non-binding investor expression during cooling-off period; not a sale."
       ],
       "rules": [
-        "Securities Act of 1933 \u2014 registration & prospectus delivery for new issues; criminal penalties for fraud.",
-        "SEC Rule 501 of Regulation D \u2014 accredited investor definition.",
-        "SEC Rule 147 \u2014 intrastate offering exemption.",
-        "SEC Regulation D, Rules 506(b) & 506(c) \u2014 private placement exemptions; Form D filing required.",
-        "SEC Regulation A, Tier 1 ($20M) and Tier 2 ($75M).",
-        "JOBS Act \u2014 expanded Regulation A offering ceilings.",
-        "SEC Rule 23 (Securities Act) \u2014 prohibits representations that SEC has approved any security.",
-        "Cooling-off period \u2014 minimum 20 calendar days post-filing.",
-        "Errata note \u2014 Form 144 filings (affiliate resales under Rule 144) must be filed ELECTRONICALLY via EDGAR as of April 13, 2023 (SEC Release 33-11070); paper filings no longer permitted.",
-        "MSRB G-32 \u2014 disclosure requirements in primary offerings of municipal securities (official statement delivery)."
+        "Securities Act of 1933 \u00a77 \u2014 registration statement content (Schedule A for corporate, Schedule B for foreign government); experts must consent in writing to being named.",
+        "Securities Act of 1933 \u00a78(a) \u2014 registration becomes effective on the 20th day after filing unless SEC accelerates; amendments restart the clock unless filed with SEC consent.",
+        "Securities Act of 1933 \u00a78(b) \u2014 SEC may issue refusal order if statement is incomplete/inaccurate on its face.",
+        "Securities Act of 1933 \u00a78(d) \u2014 SEC may issue stop order suspending effectiveness for material misstatements/omissions.",
+        "Securities Act of 1933 \u00a710 \u2014 prospectus content; \u00a710(a) final prospectus; \u00a710(b) preliminary/summary prospectus; prospectus used more than 9 months after effective date must contain information dated within 16 months.",
+        "Securities Act of 1933 \u00a723 \u2014 SEC neither approves nor disapproves securities; misrepresenting SEC \"approval\" is unlawful (basis for the no-approval disclaimer on prospectuses).",
+        "17 CFR 230.431 \u2014 summary prospectuses permitted.",
+        "17 CFR 230.164 \u2014 post-filing free writing prospectuses permitted in registered offerings (supplements \u00a710 prospectus)."
       ],
       "formulas": [
-        "Underwriter Spread = Public Offering Price (POP) \u2212 Price paid to issuer",
-        "Reg A Tier 2 non-accredited investment limit = Greater of (10% \u00d7 net worth) or (10% \u00d7 annual net income), per offering",
-        "Rule 147 in-state nexus test = at least one of: 80% gross revenue in-state, 80% assets in-state, 80% proceeds used in-state, OR majority of employees in-state"
+        "Underwriting Spread = Public Offering Price \u2212 Proceeds to Issuer per share",
+        "Spread Components: Manager's Fee + Underwriting Fee + Selling Concession (largest portion to seller of record)",
+        "Net Proceeds to Issuer = (Shares Sold \u00d7 POP) \u2212 Total Underwriting Spread \u2212 Issuance Expenses"
       ],
       "mnemonics": [
-        "'BRICC' exempt issuers: Banks (not holding cos.), Religious/charitable nonprofits, IRS/U.S. government, Carriers (common), Cities (municipalities). Plus S&Ls.",
-        "Reg A tiers \u2014 'Twenty / Seventy-five': Tier 1 = $20M; Tier 2 = $75M.",
-        "Accredited income test \u2014 '2-3-1': $200K single / $300K joint / $1M net worth (ex-residence).",
-        "Red herring activities allowed in cooling-off \u2014 'TIDBI': Tombstones, Indications of interest, Due diligence, Blue-sky, Issue red herrings. (NO sales.)",
-        "Private placement stock aliases \u2014 'RULL': Restricted, Unregistered, Letter, Legend.",
-        "Firm commitment = Firm (underwriter) risk; Best Efforts = Burden on issuer."
+        "\"MUS\" \u2014 spread = Manager / Underwriter / Selling concession (smallest to largest typically: Manager < Underwriter < Selling concession).",
+        "\"FBAM\" \u2014 Firm commitment, Best efforts, All-or-none, Mini-max (distribution methods).",
+        "\"20-and-out\" \u2014 \u00a78(a) default cooling-off = 20 days to effectiveness."
       ]
     },
     {
-      "title": "Lesson 1.2: Trading Securities in the Secondary Markets",
-      "overview": "The secondary market \u2014 regulated under the Securities Exchange Act of 1934 (which created the SEC) \u2014 is where investors trade previously issued securities among themselves, providing the liquidity that makes the primary market viable. This lesson identifies the four market centers (exchanges, OTC, third market, fourth market/ECNs) and the participants who trade and facilitate those trades (investors, broker-dealers, transfer agents, registrars, clearing agencies, depositories).",
+      "title": "2. The Registration Process & Timeline (Securities Act of 1933)",
+      "overview": "An issuer making a non-exempt public offering must register with the SEC and file a registration statement that becomes the prospectus delivered to buyers. The process runs in three phases \u2014 pre-filing, cooling-off, and post-effective \u2014 each with strict communication rules. SEC review never constitutes approval of the security's merits.",
       "key_concepts": [
-        "In the secondary market, the seller is NEVER the issuer (exception: corporate tender offers/buybacks).",
-        "Liquidity = ability to buy/sell easily at a fair price. T-bills and listed stocks are highly liquid; limited partnership units are illiquid.",
-        "Four market centers: (1) Exchanges (auction market, listed securities, physical floor \u2014 e.g., NYSE); (2) OTC (decentralized electronic interdealer network for unlisted stocks and most bonds, including munis and Treasuries); (3) Third Market / Nasdaq Intermarket (exchange-listed securities traded OTC; trades reported to Consolidated Tape within 10 seconds); (4) Fourth Market (institution-to-institution via ECNs, 24/7, no BDs).",
-        "Exchange members: Designated Market Maker (DMM/specialist) \u2014 maintains inventory and a fair/orderly market in an assigned security; Floor Broker \u2014 represents firm's customer orders; Two-Dollar Broker \u2014 assists overwhelmed floor brokers for a fee; Floor Trader (RFT) \u2014 trades for firm's own account.",
-        "Trading on an exchange occurs only between members, not employees of the exchange.",
-        "OTC market makers compete; customer sells at the bid (to dealer) and buys at the ask (from dealer); spread = market maker's profit.",
-        "Most corporate bonds, all municipal bonds, and Treasury debt trade OTC.",
-        "Dark pools = nonpublic trading venues for large institutional blocks; volume, price, and identity hidden \u2014 improves execution for institutions but reduces market transparency.",
-        "Trading hours: NYSE 9:30 am \u2013 4:00 pm ET; OTC similar with extended hours (often to 6:30 pm) \u2014 wider spreads and higher volatility after hours.",
-        "Investors: Retail (own money); Day Traders (rapid intraday, flat at close); Accredited (term mainly used in primary market); Institutional (mutual funds, pensions, banks, insurers, etc.).",
-        "Fiduciary = manages assets for a beneficiary; legally must place beneficiary's interest first. Includes custodians (UGMA/UTMA, IRA custodians), trustees, guardians, executors. Investment advisers are ALWAYS fiduciaries.",
-        "Investment Adviser three-prong test (ABC): gives Advice, as a regular part of Business, for Compensation \u2014 registers under Investment Advisers Act of 1940.",
-        "Broker-Dealer types: Carrying/Clearing firm \u2014 holds customer funds/securities, executes, clears, settles, sends confirmations; higher net capital required; must segregate customer assets. Fully Disclosed (Introducing) firm \u2014 takes orders but uses a clearing firm for custody and back-office; lower net capital. Prime Broker \u2014 central account that holds customer assets while customer also uses multiple Executing Brokers.",
-        "A BD can be both broker and dealer \u2014 but NEVER both on the same transaction.",
-        "Transfer agent: issues/cancels certificates, maintains ownership records, handles lost/stolen certificates.",
-        "Registrar: separate from issuer and transfer agent; audits the transfer agent; tracks shares authorized vs. outstanding.",
-        "Clearing agencies/depositories: DTCC = largest securities depository in the world; provides custody and clears trades. OCC = clearing agent for listed options; standardizes, guarantees, and issues options contracts; sets strike prices and expiration months."
+        "Pre-filing period: no offers or sales permitted (\"quiet period\"). Issuer and underwriters negotiate the letter of intent.",
+        "Filing date: registration statement (typically Form S-1) filed with SEC.",
+        "Cooling-off period: minimum 20 calendar days under \u00a78(a); SEC may accelerate. During cooling-off: NO sales; permitted activities include preliminary prospectus (red herring), tombstone ads, indications of interest, due diligence meetings.",
+        "Red herring (preliminary prospectus): omits final POP and effective date; bold red legend states it is not an offer to sell. Must be delivered to anyone receiving an IOI.",
+        "Due diligence meeting: syndicate verifies disclosures with issuer prior to effectiveness.",
+        "Effective date: SEC declares registration effective; sales may begin. Final prospectus must be delivered no later than confirmation of sale.",
+        "Aftermarket prospectus delivery (Rule 174): IPOs \u2014 25 days if listed on exchange/Nasdaq, 90 days otherwise; follow-on offerings of reporting issuers \u2014 generally none if exchange-listed.",
+        "SEC deficiency letter: requests amendments; does not stop the offering but tolls effectiveness until cured.",
+        "Stop order (\u00a78(d)): SEC suspends a registration already effective for material misstatement/omission.",
+        "Refusal order (\u00a78(b)): issued pre-effectiveness within 10 days of filing if statement is incomplete on its face."
       ],
       "rules": [
-        "Securities Exchange Act of 1934 \u2014 regulates secondary markets; created the SEC; regulates exchanges, OTC, BDs, and SROs.",
-        "Investment Advisers Act of 1940 \u2014 IA registration; fiduciary standard.",
-        "FINRA membership agreement \u2014 defines lines of business; firms may never claim SEC/FINRA endorsement or approval.",
-        "Carrying firms must segregate customer funds/securities from firm assets (no commingling).",
-        "Third-market trades must be reported to the Consolidated Tape within 10 seconds of execution.",
-        "Errata note \u2014 order-event reporting flows through the Consolidated Audit Trail (CAT) under FINRA Rule 6800 Series; OATS was retired 9/1/2021."
+        "Securities Act of 1933 \u00a77 \u2014 registration statement contents and expert consents.",
+        "Securities Act of 1933 \u00a78(a),(b),(c),(d) \u2014 effectiveness, refusal order, post-effective amendments, stop order.",
+        "Securities Act of 1933 \u00a710 \u2014 prospectus contents; 9-month / 16-month staleness rule.",
+        "Securities Act of 1933 \u00a723 \u2014 no SEC approval; unlawful to represent otherwise.",
+        "17 CFR 230.164 \u2014 free writing prospectus rules apply after filing."
       ],
       "formulas": [],
       "mnemonics": [
-        "Four markets \u2014 'Exchanges, OTC, Third, Fourth' = 'E-O-T-F' (Exchange listed; OTC unlisted; Third = listed traded OTC; Fourth = institutions via ECN).",
-        "IA three-prong test \u2014 'ABC': Advice, Business, Compensation.",
-        "BD roles \u2014 'Broker = Agent, Charges Commission; Dealer = Principal, earns Spread.'",
-        "DMM duties \u2014 'FOI': Fair & Orderly market, maintain Inventory."
+        "Three-phase timeline: \"Pre-File \u2192 Cool-Off \u2192 Post-Effective\" = \"Quiet \u2192 Red Herring \u2192 Final.\"",
+        "\"No Sales, No Mail, No Money\" \u2014 what is prohibited during the cooling-off period (no sales, no advertising beyond tombstone, no funds accepted).",
+        "\"9-and-16\" \u2014 prospectus older than 9 months must use info \u2264 16 months old (\u00a710(a)(3))."
       ]
     },
     {
-      "title": "Lesson 1.3: Placing a Trade",
-      "overview": "This lesson covers the mechanics of order entry in the secondary market: how quotes (bid/ask/size/spread) are constructed, the major order types and their time/fill qualifiers, long vs. short positions, principal vs. agency trading capacity, and settlement timelines. Mastery of these mechanics is heavily tested.",
+      "title": "3. Exempt Securities & Exempt Transactions",
+      "overview": "Certain securities and transactions are exempt from the registration and prospectus requirements of the 1933 Act, although antifraud provisions still apply. Exemptions reduce capital-raising friction for governments, banks, small issues, and private placements.",
       "key_concepts": [
-        "Bullish = expects price to rise (long stock, long rights/warrants/calls). Bearish = expects price to fall (short stock, long puts).",
-        "Quote = two-sided: Bid (highest price a buyer will pay; where customer SELLS) and Ask/Offer (lowest price a seller will accept; where customer BUYS). Bid is ALWAYS less than ask.",
-        "Size = number of round lots (1 round lot = 100 shares) available at each side. Example: 'Bid 42 Ask 42.50 size 10 x 12' means 1,000 shares bid, 1,200 shares offered.",
-        "On an exchange the DMM's order book determines the quote: highest open buy limit = bid; lowest open sell limit = ask.",
-        "In OTC, the inside quote = highest bid among market makers and lowest ask among market makers (may come from different dealers).",
-        "Minimum price increment for stocks \u2265$1.00 is $0.01; sub-penny pricing allowed for stocks under $1.00.",
-        "Spread = Ask \u2212 Bid. Inside market / inside quote = best (highest) bid and best (lowest) ask.",
-        "Market order: executed immediately at best available price; always fills (no price guarantee); takes priority over limit orders.",
-        "Limit order: buy at limit price or LOWER; sell at limit price or HIGHER. Risk = missing the market (may never execute).",
-        "Stop order: not a live order \u2014 it's a trigger. When the stock trades AT or THROUGH the stop price, it becomes a market order. Buy stops placed ABOVE current market; sell stops placed BELOW current market.",
-        "Stop-limit order: triggered like a stop, but becomes a LIMIT order \u2014 execution not guaranteed.",
-        "Time qualifiers \u2014 Day order (default; expires at close); GTC (good-til-canceled; auto-canceled last business day of April and October if open); Market-at-Open / Market-on-Close.",
-        "Fill qualifiers (limit orders only) \u2014 FOK (Fill-Or-Kill: fill entire order immediately or cancel; no partial); IOC (Immediate-Or-Cancel: fill what you can immediately, cancel rest; partial OK); AON (All-Or-None: must fill entirely but not immediate; can be day or GTC).",
-        "Long position: Buy to open, Sell to close. Max loss = cost basis (security goes to zero). Bullish view.",
-        "Short position: Sell to open (borrow & sell), Buy to close (cover). Max loss = UNLIMITED (price can rise indefinitely). Bearish view.",
-        "Broker (Agent): trades on customer's behalf; charges a commission; trade is between customer and another party.",
-        "Dealer (Principal/Market Maker): trades from own inventory with customer; earns the spread (markup on sales to customers, markdown on purchases from customers).",
-        "A BD may act as broker OR dealer on a given trade \u2014 never both on the same transaction.",
-        "Settlement \u2014 Regular way: T+1 for U.S. Treasury securities (bills, notes, bonds) AND for corporate stocks/bonds, municipal debt, agency securities (GNMA), and GSE securities (FNMA, FHLMC). [ERRATA: stocks/munis/corporates moved from T+2 to T+1 effective 5/28/2024 under amended SEC Rule 15c6-1.]",
-        "Cash settlement (same-day): securities delivered and payment made on trade date; requires both parties' agreement and immediate availability.",
-        "Ex-dividend date under T+1 = same business day as the record date for regular-way trades. [ERRATA: previously one business day before record date under T+2.]",
-        "Options settle next business day (T+1) \u2014 unchanged.",
-        "When-issued trades settle on issuance date \u2014 unchanged."
+        "Exempt securities (issuer-based): U.S. Treasuries and agency securities; municipal securities; securities of domestic banks (not BHCs); commercial paper with maturity \u2264 270 days; non-profit (religious/charitable/educational) issues; small business investment company (SBIC) securities; securities issued by common carriers regulated by the ICC.",
+        "Regulation A \u2014 small/medium offerings exempt from full registration: Tier 1 up to $20M / 12 months; Tier 2 up to $75M / 12 months (Tier 2 requires audited financials and ongoing reporting; preempts state blue-sky review).",
+        "Regulation D \u2014 private placements: Rule 506(b) \u2014 unlimited accredited investors + up to 35 non-accredited sophisticated investors; NO general solicitation. Rule 506(c) \u2014 unlimited accredited only; issuer must take reasonable steps to verify; general solicitation permitted.",
+        "Accredited investor (17 CFR 230.215 / Rule 501): natural person with income > $200K ($300K joint) for the last two years with expectation of same, OR net worth > $1M excluding primary residence; also includes holders in good standing of Series 7, 65, 82; knowledgeable employees of private funds; certain family offices/clients; and institutional categories (banks, registered investment companies, employee benefit plans > $5M, etc.).",
+        "Rule 147 / 147A \u2014 intrastate offering exemption: offering confined to single state where issuer is doing business; resale restrictions apply within 6 months.",
+        "Regulation S \u2014 offers/sales made outside the United States.",
+        "Rule 144 \u2014 safe harbor for resale of restricted (private placement) and control (affiliate) securities: 6-month holding period for reporting issuers (12 months non-reporting); volume limits for affiliates = greater of 1% of outstanding shares or average weekly trading volume over prior 4 weeks; Form 144 filed if sales exceed 5,000 shares or $50,000 in 90 days \u2014 filing must be electronic via EDGAR.",
+        "Rule 144A \u2014 resale of restricted securities to Qualified Institutional Buyers (QIBs \u2014 institutions owning/investing \u2265 $100M in securities); creates liquid institutional market for private placements.",
+        "Rule 145 \u2014 reclassifications, mergers, consolidations, and asset transfers treated as offers/sales requiring registration unless exempted."
       ],
       "rules": [
-        "SEC Rule 15c6-1 (as amended) \u2014 regular-way settlement is T+1 for most securities (effective May 28, 2024).",
-        "Market orders take precedence over limit orders; limit orders execute on a first-come, first-served basis at a given price.",
-        "FINRA reporting of secondary-market trades \u2014 see CAT (Consolidated Audit Trail) under FINRA Rule 6800 Series for order-event reporting.",
-        "A BD must disclose its capacity (agent vs. principal) on the trade confirmation."
+        "17 CFR 230.144 \u2014 Rule 144 resale safe harbor; Form 144 filed electronically on EDGAR (mandatory since April 13, 2023).",
+        "17 CFR 230.144A \u2014 private resales to QIBs.",
+        "17 CFR 230.145 \u2014 reclassifications/mergers as sales.",
+        "17 CFR 230.147 \u2014 intrastate offering exemption.",
+        "17 CFR 230.215 \u2014 accredited investor definition.",
+        "Blue-sky laws (state registration) \u2014 generally still apply unless preempted (e.g., Reg A Tier 2, covered securities)."
       ],
       "formulas": [
-        "Spread = Ask Price \u2212 Bid Price",
-        "Quote size in shares = Size (in round lots) \u00d7 100",
-        "Long P/L = Sales Proceeds \u2212 Cost Basis",
-        "Short P/L = Short Sale Price \u2212 Cover (Buy-Back) Price",
-        "Settlement Date (regular way, most securities) = Trade Date + 1 business day (T+1)"
+        "Rule 144 Affiliate Volume Limit = MAX(1% of outstanding shares, Average weekly trading volume of prior 4 weeks)",
+        "Form 144 trigger = Sales > 5,000 shares OR > $50,000 in any 90-day period"
       ],
       "mnemonics": [
-        "Bull/Bear \u2014 'Bulls thrust horns UP; Bears swipe claws DOWN.'",
-        "Order placement relative to market \u2014 'BLISS / SLOBS': Buy Limits & Sell Stops go BELOW the market; Sell Limits & Buy Stops go ABOVE the market.",
-        "Long vs. Short \u2014 'Long = Loss Limited; Short = Sky-high (unlimited) loss.'",
-        "Capacity \u2014 'Agent = Commission; Principal = sPread.'",
-        "Settlement \u2014 'Treasuries, options, and everything else now ride the T+1 train.' (Post-May 2024.)",
-        "GTC auto-cancel months \u2014 'April showers, October leaves' (last business day of April and October)."
+        "\"BUMS-C\" exempt issuers \u2014 Banks, U.S. government, Municipals, Small business (SBIC), Commercial paper \u2264 270 days.",
+        "\"6-and-12\" \u2014 Rule 144 holding: 6 months reporting issuer, 12 months non-reporting.",
+        "\"200/300/1M\" \u2014 accredited income $200K single / $300K joint / $1M net worth (ex-residence).",
+        "\"506(b) = Buddies (no solicitation)\"; \"506(c) = Commercials OK (general solicitation, accredited only).\""
+      ]
+    },
+    {
+      "title": "4. Offering Documents & Disclosure Requirements",
+      "overview": "The prospectus is the primary disclosure document delivered to investors in a registered offering; municipal issuers use an Official Statement; mutual funds and other products have analogous documents. Disclosure is the foundation of investor protection under the 1933 Act.",
+      "key_concepts": [
+        "Final (statutory) prospectus \u2014 \u00a710(a): must be delivered no later than the confirmation of sale; contains POP, effective date, final terms.",
+        "Preliminary prospectus / red herring \u2014 \u00a710(b): used during cooling-off for IOIs; omits POP and effective date.",
+        "Summary prospectus \u2014 Rule 431: condensed version permitted in lieu of full statutory prospectus for certain offerings (notably mutual funds).",
+        "Free writing prospectus (FWP) \u2014 Rule 164: written offer that supplements/follows the statutory prospectus; permitted post-filing.",
+        "Official Statement (OS): municipal disclosure document \u2014 equivalent of a prospectus; preliminary OS (POS) used before pricing.",
+        "Program disclosure document: used for DPPs and certain structured products.",
+        "Required \u00a723 legend: \"These securities have not been approved or disapproved by the SEC...\"",
+        "Delivery requirements: full prospectus at or before confirmation of sale; aftermarket delivery per Rule 174 (25/90 days)."
+      ],
+      "rules": [
+        "Securities Act of 1933 \u00a710 \u2014 prospectus content rules.",
+        "Securities Act of 1933 \u00a723 \u2014 disclaimer requirement; misrepresenting SEC review is unlawful.",
+        "17 CFR 230.431 \u2014 summary prospectus.",
+        "17 CFR 230.164 \u2014 post-filing free writing prospectus.",
+        "MSRB Rule G-32 \u2014 underwriter must deliver Official Statement to customers in primary offerings of municipal securities; deemed-final OS required prior to award.",
+        "MSRB Rule G-11 \u2014 primary offering practices (priority of orders, syndicate operations, allocations)."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "\"RHSF\" \u2014 Red Herring (preliminary) \u2192 Statutory Final prospectus.",
+        "\"25/90\" \u2014 Rule 174 aftermarket prospectus delivery: 25 days listed IPO, 90 days unlisted IPO."
+      ]
+    },
+    {
+      "title": "5. Secondary Market Structure: Markets I\u2013IV",
+      "overview": "The secondary market is where existing securities trade between investors after the primary offering; the issuer is not a party to these trades and receives no proceeds. The market is segmented into four overlapping structural categories.",
+      "key_concepts": [
+        "First market \u2014 exchange-listed securities traded ON the exchange (e.g., NYSE listed stocks traded on NYSE).",
+        "Second market \u2014 unlisted securities traded OTC (over-the-counter) through dealer networks; includes OTCBB legacy, OTC Pink, OTCQB, OTCQX.",
+        "Third market \u2014 exchange-LISTED securities traded OTC (off-exchange) by broker-dealers.",
+        "Fourth market \u2014 direct institution-to-institution trading via ECNs (Electronic Communication Networks) without broker-dealer intermediation.",
+        "Exchange (\"auction market\"): centralized, price-time priority, designated market makers (DMMs); e.g., NYSE.",
+        "OTC (\"negotiated market\"): decentralized dealer market; market makers quote bid/ask; e.g., Nasdaq (now an exchange but historically OTC).",
+        "Alternative Trading Systems (ATS) / Dark pools: non-displayed venues; institutional block trading.",
+        "Physical vs. electronic markets \u2014 most trading today is electronic; physical floor (NYSE) remains for certain auctions and openings."
+      ],
+      "rules": [
+        "Securities Exchange Act of 1934 \u00a73(a)(1) \u2014 defines \"exchange.\"",
+        "Securities Exchange Act of 1934 \u00a73(a)(4) \u2014 defines \"broker\" (effects transactions for the account of others).",
+        "Securities Exchange Act of 1934 \u00a73(a)(5) \u2014 defines \"dealer\" (buys/sells for own account as business).",
+        "Securities Exchange Act of 1934 \u00a712 \u2014 securities must be registered to be traded on a national exchange.",
+        "Securities Exchange Act of 1934 \u00a715 \u2014 broker-dealer registration requirement.",
+        "Securities Exchange Act of 1934 \u00a715A \u2014 registration of national securities associations (FINRA)."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "\"1-2-3-4\" markets: \"Listed-on-Listed / Unlisted-OTC / Listed-OTC / Institution-to-Institution.\"",
+        "\"Exchange = Auction; OTC = Negotiated.\""
+      ]
+    },
+    {
+      "title": "6. Secondary Market Participants: Broker vs. Dealer, Market Makers, and Capacity",
+      "overview": "Firms participate in the secondary market as agents (brokers) on behalf of customers, or as principals (dealers) trading from their own inventory. The capacity in which a firm acts dictates compensation structure and disclosure on the trade confirmation.",
+      "key_concepts": [
+        "Broker (agent capacity): executes trades for customers; earns a COMMISSION; must disclose role on confirmation.",
+        "Dealer / market maker (principal capacity): trades from inventory; earns a MARKUP (buys) or MARKDOWN (sells); price includes the spread.",
+        "Riskless principal: dealer buys from one customer and simultaneously sells to another; still principal capacity, but the offsetting trades are matched. Must be disclosed.",
+        "Introducing broker-dealer: handles customer relationship; clears through another firm.",
+        "Clearing broker-dealer: holds customer assets, clears and settles trades, sends confirms/statements.",
+        "Prime broker: provides consolidated clearing/financing to hedge funds and large institutions trading with multiple executing brokers.",
+        "Market maker: continuously quotes two-sided bids and offers in specific securities; provides liquidity.",
+        "Designated Market Maker (DMM): NYSE specialist successor; maintains fair and orderly market in assigned securities.",
+        "Trader: takes proprietary positions for the firm's account.",
+        "Custodian: holds customer assets in safekeeping.",
+        "Transfer agent: maintains record of registered owners; processes transfers, issues certificates.",
+        "Trustee: enforces bond indenture on behalf of bondholders.",
+        "DTCC (Depository Trust & Clearing Corporation): central depository / clearing for equities and corporate/municipal bonds.",
+        "OCC (Options Clearing Corporation): issuer and guarantor of all listed options contracts.",
+        "NSCC / FICC: DTCC subsidiaries clearing equities and fixed income respectively."
+      ],
+      "rules": [
+        "Securities Exchange Act of 1934 \u00a73(a)(4) and \u00a73(a)(5) \u2014 broker and dealer definitions.",
+        "Securities Exchange Act of 1934 \u00a715 \u2014 broker-dealer registration and SRO membership.",
+        "Securities Exchange Act of 1934 \u00a715A \u2014 FINRA as registered national securities association.",
+        "FINRA Rule 5250 \u2014 payments for market making prohibited (no payments from issuers to BDs to make a market in their security).",
+        "FINRA Rule 2266 \u2014 SIPC disclosure required to new customers at account opening, in writing.",
+        "FINRA Rule 2269 \u2014 disclosure of participation/interest in a primary or secondary distribution.",
+        "MSRB Rule G-34 \u2014 CUSIP, new issue, and market information requirements for municipal securities."
+      ],
+      "formulas": [
+        "Markup = Sale Price to Customer \u2212 Dealer's Cost (principal trade)",
+        "Markdown = Dealer's Cost \u2212 Purchase Price from Customer (principal trade)",
+        "Commission = Agent fee charged on top of execution price (broker capacity)",
+        "Spread = Ask \u2212 Bid"
+      ],
+      "mnemonics": [
+        "\"BAD CoM\" \u2014 Broker = Agent = Commission; Dealer = Principal = Markup.",
+        "\"DTCC clears stocks; OCC clears options.\""
+      ]
+    },
+    {
+      "title": "7. Quotes & Order Types",
+      "overview": "A quote shows the price at which a market maker is willing to buy (bid) and sell (ask) a security, along with the size; customer orders specify how and when a trade should be executed. Mastery of order types is a core SIE skill.",
+      "key_concepts": [
+        "Bid: price at which a dealer/market will BUY (customer sells at bid).",
+        "Ask / Offer: price at which a dealer/market will SELL (customer buys at ask).",
+        "Spread = Ask \u2212 Bid (dealer's gross profit).",
+        "Size: number of shares (round lots) available at the quoted bid and ask.",
+        "Firm quote: dealer must trade at the quoted price for the stated size.",
+        "Subject (nominal) quote: indicative only; not actionable.",
+        "Workout quote: approximate; subject to negotiation due to illiquidity.",
+        "Inside market: highest bid + lowest ask across all market makers (NBBO \u2014 National Best Bid and Offer).",
+        "Market order: execute immediately at best available price; guarantees execution, not price.",
+        "Limit order: buy at limit price or LOWER; sell at limit price or HIGHER; guarantees price (if filled), not execution.",
+        "Stop order (stop-loss): becomes a MARKET order when stop price is touched/triggered. Buy stops placed ABOVE market; sell stops BELOW market.",
+        "Stop-limit order: becomes a LIMIT order when stop is triggered; risk of no execution if market moves through limit.",
+        "Day order: cancelled at end of trading day if unfilled (default).",
+        "GTC (Good-Til-Cancelled): remains open until executed or cancelled (firms typically refresh periodically).",
+        "Fill-or-Kill (FOK): execute entire order immediately or cancel.",
+        "Immediate-or-Cancel (IOC): execute any portion immediately, cancel remainder.",
+        "All-or-None (AON): execute in full or not at all; no immediacy required.",
+        "Not-Held (NH): gives floor broker discretion over time/price; not held to specific execution.",
+        "Market-on-Close (MOC) / Limit-on-Close (LOC): executed at/near the closing price."
+      ],
+      "rules": [
+        "FINRA Rule 5250 \u2014 no payments to induce market making.",
+        "Order audit-trail reporting is via the Consolidated Audit Trail (CAT) under FINRA Rule 6800 Series (OATS was retired 9/1/2021)."
+      ],
+      "formulas": [
+        "Spread = Ask \u2212 Bid",
+        "Inside Market (NBBO) = MAX(all bids) and MIN(all asks)",
+        "Buy Stop Trigger: market price \u2265 stop price \u2192 becomes market buy",
+        "Sell Stop Trigger: market price \u2264 stop price \u2192 becomes market sell"
+      ],
+      "mnemonics": [
+        "\"BLISS\" \u2014 Buy Limits & Sell Stops are placed BELOW the current market; Sell Limits & Buy Stops are placed ABOVE. (Buy Limit / Sell Stop = below; Sell Limit / Buy Stop = above.)",
+        "\"MIT \u2014 Market guarantees execution; Limit guarantees price.\"",
+        "\"FOK = all now; IOC = some now; AON = all whenever.\""
+      ]
+    },
+    {
+      "title": "8. Trade Settlement & Clearing",
+      "overview": "Settlement is the exchange of cash for securities after a trade. The standard regular-way settlement for corporate stocks, corporate bonds, and municipal bonds is T+1 (effective May 28, 2024). Different products and trade types have different settlement conventions.",
+      "key_concepts": [
+        "Regular-way settlement \u2014 corporate stocks, corporate bonds, municipal bonds: T+1 (one business day after trade date).",
+        "U.S. Treasury securities and listed options: T+1 (next business day).",
+        "Equity option EXERCISE: resulting stock delivery settles T+1 (aligned with the equity T+1 cycle, effective 5/28/2024).",
+        "Index option exercise: settles next business day in CASH (intrinsic value).",
+        "Cash settlement: same day as trade date (T+0); used by mutual agreement.",
+        "When-issued (WI): settles when the security is actually issued (used for new Treasury auctions, stock splits, new corporate issues).",
+        "Seller's option: settlement date negotiated by parties, typically 2\u201360 days.",
+        "Ex-dividend date (regular-way): SAME business day as record date under T+1 settlement (changed from one day before record date under T+2).",
+        "Trade date (T): date the order is executed.",
+        "Settlement date: date payment and securities change hands.",
+        "Good delivery: securities delivered in transferable form (proper endorsement, round-lot multiples for stock).",
+        "DVP (Delivery vs. Payment) / RVP (Receipt vs. Payment): institutional settlement with simultaneous exchange.",
+        "Clearance: NSCC (equities/corporates), FICC (governments/MBS), OCC (options). DTC is the central depository for book-entry securities."
+      ],
+      "rules": [
+        "SEC Rule 15c6-1 (as amended, effective 5/28/2024) \u2014 establishes T+1 as the standard settlement cycle.",
+        "FINRA Rule 11140 / equivalent \u2014 ex-dividend date determination (same business day as record date under T+1).",
+        "MSRB Rule G-12 \u2014 uniform practice for inter-dealer municipal settlement.",
+        "MSRB Rule G-15 \u2014 customer confirmation and settlement (municipals).",
+        "Order-event reporting: Consolidated Audit Trail (CAT) under FINRA Rule 6800 Series (OATS retired 9/1/2021)."
+      ],
+      "formulas": [
+        "Regular-way Settlement Date = Trade Date + 1 business day (T+1)",
+        "Treasury / Option Settlement = Trade Date + 1 business day",
+        "Ex-Dividend Date (regular-way) = Record Date (same business day, under T+1)",
+        "Accrued Interest (corp/muni bonds) = 30/360 day count; (Treasuries) = actual/actual"
+      ],
+      "mnemonics": [
+        "\"T+1 for ALL\" \u2014 stocks, corporate bonds, muni bonds, Treasuries, options ALL now settle T+1.",
+        "\"Ex = Record\" under T+1 (regular-way ex-date is the same day as record date).",
+        "\"Cash = today; Reg-way = tomorrow; When-issued = whenever it issues.\""
+      ]
+    },
+    {
+      "title": "9. Regulators, SROs, and Investor Protection Bodies",
+      "overview": "U.S. securities markets are governed by a layered structure: the SEC at the federal level, SROs (FINRA, MSRB, CBOE, exchanges) at the industry level, state regulators (NASAA-coordinated), and protective entities (SIPC, FDIC). Each has defined jurisdiction.",
+      "key_concepts": [
+        "SEC: created by the Securities Exchange Act of 1934; enforces federal securities laws; oversees SROs; civil enforcement authority.",
+        "FINRA: SRO for broker-dealers; registered under Exchange Act \u00a715A; writes and enforces conduct rules, examines members, administers qualification exams (including the SIE).",
+        "MSRB: writes rules for municipal securities dealers and municipal advisors; enforcement by FINRA/SEC (MSRB does not enforce its own rules).",
+        "CBOE: SRO for options trading and listings.",
+        "Exchanges (NYSE, Nasdaq): SROs for listed-securities trading.",
+        "State regulators (Blue-sky / NASAA): enforce state-level securities laws; coordinate via the North American Securities Administrators Association.",
+        "Federal Reserve: monetary policy; sets Regulation T (initial margin on securities) and discount rate.",
+        "U.S. Treasury / IRS: tax policy and Treasury debt issuance.",
+        "SIPC: created by SIPA 1970; protects customers of failed broker-dealers up to $500,000 per customer (of which up to $250,000 may be cash). Does NOT protect against market losses.",
+        "FDIC: insures bank deposits up to $250,000 per depositor per insured bank per ownership category. Does NOT cover securities."
+      ],
+      "rules": [
+        "Securities Exchange Act of 1934 \u00a73(a) \u2014 definitions (exchange, broker, dealer, member).",
+        "Securities Exchange Act of 1934 \u00a712 \u2014 registration of securities on national exchanges.",
+        "Securities Exchange Act of 1934 \u00a715 \u2014 broker-dealer registration with SEC; must join SRO.",
+        "Securities Exchange Act of 1934 \u00a715A \u2014 FINRA's status as registered national securities association; rules must prevent fraud, promote just and equitable principles of trade.",
+        "FINRA Rule 2266 \u2014 written SIPC disclosure to new customers at account opening (with limited exceptions for non-SIPC members).",
+        "FINRA Rule 2269 \u2014 disclosure of broker-dealer's participation/control in primary or secondary distributions when soliciting purchases."
+      ],
+      "formulas": [
+        "SIPC Coverage = up to $500,000 per separate customer (cash sublimit $250,000)",
+        "FDIC Coverage = up to $250,000 per depositor per bank per ownership category"
+      ],
+      "mnemonics": [
+        "\"SEC writes the law; FINRA writes the rules; firms write the checks.\"",
+        "\"SIPC = Securities (BD failure); FDIC = Deposits (bank failure).\"",
+        "\"500/250\" \u2014 SIPC: $500K total, $250K cash."
+      ]
+    },
+    {
+      "title": "10. Municipal Securities Primary Market & MSRB Rules",
+      "overview": "Municipal securities are exempt from 1933 Act registration but are governed by MSRB rules administered through FINRA enforcement. The primary distribution process for new municipal issues has its own disclosure document (the Official Statement) and syndicate procedures.",
+      "key_concepts": [
+        "Municipal securities exempt from 1933 Act registration but NOT from antifraud rules (1934 Act \u00a710(b), Rule 10b-5).",
+        "Methods of sale: Competitive bid (issuer awards to lowest TIC/NIC bidder; typical for GO bonds) or Negotiated (issuer selects underwriter directly; typical for revenue bonds).",
+        "Official Statement (OS): the municipal disclosure document; preliminary OS (POS) used pre-pricing; final OS delivered post-pricing.",
+        "Bond Counsel: provides legal opinion on validity and tax-exempt status; opinion appears on or with the bond.",
+        "Municipal Advisor: registered fiduciary advising the issuer; cannot also serve as underwriter on same transaction (role conflict).",
+        "Syndicate priority of orders (typical): Pre-sale \u2192 Group net \u2192 Designated \u2192 Member.",
+        "CUSIP number assigned to each new issue.",
+        "Bond Buyer indices and the Bond Buyer 30-Day Visible Supply track upcoming municipal issuance."
+      ],
+      "rules": [
+        "MSRB Rule G-11 \u2014 primary offering practices; priority of orders and syndicate operations; settlement of syndicate accounts within prescribed periods.",
+        "MSRB Rule G-32 \u2014 disclosures in connection with primary offerings; underwriter delivers Official Statement to investors; deemed-final OS prior to award.",
+        "MSRB Rule G-34 \u2014 CUSIP assignment, new-issue, and market information requirements."
+      ],
+      "formulas": [
+        "NIC (Net Interest Cost) = Total Interest Payments \u2212 Premium (or + Discount), not time-weighted",
+        "TIC (True Interest Cost) = discount rate that equates PV of debt service to bond proceeds (time-weighted)"
+      ],
+      "mnemonics": [
+        "\"PGDM\" \u2014 Pre-sale, Group net, Designated, Member (order priority under G-11).",
+        "\"G-32 = Give-32\" \u2014 give the OS to the customer (G-32).",
+        "\"Competitive = GO; Negotiated = Revenue.\""
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 30572,
-    "output": 7344
+    "input": 12326,
+    "output": 11256
   },
-  "cost_usd": 1.0094
+  "cost_usd": 1.0291
 }

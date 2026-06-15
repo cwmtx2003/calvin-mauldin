@@ -1,0 +1,350 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "jf": "rf",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "An individual being hired by a FINRA member firm must have a Form U4 filed on their behalf. Who is responsible for filing this form?",
+      "choices": [
+        "The individual applicant directly with FINRA",
+        "The sponsoring member firm",
+        "The state securities administrator",
+        "The SEC"
+      ],
+      "answer": 1,
+      "explanation": "The Form U4 is filed by the sponsoring member firm through CRD on behalf of the associated person. The individual cannot self-file; sponsorship by a member firm is required to register.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "After filing a Form U4, within how many days must an applicant generally pass the required qualification examination?",
+      "choices": [
+        "30 days",
+        "60 days",
+        "120 days",
+        "180 days"
+      ],
+      "answer": 2,
+      "explanation": "An applicant generally has 120 days from the filing of Form U4 to pass the required qualification exam. The other choices do not reflect the standard window.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative is arrested and charged with a felony. Within how many days must the Form U4 be amended to disclose this event?",
+      "choices": [
+        "10 business days",
+        "30 days",
+        "60 days",
+        "90 days"
+      ],
+      "answer": 0,
+      "explanation": "Statutory disqualification events, such as a felony charge, must be disclosed by amending Form U4 within 10 business days. The general 30-day amendment window applies to most other reportable events.",
+      "citations": [
+        "Rule 4530"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "When a registered representative is terminated from a member firm, within how many days must the firm file Form U5 with CRD?",
+      "choices": [
+        "10 days",
+        "15 days",
+        "30 days",
+        "60 days"
+      ],
+      "answer": 2,
+      "explanation": "A member firm must file Form U5 within 30 days of termination and provide a copy to the former associated person within the same window. Shorter time frames apply to specific disclosure events, not the basic filing.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 1240, how often must a registered person complete the Regulatory Element of Continuing Education?",
+      "choices": [
+        "Once every two years",
+        "Once every three years",
+        "Annually",
+        "Only upon changing firms"
+      ],
+      "answer": 2,
+      "explanation": "Under amended Rule 1240, the Regulatory Element must be completed annually by December 31 for each registration category held. The prior 2nd/5th/10th-anniversary cycle is no longer in effect.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative wants to begin working evenings as a paid bookkeeper for a local restaurant. Before engaging in this activity, the representative must:",
+      "choices": [
+        "Obtain written approval from FINRA",
+        "Provide prior written notice to the member firm",
+        "Disclose the activity on the next annual compliance questionnaire",
+        "Take no action because bookkeeping is unrelated to securities"
+      ],
+      "answer": 1,
+      "explanation": "Under FINRA Rule 3270, a registered person must provide prior written notice to the member firm before engaging in any outside business activity. Notice to FINRA is not required, and waiting for an annual questionnaire is insufficient.",
+      "citations": [
+        "Rule 3270"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative wants to participate in a private securities transaction for which she will receive selling compensation. Under FINRA Rule 3280, the firm must:",
+      "choices": [
+        "Be notified verbally before the transaction",
+        "Receive prior written notice only",
+        "Receive prior written notice and provide written approval",
+        "Take no action if the transaction is with an accredited investor"
+      ],
+      "answer": 2,
+      "explanation": "Under Rule 3280, when a registered person will receive selling compensation for a private securities transaction, the firm must receive prior written notice AND provide written approval. Written notice alone is insufficient when compensation is involved.",
+      "citations": [
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative gives a $400 holiday gift to an employee of an institutional customer in connection with that customer's business. This gift:",
+      "choices": [
+        "Is permitted because it relates to a business relationship",
+        "Violates FINRA's gift limit, which is $100 per person per year",
+        "Violates FINRA's gift limit, which is $300 per person per year",
+        "Is permitted as long as it is reported on Form U4"
+      ],
+      "answer": 2,
+      "explanation": "FINRA Rule 3220 prohibits gifts in excess of $300 per individual per year when given in relation to the recipient's employer's business. A $400 gift exceeds this limit.",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following individuals at a broker-dealer is most clearly required to be fingerprinted under SEC Rule 17f-2?",
+      "choices": [
+        "A registered representative who handles customer securities",
+        "An employee whose duties are limited to general office cleaning",
+        "A person who has no access to securities, cash, or original books and records",
+        "An employee of an unaffiliated third-party vendor"
+      ],
+      "answer": 0,
+      "explanation": "SEC Rule 17f-2 requires fingerprinting of securities industry personnel who handle cash, securities, or original books and records, including registered representatives. Certain clerical employees with no such access may be exempt.",
+      "citations": [
+        "17 CFR 240.17f-2"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "When an associated person signs an initial Form U4, the member firm must provide a written statement disclosing that the form contains a:",
+      "choices": [
+        "Predispute arbitration clause",
+        "Waiver of all employment rights",
+        "Non-compete agreement",
+        "Mandatory mediation provision"
+      ],
+      "answer": 0,
+      "explanation": "Rule 2263 requires the firm to provide a written statement explaining that Form U4 contains a predispute arbitration clause and what that means for the associated person's rights. Non-compete and mediation provisions are not what the rule addresses.",
+      "citations": [
+        "Rule 2263"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "Filing information on Form U4 that is incomplete or inaccurate so as to be misleading is:",
+      "choices": [
+        "Permitted if corrected within one year",
+        "A violation of FINRA Rule 1122",
+        "Only a violation if the information relates to a customer complaint",
+        "Permitted if the firm's compliance officer approves the filing"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 1122 prohibits filing information with FINRA regarding membership or registration that is incomplete or inaccurate so as to be misleading, and requires correction once identified. There is no one-year grace period or compliance-officer carve-out.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered person's qualification examination is generally subject to a lapse period after termination. Under the Maintaining Qualifications Program (MQP), a terminated registered person may extend the requalification window for up to:",
+      "choices": [
+        "1 year",
+        "2 years",
+        "5 years",
+        "10 years"
+      ],
+      "answer": 2,
+      "explanation": "Under the MQP adopted with the amended Rule 1240, a terminated registered person may extend the standard 2-year requalification window for up to 5 years by completing annual CE through FinPro. The 2-year figure is the baseline lapse period without MQP participation.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12757,
+    "output": 2546
+  },
+  "cost_usd": 0.3823
+}

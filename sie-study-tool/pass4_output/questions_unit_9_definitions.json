@@ -1,0 +1,301 @@
+{
+  "unit": 9,
+  "unit_name": "Economics",
+  "jf": "km",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes a period of declining economic activity, typically marked by falling GDP, rising unemployment, and reduced consumer spending?",
+      "choices": [
+        "Expansion",
+        "Peak",
+        "Contraction",
+        "Trough"
+      ],
+      "answer": 2,
+      "explanation": "Contraction is the phase of the business cycle during which economic activity declines. Expansion is the opposite \u2014 a period of growth. A peak marks the top of the cycle and a trough marks the bottom.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which of the following is defined as a leading economic indicator?",
+      "choices": [
+        "Gross domestic product",
+        "Average duration of unemployment",
+        "Stock market performance (e.g., S&P 500)",
+        "Corporate profits"
+      ],
+      "answer": 2,
+      "explanation": "Stock market indices are classic leading indicators because they tend to move ahead of changes in the broader economy. GDP and corporate profits are coincident/lagging measures, and average duration of unemployment is a lagging indicator.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An industry whose revenues and earnings tend to move closely with the overall business cycle \u2014 expanding strongly in good times and falling sharply in downturns \u2014 is best described as:",
+      "choices": [
+        "Defensive",
+        "Cyclical",
+        "Countercyclical",
+        "Non-durable"
+      ],
+      "answer": 1,
+      "explanation": "Cyclical industries (e.g., autos, construction, luxury goods) move with the business cycle. Defensive industries (e.g., food, utilities) are relatively stable across the cycle, and countercyclical industries actually perform better in downturns.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which economic theory holds that aggregate demand, influenced by active government fiscal policy (spending and taxation), is the primary driver of economic output and employment?",
+      "choices": [
+        "Monetarist theory",
+        "Supply-side theory",
+        "Keynesian theory",
+        "Classical theory"
+      ],
+      "answer": 2,
+      "explanation": "Keynesian economics emphasizes managing aggregate demand through fiscal policy. Monetarists emphasize controlling the money supply, and supply-side theory focuses on tax cuts and incentives to increase production.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term identifies the interest rate that the Federal Reserve charges depository institutions for short-term loans made directly from the Fed's discount window?",
+      "choices": [
+        "Federal funds rate",
+        "Discount rate",
+        "Prime rate",
+        "Broker call rate"
+      ],
+      "answer": 1,
+      "explanation": "The discount rate is the rate the Fed charges member banks borrowing directly from the Fed. The federal funds rate is what banks charge each other for overnight reserves; the prime rate is charged by banks to their best corporate customers; and the broker call rate is charged by banks to broker-dealers on margin loans.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which Federal Reserve tool involves the buying and selling of U.S. Treasury securities to influence the level of bank reserves and short-term interest rates?",
+      "choices": [
+        "Changing the discount rate",
+        "Open market operations",
+        "Moral suasion",
+        "Setting margin requirements under Regulation T"
+      ],
+      "answer": 1,
+      "explanation": "Open market operations \u2014 purchases and sales of Treasury securities conducted by the FOMC \u2014 are the Fed's principal day-to-day tool for influencing reserves and the federal funds rate. Adjusting the discount rate is a separate tool, and Regulation T margin rules govern broker-dealer credit, not monetary policy.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The financial statement that reports a company's assets, liabilities, and stockholders' equity as of a specific point in time is the:",
+      "choices": [
+        "Income statement",
+        "Statement of cash flows",
+        "Balance sheet",
+        "Statement of retained earnings"
+      ],
+      "answer": 2,
+      "explanation": "The balance sheet presents a snapshot of assets, liabilities, and equity at a single date. The income statement shows revenues and expenses over a period of time, and the statement of cash flows reports cash inflows and outflows over a period.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term is defined as the total market value of all final goods and services produced within a country's borders during a specific period?",
+      "choices": [
+        "Gross national product (GNP)",
+        "Gross domestic product (GDP)",
+        "Net national income",
+        "Balance of payments"
+      ],
+      "answer": 1,
+      "explanation": "GDP measures output produced within a country's borders. GNP measures output produced by a country's residents regardless of location. Balance of payments tracks international transactions, not domestic output.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "An exchange rate is best defined as:",
+      "choices": [
+        "The interest rate paid on foreign government bonds",
+        "The price of one country's currency expressed in terms of another country's currency",
+        "The premium charged on cross-border securities trades",
+        "The ratio of a country's exports to its imports"
+      ],
+      "answer": 1,
+      "explanation": "An exchange rate is the price of one currency in terms of another. The export-to-import ratio relates to the balance of trade, not the definition of an exchange rate.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A general and sustained rise in the overall level of prices in an economy, which erodes purchasing power, is defined as:",
+      "choices": [
+        "Deflation",
+        "Disinflation",
+        "Inflation",
+        "Stagnation"
+      ],
+      "answer": 2,
+      "explanation": "Inflation is a sustained increase in the general price level. Deflation is a sustained decrease; disinflation is a slowing of the rate of inflation; and stagnation refers to slow or no economic growth.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the central bank policy stance that uses interest-rate and balance-sheet tools to influence the money supply and credit conditions in the economy?",
+      "choices": [
+        "Fiscal policy",
+        "Trade policy",
+        "Monetary policy",
+        "Industrial policy"
+      ],
+      "answer": 2,
+      "explanation": "Monetary policy is conducted by the Federal Reserve and affects money and credit. Fiscal policy refers to government taxing and spending decisions made by Congress and the President.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the interest rate that U.S. commercial banks charge their most creditworthy corporate customers on short-term loans?",
+      "choices": [
+        "Discount rate",
+        "Federal funds rate",
+        "Prime rate",
+        "Broker call rate"
+      ],
+      "answer": 2,
+      "explanation": "The prime rate is the benchmark rate banks offer their best corporate borrowers. The discount rate is charged by the Fed to banks; the federal funds rate is the interbank overnight rate; and the broker call rate is charged to broker-dealers financing margin accounts.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12079,
+    "output": 2359
+  },
+  "cost_usd": 0.3581
+}

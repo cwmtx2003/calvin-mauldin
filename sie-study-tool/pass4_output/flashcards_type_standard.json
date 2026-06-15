@@ -3,288 +3,273 @@
   "cards": [
     {
       "type": "qa",
-      "front": "What is the standard settlement period for regular-way trades in equities, corporate bonds, and municipal bonds?",
-      "back": "T+1 (one business day after trade date), effective May 28, 2024.",
-      "unit": 1,
-      "lesson": 3
+      "front": "Under the Securities Act of 1933, what is the primary purpose of registration?",
+      "back": "To require full and fair disclosure of material information to investors when securities are offered to the public in the primary market.",
+      "unit": 1
     },
     {
       "type": "definition",
-      "front": "Define the primary market.",
-      "back": "The market in which new issues of securities are sold by the issuer to investors, with proceeds going to the issuer. Distributions are made via prospectus or offering document.",
-      "unit": 1,
-      "lesson": 1
+      "front": "Define a firm commitment underwriting.",
+      "back": "An underwriting in which the syndicate purchases the entire issue from the issuer and assumes the financial risk of reselling the securities to the public.",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "Under Regulation A, what are the maximum offering amounts for Tier 1 and Tier 2 in any 12-month period?",
-      "back": "Tier 1: up to $20 million; Tier 2: up to $75 million.",
-      "unit": 1,
-      "lesson": 1
+      "front": "What is the difference between an IPO and a follow-on offering?",
+      "back": "An IPO is the issuer's first sale of stock to the public; a follow-on (subsequent primary) offering is the sale of additional new shares by an issuer that is already public.",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "What is the difference between a firm commitment and a best efforts underwriting?",
-      "back": "In firm commitment, the underwriter buys the entire issue from the issuer and assumes the risk of unsold shares. In best efforts, the underwriter acts as an agent and is not liable for unsold shares.",
-      "unit": 1,
-      "lesson": 1
+      "front": "Under Regulation D, which rule permits general solicitation when all purchasers are accredited investors?",
+      "back": "Rule 506(c) of Regulation D.",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "What income or net worth thresholds qualify a natural person as an accredited investor?",
-      "back": "Annual income over $200,000 ($300,000 joint) for the past two years with expectation of the same, OR net worth over $1 million excluding primary residence. Holders of Series 7, 65, or 82 also qualify.",
-      "unit": 1,
-      "lesson": 1
+      "front": "What rights does common stock typically confer on its holders?",
+      "back": "Voting rights (typically one vote per share), the right to receive declared dividends, a residual claim on assets in liquidation, and limited liability.",
+      "unit": 2
     },
     {
       "type": "qa",
-      "front": "On what date does a stock begin trading without the upcoming dividend under T+1 settlement?",
-      "back": "The ex-dividend date, which is the same business day as the record date for regular-way trades.",
-      "unit": 2,
-      "lesson": 3
-    },
-    {
-      "type": "qa",
-      "front": "What right gives existing common stockholders the ability to maintain their proportional ownership when a company issues additional shares?",
-      "back": "Preemptive rights (granted through a rights offering).",
-      "unit": 2,
-      "lesson": 1
-    },
-    {
-      "type": "definition",
       "front": "What is cumulative preferred stock?",
-      "back": "Preferred stock that requires any skipped (omitted) dividends to be paid in full before any common stock dividends can be paid.",
-      "unit": 2,
-      "lesson": 2
-    },
-    {
-      "type": "qa",
-      "front": "What does an American Depositary Receipt (ADR) represent?",
-      "back": "An ADR represents ownership of shares of a foreign company held on deposit at a U.S. bank, allowing the foreign stock to trade in U.S. markets in U.S. dollars.",
-      "unit": 2,
-      "lesson": 2
-    },
-    {
-      "type": "qa",
-      "front": "In a corporate liquidation, what is the order of payment priority?",
-      "back": "1) Secured creditors, 2) unsecured creditors (including general creditors and debenture holders), 3) subordinated debt, 4) preferred stockholders, 5) common stockholders.",
-      "unit": 2,
-      "lesson": 1
-    },
-    {
-      "type": "qa",
-      "front": "What happens to the price and number of shares in a 2-for-1 stock split?",
-      "back": "The number of shares doubles and the price per share is halved; total market value and total cost basis are unchanged.",
-      "unit": 2,
-      "lesson": 3
-    },
-    {
-      "type": "qa",
-      "front": "What is the relationship between a bond's price and its yield?",
-      "back": "Inverse relationship: when bond prices rise, yields fall; when bond prices fall, yields rise.",
-      "unit": 3,
-      "lesson": 1
+      "back": "Preferred stock that requires any skipped (omitted) dividends to be paid in full before any dividend may be paid to common shareholders.",
+      "unit": 2
     },
     {
       "type": "definition",
-      "front": "What is a general obligation (GO) bond?",
-      "back": "A municipal bond backed by the full faith, credit, and taxing power of the issuing municipality. Requires voter approval.",
-      "unit": 3,
-      "lesson": 2
+      "front": "Define an American Depositary Receipt (ADR).",
+      "back": "A negotiable receipt issued by a U.S. bank representing shares of a foreign corporation, allowing the foreign security to trade in U.S. markets in U.S. dollars.",
+      "unit": 2
     },
     {
       "type": "qa",
-      "front": "How is interest from U.S. Treasury securities taxed?",
-      "back": "Taxable at the federal level, but exempt from state and local income taxes.",
-      "unit": 3,
-      "lesson": 2
+      "front": "How is the value of one stock right or warrant related to its underlying security?",
+      "back": "A right or warrant gives the holder the option to buy the underlying stock at a fixed subscription/exercise price; rights are typically short-term, while warrants are long-term.",
+      "unit": 2
     },
     {
       "type": "qa",
-      "front": "What is the maximum maturity of a Treasury bill, and how is it sold?",
-      "back": "Maximum maturity is 52 weeks; T-bills are sold at a discount to face value and pay no interest, with the difference being the investor's return.",
-      "unit": 3,
-      "lesson": 2
+      "front": "What is the relationship between a bond's price and prevailing interest rates?",
+      "back": "They move inversely: when interest rates rise, bond prices fall; when interest rates fall, bond prices rise.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "What is commercial paper?",
-      "back": "Unsecured, short-term corporate debt with a maximum maturity of 270 days, sold at a discount. Exempt from Securities Act of 1933 registration.",
-      "unit": 3,
-      "lesson": 3
+      "front": "What is the difference between a general obligation (GO) bond and a revenue bond?",
+      "back": "A GO bond is backed by the full faith, credit, and taxing power of the issuing municipality; a revenue bond is backed only by income generated from a specific project or facility.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "What is the FDIC insurance limit for bank deposits?",
-      "back": "$250,000 per depositor, per insured bank, per ownership category.",
-      "unit": 10,
-      "lesson": 1
+      "front": "Which U.S. Treasury security is issued at a discount and pays no periodic interest?",
+      "back": "Treasury bills (T-bills).",
+      "unit": 3
+    },
+    {
+      "type": "qa",
+      "front": "Are U.S. Treasury interest payments subject to state and local income tax?",
+      "back": "No. Interest on U.S. Treasury securities is exempt from state and local income tax but is subject to federal income tax.",
+      "unit": 3
+    },
+    {
+      "type": "qa",
+      "front": "What is a banker's acceptance?",
+      "back": "A short-term money market instrument used to finance international trade, representing a time draft drawn on and accepted by a bank.",
+      "unit": 3
     },
     {
       "type": "qa",
       "front": "Under the Investment Company Act of 1940, what are the three classifications of investment companies?",
-      "back": "1) Face-amount certificate companies, 2) Unit investment trusts (UITs), and 3) Management companies (open-end and closed-end).",
-      "unit": 4,
-      "lesson": 1
+      "back": "Face-amount certificate companies, unit investment trusts (UITs), and management investment companies (which are further divided into open-end and closed-end).",
+      "unit": 4
     },
     {
       "type": "qa",
       "front": "How is the price of an open-end mutual fund share determined?",
-      "back": "By forward pricing \u2014 the next calculated NAV after the order is received, plus any applicable sales charge.",
-      "unit": 4,
-      "lesson": 1
+      "back": "By forward pricing \u2014 the next calculated net asset value (NAV) per share, plus any applicable sales charge.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "What is a 1035 exchange?",
-      "back": "A tax-free exchange of one life insurance or annuity contract for another similar contract, without triggering current income tax on any gains.",
-      "unit": 4,
-      "lesson": 2
+      "front": "What is the maximum sales charge a mutual fund may impose under FINRA rules?",
+      "back": "8.5% of the public offering price.",
+      "unit": 4
     },
     {
       "type": "definition",
-      "front": "Define an option's strike price.",
-      "back": "The price at which the holder of an option may buy (call) or sell (put) the underlying security if the option is exercised.",
-      "unit": 5,
-      "lesson": 1
+      "front": "Define a 12b-1 fee.",
+      "back": "An annual fee charged by a mutual fund out of fund assets to cover distribution and marketing expenses, authorized under SEC Rule 12b-1.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "Which party in an option contract has the obligation, and which has the right?",
-      "back": "The buyer (holder) has the right to exercise; the seller (writer) has the obligation to perform if assigned.",
-      "unit": 5,
-      "lesson": 1
+      "front": "What is the key distinguishing feature of a variable annuity compared to a fixed annuity?",
+      "back": "In a variable annuity, the investment risk is borne by the contract owner because payments and account value fluctuate with the performance of separate account subaccounts; a fixed annuity guarantees a minimum rate and the insurer bears the investment risk.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "What document must be delivered to a customer at or before approval of an options account?",
-      "back": "The Options Disclosure Document (ODD), titled 'Characteristics and Risks of Standardized Options.'",
-      "unit": 5,
-      "lesson": 1
+      "front": "Who issues and guarantees performance of listed options?",
+      "back": "The Options Clearing Corporation (OCC).",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "What is a key tax feature of a 529 college savings plan?",
-      "back": "Contributions grow tax-deferred and qualified distributions for educational expenses are federally tax-free. Many states also offer a state tax deduction for contributions.",
-      "unit": 5,
-      "lesson": 2
+      "front": "What does the buyer of a call option have the right to do?",
+      "back": "Buy the underlying security at the strike price on or before expiration.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "What is the primary tax characteristic of a direct participation program (DPP)?",
-      "back": "Pass-through taxation \u2014 income, gains, losses, and deductions flow directly to the limited partners and are reported on their individual tax returns. The partnership itself does not pay tax.",
-      "unit": 5,
-      "lesson": 3
+      "front": "What is a key tax advantage of a 529 college savings plan?",
+      "back": "Earnings grow federally tax-deferred, and qualified educational distributions are federally tax-free.",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "How are direct participation programs (DPPs) taxed?",
+      "back": "They are pass-through entities \u2014 income, gains, losses, and deductions flow directly to the limited partners and are reported on their individual tax returns.",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "What is required for a written customer authorization in a discretionary account?",
+      "back": "The customer must provide prior written authorization (typically via trading authorization or power of attorney) before the registered representative may exercise discretion.",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under SECURE 2.0, at what age must an IRA owner begin taking required minimum distributions (RMDs)?",
+      "back": "Age 73 (for individuals who reach age 72 after 12/31/2022).",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is the Regulation T initial margin requirement for the purchase of marginable equity securities?",
+      "back": "50% of the purchase price.",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is the FINRA minimum equity requirement to open a margin account?",
+      "back": "$2,000.",
+      "unit": 6
     },
     {
       "type": "definition",
-      "front": "What is systematic (market) risk?",
-      "back": "The risk that the overall market will decline, affecting all securities. It cannot be eliminated through diversification.",
-      "unit": 7,
-      "lesson": 1
-    },
-    {
-      "type": "definition",
-      "front": "What is purchasing power (inflation) risk?",
-      "back": "The risk that the real value of investment returns will be eroded by inflation. Most affects fixed-income securities with long maturities.",
-      "unit": 7,
-      "lesson": 1
+      "front": "Define systematic risk.",
+      "back": "The risk inherent to the entire market or market segment that cannot be eliminated through diversification (also called market risk).",
+      "unit": 7
     },
     {
       "type": "qa",
-      "front": "Under Regulation Best Interest (Reg BI), what four obligations apply when making a recommendation to a retail customer?",
-      "back": "1) Disclosure Obligation, 2) Care Obligation, 3) Conflict of Interest Obligation, 4) Compliance Obligation.",
-      "unit": 7,
-      "lesson": 2
+      "front": "Which type of risk can be reduced by diversification?",
+      "back": "Nonsystematic (unsystematic) risk \u2014 the risk specific to an individual issuer or industry.",
+      "unit": 7
     },
     {
       "type": "qa",
-      "front": "What holding period qualifies a capital gain as long-term?",
-      "back": "More than one year. Long-term gains are taxed at preferential rates (0%, 15%, or 20%).",
-      "unit": 8,
-      "lesson": 2
+      "front": "What is purchasing power (inflationary) risk?",
+      "back": "The risk that inflation will erode the real value of an investment's future cash flows, most affecting fixed-income securities.",
+      "unit": 7
+    },
+    {
+      "type": "qa",
+      "front": "How is current yield on a bond calculated?",
+      "back": "Annual interest (coupon) income divided by the bond's current market price.",
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is the minimum holding period for a capital gain to qualify as long-term?",
+      "back": "More than one year.",
+      "unit": 8
     },
     {
       "type": "qa",
       "front": "What is the wash sale rule?",
-      "back": "If a security is sold at a loss and a substantially identical security is purchased within 30 days before or after the sale, the loss is disallowed and added to the cost basis of the replacement security.",
-      "unit": 8,
-      "lesson": 2
+      "back": "A loss on the sale of a security is disallowed for tax purposes if the investor buys a substantially identical security within 30 days before or after the sale; the disallowed loss is added to the basis of the replacement security.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "What are the four phases of the business cycle, in order?",
-      "back": "Expansion, peak, contraction, trough.",
-      "unit": 9,
-      "lesson": 1
+      "front": "What are the four phases of the business cycle?",
+      "back": "Expansion, peak, contraction, and trough.",
+      "unit": 9
     },
     {
       "type": "qa",
-      "front": "What tool does the Federal Reserve use most actively to influence the money supply?",
-      "back": "Open market operations \u2014 the FOMC's buying and selling of government securities in the open market.",
-      "unit": 9,
-      "lesson": 3
+      "front": "Which Federal Reserve tool involves the buying and selling of U.S. government securities to influence the money supply?",
+      "back": "Open market operations, conducted by the Federal Open Market Committee (FOMC).",
+      "unit": 9
     },
     {
-      "type": "definition",
+      "type": "qa",
       "front": "What is the discount rate?",
-      "back": "The interest rate the Federal Reserve charges member banks for short-term loans through the discount window.",
-      "unit": 9,
-      "lesson": 3
+      "back": "The interest rate the Federal Reserve charges member banks for short-term loans borrowed directly from the Fed.",
+      "unit": 9
     },
     {
       "type": "qa",
-      "front": "What does SIPC protect, and what are its coverage limits?",
-      "back": "SIPC protects customer cash and securities held at a failed broker-dealer, up to $500,000 per separate customer, of which no more than $250,000 may be cash. It does not protect against market losses.",
-      "unit": 10,
-      "lesson": 1
+      "front": "Which federal agency was created by the Securities Exchange Act of 1934?",
+      "back": "The Securities and Exchange Commission (SEC).",
+      "unit": 10
     },
     {
       "type": "qa",
-      "front": "When must a Currency Transaction Report (CTR) be filed?",
-      "back": "When a customer conducts a cash transaction (or related transactions) exceeding $10,000 in a single business day.",
-      "unit": 11,
-      "lesson": 1
+      "front": "What is the maximum SIPC coverage per separate customer of a failed broker-dealer?",
+      "back": "$500,000 total, of which up to $250,000 may be cash.",
+      "unit": 10
     },
     {
       "type": "qa",
-      "front": "Within what time frame must a Suspicious Activity Report (SAR) be filed?",
-      "back": "Within 30 calendar days of initial detection (with an additional 30 days, up to 60 total, if no suspect has been identified).",
-      "unit": 11,
-      "lesson": 1
+      "front": "Which SRO writes rules governing municipal securities dealers but does not enforce them?",
+      "back": "The Municipal Securities Rulemaking Board (MSRB). Enforcement is carried out by FINRA, the SEC, and bank regulators.",
+      "unit": 10
     },
     {
       "type": "qa",
-      "front": "Under FINRA Rule 2210, what are the three categories of communications with the public?",
-      "back": "Retail communication, institutional communication, and correspondence.",
-      "unit": 11,
-      "lesson": 4
+      "front": "What dollar threshold triggers the filing of a Currency Transaction Report (CTR)?",
+      "back": "Cash transactions in excess of $10,000 in a single day (single or aggregated transactions by or for the same person).",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "Within what time frame must a member firm file a Form U5 after terminating a registered person?",
-      "back": "Within 30 calendar days of termination, with a copy provided to the former registered person.",
-      "unit": 12,
-      "lesson": 1
+      "front": "What are the three stages of money laundering?",
+      "back": "Placement, layering, and integration.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "What is the current RMD beginning age under SECURE Act 2.0?",
-      "back": "Age 73 for individuals who reach age 72 after December 31, 2022 (rising to age 75 for those who reach age 74 after December 31, 2032).",
-      "unit": 6,
-      "lesson": 2
+      "front": "Under TCPA rules, during what hours may cold calls be made to prospective customers?",
+      "back": "Between 8:00 a.m. and 9:00 p.m. local time of the called party.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "Under Regulation T, what is the initial margin requirement for purchasing marginable securities?",
-      "back": "50% of the purchase price.",
-      "unit": 6,
-      "lesson": 3
+      "front": "Within how many days of an associated person's termination must a member firm file Form U5?",
+      "back": "Within 30 days of termination.",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3270, what must a registered representative do before engaging in an outside business activity?",
+      "back": "Provide prior written notice to the member firm.",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is required under FINRA Rule 3280 for a registered representative to participate in a private securities transaction for compensation?",
+      "back": "Prior written notice to and written approval from the member firm.",
+      "unit": 12
     }
   ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 18414,
-    "output": 4289
+    "input": 17806,
+    "output": 3606
   },
-  "cost_usd": 0.5979
+  "cost_usd": 0.5375
 }

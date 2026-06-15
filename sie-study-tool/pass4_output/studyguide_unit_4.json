@@ -3,122 +3,411 @@
   "unit_name": "Investment Companies & Insurance",
   "sections": [
     {
-      "title": "Lesson 4.1: Investment Company Act of 1940",
-      "overview": "The Investment Company Act of 1940 classifies investment companies into three categories: Face-Amount Certificate (FAC) companies, Unit Investment Trusts (UITs), and Management Investment Companies (open-end and closed-end). This lesson covers their structural differences, mutual fund share classes, pricing mechanics (NAV/POP), sales charge rules, breakpoints, prospectus delivery, and Subchapter M conduit taxation.",
+      "title": "I. Investment Company Act of 1940 \u2014 Classification & Framework",
+      "overview": "The Investment Company Act of 1940 defines and regulates entities engaged primarily in investing, reinvesting, or trading in securities. It divides investment companies into three statutory classes and further subclassifies management companies by capital structure (open vs. closed-end) and portfolio composition (diversified vs. non-diversified).",
       "key_concepts": [
-        "Investment company: pools investor money to invest based on a stated objective; provides diversification and professional management.",
-        "Three classes under '40 Act: (1) FACs, (2) UITs, (3) Management Companies (open-end and closed-end).",
-        "FAC: contract guaranteeing payment of a stated face amount at a future date in exchange for lump-sum or periodic payments; few exist today.",
-        "UIT: organized under a trust indenture; trustees (no BOD); no active management; sells redeemable units representing undivided interest in a fixed portfolio; terminates at bond maturity or arbitrary date for equity UITs.",
-        "Management companies: actively managed; either open-end (mutual fund) or closed-end (publicly traded fund).",
-        "Closed-end fund: fixed share offering via IPO; trades on exchange/OTC at market price (premium/discount to NAV); may issue common, preferred, and debt.",
-        "Open-end fund (mutual fund): continuous primary offering; issues only common stock; redeems shares directly at NAV; sold in full or fractional shares.",
-        "Forward pricing: orders entered before 4:00 pm ET receive that day's next-computed NAV/POP; later orders receive next business day's price.",
-        "Mutual fund share classes: Class A (front-end load), Class B (back-end load/CDSC, converts to A), Class C (level load, ~1% 12b-1), No-load (sold at NAV).",
-        "Class A best for large investments + long horizon (breakpoints); Class B best for small + long; Class C best for short horizons (1\u20135 years).",
-        "Breakpoints: quantity discounts on Class A shares only; available to individuals, spouses, minor children, corporations \u2014 NOT investment clubs.",
-        "Letter of Intent (LOI): allows reduced sales charge if investor commits to reach breakpoint within 13 months; may be backdated up to 90 days; binding on fund only; shares held in escrow.",
-        "Rights of accumulation: reduced sales charges on subsequent purchases based on greater of current NAV or total purchases; no time limit.",
-        "Combination privilege: combine investments across funds in same family to reach breakpoint.",
-        "Exchange/conversion privilege: switch between funds in same family without new sales charge; still a taxable event.",
-        "NAV calculated at least once per business day, typically at 4:00 pm ET close.",
-        "Expense ratio: fund expenses / average net assets; excludes sales charges/loads; includes manager fee, admin fees, BOD costs, 12b-1 fees. Typical stock funds: 1\u20131.5%; bond funds: 0.5\u20131%.",
-        "Maximum sales charge on mutual funds: 8.5% of POP (Investment Company Act of 1940).",
-        "Mutual fund dividend dates: Declaration \u2192 Record/Payable \u2192 Ex-Date (ex-date set by BOD, day AFTER record date \u2014 because trades settle same-day with the fund).",
-        "Disclosure documents: Statutory (full) prospectus, Summary prospectus (Rule 498), Statement of Additional Information (SAI \u2014 delivered within 3 business days of request), Omitting prospectus (Rule 482 \u2014 advertisement/tombstone).",
-        "Prospectus performance disclosure: 1-, 5-, and 10-year (or life of fund if shorter).",
-        "Prospectuses may NEVER be altered, highlighted, or marked up.",
-        "Subchapter M (conduit/pipeline tax theory): fund must distribute at least 90% of net investment income (NII) to avoid taxation on distributed amount; fund still pays tax on retained portion.",
-        "Breakpoint sale violation: failing to inform customer of an upcoming breakpoint that would reduce sales charges; the failure to disclose \u2014 not the order itself \u2014 is the violation.",
-        "Variable annuity subaccounts are organized as either UITs (indirectly managed) or open-end management companies (directly managed).",
-        "TAILORED SHAREHOLDER REPORTS (UPDATED): Open-end funds (mutual funds and ETFs) must deliver concise Tailored Shareholder Reports (TSRs) to retail shareholders; SEC Rule 30e-3 was rescinded for open-end funds. Compliance date 7/24/2024 (SEC Rel. 33-11125).",
-        "MONEY MARKET FUND REFORM 2023 (UPDATED \u2014 Rule 2a-7): Redemption gates ELIMINATED. Minimum daily liquid assets raised to 25%; weekly liquid assets raised to 50%. MANDATORY liquidity fee imposed on institutional prime/tax-exempt funds when daily net redemptions exceed 5% of NAV. Discretionary liquidity fee up to 2% remains available for non-government MMFs at board discretion. Mandatory fee compliance: 10/2/2024 (SEC Rel. IC-34959)."
+        "Investment company definition: issuer engaged primarily in investing/reinvesting/trading in securities, OR issues face-amount certificates, OR holds investment securities >40% of total assets (excl. Government securities and cash).",
+        "Three statutory classes under \u00a74: (1) Face-Amount Certificate Company, (2) Unit Investment Trust (UIT), (3) Management Company.",
+        "UIT characteristics: organized under trust indenture, NO board of directors, issues only redeemable securities representing an undivided interest in a fixed (unmanaged) portfolio; not a voting trust.",
+        "Management companies subdivided under \u00a75(a) into Open-End (issues redeemable securities \u2014 mutual funds) and Closed-End (any management company that is not open-end; issues fixed share count, trades in secondary market).",
+        "Diversified vs. Non-diversified under \u00a75(b): the 75-5-10 test \u2014 at least 75% of assets meeting limits of no more than 5% in any one issuer and no more than 10% of voting securities of any one issuer.",
+        "Excluded from 'investment securities': Government securities, employees' securities companies, and majority-owned non-investment-company subsidiaries.",
+        "Private fund safe-harbor signal under \u00a73(c)(1): securities beneficially owned by \u2264100 persons and no public offering."
       ],
       "rules": [
-        "Investment Company Act of 1940 \u2014 classifies investment companies; governs registration, operations, sales practices.",
-        "Securities Act of 1933 \u2014 investment company shares must be registered; prospectus delivery required.",
-        "Investment Company Act Section 3(a) \u2014 definition of investment company.",
-        "Section 4 \u2014 classification (FAC, UIT, management).",
-        "Section 5 \u2014 subclassification of management companies (open vs. closed; diversified vs. nondiversified).",
-        "Rule 12b-1 \u2014 permits open-end funds to charge distribution fees from fund assets.",
-        "Rule 498 \u2014 Summary Prospectus requirements (cover legend, ticker, toll-free number/website, mandated sequence).",
-        "Rule 482 \u2014 Omitting prospectus (advertisements/tombstones).",
-        "Rule 462 \u2014 referenced for omitting prospectus context.",
-        "Subchapter M of Internal Revenue Code \u2014 conduit tax treatment requires \u226590% NII distribution.",
-        "FINRA Rule 2342 \u2014 breakpoint sales; disclosure of breakpoint schedules required.",
-        "SEC Rel. 33-11125 (effective 7/24/2024) \u2014 Tailored Shareholder Reports required; Rule 30e-3 rescinded for open-end funds.",
-        "SEC Rel. IC-34959 (compliance 10/2/2024) \u2014 Rule 2a-7 reforms: mandatory liquidity fee on institutional prime/tax-exempt MMFs when daily net redemptions >5%; gates eliminated; daily liquid assets 25%, weekly liquid assets 50%.",
-        "Diversified company (75-5-10 rule under '40 Act): 75% of assets \u2014 no more than 5% in any one issuer, no more than 10% of issuer's voting securities."
+        "Investment Company Act of 1940 \u00a73(a) \u2014 definition; 40% asset test.",
+        "Investment Company Act of 1940 \u00a74 \u2014 three classes: FAC, UIT, management company.",
+        "Investment Company Act of 1940 \u00a75(a) \u2014 open-end vs. closed-end.",
+        "Investment Company Act of 1940 \u00a75(b) \u2014 diversified vs. non-diversified (75-5-10)."
       ],
       "formulas": [
-        "Net Assets = Total Assets - Total Liabilities",
-        "NAV per Share = Net Assets / Shares Outstanding",
-        "POP (Class A) = NAV + Sales Charge",
-        "Sales Charge % = (POP - NAV) / POP",
-        "Expense Ratio = Fund Expenses / Average Net Assets",
-        "Subchapter M minimum distribution = 90% of Net Investment Income",
-        "Shares Purchased = Amount Invested / POP per Share (open-end, fractional allowed)"
+        "40% Test = (Investment securities) / (Total assets \u2212 Government securities \u2212 cash items) > 40% \u2192 investment company.",
+        "Diversification Test (75-5-10): \u226575% of assets meeting (\u22645% in any one issuer) AND (\u226410% of voting securities of any one issuer)."
       ],
       "mnemonics": [
-        "DERP (stocks) vs. DR-Ex (mutual funds): Declaration \u2192 Record/Payable \u2192 Ex-date for funds (ex comes AFTER record).",
-        "FUM \u2014 three '40 Act companies: Face-amount certificates, Unit investment trusts, Management companies.",
-        "ABC of share classes: A = front-load (Affordable for big/long), B = Back-end (CDSC), C = Continuous level load (short-term).",
-        "LOI = 13 months forward, 90 days backdate.",
-        "75-5-10 for diversified status."
+        "FUM = Face-amount, UIT, Management (the three \u00a74 classes).",
+        "75-5-10 = '75 cents of every dollar diversified, 5% per issuer max, 10% of voting max.'",
+        "Open-end = Ongoing redemption; Closed-end = Capped shares."
       ]
     },
     {
-      "title": "Lesson 4.2: Life Insurance-Based Products (Variable Annuities)",
-      "overview": "Variable annuities are insurance contracts that combine a tax-deferred investment vehicle (the separate account) with a mortality guarantee (lifetime income). Because the investor bears the investment risk, VAs are securities and require both insurance and securities licenses to sell. This lesson covers VA structure, annuitization, taxation, 1035 exchanges, and suitability standards under FINRA Rule 2330.",
+      "title": "II. Open-End Funds (Mutual Funds)",
+      "overview": "Open-end funds (mutual funds) continuously issue and redeem shares at the next computed net asset value (forward pricing). Shares are not traded on exchanges; investors buy from and redeem with the fund. Pricing, sales loads, share classes, and distribution fees are tightly regulated under the '40 Act.",
       "key_concepts": [
-        "Annuity: insurance contract providing a stream of payments \u2014 for life, until a certain age, or for a fixed period \u2014 backed by a mortality guarantee.",
-        "Fixed annuity: insurance company bears investment risk; promises a stated rate; NOT a security.",
-        "Variable annuity: investor bears investment risk; premiums invested in the separate account; IS a security (requires Series 6/7 + state insurance license).",
-        "Separate account: holds subaccounts (function like mutual fund portfolios) with various objectives (growth, income, etc.).",
-        "Directly managed separate account \u2192 registered as open-end management company; indirectly managed \u2192 registered as UIT.",
-        "Death benefit (accumulation phase): beneficiary receives greater of total contributions or current account value if owner dies before annuitization.",
-        "No annual contribution limit on nonqualified VAs; qualified VAs (e.g., inside 403(b)/401(k)) follow plan limits.",
-        "Annuitization: one-time, IRREVERSIBLE election; owner surrenders lump-sum ownership in exchange for guaranteed lifetime income stream.",
-        "Payout calculation factors \u2014 SAAPI: Sex, Age, Account amount, Payout option, assumed Interest rate (AIR). Inflation is NOT a factor.",
-        "AIR (Assumed Interest Rate): benchmark for variable payout; if actual separate account performance > AIR, next payment increases; if < AIR, decreases; if = AIR, unchanged.",
-        "Accumulation units (during pay-in) \u2192 Annuity units (fixed number after annuitization; value fluctuates).",
-        "Tax deferral: growth in separate account not taxed until withdrawal; withdrawals taxed as ORDINARY income (not capital gains).",
-        "Random/lump-sum withdrawals: LIFO \u2014 growth (taxable) comes out first; then principal (return of cost basis, nontaxable).",
-        "Annuitized payments: portion is return of principal (exclusion ratio, nontaxable) and portion is ordinary income.",
-        "10% IRS penalty on taxable portion if withdrawn before age 59\u00bd (same as IRA).",
-        "1035 Exchange: tax-free transfer from one annuity to another (or life-to-annuity); surrender charges may still apply.",
-        "VA SUITABILITY (FINRA Rule 2330): VAs are SUPPLEMENTAL retirement vehicles, NOT primary; not suitable if customer needs liquidity, has low risk tolerance, dislikes equity markets, or would fund via cashing out existing insurance/annuity, home refinance, or home equity.",
-        "Max other tax-advantaged retirement accounts (IRA, 401(k)) before recommending a VA.",
-        "Generally NOT suitable inside an IRA (redundant tax deferral) absent specific other benefits.",
-        "Costs disclosed: mortality & expense (M&E), administrative fees, investment advisory/management fees, custodial fees, surrender charges.",
-        "Surrender charges typically decline over 5\u20138 years (similar to Class B mutual fund CDSC).",
-        "VA PROSPECTUS DELIVERY (UPDATED): Issuers may deliver an Initial Summary Prospectus (ISP) with the full statutory prospectus available online or on request. Effective 7/1/2020 (SEC Rel. 33-10765).",
-        "Variable life insurance is also a security but is NOT tested on the SIE."
+        "Continuous primary offering; shares are redeemable securities issued by the fund.",
+        "Forward pricing: orders execute at the NEXT calculated NAV (typically end of business day, 4:00 p.m. ET).",
+        "POP (Public Offering Price) = NAV + sales charge (for funds with front-end loads).",
+        "Share classes: Class A (front-end load, lower 12b-1), Class B (back-end CDSC, declining; convert to A) \u2014 now largely phased out, Class C (level load, higher ongoing 12b-1, typically no/short CDSC).",
+        "12b-1 fees: ongoing asset-based distribution/marketing fees deducted from fund assets pursuant to a written 12b-1 plan; reduce return.",
+        "Breakpoints: discounted sales charges at specified investment thresholds; FINRA prohibits 'breakpoint sales' just below thresholds.",
+        "Letter of Intent (LOI): written commitment to invest enough within 13 months to qualify for a breakpoint; may be backdated up to 90 days.",
+        "Right of Accumulation (ROA): existing holdings count toward new breakpoint qualification; no time limit.",
+        "FINRA caps maximum aggregate sales charges on open-end fund shares at 8.5% (with conditions including breakpoints, ROA, and reinvested dividends at NAV).",
+        "Tailored Shareholder Reports (TSRs): open-end funds must deliver concise TSRs to retail shareholders (Rule 30e-3 rescinded for open-end funds; compliance 7/24/2024).",
+        "Prospectus delivery required at or before sale; summary prospectus permitted."
       ],
       "rules": [
-        "FINRA Rule 2330 \u2014 Members' Responsibilities Regarding Deferred Variable Annuities; supervisory and suitability review required; principal review within 7 business days of customer signing.",
-        "Investment Company Act of 1940 \u2014 separate accounts must be registered as UIT or open-end management company.",
-        "Securities Act of 1933 \u2014 variable contracts must be registered; prospectus delivery required.",
-        "IRC Section 1035 \u2014 tax-free exchange between like insurance/annuity contracts.",
-        "IRC Section 72 \u2014 taxation of annuity distributions; 10% penalty before 59\u00bd on taxable portion.",
-        "SEC Rel. 33-10765 (effective 7/1/2020) \u2014 Initial Summary Prospectus permitted for variable contracts."
+        "17 CFR 270.12b-1 \u2014 distribution fees by open-end management investment companies.",
+        "FINRA Rule 2342 \u2014 prohibition of breakpoint sales just below the breakpoint.",
+        "Investment Company Act of 1940 \u00a75(a)(1) \u2014 open-end definition."
       ],
       "formulas": [
-        "Exclusion Ratio = Investment in Contract / Expected Return (portion of each annuity payment treated as nontaxable return of principal)",
-        "Random withdrawal taxation (LIFO): Taxable Amount = Withdrawal up to amount of accumulated growth; remainder = nontaxable principal",
-        "Payout direction (variable annuity): If separate account return > AIR \u2192 payment \u2191; if < AIR \u2192 payment \u2193; if = AIR \u2192 unchanged"
+        "NAV per share = (Total Fund Assets \u2212 Total Fund Liabilities) / Shares Outstanding.",
+        "Public Offering Price (POP) = NAV / (1 \u2212 Sales Charge %).",
+        "Sales Charge % = (POP \u2212 NAV) / POP.",
+        "Redemption Price (no CDSC) = NAV at next computed price."
       ],
       "mnemonics": [
-        "SAAPI \u2014 payout calculation: Sex, Age, Account amount, Payout option, Interest rate (AIR). NO inflation.",
-        "LIFO for VA withdrawals \u2014 Last In (gains) First Out (taxed first).",
-        "1035 = tax-free annuity-to-annuity exchange (surrender charges still apply).",
-        "VAs are SUPPLEMENTAL \u2014 max out qualified plans first."
+        "ABC shares: A = Anterior load (front), B = Back-end CDSC, C = Constant level load.",
+        "LOI = 'Locked-In 13 months, 90-day backdate.'",
+        "Forward Pricing = 'Order first, Price second.'"
+      ]
+    },
+    {
+      "title": "III. Closed-End Funds & UITs",
+      "overview": "Closed-end funds (CEFs) issue a fixed number of shares in an IPO and trade on exchanges at market prices that can diverge from NAV (premium or discount). Unit Investment Trusts (UITs) hold a fixed, unmanaged portfolio and issue redeemable units representing undivided interests.",
+      "key_concepts": [
+        "Closed-end: fixed capitalization after IPO; shares trade intraday on an exchange at supply/demand-driven market price.",
+        "CEF market price may trade at a premium or discount to NAV; no continuous redemption.",
+        "CEFs may use leverage and may issue debt or preferred stock (open-end funds may not issue senior securities other than narrowly permitted bank borrowings).",
+        "UITs: no board of directors, no investment adviser actively managing the portfolio; trust terminates on a stated date.",
+        "UIT units are redeemable; sponsor typically maintains a secondary market.",
+        "UITs often used as packaged fixed-portfolio vehicles (e.g., fixed-income or equity unit trusts)."
+      ],
+      "rules": [
+        "Investment Company Act of 1940 \u00a74(2) \u2014 UIT definition (trust indenture, no board, redeemable undivided interests).",
+        "Investment Company Act of 1940 \u00a75(a)(2) \u2014 closed-end definition."
+      ],
+      "formulas": [
+        "Premium/Discount % = (Market Price \u2212 NAV) / NAV \u00d7 100."
+      ],
+      "mnemonics": [
+        "CEF = 'Capped, Exchange-listed, Fluctuating premium/discount.'",
+        "UIT = 'Unmanaged, Indenture, Terminates.'"
+      ]
+    },
+    {
+      "title": "IV. Money Market Mutual Funds (Rule 2a-7)",
+      "overview": "Money market funds are open-end funds investing in short-term, high-quality instruments and are regulated under Rule 2a-7. The 2023 SEC reforms restructured liquidity safeguards: gates were eliminated and a mandatory liquidity fee was introduced for institutional prime/tax-exempt funds.",
+      "key_concepts": [
+        "Fund types: Government MMFs and Retail MMFs (stable $1.00 NAV via amortized cost/penny-rounding); Institutional Prime and Institutional Tax-Exempt MMFs (floating NAV).",
+        "Minimum Daily Liquid Assets: 25%.",
+        "Minimum Weekly Liquid Assets: 50%.",
+        "Mandatory liquidity fee: institutional prime and institutional tax-exempt MMFs must impose a fee when daily net redemptions exceed 5% of NAV (compliance 10/2/2024).",
+        "Discretionary liquidity fee: up to 2% for non-government MMFs at board discretion.",
+        "Redemption gates were eliminated by the 2023 reforms (SEC Rel. IC-34959).",
+        "Portfolio constraints: short weighted average maturity, high credit quality, diversification."
+      ],
+      "rules": [
+        "SEC Rel. IC-34959 (2023 MMF reforms) \u2014 mandatory fee, 25%/50% liquidity thresholds, gates removed."
+      ],
+      "formulas": [
+        "Daily Liquid Assets / Total Assets \u2265 25%.",
+        "Weekly Liquid Assets / Total Assets \u2265 50%.",
+        "Mandatory Fee Trigger: Daily Net Redemptions / NAV > 5%."
+      ],
+      "mnemonics": [
+        "'25/50/5/2' = Daily 25%, Weekly 50%, Mandatory-fee trigger 5%, Discretionary cap 2%."
+      ]
+    },
+    {
+      "title": "V. Exchange-Traded Products (ETFs & ETNs)",
+      "overview": "ETPs trade intraday on exchanges and serve as alternatives to mutual funds. ETFs are typically registered investment companies (open-end or UIT structure) using a creation/redemption mechanism through authorized participants; ETNs are unsecured senior debt of issuers tracking an index.",
+      "key_concepts": [
+        "ETFs: intraday trading; market price tracks NAV via in-kind creation/redemption by APs; passive (index) or active.",
+        "Lower expense ratios typically vs. comparable mutual funds; brokerage commissions may apply.",
+        "ETNs: unsecured debt obligations \u2014 investor bears issuer credit risk in addition to index performance risk; no principal protection unless stated.",
+        "Tax efficiency advantage common to ETFs due to in-kind redemption mechanism.",
+        "Marginable and shortable; options often available on widely held ETFs."
+      ],
+      "rules": [],
+      "formulas": [
+        "ETF Market Price \u2248 iNAV (intraday indicative NAV); arbitrage by APs narrows the spread."
+      ],
+      "mnemonics": [
+        "ETF = 'Equity-like Trading, Fund inside.' ETN = 'Exchange-Traded NOTE \u2014 creditor risk.'"
+      ]
+    },
+    {
+      "title": "VI. Variable Contracts & Annuities",
+      "overview": "Variable annuities and variable life products are hybrid insurance-securities products. Subaccount values fluctuate with separate-account investments. They are securities under the '33 Act and insurance contracts under state law; FINRA Rule 2330 governs recommended deferred VA transactions.",
+      "key_concepts": [
+        "Two phases: Accumulation (units purchased) and Annuitization/Payout (units converted to annuity units; payments vary with separate account performance vs. AIR).",
+        "Separate account holds investor assets and is registered as an investment company (typically UIT or open-end management).",
+        "Tax deferral on growth inside the contract; ordinary income on withdrawal of earnings; 10% penalty if withdrawn before 59\u00bd.",
+        "Surrender charges: declining schedule, often 6\u20138 years (CDSC).",
+        "Death benefit: typically greater of contract value or premiums paid (less withdrawals).",
+        "Riders: GLWB, GMIB, enhanced death benefit \u2014 at additional cost.",
+        "Prospectus delivery: Initial Summary Prospectus (ISP) permitted since 7/1/2020 (SEC Rel. 33-10765); full statutory prospectus online/on request.",
+        "Rule 2330 applies to recommended purchases/exchanges of deferred VAs and initial subaccount allocations; principal review and customer suitability disclosures required.",
+        "1035 exchange: tax-free exchange of like insurance contracts; FINRA scrutinizes exchanges for surrender charges, new surrender period, lost benefits."
+      ],
+      "rules": [
+        "FINRA Rule 2330 \u2014 members' responsibilities regarding deferred variable annuities (suitability, disclosure, principal review).",
+        "SEC Rel. 33-10765 \u2014 Initial Summary Prospectus for variable contracts."
+      ],
+      "formulas": [
+        "AIR (Assumed Interest Rate) Comparison: If actual separate-account return > AIR \u2192 next payment increases; if < AIR \u2192 decreases; if = AIR \u2192 unchanged.",
+        "Accumulation Unit Value fluctuates with subaccount performance.",
+        "Annuity Unit Value = fixed number of units \u00d7 current unit value at payout."
+      ],
+      "mnemonics": [
+        "VA = 'Variable Accumulation' phase then 'Variable Annuitization.'",
+        "AIR rule: 'Above AIR Adds, Below AIR Burns.'"
+      ]
+    },
+    {
+      "title": "VII. Life Insurance Products (Insurance-Based)",
+      "overview": "Life insurance products provide death benefit protection; some build cash value. Variable and variable universal forms are securities and require both insurance and securities licensing to sell. Section 1035 of the IRC permits tax-free exchanges between like insurance contracts.",
+      "key_concepts": [
+        "Term life: pure death benefit, no cash value; level or decreasing; renewable/convertible options.",
+        "Whole life: permanent coverage, fixed premium, guaranteed cash value, guaranteed minimum interest \u2014 NOT a security.",
+        "Universal life: flexible premium, adjustable death benefit, cash value earns current interest rate \u2014 NOT a security.",
+        "Variable life: fixed scheduled premium, death benefit and cash value vary with subaccount performance \u2014 IS a security; minimum guaranteed death benefit.",
+        "Variable Universal Life (VUL): flexible premium + subaccount investment; cash value and death benefit both variable; no guaranteed minimum death benefit unless stated rider \u2014 IS a security.",
+        "1035 Exchange: tax-free exchange of life insurance \u2192 life insurance or annuity; annuity \u2192 annuity (but NOT annuity \u2192 life insurance).",
+        "Variable life/VUL require prospectus delivery and registered representative licensing."
+      ],
+      "rules": [
+        "FINRA Rule 2330 \u2014 applies to deferred variable annuities (life insurance variable contracts also regulated; suitability obligations apply)."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "'Whole + Universal = Fixed insurance side; Variable + VUL = Securities side.'",
+        "1035 direction: 'Life \u2192 Life or Annuity; Annuity \u2192 Annuity ONLY.'"
+      ]
+    },
+    {
+      "title": "VIII. Municipal Fund Securities (529s, LGIPs, ABLE)",
+      "overview": "Municipal fund securities are securities issued by state/municipal entities that would be investment companies but for \u00a72(b) of the '40 Act. They include 529 college savings plans, prepaid tuition plans, ABLE accounts, and LGIPs, and are regulated by the MSRB.",
+      "key_concepts": [
+        "529 Savings Plans: investment-based; owner controls account; beneficiary uses funds for qualified education expenses; tax-deferred growth, tax-free qualified withdrawals (federal).",
+        "529 Prepaid Tuition: locks in tuition rates; usually state-residency requirements.",
+        "ABLE accounts: tax-advantaged savings for qualified disability expenses for eligible individuals.",
+        "LGIPs (Local Government Investment Pools): cash-management vehicles for municipalities.",
+        "Owner vs. Beneficiary: account owner retains control; beneficiary is the intended user of funds; owner may change beneficiary within family.",
+        "Direct-sold (state plan) vs. Adviser-sold (through broker-dealers with sales charges).",
+        "Home-state vs. out-of-state tax considerations \u2014 disclosure required.",
+        "Underlying mutual fund disclosures required under MSRB Rule G-45 reporting and Rule G-21 advertising standards."
+      ],
+      "rules": [
+        "MSRB Rule D-12 \u2014 defines 'Municipal Fund Security' (security issued by issuer that, but for \u00a72(b) of '40 Act, would be an investment company).",
+        "MSRB Rule G-17 \u2014 fair dealing, fundamental fair-practice obligation.",
+        "MSRB Rule G-45 \u2014 reporting on 529/ABLE plans by underwriters."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "529 = 'Save for Education, Account-owner-controlled.'",
+        "ABLE = 'Achieving a Better Life Experience' (disability-related)."
+      ]
+    },
+    {
+      "title": "IX. Direct Participation Programs (DPPs)",
+      "overview": "DPPs are pooled investment vehicles, typically limited partnerships, that pass income, gains, losses, deductions, and credits directly to investors (flow-through taxation). They are generally illiquid, unlisted, and used for real estate, oil & gas, and equipment leasing.",
+      "key_concepts": [
+        "Pass-through (flow-through) tax treatment \u2014 no entity-level tax.",
+        "Limited partnership: general partner (GP) manages and has unlimited liability; limited partners (LPs) are passive investors with limited liability up to invested capital.",
+        "Tenants in Common (TIC): co-ownership of real property, each holding undivided fractional interest.",
+        "Generally illiquid \u2014 no active secondary market.",
+        "Subscription agreement governs admission as LP; suitability standards are high.",
+        "Types: real estate (raw land, new construction, existing, government-assisted), oil & gas (exploratory, developmental, income), equipment leasing.",
+        "Excluded from DPP definition under Rule 2310: REITs, qualified pension/profit-sharing plans, IRAs, 403(b) annuities, registered investment companies."
+      ],
+      "rules": [
+        "FINRA Rule 2310 \u2014 direct participation programs: suitability, due diligence, organization/offering expense limits, compensation limits."
+      ],
+      "formulas": [
+        "Cash Flow = cash from operations (incl. net-lease payments) \u2212 operating expenses \u2212 debt service \u2212 capital improvements/replacements (no depreciation deducted).",
+        "Cash Available for Distribution = Cash Flow \u2212 reserves."
+      ],
+      "mnemonics": [
+        "DPP = 'Direct Pass-through, Probably illiquid.'",
+        "GP/LP: 'GP runs and risks; LP funds and limits.'"
+      ]
+    },
+    {
+      "title": "X. Real Estate Investment Trusts (REITs)",
+      "overview": "REITs are pooled investment vehicles holding real estate equity or mortgage debt that pass income to shareholders without entity-level tax if they meet IRC requirements. REITs are NOT DPPs and do not pass losses to investors.",
+      "key_concepts": [
+        "Types by holdings: Equity REITs (own properties), Mortgage REITs (hold real-estate debt), Hybrid REITs.",
+        "Types by structure: Listed (exchange-traded, liquid), Registered Non-Listed (PNLR \u2014 registered but illiquid), Private (unregistered, accredited investors only).",
+        "To qualify under IRC: distribute at least 90% of taxable income; \u226575% of assets in real estate; \u226575% of gross income from real estate.",
+        "Single layer of taxation: distributions taxed at shareholder level (not entity).",
+        "Income passes through to investors; LOSSES DO NOT pass through (unlike DPPs).",
+        "Excluded from FINRA's DPP definition (Rule 2310)."
+      ],
+      "rules": [],
+      "formulas": [
+        "REIT Distribution Test: \u226590% of taxable income distributed to shareholders.",
+        "Asset Test: \u226575% in real estate, cash, or government securities."
+      ],
+      "mnemonics": [
+        "REIT = 'Real Estate Income, no Tax at entity (with 90% rule).'",
+        "'Income passes, Losses don't' \u2014 distinguishes REITs from DPPs."
+      ]
+    },
+    {
+      "title": "XI. Hedge Funds & Private Funds",
+      "overview": "Hedge funds are pooled, privately offered investment vehicles, typically structured as limited partnerships or LLCs, exempt from registration under the '40 Act. They use flexible strategies including leverage, short-selling, and derivatives, and are generally illiquid with high minimum investments.",
+      "key_concepts": [
+        "Structure: limited partnership (manager = GP; investors = LPs) or LLC.",
+        "Reliance on '40 Act exemptions: \u00a73(c)(1) (\u2264100 beneficial owners) or \u00a73(c)(7) (qualified purchasers only).",
+        "Limited to accredited investors and qualified purchasers under Reg D.",
+        "High minimum investment; lockup periods; redemption gates and notice periods.",
+        "Performance/incentive fee plus management fee (commonly '2 and 20').",
+        "Not subject to mutual-fund-style leverage and diversification limits.",
+        "Private equity funds: similar structure but invest in non-public companies; long capital commitment periods.",
+        "Generally illiquid \u2014 no public secondary market."
+      ],
+      "rules": [
+        "Investment Company Act of 1940 \u00a73(c)(1) \u2014 exclusion when \u2264100 beneficial owners and no public offering."
+      ],
+      "formulas": [
+        "'2 and 20' = 2% annual management fee + 20% performance fee (typical).",
+        "High Water Mark: performance fee only on gains above previous peak NAV."
+      ],
+      "mnemonics": [
+        "Hedge = 'High minimum, Highly illiquid, Highly leveraged.'"
+      ]
+    },
+    {
+      "title": "XII. Investment Risks & Mitigation",
+      "overview": "Investments carry multiple risk types that registered representatives must identify and address through suitability analysis and portfolio strategy. Diversification, rebalancing, and hedging are the principal mitigation techniques.",
+      "key_concepts": [
+        "Capital Risk: loss of principal.",
+        "Credit (Default) Risk: issuer fails to pay interest/principal.",
+        "Currency (FX) Risk: adverse exchange-rate movement on foreign-denominated assets.",
+        "Inflationary/Purchasing-Power Risk: erosion of real return; key risk for fixed-income.",
+        "Interest-Rate Risk: bond prices fall when rates rise (longer duration = greater sensitivity).",
+        "Reinvestment Risk: future cash flows reinvested at lower rates; greater for high-coupon callable bonds.",
+        "Liquidity (Marketability) Risk: inability to sell quickly at fair price; high for DPPs, hedge funds, non-listed REITs.",
+        "Market/Systematic Risk: cannot be diversified away; measured by beta.",
+        "Non-Systematic Risk: issuer/industry-specific; reducible via diversification.",
+        "Political/Legislative Risk: regulatory or governmental change impact.",
+        "Prepayment Risk: borrowers prepay loans (MBS) when rates fall; investor receives principal early.",
+        "Mitigation: Diversification (across asset classes, sectors, issuers, geographies); Portfolio Rebalancing (restore target allocations); Hedging (offset exposure via options, futures, inverse instruments)."
+      ],
+      "rules": [],
+      "formulas": [
+        "Total Risk = Systematic Risk + Non-Systematic Risk.",
+        "Diversification reduces non-systematic risk but cannot eliminate systematic risk.",
+        "Real Return \u2248 Nominal Return \u2212 Inflation Rate."
+      ],
+      "mnemonics": [
+        "Risk types: 'C-CLIMP-RPP' \u2014 Capital, Credit, Currency, Liquidity, Inflation, Market, Political, Reinvestment, Prepayment, Purchasing-power.",
+        "'Diversify, Rebalance, Hedge' = the three mitigators.",
+        "Bonds: 'Rates Up \u2192 Prices Down' (seesaw)."
+      ]
+    },
+    {
+      "title": "XIII. Disclosures & Customer Protection (Investment Company Context)",
+      "overview": "FINRA rules require members to make financial information available to customers and to disclose control relationships with issuers \u2014 duties particularly relevant when selling proprietary funds, affiliated REITs, or DPPs.",
+      "key_concepts": [
+        "Members must make their most recent balance sheet available to bona fide regular customers upon request.",
+        "Members controlled by, controlling, or under common control with an issuer must disclose that relationship before executing transactions in that issuer's securities \u2014 written disclosure at or before completion of transaction.",
+        "Especially relevant to proprietary mutual funds, affiliated UITs, and DPPs sponsored by the broker-dealer's parent."
+      ],
+      "rules": [
+        "FINRA Rule 2261 \u2014 Disclosure of Financial Condition (balance sheet on request).",
+        "FINRA Rule 2262 \u2014 Disclosure of Control Relationship with Issuer."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "'2261 = my numbers; 2262 = my connection.'"
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 22476,
-    "output": 4893
+    "input": 12928,
+    "output": 9048
   },
-  "cost_usd": 0.7041
+  "cost_usd": 0.8725
 }

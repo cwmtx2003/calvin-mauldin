@@ -1,0 +1,566 @@
+{
+  "unit": 6,
+  "unit_name": "Customer Accounts",
+  "jf": "tc",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Cash account",
+      "back": "A brokerage account in which the customer must pay in full for all securities purchased. No borrowing or short selling is permitted. Available to virtually all customer types, including IRAs and custodial accounts.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "definition",
+      "front": "Margin account",
+      "back": "An account that allows a customer to borrow from the broker-dealer to purchase securities or sell short. Requires a signed margin agreement, credit agreement, and (if applicable) hypothecation/loan-consent. Subject to Reg T 50% initial requirement and FINRA minimum equity ($2,000 long).",
+      "citation": "Rule 4210",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What documents must a customer sign to open a margin account, and which is mandatory?",
+      "back": "Credit agreement (mandatory \u2014 discloses terms of the loan and interest), hypothecation agreement (mandatory \u2014 pledges securities as collateral), and loan consent (optional \u2014 permits firm to lend the customer's securities to others).",
+      "citation": "Rule 4210",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is the FINRA minimum equity for a Pattern Day Trader (PDT), and what defines a PDT?",
+      "back": "A PDT is a customer who executes 4 or more day trades within 5 business days in a margin account, where day trades represent more than 6% of total trading activity. Minimum equity required: $25,000, which must be in the account before any day trading.",
+      "citation": "Rule 4210",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "How does a JTWROS account differ from a tenants in common (TIC) account upon death of an owner?",
+      "back": "JTWROS: the deceased owner's interest passes automatically to the surviving owner(s), bypassing probate. TIC: the deceased owner's fractional interest passes to their estate, not to the co-tenant.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is required to open a discretionary account, and what authority does discretion include?",
+      "back": "Prior written authorization (limited or full power of attorney) from the customer and acceptance by the firm. Discretion means the RR can decide action (buy/sell), asset (which security), and amount (size) without contacting the customer. Each discretionary order must be marked 'discretionary' and reviewed promptly by a principal.",
+      "citation": "Rule 3260",
+      "unit": 6
+    },
+    {
+      "type": "scenario",
+      "front": "A client tells her RR, 'Buy 500 shares of Apple sometime today when you think the price is right.' Is this a discretionary order?",
+      "back": "No. Decisions limited to time and/or price only (not action, asset, or amount) are not considered discretionary and do not require written authorization. This is sometimes called 'time and price discretion.'",
+      "citation": "Rule 3260",
+      "unit": 6
+    },
+    {
+      "type": "definition",
+      "front": "UTMA (Uniform Transfers to Minors Act) account",
+      "back": "A custodial account for a minor with one custodian and one minor per account. Gifts are irrevocable; the minor is the beneficial owner (taxed at minor's rate, subject to kiddie tax). Assets transfer to the minor at the age of majority defined by state law.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Compare contributions to a Traditional IRA vs. a Roth IRA.",
+      "back": "Traditional IRA: contributions may be tax-deductible; taxed on withdrawal; RMDs apply at age 73. Roth IRA: contributions are after-tax (not deductible); qualified withdrawals are tax-free; subject to AGI phase-out for contribution eligibility; no RMDs during owner's lifetime. Both have no age limit on contributions if earned income exists.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "At what age must an IRA owner begin Required Minimum Distributions (RMDs), and what is the penalty for failure to take an RMD?",
+      "back": "RMDs must begin at age 73 (SECURE 2.0; rises to 75 for those reaching age 74 after 12/31/2032). Penalty for failure to take the RMD is 25% of the shortfall, reduced to 10% if corrected within the IRS correction window.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a defined benefit and a defined contribution plan?",
+      "back": "Defined benefit: employer promises a specific retirement payout (e.g., pension); employer bears investment risk and funding responsibility. Defined contribution: contributions are defined (employer and/or employee); the eventual benefit depends on investment performance; employee bears the investment risk (e.g., 401(k), 403(b)).",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "definition",
+      "front": "Revocable (living) trust vs. irrevocable trust",
+      "back": "Revocable trust: grantor retains ability to amend or revoke; assets included in grantor's taxable estate; grantor typically taxed on income. Irrevocable trust: cannot be modified or revoked by grantor; assets removed from grantor's estate; trust or beneficiary pays tax on income.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 4512, what core information must be obtained when opening a customer account?",
+      "back": "Customer's name, residence/address, whether of legal age, tax ID/SSN, occupation/employer, and (for discretionary accounts) signatures of each named person authorized to exercise discretion. Also: trusted contact person information must be requested.",
+      "citation": "Rule 4512",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is a 'trusted contact person' under FINRA Rule 4512?",
+      "back": "An individual age 18 or older identified by the customer that the firm may contact to address possible financial exploitation, confirm specifics of the customer's current contact info, health status, or identity of legal guardian/executor. The firm must make reasonable efforts to obtain this information for non-institutional accounts.",
+      "citation": "Rule 4512",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2165, what protections apply when a member reasonably believes a specified adult is being financially exploited?",
+      "back": "The firm may place a temporary hold on disbursements of funds/securities (and on transactions) for up to 15 business days, extendable an additional 10 business days. 'Specified adult' = age 65+, or 18+ with mental/physical impairment rendering them unable to protect their own interests.",
+      "citation": "Rule 2165",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under Regulation Best Interest (Reg BI), what four obligations apply when a broker-dealer recommends a securities transaction or strategy to a retail customer?",
+      "back": "(1) Disclosure Obligation \u2014 provide written disclosures of material facts about the relationship and the recommendation; (2) Care Obligation \u2014 exercise reasonable diligence/care/skill; (3) Conflict of Interest Obligation \u2014 establish, maintain, enforce policies to address conflicts; (4) Compliance Obligation \u2014 establish policies to achieve compliance with Reg BI.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What is Form CRS and when must it be delivered?",
+      "back": "Form CRS (Customer Relationship Summary) is a brief relationship summary that BDs and IAs must deliver to retail investors at or before recommending an account type, entering into an investment advisory contract, or opening a brokerage account. Filed with the SEC.",
+      "citation": "17 CFR 240.17a-14",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3210, what is required when an associated person opens a securities account at another firm?",
+      "back": "Prior written consent of the employing member firm before opening or otherwise establishing the account. The executing firm must, upon written request, transmit duplicate copies of confirmations and statements to the employing firm.",
+      "citation": "Rule 3210",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "What are the rules on borrowing from or lending to customers under FINRA Rule 3240?",
+      "back": "Generally prohibited unless (a) the firm has written procedures permitting such arrangements, (b) the arrangement meets a permissible category (e.g., immediate family, customer is a financial institution in lending business, personal/business relationship outside broker-customer), and (c) the firm pre-approves the arrangement in writing where required.",
+      "citation": "Rule 3240",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3250, may an associated person share in a customer account?",
+      "back": "Only with prior written authorization from both the member firm and the customer, and the AP may share in profits/losses only in direct proportion to their financial contribution to the account. Exception: accounts with immediate family \u2014 only firm approval is required and the proportionate sharing limitation does not apply.",
+      "citation": "Rule 3250",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under the USA PATRIOT Act \u00a7326, what is required by the Customer Identification Program (CIP)?",
+      "back": "Firms must verify the identity of each customer opening an account by collecting name, date of birth (for individuals), address, and identification number (SSN/TIN), and check the customer against government lists (e.g., OFAC SDN list). Records must be retained.",
+      "citation": "USA PATRIOT Act \u00a7326",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "When must a Currency Transaction Report (CTR) and a Suspicious Activity Report (SAR) be filed?",
+      "back": "CTR: filed with FinCEN for cash transactions exceeding $10,000 in a single business day. SAR: filed for suspicious transactions aggregating $5,000 or more that may involve illegal activity; must be filed within 30 calendar days of detection. Customer must NOT be notified of a SAR filing.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3310, what are the minimum elements of an AML compliance program?",
+      "back": "(1) Written policies/procedures reasonably designed to detect and report suspicious activity; (2) independent testing (annually for most firms); (3) designated AML compliance officer; (4) ongoing training of appropriate personnel; (5) risk-based CIP / customer due diligence procedures.",
+      "citation": "Rule 3310",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under SEC Rule 17a-4, what is the general retention period for customer account records, and how long must blotters and general ledgers be kept?",
+      "back": "Customer account records (Rule 17a-3) generally retained for at least 6 years, with the first 2 years in an easily accessible place. Blotters, general ledgers, and certain other core records: retained for the life of the firm (or at least 6 years for some). Records must be preserved in non-rewriteable, non-erasable (WORM) format or with audit trail alternative.",
+      "citation": "17 CFR 240.17a-4",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "How often must account statements generally be sent to customers, and what is the timing of trade confirmations?",
+      "back": "Account statements: at least quarterly; monthly if there was activity in the account during the month. Trade confirmations (Rule 10b-10): must be delivered at or before completion of the transaction (i.e., by settlement).",
+      "citation": "17 CFR 240.10b-10",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under Regulation S-P, what are a firm's privacy obligations to customers?",
+      "back": "Firms must provide an initial privacy notice at account opening and annually thereafter, describing what nonpublic personal information (NPI) is collected and shared, with whom, and the customer's opt-out rights (where applicable). Firms must adopt written policies (Safeguards Rule) to protect customer information.",
+      "citation": null,
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 4370, what is required of a Business Continuity Plan (BCP)?",
+      "back": "Each member must create and maintain a written BCP identifying procedures relating to emergencies or significant business disruptions. The plan must be reviewed and updated as necessary, and a summary must be disclosed to customers at account opening, posted on the firm's website, and provided upon request.",
+      "citation": "Rule 4370",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Under what conditions may a broker-dealer hold a customer's mail?",
+      "back": "The firm may hold mail upon the customer's written instruction, generally for up to 3 consecutive months (longer if a valid reason, such as travel, is provided). The firm must verify the instructions at reasonable intervals and inform the customer of any means to communicate with the firm during the hold.",
+      "citation": "Rule 3150",
+      "unit": 6
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13802,
+    "output": 4512
+  },
+  "cost_usd": 0.5454
+}

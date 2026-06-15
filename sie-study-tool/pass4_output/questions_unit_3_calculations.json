@@ -1,0 +1,281 @@
+{
+  "unit": 3,
+  "unit_name": "Debt Securities",
+  "jf": "pr",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A corporate bond with a 6% coupon and a $1,000 par value is purchased at a price of $950. What is the bond's current yield?",
+      "choices": [
+        "6.00%",
+        "6.32%",
+        "5.70%",
+        "6.50%"
+      ],
+      "answer": 1,
+      "explanation": "Current yield = annual coupon income / current market price = ($1,000 \u00d7 6%) / $950 = $60 / $950 = 0.0632, or 6.32%. The 6.00% choice incorrectly uses par value instead of market price (that would be the nominal/coupon yield).",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor in the 32% federal tax bracket is comparing a municipal bond yielding 4.5% to a taxable corporate bond. What taxable-equivalent yield must the corporate bond offer to match the municipal bond?",
+      "choices": [
+        "5.94%",
+        "6.62%",
+        "3.06%",
+        "4.50%"
+      ],
+      "answer": 1,
+      "explanation": "Taxable-equivalent yield = tax-free yield / (1 \u2212 tax bracket) = 4.5% / (1 \u2212 0.32) = 4.5% / 0.68 = 6.62%. The 5.94% choice incorrectly multiplies by (1 + bracket) or applies the bracket to the yield rather than dividing.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A Treasury bill with a face value of $10,000 is purchased for $9,800 and matures in 180 days. Using a 360-day year, what is the discount yield?",
+      "choices": [
+        "2.00%",
+        "4.00%",
+        "4.08%",
+        "2.04%"
+      ],
+      "answer": 1,
+      "explanation": "Discount yield = (discount / face) \u00d7 (360 / days to maturity) = ($200 / $10,000) \u00d7 (360 / 180) = 0.02 \u00d7 2 = 4.00%. The 4.08% choice mistakenly uses the purchase price ($9,800) as the denominator (that would give an investment yield, not the discount yield).",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bond is quoted at 102 1/2. What is the dollar price for one $1,000 par bond?",
+      "choices": [
+        "$1,025.00",
+        "$1,025.50",
+        "$1,002.50",
+        "$1,250.00"
+      ],
+      "answer": 0,
+      "explanation": "Corporate and Treasury bond points are quoted as a percentage of par. 102 1/2 means 102.50% of $1,000 = $1,025.00. The $1,025.50 choice incorrectly adds 50 cents instead of treating the 1/2 as one-half of one point ($5).",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A municipal bond pays a 5% semiannual coupon on a $5,000 par value. How much interest does the bondholder receive on each scheduled interest payment date?",
+      "choices": [
+        "$250.00",
+        "$125.00",
+        "$500.00",
+        "$62.50"
+      ],
+      "answer": 1,
+      "explanation": "Annual interest = 5% \u00d7 $5,000 = $250. Because coupons are paid semiannually, each payment = $250 / 2 = $125. The $250 choice is the full annual amount, not one semiannual payment.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A corporate bond pays a 6% coupon ($60 annually) on a $1,000 par. The bond is purchased on a settlement date that is exactly 60 days after the last semiannual coupon payment. Using the 30/360 accrual convention, how much accrued interest is owed to the seller (per bond)?",
+      "choices": [
+        "$5.00",
+        "$10.00",
+        "$9.86",
+        "$20.00"
+      ],
+      "answer": 1,
+      "explanation": "Corporate bond accrued interest uses a 30/360 day count. Semiannual coupon = $30 for 180 days. Accrued interest = $30 \u00d7 (60/180) = $10.00. Alternatively, $60 \u00d7 (60/360) = $10.00. The $9.86 figure uses actual/365 (used for Treasuries), not 30/360.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bond has a 5% coupon and is currently trading at $1,100 (premium). Without doing a full YTM calculation, which of the following correctly orders the bond's yields from highest to lowest?",
+      "choices": [
+        "Yield to maturity > current yield > nominal yield",
+        "Nominal yield > current yield > yield to maturity",
+        "Current yield > nominal yield > yield to maturity",
+        "Yield to maturity > nominal yield > current yield"
+      ],
+      "answer": 1,
+      "explanation": "For a premium bond, the relationship is: nominal (coupon) yield > current yield > yield to maturity. The premium will be amortized to par at maturity, producing a capital loss that reduces YTM below the current yield. Choice A describes a discount bond.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor buys a 10-year, $1,000 par corporate bond with a 4% annual coupon at a price of $900. What is the approximate yield to maturity using the standard SIE approximation formula?",
+      "choices": [
+        "4.44%",
+        "5.26%",
+        "4.00%",
+        "6.00%"
+      ],
+      "answer": 1,
+      "explanation": "Approximate YTM = [annual coupon + (par \u2212 price)/years] / [(par + price)/2] = [$40 + ($100/10)] / [($1,000 + $900)/2] = [$40 + $10] / $950 = $50 / $950 = 5.26%. The 4.44% choice is the current yield ($40/$900), which ignores the accretion of the discount.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A 4% Treasury note matures in exactly two years. If market interest rates for comparable maturities rise to 5%, the price of this 4% note will most likely:",
+      "choices": [
+        "Rise above par",
+        "Remain at par",
+        "Fall below par",
+        "Be unaffected because Treasuries are risk-free"
+      ],
+      "answer": 2,
+      "explanation": "Bond prices move inversely to interest rates. When market rates (5%) exceed the bond's coupon (4%), the existing bond becomes less attractive and its price must fall below par so its yield can rise to match the market. Treasuries are free of credit risk but still subject to interest-rate risk.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A municipal revenue bond has a 5% coupon on a $10,000 par value and is callable in 5 years at 102. If the bond is purchased today at par and called at the first call date, what is the total dollar amount the investor receives at the call (excluding any final coupon)?",
+      "choices": [
+        "$10,000",
+        "$10,200",
+        "$10,500",
+        "$10,020"
+      ],
+      "answer": 1,
+      "explanation": "A call price of 102 means 102% of par. 102% \u00d7 $10,000 = $10,200. The $10,000 figure ignores the call premium; $10,500 incorrectly adds a full year of coupon.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bank issues a negotiable jumbo CD with a face amount of $500,000. In the event the issuing bank fails, what portion of this CD is covered by FDIC insurance for a single depositor in a single ownership category?",
+      "choices": [
+        "$500,000 \u2014 the full amount",
+        "$250,000",
+        "$100,000",
+        "$0 \u2014 negotiable CDs are not FDIC-insured"
+      ],
+      "answer": 1,
+      "explanation": "FDIC insurance covers up to $250,000 per depositor, per insured bank, per ownership category. The remaining $250,000 of the jumbo CD is uninsured. The CD itself is FDIC-eligible (it is a bank deposit), so $0 is incorrect.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A corporation issues $50 million of 6% convertible debentures with a conversion price of $25. If an investor holds one $1,000 par debenture, how many shares of common stock will be received upon conversion, and what is the parity price of the stock if the bond trades at $1,100?",
+      "choices": [
+        "40 shares; parity = $27.50",
+        "40 shares; parity = $25.00",
+        "25 shares; parity = $44.00",
+        "44 shares; parity = $25.00"
+      ],
+      "answer": 0,
+      "explanation": "Conversion ratio = par / conversion price = $1,000 / $25 = 40 shares. Parity price of the stock = bond market price / conversion ratio = $1,100 / 40 = $27.50. Choice B gives the conversion price, not parity at the current bond price.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12948,
+    "output": 2902
+  },
+  "cost_usd": 0.4119
+}

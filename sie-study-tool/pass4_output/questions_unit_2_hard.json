@@ -1,0 +1,285 @@
+{
+  "unit": 2,
+  "unit_name": "Equity Securities",
+  "jf": "pr",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Each of the following is a characteristic of common stock EXCEPT:",
+      "choices": [
+        "Residual claim on assets in the event of corporate liquidation",
+        "Limited liability restricted to the amount invested",
+        "Fixed, stated dividend rate that must be paid before any distribution to preferred shareholders",
+        "Voting rights on major corporate matters such as election of directors"
+      ],
+      "answer": 2,
+      "explanation": "Common stock does not pay a fixed, stated dividend; dividends are declared at the board's discretion and are paid only after preferred shareholders. Residual claim, limited liability, and voting rights are all characteristic of common equity.",
+      "citations": [
+        "17 CFR 240.3a11-1"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about preferred stock is LEAST accurate?",
+      "choices": [
+        "Cumulative preferred stock requires that any skipped dividends be paid in arrears before common dividends can resume",
+        "Convertible preferred stock allows the holder to exchange shares for a fixed number of common shares",
+        "Callable preferred stock can be redeemed by the issuer, generally at or above par",
+        "Participating preferred stock guarantees holders a vote equal to common shareholders on all corporate matters"
+      ],
+      "answer": 3,
+      "explanation": "Participating preferred allows holders to share in additional dividends beyond the stated rate; it does not confer general voting rights equal to common shareholders. Preferred shareholders typically do not vote. The other statements correctly describe cumulative, convertible, and callable features.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor holds an ADR representing shares of a foreign issuer. Which of the following risks is MOST uniquely associated with the ADR structure as compared with holding shares of a U.S. domestic issuer?",
+      "choices": [
+        "Market risk",
+        "Currency risk",
+        "Inflation risk",
+        "Liquidity risk"
+      ],
+      "answer": 1,
+      "explanation": "ADRs represent shares of foreign issuers whose underlying dividends and share value are denominated in a foreign currency, so currency risk is uniquely tied to ADR ownership. Market, inflation, and liquidity risks affect domestic equities as well.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "In a corporate liquidation, which of the following lists the order of payment from FIRST to LAST?",
+      "choices": [
+        "Secured creditors, unsecured creditors, preferred stockholders, common stockholders",
+        "Preferred stockholders, secured creditors, common stockholders, unsecured creditors",
+        "Unsecured creditors, secured creditors, common stockholders, preferred stockholders",
+        "Secured creditors, preferred stockholders, unsecured creditors, common stockholders"
+      ],
+      "answer": 0,
+      "explanation": "The standard liquidation priority is secured creditors first, then unsecured creditors (including general bondholders), then preferred stockholders, with common stockholders last as residual claimants.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are TRUE regarding rights and warrants EXCEPT:",
+      "choices": [
+        "Rights are typically short-term and issued to existing shareholders to preserve proportional ownership",
+        "Warrants typically have a longer life than rights and are often issued as a sweetener attached to debt offerings",
+        "The subscription price of a right is typically below the current market price of the stock",
+        "The exercise price of a warrant is typically set below the current market price of the stock at issuance"
+      ],
+      "answer": 3,
+      "explanation": "Warrants are generally issued with an exercise price ABOVE the current market price of the stock at issuance, giving them long-term speculative value. Rights, by contrast, are issued with a subscription price below market. The other statements are accurate.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under SEC Rule 144, which statement about the sale of restricted and control securities is MOST accurate?",
+      "choices": [
+        "Restricted securities held by a non-affiliate may be sold freely after the required holding period without any Rule 144 conditions",
+        "Affiliates selling control stock are subject to volume limitations regardless of how long the shares have been held",
+        "Rule 144 imposes no holding period on restricted securities provided the issuer is a reporting company",
+        "Control securities sold by affiliates are exempt from filing Form 144 with the SEC"
+      ],
+      "answer": 1,
+      "explanation": "Affiliates selling control stock under Rule 144 are always subject to volume limits, manner-of-sale, current public information, and Form 144 filing requirements, regardless of holding period. Restricted securities held by non-affiliates have a holding period requirement, so the other choices are incorrect.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about voting rights is LEAST accurate?",
+      "choices": [
+        "Cumulative voting allows shareholders to allocate their total votes among one or more candidates as they choose",
+        "Statutory voting requires that votes be cast equally for each open board seat",
+        "Cumulative voting generally favors minority shareholders",
+        "Preferred shareholders ordinarily have the same voting rights as common shareholders"
+      ],
+      "answer": 3,
+      "explanation": "Preferred shareholders generally do NOT have voting rights, although they may gain limited voting rights if dividends are missed for an extended period. The other statements correctly describe cumulative versus statutory voting and the effect on minority shareholders.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An ADR holder has each of the following rights EXCEPT:",
+      "choices": [
+        "The right to receive dividends, when declared, converted into U.S. dollars",
+        "The right to vote the underlying foreign shares directly at the foreign company's shareholder meetings",
+        "The right to sell the ADR in U.S. secondary markets",
+        "The right to receive corporate communications via the depositary bank"
+      ],
+      "answer": 1,
+      "explanation": "ADR holders do not vote the underlying foreign shares directly; voting is typically exercised by the depositary bank on behalf of holders, or holders may instruct the depositary. The other rights are standard for ADR holders.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following correctly identifies BOTH a similarity and a difference between rights and warrants?",
+      "choices": [
+        "Both allow the holder to purchase common stock; rights are typically long-term while warrants are short-term",
+        "Both are issued only to existing shareholders; rights have a higher exercise price than the current market while warrants are below market",
+        "Both give the holder the option to buy stock at a specified price; rights are short-term and below market, warrants are long-term and initially above market",
+        "Both pay dividends to holders; rights expire in a few weeks while warrants never expire"
+      ],
+      "answer": 2,
+      "explanation": "Rights and warrants are both equity-related derivatives that permit the holder to purchase stock at a stated price. Rights are short-term (often weeks) with a subscription price below market, while warrants are long-term with an exercise price typically above market at issuance. Neither pays dividends.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Convertible preferred stock offers each of the following advantages to an investor EXCEPT:",
+      "choices": [
+        "Priority over common stockholders in receiving dividends",
+        "Potential appreciation through conversion if the common stock price rises",
+        "Guaranteed protection from loss of principal in a declining market",
+        "Priority over common stockholders in liquidation"
+      ],
+      "answer": 2,
+      "explanation": "Convertible preferred stock does not guarantee principal; its price can decline with the underlying common stock or with interest rate movements. The other choices correctly identify dividend priority, conversion upside, and liquidation priority.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Regarding settlement after the exercise of options, which statement is MOST accurate?",
+      "choices": [
+        "Exercise of an equity option results in stock delivery that settles T+2 after exercise",
+        "Exercise of an equity option results in stock delivery that settles T+1 after exercise; index options settle in cash the next business day",
+        "Both equity and index option exercises settle T+2",
+        "Index options deliver the underlying securities, while equity options always settle in cash"
+      ],
+      "answer": 1,
+      "explanation": "Following the SEC's shortened settlement cycle (effective 5/28/2024), stock delivered upon exercise of an equity option settles T+1. Index options settle in cash (intrinsic value) the next business day. The T+2 statements are stale.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following statements about restricted stock are TRUE EXCEPT:",
+      "choices": [
+        "Restricted stock is acquired through unregistered private placements or as compensation",
+        "Restricted stock must be held for a required period under Rule 144 before public resale",
+        "Once the holding period is met, a non-affiliate may generally sell restricted stock without volume limitations, subject to current public information requirements",
+        "Restricted stock that has met the holding period and is sold by a non-affiliate must still be reported on Form 144 regardless of size"
+      ],
+      "answer": 3,
+      "explanation": "Form 144 filing is required for affiliate sales above specified thresholds, not for non-affiliate sales of restricted stock that has satisfied the holding period. The other statements accurately describe restricted stock under Rule 144.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12508,
+    "output": 3303
+  },
+  "cost_usd": 0.4353
+}

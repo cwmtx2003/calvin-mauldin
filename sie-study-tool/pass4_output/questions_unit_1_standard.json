@@ -1,0 +1,318 @@
+{
+  "unit": 1,
+  "unit_name": "Primary & Secondary Markets",
+  "jf": "km",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "An issuer is selling newly authorized shares directly to investors to raise capital for the first time. In which market does this transaction take place?",
+      "choices": [
+        "The primary market",
+        "The secondary market",
+        "The third market",
+        "The fourth market"
+      ],
+      "answer": 0,
+      "explanation": "The primary market is where issuers sell new securities to investors and receive the proceeds. The secondary market involves investor-to-investor trading of already-issued securities, with no proceeds going to the issuer.",
+      "citations": [
+        "Securities Act of 1933 \u00a77"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under the Securities Act of 1933, what is the default effective date of a registration statement absent acceleration by the SEC?",
+      "choices": [
+        "The tenth day after filing",
+        "The fifteenth day after filing",
+        "The twentieth day after filing",
+        "Immediately upon filing"
+      ],
+      "answer": 2,
+      "explanation": "Section 8(a) of the Securities Act provides that the effective date of a registration statement shall be the twentieth day after filing, or such earlier date as the SEC may determine. The SEC may accelerate, but the statutory default is 20 days.",
+      "citations": [
+        "Securities Act of 1933 \u00a78"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative tells a customer that because an issuer's registration statement has been declared effective by the SEC, the SEC has approved the security. This statement is:",
+      "choices": [
+        "Permitted, because effectiveness implies SEC approval",
+        "Permitted, if the RR also delivers a prospectus",
+        "Prohibited, because the SEC does not pass on the merits of any security",
+        "Permitted only for exempt securities"
+      ],
+      "answer": 2,
+      "explanation": "Section 23 of the Securities Act of 1933 makes it unlawful to represent that the SEC has approved or passed on the merits of a security. Effectiveness only means the disclosure requirements have been met.",
+      "citations": [
+        "Securities Act of 1933 \u00a723"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "A trade executed between two institutional investors directly with each other, bypassing a broker-dealer and exchange, takes place in which market?",
+      "choices": [
+        "The primary market",
+        "The second market",
+        "The third market",
+        "The fourth market"
+      ],
+      "answer": 3,
+      "explanation": "The fourth market refers to direct institution-to-institution trading, typically through electronic communication networks (ECNs). The third market involves exchange-listed securities traded OTC.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "An exchange-listed stock is traded over-the-counter between two broker-dealers away from the listing exchange. This trade occurs in the:",
+      "choices": [
+        "Primary market",
+        "Second market",
+        "Third market",
+        "Fourth market"
+      ],
+      "answer": 2,
+      "explanation": "The third market consists of OTC transactions in exchange-listed securities. The fourth market is direct trading between institutions without a broker-dealer intermediary.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is the primary purpose of a final prospectus delivered in connection with a registered public offering?",
+      "choices": [
+        "To guarantee the investment's performance",
+        "To provide investors with material disclosures contained in the registration statement",
+        "To serve as a binding contract of sale",
+        "To indicate SEC endorsement of the offering"
+      ],
+      "answer": 1,
+      "explanation": "Section 10 of the Securities Act requires a prospectus to contain the material information found in the registration statement so investors can make informed decisions. The SEC does not endorse securities (Section 23).",
+      "citations": [
+        "Securities Act of 1933 \u00a710",
+        "Securities Act of 1933 \u00a723"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under the Securities Exchange Act of 1934, an organization that constitutes or maintains a marketplace for bringing together purchasers and sellers of securities is defined as:",
+      "choices": [
+        "A broker",
+        "A dealer",
+        "An exchange",
+        "A clearing agency"
+      ],
+      "answer": 2,
+      "explanation": "Section 3(a)(1) of the Exchange Act defines an exchange as any organization that provides a marketplace or facilities for bringing together purchasers and sellers of securities. A broker effects transactions for the account of others.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "An underwriter agrees to purchase the entire issue of securities from the issuer and resell them to the public, assuming the risk of any unsold shares. This method of distribution is known as:",
+      "choices": [
+        "Best efforts",
+        "All-or-none",
+        "Firm commitment",
+        "Mini-maxi"
+      ],
+      "answer": 2,
+      "explanation": "In a firm commitment underwriting, the underwriter buys the entire issue from the issuer and bears the risk of reselling it. In a best-efforts arrangement, the underwriter acts as agent and assumes no risk for unsold shares.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which SEC rule provides a safe harbor governing the resale of restricted and control (affiliate) securities, including volume limitations and holding-period requirements?",
+      "choices": [
+        "Rule 144",
+        "Rule 145",
+        "Rule 147",
+        "Rule 164"
+      ],
+      "answer": 0,
+      "explanation": "Rule 144 provides the safe harbor under which persons holding restricted securities and affiliates selling control securities are deemed not to be engaged in a distribution. Rule 147 covers intrastate offerings.",
+      "citations": [
+        "17 CFR 230.144"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which SEC rule provides a safe harbor permitting private resales of restricted securities to qualified institutional buyers (QIBs)?",
+      "choices": [
+        "Rule 144",
+        "Rule 144A",
+        "Rule 145",
+        "Rule 147"
+      ],
+      "answer": 1,
+      "explanation": "Rule 144A permits private resales of restricted securities to qualified institutional buyers without registration. Rule 144 governs resales generally and is not limited to QIBs.",
+      "citations": [
+        "17 CFR 230.144A"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "A broker-dealer is registering with the SEC under Section 15 of the Securities Exchange Act of 1934. Before its registration order can become effective, the broker-dealer generally must also:",
+      "choices": [
+        "Become a member of a registered securities association or national securities exchange",
+        "Obtain approval from the Federal Reserve Board",
+        "Register with the FDIC",
+        "Become a member of SIPC only"
+      ],
+      "answer": 0,
+      "explanation": "Section 15(b)(1) provides that an order granting BD registration is not effective until the broker-dealer becomes a member of a registered securities association (e.g., FINRA) or a national securities exchange, unless exempted by the SEC.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a715"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    },
+    {
+      "stem": "An issuer that already has publicly traded shares is selling additional newly issued shares to the public to raise more capital. This is best described as:",
+      "choices": [
+        "An initial public offering (IPO)",
+        "A follow-on offering",
+        "A private placement",
+        "A secondary market transaction"
+      ],
+      "answer": 1,
+      "explanation": "A follow-on (additional) offering is a registered primary offering of new shares by an issuer that already has publicly traded stock. An IPO is the issuer's first public sale of stock.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12402,
+    "output": 2512
+  },
+  "cost_usd": 0.3744
+}

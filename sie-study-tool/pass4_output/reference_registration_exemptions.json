@@ -3,176 +3,253 @@
   "title": "Registration Exemptions & Offerings",
   "sections": [
     {
-      "heading": "Exempt ISSUERS (issuer's identity = exempt)",
+      "heading": "Exempt Securities (Securities Act \u00a73) \u2014 never need '33 Act registration",
       "type": "bullets",
       "items": [
-        "U.S. Government & agencies",
-        "Municipalities (state/local)",
-        "National & state BANKS \u2014 NOT bank holding companies",
-        "Savings & Loans / Building & Loans",
-        "Charitable, religious, educational, nonprofit",
-        "Common carriers (e.g., railroad equipment trust certificates)"
+        "U.S. Treasury & U.S. government agency securities",
+        "Municipal securities (GOs, revenues, notes)",
+        "Securities of domestic banks (not BHCs)",
+        "Commercial paper / banker's acceptances \u2264 270 days",
+        "Securities of non-profits (religious, charitable, educational)",
+        "Securities of common carriers regulated by ICC/STB",
+        "Insurance policies & fixed annuities (NOT variable annuities \u2014 variable = security)",
+        "Small business investment companies (SBICs)"
       ]
     },
     {
-      "heading": "Exempt SECURITIES (the instrument is exempt)",
-      "type": "bullets",
-      "items": [
-        "Commercial paper, bankers' acceptances \u2014 maturity \u2264 270 days",
-        "Fixed annuities & insurance policies (NOT variable products)",
-        "Variable annuities / VUL / separate accounts = SECURITIES (must register)"
-      ]
-    },
-    {
-      "heading": "Regulation A \u2014 Small/Medium Offerings (12-month limits)",
+      "heading": "Exempt Transactions \u2014 Key Numbers",
       "type": "table",
       "items": [
         {
-          "Feature": "Max raise",
-          "Tier 1": "$20 million",
-          "Tier 2": "$75 million"
+          "Exemption": "Reg A \u2014 Tier 1",
+          "Max raise/12 mo": "$20,000,000",
+          "Investor limits": "None",
+          "Audited financials": "No",
+          "State (Blue-Sky)": "Required (coordinated review)",
+          "Resale": "Freely tradable",
+          "Cite": "17 CFR 230 Reg A"
         },
         {
-          "Feature": "Max for selling shareholders",
-          "Tier 1": "$6M",
-          "Tier 2": "$22.5M"
+          "Exemption": "Reg A \u2014 Tier 2",
+          "Max raise/12 mo": "$75,000,000",
+          "Investor limits": "Non-accredited capped at 10% of greater of income/net worth",
+          "Audited financials": "Yes + ongoing reports",
+          "State": "Preempted",
+          "Resale": "Freely tradable",
+          "Cite": "17 CFR 230 Reg A"
         },
         {
-          "Feature": "Review",
-          "Tier 1": "Coordinated SEC + state",
-          "Tier 2": "SEC only (no state)"
+          "Exemption": "Reg D 506(b)",
+          "Max raise/12 mo": "Unlimited",
+          "Investor limits": "Unlimited accredited + \u226435 non-accredited (sophisticated)",
+          "General solicitation": "PROHIBITED",
+          "State": "Preempted (notice + fee)",
+          "Resale": "Restricted",
+          "Cite": "17 CFR 230 Reg D / Form D"
         },
         {
-          "Feature": "Audited financials",
-          "Tier 1": "No",
-          "Tier 2": "Yes + annual/semi/current reports"
+          "Exemption": "Reg D 506(c)",
+          "Max raise/12 mo": "Unlimited",
+          "Investor limits": "Accredited ONLY (must verify)",
+          "General solicitation": "PERMITTED",
+          "State": "Preempted",
+          "Resale": "Restricted",
+          "Cite": "17 CFR 230 Reg D"
         },
         {
-          "Feature": "Investor limits",
-          "Tier 1": "None",
-          "Tier 2": "Non-accredited capped at greater of 10% net worth or 10% income"
+          "Exemption": "Rule 147 / 147A",
+          "Max raise": "No federal cap",
+          "Investor limits": "Residents of issuer's state only",
+          "Issuer test": "80% of revenue, assets, or proceeds in-state; principal office in-state",
+          "Resale": "No out-of-state resale for 6 months",
+          "Cite": "17 CFR 230.147"
         },
         {
-          "Feature": "Advertising/solicitation",
-          "Tier 1": "Allowed",
-          "Tier 2": "Allowed"
-        },
-        {
-          "Feature": "Excludes",
-          "Tier 1": "Investment companies (PE, VC, hedge)",
-          "Tier 2": "Same"
+          "Exemption": "Rule 144A",
+          "Max raise": "N/A \u2014 resale rule",
+          "Investor limits": "QIBs only (institutions w/ \u2265$100M in securities)",
+          "General solicitation": "Permitted to QIBs",
+          "Resale": "QIB-to-QIB",
+          "Cite": "17 CFR 230.144A"
         }
       ]
     },
     {
-      "heading": "Regulation D \u2014 Private Placements",
+      "heading": "Accredited Investor Definition (17 CFR 230.215 / Reg D Rule 501)",
+      "type": "bullets",
+      "items": [
+        "Income: >$200,000 individual OR >$300,000 joint \u2014 in each of the 2 most recent years AND reasonable expectation same in current year",
+        "Net worth: >$1,000,000 individual or joint, EXCLUDING primary residence",
+        "Institutions: banks, B/Ds, RIAs, insurance cos., registered ICs, employee benefit plans >$5M",
+        "Directors, executive officers, GPs of the issuer (insiders) \u2014 automatically accredited",
+        "2020 expansion: holders in good standing of Series 7, 65, or 82; knowledgeable employees of private funds; certain family offices/family clients",
+        "Entities with >$5M in investments not formed to acquire the offered securities"
+      ]
+    },
+    {
+      "heading": "Rule 144 \u2014 Resale of Restricted/Control Stock (17 CFR 230.144)",
+      "type": "bullets",
+      "items": [
+        "Holding period: Restricted stock \u2014 6 months (reporting issuer) / 12 months (non-reporting); control stock \u2014 no holding period (but volume limits apply)",
+        "Volume limit (affiliates): every 90 days, greater of 1% of outstanding shares OR avg weekly trading volume over prior 4 weeks",
+        "Form 144 filed at time of sell order if sale > 5,000 shares OR > $50,000 in 90 days",
+        "ERRATA: Form 144 must be filed electronically on EDGAR (since 4/13/2023)",
+        "Non-affiliate holding restricted \u22656 mo (reporting issuer): may sell freely after 1 yr, no volume cap"
+      ]
+    },
+    {
+      "heading": "Offering Document Quick Map",
       "type": "table",
       "items": [
         {
-          "Rule": "506(b)",
-          "Investors": "Unlimited accredited + up to 35 non-accredited (sophisticated)",
-          "Solicitation": "NO general solicitation/advertising",
-          "Cap": "Unlimited $"
+          "Offering": "Registered public",
+          "Document": "Prospectus (\u00a710)",
+          "Cite": "'33 Act \u00a710"
         },
         {
-          "Rule": "506(c)",
-          "Investors": "Accredited ONLY \u2014 must verify",
-          "Solicitation": "General solicitation/advertising ALLOWED",
-          "Cap": "Unlimited $"
+          "Offering": "Reg A",
+          "Document": "Offering Circular (Form 1-A)",
+          "Cite": "Reg A"
         },
         {
-          "Rule": "Form D",
-          "Investors": "File with SEC online",
-          "Solicitation": "Required",
-          "Cap": "\u2014"
+          "Offering": "Reg D private placement",
+          "Document": "Private Placement Memorandum (PPM) + Form D notice",
+          "Cite": "Reg D"
+        },
+        {
+          "Offering": "Municipal new issue",
+          "Document": "Official Statement",
+          "Cite": "MSRB G-32"
         }
       ]
     },
     {
-      "heading": "Accredited Investor Thresholds (Rule 501)",
-      "type": "bullets",
+      "heading": "SEC Disclaimer (\u00a723)",
+      "type": "rule",
       "items": [
-        "Income: $200,000 individual OR $300,000 joint \u2014 past 2 yrs + expected current yr",
-        "Net worth: $1,000,000+ (EXCLUDES primary residence equity)",
-        "Insiders: officers, directors, 10%+ owners of the issuer",
-        "Licensed: holders in good standing of Series 7, 65, or 82",
-        "Knowledgeable employees of private funds; certain professional certifications",
-        "ALL institutional investors qualify"
-      ]
-    },
-    {
-      "heading": "Rule 144A \u2014 QIBs (Qualified Institutional Buyers)",
-      "type": "bullets",
-      "items": [
-        "QIB = institution owning/investing \u2265 $100 million in securities (discretionary)",
-        "Allows resale of restricted securities among QIBs without SEC registration",
-        "No retail involvement"
-      ]
-    },
-    {
-      "heading": "Rule 147 \u2014 Intrastate Offering",
-      "type": "bullets",
-      "items": [
-        "Issuer HQ in state + ALL purchasers are state residents",
-        "Issuer must meet ONE of the 80% tests: 80% income IN-state / 80% assets IN-state / 80% of proceeds used IN-state / majority of employees in state",
-        "Underwriter (if any) must be based in the state",
-        "Resale to non-residents prohibited for 6 MONTHS after purchase"
-      ]
-    },
-    {
-      "heading": "Private Placement Stock \u2014 Synonyms (all mean same thing)",
-      "type": "bullets",
-      "items": [
-        "Restricted stock (6-month holding under Rule 144)",
-        "Unregistered stock",
-        "Letter stock (investor signs investment letter)",
-        "Legend stock (legend on certificate restricts transfer)",
-        "Form 144 for affiliate resales \u2014 filed ELECTRONICALLY on EDGAR (paper no longer permitted as of 4/13/2023)"
-      ]
-    },
-    {
-      "heading": "Disclosure Documents by Offering Type",
-      "type": "table",
-      "items": [
-        {
-          "Offering": "Registered public offering",
-          "Document": "Prospectus"
-        },
-        {
-          "Offering": "Municipal securities",
-          "Document": "Official Statement"
-        },
-        {
-          "Offering": "Reg A / Reg D / other exempt",
-          "Document": "Offering Circular (a.k.a. Notice of Sale)"
-        }
-      ]
-    },
-    {
-      "heading": "Quick Number Recall",
-      "type": "formula",
-      "items": [
-        "Commercial paper exemption: \u2264 270 days",
-        "Reg A Tier 1: $20M | Tier 2: $75M (per 12 mo)",
-        "Reg D 506(b): max 35 non-accredited",
-        "QIB minimum: $100M in securities",
-        "Accredited income: $200K / $300K joint | net worth $1M ex-home",
-        "Rule 147 resale restriction: 6 months",
-        "Rule 144 restricted stock holding period: 6 months"
+        "SEC registration is NOT approval, endorsement, or verification of accuracy. Representing otherwise is unlawful. (Securities Act of 1933 \u00a723)"
       ]
     }
   ],
   "common_traps": [
-    "BANK securities are exempt, but BANK HOLDING COMPANY securities are NOT exempt.",
-    "FIXED annuities/insurance are exempt; VARIABLE annuities/VUL are SECURITIES and must be registered.",
-    "Primary residence equity is EXCLUDED from the $1M net-worth test (a common distractor includes it).",
-    "Reg D 506(b) = NO advertising; 506(c) = advertising OK but ALL buyers must be accredited AND verified.",
-    "Rule 147 = intrastate only; Rule 144A = resales to QIBs only \u2014 don't confuse the two '14x' rules.",
-    "Commercial paper is exempt only if maturity \u2264 270 days \u2014 longer maturities must register."
+    "Reg A Tier 2 = $75M (NOT $50M \u2014 updated March 2021). Tier 1 = $20M. Don't swap them.",
+    "Primary residence is EXCLUDED from the $1M accredited-investor net-worth test.",
+    "506(b) allows up to 35 non-accredited (must be sophisticated) and PROHIBITS general solicitation; 506(c) is accredited-only but ALLOWS general solicitation with verification.",
+    "Municipal securities are exempt from '33 Act registration but NOT from antifraud provisions; also subject to MSRB rules.",
+    "Rule 144A is a RESALE exemption to QIBs (\u2265$100M in securities under management) \u2014 it is not a way for an issuer to do a primary public offering.",
+    "Variable annuities and variable life are SECURITIES (not exempt); only fixed insurance products are exempt."
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 21603,
-    "output": 2326
+    "input": 12364,
+    "output": 2284
   },
-  "cost_usd": 0.4985
+  "cost_usd": 0.3568
 }

@@ -3,139 +3,329 @@
   "unit_name": "Equity Securities",
   "sections": [
     {
-      "title": "Lesson 2.1: Characteristics of Common Stock",
-      "overview": "Common stock represents an ownership (equity) interest in a corporation, entitling holders to vote on major issues, share in profits through dividends, and benefit from capital appreciation. Shareholders enjoy limited liability but stand last in the liquidation hierarchy. The unit also covers the four classes of stock (authorized, issued, outstanding, treasury), market-cap categories, the dividend process, and the penny stock rules.",
+      "title": "1. Equity Securities \u2014 Definition and Ownership Fundamentals",
+      "overview": "An equity security represents an ownership (residual) interest in a corporation. Equity holders are residual claimants with limited liability, meaning their loss is capped at the amount invested. Federal securities law defines the term broadly to include common and preferred stock, securities convertible into stock, warrants, rights, and similar instruments.",
       "key_concepts": [
-        "Equity = ownership; each share = proportional ownership of the corporation.",
-        "Authorized stock: maximum shares the corporate charter permits the company to issue; amendable only by stockholder vote.",
-        "Issued stock: authorized shares actually sold to investors.",
-        "Outstanding stock: issued shares currently held by the public (Issued \u2212 Treasury = Outstanding).",
-        "Treasury stock: reacquired by the issuer; carries no voting rights and pays no dividends.",
-        "Market capitalization = Outstanding shares \u00d7 Current Market Value (CMV). Categories: large-cap (often 'blue chip' if mature dividend payers), mid-cap, small-cap.",
-        "Penny stock: unlisted equity trading under $5/share; classified as highly speculative.",
-        "Dividend forms: cash (default, quarterly), stock (non-taxable at receipt; cost basis adjusts), or product (rare).",
-        "Cash dividends are taxed in the year paid: nonqualified (ordinary income rates) or qualified (lower IRS-specified rate).",
-        "Four dividend dates in order: Declaration \u2192 Ex-dividend \u2192 Record \u2192 Payable.",
-        "Declaration, record, and payable dates are set by the BOD; the ex-date is set by FINRA or the listing exchange.",
-        "Ex-dividend date under T+1 settlement: same day as the record date (buy before the ex-date to receive the dividend).",
-        "Benefits of common stock: voting rights, capital appreciation, dividend income, limited liability, preemptive rights, freely transferable shares, right to inspect books and receive Form 10-K.",
-        "Voting methods: Statutory (one vote per share per seat \u2014 favors large holders); Cumulative (total votes = shares \u00d7 seats, allocated freely \u2014 favors small holders).",
-        "Risks: market/value risk (price decline), dividend reduction or elimination, last priority in liquidation (residual claim)."
+        "Equity = ownership; debt = creditor relationship.",
+        "Limited liability: shareholder loss capped at investment amount; personal assets are not at risk.",
+        "Order of liquidation (priority of claims): (1) secured creditors, (2) unsecured creditors/general creditors including debenture holders, (3) subordinated debt, (4) preferred stockholders, (5) common stockholders (residual).",
+        "Authorized shares vs. issued shares vs. outstanding shares vs. treasury stock (issued \u2212 outstanding = treasury).",
+        "Statutory definition of 'equity security' includes stock, treasury stock, securities convertible into stock, warrants, rights, and other interests commonly known as equity securities.",
+        "U.S.-listed equity trades (and ADRs) settle T+1 (per SEC settlement rule, effective May 28, 2024)."
       ],
       "rules": [
-        "SEC Rule 3a11-1 (Securities Exchange Act of 1934): defines 'equity security.'",
-        "SEC Penny Stock Rules: Before initial solicited penny stock transaction, BD must deliver a risk disclosure document and obtain signed/dated acknowledgment; must determine suitability and obtain a signed suitability statement; must disclose the name of the stock, number of shares, current quotation, and commissions to firm and rep.",
-        "Penny stock monthly statements: required for any account holding penny stocks, regardless of activity, showing market value, share count, and issuer for each penny stock held.",
-        "Established customer exemption (penny stocks): customer with account \u22651 year (with a deposit) OR \u22653 penny stock purchases of different issuers on different days \u2014 exempt from suitability statement but NOT from disclosure.",
-        "Unsolicited penny stock transactions are exempt from suitability and disclosure rules.",
-        "Settlement: U.S.-listed equity trades settle T+1 (SEC Rule 15c6-1, as amended)."
+        "17 CFR 240.3a11-1 \u2014 defines 'equity security' under the Exchange Act to include stock, similar securities, convertibles, warrants, rights, and any interest commonly known as an equity security.",
+        "17 CFR 240.10b-18 \u2014 provides a safe harbor for issuer repurchases of its own common stock from manipulation liability when conditions on manner, timing, price, and volume are satisfied."
       ],
       "formulas": [
-        "Outstanding Shares = Issued Shares \u2212 Treasury Shares",
-        "Market Capitalization = Outstanding Shares \u00d7 Current Market Value per share",
-        "Stockholder's Votes (Cumulative) = Shares Owned \u00d7 Number of Board Seats up for election",
-        "Stockholder's Votes per Seat (Statutory) = Shares Owned (max per seat)"
+        "Outstanding shares = Issued shares \u2212 Treasury shares",
+        "Shareholders' Equity = Assets \u2212 Liabilities (per OpenStax Financial Accounting accounting equation)"
       ],
       "mnemonics": [
-        "DERP \u2014 order of dividend dates: Declaration, Ex-date, Record, Payable.",
-        "BOD sets D-R-P; Regulator (FINRA/exchange) sets E.",
-        "'Cumulative helps the small guy' \u2014 cumulative voting favors small shareholders."
+        "Liquidation order: 'Some Unpaid Suits Prefer Common' \u2014 Secured, Unsecured, Subordinated, Preferred, Common."
       ]
     },
     {
-      "title": "Lesson 2.2: Preferred Stock, ADRs, and Other Equity Considerations",
-      "overview": "Preferred stock is an equity security with bond-like fixed-income characteristics: a stated dividend (% of par; assume $100 par unless told otherwise), priority over common in dividends and liquidation, but generally no voting or preemptive rights. ADRs allow U.S. investors to hold foreign equities in dollar-denominated form. Rule 144 governs the resale of restricted and control (affiliate) stock.",
+      "title": "2. Common Stock",
+      "overview": "Common stock confers ownership, voting rights, a residual claim on earnings and assets, and limited liability. Returns come from price appreciation and discretionary dividends declared by the board.",
       "key_concepts": [
-        "Preferred stock: equity ownership with a fixed dividend rate; assume par = $100 unless stated.",
-        "Dividend computation: % rate \u00d7 $100 par = annual dividend (paid quarterly).",
-        "Preferred shareholders generally have NO voting rights and NO preemptive rights.",
-        "Benefits: dividend preference over common; priority over common at dissolution.",
-        "Risks: purchasing power (inflation) risk, interest rate sensitivity (prices fall when rates rise), dividend may be reduced/eliminated, paid behind all creditors at dissolution.",
-        "Straight (noncumulative): missed dividends are gone forever.",
-        "Cumulative: unpaid dividends accrue as 'dividends in arrears' and must be paid in full before any common dividend.",
-        "Callable: issuer can redeem at a stated price after a stated date; often called when rates fall; dividend stops at the call date; usually includes a call premium.",
-        "Convertible: exchangeable for a fixed number of common shares; carries lower stated dividend due to upside; price tracks common once the common rises above the conversion parity.",
-        "Adjustable (variable) rate: dividend resets to a benchmark (e.g., T-bills); price is relatively stable \u2014 NOT ideal for investors seeking a FIXED income.",
-        "Participating: in addition to stated dividend, receives extra dividends up to a stated cap when profits permit.",
-        "ADR (American Depositary Receipt): negotiable U.S. security representing shares of a foreign company on deposit at a U.S. bank's foreign branch; issued and dividends paid in U.S. dollars.",
-        "ADRs trade and settle T+1 (per current SEC Rule 15c6-1 \u2014 updated from prior T+2).",
-        "ADR holder rights: may request the depositary bank cancel the ADR and deliver the underlying foreign shares; voting rights are NOT automatically passed through.",
-        "ADR risks: currency risk (dividends converted from foreign currency), political risk, market risk of underlying.",
-        "ADR dividends may be subject to foreign withholding tax; often creditable against U.S. tax liability. Capital gains taxed only in the U.S.",
-        "Rule 144 (Securities Act of 1933): governs sales of restricted securities and control (affiliate) securities.",
-        "Restricted stock: acquired in unregistered transaction (e.g., private placement); 6-month holding period (fully paid) required before resale; certificates carry a restrictive legend.",
-        "Control stock (affiliate): held by directors, officers, or 10%+ owners; family holdings aggregate.",
-        "After holding restrictions: nonaffiliates selling restricted stock have NO volume limit after 6 months; affiliates ALWAYS subject to volume limits regardless of holding period.",
-        "Form 144 filing required when an affiliate sells; allows sales over a 90-day window."
+        "Voting rights: typically one vote per share on directors and major corporate matters (charter amendments, mergers, dissolution).",
+        "Statutory voting: one vote per share per director seat (favors majority holders).",
+        "Cumulative voting: shareholder may aggregate votes across seats (favors minority holders).",
+        "Preemptive right: existing shareholders may maintain proportional ownership in new share issuances (often delivered via a rights offering).",
+        "Residual claim on earnings (dividends are discretionary, not guaranteed) and on assets at liquidation (paid last).",
+        "Dividend mechanics: Declaration date \u2192 Ex-dividend date \u2192 Record date \u2192 Payable date. Under T+1 settlement, ex-date and record date generally coincide (ex-date = record date).",
+        "Stock split (forward) increases share count, reduces per-share price proportionally; reverse split does the opposite. Total market value and ownership percentage unchanged.",
+        "Treasury stock: repurchased shares; no voting rights, no dividends."
       ],
       "rules": [
-        "Rule 144 volume limit (every 90 days): greater of 1% of outstanding shares OR average weekly trading volume over the most recent 4 weeks.",
-        "Rule 144 holding period for restricted stock: 6 months (fully paid).",
-        "Form 144 must be filed at the time of placing an order to sell by an affiliate."
+        "17 CFR 240.10b-18 \u2014 safe harbor for issuer common-stock buybacks."
       ],
       "formulas": [
-        "Annual Preferred Dividend = Stated Rate \u00d7 Par Value (assume $100 par unless told otherwise)",
-        "Quarterly Preferred Dividend = Annual Preferred Dividend \u00f7 4",
-        "Rule 144 Maximum Shares Sellable (90 days) = greater of (0.01 \u00d7 Outstanding Shares) OR (Average Weekly Volume over prior 4 weeks)",
-        "Average Weekly Volume = Sum of last 4 weeks' volume \u00f7 4"
+        "EPS = (Net Income \u2212 Preferred Dividends) / Weighted Avg. Common Shares Outstanding",
+        "P/E Ratio = Market Price per Share / EPS",
+        "Dividend Yield = Annual Dividend per Share / Market Price per Share",
+        "Dividend Payout Ratio = Dividends per Share / EPS",
+        "Book Value per Common Share = (Common Equity \u2212 Preferred Equity) / Common Shares Outstanding",
+        "Cumulative voting max votes per candidate = Shares Owned \u00d7 Number of Director Seats up"
       ],
       "mnemonics": [
-        "Preferred = 'Bond-like equity' \u2014 fixed income, no vote, no preemptive right.",
-        "Cumulative = 'Catches up' \u2014 arrears must be paid first.",
-        "Affiliates ALWAYS limited; nonaffiliates LIMITED only during the 6-month restricted holding window.",
-        "Greater of 1% or 4-week average \u2014 the '1%-or-Average' rule."
+        "Dividend dates: 'DERP' \u2014 Declaration, Ex-date, Record, Payable.",
+        "Common stockholder rights: 'V-LIPS' \u2014 Vote, Limited liability, Inspect books, Preemptive (if granted), Sue (derivative)."
       ]
     },
     {
-      "title": "Lesson 2.3: Corporate Actions (Rights, Warrants, Splits, Dividends, M&A, Buybacks, Proxies)",
-      "overview": "Corporate actions are issuer-initiated events that affect outstanding securities \u2014 including issuing rights or warrants, paying stock dividends, splitting shares, merging, acquiring, spinning off, or buying back stock. Candidates must recognize whether each action is taxable, how it alters share count and cost basis, and the SEC notification and proxy procedures.",
+      "title": "3. Preferred Stock",
+      "overview": "Preferred stock is an equity security with a fixed stated dividend and seniority over common in dividends and liquidation but junior to all debt. It generally lacks voting rights and behaves like a fixed-income/interest-rate-sensitive instrument.",
       "key_concepts": [
-        "Stock (Preemptive) Rights: short-term (typically 30\u201345 day subscription); given to existing common shareholders; one right per share owned; subscription price is BELOW current market price; rights are tradable.",
-        "Three options for a rights holder: exercise, sell in the secondary market, or let expire.",
-        "Warrants: LONG-term (often years); usually issued as 'sweeteners' attached to bonds or preferred stock; exercise price is ABOVE the current market price at issuance.",
-        "Stock dividend: shareholder receives more shares; total position value unchanged; cost basis per share DECREASES; not taxable when received.",
-        "Forward stock split: more shares at a lower price; cost basis per share decreases; not taxable.",
-        "Reverse stock split: fewer shares at a higher price; cost basis per share increases; not taxable; often used to maintain exchange listing minimum price.",
-        "Merger: two companies combine; old shares canceled and replaced with shares of the new combined company.",
-        "Acquisition: acquirer absorbs target; target shareholders typically receive acquirer shares.",
-        "Spin-off: parent creates a new subsidiary and distributes its shares to existing parent shareholders; parent shares retained.",
-        "Buyback: issuer repurchases its own shares in the secondary market; reduces supply, can boost EPS and share price; alternative to dividends.",
-        "Tender offer: direct offer to buy securities from current owners (not through the open market); typically all-cash; used to retire debt, acquire targets, or buy convertibles.",
-        "Tax treatment summary \u2014 receive STOCK = generally non-taxable; receive CASH = generally taxable (capital gain/loss).",
-        "Stock splits and stock dividends are NEVER taxable events at the time of distribution.",
-        "Buybacks and tender offers (cash) ARE taxable \u2014 treated as a sale.",
-        "Mergers, acquisitions, and spin-offs are typically non-taxable when shares are received, but any cash portion of the consideration is taxable.",
-        "Notification: issuer must provide notice no later than 10 days before the record date (or by the record date, and never later than the effective date, in cases like rights offerings where 10 days is impractical).",
-        "Notice content: title of security, declaration date, record date, payment/distribution date, amount (cash dividend) or rate (stock dividend, split).",
-        "Proxy: limited power of attorney granting another party the right to vote a shareholder's shares; auto-revoked if shareholder attends meeting or executes a later proxy.",
-        "Street name shares: BD acts as forwarding agent for proxies and corporate communications to beneficial owners.",
-        "If a customer returns a signed proxy but does NOT indicate how to vote: the member must vote as RECOMMENDED BY MANAGEMENT.",
-        "If proxy is NOT returned by the 10th day before the meeting AND matters are MINOR: member may vote as it sees fit.",
-        "If proxy is NOT returned AND matters are MAJOR (e.g., merger, additional issuance): member may NEVER vote \u2014 shares go unvoted."
+        "Stated par value (commonly $100) used to compute the fixed dividend (e.g., 6% preferred on $100 par = $6/yr).",
+        "Dividend payment is at board discretion but must be paid before any common dividend.",
+        "Generally non-voting; voting rights may activate if dividends are skipped (depends on charter).",
+        "Interest-rate sensitive: prices fall when rates rise (inverse relationship), similar to long-duration bonds.",
+        "Types: Straight (non-cumulative); Cumulative (missed dividends accrue as 'dividends in arrears' and must be paid before common); Participating (may receive extra above stated rate); Convertible (exchangeable into a fixed number of common shares); Callable (issuer may redeem at stated call price); Adjustable-rate (dividend resets to a benchmark).",
+        "Liquidation priority: senior to common, junior to all bondholders and general creditors."
       ],
       "rules": [
-        "SEC Rule 10b-18 (Exchange Act): safe harbor for issuer repurchases of its own equity securities (buybacks).",
-        "SEC notification of corporate actions: required disclosures to shareholders, generally at least 10 days before the record date.",
-        "Settlement for equities affected by corporate actions: T+1 (per current SEC Rule 15c6-1)."
+        "17 CFR 240.3a11-1 \u2014 preferred stock falls within the definition of equity security."
       ],
       "formulas": [
-        "Stock Dividend \u2014 New Cost Basis per Share = Original Total Cost \u00f7 New Total Shares",
-        "Forward Split (a-for-b) \u2014 New Shares = Old Shares \u00d7 (a \u00f7 b); New Price = Old Price \u00d7 (b \u00f7 a)",
-        "Reverse Split (a-for-b, where a<b) \u2014 New Shares = Old Shares \u00d7 (a \u00f7 b); New Price = Old Price \u00d7 (b \u00f7 a)",
-        "Total Position Value Before Split = Total Position Value After Split (always)",
-        "Rights \u2014 Shares Purchasable = Rights Held \u00f7 Rights Required per New Share"
+        "Annual Preferred Dividend = Stated Rate \u00d7 Par Value",
+        "Current Yield (preferred) = Annual Dividend / Market Price",
+        "Conversion Ratio = Par Value of Preferred / Conversion Price",
+        "Parity Price (common) = Market Price of Preferred / Conversion Ratio"
       ],
       "mnemonics": [
-        "Rights = Right Now (short term, below market); Warrants = Wait (long term, above market).",
-        "Stock for stock = no tax; cash = tax.",
-        "Splits/stock dividends: 'Same pie, more slices' \u2014 value unchanged, basis per share adjusted.",
-        "Unsigned proxy + major issue = NO VOTE. Signed-but-blank proxy = vote with MANAGEMENT."
+        "Preferred features: 'CCPA' \u2014 Cumulative, Convertible, Participating, Adjustable (plus Callable).",
+        "Preferred ranks 'between debt and common' \u2014 senior to common in dividends and liquidation; junior to all debt."
+      ]
+    },
+    {
+      "title": "4. Rights (Subscription Rights / Preemptive Rights Offerings)",
+      "overview": "A rights offering allows existing shareholders to purchase additional shares of a new issue at a discount, in proportion to current ownership, before the issue is offered publicly. Rights are short-term (typically 30\u201345 days) and may be exercised, sold, or allowed to expire.",
+      "key_concepts": [
+        "Issued only to existing shareholders to satisfy preemptive rights and prevent ownership dilution.",
+        "One right typically issued per share owned; multiple rights plus cash required to subscribe to one new share.",
+        "Subscription price is below current market price (intrinsic value).",
+        "Short life span (~30\u201345 days); trade separately during subscription period.",
+        "Cum-rights vs. ex-rights pricing reflects whether the buyer is entitled to the rights.",
+        "Standby underwriting: investment bank agrees to purchase any unsubscribed shares.",
+        "Rights are typically registered under the Securities Act of 1933 unless exempt."
+      ],
+      "rules": [
+        "17 CFR 240.3a11-1 \u2014 rights are included within 'equity security'."
+      ],
+      "formulas": [
+        "Value of a Right (cum-rights) = (Market Price \u2212 Subscription Price) / (Rights Needed + 1)",
+        "Value of a Right (ex-rights) = (Market Price \u2212 Subscription Price) / Rights Needed",
+        "Theoretical Ex-Rights Price = [(Old Price \u00d7 Old Shares) + (Subscription Price \u00d7 New Shares)] / Total Shares"
+      ],
+      "mnemonics": [
+        "Rights = 'Right now, Reduced price, Short-term, Shareholders only.'"
+      ]
+    },
+    {
+      "title": "5. Warrants",
+      "overview": "Warrants are long-term equity securities giving the holder the right (not obligation) to buy stock from the issuer at a fixed price. They are typically issued as 'sweeteners' attached to bond or preferred offerings to enhance marketability.",
+      "key_concepts": [
+        "Issued by the corporation itself (not by an exchange or OCC) \u2014 exercising a warrant creates new shares (dilutive).",
+        "Long maturity (often 5\u201310 years; some perpetual).",
+        "Strike (exercise) price is set ABOVE the market price at issuance \u2014 no intrinsic value at issuance, only time value.",
+        "Often detachable from the host security and trade independently.",
+        "No voting rights, no dividends until exercised.",
+        "Compare to rights: rights have short life and below-market subscription price; warrants have long life and above-market exercise price."
+      ],
+      "rules": [
+        "17 CFR 240.3a11-1 \u2014 warrants are equity securities."
+      ],
+      "formulas": [
+        "Intrinsic Value of Warrant = max(0, Market Price \u2212 Exercise Price)",
+        "Warrant Premium = Warrant Price \u2212 Intrinsic Value"
+      ],
+      "mnemonics": [
+        "Rights vs. Warrants: 'Rights are Right now (short, below market); Warrants Wait (long, above market).'"
+      ]
+    },
+    {
+      "title": "6. American Depositary Receipts (ADRs)",
+      "overview": "ADRs are negotiable certificates issued by a U.S. depositary bank representing ownership of a specified number of shares (or fractions) of a foreign company's stock held on deposit abroad. They allow U.S. investors to trade foreign equities in U.S. dollars on U.S. markets.",
+      "key_concepts": [
+        "Issued by U.S. depositary banks; underlying foreign shares held by a custodian in the home country.",
+        "Quoted and traded in U.S. dollars; dividends paid in U.S. dollars (after currency conversion).",
+        "ADR holders typically have NO direct voting rights or preemptive rights; the depositary bank exercises voting per ADR program terms.",
+        "Risks: currency/exchange rate risk, political risk, foreign-tax withholding on dividends (may be eligible for U.S. foreign tax credit).",
+        "Sponsored ADR: foreign company contracts with one depositary bank (most listed ADRs). Unsponsored: multiple banks may issue without issuer involvement.",
+        "ADR levels: Level I (OTC), Level II (listed, no capital raised), Level III (listed, used to raise capital with full SEC registration).",
+        "U.S.-listed ADRs settle T+1 (aligned with the SEC settlement rule effective 5/28/2024)."
+      ],
+      "rules": [
+        "17 CFR 240.3a11-1 \u2014 ADRs constitute equity securities."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "ADR risks: 'CPT' \u2014 Currency, Political, Tax (foreign withholding)."
+      ]
+    },
+    {
+      "title": "7. Convertible Securities",
+      "overview": "Convertible securities (convertible preferred stock or convertible bonds) allow the holder to exchange the security for a fixed number of the issuer's common shares. They blend fixed-income characteristics with equity upside.",
+      "key_concepts": [
+        "Conversion ratio = par / conversion price (fixed at issuance).",
+        "Parity: market prices of the convertible and the underlying common are equivalent on a converted basis.",
+        "Forced conversion: callable convertibles may be called by the issuer to compel conversion when stock price is above call value.",
+        "Holders accept a lower coupon/dividend in exchange for the conversion option.",
+        "Anti-dilution provisions adjust the conversion ratio for stock splits and stock dividends."
+      ],
+      "rules": [
+        "17 CFR 240.3a11-1 \u2014 securities convertible into stock are equity securities."
+      ],
+      "formulas": [
+        "Conversion Ratio = Par Value / Conversion Price",
+        "Parity Price of Common = Market Price of Convertible / Conversion Ratio",
+        "Parity Price of Convertible = Market Price of Common \u00d7 Conversion Ratio"
+      ],
+      "mnemonics": []
+    },
+    {
+      "title": "8. Control and Restricted Securities \u2014 Rule 144",
+      "overview": "SEC Rule 144 provides a safe harbor for the public resale of restricted securities (acquired in unregistered transactions) and securities sold by control persons (affiliates). It conditions resale on holding period, volume limits, current public information, manner of sale, and filing.",
+      "key_concepts": [
+        "Restricted securities: acquired in unregistered/private transactions (e.g., Reg D private placement, employee stock).",
+        "Control securities: held by an affiliate (officer, director, >10% shareholder) regardless of how acquired.",
+        "Holding period: 6 months for restricted securities of a reporting issuer; 1 year for non-reporting issuer. No holding period for control (non-restricted) securities.",
+        "Volume limit (affiliates): every 90 days, may sell the greater of 1% of outstanding shares or the average weekly trading volume over the preceding 4 weeks.",
+        "Current public information requirement on the issuer must be satisfied.",
+        "Form 144 filed with SEC if sale within 3 months exceeds 5,000 shares or $50,000 in aggregate.",
+        "Manner-of-sale requirements (brokers' transactions; no solicitation) apply to affiliates.",
+        "Non-affiliates holding restricted shares > 6 months (reporting issuer) face minimal limits; after 1 year, no Rule 144 restrictions."
+      ],
+      "rules": [
+        "Resale safe harbor under SEC Rule 144 (Securities Act of 1933); citation per FINRA SIE outline 2.1.1 \u2014 'control and restrictions (e.g., SEC Rule 144).'"
+      ],
+      "formulas": [
+        "Affiliate 90-day Volume Cap = max(1% of outstanding shares, average weekly trading volume over prior 4 weeks)",
+        "Form 144 Filing Trigger = sales within 3 months exceed 5,000 shares OR $50,000"
+      ],
+      "mnemonics": [
+        "Rule 144 conditions: 'H-V-C-M-F' \u2014 Holding period, Volume limit, Current info, Manner of sale, Form 144.",
+        "'Restricted = how acquired; Control = who holds.'"
+      ]
+    },
+    {
+      "title": "9. Corporate Actions",
+      "overview": "Corporate actions are events initiated by the issuer that affect its equity securities. They include cash and stock dividends, splits, tender offers, rights offerings, and mergers \u2014 each with mechanical price/share-count effects that must be applied to outstanding orders and option contracts.",
+      "key_concepts": [
+        "Cash dividend: reduces retained earnings and cash; ex-date price drops by approximately the dividend amount.",
+        "Stock dividend / forward split: increases share count, proportionally reduces price; total ownership value unchanged.",
+        "Reverse split: reduces share count, proportionally increases price (often used to maintain listing standards).",
+        "Tender offer: a public offer to buy shares at a stated price, typically above market, often subject to minimum/maximum tender conditions.",
+        "Spin-off / split-off: distribution of a subsidiary's shares to existing shareholders.",
+        "Mergers/acquisitions: shareholders may receive cash, stock, or a combination.",
+        "Under T+1 settlement (effective 5/28/2024), the ex-dividend date and record date generally coincide (i.e., set as the same business day)."
+      ],
+      "rules": [
+        "17 CFR 240.10b-18 \u2014 issuer repurchase safe harbor (a form of corporate action affecting equity)."
+      ],
+      "formulas": [
+        "Adjusted Price after Forward Split = Pre-Split Price \u00d7 (old shares / new shares)",
+        "Adjusted Share Count = Pre-Split Shares \u00d7 (new ratio / old ratio)",
+        "Ex-Dividend Price \u2248 Cum-Dividend Price \u2212 Dividend per Share"
+      ],
+      "mnemonics": [
+        "Dividend timeline 'DERP': Declaration \u2192 Ex \u2192 Record \u2192 Payable (with Ex = Record under T+1)."
+      ]
+    },
+    {
+      "title": "10. Equity Issuance Concepts and Market Structure",
+      "overview": "Equity securities reach investors through primary offerings (IPOs and follow-ons under the Securities Act of 1933) and then trade in secondary markets governed by the Exchange Act of 1934. Issuers may also repurchase their own shares subject to a manipulation safe harbor.",
+      "key_concepts": [
+        "Primary market: capital flows from investors to issuer (IPO, follow-on, rights offering).",
+        "Secondary market: trading among investors on exchanges or OTC; no proceeds to issuer.",
+        "Issuer share repurchases ('buybacks') may be conducted under a Rule 10b-18 safe harbor limiting manner, timing, price, and daily volume to avoid manipulation liability.",
+        "Voting/proxy: solicitation of proxies for shareholder meetings is regulated under Exchange Act \u00a714.",
+        "Disclosure of control relationship: a broker-dealer controlled by, controlling, or under common control with the issuer must disclose this to customers before transactions in that security."
+      ],
+      "rules": [
+        "17 CFR 240.10b-18 \u2014 issuer buyback safe harbor.",
+        "Rule 2262 \u2014 FINRA requirement that members disclose any control relationship with the issuer of a security before entering into a customer transaction in that security; written confirmation if not initially in writing.",
+        "Rule 2261 \u2014 member must make its most recent balance sheet available to bona fide regular customers upon request."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "10b-18 safe harbor pillars: 'MTPV' \u2014 Manner (single broker), Timing, Price, Volume."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 24423,
-    "output": 4923
+    "input": 12348,
+    "output": 6383
   },
-  "cost_usd": 0.7356
+  "cost_usd": 0.6639
 }

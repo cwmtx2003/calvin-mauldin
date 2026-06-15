@@ -1,0 +1,301 @@
+{
+  "unit": 9,
+  "unit_name": "Economics",
+  "jf": "km",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A country's real GDP was $20.0 trillion in Year 1 and $19.7 trillion in Year 2. What is the approximate percentage change in real GDP from Year 1 to Year 2?",
+      "choices": [
+        "-1.5%",
+        "-3.0%",
+        "+1.5%",
+        "-0.3%"
+      ],
+      "answer": 0,
+      "explanation": "Percentage change = (19.7 - 20.0) / 20.0 = -0.3 / 20.0 = -0.015, or -1.5%. A negative change indicates economic contraction. -3.0% would result from doubling the actual decline, and -0.3% confuses the dollar change with the percentage change.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An economy reports real GDP figures for four consecutive quarters: Q1 = $21.0T, Q2 = $20.8T, Q3 = $20.6T, Q4 = $20.7T. Based on the standard definition of recession, how many consecutive quarters of negative real GDP growth occurred?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Q2 vs Q1: 20.8 - 21.0 = -0.2 (negative). Q3 vs Q2: 20.6 - 20.8 = -0.2 (negative). Q4 vs Q3: 20.7 - 20.6 = +0.1 (positive). There are two consecutive quarters of negative real GDP growth (Q2 and Q3), which meets the standard recession definition.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A U.S. investor exchanges $10,000 for euros when the exchange rate is 1 EUR = 1.25 USD. Several months later, the investor converts the euros back to dollars at a rate of 1 EUR = 1.10 USD. Ignoring fees, what is the investor's approximate gain or loss in U.S. dollars?",
+      "choices": [
+        "Gain of $1,500",
+        "Loss of $1,200",
+        "Loss of $1,500",
+        "Gain of $1,200"
+      ],
+      "answer": 1,
+      "explanation": "Initial conversion: $10,000 / 1.25 = 8,000 EUR. Reconversion: 8,000 EUR x 1.10 = $8,800. Loss = $10,000 - $8,800 = $1,200. The dollar strengthened against the euro, so the investor lost value. $1,500 incorrectly applies the rate change directly to $10,000.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "U.S. exports during a year totaled $2.5 trillion while imports totaled $3.1 trillion. What is the U.S. balance of trade?",
+      "choices": [
+        "Surplus of $600 billion",
+        "Deficit of $600 billion",
+        "Deficit of $5.6 trillion",
+        "Surplus of $0.6 trillion"
+      ],
+      "answer": 1,
+      "explanation": "Balance of trade = Exports - Imports = $2.5T - $3.1T = -$0.6T, a trade deficit of $600 billion. A surplus would require exports to exceed imports. The $5.6T figure incorrectly adds the two values.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A corporation reports the following on its balance sheet: total assets of $800 million and total liabilities of $525 million. What is stockholders' equity?",
+      "choices": [
+        "$275 million",
+        "$1,325 million",
+        "$525 million",
+        "$800 million"
+      ],
+      "answer": 0,
+      "explanation": "The fundamental accounting equation: Assets = Liabilities + Stockholders' Equity. Therefore Equity = Assets - Liabilities = $800M - $525M = $275M. $1,325M results from adding rather than subtracting.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A company's income statement shows revenues of $50 million, cost of goods sold of $30 million, operating expenses of $8 million, interest expense of $2 million, and income tax of $3 million. What is net income?",
+      "choices": [
+        "$20 million",
+        "$12 million",
+        "$7 million",
+        "$10 million"
+      ],
+      "answer": 2,
+      "explanation": "Net income = Revenues - COGS - Operating Expenses - Interest - Taxes = $50M - $30M - $8M - $2M - $3M = $7M. $20M is gross profit, $12M is operating income, and $10M ignores taxes.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "The nominal interest rate on a savings account is 4.5% and the annual inflation rate (CPI) is 2.8%. Using the simple approximation, what is the approximate real interest rate?",
+      "choices": [
+        "7.3%",
+        "1.7%",
+        "-1.7%",
+        "2.8%"
+      ],
+      "answer": 1,
+      "explanation": "Real interest rate (approximation) = Nominal rate - Inflation rate = 4.5% - 2.8% = 1.7%. 7.3% incorrectly adds the two rates. The real rate is positive because the nominal yield exceeds inflation.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bank has $500 million in deposits. Assuming a hypothetical reserve requirement ratio of 10%, how much of these deposits must the bank hold in reserve, and how much is available to lend?",
+      "choices": [
+        "$50 million reserved; $450 million available to lend",
+        "$10 million reserved; $490 million available to lend",
+        "$100 million reserved; $400 million available to lend",
+        "$45 million reserved; $455 million available to lend"
+      ],
+      "answer": 0,
+      "explanation": "Required reserves = $500M x 10% = $50M. Amount available to lend = $500M - $50M = $450M. Note: in practice the Federal Reserve has set the reserve requirement ratio to 0% since March 2020, but the math under a stated ratio still applies.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor purchased a stock one year ago at $40 per share. Today it trades at $42 per share, and the investor received $1.20 in dividends during the year. What is the investor's total return for the year?",
+      "choices": [
+        "5.0%",
+        "8.0%",
+        "3.0%",
+        "2.0%"
+      ],
+      "answer": 1,
+      "explanation": "Total return = (Price change + Dividends) / Initial price = ($42 - $40 + $1.20) / $40 = $3.20 / $40 = 8.0%. 5.0% reflects only price appreciation, and 3.0% reflects only the dividend yield.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "If nominal GDP grew from $22.0 trillion to $23.1 trillion during a year and the GDP deflator increased by 3.0%, what was the approximate real GDP growth rate?",
+      "choices": [
+        "5.0%",
+        "3.0%",
+        "2.0%",
+        "8.0%"
+      ],
+      "answer": 2,
+      "explanation": "Nominal growth = (23.1 - 22.0) / 22.0 = 5.0%. Real growth (approx.) = Nominal growth - Inflation = 5.0% - 3.0% = 2.0%. The deflator measures price changes, so subtracting it from nominal growth yields real growth.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A U.S. exporter agrees to receive 5,000,000 Japanese yen for goods sold. If the exchange rate at payment is 125 JPY = 1 USD, how many U.S. dollars will the exporter receive?",
+      "choices": [
+        "$625,000,000",
+        "$40,000",
+        "$4,000",
+        "$50,000"
+      ],
+      "answer": 1,
+      "explanation": "USD received = 5,000,000 JPY / 125 JPY per USD = $40,000. $625M results from multiplying instead of dividing. Exchange rate quoted as JPY per USD requires dividing the JPY amount by the rate.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "The Federal Reserve conducts an open-market operation by purchasing $10 billion of Treasury securities from banks. Assuming a hypothetical 10% reserve requirement and full lending of excess reserves, what is the maximum potential increase in the money supply using the simple money multiplier?",
+      "choices": [
+        "$10 billion",
+        "$100 billion",
+        "$1 billion",
+        "$110 billion"
+      ],
+      "answer": 1,
+      "explanation": "Simple money multiplier = 1 / reserve ratio = 1 / 0.10 = 10. Maximum money supply increase = $10B x 10 = $100B. A Fed purchase of securities adds reserves to the banking system, which expands lending. $10B is only the initial injection, not the multiplied effect.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12079,
+    "output": 2945
+  },
+  "cost_usd": 0.4021
+}

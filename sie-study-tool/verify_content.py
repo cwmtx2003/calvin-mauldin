@@ -77,12 +77,15 @@ def resolve_citation(ref: str):
         if not part_file:
             return False, "cfr-no-part"
         return (sie_grounding.extract_cfr_rule(part_file, f"{part}.{rule}") is not None), "cfr"
-    # Statute section ("<Act> §15A" / "Section 15A")
+    # Statute section ("<Act> §15A" / "Section 3(a)(39)"). Anchor the section to
+    # the § or "Section" marker — otherwise the regex grabs the year in the act
+    # name (1933/1934/1940) as the section number.
     for act, fn in sie_grounding.ACT_FILES.items():
         if act.lower() in s.lower():
-            sm = re.search(r"§?\s*(?:Section\s+)?(\d+[A-Za-z]*)", s)
+            sm = re.search(r"(?:§|Section)\s*(\d+[A-Za-z()0-9]*)", s)
             if sm:
                 return (sie_grounding.extract_statute_section(fn, sm.group(1)) is not None), "statute"
+            return False, "statute-no-section"
     # FINRA rule ("Rule 2266", "2266", "3110(e)")
     fm = re.search(r"\b(\d{3,4})\b", s)
     if fm and re.search(r"FINRA|Rule\s+\d", s):

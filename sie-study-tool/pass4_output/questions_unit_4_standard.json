@@ -1,0 +1,303 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "jf": "pr",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Under the Investment Company Act of 1940, which of the following is classified as a unit investment trust (UIT)?",
+      "choices": [
+        "An investment company that issues redeemable securities representing undivided interests in a specified portfolio of securities and has no board of directors",
+        "A management company that continuously offers redeemable shares priced at next computed NAV",
+        "A closed-end fund whose shares trade on an exchange at a market-determined price",
+        "An issuer engaged in the business of issuing face-amount certificates of the installment type"
+      ],
+      "answer": 0,
+      "explanation": "Section 4 of the 1940 Act defines a UIT as an investment company organized under a trust indenture, lacking a board of directors, and issuing only redeemable securities representing an undivided interest in a unit of specified securities. The face-amount certificate description matches a separate class of investment company, not a UIT.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under the Investment Company Act of 1940, what is the principal distinction between an open-end and a closed-end management company?",
+      "choices": [
+        "Open-end companies are diversified; closed-end companies are non-diversified",
+        "Open-end companies offer redeemable securities; closed-end companies do not",
+        "Open-end companies are exchange-listed; closed-end companies are not",
+        "Open-end companies are taxed as partnerships; closed-end companies are taxed as corporations"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(a) defines an open-end company as one that is offering for sale or has outstanding any redeemable security; a closed-end company is any management company other than an open-end company. Diversification status and exchange listing are separate concepts.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "To qualify as a \"diversified\" management company under the Investment Company Act of 1940, at least 75% of the value of the company's total assets must meet certain limits. With respect to any one issuer (within that 75% bucket), the company's holdings may not exceed:",
+      "choices": [
+        "5% of the fund's total assets and 10% of the issuer's outstanding voting securities",
+        "10% of the fund's total assets and 5% of the issuer's outstanding voting securities",
+        "25% of the fund's total assets and 25% of the issuer's outstanding voting securities",
+        "5% of the fund's total assets and 5% of the issuer's outstanding voting securities"
+      ],
+      "answer": 0,
+      "explanation": "Section 5(b)(1) requires that, in the 75% bucket, investments in any one issuer be limited to no more than 5% of the fund's total assets and no more than 10% of the issuer's outstanding voting securities.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A mutual fund pays for distribution and marketing expenses by charging an asset-based fee against fund assets pursuant to a plan adopted by the fund. This fee is authorized under which SEC rule?",
+      "choices": [
+        "Rule 10b-18",
+        "Rule 12b-1",
+        "Rule 144",
+        "Rule 2a-7"
+      ],
+      "answer": 1,
+      "explanation": "Rule 12b-1 under the Investment Company Act permits an open-end management investment company to use fund assets to pay for distribution of its own shares pursuant to a written plan. Rule 10b-18 concerns issuer share repurchases; Rule 144 deals with restricted/control securities.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "An order to purchase mutual fund shares is received by a broker-dealer at 11:00 a.m. The fund computes its NAV once daily at 4:00 p.m. At what price will the customer's order be executed?",
+      "choices": [
+        "The NAV computed at the prior business day's close",
+        "The NAV computed at 4:00 p.m. that same day",
+        "The average of the prior and current day's NAV",
+        "The bid price on the exchange where the fund trades at 11:00 a.m."
+      ],
+      "answer": 1,
+      "explanation": "Open-end (mutual fund) shares are priced using forward pricing: orders receive the next NAV computed after the order is received. The 11:00 a.m. order receives the 4:00 p.m. NAV.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A registered representative is discussing a Class A mutual fund share purchase with a customer who plans to invest $48,000. The fund's first breakpoint that reduces the sales charge occurs at $50,000. Under FINRA rules, the representative should:",
+      "choices": [
+        "Recommend the $48,000 purchase as suitable because it is just below the breakpoint",
+        "Inform the customer of the breakpoint so the customer can consider investing the additional amount to qualify for the reduced sales charge",
+        "Automatically execute the trade at $50,000 without the customer's authorization",
+        "Refuse to accept any order below a breakpoint"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2342 prohibits selling fund shares in dollar amounts just below a breakpoint to share in the higher sales charge. The proper practice is to disclose the breakpoint so the customer can make an informed decision. Refusing the order or executing without authorization is not required or permitted.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2330, before recommending the purchase or exchange of a deferred variable annuity, a registered representative must have a reasonable basis to believe that the customer has been informed, in general terms, of features such as:",
+      "choices": [
+        "The guaranteed FDIC insurance on subaccount values",
+        "Surrender period and surrender charges, potential tax penalty for withdrawals before age 59\u00bd, mortality and expense fees, and market risk",
+        "The fact that subaccounts are guaranteed against loss of principal by the insurer",
+        "The right to rescind the contract within 90 days without any charge"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2330(b)(1)(A)(i) specifically requires the customer to be informed of features such as surrender period and surrender charge, potential tax penalty for sales/redemptions before age 59\u00bd, mortality and expense fees, investment advisory fees, riders, the insurance and investment components, and market risk. Subaccounts are not FDIC-insured nor guaranteed against loss.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes a key economic difference between a closed-end fund and an open-end fund?",
+      "choices": [
+        "Closed-end fund shares are continuously offered and redeemed at NAV; open-end fund shares trade on exchanges at market price",
+        "Closed-end fund shares trade in the secondary market at a price that may be at a premium or discount to NAV; open-end fund shares are issued and redeemed at NAV",
+        "Closed-end funds may not invest in equity securities; open-end funds may",
+        "Closed-end funds are exempt from registration under the Investment Company Act of 1940; open-end funds are not"
+      ],
+      "answer": 1,
+      "explanation": "A closed-end fund issues a fixed number of shares that then trade in the secondary market, where the price is set by supply and demand and may differ from NAV. Open-end fund shares are issued and redeemed by the fund at NAV (forward priced). Both are registered investment companies.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A 529 college savings plan interest is best described as a:",
+      "choices": [
+        "Corporate debt security registered under the Securities Act of 1933",
+        "Municipal fund security",
+        "Federal agency security",
+        "Direct participation program interest"
+      ],
+      "answer": 1,
+      "explanation": "MSRB Rule D-12 defines a \"municipal fund security\" as a municipal security issued by an issuer that, but for the application of Section 2(b) of the Investment Company Act of 1940, would constitute an investment company. 529 savings plans are the classic example of municipal fund securities.",
+      "citations": [
+        "Rule D-12"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which statement about variable annuity separate accounts is correct?",
+      "choices": [
+        "The investment risk of the separate account subaccounts is borne by the insurance company, not the contract owner",
+        "The investment risk of the separate account subaccounts is borne by the contract owner, and the contract is regulated as both an insurance product and a security",
+        "Variable annuities are exempt from registration as securities because they are insurance contracts",
+        "Variable annuities provide a fixed payout based on the insurer's general account performance"
+      ],
+      "answer": 1,
+      "explanation": "In a variable annuity, the contract owner bears the investment risk of the separate account because account values fluctuate with subaccount performance. Because of the investment risk component, variable annuities are regulated as both insurance products and securities, and FINRA Rule 2330 governs recommendations of deferred variable annuities.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under the Investment Company Act of 1940, an issuer is generally considered an \"investment company\" if it owns or proposes to acquire investment securities having a value exceeding what percentage of its total assets (excluding government securities and cash items) on an unconsolidated basis?",
+      "choices": [
+        "20 percent",
+        "40 percent",
+        "60 percent",
+        "75 percent"
+      ],
+      "answer": 1,
+      "explanation": "Section 3(a)(1)(C) of the Investment Company Act of 1940 captures any issuer engaged in investing/holding/trading in securities that owns investment securities having a value exceeding 40% of total assets (excluding government securities and cash items) on an unconsolidated basis.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a73(a)"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Section 1035 of the Internal Revenue Code permits which of the following without immediate recognition of taxable gain?",
+      "choices": [
+        "An exchange of one life insurance or annuity contract for another like-kind contract",
+        "A withdrawal of cash value from a whole life policy",
+        "A liquidation of mutual fund shares to purchase an annuity",
+        "A conversion of a Roth IRA to a traditional IRA"
+      ],
+      "answer": 0,
+      "explanation": "A 1035 exchange allows the tax-free exchange of certain like-kind insurance products (for example, life insurance to life insurance, or annuity to annuity) without immediate recognition of gain. Cash withdrawals, mutual fund redemptions, and IRA conversions are different transactions with their own tax treatment.",
+      "citations": [],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13004,
+    "output": 3745
+  },
+  "cost_usd": 0.4759
+}

@@ -1,0 +1,282 @@
+{
+  "unit": 2,
+  "unit_name": "Equity Securities",
+  "jf": "pr",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Common stock",
+      "back": "An equity security representing ownership in a corporation. Holders have voting rights, a residual claim on assets in liquidation, limited liability (loss capped at amount invested), and may receive dividends if declared by the board.",
+      "citation": "17 CFR 240.3a11-1",
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "In a corporate liquidation, in what order are claims satisfied?",
+      "back": "1) Secured creditors, 2) Unsecured creditors (including general creditors and debenture holders), 3) Subordinated debt holders, 4) Preferred stockholders, 5) Common stockholders (last \u2014 residual claim).",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What does 'limited liability' mean for a common stockholder?",
+      "back": "The shareholder's maximum potential loss is limited to the amount invested in the stock. Personal assets cannot be reached to satisfy the corporation's debts.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Preferred stock",
+      "back": "An equity security with a fixed stated dividend rate and priority over common stock in dividend payments and liquidation. Generally non-voting. More sensitive to interest rate changes than common stock.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish cumulative, participating, convertible, and callable preferred stock.",
+      "back": "Cumulative: missed dividends accumulate and must be paid before common dividends. Participating: may receive extra dividends beyond stated rate. Convertible: exchangeable for common shares at a set ratio. Callable: issuer may redeem at a stated price after a set date.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "scenario",
+      "front": "An investor owns 100 shares of 6% cumulative preferred (par $100). The issuer skipped dividends in Years 1 and 2. In Year 3, before paying any common dividend, how much must be paid to this preferred holder?",
+      "back": "Annual dividend = 6% \u00d7 $100 = $6/share. Three years owed (Yrs 1, 2, 3) \u00d7 $6 \u00d7 100 shares = $1,800 must be paid before any common dividend.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "American Depositary Receipt (ADR)",
+      "back": "A negotiable certificate issued by a U.S. bank representing shares of a foreign company's stock, trading on U.S. markets in U.S. dollars. Facilitates U.S. investment in foreign equities. Holders bear currency risk; dividends paid in U.S. dollars after conversion. ADRs settle T+1.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Do ADR holders have voting rights in the underlying foreign company?",
+      "back": "Generally no \u2014 ADR holders typically do not have direct voting rights. The depositary bank holds the underlying shares and may pass through voting rights in some cases, but ADR holders usually receive only economic benefits (dividends, price appreciation).",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Rights (preemptive rights / rights offering)",
+      "back": "Short-term equity securities issued by a corporation to existing shareholders allowing them to purchase additional shares at a discount to market price, preserving their proportional ownership. Typically expire in 30\u201345 days.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Warrants",
+      "back": "Long-term equity securities (often issued attached to bonds or preferred stock as a 'sweetener') giving the holder the right to purchase the issuer's common stock at a set price. Initially issued out-of-the-money with multi-year expirations.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Key differences between rights and warrants?",
+      "back": "Rights: short-term (30\u201345 days), issued to existing shareholders, exercise price BELOW current market (in-the-money at issue). Warrants: long-term (years), often attached to other securities as a sweetener, exercise price ABOVE current market (out-of-the-money at issue).",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Under SEC Rule 144, what are the holding period requirements for restricted securities?",
+      "back": "Restricted securities of a reporting issuer: 6-month holding period. Restricted securities of a non-reporting issuer: 12-month holding period. After the holding period, sales by affiliates remain subject to volume, manner-of-sale, and Form 144 filing requirements; non-affiliates may freely resell.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Under Rule 144, what is the volume limitation on sales by affiliates within any 90-day period?",
+      "back": "The greater of: (1) 1% of the outstanding shares of that class, or (2) the average weekly reported trading volume during the four weeks preceding the filing of Form 144.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Restricted securities vs. control securities",
+      "back": "Restricted securities: unregistered shares acquired in a private placement or other exempt transaction. Control securities: shares (registered or restricted) held by an affiliate (officer, director, or 10%+ shareholder) of the issuer. Both are subject to Rule 144 resale conditions.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is a stock split's effect on share price, shares outstanding, and market cap?",
+      "back": "Forward split (e.g., 2-for-1): shares outstanding double, price halves, market cap unchanged. Reverse split (e.g., 1-for-10): shares decrease 10x, price increases 10x, market cap unchanged. An investor's total ownership value is unchanged.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "scenario",
+      "front": "Investor owns 200 shares purchased at $60. The company declares a 3-for-1 stock split. After the split, how many shares does the investor own and what is the adjusted cost basis per share?",
+      "back": "Shares after split = 200 \u00d7 3 = 600 shares. Adjusted cost basis = $60 \u00f7 3 = $20/share. Total investment value unchanged at $12,000.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is the ex-dividend date and how does it relate to the record date under T+1 settlement?",
+      "back": "Under T+1 settlement, the ex-dividend date is the SAME business day as the record date. To receive the dividend, the buyer must purchase the stock BEFORE the ex-date. On the ex-date, the stock opens trading at a price reduced by approximately the dividend amount.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Statutory voting vs. cumulative voting \u2014 which favors minority shareholders?",
+      "back": "Cumulative voting favors minority shareholders. Total votes = shares \u00d7 number of directors being elected, and votes may be concentrated on one candidate. Statutory voting requires votes be cast separately for each directorship (one vote per share per seat), favoring majority shareholders.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "scenario",
+      "front": "A shareholder owns 100 shares. The company is electing 5 directors. Under cumulative voting, how many votes can the shareholder cast for a single candidate?",
+      "back": "Total votes = 100 shares \u00d7 5 directorships = 500 votes. Under cumulative voting, all 500 can be cast for a single candidate.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is a convertible preferred stock's parity price (conversion parity)?",
+      "back": "Parity price = market price of common \u00d7 conversion ratio. It is the price at which the preferred and common would have equal value. If the convertible's market price exceeds parity, it trades at a premium; if below, at a discount.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "scenario",
+      "front": "A convertible preferred ($100 par) is convertible into 4 shares of common. The common trades at $28. What is the parity price of the preferred?",
+      "back": "Parity = $28 \u00d7 4 = $112. The preferred would have to trade at $112 to be at parity with the common.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is treasury stock and what rights does it carry?",
+      "back": "Treasury stock = shares previously issued and repurchased by the issuer. It has NO voting rights, receives NO dividends, and is not used in EPS calculations. It reduces shares outstanding but not authorized.",
+      "citation": "17 CFR 240.10b-18",
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What does SEC Rule 10b-18 provide for issuers repurchasing their own equity securities?",
+      "back": "Rule 10b-18 provides a non-exclusive safe harbor from market manipulation liability for issuers repurchasing their own common stock, provided the purchases meet conditions on manner, timing, price, and volume.",
+      "citation": "17 CFR 240.10b-18",
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2262, what disclosure is required when a member firm is controlled by, controls, or is under common control with the issuer of a security?",
+      "back": "Before entering into any contract for the purchase or sale of that security, the member must disclose the control relationship to the customer. If not made in writing, it must be supplemented by written disclosure at or before completion of the transaction.",
+      "citation": "Rule 2262",
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Authorized, issued, outstanding, and treasury shares",
+      "back": "Authorized: max shares the charter permits the company to issue. Issued: shares actually sold/distributed. Outstanding: issued shares held by the public (issued \u2212 treasury). Treasury: issued shares repurchased by the company.",
+      "citation": null,
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "What is a tender offer?",
+      "back": "A public offer by an acquirer (or the issuer itself) to purchase shares from existing shareholders at a specified price, usually at a premium to market, within a stated time period. Subject to SEC Williams Act rules including minimum offering periods and disclosure requirements.",
+      "citation": null,
+      "unit": 2
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12473,
+    "output": 3602
+  },
+  "cost_usd": 0.4572
+}

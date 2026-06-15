@@ -3,161 +3,742 @@
   "unit_name": "Customer Accounts",
   "sections": [
     {
-      "title": "Lesson 6.1: Nonqualified Accounts",
-      "overview": "Nonqualified accounts are non-retirement accounts that may or may not be tax-deferred. This lesson covers individual, joint, business, trust, custodial, and education accounts, along with key account features such as TOD designations and powers of attorney. Mastery of ownership transfer rules at death and the documentation required for each account type is essential.",
+      "title": "1. Account Opening Fundamentals and New Account Form",
+      "overview": "Before any securities transaction, a broker-dealer must open an account that captures customer identity, financial profile, and investment objectives. FINRA Rule 4512 prescribes the content of the new account record, and Rule 2090 (Know Your Customer) requires the firm to use reasonable diligence to know the essential facts of every customer. Account opening also triggers federal Customer Identification Program (CIP) duties under the USA PATRIOT Act.",
       "key_concepts": [
-        "Individual account: one beneficial owner; assets pass through estate at death unless TOD added.",
-        "Joint account: two or more adult co-owners; all signatures required to open; checks payable to all registered names and endorsed by all; mail to single address acceptable.",
-        "JTWROS (Joint Tenants with Right of Survivorship): undivided equal interest; deceased tenant's share passes to surviving tenant(s); common for spouses.",
-        "TIC (Tenants in Common): each tenant owns a specified fractional interest; deceased tenant's portion goes to that tenant's estate (account frozen until estate paperwork processed); assumed equal if no agreement.",
-        "TOD (Transfer on Death): bypasses probate but NOT estate tax; available on individual and JTWROS accounts; on joint accounts, TOD activates only after the last surviving tenant dies.",
-        "Power of Attorney (POA): written authorization for a non-owner to access an account; granted to a person, not a firm; carries fiduciary duty; all POAs terminate upon death of either party.",
-        "Full POA (FPOA): may deposit, withdraw, and trade; rarely approved for an RR over a non-family account.",
-        "Limited POA (LPOA): trading authority only \u2014 no withdrawals (also called limited trading authorization).",
-        "Durable POA: survives the grantor's incapacity but still terminates at death.",
-        "Sole Proprietor / d/b/a accounts: owned by individual; checks may be payable to owner or business name.",
-        "Partnership account: requires written partnership agreement and authorization naming who may trade; amended annually if changes occur; partnership agreement must permit margin if desired.",
-        "Corporate account: requires copy of the corporate charter (proof of existence) AND corporate resolution (authorizes account and designates persons who may trade); charter must permit margin if desired.",
-        "Trust roles: Grantor/Settlor (creates and funds), Trustee (manages), Beneficiary (benefits).",
-        "Living trust: created and funded during grantor's lifetime; Decedent's trust: funded via will/estate after death.",
-        "Revocable trust: grantor may modify or revoke; assets remain in grantor's estate; grantor is often also trustee and beneficiary.",
-        "Irrevocable trust: cannot be modified; grantor relinquishes control; assets may be removed from estate (grantor cannot also serve as trustee or beneficiary for estate-tax exclusion).",
-        "Custodial accounts (UGMA/UTMA): one custodian, one minor beneficiary; minor's SSN used; income taxed at minor's rate; opened only as CASH accounts.",
-        "UTMA: allows real estate; assets held in custodial name until age 21\u201325 depending on state.",
-        "UGMA: no real estate; assets pass to minor at age of majority (now offered in only one state).",
-        "Custodial restrictions: no margin, no naked options, no short sales, no speculative investments; covered call writing permitted; cash proceeds and dividends must be reinvested within a reasonable time; rights/warrants must be exercised or sold.",
-        "Custodian may be reimbursed for expenses; donor-custodian may NOT be compensated, only reimbursed.",
-        "Coverdell ESA: $2,000/year max per beneficiary until age 18; after-tax contributions; tax-free qualified withdrawals for K\u201312 and college; account must be depleted or rolled by age 30.",
-        "Fiduciary accounts: include trustees, executors, administrators, guardians, custodians, receivers, conservators; subject to prudent investor rule; margin only if expressly authorized in documents.",
-        "Numbered accounts: permitted only with written acknowledgment of ownership on file; used for privacy."
+        "Essential customer information collected at account opening: full legal name, DOB, address (physical, not P.O. box), SSN/TIN, citizenship, employment, occupation, marital status, dependents, annual income, net worth, liquid net worth, investment objectives, risk tolerance, investment experience, time horizon, tax status.",
+        "Customer signature is NOT required to open a cash account; the firm must obtain the customer's signature for margin and options accounts.",
+        "Required signatures on the new account form: registered representative (RR) introducing the account and a principal who approves the account in writing.",
+        "Account record must be updated and verified at least every 36 months under Rule 4512.",
+        "Form CRS (Customer/Client Relationship Summary) must be delivered to retail investors at or before the recommendation/account opening (17 CFR 240.17a-14).",
+        "Reg BI (17 CFR 240.15l-1) applies to recommendations of securities or account types to retail customers.",
+        "Customer Identification Program (CIP) under USA PATRIOT Act \u00a7326 requires verification of identity, checks against government lists (OFAC SDN list), and recordkeeping."
       ],
       "rules": [
-        "JTWROS \u2014 all tenants own an undivided equal interest; survivor takes all.",
-        "TIC \u2014 each tenant must specify a percentage of interest; decedent's share to estate.",
-        "TOD \u2014 avoids probate but not estate tax; available on individual and JTWROS only.",
-        "All POAs end upon death of either party, including durable POAs.",
-        "Corporate margin requires corporate charter to NOT prohibit margin; partnership margin requires partnership agreement to NOT prohibit margin; trust margin requires the trust document to SPECIFICALLY ALLOW margin.",
-        "Custodial accounts are cash accounts only \u2014 no margin, no pledging as collateral.",
-        "Coverdell nonqualified distributions: ordinary income tax plus 10% penalty on earnings.",
-        "Fiduciary may not share in account profits but may charge reasonable fees."
+        "FINRA Rule 4512 \u2014 Customer Account Information (content and 36-month update of account record).",
+        "FINRA Rule 2090 \u2014 Know Your Customer (essential facts about every customer).",
+        "FINRA Rule 2111 \u2014 Suitability (reasonable basis, customer-specific, quantitative).",
+        "17 CFR 240.17a-3 \u2014 broker-dealer recordmaking requirements for account records.",
+        "17 CFR 240.17a-14 \u2014 Form CRS preparation, filing, and delivery.",
+        "17 CFR 240.15l-1 \u2014 Regulation Best Interest.",
+        "USA PATRIOT Act \u00a7326 \u2014 Customer Identification Program."
+      ],
+      "formulas": [
+        "Liquid Net Worth = Net Worth - Illiquid Assets (e.g., home equity, retirement accounts not yet accessible)."
+      ],
+      "mnemonics": [
+        "\"NAB CARE\": Name, Address, Birthdate (DOB), Citizenship, Affiliation/employment, RR/principal signatures, Essential facts \u2014 items captured on the new account form.",
+        "Three rules every account needs: 2090 (KYC) + 2111 (Suitability) + 15l-1 (Reg BI) = the \"recommendation triangle.\""
+      ]
+    },
+    {
+      "title": "2. Account Registrations \u2014 Individual, Joint, and Power of Attorney",
+      "overview": "The form of account ownership determines who can trade, who receives proceeds, and what happens at death. The two principal individual ownership structures are single-name and joint accounts; joint accounts further divide into JTWROS and TIC. A power of attorney (POA) lets a third party act on the account but terminates at the customer's death or incompetence (unless durable).",
+      "key_concepts": [
+        "Individual account: one owner, sole trading authority, assets pass via will/probate at death.",
+        "Joint Tenants with Right of Survivorship (JTWROS): equal undivided interest; at death of one tenant, assets pass automatically to surviving tenant(s), bypassing probate. Common between spouses.",
+        "Tenants in Common (TIC): fractional, specified interests; at death of one tenant, that tenant's share passes to his/her estate, not to the co-tenant.",
+        "In any joint account, any tenant may enter orders, but checks/securities distributions must be in the name of ALL tenants.",
+        "Transfer on Death (TOD) is a beneficiary designation available on individual or joint accounts that passes assets directly to named beneficiaries at death, avoiding probate.",
+        "Full POA (full trading authorization): third party may trade AND withdraw cash/securities.",
+        "Limited POA (limited trading authorization): third party may only trade; cannot withdraw funds.",
+        "A non-durable POA terminates upon the grantor's death or incapacity; a durable POA survives incapacity but still terminates at death.",
+        "Discretionary authorization granted to the broker-dealer/RR requires its own written authorization from the customer (separate concept from POA)."
+      ],
+      "rules": [
+        "FINRA Rule 4512 \u2014 recordkeeping of authorized persons (POA holders, trustees, etc.).",
+        "FINRA Rule 3260 \u2014 discretionary accounts (written authorization required before exercise of discretion; principal review)."
       ],
       "formulas": [],
       "mnemonics": [
-        "JTWROS = 'Joint Together With Right Of Survivorship' \u2014 survivor takes all (Undivided interest).",
-        "TIC = 'To-the-Individual's-estate Coverage' \u2014 fractional interest goes to estate.",
-        "POA dies when either Person dies (Owner or Attorney).",
-        "Trust margin permission rule: 'Trust must SAY YES' (silence = no); Partnership/Corporate rule: 'must not SAY NO' (silence = yes)."
+        "JTWROS = \"Joint Till Widow Receives Other Spouse\" \u2014 survivorship.",
+        "TIC = \"To estate, In Common\" \u2014 share passes to decedent's estate.",
+        "POA dies with the principal: \"No pulse, No POA.\""
       ]
     },
     {
-      "title": "Lesson 6.2: Qualified Accounts",
-      "overview": "Qualified accounts are retirement vehicles that offer tax-deferred growth and are governed by IRS contribution, distribution, and RMD rules. This lesson covers Traditional and Roth IRAs as well as employer-sponsored defined benefit and defined contribution plans. Note that under SECURE 2.0, the RMD beginning age is now 73 (rising to 75 in 2033) and the RMD shortfall penalty is now 25% (10% if timely corrected).",
+      "title": "3. Business, Trust, and Partnership Accounts",
+      "overview": "Entity accounts require documentation that establishes the entity's existence and identifies who is authorized to trade on its behalf. Corporate accounts trading on margin or in options require additional charter/board approval. Trust accounts are governed by the trust instrument, which defines trustee powers and beneficiary rights.",
       "key_concepts": [
-        "IRAs technically are not 'qualified' plans (no employer sponsor) but follow similar contribution and distribution rules.",
-        "Contributions must come from EARNED INCOME (salary, wages, tips, self-employment) \u2014 not from dividends, interest, or capital gains.",
-        "No age limit for contributing to either Traditional or Roth IRA (SECURE Act).",
-        "Catch-up contribution for age 50+: indexed in $100 increments under SECURE 2.0 (e.g., $1,100 for tax year 2026); the specific dollar limit is generally not tested.",
-        "Traditional IRA: contributions may be tax-deductible (deductibility phases out with AGI if covered by another qualified plan); growth tax-deferred; distributions taxed as ordinary income.",
-        "Roth IRA: contributions NOT deductible (after-tax); growth tax-deferred; qualified distributions are tax-free; contribution eligibility phases out at higher AGI.",
-        "Roth and Traditional share a combined annual contribution limit across all IRAs owned.",
-        "Permissible IRA investments: stocks, bonds, mutual funds, UITs, government securities, U.S.-minted gold/silver coins, annuities.",
-        "Prohibited IRA investments: collectibles, life insurance, antiques, gems, rare coins, stamps, artwork.",
-        "Inappropriate IRA practices: short sales, speculative options, margin trading, municipal securities (tax-exempt status wasted); covered calls permitted.",
-        "Rollover: customer takes possession of funds; must redeposit within 60 calendar days; one rollover per rolling 12-month period (per person across all IRAs).",
-        "Transfer (custodian-to-custodian / direct rollover): unlimited; assets move directly between custodians.",
-        "Pre-59\u00bd withdrawal: 10% penalty + ordinary income tax. Exceptions to penalty: death, disability, first-time home purchase (up to $10,000), qualified education expenses, medical insurance for unemployed, medical expenses exceeding AGI threshold.",
-        "RMD beginning age: 73 (under SECURE 2.0, for those reaching 72 after 12/31/2022); rises to 75 for those reaching 74 after 12/31/2032.",
-        "First RMD may be delayed until April 1 of the year following the year the owner reaches the RMD age \u2014 but a second RMD will be required by December 31 of that same year.",
-        "RMD shortfall penalty: 25% of the shortfall (reduced from 50% by SECURE 2.0); further reduced to 10% if corrected within the IRS correction window.",
-        "RMDs across multiple Traditional IRAs may be aggregated and taken from any one or combination of accounts.",
-        "Roth IRA qualified distribution requirements: account held 5+ years AND owner is age 59\u00bd+, deceased, disabled, or first-time homebuyer (up to $10,000).",
-        "Roth IRAs have NO RMDs during the owner's lifetime.",
-        "Excess IRA contributions: 6% penalty per year on the excess until withdrawn.",
-        "Defined Benefit Plan (pension): formula-based benefit at retirement (typically based on years of service, age, salary); employer bears investment risk; uses actuary to determine funding.",
-        "Defined Contribution Plan: contributions defined; benefit varies with investment performance; employee bears investment risk; assets portable.",
-        "Examples of defined contribution plans: 401(k), 403(b), profit-sharing, money purchase, SIMPLE plans.",
-        "Private pension payments are fixed (purchasing-power risk); government pensions often have COLA."
+        "Corporate cash account: requires corporate resolution naming officers authorized to trade.",
+        "Corporate margin/options account: additionally requires corporate charter/bylaws permitting margin trading or options.",
+        "Partnership account: requires a copy of the partnership agreement identifying authorized partners; firm should review periodically (partnership agreement amendments are required as members change).",
+        "Trust account: requires trust agreement (or certification of trust) identifying trustee(s), settlor/grantor, beneficiaries, and trustee powers (including authority to trade securities, margin, options).",
+        "Revocable (\"living\") trust: grantor retains the power to amend/revoke; trust assets are includible in grantor's estate; grantor's SSN typically used; for tax purposes treated as grantor's assets.",
+        "Irrevocable trust: grantor relinquishes control; trust is a separate taxable entity (uses its own TIN); assets generally removed from grantor's estate.",
+        "Testamentary trust: created by will, takes effect at death.",
+        "Trustee owes fiduciary duty (prudent investor rule) \u2014 must invest in accordance with trust terms and for the benefit of beneficiaries.",
+        "Estate accounts: opened by executor/administrator with letters testamentary or letters of administration; typically invested conservatively pending distribution."
       ],
       "rules": [
-        "IRA contributions require earned income.",
-        "Rollovers: 60 calendar days; one per rolling 12-month period per person.",
-        "Pre-59\u00bd distributions: 10% penalty unless exception applies.",
-        "RMDs begin at age 73 (SECURE 2.0); shortfall penalty 25% (10% if timely corrected).",
-        "Roth qualified distribution: 5-year holding period AND a triggering event (59\u00bd, death, disability, first home).",
-        "Excess contribution penalty: 6% per year until removed.",
-        "Life insurance and collectibles prohibited in IRAs."
+        "FINRA Rule 4512 \u2014 required documentation/authorized persons for entity accounts.",
+        "USA PATRIOT Act \u00a7326 \u2014 CIP also applies to entities; beneficial-owner identification under FinCEN CDD rule."
       ],
-      "formulas": [
-        "Defined Benefit Example: Annual Benefit = Years of Service \u00d7 Benefit Percentage \u00d7 Final Average Salary (capped at plan maximum)",
-        "RMD = Prior Year-End Account Balance / IRS Life Expectancy Factor"
-      ],
+      "formulas": [],
       "mnemonics": [
-        "Roth Qualified = '5 + 1' \u2014 5-year holding PLUS one triggering event (59\u00bd, death, disability, first-home $10K).",
-        "IRA prohibited: 'CLAMS' \u2014 Collectibles, Life insurance, Antiques, Margin/Munis, Speculation.",
-        "DB = 'Defined Benefit, Boss's Burden' (employer bears risk); DC = 'Defined Contribution, Customer's Concern' (employee bears risk).",
-        "Rollover rule: '60-1-1' \u2014 60 days, 1 per year, 1 per person."
+        "Corporate margin account = \"Charter + Resolution + Margin agreement\" \u2014 three docs.",
+        "Revocable = Reversible (control retained); Irrevocable = Irreversible (control gone, estate gone)."
       ]
     },
     {
-      "title": "Lesson 6.3: Account Features",
-      "overview": "This lesson covers the operational features of brokerage accounts: cash vs. margin vs. fee-based structures, the documentation and regulatory requirements for margin trading, and the rules governing solicited, unsolicited, and discretionary trades. Margin allows leverage but requires specific agreements and is governed jointly by Federal Reserve Regulation T and FINRA Rule 4210.",
+      "title": "4. Custodial Accounts \u2014 UGMA / UTMA and Education Accounts",
+      "overview": "Custodial accounts hold securities for the benefit of a minor under state law (UGMA or UTMA). The custodian \u2014 one adult \u2014 manages the account until the minor reaches the age of majority, at which point assets are transferred outright to the (now adult) beneficiary. Education-specific vehicles include Coverdell ESAs and 529 plans.",
       "key_concepts": [
-        "Cash account: full payment required by settlement date; payment under Regulation T no later than 2 business days after standard settlement (T+1 settlement \u2192 payment by T+3 under Reg T).",
-        "Accounts that MUST be cash: IRAs/retirement plans, UGMA/UTMA custodial accounts.",
-        "Long margin: customer borrows cash from BD to purchase securities; pays interest until loan repaid.",
-        "Short margin: customer borrows stock to sell short, profiting if price declines; all short sales executed in a margin account.",
-        "Leverage in margin magnifies both gains and losses (Reg T 50% effectively doubles return percentage on price movement).",
-        "Hypothecation: customer pledges securities to BD as collateral for margin loan.",
-        "Rehypothecation: BD repledges customer securities to a bank as collateral under Reg U.",
-        "Customer securities may be commingled with other customers' securities for hypothecation (with permission) but NEVER commingled with firm-owned securities.",
-        "Margin account forms: Credit Agreement (mandatory \u2014 discloses loan terms and interest), Hypothecation Agreement (mandatory \u2014 pledges securities), Consent to Loan Agreement (OPTIONAL \u2014 allows firm to lend customer securities to other parties for short sales).",
-        "Risk disclosure document required at account opening and annually thereafter.",
-        "Margin risks: customer can lose more than initial deposit; firm may liquidate without customer choosing which securities; no entitlement to extension; in-house margin can be raised without notice.",
-        "Marginable securities: exchange-listed stocks/bonds, Nasdaq stocks, FRB-approved OTC issues, warrants.",
-        "Non-marginable: options, rights, non-NMS OTC issues, insurance contracts.",
-        "Mutual funds and new issues: not marginable for purchase, but usable as collateral after 30 days of ownership.",
-        "Exempt from Reg T: U.S. Treasuries, agency issues, municipal securities (BD sets own requirements but must meet FINRA maintenance).",
-        "Initial margin deposit: greater of Reg T (50%) OR FINRA minimum ($2,000, or 100% if purchase is under $2,000).",
-        "FINRA maintenance: 25% of long market value; 30% of short market value.",
-        "Maintenance call: issued when equity drops below maintenance requirement; failure to deposit allows firm to liquidate positions.",
-        "House call: firm's stricter in-house maintenance requirement above FINRA's minimum.",
-        "Margin vs. Marginable: Margin = required equity deposit; Marginable = security eligible to serve as collateral.",
-        "Fee-based account: flat or asset-based periodic fee covers all trading; appropriate for active traders; inappropriate for buy-and-hold investors.",
-        "Solicited trade: prompted by BD or RR recommendation; must be marked 'solicited' on ticket.",
-        "Unsolicited trade: customer initiates without prompting; marked 'unsolicited.'",
-        "Discretionary trade: RR chooses one or more of the three As (Action, Amount, Asset) without customer's specific direction.",
-        "Time and price discretion is NOT considered discretion (customer may grant this freely without written authority).",
-        "Discretionary authority requires: written customer authorization PRIOR to first discretionary trade; written principal approval; principal review of each discretionary trade promptly after entry.",
-        "Discretion belongs to the representative \u2014 terminates if RR leaves the firm or dies.",
-        "Wrap account: single fee covers asset allocation, management, execution, and administration; generally an investment advisory account requiring Investment Advisers Act of 1940 registration; must disclose that components may be obtained separately for less."
+        "UGMA (Uniform Gifts to Minors Act) and UTMA (Uniform Transfers to Minors Act): one custodian, one minor per account; gifts are irrevocable.",
+        "UTMA allows a broader range of assets (real estate, art, intellectual property) and generally permits the custodian to delay transfer to the minor beyond age 18 (often to 21 or 25, per state).",
+        "Account is registered under the minor's SSN; income is taxed to the minor (subject to the \"kiddie tax\" rules).",
+        "Custodian may NOT exercise discretion on margin; UGMA/UTMA accounts are cash accounts only (no margin, no short sales, no uncovered options).",
+        "Custodian may be (but need not be) the donor or parent; only one custodian and one minor per account.",
+        "Coverdell Education Savings Account (ESA): after-tax contributions; tax-free growth and distributions for qualified education expenses (K-12 and higher ed); contribution income limits apply; must be used by age 30 (or rolled to another family member).",
+        "529 Plan: state-sponsored; two types \u2014 prepaid tuition and college savings; high contribution limits (gift-tax 5-year forward election permitted); tax-free withdrawals for qualified higher-education expenses; donor retains control even though gift is complete for federal estate purposes."
       ],
       "rules": [
-        "Regulation T (FRB): 50% initial margin requirement; payment due T+1 settlement + 2 business days = T+3.",
-        "Regulation U (FRB): governs bank loans to BDs secured by customer securities.",
-        "FINRA Rule 4210: initial minimum equity $2,000; maintenance 25% long / 30% short.",
-        "Pattern Day Trader (FINRA 4210): 4+ day trades within 5 business days requires $25,000 minimum equity.",
-        "Credit and Hypothecation agreements are MANDATORY; Consent to Loan agreement is OPTIONAL (regulatorily \u2014 firm may make it mandatory by policy).",
-        "Discretionary accounts require prior written authorization and principal approval (FINRA Rule 3260).",
-        "Solicited/unsolicited marking is required on every order ticket; mismarking is a violation."
+        "State UGMA/UTMA statutes (not federal); no margin permitted.",
+        "FINRA Rule 4512 \u2014 custodian recorded as authorized person; minor as beneficial owner."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "\"One-One-One\" rule for UGMA/UTMA: One custodian, One minor, One account.",
+        "UGMA = \"Until 18\"; UTMA = \"Until 21 (or later)\" \u2014 UTMA has the longer tail."
+      ]
+    },
+    {
+      "title": "5. Retirement Accounts \u2014 IRAs (Traditional and Roth)",
+      "overview": "IRAs are tax-advantaged accounts for individuals with earned income. Traditional IRAs offer (potentially) deductible contributions and tax-deferred growth, with taxable withdrawals; Roth IRAs offer after-tax contributions and tax-free qualified withdrawals. SECURE 2.0 made significant changes to RMD age, RMD penalties, and IRA catch-up indexing.",
+      "key_concepts": [
+        "Eligibility: must have earned income (wages, self-employment income). Investment income does not count.",
+        "Contribution limits are the same for Traditional and Roth and apply across all of an individual's IRAs combined.",
+        "Catch-up contribution available at age 50+ \u2014 indexed in $100 increments under SECURE 2.0; for 2026 the IRA catch-up is $1,100 (base $7,500, total $8,600 for 50+). (Exam typically does not test exact dollar figures.)",
+        "Traditional IRA: contributions may be deductible (phase-out depends on income and workplace plan coverage); growth tax-deferred; distributions taxed as ordinary income; 10% early withdrawal penalty before age 59\u00bd unless exception applies.",
+        "Roth IRA: contributions never deductible; AGI phase-out limits eligibility to contribute; qualified withdrawals (5-year holding + age 59\u00bd/death/disability/first-home $10,000) are tax-free; no RMDs for original owner during life.",
+        "There is NO age cap on contributions to either Traditional or Roth IRAs (SECURE Act of 2019 removed the Traditional IRA age cap).",
+        "Required Minimum Distributions (RMDs) from Traditional IRAs begin at age 73 under SECURE 2.0 (rising to 75 for individuals who reach age 74 after 12/31/2032). First RMD may be deferred until April 1 of the year following the year the owner turns 73 (the \"required beginning date\").",
+        "Penalty for missing an RMD is 25% of the shortfall (reduced to 10% if corrected within the SECURE 2.0 correction window).",
+        "Permitted IRA investments include stocks, bonds, mutual funds, ETFs, CDs, annuities. Prohibited: life insurance, collectibles (with limited exceptions for certain U.S. coins/bullion), and many alternative assets.",
+        "Excess contribution penalty: 6% per year until withdrawn.",
+        "Rollover: 60-day window once per 12 months (per-IRA-owner); direct trustee-to-trustee transfers are unlimited."
+      ],
+      "rules": [
+        "Internal Revenue Code provisions governing IRAs (referenced in FINRA SIE outline).",
+        "FINRA Rule 2111 \u2014 suitability of IRA recommendations and rollovers; 17 CFR 240.15l-1 \u2014 Reg BI applies to rollover recommendations."
       ],
       "formulas": [
-        "Required Initial Deposit = greater of (Reg T \u00d7 Purchase Price) OR FINRA Minimum ($2,000 or 100% of purchase if under $2,000)",
-        "Long Maintenance Equity = Market Value \u00d7 25% (FINRA minimum)",
-        "Short Maintenance Equity = Market Value \u00d7 30% (FINRA minimum)",
-        "Margin Return % = (Gain or Loss) / Initial Equity Deposit"
+        "Total Annual IRA Contribution (combined Traditional + Roth) \u2264 Lesser of (Earned Income, Annual Limit + Catch-up if 50+).",
+        "Missed-RMD Penalty = 25% \u00d7 (Required RMD - Amount Actually Distributed); reduced to 10% with timely correction."
       ],
       "mnemonics": [
-        "Three As of Discretion: Action, Amount, Asset (Buy/Sell, How Much, What). Time and Price are NOT discretion.",
-        "Margin forms: 'CHL' \u2014 Credit (mandatory), Hypothecation (mandatory), Loan consent (optional).",
-        "Reg T vs. Reg U: T = Trader (BD to customer); U = Underlying bank loan (Bank to BD).",
-        "Marginable rights/options test: 'RIO is OUT' \u2014 Rights, Insurance, Options are NOT marginable.",
-        "Initial deposit decision tree: '>$4K = 50%; $2K\u2013$4K = $2,000; <$2K = 100%.'"
+        "\"73 \u2192 75\": RMD age stair-steps under SECURE 2.0.",
+        "Roth = \"Pay now, free later\"; Traditional = \"Skip now, pay later\".",
+        "\"LCD\" \u2014 items NOT allowed in IRAs: Life insurance, Collectibles, Derivatives (uncovered)."
+      ]
+    },
+    {
+      "title": "6. Qualified Employer Plans \u2014 DB, DC, and Other Plan Types",
+      "overview": "Employer-sponsored qualified plans receive favorable tax treatment under ERISA and the Internal Revenue Code. The fundamental dichotomy is defined-benefit (DB) vs. defined-contribution (DC). DB plans promise a specified retirement benefit; DC plans specify the contribution but leave investment risk and ultimate benefit to the participant.",
+      "key_concepts": [
+        "Defined Benefit (DB) Plan: employer promises a specified monthly benefit at retirement (often a formula based on years of service and final salary). Employer bears investment risk; PBGC insures most private DB plans. Contributions actuarially determined.",
+        "Defined Contribution (DC) Plan: employer (and often employee) contributes a defined amount; participant's retirement benefit depends on investment performance. Employee bears investment risk. Examples: 401(k), 403(b), 457, profit-sharing, money-purchase, ESOP.",
+        "401(k): private-sector salary-deferral plan; may include employer match; participant directs investments from menu of options; loans permitted by plan; pre-tax and Roth deferral options.",
+        "403(b) (TSA): for public school employees and 501(c)(3) employees; investments limited to mutual funds and annuities.",
+        "457: for state/local government and certain tax-exempt employees; no 10% early-withdrawal penalty on governmental 457 distributions.",
+        "SEP-IRA: simplified for small employers; employer-funded; high contribution limits; immediate vesting.",
+        "SIMPLE IRA: small employer (\u2264100 employees); employee salary deferral + mandatory employer contribution.",
+        "ERISA requirements: eligibility (commonly age 21 + 1 year of service), vesting schedules (cliff or graded), nondiscrimination, fiduciary duty, written plan document, summary plan description, reporting (Form 5500).",
+        "Qualified plans are pre-tax and tax-deferred; non-qualified plans use after-tax dollars and are not subject to ERISA's full requirements (e.g., deferred-comp, payroll deduction)."
+      ],
+      "rules": [
+        "ERISA (referenced in SIE outline as governing qualified plans).",
+        "FINRA Rule 3210 \u2014 accounts opened by associated persons at other firms; ERISA accounts may interact with this rule via plan trustees."
+      ],
+      "formulas": [
+        "Generic DB formula: Annual Benefit = Benefit % \u00d7 Years of Service \u00d7 Final Average Salary."
+      ],
+      "mnemonics": [
+        "DB = \"Defined Benefit, Employer Bears risk\"; DC = \"Defined Contribution, Employee Bears risk.\"",
+        "ERISA pillars (\"PVFRD\"): Participation, Vesting, Funding, Reporting, Disclosure."
+      ]
+    },
+    {
+      "title": "7. Cash, Margin, Fee-Based, and Options Accounts",
+      "overview": "Cash accounts require full payment for purchases; margin accounts permit the customer to borrow from the broker-dealer to buy securities, subject to Reg T and FINRA maintenance requirements. Options and margin both require specialized agreements and approvals. Fee-based accounts charge an asset-based fee in lieu of commissions.",
+      "key_concepts": [
+        "Cash account: customer pays in full; no borrowing. UGMA/UTMA, IRAs, and most retirement accounts must be cash.",
+        "Margin account documents: Credit Agreement (terms of loan, interest), Hypothecation Agreement (customer pledges securities as collateral), and (optional but common) Loan Consent (permits firm to lend the customer's securities).",
+        "Regulation T initial margin requirement (Fed Board): 50% on marginable equity securities.",
+        "FINRA minimum equity to open a long margin account: $2,000 (but not more than 100% of the purchase price).",
+        "FINRA maintenance margin: 25% of long market value; 30% of short market value.",
+        "Pattern Day Trader (PDT) \u2014 4 or more day trades in 5 business days (if day trades > 6% of total trades). PDTs must maintain minimum equity of $25,000 in the margin account (FINRA Rule 4210).",
+        "Options account: requires Options Account Agreement (signed and returned within 15 days of account approval), delivery of Options Disclosure Document (ODD) at or before approval, and ROP (Registered Options Principal) written approval.",
+        "Fee-based (\"wrap\") account: flat percentage of AUM in lieu of commissions; appropriate only when trading activity and services justify the fee \u2014 otherwise a reverse-churning risk.",
+        "Prime brokerage: customer designates one BD as prime broker to clear/finance trades executed at multiple executing brokers."
+      ],
+      "rules": [
+        "FINRA Rule 4210 \u2014 margin requirements (initial $2,000, 25%/30% maintenance, PDT $25,000).",
+        "FINRA Rule 2360 (Options) \u2014 options account approval and ODD delivery (referenced via outline)."
+      ],
+      "formulas": [
+        "Long Account Equity = LMV (Long Market Value) - DR (Debit Balance).",
+        "Short Account Equity = CR (Credit Balance) - SMV (Short Market Value).",
+        "Reg T Call (initial) = 50% \u00d7 Purchase Price - Equity Deposited.",
+        "Long Maintenance Call triggered when Equity < 25% \u00d7 LMV; Short Maintenance Call triggered when Equity < 30% \u00d7 SMV.",
+        "Long Margin Call Price = Debit / (1 - Maintenance %) = DR / 0.75.",
+        "Short Margin Call Price = Credit / (1 + Maintenance %) = CR / 1.30."
+      ],
+      "mnemonics": [
+        "Margin docs: \"CHL\" \u2014 Credit, Hypothecation, Loan consent.",
+        "Maintenance: \"25 Long, 30 Short.\"",
+        "PDT: \"4 in 5 = $25K.\""
+      ]
+    },
+    {
+      "title": "8. Discretionary vs. Non-Discretionary Accounts",
+      "overview": "An order is discretionary if the registered representative decides any of the three A's \u2014 Action (buy/sell), Asset (security), or Amount (quantity) \u2014 without specific customer instruction. Discretion requires prior written authorization and ongoing principal review; time and price alone are not considered discretion.",
+      "key_concepts": [
+        "Three A's of discretion: Action, Asset, Amount. If customer specifies all three, an order is not discretionary even if the RR chooses time/price.",
+        "Discretionary trading requires written authorization (POA or trading authorization) from the customer BEFORE the first discretionary trade.",
+        "Each discretionary order must be marked \"discretionary\" on the order ticket.",
+        "Principal must review discretionary orders frequently; firm must have procedures to detect excessive trading (churning) \u2014 Rule 2111 quantitative suitability.",
+        "Time/price discretion (\"buy 100 XYZ at a good price today\") is NOT considered formal discretion and does not require written authorization, but is good for that day only unless evidenced in writing as not-held."
+      ],
+      "rules": [
+        "FINRA Rule 3260 \u2014 discretionary accounts: prior written authorization; firm acceptance in writing; principal review; prohibition against excessive trading.",
+        "FINRA Rule 2111 \u2014 quantitative suitability prohibits excessive trading.",
+        "FINRA Rule 2010 \u2014 standards of commercial honor; FINRA Rule 2020 \u2014 manipulative and fraudulent devices."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Discretion = \"AAA\" \u2014 Action, Asset, Amount.",
+        "Three signatures, three steps for a discretionary account: Customer (writes auth) \u2192 Principal (accepts in writing) \u2192 Order ticket (marked \"D\")."
+      ]
+    },
+    {
+      "title": "9. Anti-Money Laundering (AML) \u2014 Compliance Program, SAR, CTR, OFAC",
+      "overview": "The Bank Secrecy Act and USA PATRIOT Act require broker-dealers to maintain a written AML compliance program designed to detect and report money laundering and terrorist financing. Money laundering occurs in three stages \u2014 placement, layering, integration \u2014 and is reported through SARs (suspicious activity) and CTRs (large cash transactions) filed with FinCEN.",
+      "key_concepts": [
+        "Money laundering: the process of disguising the illicit origin of funds so they appear legitimate.",
+        "Three stages: (1) Placement \u2014 physical introduction of illicit cash into the financial system; (2) Layering \u2014 series of transactions designed to obscure the audit trail (structuring is a layering technique); (3) Integration \u2014 funds re-enter the legitimate economy as apparently clean assets.",
+        "Required elements of a firm's written AML program (USA PATRIOT Act \u00a7352): (a) internal policies and procedures; (b) designated AML Compliance Officer; (c) ongoing employee training; (d) independent annual audit/testing; (e) risk-based CIP and customer due diligence.",
+        "Customer Identification Program (CIP) under \u00a7326: verify identity (name, DOB, address, SSN/TIN), check against government lists.",
+        "FinCEN (Financial Crimes Enforcement Network), bureau of Treasury, administers the BSA.",
+        "Suspicious Activity Report (SAR): filed with FinCEN for suspicious transactions aggregating $5,000 or more involving a BD; must be filed within 30 calendar days of detection. SARs are CONFIDENTIAL \u2014 firm may not disclose SAR filing to the subject.",
+        "Currency Transaction Report (CTR): filed for cash transactions exceeding $10,000 in a single business day. Structuring (breaking into smaller deposits to evade the $10,000 threshold) is itself a federal crime.",
+        "Section 314(a): law enforcement may request information through FinCEN from financial institutions about suspected money launderers/terrorists. Section 314(b): voluntary information sharing among financial institutions (with safe harbor) for AML purposes.",
+        "OFAC (Office of Foreign Assets Control, Treasury): administers economic sanctions; firm must check customers and transactions against the SDN (Specially Designated Nationals and Blocked Persons) list. Hits must be blocked/rejected and reported."
+      ],
+      "rules": [
+        "USA PATRIOT Act \u00a7326 \u2014 Customer Identification Program.",
+        "USA PATRIOT Act \u00a7352 \u2014 required AML compliance program.",
+        "USA PATRIOT Act \u00a7314 \u2014 cooperative information sharing (314(a) gov't-to-FI; 314(b) FI-to-FI).",
+        "FINRA Rule 3310 \u2014 AML compliance program; mirrors \u00a7352 requirements; designation of AML compliance officer; annual independent testing."
+      ],
+      "formulas": [
+        "SAR trigger: suspicious transaction \u2265 $5,000 \u2014 file within 30 days of detection.",
+        "CTR trigger: cash transactions > $10,000 in one business day (same customer)."
+      ],
+      "mnemonics": [
+        "Stages of laundering: \"PLI\" \u2014 Placement \u2192 Layering \u2192 Integration.",
+        "AML program 4 pillars + CIP: \"P-CAT + ID\" \u2014 Policies, Compliance officer, Audit (annual), Training, plus CIP/CDD.",
+        "Thresholds: \"5/30 = SAR; 10K/Day = CTR.\""
+      ]
+    },
+    {
+      "title": "10. Books, Records, and Customer Communications",
+      "overview": "Broker-dealers must create and preserve records of customer accounts, transactions, and communications. Two SEC rules \u2014 17a-3 (records to be made) and 17a-4 (records to be preserved) \u2014 set the basic standards, supplemented by FINRA Rules 4511 (general retention), 4512 (account information), and 4514 (signed authorizations).",
+      "key_concepts": [
+        "Records to be made (17 CFR 240.17a-3): blotters, general ledger, customer ledgers, order tickets, trade confirmations, account records, compensation records, etc.",
+        "Records to be preserved (17 CFR 240.17a-4): general retention periods include 6 years for blotters and customer account ledgers; 3 years for most other records; lifetime of the enterprise + 3 years for organizational documents (e.g., partnership/corporate articles, minute books).",
+        "First 2 years of retained records must be kept in an easily accessible place.",
+        "Electronic records must be preserved in a non-rewriteable, non-erasable (WORM) format under 17a-4(f).",
+        "FINRA Rule 4511 \u2014 general books-and-records retention default: 6 years if not specified elsewhere.",
+        "FINRA Rule 4512 \u2014 Customer Account Information (content; update every 36 months).",
+        "FINRA Rule 4514 \u2014 authorization required for drawing checks/drafts on customer accounts.",
+        "Trade confirmations under 17 CFR 240.10b-10 must disclose: trade date, settlement date, security, price, quantity, capacity (agent vs. principal), commission, yield (for bonds), source/amount of remuneration where applicable. Delivered at or before completion of the transaction (settlement).",
+        "Account statements under FINRA Rule 2231: delivered at least quarterly; monthly if there is activity in the account. Must show all securities positions, account balances, and activity since last statement.",
+        "Holding customer mail \u2014 FINRA Rule 3150: firm may hold mail at customer's written instruction for up to 3 months (or up to 3 years for customer traveling abroad)."
+      ],
+      "rules": [
+        "17 CFR 240.17a-3 \u2014 records to be made.",
+        "17 CFR 240.17a-4 \u2014 records to be preserved (WORM; first 2 years easily accessible).",
+        "17 CFR 240.10b-10 \u2014 confirmations.",
+        "FINRA Rule 4511 \u2014 general books-and-records retention.",
+        "FINRA Rule 4512 \u2014 customer account information; 36-month update.",
+        "FINRA Rule 4514 \u2014 authorization for drawing checks.",
+        "FINRA Rule 2231 \u2014 account statements (quarterly minimum; monthly with activity).",
+        "FINRA Rule 2232 \u2014 customer confirmations supplement.",
+        "FINRA Rule 3150 \u2014 holding of customer mail."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "\"6-3-Life\": 6 years (blotters/ledgers), 3 years (general records), Life+3 (organizational docs).",
+        "Statements: \"Q always, M with Activity\" \u2014 Quarterly minimum; Monthly if activity."
+      ]
+    },
+    {
+      "title": "11. Privacy \u2014 Regulation S-P and Business Continuity",
+      "overview": "Regulation S-P protects the privacy of nonpublic personal information (NPI) of customers and consumers of broker-dealers. It requires initial and annual privacy notices, an opt-out right before sharing NPI with non-affiliated third parties, and reasonable safeguards (the \"Safeguard Rule\"). Firms must also maintain a Business Continuity Plan (BCP).",
+      "key_concepts": [
+        "Nonpublic Personal Information (NPI): any personally identifiable financial information that is not publicly available (e.g., SSN, account number, balances, transaction history).",
+        "Initial privacy notice: provided when the customer relationship is established.",
+        "Annual privacy notice: provided to customers (not consumers) at least once in any 12-month period.",
+        "Opt-out: before sharing NPI with non-affiliated third parties for marketing purposes, the firm must provide notice and a reasonable opportunity to opt out (does not apply to affiliates or to disclosures necessary to service the account).",
+        "Safeguard Rule: firm must adopt written policies/procedures reasonably designed to protect customer records and information.",
+        "Disposal Rule: firm must properly dispose of consumer report information to prevent unauthorized access.",
+        "Business Continuity Plan (BCP) \u2014 FINRA Rule 4370: written plan addressing data backup/recovery, mission-critical systems, financial/operational assessments, alternate communications with customers and employees, alternate physical location, regulatory reporting, and how the firm will assure prompt customer access to funds and securities.",
+        "BCP disclosure must be provided to customers in writing at account opening, posted on firm's website, and mailed on request.",
+        "Firm must designate two emergency contact persons (both registered principals) and update annually."
+      ],
+      "rules": [
+        "Regulation S-P (17 CFR Part 248) \u2014 privacy of consumer financial information; referenced in FINRA SIE outline 3.2.4.",
+        "FINRA Rule 4370 \u2014 Business Continuity Plans and emergency contact information."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Reg S-P trio: \"NOS\" \u2014 Notice (initial + annual), Opt-out, Safeguard.",
+        "BCP must address \"10 elements\" (Rule 4370): data backup, financial/operational assessments, alternate comms (customers/employees), alternate location, critical systems, regulatory reporting, customer access to funds \u2014 \"BCP = Be Customer Prepared.\""
+      ]
+    },
+    {
+      "title": "12. Communications with the Public, Telemarketing, and Best Interest/Suitability",
+      "overview": "FINRA Rule 2210 classifies communications into three buckets \u2014 retail, institutional, and correspondence \u2014 each with its own approval, filing, and recordkeeping requirements. Reg BI (17 CFR 240.15l-1) and Rule 2111 govern recommendations to retail customers, and Rule 3230 governs cold calls/telemarketing.",
+      "key_concepts": [
+        "Communications classifications (Rule 2210): (a) Retail communication \u2014 distributed/made available to 25 or more retail investors within any 30 calendar-day period; (b) Correspondence \u2014 to 25 or fewer retail investors in any 30 calendar-day period; (c) Institutional communication \u2014 only to institutional investors.",
+        "Retail communications generally require principal approval before first use; correspondence is subject to supervisory review under written procedures.",
+        "Recordkeeping: communications must be retained per Rule 4511 (default 3-year period; first 2 years accessible).",
+        "Telemarketing \u2014 FINRA Rule 3230: cold calls permitted only between 8:00 a.m. and 9:00 p.m. local time of the called party; must honor firm-specific and national Do-Not-Call (DNC) list (FTC/FCC); must promptly disclose caller's name, firm name, phone number/address, and purpose of call; existing customer exception (within 18 months of last transaction) and inquiry exception (3 months from inquiry).",
+        "Know Your Customer (Rule 2090): reasonable diligence to know essential facts of every customer and the authority of every person acting on the customer's behalf \u2014 applies at account opening and on an ongoing basis.",
+        "Suitability (Rule 2111) \u2014 three components: (1) Reasonable-basis suitability (the security/strategy is suitable for at least some investors); (2) Customer-specific suitability (suitable for THIS customer based on profile); (3) Quantitative suitability (series of recommended transactions not excessive when viewed together \u2014 i.e., not churning).",
+        "Regulation Best Interest (17 CFR 240.15l-1): BD and associated persons recommending securities or account types to a retail customer must act in the customer's best interest at the time of recommendation, without placing the firm's interest ahead. Four component obligations: Disclosure, Care, Conflict of Interest, and Compliance.",
+        "A \"recommendation\" is a communication that, in form and content, would reasonably be viewed as a suggestion to engage in or refrain from a securities transaction or investment strategy."
+      ],
+      "rules": [
+        "FINRA Rule 2210 \u2014 Communications with the Public (classifications, approval, filing).",
+        "FINRA Rule 2090 \u2014 Know Your Customer.",
+        "FINRA Rule 2111 \u2014 Suitability (reasonable-basis, customer-specific, quantitative).",
+        "FINRA Rule 3230 \u2014 Telemarketing (8 a.m.\u20139 p.m.; DNC; disclosures).",
+        "17 CFR 240.15l-1 \u2014 Regulation Best Interest (Disclosure, Care, Conflict, Compliance).",
+        "17 CFR 240.17a-14 \u2014 Form CRS delivery."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Communications buckets: \"25 in 30\" \u2014 over 25 retail in 30 days = Retail Comm; 25 or fewer = Correspondence.",
+        "Reg BI obligations: \"DCCC\" \u2014 Disclosure, Care, Conflict, Compliance.",
+        "Suitability tiers: \"R-C-Q\" \u2014 Reasonable basis, Customer-specific, Quantitative.",
+        "Cold call window: \"8 to 9\" local time of the called party."
+      ]
+    },
+    {
+      "title": "13. Customer Protection \u2014 Custody, SIPC, FDIC, and Senior Investor Protections",
+      "overview": "Customer assets held by a BD are protected by SEC custody rules and by SIPC insurance; bank deposits are insured by the FDIC. FINRA has adopted special rules to protect senior and vulnerable adult investors, including trusted-contact-person collection and temporary holds on disbursements where exploitation is suspected.",
+      "key_concepts": [
+        "SEC Customer Protection Rule (17 CFR 240.15c3-3) requires segregation of customer fully paid and excess margin securities and reserves for customer cash (referenced via outline 3.2.4).",
+        "SIPC (Securities Investor Protection Corporation), created by SIPA, insures customer accounts at member BDs against firm failure: up to $500,000 per separate customer, of which up to $250,000 may be cash. Does NOT insure against market loss. Commodities futures and fixed annuities are not covered.",
+        "FDIC insures bank deposits up to $250,000 per depositor per insured bank per ownership category \u2014 applicable to bank sweep programs; firms must disclose under FINRA Rule 2264.",
+        "FINRA Rule 4512(a)(1)(F) \u2014 firm must make reasonable efforts to obtain the name and contact information of a trusted contact person for each non-institutional customer account.",
+        "FINRA Rule 2165 \u2014 permits a member firm to place a temporary hold (up to 15 business days, extendable up to an additional 10 business days) on disbursement of funds or securities from the account of a Specified Adult (age 65+ or age 18+ with mental/physical impairment) when financial exploitation is reasonably believed.",
+        "Borrowing from or lending to customers: prohibited unless within narrow Rule 3240 exceptions (immediate family, customer is a financial institution, written firm procedures permit and pre-approval given).",
+        "Sharing in customer accounts (Rule 3250): prohibited unless (a) prior written authorization from customer AND firm and (b) sharing is in direct proportion to the RR's contribution (exception for immediate family for the proportional requirement).",
+        "Improper use of customer funds/securities (Rule 2150): commingling firm and customer assets prohibited; guaranteeing customer against loss prohibited."
+      ],
+      "rules": [
+        "SIPA \u2014 establishes SIPC ($500,000 total, $250,000 cash sub-limit).",
+        "FINRA Rule 2150 \u2014 improper use of customer securities/funds; no guarantee against loss; no commingling; sharing only with written authorization.",
+        "FINRA Rule 2165 \u2014 financial exploitation of specified adults (temporary holds).",
+        "FINRA Rule 2264 \u2014 disclosures regarding bank sweep programs/FDIC.",
+        "FINRA Rule 3240 \u2014 borrowing from/lending to customers (limited exceptions).",
+        "FINRA Rule 3250 \u2014 sharing in customer accounts (written consent + proportional).",
+        "FINRA Rule 4512(a)(1)(F) \u2014 trusted contact person."
+      ],
+      "formulas": [
+        "SIPC coverage per separate customer = up to $500,000 total securities + cash, of which cash \u2264 $250,000.",
+        "FDIC coverage = $250,000 per depositor, per insured bank, per ownership category."
+      ],
+      "mnemonics": [
+        "SIPC: \"500/250\" \u2014 $500K total, $250K cash.",
+        "Rule 2165 holds: \"15 + 10\" \u2014 initial 15 business days, +10 more allowed.",
+        "Senior protection toolkit: \"TC + TH\" \u2014 Trusted Contact (4512) + Temporary Hold (2165)."
+      ]
+    },
+    {
+      "title": "14. Associated-Person Accounts and Outside Brokerage Accounts",
+      "overview": "Registered persons opening securities accounts at other firms (or with the employing firm) trigger disclosure and oversight rules so that employers can supervise their associated persons' personal trading. FINRA Rules 3210 and 3050 (now 3210) and outside business activity rules ensure transparency.",
+      "key_concepts": [
+        "FINRA Rule 3210: an associated person must obtain prior WRITTEN consent from his/her employer member before opening a securities account at another firm; the executing firm must, on written request from the employer, transmit duplicate confirmations and statements.",
+        "The rule also applies to accounts of which the associated person has a beneficial interest (e.g., spouse, dependents).",
+        "Restrictions on purchasing IPOs of common stock \u2014 FINRA Rule 5130: industry insiders ('restricted persons') and immediate family members may not purchase new issue equity IPOs. Restricted persons include BDs, BD employees, finders, fiduciaries, portfolio managers, owners of BDs (10%+).",
+        "Rule 5131 \u2014 Spinning prohibition (allocations to executive officers/directors of public companies in exchange for investment banking business)."
+      ],
+      "rules": [
+        "FINRA Rule 3210 \u2014 accounts at other broker-dealers and financial institutions.",
+        "FINRA Rule 5130 \u2014 restrictions on purchase and sale of new equity IPO issues."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "3210 = \"Tell, Get Permission, Send Copies.\"",
+        "5130 = \"No new issues to insiders\" (BDs, employees, immediate family)."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 25892,
-    "output": 6115
+    "input": 13751,
+    "output": 13933
   },
-  "cost_usd": 0.847
+  "cost_usd": 1.2512
 }

@@ -3,87 +3,607 @@
   "unit_name": "Tax & Yields",
   "sections": [
     {
-      "title": "Lesson 8.1: Calculating Yields and Returns",
-      "overview": "Yield measures investment income as a percentage of the investment's cost or current market value. This lesson covers current yield (also called dividend yield for stocks), capital gains and losses generated from closing positions, and total return \u2014 which combines income with realized or unrealized gains and losses. All yield figures on the SIE are annualized.",
+      "title": "1. Yield Measures \u2014 Current Yield and Dividend Yield",
+      "overview": "Yield expresses the cash income a security pays relative to its market price. Current yield (for bonds) and dividend yield (for stocks) are the simplest income-only measures and ignore capital gain/loss at maturity or sale. Both move inversely with price.",
       "key_concepts": [
-        "Current Yield (CY) applies to both stocks and bonds; when applied to a stock dividend it is called dividend yield.",
-        "CY is always an ANNUAL figure \u2014 quarterly dividends must be multiplied by 4 before dividing by market price.",
-        "Preferred stock dividend yield: take the stated rate \u00d7 $100 par to get annual dividend, then divide by current market price.",
-        "Capital gain/loss is realized only when a position is CLOSED (sold for a long position, bought back for a short).",
-        "Adjusted cost basis = original purchase price modified by corporate actions such as stock splits or stock dividends.",
-        "Total return blends income (dividends/interest) AND capital gain or loss, expressed as a percentage of cost basis.",
-        "Total return may use realized gains/losses on closed positions OR unrealized gains/losses on open positions.",
-        "Unrealized gains/losses on open positions have no tax impact but DO count for total return."
+        "Current Yield (bonds): annual income from coupons divided by current market price; rises as bond price falls.",
+        "Dividend Yield (stocks): annualized cash dividend divided by current market price.",
+        "Nominal (Coupon) Yield: fixed at issuance; based on par value, not market price.",
+        "Inverse price/yield relationship: bond prices and yields move in opposite directions.",
+        "Yield hierarchy on a discount bond (priced below par): Nominal < Current Yield < YTM < YTC.",
+        "Yield hierarchy on a premium bond (priced above par): Nominal > Current Yield > YTM > YTC.",
+        "Par bond: Nominal = Current Yield = YTM = YTC.",
+        "Basis point = 1/100 of 1% (0.01%); 100 bps = 1%."
       ],
       "rules": [
-        "Quarterly dividends must be annualized (\u00d7 4) before computing current/dividend yield.",
-        "Cost basis must be adjusted for stock splits and stock dividends before computing gain or loss (e.g., 4:1 split reduces per-share basis to one-fourth)."
+        "FINRA SIE Outline \u00a73.1.2 \u2014 Concepts of measurement: yield, YTM, YTC, total return, basis points."
       ],
       "formulas": [
-        "Current Yield (Dividend Yield) = annual income (dollars) / current market price",
-        "Annual Dividend (preferred) = stated rate \u00d7 $100 par",
-        "Capital Gain or Loss = sales proceeds \u2212 adjusted cost basis",
-        "Adjusted Cost Basis (after stock split) = original cost basis / split ratio",
-        "Total Return = (income + capital gain or \u2212 capital loss) / cost basis",
-        "Total Return % = Total Return $ \u00f7 cost basis \u00d7 100"
+        "Current Yield = Annual Coupon Interest / Current Market Price",
+        "Dividend Yield = Annual Dividend per Share / Current Market Price",
+        "Nominal (Coupon) Yield = Annual Coupon Interest / Par Value",
+        "1 Basis Point = 0.01% = 0.0001"
       ],
       "mnemonics": [
-        "\"CY = AIM\": Annual Income \u00f7 Market price.",
-        "\"TR = IGC\": Income + Gains \u00f7 Cost basis = Total Return.",
-        "Quarterly dividend? \"Times 4 before you score.\""
+        "Discount bond yield ladder \"NC-Y-C\" (low\u2192high): Nominal, Current, YTM, YTC \u2014 premium bond reverses the order.",
+        "\"PRICE DOWN = YIELD UP\" \u2014 bond seesaw."
       ]
     },
     {
-      "title": "Lesson 8.2: Taxation",
-      "overview": "Ordinary income is the combination of earned, investment (portfolio), and passive income, and it determines an investor's marginal tax rate. Capital gains are split between short-term (\u22641 year, taxed as ordinary income) and long-term (>1 year, taxed at preferential 0%/15%/20% rates). This lesson also covers offsetting losses against gains, the $3,000 ordinary-income offset with indefinite carryforward, and the 30-day wash sale rule.",
+      "title": "2. Yield to Maturity (YTM) and Yield to Call (YTC)",
+      "overview": "YTM and YTC are total-return-to-redemption measures that include both coupon income and the amortization of any premium or accretion of any discount over the remaining life of the bond. They are the yields most often quoted to investors and assume reinvestment of coupons at the same rate.",
       "key_concepts": [
-        "Ordinary Income = Earned Income + Investment (Portfolio) Income + Passive Income + Short-Term Capital Gains.",
-        "Earned Income: salary, wages, bonuses, tips, self-employment income \u2014 only earned income qualifies for IRA contributions.",
-        "Investment/Portfolio Income: dividends and interest from securities held.",
-        "Passive Income: from DPPs (limited partnerships) and certain real estate; passive LOSSES may offset ONLY passive income.",
-        "Short-Term Capital Gain: position held one year or less \u2014 taxed as ordinary income.",
-        "Long-Term Capital Gain: position held MORE THAN one year \u2014 taxed at preferential 0%, 15%, or 20% rates (brackets indexed annually).",
-        "Net Investment Income Tax (NIIT) of 3.8% applies to investment income above MAGI thresholds, on top of capital gains rates.",
-        "Qualified Dividends are taxed at long-term capital gains rates IF the investor held the underlying common stock more than 60 days within the 121-day window surrounding the ex-dividend date.",
-        "Capital losses offset capital gains dollar-for-dollar; excess losses may offset up to $3,000 of ordinary income per year.",
-        "Unused capital losses carry forward INDEFINITELY (no time limit) to future tax years.",
-        "Unrealized gains/losses on open positions have NO tax consequences.",
-        "Wash Sale Rule: a loss is DISALLOWED if the investor buys back the same or substantially identical security within 30 days BEFORE or AFTER the sale (61-day window total).",
-        "Disallowed wash-sale loss is added to the cost basis of the replacement security (not lost \u2014 deferred).",
-        "Substantially identical securities include call options, rights, warrants, and convertible securities (bonds or preferred) of the same issuer that convert/exercise into the same common stock.",
-        "Wash sale rule applies to recreating SHORT positions as well as long positions.",
-        "A wash sale itself is not illegal; claiming the disallowed loss is."
+        "YTM: total annualized return if the bond is held to maturity; reflects coupon income plus gain (discount) or loss (premium) versus current price.",
+        "YTC: same calculation but to the earliest call date and call price; relevant for callable bonds trading at a premium.",
+        "Yield to Worst: the lower of YTM and YTC \u2014 what is quoted to the customer on a callable bond.",
+        "Premium callable bonds: YTC is the conservative (worst) yield because early call accelerates loss of premium.",
+        "Discount callable bonds: YTM is typically the worst case because early call accelerates the gain \u2014 investor would prefer the call.",
+        "Approximation of YTM uses straight-line amortization of premium/accretion of discount."
       ],
       "rules": [
-        "IRC long-term holding period: MORE than one year (a position held exactly one year is short term).",
-        "$3,000 maximum annual offset of net capital losses against ordinary income.",
-        "Capital loss carryforward: indefinite, no expiration.",
-        "Wash sale window: 30 days before + day of sale + 30 days after = 61 days; disallowed loss is added to basis of replacement shares and holding period tacks on.",
-        "LTCG tax brackets: 0% / 15% / 20% (income-thresholds adjusted annually for inflation).",
-        "Net Investment Income Tax: additional 3.8% on net investment income above MAGI thresholds.",
-        "Qualified dividend holding period: > 60 days within the 121-day period beginning 60 days before the ex-dividend date.",
-        "Passive losses may only offset passive income \u2014 never earned or portfolio income."
+        "FINRA SIE Outline \u00a73.1.2 \u2014 YTM and YTC are required measurement concepts."
       ],
       "formulas": [
-        "Ordinary Income = Earned + Portfolio (Interest & Dividends) + Passive + Short-Term Gains",
-        "Net Capital Gain/Loss = Total Capital Gains \u2212 Total Capital Losses",
-        "Maximum Ordinary Income Offset from Net Losses = $3,000 per year",
-        "Carryforward Loss = Net Capital Loss \u2212 $3,000 (carried indefinitely to future years)",
-        "Replacement Cost Basis after Wash Sale = Purchase Price of Replacement + Disallowed Loss"
+        "Approx. YTM = [Annual Coupon + (Par \u2212 Price)/Years to Maturity] / [(Par + Price)/2]",
+        "Approx. YTC = [Annual Coupon + (Call Price \u2212 Price)/Years to Call] / [(Call Price + Price)/2]",
+        "Yield to Worst = min(YTM, YTC)"
       ],
       "mnemonics": [
-        "\"E-I-P-S\" feeds Ordinary Income: Earned, Investment, Passive, Short-term gains.",
-        "\"Passive offsets Passive\" \u2014 losses from DPPs stay in their own bucket.",
-        "\"More than a year for the lower tier\" \u2014 LTCG requires holding > 1 year.",
-        "\"30 before, 30 after \u2014 Wash!\" \u2014 61-day wash sale window.",
-        "\"3K and Carry\" \u2014 $3,000 ordinary-income offset, rest carries forward indefinitely.",
-        "Qualified dividend: \"60 in 121\" \u2014 held >60 days within the 121-day window."
+        "\"Premium calls hurt \u2014 YTC is worst.\" \"Discount calls help \u2014 YTM is worst.\""
+      ]
+    },
+    {
+      "title": "3. Total Return",
+      "overview": "Total return is the comprehensive performance measure: it combines all income received (interest, dividends) with realized and unrealized capital appreciation or depreciation, expressed as a percentage of the original cost basis. Unlike yield, total return captures price change.",
+      "key_concepts": [
+        "Components of return per SIE outline: interest, dividends, realized gains, unrealized gains, and return on capital.",
+        "Realized gain/loss: triggered by sale; taxable event.",
+        "Unrealized gain/loss: paper profit/loss on a position still held.",
+        "Return of capital (ROC): distribution that is not from earnings \u2014 reduces cost basis rather than being taxed as income currently.",
+        "Holding-period return vs. annualized return \u2014 SIE focuses on simple holding-period total return."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 components of return and total return."
+      ],
+      "formulas": [
+        "Total Return = (Income + Capital Gain) / Cost Basis",
+        "Holding Period Return = (Ending Value \u2212 Beginning Value + Income) / Beginning Value",
+        "Adjusted Cost Basis after ROC = Original Cost \u2212 Return of Capital received"
+      ],
+      "mnemonics": [
+        "\"I-CG-CB\": Income + Capital Gain, over Cost Basis."
+      ]
+    },
+    {
+      "title": "4. Capital Gains and Losses \u2014 Realization, Holding Period, Wash Sale",
+      "overview": "A capital gain or loss arises when a security is sold for more or less than its adjusted cost basis. The federal tax rate depends on holding period: short-term (one year or less) is taxed as ordinary income; long-term (more than one year) qualifies for preferential rates. Wash-sale rules disallow losses on quick repurchases.",
+      "key_concepts": [
+        "Short-Term Capital Gain (STCG): holding period of one year or less; taxed at ordinary income rates.",
+        "Long-Term Capital Gain (LTCG): holding period of MORE THAN one year; taxed at preferential 0% / 15% / 20% rates depending on taxable income bracket.",
+        "Holding period begins the day AFTER trade date of purchase and ends on trade date of sale.",
+        "Net Investment Income Tax (NIIT): additional 3.8% surtax on net investment income above MAGI thresholds.",
+        "Capital loss deduction: net capital losses offset capital gains; up to $3,000 of net loss deductible against ordinary income per year; excess carried forward indefinitely.",
+        "Netting order: short-term losses first offset short-term gains; long-term losses first offset long-term gains; then cross-netted.",
+        "Wash Sale Rule: loss disallowed if a \"substantially identical\" security is purchased 30 days BEFORE or 30 DAYS AFTER the loss sale (61-day window).",
+        "Disallowed wash-sale loss is ADDED to the cost basis of the replacement security and the original holding period tacks on.",
+        "Cost basis methods: FIFO (default), specific identification, or average cost (mutual funds).",
+        "Cost basis reporting: brokers must report basis for \"covered\" securities to the IRS."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 cost basis requirements.",
+        "Errata 8.3 \u2014 LTCG requires holding period more than one year.",
+        "Errata 8.4 \u2014 LTCG 0/15/20% brackets and 3.8% NIIT.",
+        "Errata 8.6 \u2014 Wash sale 30 days before/after; disallowed loss added to basis of replacement."
+      ],
+      "formulas": [
+        "Capital Gain/Loss = Net Sale Proceeds \u2212 Adjusted Cost Basis",
+        "Adjusted Basis (wash sale replacement) = Purchase Price of Replacement + Disallowed Loss",
+        "Max Net Capital Loss Deductible vs. Ordinary Income = $3,000/yr (excess carried forward)",
+        "Wash Sale Window = 30 days before sale + sale date + 30 days after = 61 days"
+      ],
+      "mnemonics": [
+        "\"More than a year for the lower-rate cheer\" \u2014 LTCG = >1 year.",
+        "\"30 BEFORE, 30 AFTER, 61 in all\" \u2014 wash sale window.",
+        "\"FIFO unless you say SO (Specific identification Otherwise).\""
+      ]
+    },
+    {
+      "title": "5. Taxation of Ordinary Income, Investment Income, and Dividends",
+      "overview": "Different categories of investment income are taxed under different schedules. Interest is generally ordinary income; qualified dividends receive LTCG rates; municipal bond interest is federally tax-exempt. The qualified-dividend holding-period test is a common SIE testable item.",
+      "key_concepts": [
+        "Ordinary Income: wages, non-qualified dividends, short-term capital gains, taxable interest \u2014 taxed at marginal rates.",
+        "Corporate Bond Interest: fully taxable at federal, state, and local levels.",
+        "U.S. Treasury Interest: taxable at federal level; EXEMPT from state and local tax.",
+        "Municipal Bond Interest: EXEMPT from federal tax; may also be exempt from state/local tax if issued in the holder's state (\"triple tax-free\").",
+        "Private Activity Bond Interest: federally tax-exempt but a preference item for the Alternative Minimum Tax (AMT).",
+        "Qualified Dividends: taxed at LTCG rates (0/15/20%); must be paid by a U.S. or qualified foreign corporation AND holder must satisfy holding-period test.",
+        "Qualified Dividend Holding Period: stock must be held more than 60 days during the 121-day period that begins 60 days BEFORE the ex-dividend date.",
+        "Non-Qualified Dividends: REIT ordinary dividends, money-market fund dividends (interest), dividends on stock not meeting holding test \u2014 taxed as ordinary income.",
+        "Return of Capital distributions: not taxed currently; reduce basis; when basis reaches zero, further distributions are capital gains.",
+        "Tax-Equivalent Yield: lets investor compare muni yield to a taxable bond yield.",
+        "Accreted discount on OID municipal bonds is treated as tax-exempt interest (not capital gain).",
+        "Accreted discount on taxable OID bonds is taxable interest each year, even though no cash received."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 investment returns and types of dividends.",
+        "Errata 8.5 \u2014 Qualified dividend holding test: >60 days within the 121-day window around ex-date."
+      ],
+      "formulas": [
+        "Tax-Equivalent Yield = Municipal Yield / (1 \u2212 Investor's Marginal Federal Tax Rate)",
+        "After-Tax Yield (taxable bond) = Taxable Yield \u00d7 (1 \u2212 Marginal Tax Rate)",
+        "Qualified Dividend Holding Test: >60 days held within 121-day window centered on ex-date (60 before / 60 after)"
+      ],
+      "mnemonics": [
+        "\"Munis: Free Fed; Treasuries: Free State.\"",
+        "\"60 in 121\" \u2014 qualified dividend holding period.",
+        "\"PAB = AMT\" \u2014 private activity bonds hit AMT."
+      ]
+    },
+    {
+      "title": "6. Long-Term vs. Short-Term \u2014 Rate Application and Strategy",
+      "overview": "The single most important tax distinction at the SIE level is whether a position has been held long enough to qualify for long-term capital gain treatment. This drives both rate determination and customer tax-planning advice.",
+      "key_concepts": [
+        "Short-Term: holding period of 1 year or less \u2192 ordinary income rates (currently up to 37%).",
+        "Long-Term: holding period of MORE THAN 1 year \u2192 0%, 15%, or 20% depending on taxable income.",
+        "High earners also pay 3.8% NIIT on investment income above MAGI thresholds.",
+        "Holding period clock: starts day AFTER trade date of purchase; ends on trade date of sale.",
+        "Inherited securities receive automatic LONG-TERM treatment regardless of decedent's holding period; basis is generally stepped up to fair market value at date of death.",
+        "Gifted securities: donor's cost basis and holding period carry over to donee (for gain); for loss, basis is the lesser of donor's basis or FMV at date of gift.",
+        "Wash-sale and constructive-sale rules can extend or alter the holding period."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 components of return.",
+        "Errata 8.3 \u2014 short-term = ordinary rates; long-term = >1 year.",
+        "Errata 8.4 \u2014 0/15/20% LTCG plus 3.8% NIIT."
+      ],
+      "formulas": [
+        "Holding Period: Day After Purchase Trade Date \u2192 Sale Trade Date",
+        "If Holding Period > 365 days \u2192 Long-Term; else Short-Term",
+        "Inherited Stock Basis = FMV at date of death (stepped up); Holding Period = automatically long-term"
+      ],
+      "mnemonics": [
+        "\"Day-After-Buy, Day-Of-Sell\" \u2014 holding-period clock.",
+        "\"Inherit = Long-Term, Stepped Up.\""
+      ]
+    },
+    {
+      "title": "7. Cost Basis Adjustments from Corporate Actions",
+      "overview": "Stock splits, stock dividends, return of capital, and wash sales all change a holder's per-share cost basis without necessarily creating an immediate taxable event. Understanding the mechanics is required by the SIE outline.",
+      "key_concepts": [
+        "Forward Stock Split (e.g., 2-for-1): share count multiplied, per-share price and per-share basis divided proportionally; aggregate basis unchanged.",
+        "Reverse Stock Split (e.g., 1-for-10): share count reduced, per-share price and per-share basis multiplied; aggregate basis unchanged.",
+        "Stock Dividend: additional shares issued; aggregate basis spread across larger share count \u2192 lower per-share basis; not currently taxable.",
+        "Cash Dividend: taxable in year received; does NOT change basis.",
+        "Return of Capital: reduces cost basis dollar-for-dollar; taxable only after basis reaches zero (then capital gain).",
+        "Wash Sale: disallowed loss is added to basis of the replacement shares; original holding period tacks on.",
+        "Mergers / Tender Offers: cash received generally triggers capital gain; stock-for-stock exchanges often tax-deferred with carryover basis."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.4 \u2014 corporate actions and impact on cost basis."
+      ],
+      "formulas": [
+        "New Per-Share Basis after Split = Old Aggregate Basis / New Total Shares",
+        "New Per-Share Basis after Stock Dividend = Old Aggregate Basis / (Old Shares + Dividend Shares)",
+        "Adjusted Basis after ROC = Original Basis \u2212 Return of Capital Received",
+        "Replacement Basis after Wash Sale = Purchase Price + Disallowed Loss"
+      ],
+      "mnemonics": [
+        "\"Splits change SHARES and PRICE \u2014 never AGGREGATE basis.\"",
+        "\"ROC reduces basis; cash dividend doesn't.\""
+      ]
+    },
+    {
+      "title": "8. Comparative Yield Analysis \u2014 Taxable vs. Tax-Exempt",
+      "overview": "Because municipal interest is federally tax-exempt and Treasury interest is state-exempt, investors must compare yields on an after-tax basis. Tax-equivalent yield is the standard tool for choosing between a muni and a taxable bond.",
+      "key_concepts": [
+        "Higher marginal tax bracket \u2192 munis become MORE attractive relative to taxable bonds.",
+        "Lower bracket \u2192 taxable bonds (corporates/Treasuries) often beat munis on an after-tax basis.",
+        "Triple-tax-free munis: investor in own state of residence escapes federal, state, and local tax.",
+        "After-tax yield is the practical comparison metric for taxable bonds.",
+        "NIIT (3.8%) does not apply to municipal bond interest \u2014 adds to munis' relative advantage for high earners."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 yield concepts and basis-point measurement."
+      ],
+      "formulas": [
+        "Tax-Equivalent Yield = Tax-Exempt Yield / (1 \u2212 Marginal Federal Tax Rate)",
+        "After-Tax Yield = Taxable Yield \u00d7 (1 \u2212 Marginal Tax Rate)",
+        "Break-Even: Tax-Exempt Yield = Taxable Yield \u00d7 (1 \u2212 Tax Rate)"
+      ],
+      "mnemonics": [
+        "\"DIVIDE for TEY; MULTIPLY for ATY.\" (Divide muni yield by 1\u2212t; multiply taxable yield by 1\u2212t.)"
+      ]
+    },
+    {
+      "title": "9. Dividend Mechanics and Tax Timing",
+      "overview": "Dividend payment dates determine who is entitled to receive a dividend and therefore when the tax liability attaches. The ex-dividend date is the pivot for both ownership and the qualified-dividend holding-period test.",
+      "key_concepts": [
+        "Declaration Date: board announces the dividend.",
+        "Record Date: holders of record on this date receive the dividend.",
+        "Ex-Dividend Date: first day stock trades WITHOUT the dividend; under T+1 regular-way settlement, ex-date is the SAME business day as the record date (the buyer that day will not be on the record list).",
+        "Payable Date: dividend is paid out.",
+        "On ex-date, the stock price opens lower by approximately the dividend amount.",
+        "Cash dividends \u2192 taxable in year received (qualified or non-qualified).",
+        "Stock dividends \u2192 not currently taxable; spread basis across new share count.",
+        "Qualified-dividend status requires >60 days held in the 121-day window centered on ex-date."
+      ],
+      "rules": [
+        "FINRA SIE Outline \u00a73.1.2 \u2014 dividend payment dates.",
+        "Errata: T+1 equity settlement (effective 5/28/2024) aligns ex-date with record date.",
+        "Errata 8.5 \u2014 qualified-dividend holding-period rule."
+      ],
+      "formulas": [
+        "Ex-Date (regular-way, T+1) = Record Date (same business day)",
+        "Approx. Price Drop on Ex-Date \u2248 Dividend per Share",
+        "Qualified Dividend Window = 121 days = 60 days before ex-date + ex-date + 60 days after"
+      ],
+      "mnemonics": [
+        "\"DREP\": Declaration \u2192 Record/Ex (same day under T+1) \u2192 Payable.",
+        "\"Hold 61, save on one\" \u2014 meet the 60-in-121 test to convert ordinary to LTCG rates."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 8911,
-    "output": 2536
+    "input": 13115,
+    "output": 5969
   },
-  "cost_usd": 0.3239
+  "cost_usd": 0.6444
 }

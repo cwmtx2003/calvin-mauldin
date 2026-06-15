@@ -1,0 +1,573 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "jf": "tc",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A customer deposits $6,200 in cash on Monday morning and an additional $5,500 in cash that same afternoon at the same broker-dealer. What is the total amount aggregated for the day, and does a Currency Transaction Report (CTR) need to be filed?",
+      "choices": [
+        "$11,700; no CTR required because each individual deposit was below $10,000",
+        "$11,700; a CTR must be filed because aggregated same-day cash exceeds $10,000",
+        "$6,200; only the morning deposit counts toward the CTR threshold",
+        "$5,500; only deposits made after noon are aggregated for CTR purposes"
+      ],
+      "answer": 1,
+      "explanation": "$6,200 + $5,500 = $11,700 in cash deposits in a single business day. A CTR is required for cash transactions exceeding $10,000 in a single day, whether in one transaction or aggregated. The first choice ignores the aggregation rule, which is precisely how 'structuring' is detected.",
+      "citations": [
+        "USA PATRIOT Act \u00a7352",
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An insider purchased 10,000 shares of XYZ at $20 per share while in possession of material nonpublic information. After the information was released, the stock rose to $35. The SEC brings a civil action under Section 21A. What is the MAXIMUM civil penalty (excluding disgorgement) that the court may impose on the violator?",
+      "choices": [
+        "$150,000",
+        "$300,000",
+        "$450,000",
+        "$1,000,000"
+      ],
+      "answer": 2,
+      "explanation": "Profit gained = ($35 \u2212 $20) \u00d7 10,000 = $150,000. Section 21A authorizes a civil penalty of up to three times the profit gained or loss avoided: 3 \u00d7 $150,000 = $450,000. The $1,000,000 figure relates to controlling-person liability, not the violator's own penalty cap.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative tipped a friend who bought 2,000 shares of ABC at $40 just before a positive earnings announcement; the friend sold at $55. A contemporaneous trader who sold the same class of security during that period sues under Section 20A. What is the maximum total damages that may be awarded under Section 20A?",
+      "choices": [
+        "$15,000",
+        "$30,000",
+        "$45,000",
+        "$90,000"
+      ],
+      "answer": 1,
+      "explanation": "Profit gained = ($55 \u2212 $40) \u00d7 2,000 = $30,000. Section 20A caps contemporaneous-trader damages at the profit gained or loss avoided in the violative transactions\u2014$30,000. Trebling applies to SEC civil penalties under Section 21A, not to private actions under Section 20A.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a720A"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A broker-dealer becomes aware of suspicious activity in a customer account on June 3. By what date must the firm file a Suspicious Activity Report (SAR), assuming a suspect has been identified?",
+      "choices": [
+        "Within 10 calendar days \u2014 by June 13",
+        "Within 30 calendar days \u2014 by July 3",
+        "Within 60 calendar days \u2014 by August 2",
+        "Within 90 calendar days \u2014 by September 1"
+      ],
+      "answer": 1,
+      "explanation": "A SAR must be filed within 30 calendar days of becoming aware of the suspicious activity when a suspect is identified. June 3 + 30 days = July 3. The 60-day option applies only when no suspect has been identified.",
+      "citations": [
+        "USA PATRIOT Act \u00a7352",
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Under FINRA Rule 2165, a member firm places an initial temporary hold on a disbursement from a specified adult's account on April 1 (a business day). Using the maximum internal extension permitted under the 2022 amendments (without involving an outside regulator), through which business day may the hold remain in place?",
+      "choices": [
+        "15 business days total",
+        "25 business days total",
+        "30 business days total",
+        "55 business days total"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2165 (as amended in 2022) permits an initial 15-business-day hold plus an internal extension of 10 additional business days\u201425 business days total\u2014without involving an outside regulator. The 55-business-day maximum is available only when the matter has been reported to a state regulator, agency, or court.",
+      "citations": [
+        "Rule 2165"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A broker-dealer must preserve customer account records under SEC Rule 17a-4. A customer account was opened on March 1, 2020, and closed on March 1, 2023. The firm must retain the account records for at least how many years measured from account closure, and through what minimum date?",
+      "choices": [
+        "3 years; through March 1, 2026",
+        "6 years; through March 1, 2029",
+        "7 years; through March 1, 2030",
+        "Permanently, with no expiration"
+      ],
+      "answer": 1,
+      "explanation": "Customer account records are subject to a 6-year retention period under Rule 17a-4. Measured from the closure date of March 1, 2023, the records must be retained through at least March 1, 2029. The 3-year period applies to many other broker-dealer records but not to the customer account record itself.",
+      "citations": [
+        "17 CFR 240.17a-4"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A registered representative is found to have engaged in insider trading. Under the Insider Trading and Securities Fraud Enforcement Act (ITSFEA), what is the MAXIMUM criminal fine and the MAXIMUM term of imprisonment for an individual?",
+      "choices": [
+        "$1 million and 10 years",
+        "$2.5 million and 15 years",
+        "$5 million and 20 years",
+        "$10 million and 25 years"
+      ],
+      "answer": 2,
+      "explanation": "Criminal penalties for insider trading under ITSFEA can reach up to $5 million in fines and up to 20 years' imprisonment for an individual. The other choices misstate the statutory ceilings.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer's account at a broker-dealer has had no activity for the past two quarters. Under FINRA rules, the firm must send account statements no less frequently than which of the following, meaning the customer must receive at least how many statements in a 12-month period of inactivity?",
+      "choices": [
+        "Monthly \u2014 at least 12 statements per year",
+        "Quarterly \u2014 at least 4 statements per year",
+        "Semiannually \u2014 at least 2 statements per year",
+        "Annually \u2014 at least 1 statement per year"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2231 requires that customers receive account statements at least quarterly (4 per year). Monthly statements are required when there is activity in the account, but the minimum during inactivity is quarterly.",
+      "citations": [
+        "Rule 2231"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An associated person of a FINRA member firm wants to participate in an IPO allocation. The new issue is priced at $18, and the person wants to buy 500 shares. Under FINRA Rule 5130, what is the maximum dollar amount of the new issue this restricted person may purchase?",
+      "choices": [
+        "$0 \u2014 restricted persons are prohibited from purchasing new issues",
+        "$4,500 \u2014 limited to 25% of the requested allocation",
+        "$9,000 \u2014 limited to 50% of the requested allocation",
+        "$9,000 \u2014 full allocation permitted at the offering price"
+      ],
+      "answer": 0,
+      "explanation": "Under Rule 5130, restricted persons\u2014including associated persons of FINRA member firms\u2014are prohibited from purchasing new issues (IPOs of common equity) at the public offering price. The maximum allowable purchase is $0. There is no partial-allocation exception based on percentage of the requested order.",
+      "citations": [
+        "Rule 5130"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A telemarketer at a broker-dealer in New York (Eastern Time) wishes to cold-call a prospect located in Los Angeles (Pacific Time, 3 hours behind New York). Under the TCPA cold-calling rules, what is the EARLIEST and LATEST Eastern Time the representative may place this call?",
+      "choices": [
+        "8:00 AM ET to 9:00 PM ET",
+        "11:00 AM ET to 12:00 midnight ET",
+        "5:00 AM ET to 6:00 PM ET",
+        "9:00 AM ET to 5:00 PM ET (business hours only)"
+      ],
+      "answer": 1,
+      "explanation": "Cold calls may be made only between 8:00 AM and 9:00 PM in the LOCAL TIME OF THE CALLED PARTY. Los Angeles is 3 hours behind New York, so 8:00 AM PT = 11:00 AM ET and 9:00 PM PT = 12:00 midnight ET. Choice A applies the time window to the caller's local time, which is incorrect.",
+      "citations": [
+        "Rule 3230"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer buys 100 shares of common stock on a Tuesday in a regular-way trade. Under the current T+1 settlement standard, on which day does the trade settle, and how many business days after trade date is that?",
+      "choices": [
+        "Tuesday (same day) \u2014 T+0",
+        "Wednesday \u2014 1 business day after trade date",
+        "Thursday \u2014 2 business days after trade date",
+        "Friday \u2014 3 business days after trade date"
+      ],
+      "answer": 1,
+      "explanation": "Regular-way settlement for equities is T+1 (effective May 28, 2024). A Tuesday trade settles the next business day\u2014Wednesday\u2014which is 1 business day after trade date. The T+2 cycle is outdated.",
+      "citations": [],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Under the SEC's 2024 amendments to Regulation S-P, a covered broker-dealer that experiences unauthorized access to sensitive customer information on October 1 must provide notification to affected customers no later than which date (assuming the firm has determined that sensitive customer information was, or is reasonably likely to have been, accessed)?",
+      "choices": [
+        "October 11 \u2014 within 10 days",
+        "October 31 \u2014 within 30 days",
+        "November 30 \u2014 within 60 days",
+        "December 30 \u2014 within 90 days"
+      ],
+      "answer": 1,
+      "explanation": "The May 15, 2024 amendments to Regulation S-P require covered firms to notify affected customers within 30 days of becoming aware of unauthorized access or use of sensitive customer information. October 1 + 30 days = October 31.",
+      "citations": [],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 14328,
+    "output": 3718
+  },
+  "cost_usd": 0.4938
+}

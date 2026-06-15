@@ -1,0 +1,285 @@
+{
+  "unit": 3,
+  "unit_name": "Debt Securities",
+  "jf": "pr",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "All of the following statements about U.S. Treasury securities are accurate EXCEPT:",
+      "choices": [
+        "Interest paid on Treasury notes is exempt from state and local income taxation.",
+        "Treasury bills are issued at a discount and pay no periodic coupon interest.",
+        "Treasury bonds and notes settle regular way on a T+1 basis.",
+        "Treasury securities are generally considered to carry significant credit risk relative to corporate bonds."
+      ],
+      "answer": 3,
+      "explanation": "Treasuries are backed by the full faith and credit of the U.S. government and are considered to have minimal credit risk \u2014 not significant credit risk relative to corporates. The other statements correctly describe Treasury tax treatment, T-bill discount pricing, and T+1 settlement.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer is comparing a 4.00% in-state municipal general obligation bond to a taxable corporate bond. The customer is in the 32% federal bracket. Which statement is MOST accurate?",
+      "choices": [
+        "The corporate bond would need to yield approximately 5.88% to match the after-tax yield of the municipal bond.",
+        "The municipal bond's interest is exempt from federal tax but is subject to state and local tax in all states.",
+        "The corporate bond would need to yield approximately 4.00% to match the after-tax yield of the municipal bond.",
+        "Both bonds would generate identical after-tax cash flows because both are interest-bearing instruments."
+      ],
+      "answer": 0,
+      "explanation": "Tax-equivalent yield = tax-free yield / (1 \u2212 tax rate) = 4.00% / (1 \u2212 0.32) \u2248 5.88%. The municipal interest is federally tax-exempt; in-state GO interest is typically also exempt from the holder's home-state tax, so option B is incorrect.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following bonds is LEAST likely to expose an investor to prepayment risk?",
+      "choices": [
+        "A GNMA mortgage-backed pass-through security",
+        "A FNMA collateralized mortgage obligation tranche",
+        "A non-callable U.S. Treasury note",
+        "A callable corporate debenture"
+      ],
+      "answer": 2,
+      "explanation": "Prepayment risk arises when underlying borrowers pay off principal early (MBS/CMOs) or when an issuer calls a bond. A non-callable Treasury note has neither feature, so it carries essentially no prepayment risk. The callable corporate is exposed to call risk (a form of prepayment risk).",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are characteristics of revenue bonds EXCEPT:",
+      "choices": [
+        "Debt service is paid from a specific revenue stream of the financed project.",
+        "They are typically not subject to statutory or constitutional debt limits.",
+        "They are secured by the full faith, credit, and taxing power of the issuing municipality.",
+        "They generally require feasibility studies analyzing projected revenues."
+      ],
+      "answer": 2,
+      "explanation": "Revenue bonds are backed by project revenues, not the issuer's full faith, credit, and taxing power \u2014 that is the defining characteristic of a general obligation (GO) bond. The other statements correctly describe revenue bond features.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about the relationship between bond prices, yields, and interest rates is NOT correct?",
+      "choices": [
+        "When market interest rates rise, the prices of outstanding fixed-rate bonds fall.",
+        "A bond's current yield equals its annual coupon payment divided by its current market price.",
+        "When a bond is purchased at a premium, its yield to maturity is lower than its coupon rate.",
+        "Long-term bonds generally exhibit less price volatility than short-term bonds when interest rates change."
+      ],
+      "answer": 3,
+      "explanation": "Longer-maturity bonds are MORE sensitive to interest rate changes (greater duration), not less. The inverse price/yield relationship, the current yield formula, and the premium/YTM relationship are all correctly stated.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor is concerned about both credit risk and reinvestment risk. Which security BEST mitigates both risks simultaneously?",
+      "choices": [
+        "A long-term callable high-yield corporate bond",
+        "A short-term Treasury bill held to maturity",
+        "A long-term non-callable zero-coupon Treasury STRIP",
+        "A GNMA mortgage-backed pass-through"
+      ],
+      "answer": 2,
+      "explanation": "A long-term non-callable Treasury zero-coupon STRIP has essentially no credit risk (U.S. government) and no reinvestment risk on coupons (no coupons to reinvest, and not callable). The T-bill addresses credit risk but creates reinvestment risk at maturity. The GNMA has prepayment risk; the high-yield callable corporate has both credit and reinvestment/call risk.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "In a corporate liquidation, which of the following claims would be paid LAST?",
+      "choices": [
+        "Secured mortgage bondholders",
+        "Subordinated debenture holders",
+        "Preferred stockholders",
+        "Common stockholders"
+      ],
+      "answer": 3,
+      "explanation": "The liquidation priority is: secured creditors, then general (unsecured) creditors and debentures, then subordinated debt, then preferred stockholders, and finally common stockholders. Common shareholders have the most junior claim.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about money market instruments is NOT accurate?",
+      "choices": [
+        "Bankers' acceptances are time drafts often used to finance international trade.",
+        "Commercial paper is unsecured short-term corporate debt typically issued at a discount.",
+        "Negotiable jumbo CDs are fully insured by the FDIC up to the face amount regardless of size.",
+        "Treasury bills are issued with maturities of one year or less."
+      ],
+      "answer": 2,
+      "explanation": "FDIC insurance is capped at $250,000 per depositor per insured bank per ownership category, so a negotiable jumbo CD (typically $100,000+ and often $1 million+) is NOT fully insured for amounts above the cap. The other statements correctly describe these money market instruments.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor purchases a corporate bond at a discount. Which of the following is TRUE?",
+      "choices": [
+        "The yield to maturity is less than the current yield, which is less than the coupon rate.",
+        "The coupon rate is less than the current yield, which is less than the yield to maturity.",
+        "The yield to maturity equals the coupon rate.",
+        "The current yield is greater than both the coupon rate and the yield to maturity."
+      ],
+      "answer": 1,
+      "explanation": "For a bond purchased at a discount (price below par), the relationship is: coupon rate < current yield < yield to maturity. YTM is highest because it includes the accretion of the discount to par at maturity in addition to coupon income.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are typically TRUE of agency mortgage-backed pass-through securities EXCEPT:",
+      "choices": [
+        "Investors receive monthly payments that include both interest and principal.",
+        "GNMA pass-throughs are backed by the full faith and credit of the U.S. government.",
+        "The actual maturity of the security is uncertain because of prepayments.",
+        "Monthly interest received is exempt from federal income tax."
+      ],
+      "answer": 3,
+      "explanation": "Interest from agency MBS (GNMA, FNMA, FHLMC) is fully taxable at the federal level (and typically at the state level for FNMA/FHLMC). Only municipal bond interest is generally federally tax-exempt. The other statements correctly describe MBS pass-through features.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about callable bonds is MOST accurate?",
+      "choices": [
+        "Issuers are most likely to call bonds when market interest rates have risen above the coupon rate.",
+        "Call protection benefits the issuer by preventing early redemption during a specified period.",
+        "A callable bond will generally offer a higher yield than an otherwise identical non-callable bond.",
+        "When a bond is called, the investor's reinvestment risk is eliminated."
+      ],
+      "answer": 2,
+      "explanation": "Because the issuer holds the call option (which is unfavorable to the investor), callable bonds must offer a higher yield as compensation. Issuers call when rates have FALLEN, not risen. Call protection benefits the INVESTOR by preventing early calls. A call typically increases reinvestment risk because the investor must reinvest in a lower-rate environment.",
+      "citations": [],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "A municipal securities dealer is acting as principal in a transaction with a customer. Which of the following statements regarding disclosure and pricing obligations is NOT correct?",
+      "choices": [
+        "The dealer must deal fairly with the customer and not engage in any deceptive, dishonest, or unfair practice.",
+        "Mark-ups on principal transactions must be calculated from the prevailing market price of the municipal security.",
+        "If the dealer controls, is controlled by, or is under common control with the issuer, that control relationship must be disclosed to the customer.",
+        "Because municipal securities are exempt from the Securities Act of 1933, MSRB fair-dealing and pricing rules do not apply to retail customer transactions."
+      ],
+      "answer": 3,
+      "explanation": "Although municipal securities are exempt from registration under the Securities Act of 1933, MSRB rules \u2014 including the fair-dealing standard (G-17), prevailing-market-price-based mark-up determination (G-30), and control-relationship disclosure \u2014 DO apply to dealer transactions with customers. The other three statements are accurate.",
+      "citations": [
+        "Rule G-17",
+        "Rule G-30",
+        "Rule 2262"
+      ],
+      "unit": 3,
+      "jf": "pr",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12954,
+    "output": 3507
+  },
+  "cost_usd": 0.4573
+}

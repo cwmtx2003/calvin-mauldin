@@ -1,0 +1,303 @@
+{
+  "unit": 5,
+  "unit_name": "Other Investment Vehicles",
+  "jf": "pr",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Under the Investment Company Act of 1940, which of the following is characterized as issuing only redeemable securities, each representing an undivided interest in a unit of specified securities, and operating without a board of directors?",
+      "choices": [
+        "Open-end management company",
+        "Closed-end management company",
+        "Unit investment trust (UIT)",
+        "Face-amount certificate company"
+      ],
+      "answer": 2,
+      "explanation": "Section 4(2) of the Investment Company Act defines a UIT as an investment company organized under a trust indenture, lacking a board of directors, that issues only redeemable securities each representing an undivided interest in a unit of specified securities. An open-end management company also issues redeemable securities but has a board of directors and an actively managed portfolio.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "An investor purchases shares of a fund that continuously offers new shares to the public and stands ready to redeem its outstanding shares at net asset value. This fund is best classified as a(n):",
+      "choices": [
+        "Closed-end management company",
+        "Open-end management company",
+        "Unit investment trust",
+        "Face-amount certificate company"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(a)(1) of the Investment Company Act defines an open-end company as a management company offering for sale or having outstanding any redeemable security of which it is the issuer. Closed-end companies do not issue redeemable shares; they trade in the secondary market.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "To qualify as a \"diversified\" management company under the Investment Company Act of 1940, at least 75% of the value of the company's total assets must meet certain requirements, including that holdings of any single issuer be limited to no more than:",
+      "choices": [
+        "5% of the fund's total assets and 10% of the issuer's outstanding voting securities",
+        "10% of the fund's total assets and 5% of the issuer's outstanding voting securities",
+        "25% of the fund's total assets and 10% of the issuer's outstanding voting securities",
+        "5% of the fund's total assets and 25% of the issuer's outstanding voting securities"
+      ],
+      "answer": 0,
+      "explanation": "Section 5(b)(1) of the Investment Company Act sets the 75-5-10 test: at least 75% of total assets in cash, government securities, other investment company securities, and other securities limited so that no more than 5% of total assets are invested in any one issuer and not more than 10% of any issuer's outstanding voting securities are held.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under SEC Rule 12b-1, an open-end investment company may use fund assets to pay for:",
+      "choices": [
+        "Portfolio manager performance bonuses",
+        "Distribution and marketing expenses pursuant to a written plan",
+        "Brokerage commissions on portfolio trades",
+        "Custodial fees paid to the fund's bank custodian"
+      ],
+      "answer": 1,
+      "explanation": "Rule 12b-1 permits an open-end fund to use its own assets to pay distribution-related expenses (advertising, sales literature, and certain compensation to selling brokers) only pursuant to a written plan adopted by the fund. The other costs are not Rule 12b-1 expenses.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A FINRA member representative knowingly sells $24,500 of a mutual fund just below the $25,000 breakpoint that would have reduced the customer's sales charge. This practice is:",
+      "choices": [
+        "Permitted, because the customer chose the dollar amount",
+        "Permitted, provided the customer signs a letter of intent afterward",
+        "Prohibited as a breakpoint sale",
+        "Permitted, because breakpoint schedules are voluntary"
+      ],
+      "answer": 2,
+      "explanation": "FINRA Rule 2342 expressly prohibits selling investment company shares in dollar amounts just below the point at which the sales charge is reduced in order to share in the higher sales charge. This is the textbook \"breakpoint sale\" violation.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is a key characteristic of a direct participation program (DPP) as defined under FINRA Rule 2310?",
+      "choices": [
+        "The entity is taxed at the corporate level before distributions to investors",
+        "Income, gains, losses, and deductions flow through to the investors",
+        "Interests are listed and actively traded on a national securities exchange",
+        "The program must register as an investment company under the 1940 Act"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2310 defines a DPP as a program providing flow-through tax consequences regardless of the legal structure. DPPs are generally unlisted and illiquid, and the rule expressly excludes registered investment companies from the definition.",
+      "citations": [
+        "Rule 2310"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under MSRB Rule D-12, a \"municipal fund security\" refers to a municipal security that, but for an exemption from the Investment Company Act of 1940, would constitute:",
+      "choices": [
+        "A general obligation bond",
+        "A revenue bond",
+        "An investment company",
+        "A bank-qualified security"
+      ],
+      "answer": 2,
+      "explanation": "MSRB Rule D-12 defines a municipal fund security as a municipal security issued by an issuer that, but for the application of Section 2(b) of the Investment Company Act of 1940, would constitute an investment company within the meaning of Section 3 of that Act. 529 plans and LGIPs are common examples.",
+      "citations": [
+        "Rule D-12"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "When recommending the purchase or exchange of a deferred variable annuity, FINRA Rule 2330 requires that the representative have a reasonable basis to believe the customer has been informed, in general terms, of features such as:",
+      "choices": [
+        "The guaranteed rate of return on subaccounts",
+        "The surrender period, surrender charges, and mortality and expense fees",
+        "The FDIC insurance coverage of the contract",
+        "The fixed dividend payable on the contract"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2330(b)(1)(A)(i) requires the representative to have a reasonable basis to believe the customer has been informed, in general terms, of features including the potential surrender period and surrender charge, potential tax penalties before age 59\u00bd, mortality and expense fees, and market risk. Variable annuities are not FDIC-insured and have no guaranteed return.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Listed equity options are issued and guaranteed by which entity?",
+      "choices": [
+        "The Securities Investor Protection Corporation (SIPC)",
+        "The Options Clearing Corporation (OCC)",
+        "The Financial Industry Regulatory Authority (FINRA)",
+        "The Depository Trust Company (DTC)"
+      ],
+      "answer": 1,
+      "explanation": "Standardized listed options are issued, cleared, and guaranteed by the Options Clearing Corporation (OCC). SIPC provides limited customer asset protection at failed broker-dealers; FINRA is an SRO; DTC is a securities depository.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "A customer exercises a long equity call option on Tuesday. The resulting stock delivery will settle:",
+      "choices": [
+        "The same business day as exercise",
+        "One business day after exercise (T+1)",
+        "Two business days after exercise (T+2)",
+        "Three business days after exercise (T+3)"
+      ],
+      "answer": 1,
+      "explanation": "Exercise of an equity option results in a stock transaction that settles in the same time frame as a regular-way equity trade, which is T+1. The premium itself on an option trade also settles next business day.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes a hedge fund?",
+      "choices": [
+        "A registered open-end investment company that issues redeemable shares daily",
+        "A privately offered, generally illiquid partnership typically requiring high minimum investments",
+        "A unit investment trust that issues redeemable securities representing a fixed portfolio",
+        "An exchange-traded note that tracks a benchmark index"
+      ],
+      "answer": 1,
+      "explanation": "Per the SIE outline, hedge funds are characterized by partnership structure, high minimum investments, and general illiquidity, and they are not registered investment companies. UITs and open-end funds issue redeemable securities and are registered under the 1940 Act.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a73(a)"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which feature is characteristic of a real estate investment trust (REIT) that qualifies for special tax treatment?",
+      "choices": [
+        "Income is taxed at both the trust level and again to shareholders",
+        "Investors receive flow-through of operating losses similar to a limited partnership",
+        "Qualifying income distributed to shareholders avoids double taxation at the trust level",
+        "REITs must be structured as unit investment trusts under the 1940 Act"
+      ],
+      "answer": 2,
+      "explanation": "REITs that meet the Internal Revenue Code distribution and asset-test requirements pass qualifying income through to shareholders without taxation at the trust level, avoiding double taxation. Unlike DPPs, REITs do not pass operating losses through to investors.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12904,
+    "output": 3221
+  },
+  "cost_usd": 0.4351
+}

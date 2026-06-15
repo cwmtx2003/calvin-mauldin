@@ -3,170 +3,750 @@
   "unit_name": "Regulatory Issues & Ethics",
   "sections": [
     {
-      "title": "Lesson 11.1: Anti-Money Laundering (AML) and the Bank Secrecy Act",
-      "overview": "Money laundering is the process of disguising illicit funds as legitimate income; post-9/11 AML rules also target the use of clean money for illicit purposes (e.g., terrorist financing). The Bank Secrecy Act (BSA), administered through the U.S. Treasury and enforced via FinCEN, requires broker-dealers to maintain AML compliance programs, file currency and suspicious activity reports, and screen customers against OFAC's SDN list.",
+      "title": "1. Anti-Money Laundering (AML) Framework",
+      "overview": "Money laundering is the process of disguising illicit proceeds to make them appear legitimate. Broker-dealers must establish written AML programs under the Bank Secrecy Act as amended by the USA PATRIOT Act, with FinCEN as the primary administering bureau. FINRA Rule 3310 codifies the BD AML compliance obligation.",
       "key_concepts": [
-        "Three stages of money laundering: (1) Placement \u2014 introducing illicit cash into the financial system (most detectable stage); (2) Layering \u2014 series of transactions designed to obscure the origin; (3) Integration \u2014 funds re-enter the economy appearing legitimate.",
-        "FinCEN \u2014 bureau of U.S. Treasury (not DOJ); intelligence agency with no direct enforcement arm; receives CTRs and SARs.",
-        "Currency Transaction Report (CTR): required for cash transactions > $10,000 in a single day (single or aggregated). Filed within 15 days. Records kept 5 years. Applies to currency only \u2014 not checks or wires; not limited to U.S. dollars.",
-        "Structuring: designing cash deposits/withdrawals to fall below the $10,000 CTR threshold \u2014 itself a prohibited act.",
-        "Suspicious Activity Report (SAR): required for transactions \u2265 $5,000 that appear to involve illicit funds, evade BSA, lack business purpose, or facilitate criminal activity. Filed within 30 days (60 if no suspect identified). SARs are confidential \u2014 subject must NOT be notified.",
-        "USA PATRIOT Act: also requires record retention on wire transfers \u2265 $3,000 (names, addresses, amount, financial institution, recipient account).",
-        "AML Compliance Program (Rule 3310) \u2014 five required elements: (1) written policies/procedures, (2) designated AML compliance officer (need not be registered), (3) ongoing training, (4) independent annual testing, (5) customer identification program (CIP).",
-        "Customer Identification Program (CIP): collect name, DOB, address, and ID number (e.g., SSN/TIN) before opening account; verify identity; notify customer that information is being requested for identification.",
-        "OFAC \u2014 division of U.S. Treasury \u2014 publishes the Specially Designated Nationals (SDN) list; U.S. persons (including BDs and RRs) are prohibited from doing business with anyone on the list; assets of SDNs must be blocked.",
-        "AML red flags: customer indifferent to risk/cost; frequent or large currency deposits; many wires to unrelated third parties; excessive journal entries between unrelated accounts; apparent structuring."
+        "Three stages of laundering: Placement (introducing illicit cash into the financial system), Layering (disguising the trail through complex transactions), Integration (returning funds to the launderer as apparently legitimate wealth).",
+        "Structuring (a.k.a. smurfing): breaking transactions into amounts below the $10,000 CTR threshold to evade reporting \u2014 itself a federal crime.",
+        "Required AML program elements (five pillars): (1) written policies/procedures, (2) designated AML Compliance Officer, (3) ongoing employee training, (4) independent testing (annual for most firms), (5) risk-based Customer Due Diligence (CDD)/beneficial-owner identification.",
+        "Customer Identification Program (CIP) under PATRIOT Act \u00a7326: collect name, DOB, physical address, and taxpayer ID (SSN/TIN); verify identity within a reasonable time; check against government lists.",
+        "Currency Transaction Report (CTR / FinCEN Form 112): filed for cash transactions exceeding $10,000 in a single day (aggregated). Applies to currency only \u2014 not checks or wires.",
+        "Suspicious Activity Report (SAR / FinCEN Form 111): filed within 30 calendar days of detection (60 days if no suspect identified); $5,000 threshold; STRICTLY CONFIDENTIAL \u2014 disclosure to the subject is prohibited.",
+        "FinCEN: bureau of the U.S. Treasury that administers the BSA and receives CTRs/SARs.",
+        "OFAC: enforces economic sanctions; maintains the Specially Designated Nationals (SDN) List; firms must screen customers and block prohibited transactions.",
+        "PATRIOT Act \u00a7314(a): law enforcement information requests to financial institutions. \u00a7314(b): voluntary information sharing among financial institutions."
       ],
       "rules": [
-        "Bank Secrecy Act (BSA) \u2014 Treasury rulemaking authority for AML.",
-        "USA PATRIOT Act (2001) \u2014 expanded AML rules, mandated CIP and SAR filings.",
-        "FINRA Rule 3310 \u2014 AML Compliance Program (5 required elements).",
-        "CTR filing: > $10,000 cash in a day; file within 15 days; retain records 5 years; max penalty $500,000 / 10 years / both.",
-        "SAR filing: \u2265 $5,000 if suspicious; file within 30 days; retain 5 years; strict confidentiality."
+        "FINRA Rule 3310 \u2014 AML compliance program requirements.",
+        "USA PATRIOT Act \u00a7326 \u2014 CIP requirements.",
+        "USA PATRIOT Act \u00a7352 \u2014 required AML program.",
+        "USA PATRIOT Act \u00a7314 \u2014 cooperative information sharing."
       ],
       "formulas": [
-        "CTR trigger: aggregate same-day currency in/out > $10,000",
-        "SAR trigger: suspicious transaction(s) \u2265 $5,000",
-        "Wire transfer recordkeeping trigger: \u2265 $3,000"
+        "CTR trigger: aggregate same-day cash in/out > $10,000",
+        "SAR filing deadline: file within 30 days of detection (+30 day extension if suspect unknown, max 60 days)"
       ],
       "mnemonics": [
-        "Stages of laundering: 'PLI' \u2014 Placement, Layering, Integration.",
-        "AML program 5 pillars: 'PACTI' \u2014 Policies, AML officer, CIP, Training, Independent testing.",
-        "CTR = Cash, Ten thousand, Reports (15 days). SAR = Suspicious, About 5 (thousand), 30 days."
+        "PLI = Placement, Layering, Integration (laundering stages).",
+        "CIP minimum data = 'NAID': Name, Address, ID number (TIN), Date of birth.",
+        "AML 5 pillars = 'PORT-I': Policies, Officer (AMLCO), tRaining, Testing (independent), Identification (CDD)."
       ]
     },
     {
-      "title": "Lesson 11.2: Market Manipulation and Insider Trading",
-      "overview": "No security is exempt from antifraud provisions. Market manipulation includes any conduct intended to deceive market participants or distort the natural pricing of securities. Insider trading \u2014 trading on or tipping material nonpublic information (MNPI) \u2014 carries severe civil and criminal penalties under the Insider Trading and Securities Fraud Enforcement Act of 1988 (ITSFEA).",
+      "title": "2. Market Manipulation",
+      "overview": "Market manipulation comprises intentional acts that distort the natural forces of supply and demand to mislead other market participants. Exchange Act \u00a710(b) and Rule 10b-5 are the broad anti-fraud/anti-manipulation provisions; FINRA Rules 2020, 5210, 5220, 5230, 5240, 5270, 5280, and 5290 implement specific prohibitions.",
       "key_concepts": [
-        "Market rumors \u2014 spreading false or misleading information (including via social media) to move prices is prohibited.",
-        "Pump and dump \u2014 accumulate shares, inflate price with false positive rumors, then sell into the buying frenzy.",
-        "Front running \u2014 placing a personal order ahead of a known pending block order to profit from the expected price movement.",
-        "Churning (excessive trading) \u2014 trading to generate commissions rather than meet client objectives; violates fiduciary duty; principals must review accounts, especially discretionary ones.",
-        "Marking the open / marking the close \u2014 entering or falsely reporting trades at/near the open or close to manipulate the reported opening/closing price.",
-        "Freeriding \u2014 buying then selling before paying; account frozen 90 days.",
-        "Matching orders / painting the tape \u2014 coordinated buy/sell between parties to create the illusion of volume.",
-        "Insider trading: trading on (or tipping) material nonpublic information. Possession of MNPI is not illegal; using it to gain or avoid loss is.",
-        "Material info = info that would reasonably affect a stock's price. Nonpublic = not disseminated to the general public.",
-        "Tipper/tippee liability four-part test: (1) info material and nonpublic; (2) tipper owes fiduciary duty; (3) tipper benefits (personal benefit test); (4) tippee knew or should have known info was improper.",
-        "Contemporaneous traders \u2014 traders opposite an insider may sue for up to 5 years after the violation.",
-        "Bounties (Dodd-Frank): informants may receive 10%\u201330% of amounts recovered.",
-        "Firewall / information barrier \u2014 written procedures restricting MNPI flow between firm departments.",
-        "Rule 5130 \u2014 restricted persons may NOT purchase new equity IPOs at the POP. Includes member firms, their employees, finders/fiduciaries to the underwriter, portfolio managers, owners of 10%+ of a member, and their immediate family.",
-        "Immediate family under 5130: parents, in-laws, spouse, siblings, children, and anyone the person materially supports. Aunts/uncles/grandparents are NOT immediate family unless living in the same household or materially supported.",
-        "De minimis exemption (5130): an account can buy IPOs if restricted persons' beneficial interest does not exceed 10% of the account.",
-        "Rule 5131 \u2014 prohibits 'spinning' (allocating IPOs to executives/directors of companies in a position to direct future investment-banking business)."
+        "Pump-and-dump: artificially inflating a thinly traded security's price via false promotion, then selling into the demand.",
+        "Front running: trading ahead of a known customer block order (FINRA Rule 5270).",
+        "Trading ahead of customer orders (Rule 5320 / 'Manning rule'): a firm holding a customer limit order generally may not trade for its own account at the same or better price without filling the customer.",
+        "Marking the close / marking the open: entering trades at session boundaries to influence reported price or benchmark.",
+        "Painting the tape / matched orders / wash trades: coordinated trades creating false appearance of activity.",
+        "Spreading false rumors (Rule 5270/2020): communicating unverified market-moving information to affect price.",
+        "Backing away (Rule 5220): a market maker's failure to honor its firm quotation.",
+        "Freeriding: buying securities without intent or ability to pay, then selling to cover the original purchase.",
+        "Excessive trading / churning: trading in a customer account primarily to generate commissions, inconsistent with the customer's objectives.",
+        "Quotations must be bona fide (Rule 5210); fictitious quotes prohibited.",
+        "Influencing or rewarding employees of others (Rule 3220 / Rule 3240 \u2014 gifts and borrowing) is separately restricted to prevent quid-pro-quo manipulation."
       ],
       "rules": [
-        "Securities Exchange Act of 1934 \u00a710(b) and Rule 10b-5 \u2014 antifraud, manipulation, and insider-trading prohibitions.",
-        "Insider Trading & Securities Fraud Enforcement Act of 1988 (ITSFEA) \u2014 civil penalty up to 3x profit gained/loss avoided; criminal up to $5,000,000 and 20 years for individuals; firm penalty up to greater of $25 million or 3x damages; controlling person up to greater of $1 million or 3x.",
-        "FINRA Rule 5130 \u2014 restrictions on IPO purchases.",
-        "FINRA Rule 5131 \u2014 anti-spinning and new-issue allocation abuses.",
-        "FINRA Rules 5270 (front running of block transactions), 5280 (trading ahead of research reports), 5320 (trading ahead of customer orders)."
+        "Securities Exchange Act of 1934 \u00a710(b) \u2014 manipulative/deceptive devices.",
+        "17 CFR 240.10b-5 \u2014 employment of manipulative and deceptive devices.",
+        "17 CFR 240.10b-3 \u2014 manipulative practices by brokers/dealers.",
+        "17 CFR 240.15c1-2 \u2014 fraud and misrepresentation.",
+        "FINRA Rule 2020 \u2014 use of manipulative, deceptive, or other fraudulent devices.",
+        "FINRA Rule 5210 \u2014 publication of transactions and quotations.",
+        "FINRA Rule 5220 \u2014 offers at stated prices (no backing away).",
+        "FINRA Rule 5230 \u2014 payments involving publications that influence the market.",
+        "FINRA Rule 5240 \u2014 anti-intimidation/coordination.",
+        "FINRA Rule 5270 \u2014 front running of block transactions.",
+        "FINRA Rule 5280 \u2014 trading ahead of research reports.",
+        "FINRA Rule 5290 \u2014 order entry and execution practices.",
+        "FINRA Rule 5310 \u2014 best execution.",
+        "FINRA Rule 5320 \u2014 prohibition against trading ahead of customer orders."
       ],
-      "formulas": [
-        "Civil insider-trading penalty (individual) = up to 3 \u00d7 (profit gained or loss avoided)",
-        "Criminal insider-trading max (individual) = $5,000,000 fine and/or 20 years imprisonment",
-        "Firm penalty for failure to supervise = greater of $25,000,000 or 3 \u00d7 damages",
-        "Dodd-Frank bounty range = 10%\u201330% of amount recovered"
-      ],
+      "formulas": [],
       "mnemonics": [
-        "Manipulation acts: 'FRMP-MC' \u2014 Front-running, Rumors, Matching orders, Pump-and-dump, Marking Close/open, Churning.",
-        "Tipper/tippee test: 'MNFB' \u2014 Material/Nonpublic, Fiduciary breach, Benefit to tipper, Knowledge by tippee.",
-        "5130 restricted family \u2014 'PISCS' (Parents, In-laws, Spouse, Children, Siblings); aunts/uncles/grandparents OUT."
+        "Manipulation acts = 'FM-PAW-BC': Front-running, Marking the close, Pump-and-dump, Painting the tape, Wash trades, Backing away, Churning."
       ]
     },
     {
-      "title": "Lesson 11.3: Prohibited Activities \u2014 Senior Clients, Customer Assets, and Unregistered Personnel",
-      "overview": "Beyond market manipulation, FINRA prohibits a range of activities that exploit customer relationships or misuse customer assets. Special protections apply to 'specified adults' (seniors and the mentally/physically impaired) under Rule 2165, and strict limits govern borrowing, lending, guarantees, sharing in accounts, and the activities of nonregistered personnel.",
+      "title": "3. Insider Trading \u2014 MNPI",
+      "overview": "Insider trading is the purchase or sale of a security in breach of a fiduciary duty or other relationship of trust while in possession of material, nonpublic information (MNPI). Liability extends to tippers, tippees, and misappropriators. Penalties were dramatically expanded by ITSA (1984) and ITSFEA (1988).",
       "key_concepts": [
-        "Specified adult: (a) age 65 or older, or (b) age 18 or older whom the firm reasonably believes has a mental or physical impairment that renders them unable to protect their own interests.",
-        "Trusted contact person (Rule 4512): firms must make reasonable efforts to obtain name and contact at account opening or when updating. Account may still be opened if the customer refuses, provided reasonable effort was made.",
-        "Temporary holds (Rule 2165): firm MAY (not must) place a temporary hold on disbursements OR securities transactions if it reasonably believes financial exploitation has occurred/is occurring/is being attempted.",
-        "Hold durations under amended Rule 2165 (effective 3/17/2022): initial hold up to 15 business days; firm may internally extend by up to 10 additional business days (25 total); if reported to a state regulator/agency/court, additional 30-business-day extension (up to 55 business days total).",
-        "Firm must initiate an internal review immediately and notify the trusted contact person and other authorized parties within 2 business days \u2014 unless the trusted contact is suspected of perpetrating the exploitation or is unavailable.",
-        "Improper use of customer assets: any use of customer funds/securities other than as intended is prohibited. Red flags: suspicious transfers, activity in deceased persons' accounts, excessive complaints, address/phone inconsistencies.",
-        "Borrowing/lending with customers (Rule 3240): firm must have written procedures permitting it; written prior notice and (usually) firm approval required. Five permitted categories: (1) immediate family (no notice/approval); (2) customer in the business of lending, e.g., a bank (no approval); (3) both are registered with same firm (approval); (4) personal relationship outside the broker-customer relationship (approval); (5) business relationship outside the broker-customer relationship (approval).",
-        "Guarantees prohibited \u2014 BDs/IAs/RRs may not guarantee a customer against loss or guarantee a gain.",
-        "Sharing in customer accounts (Rule 2150): only with prior written firm approval and only in direct proportion to financial contribution. Exception: directly proportionate sharing not required for immediate family joint accounts. Firms cannot have joint accounts with customers.",
-        "Rule 3241 (effective 2/15/2021): registered person being named as a customer's beneficiary, executor, trustee, or holder of power of attorney for a non-immediate-family customer requires written notice to and written approval by the firm.",
-        "Nonregistered personnel may: respond to general administrative questions, send literature on request, schedule appointments, invite to seminars; may handle customer money/securities (must be fingerprinted).",
-        "Nonregistered personnel may NOT: solicit trades, open accounts, accept orders, give recommendations, or otherwise engage in the securities business.",
-        "Passing the SIE alone does NOT register you \u2014 you must also pass a top-off (representative-level) exam."
+        "Material information: information a reasonable investor would consider important to an investment decision (e.g., earnings surprises, M&A, FDA approval, executive change).",
+        "Nonpublic: not yet broadly disseminated to the marketplace.",
+        "Classical theory: corporate insider (officer, director, employee, controlling shareholder) trades on MNPI in breach of duty to shareholders.",
+        "Misappropriation theory: outsider (attorney, banker, printer) trades on MNPI in breach of duty owed to the source.",
+        "Tipper/tippee liability: tipper must receive a personal benefit; tippee inherits the duty when she knows or should know of the breach.",
+        "Rule 10b5-1: 'on the basis of' means aware of MNPI at the time of trade; affirmative-defense trading plans must be adopted in good faith when not aware of MNPI.",
+        "Rule 10b5-2: enumerated relationships creating duty of trust/confidence in misappropriation cases (e.g., agreement of confidentiality; history/pattern of confidences; certain family relationships).",
+        "Civil penalties (\u00a721A): up to 3x profit gained or loss avoided ('treble damages'); controlling persons up to greater of $1,000,000 or 3x.",
+        "Criminal penalties: up to $5,000,000 fine and 20 years imprisonment for individuals (per ITSFEA, as amended); up to $25,000,000 for entities.",
+        "Private right of action (\u00a720A): contemporaneous traders may sue; damages capped at violator's profit gained/loss avoided; 5-year statute of limitations.",
+        "SROs may impose bars, suspensions, and fines; SEC may seek disgorgement and injunctions."
       ],
       "rules": [
-        "FINRA Rule 2165 \u2014 Financial Exploitation of Specified Adults; holds on disbursements and securities transactions; 15 + 10 + 30 business-day structure (max 55 b.d.).",
-        "FINRA Rule 4512 \u2014 customer account information, including trusted contact.",
-        "FINRA Rule 2150 \u2014 improper use; prohibition against guarantees and sharing in accounts.",
+        "Securities Exchange Act of 1934 \u00a710(b).",
+        "Securities Exchange Act of 1934 \u00a720A \u2014 contemporaneous-trader private action.",
+        "Securities Exchange Act of 1934 \u00a721A \u2014 civil penalties for insider trading.",
+        "17 CFR 240.10b-5 \u2014 anti-fraud rule.",
+        "17 CFR 240.10b5-1 \u2014 'on the basis of' definition; trading plans.",
+        "17 CFR 240.10b5-2 \u2014 duties in misappropriation cases."
+      ],
+      "formulas": [
+        "Civil penalty cap = 3 \u00d7 (profit gained OR loss avoided)",
+        "Controlling-person penalty = greater of $1,000,000 OR 3 \u00d7 controlled person's profit/loss avoided",
+        "Criminal max (individual) = $5,000,000 fine and/or 20 years",
+        "\u00a720A private damages \u2264 defendant's profit gained or loss avoided; SOL = 5 years"
+      ],
+      "mnemonics": [
+        "MNPI test = 'MN': Material AND Nonpublic.",
+        "Penalty triangle = 'F-I-D': Fines (treble/$5M), Imprisonment (20 yrs), Disgorgement."
+      ]
+    },
+    {
+      "title": "4. Restricted Persons & IPO Allocations (Rule 5130 / 5131)",
+      "overview": "FINRA prohibits broker-dealers from selling new equity issues (IPOs of common stock) to industry insiders to preserve the integrity of the public offering process. Rule 5130 covers 'restricted persons'; Rule 5131 addresses 'spinning' and other allocation abuses involving executives of public/covered companies.",
+      "key_concepts": [
+        "Covered offering: equity IPO of a common stock at the public offering price (does not apply to debt, investment-company shares, or follow-on/secondary offerings).",
+        "Restricted persons include: FINRA members; broker-dealer employees and their immediate family members (spouse, parents, in-laws, siblings, children \u2014 where the BD employee materially supports or is supported by them, or has authority/control over the account); finders and fiduciaries with respect to the offering; portfolio managers buying for personal account; persons owning 10%+ of a BD.",
+        "Immediate family exception: aunts/uncles, grandparents, and other relatives are generally NOT restricted.",
+        "Pre-allocation requirement: BD must obtain (within prior 12 months) a written representation from the account that it is eligible to receive new issues.",
+        "Rule 5131 \u2014 'spinning': prohibits allocating new issues to executive officers/directors of companies that are existing/prospective investment-banking clients in exchange for business (quid pro quo).",
+        "Rule 5131 also restricts flipping, market-order policies, and IPO 'pricing/trading practices' on the day of effectiveness."
+      ],
+      "rules": [
+        "FINRA Rule 5130 \u2014 restrictions on the purchase and sale of IPOs of equity securities.",
+        "FINRA Rule 5131 \u2014 new issue allocations and distributions (spinning)."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Restricted = 'BD-FFP-10': Broker-Dealers, Finders/Fiduciaries, Family of BD employees (immediate), Portfolio managers, 10% owners of BDs."
+      ]
+    },
+    {
+      "title": "5. Senior & Specified-Adult Protections (Rule 2165 / 4512 Trusted Contact)",
+      "overview": "FINRA's senior-investor framework targets financial exploitation of older and impaired adults via two coordinated rules: Rule 4512 (trusted contact person required at account opening) and Rule 2165 (temporary holds on disbursements and on transactions where exploitation is suspected).",
+      "key_concepts": [
+        "Specified adult: a natural person aged 65 or older; OR a natural person 18+ whom the firm reasonably believes has a mental or physical impairment rendering him/her unable to protect his/her own interests.",
+        "Trusted Contact Person (TCP): firms must make reasonable effort to obtain name and contact information of a TCP at account opening (or by the next account update for existing accounts). TCP is not a power-of-attorney and cannot trade.",
+        "Rule 2165 temporary hold \u2014 DISBURSEMENTS: firm may place a hold on a suspected exploitative disbursement for up to 15 business days; may extend internally an additional 10 business days (total 25 business days); a state regulator/agency/court may extend by 30 additional business days (total 55 business days).",
+        "Rule 2165 temporary hold \u2014 TRANSACTIONS (effective 3/17/2022): hold authority now also extends to securities transactions, not only cash disbursements (Reg. Notice 22-05).",
+        "Notification required: firm must promptly notify all parties authorized to transact (other than the suspected exploiter) and the trusted contact, and conduct an internal review.",
+        "Rule 3241: a registered person must obtain written firm approval before being named as a beneficiary, executor, trustee, or holder of POA for a customer who is not an immediate family member (effective 2/15/2021).",
+        "Diminished capacity red flags: difficulty completing routine transactions, memory loss, sudden interest in risky speculative products, isolation from family."
+      ],
+      "rules": [
+        "FINRA Rule 2165 \u2014 financial exploitation of specified adults.",
+        "FINRA Rule 4512 \u2014 customer account information (trusted contact).",
+        "FINRA Rule 3241 \u2014 registered person being named as beneficiary or holding position of trust."
+      ],
+      "formulas": [
+        "2165 hold timeline: 15 BD initial + 10 BD internal extension + 30 BD agency/court extension = up to 55 business days"
+      ],
+      "mnemonics": [
+        "Specified adult = '65 or 18+ Impaired'.",
+        "Hold ladder = '15-25-55' business days."
+      ]
+    },
+    {
+      "title": "6. Improper Use of Customer Assets",
+      "overview": "Registered persons may not borrow from, lend to, share in, or otherwise convert customer assets except under narrowly defined firm-approved exceptions. The customer protection rule and FINRA Rules 2150, 3240, 3260, and 3210 enforce strict segregation of customer and firm/registered-person interests.",
+      "key_concepts": [
+        "Rule 2150: prohibits improper use or commingling of customer funds/securities; prohibits guarantees against loss; prohibits sharing in profits/losses of customer accounts EXCEPT with prior written firm consent AND prior written customer consent, and only in proportion to the registered person's financial contribution (immediate-family exception eliminates the proportionality requirement).",
+        "Rule 3240: borrowing from or lending to customers prohibited unless firm has written procedures permitting it AND the relationship fits a permitted category (e.g., immediate family; bank/lending institution customer in the ordinary course; personal/business relationship outside the BD relationship).",
+        "Rule 3260: discretionary accounts \u2014 written authorization required; orders must be marked discretionary; subject to frequent supervisory review.",
+        "Rule 3210: registered person must give written notice to employer firm before opening an outside brokerage account; the executing firm must provide duplicate confirms/statements upon request.",
+        "Rule 3250: prohibits accepting conditions or stipulations that limit liability for losses (no 'guarantees').",
+        "Customer protection (Exchange Act \u00a715(c)(3) / Rule 15c3-3): segregation of fully paid and excess-margin securities; reserve formula deposit."
+      ],
+      "rules": [
+        "FINRA Rule 2150 \u2014 improper use of customers' securities or funds; prohibition against guarantees and sharing.",
+        "FINRA Rule 3210 \u2014 accounts at other broker-dealers.",
         "FINRA Rule 3240 \u2014 borrowing from or lending to customers.",
-        "FINRA Rule 3241 \u2014 registered person being named beneficiary or fiduciary; firm notice/approval required.",
-        "FINRA Rule 2040 \u2014 payments to unregistered persons prohibited."
+        "FINRA Rule 3250 \u2014 prohibition on guarantees against loss.",
+        "FINRA Rule 3260 \u2014 discretionary accounts."
       ],
-      "formulas": [
-        "Rule 2165 maximum hold timeline = 15 b.d. (initial) + 10 b.d. (internal extension) + 30 b.d. (regulator/court extension) = 55 business days total"
-      ],
+      "formulas": [],
       "mnemonics": [
-        "Specified adult: '65 or unable.'",
-        "3240 lending OK list: 'IB-RPB' \u2014 Immediate family, Bank-type customer, Registered same-firm, Personal outside relationship, Business outside relationship.",
-        "Nonregistered can: 'Greet, schedule, hand-out \u2014 never solicit.'"
+        "Cannot 'BLGS' with customers without firm permission: Borrow, Lend, Guarantee, Share."
       ]
     },
     {
-      "title": "Lesson 11.4: Communications with the Public, Telemarketing, Statements, Regulation S-P, and BCP",
-      "overview": "FINRA Rule 2210 classifies all member communications into three categories \u2014 institutional, retail, and correspondence \u2014 each with its own filing, approval, and recordkeeping requirements. The TCPA governs cold-calling; firms must also satisfy account-statement and confirmation delivery, hold-mail rules, Regulation S-P privacy obligations (including new 2024 incident-response amendments), and maintain a business continuity plan.",
+      "title": "7. Unregistered Persons \u2014 Permitted vs. Prohibited Activities",
+      "overview": "Only properly registered persons may solicit customers, take orders, or receive transaction-based compensation. Rule 2040 governs payments to unregistered persons; Rule 1240 covers continuing education; SEC and FINRA strictly prohibit using non-registered staff as de facto reps.",
       "key_concepts": [
-        "All communications must be fair and balanced, based on principles of good faith, not misleading, not omit material facts, never imply that past performance will be repeated, and consider the nature of the audience.",
-        "Institutional communication: written/electronic communication distributed only to institutional investors. Institutional investors include other BDs/RRs, banks, S&Ls, insurance companies, registered investment companies, employee benefit plans, governmental entities, and any entity (including a natural person) with \u2265 $50 million in total assets. Cannot be treated as institutional if firm has reason to believe it will be forwarded to retail.",
-        "Retail communication: written/electronic communication distributed/made available to MORE THAN 25 retail investors within any 30-calendar-day period. Requires principal approval before use; must be filed with FINRA.",
-        "Filing timing: new member firms (first year) \u2014 file at least 10 days BEFORE use; established firms \u2014 file within 10 days OF first use. Filing is not approval.",
-        "Correspondence: written/electronic to 25 or fewer retail investors within 30 calendar days. Firm sets policy on pre- or post-use principal review; if post-use, firm must provide training and documentation.",
-        "Social media: static content (websites, profiles, blogs) typically requires principal pre-approval; interactive posts do not require pre-approval but must be supervised under written procedures.",
-        "Telephone Consumer Protection Act of 1991 (TCPA): cold calls only between 8:00 am and 9:00 pm at the called party's local time; caller must identify name, firm, and firm phone/address; firm must maintain a do-not-call list and screen against the National DNC Registry (lists must be \u2264 30 days old).",
-        "TCPA exemptions: calls to parties with established business relationship or prior express consent; calls on behalf of tax-exempt nonprofits; non-commercial calls; legitimate debt collection.",
-        "Account statements: at least quarterly; monthly if there is activity in the account or penny stocks are held. Must disclose to the customer to promptly report any inaccuracy.",
-        "Free credit balances: may be held by firm but statement must disclose funds are available on request.",
-        "Trade confirmations (SEC Rule 10b-10 / FINRA 2232): delivered at or before completion (settlement). Includes trade date, account number, RR ID, buy/sell, quantity, security, yield (if applicable), CUSIP, price, principal amount, commission (agency) or capacity disclosure (principal markup/markdown), net amount, and capacity (agent vs. principal).",
-        "Holding customer mail (Rule 3150): firm may hold mail with written customer instructions, normally for up to 3 months (longer for safety/security reasons but not mere convenience); firm must provide alternative access (e.g., online), verify the instruction periodically, and be able to reach the customer for important information.",
-        "Account record verification (Rule 4512): firm must send copy of account record to customer within 30 days of opening, within 30 days of any change, and at least every 36 months thereafter.",
-        "Regulation S-P: protects nonpublic personal information (e.g., SSN, balances, transaction history). Initial privacy notice at the start of the customer relationship and annually thereafter. Customers must be given a reasonable opt-out method for sharing with nonaffiliated third parties (check-off form with prepaid envelope, electronic opt-out, or toll-free number \u2014 writing a letter is NOT a reasonable method).",
-        "Reg S-P safeguard rule: protect customer info across all forms of existing/developing technology (secure devices, encrypt email, etc.).",
-        "Reg S-P (amended 5/15/2024): firms must adopt a written incident-response program; provide customer notification within 30 days of unauthorized access to or use of sensitive customer information; expanded vendor-oversight requirements. Large-entity compliance date 12/3/2025; small-entity 6/3/2026.",
-        "Consumers vs. customers: a consumer has a one-time/limited interaction (initial notice only); a customer has an ongoing relationship (initial + annual).",
-        "Business Continuity Plan (Rule 4370): written plan addressing data backup/recovery, alternate communications with customers/employees, alternate physical location, communications with regulators, and prompt customer access to funds/securities. Must be reviewed annually by a designated senior principal.",
-        "Emergency contacts: firm must provide FINRA with two emergency contact persons (both associated persons; at least one a member of senior management who is also a principal; if a single-person firm, may use a non-associated person familiar with operations). Updates required promptly, no later than 30 days after any change.",
-        "BCP disclosure: must be given to customers at account opening, posted on website, and mailed on request."
+        "Unregistered (clerical) personnel MAY: respond to existing-customer inquiries about account balances, quote prices/yields from a published source, take messages, distribute pre-approved literature on request, and perform administrative tasks.",
+        "Unregistered personnel MAY NOT: solicit new business, recommend securities, take orders, discuss product features that constitute a recommendation, or receive transaction-based compensation.",
+        "Rule 2040: firms may not pay commissions/transaction-based fees to unregistered persons, except permissible continuing commissions to retired reps (under a bona fide written agreement) and certain payments to non-U.S. finders meeting strict conditions.",
+        "Rule 3270: outside business activities require prior written notice to firm.",
+        "Rule 3280: private securities transactions ('selling away') require prior written notice and, if compensated, firm approval and supervision."
       ],
       "rules": [
-        "FINRA Rule 2210 \u2014 Communications with the Public (institutional / retail / correspondence).",
-        "FINRA Rule 2232 \u2014 Customer Confirmations; SEC Rule 10b-10.",
-        "FINRA Rule 2231 \u2014 Customer Account Statements.",
-        "FINRA Rule 3150 \u2014 Holding of Customer Mail.",
-        "FINRA Rule 3230 \u2014 Telemarketing; TCPA of 1991 (FCC).",
-        "FINRA Rule 4370 \u2014 Business Continuity Plans and Emergency Contact Information.",
-        "FINRA Rule 4512 \u2014 Customer Account Information (including 30/30/36-month updates).",
-        "SEC Regulation S-P \u2014 Privacy of Consumer Financial Information; Safeguard Rule; 2024 amendments add incident response and 30-day customer notification."
+        "Securities Exchange Act of 1934 \u00a715(a) \u2014 broker-dealer registration requirement.",
+        "FINRA Rule 2040 \u2014 payments to unregistered persons.",
+        "FINRA Rule 3270 \u2014 outside business activities.",
+        "FINRA Rule 3280 \u2014 private securities transactions."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Clerk CAN: Quote (published), Mail, Schedule. Clerk CAN'T: Solicit, Recommend, Take orders, Get commissions."
+      ]
+    },
+    {
+      "title": "8. Communications with the Public (Rule 2210)",
+      "overview": "FINRA Rule 2210 classifies all communications into three categories with distinct filing, approval, and content standards. All communications must be fair, balanced, not misleading, and approved per category requirements; principal pre-use approval is generally required for retail communications.",
+      "key_concepts": [
+        "Retail communication: any written (including electronic) communication distributed or made available to MORE than 25 retail investors within any 30-calendar-day period. Generally requires registered principal approval BEFORE first use.",
+        "Correspondence: any written (including electronic) communication distributed or made available to 25 OR FEWER retail investors within any 30-calendar-day period. Subject to supervision and review but not pre-use approval.",
+        "Institutional communication: written communication distributed exclusively to institutional investors (banks, RIAs, insurance companies, registered investment companies, government entities, BDs, qualified plans with $50M+, natural persons with $50M+). Not subject to pre-use principal approval but firms must have written supervisory procedures.",
+        "Filing requirements: new member firms must pre-file retail communications for first year; certain retail communications about registered investment companies, options, security futures, bond funds, etc., require filing with FINRA Advertising Regulation Department (typically within 10 business days of first use; 10 BDs before first use for some categories).",
+        "Content standards: no false/exaggerated/promissory statements; balanced discussion of risks and benefits; predictions of performance prohibited (except as permitted for certain registered offerings/IRA projections).",
+        "Required disclosures: identity of member firm; testimonials must disclose if paid >$100, that experience may not be representative, and any material conflict.",
+        "Public appearances and social media: subject to general standards; static content typically treated as retail communication; interactive content treated as correspondence."
+      ],
+      "rules": [
+        "FINRA Rule 2210 \u2014 communications with the public.",
+        "FINRA Rule 2220 \u2014 options communications (parallel framework).",
+        "FINRA Rule 2264 \u2014 margin disclosure statement.",
+        "FINRA Rule 2231 \u2014 customer account statements.",
+        "FINRA Rule 2251 \u2014 processing/forwarding of proxy and other issuer-related materials."
       ],
       "formulas": [
-        "Retail communication threshold: > 25 retail investors / 30 calendar days",
-        "Correspondence threshold: \u2264 25 retail investors / 30 calendar days",
-        "Institutional cutoff (entity assets): \u2265 $50,000,000",
-        "Filing window \u2014 new member: \u2265 10 days BEFORE first use; established member: within 10 days AFTER first use",
-        "Calling hours under TCPA: 8:00 am \u2013 9:00 pm at called party's local time",
-        "Account record refresh: within 30 days of opening / 30 days of change / at least every 36 months",
-        "Reg S-P breach notification (2024 amendment): within 30 days of unauthorized access/use"
+        "Retail vs. Correspondence threshold = 25 retail investors / 30 calendar days",
+        "Institutional minimum (natural person/plan) = $50,000,000"
       ],
       "mnemonics": [
-        "Communications categories: 'I-R-C' \u2014 Institutional, Retail, Correspondence.",
-        "Retail = '25 in 30' rule (more than 25 retail in any 30 days).",
-        "TCPA: 'Call 8-to-9, in their time zone, off the no-call line.'",
-        "Reg S-P timing: 'Initial, Annual, and (now) 30-day incident.'",
-        "BCP contacts: 'Two persons, one principal, senior.'"
+        "3 categories = 'RIC': Retail, Institutional, Correspondence.",
+        "25/30 rule: >25 retail in 30 days = Retail; \u226425 = Correspondence."
+      ]
+    },
+    {
+      "title": "9. Telemarketing & Cold-Calling (Rule 3230 / TCPA)",
+      "overview": "The Telephone Consumer Protection Act (TCPA) and FINRA Rule 3230 govern outbound cold-calls to consumers, restricting hours, requiring identification, and mandating DNC list maintenance and scrubbing.",
+      "key_concepts": [
+        "Permissible calling hours: 8:00 AM to 9:00 PM in the LOCAL TIME of the called party.",
+        "National Do-Not-Call (DNC) Registry: must scrub call lists against the federal registry; firms must also maintain an internal (firm-specific) DNC list.",
+        "Required disclosures on each call: caller's name, firm name, firm telephone number/address, purpose of the call (solicit purchase of securities/services).",
+        "Established business relationship exception: may call existing customers for up to 18 months after last transaction; may call after consumer's inquiry/application for 3 months \u2014 but if customer is on internal DNC list, do not call.",
+        "Written/signed consent overrides DNC.",
+        "Firms must train personnel and maintain written DNC policies and procedures."
+      ],
+      "rules": [
+        "FINRA Rule 3230 \u2014 telemarketing."
+      ],
+      "formulas": [
+        "Calling window = 8 AM \u2013 9 PM local time (called party's time zone)",
+        "EBR exception: 18 months post-transaction; 3 months post-inquiry"
+      ],
+      "mnemonics": [
+        "'8 to 9' for time; 'NIP' disclosure = Name, Identify firm, Phone number/purpose."
+      ]
+    },
+    {
+      "title": "10. Reg BI, KYC, Suitability & Form CRS",
+      "overview": "Regulation Best Interest (Rule 15l-1) imposes a 'best interest' standard on broker-dealer recommendations to retail customers, working with FINRA Rules 2090 (KYC) and 2111 (suitability). Form CRS (17 CFR 240.17a-14) delivers a plain-English client relationship summary.",
+      "key_concepts": [
+        "Reg BI four obligations: (1) Disclosure, (2) Care, (3) Conflict of Interest, (4) Compliance.",
+        "Care Obligation: BD must exercise reasonable diligence, care, and skill to (a) understand the recommendation (reasonable-basis), (b) have a reasonable basis to believe it is in the particular retail customer's best interest (customer-specific), and (c) ensure series of recommendations are not excessive (quantitative).",
+        "Rule 2090 (Know Your Customer): use reasonable diligence regarding every account to know the essential facts about each customer.",
+        "Rule 2111 (Suitability): applies to recommendations to non-retail customers and otherwise complements Reg BI. Three suitability components: reasonable-basis, customer-specific, quantitative.",
+        "Customer Investment Profile factors: age, other investments, financial situation/needs, tax status, investment objectives, investment experience, time horizon, liquidity needs, risk tolerance.",
+        "Form CRS (Form ADV Part 3 for advisers; Form CRS for BDs): delivered at or before earliest of (1) recommendation of account type/security/strategy, (2) placing first order, (3) opening account.",
+        "What is a 'recommendation': call to action; based on facts and circumstances; the more individually tailored, the more likely it constitutes a recommendation."
+      ],
+      "rules": [
+        "17 CFR 240.15l-1 \u2014 Regulation Best Interest.",
+        "17 CFR 240.17a-14 \u2014 Form CRS.",
+        "FINRA Rule 2090 \u2014 Know Your Customer.",
+        "FINRA Rule 2111 \u2014 Suitability."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Reg BI = '4 Cs': Care, Conflicts, Compliance, disClosure.",
+        "Suitability triangle = 'R-C-Q': Reasonable-basis, Customer-specific, Quantitative."
+      ]
+    },
+    {
+      "title": "11. Books, Records, Confirmations & Statements",
+      "overview": "SEC Rules 17a-3 and 17a-4 prescribe what records BDs must create and how long they must preserve them. Customer-facing documentation \u2014 trade confirmations (Rule 10b-10) and account statements (FINRA Rule 2231) \u2014 is also strictly regulated.",
+      "key_concepts": [
+        "Rule 17a-3: records to be MADE (blotters, ledgers, order tickets, customer account records, trial balances, etc.).",
+        "Rule 17a-4: records to be PRESERVED. Common periods on SIE: blotters and general ledgers \u2014 6 years (first 2 in easily accessible location); customer account records and communications \u2014 generally 3 years (first 2 accessible); corporate charters/partnership agreements/minute books \u2014 life of firm + 3 years (lifetime); FINRA Rule 4511 requires 6-year retention for any record without a specified period.",
+        "Rule 10b-10 (Confirmations): customer must receive a written confirmation at or before completion of the transaction; must disclose trade date, settlement date, capacity (agent/principal), price, commission (if agent) or markup (in certain principal trades), and other material facts.",
+        "FINRA Rule 2231: account statements at least quarterly; monthly if there is account activity.",
+        "FINRA Rule 4512: customer account information \u2014 name, address, DOB, TIN, employment, investment objectives, signature of registered rep and principal approval; trusted contact information.",
+        "FINRA Rule 4514: signatures of convenience prohibited; pre-signed forms prohibited.",
+        "Holding of customer mail (FINRA Rule 3150): firm may hold mail up to 3 months upon written customer instructions; longer periods allowed if customer provides a legitimate purpose (e.g., extended travel/safety)."
+      ],
+      "rules": [
+        "17 CFR 240.10b-10 \u2014 confirmation of transactions.",
+        "17 CFR 240.17a-3 \u2014 records to be made.",
+        "17 CFR 240.17a-4 \u2014 records to be preserved.",
+        "FINRA Rule 4511 \u2014 general books and records (6-year default).",
+        "FINRA Rule 4512 \u2014 customer account information.",
+        "FINRA Rule 4514 \u2014 authorization records.",
+        "FINRA Rule 2231 \u2014 customer account statements.",
+        "FINRA Rule 3150 \u2014 holding of customer mail."
+      ],
+      "formulas": [
+        "Default record retention (FINRA 4511) = 6 years",
+        "Customer mail hold (3150) = up to 3 months (longer w/ legitimate purpose)",
+        "Account statements = quarterly minimum, monthly if activity"
+      ],
+      "mnemonics": [
+        "Retention '6-3-Life': 6 yrs blotters/ledgers, 3 yrs most communications, Lifetime + 3 for organizational docs."
+      ]
+    },
+    {
+      "title": "12. Regulation S-P (Privacy) & Customer Information Safeguards",
+      "overview": "Regulation S-P protects nonpublic personal information (NPI) of consumers/customers. Firms must deliver privacy notices, allow opt-out of certain sharing, and implement safeguards. The 2024 amendments add an incident response program and customer breach-notification timeline.",
+      "key_concepts": [
+        "Nonpublic Personal Information (NPI): personally identifiable financial information that is not publicly available (e.g., SSN, account number, transaction history).",
+        "Initial privacy notice: must be provided no later than the time the customer relationship is established.",
+        "Annual privacy notice: must be provided once during any 12-consecutive-month period (with limited exception for unchanged policies and no new sharing).",
+        "Opt-out right: customer must be given a reasonable opportunity (and reasonable means) to opt out before NPI is disclosed to nonaffiliated third parties (exceptions exist for service providers, joint marketing, legal compliance).",
+        "Safeguards Rule: written policies and procedures for administrative, technical, and physical safeguards to protect customer records and information.",
+        "2024 amendments to Reg S-P (effective compliance: large entities 12/3/2025; small entities 6/3/2026): require (a) a written incident response program, (b) customer notification within 30 days of detecting unauthorized access/use of sensitive customer information, and (c) enhanced oversight of third-party service providers.",
+        "Disposal Rule: proper disposal of consumer report information to prevent unauthorized access."
+      ],
+      "rules": [
+        "Regulation S-P (17 CFR Part 248) \u2014 privacy of consumer financial information.",
+        "FINRA Rule 3110 \u2014 supervision (extends to safeguarding policies)."
+      ],
+      "formulas": [
+        "Reg S-P breach notification = within 30 days of awareness of unauthorized access/use"
+      ],
+      "mnemonics": [
+        "Reg S-P triad = 'NOS': Notice (initial + annual), Opt-out, Safeguards."
+      ]
+    },
+    {
+      "title": "13. Business Continuity Plan (BCP) \u2014 Rule 4370",
+      "overview": "FINRA Rule 4370 requires every member firm to create and maintain a written business continuity plan reasonably designed to enable the firm to meet existing obligations to customers in the event of an emergency or significant business disruption.",
+      "key_concepts": [
+        "BCP must address at minimum: data backup and recovery; mission-critical systems; financial and operational assessments; alternate communications with customers, employees, and regulators; alternate physical location of employees; critical business constituent, bank, and counter-party impact; regulatory reporting; how the firm will assure customers prompt access to funds and securities.",
+        "Two emergency contact persons: firm must designate and report to FINRA two contact persons (both registered principals; one may be an executive officer/operations officer if the firm has only one registered principal).",
+        "BCP disclosure: firm must disclose its BCP in writing to customers at account opening, post it on its website (if any), and mail it upon request.",
+        "Annual review: senior management must review the BCP annually and update as necessary."
+      ],
+      "rules": [
+        "FINRA Rule 4370 \u2014 Business Continuity Plans and Emergency Contact Information."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "BCP review = annual; 2 emergency contacts (both principals)."
+      ]
+    },
+    {
+      "title": "14. Falsifying Records, Signatures of Convenience & Regulatory Cooperation",
+      "overview": "Integrity of books, records, and regulatory inquiry processes is foundational. FINRA Rules 2010, 4511, 4514, and 8210 (regulatory information requests) impose strict honesty and recordkeeping duties; falsification or non-response leads to severe discipline including bars.",
+      "key_concepts": [
+        "Rule 2010: standards of commercial honor and just and equitable principles of trade \u2014 the catch-all ethical standard.",
+        "Rule 4511: members must make and preserve books and records as required under FINRA rules, the Exchange Act, and applicable Exchange Act rules.",
+        "Rule 4514: prohibits use of pre-signed forms and signatures of convenience.",
+        "Rule 8210 (regulatory information requests): firms and associated persons must provide information, testimony, and documents upon FINRA's written request; failure to respond is itself a violation typically resulting in suspension or bar.",
+        "Rule 2120: prohibits use of manipulative, deceptive, or fraudulent devices (parallel to Exchange Act \u00a710(b)).",
+        "Falsifying records, altering documents, backdating, or providing misleading information to regulators violates Rule 2010 and may also violate the Exchange Act."
+      ],
+      "rules": [
+        "FINRA Rule 2010 \u2014 standards of commercial honor.",
+        "FINRA Rule 2120 \u2014 use of manipulative, deceptive, or fraudulent devices.",
+        "FINRA Rule 4511 \u2014 general recordkeeping.",
+        "FINRA Rule 4514 \u2014 authorization records (no signatures of convenience).",
+        "17 CFR 240.15c1-2 \u2014 fraud and misrepresentation.",
+        "17 CFR 240.15c1-3 \u2014 misrepresentation as to registration."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Three 'never' acts = Falsify, Forge, Fail-to-respond (8210)."
+      ]
+    },
+    {
+      "title": "15. Settlement, Corporate Actions & Option-Exercise Settlement (Errata)",
+      "overview": "Regular-way equity, corporate-bond, and municipal-bond trades settle T+1 (effective 5/28/2024). When an equity option is exercised, the resulting stock delivery now settles T+1 as well, aligned with the new equity settlement cycle. Index options settle next business day in cash for intrinsic value.",
+      "key_concepts": [
+        "Regular-way settlement for equities, corporate bonds, and municipal bonds = T+1.",
+        "U.S. Treasury securities and options settlement (purchase/sale of the option contract itself) = T+1 (options have always been next-business-day).",
+        "Equity option EXERCISE \u2192 resulting stock trade settles T+1 (post-5/28/2024 conversion).",
+        "Index option exercise \u2192 next business day in cash (intrinsic value).",
+        "Cash settlement = same day (T).",
+        "Ex-dividend date under T+1 cycle = ONE business day before record date (formerly two)."
+      ],
+      "rules": [
+        "17 CFR 240.15c6-1 \u2014 securities transaction settlement cycle (T+1)."
+      ],
+      "formulas": [
+        "Regular-way settlement: equities/corporates/munis/options = T+1",
+        "Equity option exercise \u2192 stock delivery T+1",
+        "Ex-date (T+1 regime) = Record date \u2013 1 business day"
+      ],
+      "mnemonics": [
+        "'Everything is T+1' (post-5/28/2024) \u2014 equities, corporates, munis, option exercises (stock leg)."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 24086,
-    "output": 7294
+    "input": 14248,
+    "output": 12340
   },
-  "cost_usd": 0.9083
+  "cost_usd": 1.1392
 }

@@ -562,7 +562,7 @@ def generate_type_deck(api_key, manifest, type_key, out_dir, force=False):
     resp = call_opus(api_key, FLASHCARD_SYSTEM,
                      flashcard_prompt_for_question_type(type_key, units_overview,
                                                         manifest["outline"]["full"]),
-                     max_tokens=8000)
+                     max_tokens=12000)  # 30-40 verbose cards (esp. 'hard') exceeded 8000
     it, ot, cost = _usage(resp)
     parsed = parse_json_response(resp["content"][0]["text"], api_key)
     cards = parsed.get("cards", [])

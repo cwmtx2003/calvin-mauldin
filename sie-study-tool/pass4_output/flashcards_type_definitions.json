@@ -3,288 +3,255 @@
   "cards": [
     {
       "type": "definition",
-      "front": "Primary Market",
-      "back": "The market in which an issuer raises capital by selling new securities directly to investors, with proceeds going to the issuer. IPOs and additional offerings occur here.",
-      "unit": 1,
-      "lesson": 1
+      "front": "Prospectus",
+      "back": "The formal written offer to sell securities required by Section 10 of the Securities Act of 1933. It discloses material information about the issuer and the offering and must be delivered to investors in registered public offerings.",
+      "unit": 1
+    },
+    {
+      "type": "definition",
+      "front": "Accredited Investor (Rule 501)",
+      "back": "An investor who meets income (>$200K individual / $300K joint for two prior years) or net worth (>$1M excluding primary residence) tests, certain institutions, or qualifies via professional credentials (Series 7, 65, or 82). Eligible to purchase securities in private placements under Regulation D.",
+      "unit": 1
     },
     {
       "type": "definition",
       "front": "Firm Commitment Underwriting",
-      "back": "An underwriting arrangement in which the syndicate purchases the entire issue from the issuer and resells it to the public, assuming the financial risk for any unsold shares.",
-      "unit": 1,
-      "lesson": 1
+      "back": "An offering method in which the underwriter purchases the entire issue from the issuer and resells it to the public, assuming the risk of any unsold shares. Contrasted with best efforts, where the underwriter acts only as an agent.",
+      "unit": 1
     },
     {
       "type": "definition",
-      "front": "Accredited Investor",
-      "back": "Under Reg D, an individual with income over $200,000 ($300,000 joint) in each of the last two years or net worth exceeding $1 million (excluding primary residence), or certain institutions and credentialed persons (e.g., holders of Series 7, 65, or 82).",
-      "unit": 1,
-      "lesson": 1
-    },
-    {
-      "type": "definition",
-      "front": "Market Maker",
-      "back": "A broker-dealer that stands ready to buy and sell a specific security for its own account at publicly quoted bid and ask prices, providing liquidity to the secondary market.",
-      "unit": 1,
-      "lesson": 2
-    },
-    {
-      "type": "definition",
-      "front": "Agency Capacity",
-      "back": "When a broker-dealer acts as an intermediary executing a trade on behalf of a customer and charges a commission, rather than trading from its own inventory.",
-      "unit": 1,
-      "lesson": 3
-    },
-    {
-      "type": "definition",
-      "front": "Stop Order",
-      "back": "An order that becomes a market order once the stock trades at or through a specified stop price. Sell stops are placed below the market to protect long positions; buy stops are placed above the market to protect shorts.",
-      "unit": 1,
-      "lesson": 3
-    },
-    {
-      "type": "definition",
-      "front": "Preemptive Right",
-      "back": "The right of existing common shareholders to maintain their proportionate ownership by purchasing newly issued shares before they are offered to the public.",
-      "unit": 2,
-      "lesson": 1
-    },
-    {
-      "type": "definition",
-      "front": "Cumulative Preferred Stock",
-      "back": "Preferred stock that accrues any skipped dividends; all unpaid (accumulated) dividends must be paid before any common dividend can be paid.",
-      "unit": 2,
-      "lesson": 2
+      "front": "Shelf Registration (Rule 415)",
+      "back": "An SEC registration allowing an issuer to register securities for sale over a period of up to three years (or longer for WKSIs) and offer them in tranches as market conditions warrant, without filing a new registration each time.",
+      "unit": 1
     },
     {
       "type": "definition",
       "front": "American Depositary Receipt (ADR)",
-      "back": "A negotiable certificate issued by a U.S. bank representing shares of a foreign corporation, allowing those shares to trade in U.S. markets in U.S. dollars. ADR holders face currency risk and generally lack voting rights.",
-      "unit": 2,
-      "lesson": 2
+      "back": "A negotiable receipt issued by a U.S. bank representing shares of a foreign company held on deposit abroad. ADRs trade in U.S. markets in U.S. dollars and facilitate domestic investment in foreign equities; holders bear currency risk and generally lack voting rights.",
+      "unit": 2
     },
     {
       "type": "definition",
-      "front": "Ex-Dividend Date",
-      "back": "The first day a stock trades without the previously declared dividend. Under T+1 settlement, the ex-date is the same business day as the record date for regular-way trades.",
-      "unit": 2,
-      "lesson": 3
+      "front": "Cumulative Preferred Stock",
+      "back": "Preferred stock that requires all skipped (omitted) dividends to be paid in full before any common stock dividend may be declared. Provides greater dividend protection than straight preferred.",
+      "unit": 2
     },
     {
       "type": "definition",
-      "front": "Yield to Maturity (YTM)",
-      "back": "The total annualized return an investor earns by holding a bond to maturity, accounting for the coupon income, the time value of money, and any gain or loss between purchase price and par value.",
-      "unit": 3,
-      "lesson": 1
+      "front": "Warrant",
+      "back": "A long-term equity security giving the holder the right (not the obligation) to buy the issuer's stock at a fixed price, typically issued at exercise prices above current market and often attached as a sweetener to bond or preferred stock offerings.",
+      "unit": 2
+    },
+    {
+      "type": "definition",
+      "front": "Rule 144",
+      "back": "SEC rule governing the resale of restricted and control securities. Imposes a holding period (6 months for reporting issuers), volume limits, manner-of-sale, current-information requirements, and electronic Form 144 filing on EDGAR for affiliates.",
+      "unit": 2
     },
     {
       "type": "definition",
       "front": "General Obligation (GO) Bond",
-      "back": "A municipal bond backed by the full faith, credit, and taxing power of the issuer. GO bonds typically require voter approval and are repaid through tax revenues.",
-      "unit": 3,
-      "lesson": 2
+      "back": "A municipal bond backed by the full faith, credit, and taxing power of the issuer. Repayment relies on the issuer's ability to levy taxes (typically ad valorem property taxes at the local level), and issuance often requires voter approval.",
+      "unit": 3
     },
     {
       "type": "definition",
       "front": "Revenue Bond",
-      "back": "A municipal bond backed solely by revenues generated from a specific project or facility (e.g., toll roads, airports). Not backed by the issuer's taxing power.",
-      "unit": 3,
-      "lesson": 2
+      "back": "A municipal bond payable solely from revenues generated by a specific project or facility (e.g., toll road, airport). Not backed by taxing power; analyzed primarily by the debt service coverage ratio.",
+      "unit": 3
+    },
+    {
+      "type": "definition",
+      "front": "Yield to Maturity (YTM)",
+      "back": "The total annualized return a bondholder earns if the bond is held to maturity, accounting for coupon income plus any gain or loss from purchase price relative to par. Reflects the bond's internal rate of return.",
+      "unit": 3
     },
     {
       "type": "definition",
       "front": "Banker's Acceptance (BA)",
-      "back": "A short-term money market instrument used to finance international trade, representing a time draft drawn on and guaranteed by a bank.",
-      "unit": 3,
-      "lesson": 3
+      "back": "A short-term, negotiable money market instrument used to finance international trade. It is a time draft drawn on and accepted by a bank, which guarantees payment at maturity (typically 270 days or less).",
+      "unit": 3
     },
     {
       "type": "definition",
       "front": "Net Asset Value (NAV)",
-      "back": "The per-share value of a mutual fund, calculated as (total assets \u2212 total liabilities) \u00f7 shares outstanding. Computed at least once per business day at market close (forward pricing).",
-      "unit": 4,
-      "lesson": 1
+      "back": "The per-share value of a mutual fund or other investment company, calculated as (total fund assets \u2212 total fund liabilities) \u00f7 shares outstanding. Open-end fund orders are executed at the next computed NAV (forward pricing).",
+      "unit": 4
     },
     {
       "type": "definition",
       "front": "Breakpoint",
-      "back": "A dollar level of mutual fund investment that qualifies the investor for a reduced front-end sales charge. Failing to inform a client of an available breakpoint is a prohibited \"breakpoint sale.\"",
-      "unit": 4,
-      "lesson": 1
+      "back": "A discounted sales charge level on Class A mutual fund shares triggered when an investor's purchase reaches specified dollar thresholds. Investors may aggregate purchases via a Letter of Intent or Rights of Accumulation to qualify.",
+      "unit": 4
     },
     {
       "type": "definition",
-      "front": "Variable Annuity",
-      "back": "An insurance contract whose separate-account value and payout fluctuate with the performance of underlying investments. Considered both an insurance product and a security; requires a prospectus.",
-      "unit": 4,
-      "lesson": 2
+      "front": "Unit Investment Trust (UIT)",
+      "back": "An investment company classification under the Investment Company Act of 1940 that issues redeemable units representing an undivided interest in a fixed, unmanaged portfolio of securities, with a stated termination date.",
+      "unit": 4
     },
     {
       "type": "definition",
-      "front": "Call Option",
-      "back": "A contract giving the holder the right (not the obligation) to buy 100 shares of the underlying security at the strike price before expiration. The writer is obligated to sell if exercised.",
-      "unit": 5,
-      "lesson": 1
+      "front": "12b-1 Fee",
+      "back": "An annual fee deducted from a mutual fund's assets to cover distribution and shareholder servicing expenses, authorized under SEC Rule 12b-1 of the Investment Company Act of 1940. Disclosed in the prospectus and capped under FINRA Rule 2341.",
+      "unit": 4
     },
     {
       "type": "definition",
       "front": "529 Plan",
-      "back": "A municipal fund security offering tax-advantaged savings for qualified education expenses. Contributions grow tax-deferred and qualified withdrawals are federal tax-free; covered by a program disclosure document.",
-      "unit": 5,
-      "lesson": 2
+      "back": "A municipal fund security established under IRC Section 529 that provides tax-deferred growth and tax-free qualified distributions for education expenses. Includes prepaid tuition and savings plan variants; SECURE 2.0 permits limited rollovers to a Roth IRA.",
+      "unit": 5
     },
     {
       "type": "definition",
       "front": "Direct Participation Program (DPP)",
-      "back": "A limited partnership or similar entity that passes income, gains, losses, and tax benefits directly to investors. DPPs are generally illiquid, unlisted, and require suitability determinations.",
-      "unit": 5,
-      "lesson": 3
+      "back": "A pooled, generally illiquid investment (typically a limited partnership) that passes through income, gains, losses, deductions, and credits directly to investors, avoiding entity-level taxation.",
+      "unit": 5
     },
     {
       "type": "definition",
-      "front": "Margin Account",
-      "back": "An account in which the customer borrows from the broker-dealer to purchase securities. Reg T initial requirement is 50%; FINRA minimum equity is $2,000; maintenance is 25% long / 30% short.",
-      "unit": 6,
-      "lesson": 1
+      "front": "REIT",
+      "back": "A Real Estate Investment Trust \u2014 a pooled investment vehicle that invests in real estate equity, mortgages, or both. To avoid corporate taxation, a REIT must distribute at least 90% of taxable income to shareholders; distributions are taxed as ordinary income.",
+      "unit": 5
     },
     {
       "type": "definition",
-      "front": "Traditional IRA",
-      "back": "A qualified retirement account allowing pre-tax (potentially deductible) contributions that grow tax-deferred. Withdrawals are taxed as ordinary income; RMDs begin at age 73; 10% penalty for withdrawals before 59\u00bd.",
-      "unit": 6,
-      "lesson": 2
+      "front": "Hedge Fund",
+      "back": "A private, generally unregistered pooled investment vehicle (typically a limited partnership) sold to accredited or qualified investors. Characterized by high minimums, performance fees, leverage, limited liquidity, and broad investment latitude.",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Covered Call",
+      "back": "An options strategy in which the writer of a call option simultaneously owns the underlying stock. The strategy generates premium income and is considered the least risky option-writing position.",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "UTMA Account",
+      "back": "A custodial account established under the Uniform Transfers to Minors Act. Assets are irrevocable gifts owned by the minor but managed by a custodian until the minor reaches the age of majority defined by state law.",
+      "unit": 6
     },
     {
       "type": "definition",
       "front": "Discretionary Account",
-      "back": "An account in which the registered representative may execute trades without the customer's prior approval for each transaction. Requires prior written customer authorization and prompt principal review of trades.",
-      "unit": 6,
-      "lesson": 3
+      "back": "An account in which the customer has granted prior written authorization permitting the registered representative to choose security, action, or amount without contacting the customer for each trade. All discretionary orders must be marked as such and reviewed promptly by a principal.",
+      "unit": 6
+    },
+    {
+      "type": "definition",
+      "front": "Required Minimum Distribution (RMD)",
+      "back": "The minimum amount that must be withdrawn annually from a traditional IRA or qualified plan beginning at age 73 (under SECURE 2.0). Failure to take the RMD triggers a 25% excise tax on the shortfall (10% if timely corrected).",
+      "unit": 6
     },
     {
       "type": "definition",
       "front": "Systematic Risk",
-      "back": "Risk that affects the entire market and cannot be eliminated through diversification. Includes market, interest rate, inflation (purchasing power), and currency risks.",
-      "unit": 7,
-      "lesson": 1
+      "back": "The risk inherent in the overall market that cannot be eliminated through diversification. Includes market risk, interest rate risk, inflation (purchasing power) risk, and currency risk.",
+      "unit": 7
     },
     {
       "type": "definition",
-      "front": "Regulation Best Interest (Reg BI)",
-      "back": "SEC rule requiring broker-dealers to act in the best interest of retail customers when making recommendations. Four obligations: Disclosure, Care, Conflict of Interest, and Compliance.",
-      "unit": 7,
-      "lesson": 2
+      "front": "Reinvestment Risk",
+      "back": "The risk that interest or principal cash flows from a fixed-income investment will have to be reinvested at a lower prevailing rate, reducing total return. Zero-coupon bonds eliminate this risk over their term.",
+      "unit": 7
     },
     {
       "type": "definition",
-      "front": "Current Yield",
-      "back": "A bond's annual coupon interest divided by its current market price. Measures the income return at the current price but ignores capital gain/loss at maturity.",
-      "unit": 8,
-      "lesson": 1
-    },
-    {
-      "type": "definition",
-      "front": "Wash Sale",
-      "back": "IRS rule disallowing a capital loss when a substantially identical security is purchased within 30 days before or after the sale that generated the loss. The disallowed loss is added to the basis of the replacement security.",
-      "unit": 8,
-      "lesson": 2
+      "front": "Diversification",
+      "back": "A risk-mitigation strategy that spreads investments across different securities, sectors, asset classes, or geographies to reduce nonsystematic (issuer-specific) risk within a portfolio.",
+      "unit": 7
     },
     {
       "type": "definition",
       "front": "Qualified Dividend",
-      "back": "A dividend taxed at long-term capital gains rates (0%, 15%, or 20%) rather than ordinary income rates. Requires the underlying common stock to be held more than 60 days within the 121-day window around the ex-date.",
-      "unit": 8,
-      "lesson": 2
+      "back": "A dividend taxed at the long-term capital gains rate (0%, 15%, or 20%) rather than at ordinary income rates. Requires holding the underlying common stock more than 60 days during the 121-day period surrounding the ex-dividend date.",
+      "unit": 8
     },
     {
       "type": "definition",
-      "front": "Recession",
-      "back": "A significant decline in economic activity, traditionally defined as two consecutive quarters of negative real GDP growth. Falls within the contraction phase of the business cycle.",
-      "unit": 9,
-      "lesson": 1
+      "front": "Wash Sale Rule",
+      "back": "An IRS rule that disallows a capital loss deduction if the taxpayer purchases a substantially identical security within 30 days before or after the loss sale. The disallowed loss is added to the cost basis of the replacement security.",
+      "unit": 8
     },
     {
       "type": "definition",
-      "front": "Keynesian Economics",
-      "back": "An economic theory advocating active government intervention through fiscal policy (taxation and spending) to stabilize the business cycle and manage aggregate demand.",
-      "unit": 9,
-      "lesson": 2
+      "front": "Tax-Equivalent Yield",
+      "back": "The taxable yield that would equal the after-tax yield of a tax-exempt municipal bond, calculated as municipal yield \u00f7 (1 \u2212 investor's marginal tax bracket). Used to compare munis to taxable bonds.",
+      "unit": 8
     },
     {
       "type": "definition",
       "front": "Discount Rate",
-      "back": "The interest rate the Federal Reserve charges member banks for short-term loans from the Fed's discount window. Set directly by the Fed as a monetary policy tool.",
-      "unit": 9,
-      "lesson": 3
+      "back": "The interest rate the Federal Reserve charges member banks for short-term loans through the discount window. Lowering it eases credit; raising it tightens credit.",
+      "unit": 9
     },
     {
       "type": "definition",
       "front": "Federal Funds Rate",
-      "back": "The interest rate banks charge each other on overnight loans of reserves. Targeted (not set) by the FOMC through open market operations and the IORB rate.",
-      "unit": 9,
-      "lesson": 3
+      "back": "The interest rate banks charge each other for overnight loans of reserve balances. Targeted by the FOMC as a primary tool of monetary policy and influenced through open market operations and interest on reserve balances (IORB).",
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Leading Economic Indicator",
+      "back": "An economic statistic that tends to change before the broader economy does, used to forecast future activity. Examples include the S&P 500, building permits, average weekly manufacturing hours, and the M2 money supply.",
+      "unit": 9
     },
     {
       "type": "definition",
       "front": "SIPC",
-      "back": "The Securities Investor Protection Corporation, a nonprofit established by SIPA (1970) that protects customers of failed broker-dealers up to $500,000 per separate-capacity customer, including a maximum of $250,000 in cash.",
-      "unit": 10,
-      "lesson": 1
+      "back": "Securities Investor Protection Corporation \u2014 a nonprofit membership corporation created by the Securities Investor Protection Act of 1970 that protects customers of failed broker-dealers up to $500,000 per separate-capacity customer, including a $250,000 limit on cash.",
+      "unit": 10
     },
     {
       "type": "definition",
       "front": "MSRB",
-      "back": "The Municipal Securities Rulemaking Board, an SRO that writes rules for municipal securities dealers, brokers, and advisors. Does not enforce its rules; enforcement is by FINRA, the SEC, and banking regulators.",
-      "unit": 10,
-      "lesson": 2
+      "back": "Municipal Securities Rulemaking Board \u2014 the SRO that writes rules governing broker-dealers and municipal advisors in the municipal securities market. The MSRB does not enforce its own rules; enforcement falls to FINRA, the SEC, and bank regulators.",
+      "unit": 10
     },
     {
       "type": "definition",
       "front": "Currency Transaction Report (CTR)",
-      "back": "A FinCEN filing required for any cash transaction or aggregated same-day cash transactions exceeding $10,000. Must be filed within 15 days.",
-      "unit": 11,
-      "lesson": 1
+      "back": "A FinCEN report (Form 112) that a financial institution must file for cash transactions exceeding $10,000 in a single day by or on behalf of one person, whether in one transaction or aggregated.",
+      "unit": 11
     },
     {
       "type": "definition",
       "front": "Suspicious Activity Report (SAR)",
-      "back": "A confidential FinCEN filing required for transactions of $5,000 or more involving suspected money laundering, fraud, or other suspicious activity. Must be filed within 30 days of detection (60 if no suspect identified).",
-      "unit": 11,
-      "lesson": 1
+      "back": "A confidential report filed with FinCEN within 30 calendar days of detecting suspicious activity (extendable to 60 days if no suspect is identified). Required for transactions of $5,000 or more involving suspected illegal activity; disclosure to the subject is prohibited.",
+      "unit": 11
     },
     {
       "type": "definition",
       "front": "Insider Trading",
-      "back": "Buying or selling a security while in possession of material non-public information (MNPI), or tipping such information to others. Penalties under ITSFEA include criminal fines up to $5 million / 20 years and civil treble damages.",
-      "unit": 11,
-      "lesson": 2
-    },
-    {
-      "type": "definition",
-      "front": "Retail Communication",
-      "back": "Under FINRA Rule 2210, any written (including electronic) communication distributed or made available to more than 25 retail investors within any 30-calendar-day period. Generally requires principal pre-approval.",
-      "unit": 11,
-      "lesson": 4
+      "back": "Trading securities on the basis of material, nonpublic information in breach of a fiduciary duty or other relationship of trust. Prohibited under the Securities Exchange Act of 1934; ITSFEA permits civil penalties up to three times the profit gained or loss avoided.",
+      "unit": 11
     },
     {
       "type": "definition",
       "front": "Form U4",
-      "back": "The Uniform Application for Securities Industry Registration filed by member firms to register associated persons. Must be amended within 30 days of any reportable change (10 business days for statutory disqualification events).",
-      "unit": 12,
-      "lesson": 1
+      "back": "The Uniform Application for Securities Industry Registration or Transfer \u2014 filed by a member firm through FINRA's CRD system to register an associated person. Disclosure events must generally be amended within 30 days (10 business days for statutory disqualification events).",
+      "unit": 12
+    },
+    {
+      "type": "definition",
+      "front": "Form U5",
+      "back": "The Uniform Termination Notice for Securities Industry Registration \u2014 filed by a member firm in CRD within 30 days of an associated person's termination, with a copy provided to the former associated person within the same period.",
+      "unit": 12
     },
     {
       "type": "definition",
       "front": "Outside Business Activity (FINRA Rule 3270)",
-      "back": "Any business activity by a registered person outside the scope of his or her relationship with the member firm. Requires prior written notice to the firm before engaging in the activity.",
-      "unit": 12,
-      "lesson": 2
+      "back": "Any business activity by a registered person outside the scope of the relationship with the member firm. Requires prior written notice to the firm before engaging in the activity.",
+      "unit": 12
     }
   ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 18434,
-    "output": 4579
+    "input": 17825,
+    "output": 4509
   },
-  "cost_usd": 0.6199
+  "cost_usd": 0.6056
 }

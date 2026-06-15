@@ -1,0 +1,580 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "jf": "tc",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Money laundering",
+      "back": "The process of disguising the proceeds of criminal activity to make them appear legitimate. The three stages are placement (introducing illicit cash into the financial system), layering (separating the funds from their illegal source through complex transactions), and integration (reintroducing the funds into the economy as apparently legitimate assets).",
+      "citation": "Rule 3310",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What are the required elements of a broker-dealer's AML compliance program under FINRA Rule 3310?",
+      "back": "(1) Written policies and procedures reasonably designed to detect and report suspicious activity; (2) Designation and identification of an AML Compliance Officer to FINRA; (3) Ongoing AML training for appropriate personnel; (4) Independent testing of the program (annually for most firms); and (5) Risk-based procedures for ongoing customer due diligence, including a Customer Identification Program (CIP).",
+      "citation": "Rule 3310",
+      "unit": 11
+    },
+    {
+      "type": "scenario",
+      "front": "A customer deposits $6,000 in cash on Monday morning and $5,500 in cash on Monday afternoon at the same broker-dealer. Must a Currency Transaction Report (CTR) be filed?",
+      "back": "Yes. A CTR must be filed for cash transactions exceeding $10,000 in a single business day, whether single or aggregated. The two same-day cash deposits aggregate to $11,500, exceeding the $10,000 threshold. CTRs are filed with FinCEN.",
+      "citation": "USA PATRIOT Act \u00a7352",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "When must a Suspicious Activity Report (SAR) be filed, and is the customer notified?",
+      "back": "A SAR must be filed within 30 calendar days of detecting suspicious activity (extendable to 60 days if no suspect has been identified). SARs are confidential \u2014 the firm and its employees are prohibited from notifying the customer or any party involved that a SAR has been filed.",
+      "citation": "USA PATRIOT Act \u00a7352",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "OFAC SDN List",
+      "back": "The Office of Foreign Assets Control's list of Specially Designated Nationals and Blocked Persons. Broker-dealers must screen customers and transactions against the SDN List; assets of listed persons must be blocked (frozen) and reported to OFAC. Doing business with an SDN is prohibited.",
+      "citation": null,
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under the USA PATRIOT Act \u00a7326, what minimum information must a Customer Identification Program (CIP) obtain before opening an account?",
+      "back": "Name, date of birth (for individuals), physical address (P.O. boxes alone are not acceptable), and a taxpayer identification number (SSN or TIN). The firm must also verify the customer's identity and check the name against government lists of known or suspected terrorists.",
+      "citation": "USA PATRIOT Act \u00a7326",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Insider trading",
+      "back": "Buying or selling a security while in possession of material, nonpublic information (MNPI) about that security in breach of a duty of trust or confidence, or tipping such information to another who trades on it. Prohibited under Exchange Act \u00a710(b) and Rule 10b-5.",
+      "citation": "17 CFR 240.10b-5",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What are the civil and criminal penalties for insider trading under the Insider Trading Sanctions Act and ITSFEA?",
+      "back": "Civil: Up to three times the profit gained or loss avoided (treble damages) under Exchange Act \u00a721A. Criminal: Up to $5 million in fines and/or 20 years imprisonment per individual violation; up to $25 million for entities. Violators may also be barred or expelled from the industry.",
+      "citation": "Securities Exchange Act of 1934 \u00a721A",
+      "unit": 11
+    },
+    {
+      "type": "scenario",
+      "front": "A registered rep learns from a friend who is a CFO that the friend's company will announce a major acquisition tomorrow. The rep buys 1,000 shares before the announcement. Who is liable?",
+      "back": "Both parties are liable. The CFO (tipper) breached a fiduciary duty by communicating material nonpublic information; the registered rep (tippee) traded on MNPI knowing it was disclosed in breach of duty. Both face civil treble damages, criminal penalties, and potential contemporaneous-trader private actions under \u00a720A.",
+      "citation": "Securities Exchange Act of 1934 \u00a720A",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Front running",
+      "back": "A prohibited practice where a broker-dealer or associated person trades for their own account on the basis of knowledge of an imminent, non-public customer block order in the same security (or related option/derivative), ahead of executing that customer order.",
+      "citation": "Rule 5270",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Marking the close / marking the open",
+      "back": "Manipulative practice of executing transactions at or near the close (or open) of trading to artificially affect the closing (or opening) price of a security \u2014 often to influence performance benchmarks, options expirations, or valuation marks. Prohibited as market manipulation.",
+      "citation": "Rule 2020",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Pump and dump",
+      "back": "A manipulative scheme in which persons artificially inflate the price of a security (often a thinly traded stock) through false or misleading promotional statements, then sell their own holdings into the inflated demand. Prohibited as a fraudulent device.",
+      "citation": "17 CFR 240.10b-5",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Freeriding",
+      "back": "(1) In a cash account: a customer's purchase of a security followed by sale before paying for the purchase. (2) Under FINRA Rule 5130: the prohibited practice of industry insiders (restricted persons) purchasing new-issue equity IPOs.",
+      "citation": "Rule 5130",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 5130, who is a 'restricted person' prohibited from purchasing new-issue equity IPOs?",
+      "back": "FINRA member firms, broker-dealer employees and associated persons, finders and fiduciaries acting on behalf of the managing underwriter (e.g., attorneys, accountants), portfolio managers of banks/insurance companies/investment advisers, persons owning 10%+ of a broker-dealer, and immediate family members of the above (with limited exceptions).",
+      "citation": "Rule 5130",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2165, what may a member firm do if it reasonably believes financial exploitation of a specified adult (age 65+ or 18+ with an impairment) has occurred or is being attempted?",
+      "back": "The firm may place a temporary hold on a disbursement of funds or securities, and also on a securities transaction. The initial hold may last up to 15 business days, extendable internally by an additional 10 business days (25 total), and by a further 30 business days if the matter has been reported to a state regulator, agency, or court (up to 55 business days total).",
+      "citation": "Rule 2165",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What is a 'trusted contact person' under FINRA Rule 4512, and is one required?",
+      "back": "A trusted contact is a person age 18+ whom the firm may contact regarding the customer's account in cases of suspected financial exploitation, health issues, or whereabouts. Firms must make reasonable efforts to obtain the name and contact information at account opening (or when updating accounts), but the customer is not required to provide one.",
+      "citation": "Rule 4512",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3240, may a registered representative borrow money from or lend money to a customer?",
+      "back": "Generally prohibited, except where the member firm has written procedures permitting such arrangements and the loan falls within a narrow exception (e.g., the customer is an immediate family member, a financial institution in the business of lending, a registered person at the same firm, or a personal/business relationship existing independently of the customer relationship). Firm pre-approval (written notice and approval) is typically required.",
+      "citation": "Rule 3240",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3210, what must a registered person do before opening a securities account at another firm?",
+      "back": "The registered person must notify their employer member firm in writing prior to opening the account, and must notify the executing firm of their association with the member. The executing firm must, upon written request, transmit duplicate confirmations and statements to the employer firm.",
+      "citation": "Rule 3210",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What are the three categories of communications with the public under FINRA Rule 2210, and which generally requires prior principal approval?",
+      "back": "(1) Retail communication \u2014 distributed to more than 25 retail investors in any 30-day period; generally requires principal approval before first use. (2) Correspondence \u2014 sent to 25 or fewer retail investors in any 30-day period; subject to supervision/review but not pre-use approval. (3) Institutional communication \u2014 distributed only to institutional investors; subject to supervision but no pre-use approval.",
+      "citation": "Rule 2210",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What are the principal telemarketing (cold-calling) restrictions under FINRA Rule 3230?",
+      "back": "Calls may only be made between 8:00 AM and 9:00 PM in the called party's local time. Callers must promptly state their name, the firm's name, a telephone number/address, and that the call is to solicit purchase of securities. Firms must maintain a firm-specific Do-Not-Call list and screen against the National DNC Registry. Established business relationships and prior express written consent are exceptions.",
+      "citation": "Rule 3230",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "How long must broker-dealers retain customer account records and most books and records under SEC and FINRA rules?",
+      "back": "Most books and records must be preserved for at least 6 years under SEC Rule 17a-4, with the first 2 years in an easily accessible place. Customer account records (Rule 4511 / 17a-3) are kept 6 years after account closure. Records of associated persons must be kept for at least 3 years after termination. Blotters, ledgers, and trial balances are kept 6 years.",
+      "citation": "17 CFR 240.17a-4",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "How frequently must customer account statements be sent under FINRA rules?",
+      "back": "At least quarterly to all customers, and monthly for any account in which there has been activity (e.g., a transaction, deposit, withdrawal, dividend) during that month.",
+      "citation": "Rule 2231",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What does Regulation S-P require regarding customer privacy?",
+      "back": "Broker-dealers must (1) provide an initial privacy notice at account opening and annually thereafter describing their information-sharing practices, (2) provide an opt-out mechanism before sharing nonpublic personal information with nonaffiliated third parties, and (3) maintain safeguards to protect customer records and information. 2024 amendments additionally require an incident-response program and customer notification within 30 days of unauthorized access to sensitive customer information.",
+      "citation": null,
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 4370, what must a broker-dealer's Business Continuity Plan (BCP) address?",
+      "back": "The BCP must address, at minimum: data backup and recovery; mission-critical systems; financial and operational assessments; alternate communications with customers, employees, and regulators; alternate physical locations; critical business constituent/counterparty/vendor impact; regulatory reporting; and how customers will promptly access their funds and securities. Firms must also disclose emergency contact persons to FINRA.",
+      "citation": "Rule 4370",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What is Regulation Best Interest (Reg BI), and to whom does it apply?",
+      "back": "SEC Rule 15l-1 requires broker-dealers and their associated persons, when making a recommendation of a securities transaction or investment strategy to a retail customer, to act in the best interest of that customer at the time of the recommendation without placing the firm's interest ahead of the customer's. Reg BI is satisfied through four obligations: Disclosure, Care, Conflict of Interest, and Compliance.",
+      "citation": "17 CFR 240.15l-1",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2090 (Know Your Customer), what must a member do regarding every customer?",
+      "back": "Use reasonable diligence in regard to the opening and maintenance of every account to know (and retain) the essential facts concerning every customer and concerning the authority of each person acting on behalf of the customer. Essential facts are those required to effectively service the account, act in accordance with special handling instructions, understand the authority of persons acting on behalf of the customer, and comply with applicable laws and rules.",
+      "citation": "Rule 2090",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2040, may a member firm pay transaction-based compensation to an unregistered person?",
+      "back": "No. Members may not pay commissions, fees, concessions, or other transaction-based compensation to any person that is not properly registered, unless permitted under SEC rules (e.g., retired reps under approved continuing-commission contracts meeting specific conditions, or foreign finders meeting specific conditions). Unregistered persons may not solicit customers or take orders.",
+      "citation": "Rule 2040",
+      "unit": 11
+    },
+    {
+      "type": "definition",
+      "front": "Selling away",
+      "back": "The prohibited practice of a registered representative participating in a private securities transaction outside the scope of his or her employment with the member firm without providing prior written notice to (and, for compensated transactions, obtaining written approval from) the firm.",
+      "citation": "Rule 3280",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2150, may a registered representative share in the profits or losses of a customer's account?",
+      "back": "Only if (1) the rep obtains prior written authorization from both the employing member firm and the customer, and (2) sharing is in direct proportion to the rep's financial contributions to the account \u2014 except for accounts of immediate family members, where proportionate sharing is not required (but firm approval is). Guaranteeing a customer against loss is prohibited in all cases.",
+      "citation": "Rule 2150",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "What is the SEC Rule 10b-10 confirmation requirement?",
+      "back": "Broker-dealers must provide each customer with a written confirmation at or before completion of a transaction (settlement) disclosing key trade details: trade date, security, price, quantity, capacity (agent or principal), commission/markup (if applicable), settlement date, and other prescribed information.",
+      "citation": "17 CFR 240.10b-10",
+      "unit": 11
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 14299,
+    "output": 5285
+  },
+  "cost_usd": 0.6109
+}

@@ -1,0 +1,275 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "jf": "pr",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Investment company (three principal classes under the '40 Act)",
+      "back": "Under \u00a74 of the Investment Company Act of 1940, investment companies are divided into: (1) Face-Amount Certificate Companies, (2) Unit Investment Trusts (UITs), and (3) Management Companies. Management companies are further subdivided into open-end and closed-end, and into diversified vs. non-diversified.",
+      "citation": "Investment Company Act of 1940 \u00a74",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What distinguishes an open-end management company from a closed-end management company?",
+      "back": "An open-end company continuously offers redeemable securities (the issuer redeems shares at NAV). A closed-end company issues a fixed number of shares in an IPO that then trade in the secondary market at market price (premium/discount to NAV); shares are not redeemable by the issuer.",
+      "citation": "Investment Company Act of 1940 \u00a75",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What are the requirements for a management company to qualify as 'diversified' under the '40 Act?",
+      "back": "The 75-5-10 test: at least 75% of total assets must consist of cash, cash items, government securities, securities of other investment companies, and other securities limited so that no single issuer represents more than 5% of total assets and the fund holds no more than 10% of any one issuer's outstanding voting securities.",
+      "citation": "Investment Company Act of 1940 \u00a75",
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "Unit Investment Trust (UIT)",
+      "back": "An investment company organized under a trust indenture that (A) has no board of directors, (B) issues only redeemable securities representing an undivided interest in a fixed/unmanaged portfolio of specified securities, and (C) terminates on a set date. Not actively managed.",
+      "citation": "Investment Company Act of 1940 \u00a74",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "How is the public offering price (POP) of an open-end mutual fund determined?",
+      "back": "Forward pricing: orders are executed at the next computed NAV per share (plus any applicable sales charge). NAV is calculated at least once each business day, typically at 4:00 p.m. ET market close.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "scenario",
+      "front": "A Class A mutual fund has an NAV of $19.08 and a 5% front-end sales charge. What is the public offering price?",
+      "back": "POP = NAV / (1 \u2212 sales charge %) = $19.08 / (1 \u2212 0.05) = $19.08 / 0.95 = $20.08. The 5% sales charge is calculated as a percentage of POP, not of NAV.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum sales charge permitted on a mutual fund under FINRA rules, and what conditions must be met to charge it?",
+      "back": "Maximum 8.5% of the public offering price. To charge the full 8.5%, the fund must offer breakpoints (volume discounts), rights of accumulation (ROA), and reinvestment of dividends/capital gains at NAV. If any are missing, the maximum permitted sales charge is reduced.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "12b-1 fee",
+      "back": "An annual fee deducted from fund assets to cover distribution and shareholder-servicing expenses (marketing, sales compensation). Authorized under SEC Rule 12b-1, it must be adopted by a written plan approved by the board and shareholders, reviewed at least annually. A fund cannot call itself 'no-load' if its 12b-1 fee exceeds 0.25%.",
+      "citation": "17 CFR 270.12b-1",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Compare Class A, Class B, and Class C mutual fund shares.",
+      "back": "Class A: front-end sales load, low 12b-1 fees, eligible for breakpoints \u2014 best for large, long-term investors. Class B: no front-end load but contingent deferred sales charge (CDSC) declining over time, higher 12b-1 fees, typically convert to A after several years. Class C: little/no front-end load, level high 12b-1 fees, small CDSC if redeemed within ~1 year \u2014 best for shorter holding periods.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "Breakpoint",
+      "back": "A discounted sales charge available on Class A mutual fund shares when a purchase reaches specified dollar levels. FINRA Rule 2342 prohibits 'breakpoint sales' \u2014 selling shares in amounts just below a breakpoint to share in higher sales charges.",
+      "citation": "Rule 2342",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Explain Rights of Accumulation (ROA) and a Letter of Intent (LOI) for mutual fund breakpoints.",
+      "back": "ROA: lets an investor combine current purchases with the existing value of their holdings to qualify for a breakpoint discount on new purchases. LOI: a non-binding statement of intent to invest enough to reach a breakpoint within 13 months; the lower sales charge is applied immediately, with shares held in escrow. LOIs may be backdated up to 90 days.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "How does a closed-end fund differ from an ETF in trading and pricing?",
+      "back": "Both trade intraday on exchanges. Closed-end funds frequently trade at significant premiums or discounts to NAV because there is no creation/redemption mechanism. ETFs trade close to NAV due to the in-kind creation/redemption arbitrage performed by authorized participants. ETFs generally have lower expense ratios and greater tax efficiency.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "Exchange-Traded Note (ETN)",
+      "back": "An unsecured debt security issued by a financial institution that promises to pay a return linked to a market index. Unlike an ETF, an ETN does not hold underlying assets \u2014 investors bear the issuer's credit risk in addition to market risk of the reference index.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What are the key features of a variable annuity, and why is it both an insurance product and a security?",
+      "back": "A variable annuity is an insurance contract whose accumulation/payout values vary based on the performance of investor-selected separate-account subaccounts (mutual fund-like). It is an insurance product because the issuer assumes mortality risk and provides a death benefit/annuitization options; it is a security because investment risk is borne by the contract owner \u2014 thus requiring a prospectus and a Series 6/7 + state insurance license to sell.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2330, what must a registered representative consider before recommending a deferred variable annuity exchange?",
+      "back": "Whether the customer would incur a surrender charge, be subject to a new surrender period, lose existing benefits (death, living, contractual), be subject to increased fees, and whether the customer has had another VA exchange in the preceding 36 months. The transaction must also be reviewed and approved by a registered principal within seven business days.",
+      "citation": "Rule 2330",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish fixed annuities from variable annuities regarding risk, returns, and regulation.",
+      "back": "Fixed annuity: insurer guarantees principal and a minimum interest rate; insurer bears investment risk; regulated solely as insurance (no securities license required); purchasing power risk to investor. Variable annuity: returns depend on subaccount performance; investor bears investment risk; regulated as both insurance and a security (prospectus required, securities license required).",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "Section 1035 exchange",
+      "back": "An IRS-permitted tax-free exchange of one insurance/annuity contract for another like-kind contract (e.g., life insurance for life insurance, annuity for annuity). Cost basis carries over. Cannot exchange an annuity for life insurance (one-way only).",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Compare whole life, term life, universal life, and variable universal life insurance.",
+      "back": "Term: pure death benefit for a stated period; no cash value; cheapest. Whole life: permanent coverage with fixed premiums and guaranteed cash value growth. Universal life: flexible premiums and adjustable death benefit; cash value earns insurer-declared interest. Variable universal life: flexible premiums + cash value invested in separate-account subaccounts (security \u2014 prospectus required); investor bears investment risk.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "definition",
+      "front": "529 Plan (Municipal Fund Security)",
+      "back": "A state-sponsored education savings program treated as a municipal fund security (Rule D-12). Contributions grow tax-deferred; qualified withdrawals for education expenses are federal-tax-free. Two types: prepaid tuition and savings plans. The account owner \u2014 not the beneficiary \u2014 retains control of the assets.",
+      "citation": "Rule D-12",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What are the key characteristics of REITs that distinguish them from DPPs?",
+      "back": "REITs: corporate structure; must distribute at least 90% of taxable income to shareholders to avoid corporate-level tax (single taxation); pass through income but NOT losses; listed REITs are exchange-traded and liquid. DPPs (limited partnerships): pass through both income and losses to investors; generally unlisted and illiquid; subject to FINRA Rule 2310 suitability and offering requirements.",
+      "citation": "Rule 2310",
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What are the key features of a hedge fund?",
+      "back": "Private investment pool typically organized as a limited partnership; sold under Reg D exemptions to accredited/qualified investors; high minimum investment; uses leverage, derivatives, and short-selling strategies; charges performance fees (commonly '2 and 20'); generally illiquid with lock-up periods and limited redemption windows.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Under the 2023 money market fund reforms (Rule 2a-7), what are the current liquidity and fee requirements?",
+      "back": "Daily liquid assets minimum 25%; weekly liquid assets minimum 50%. Redemption gates were eliminated. A mandatory liquidity fee applies to institutional prime and tax-exempt funds when daily net redemptions exceed 5% of NAV. A discretionary liquidity fee up to 2% may be imposed by the board on non-government MMFs. Retail/government MMFs maintain a stable $1 NAV; institutional prime/tax-exempt use a floating NAV.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "What is a Tailored Shareholder Report (TSR), and which funds must use it?",
+      "back": "Effective 7/24/2024, open-end mutual funds and ETFs must deliver concise, retail-focused Tailored Shareholder Reports to shareholders, replacing the long-form report delivery model. Rule 30e-3 was rescinded for open-end funds. Detailed financial information remains available online and on request.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "qa",
+      "front": "Identify the principal risks an investor in a long-term corporate bond fund faces.",
+      "back": "Interest-rate risk (bond prices fall as rates rise), credit risk (issuer default), inflation/purchasing-power risk (fixed coupons lose real value), reinvestment risk (coupons reinvested at lower rates), call risk (issuer redeems early), and liquidity risk. Diversification within the fund mitigates non-systematic credit risk but not systematic interest-rate risk.",
+      "citation": null,
+      "unit": 4
+    },
+    {
+      "type": "scenario",
+      "front": "An investor purchased a variable annuity 4 years ago with a 7-year declining surrender charge. A representative recommends exchanging it for a new VA with better living benefits but a new 8-year surrender period. What must the rep and firm do under FINRA Rule 2330?",
+      "back": "The rep must have a reasonable basis that the customer would benefit from the new features and that the loss of nearly-expired surrender exposure (resetting a new 8-year period) is justified. The rep must consider whether the customer has exchanged another VA within the prior 36 months. A registered principal must review and approve the exchange in writing within seven business days before the transaction is forwarded for processing.",
+      "citation": "Rule 2330",
+      "unit": 4
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12979,
+    "output": 4424
+  },
+  "cost_usd": 0.5265
+}

@@ -3,127 +3,454 @@
   "unit_name": "Joining & Leaving a Member Firm",
   "sections": [
     {
-      "title": "Lesson 12.1: Associating With and Leaving a Member Firm",
-      "overview": "Becoming an associated person of a FINRA member firm requires the firm to file Form U4 with FINRA/CRD, with registration effective only upon passing the required qualification exams. Separation from a firm is documented via Form U5. Disclosure on both forms is critical\u2014willful misstatements can result in a lifetime bar\u2014and certain prior events (statutory disqualification) can prevent registration entirely.",
+      "title": "1. Registration & Qualification: Joining a Member Firm",
+      "overview": "Before an associated person may transact securities business, the individual must be sponsored by a FINRA member, file Form U4, pass applicable qualification examinations, and submit to background screening. Registration creates the regulatory relationship between the person, the firm, FINRA, and the states.",
       "key_concepts": [
-        "Form U4 \u2014 filed by the member firm to register an associated person with FINRA; registration is not effective until qualification exam(s) are passed.",
-        "U4 contents: name/address/aliases, 5-year residency history, 10-year employment history (full-time education counts within the 10-year work history), disclosure of charges/convictions, and Disclosure Reporting Pages (DRPs) for any 'yes' answers.",
-        "NOT required on U4: marital status, educational background (beyond what falls inside the 10-year employment history), U.S. citizenship.",
-        "Two firm requirements: (1) sponsorship by a member BD, and (2) complete and truthful disclosure.",
-        "Exam retake schedule: 30-day waiting period after a failed attempt; after 3 consecutive failures, a 180-day wait before the 4th attempt.",
-        "Exam window: filing the U4 with an exam request opens a 120-day window to complete the exam; if it lapses, the window must be reopened (no new U4 required).",
-        "SIE validity: SIE remains valid for 4 years to take a top-off or re-affiliate; after 4 years the SIE must be retaken.",
-        "U4 amendments: most events filed within 30 days; statutory disqualification events within 10 business days.",
-        "Background check: member firm must investigate the applicant's reputation, character, education, qualifications, and experience before filing.",
-        "Fingerprinting: required for persons in sales, those handling cash/customer securities, and all directors/officers/partners; submitted to U.S. Attorney General. Clerical/ministerial persons with no access to cash, securities, or books of original entry are exempt. Persons selling only mutual funds, variable annuities, or DPPs are exempt.",
-        "Form U5: filed within 30 days of termination with CRD; copy to former employee within the same 30 days. Late filing triggers fees.",
-        "U5 termination reasons: Discharged, Permitted to Resign, Deceased, Voluntary, Other. Discharged / Permitted to Resign / Other require a detailed explanation.",
-        "Partial termination (U5): used when an associated person drops some but not all registrations (e.g., a principal stepping down to RR-only).",
-        "U5 amendment for statutory disqualification: within 10 business days of discovery.",
-        "Post-termination jurisdiction: FINRA retains jurisdiction for 2 years to investigate and require testimony.",
-        "Two-year requalification rule: a terminated person may re-affiliate within 2 years without retaking exams.",
-        "Maintaining Qualifications Program (MQP) \u2014 under amended FINRA Rule 1240, a terminated registered person may extend the requalification window up to 5 years by completing annual CE through FINRA's FinPro system.",
-        "Military service: representatives on regular active military duty are placed in a special inactive status until 90 days after discharge; the 2-year re-affiliation clock starts at the end of that period.",
-        "Post-termination commissions: trailing commissions allowed under a pre-existing contract (typical for retirees, payable to heirs) but only on existing business \u2014 no new business.",
-        "Statutory Disqualification (SD) triggers: expulsion/suspension by an SRO (domestic or foreign equivalent); SEC or foreign regulator order suspending/revoking registration or barring association; being found the cause of another's expulsion/suspension; willful misstatements on registration applications; felony conviction (any) or securities/money-related misdemeanor within the past 10 years; court injunctions barring acting as IA, underwriter, BD, etc.",
-        "Bankruptcy or an unsatisfied lien alone is NOT disqualifying \u2014 but failure to disclose it IS.",
-        "BrokerCheck: CRD-based public disclosure of registered persons' disciplinary history; FINRA member websites must link to BrokerCheck."
+        "Associated person: any partner, officer, director, branch manager, or employee of a member, or any person controlling/controlled by/under common control with the member.",
+        "Sponsorship required: an individual cannot self-register; a FINRA member firm must file Form U4 on the applicant's behalf via the CRD/Web CRD system.",
+        "Form U4 = Uniform Application for Securities Industry Registration or Transfer \u2014 discloses identity, residential/employment history (10 yrs), criminal, financial, regulatory, and customer-complaint disclosures.",
+        "Qualification exams must be passed within 120 days of filing Form U4 (SIE is a co-requisite/prerequisite to representative-level exams).",
+        "State (blue-sky) registration is separate from SRO registration; jurisdictions selected on Form U4.",
+        "Registered vs. non-registered persons: only registered persons may solicit, take orders, give securities advice, or receive transaction-based compensation. Non-registered/clerical personnel are limited to ministerial/administrative functions.",
+        "Form U4 contains a predispute arbitration clause binding the associated person to FINRA arbitration for most industry disputes."
       ],
       "rules": [
-        "FINRA Rule 1010 series \u2014 Member Application and Associated Person Registration (U4 filing).",
-        "FINRA Rule 1122 \u2014 Filing of Misleading Information as to Membership or Registration (willful misstatements may bar for life).",
-        "FINRA Rule 3110(e) \u2014 Member firm responsibility to investigate applicants for registration (background check).",
-        "FINRA Rule 8312 \u2014 BrokerCheck disclosure requirements.",
-        "FINRA Rule 2263 \u2014 Arbitration disclosure to associated persons signing U4.",
-        "FINRA Rule 4530 \u2014 Reportable events to FINRA.",
-        "Securities Exchange Act \u00a73(a)(39) \u2014 Statutory disqualification definition.",
-        "SEC Rule 17f-2 \u2014 Fingerprinting of securities industry personnel.",
-        "Article III, FINRA By-Laws \u2014 Qualifications of Members and Associated Persons.",
-        "Article V, FINRA By-Laws \u2014 Registered Representatives and Associated Persons (U4/U5 mechanics, 2-year jurisdiction)."
+        "Exchange Act \u00a73(a)(39): defines categories of statutory disqualification (felony within 10 years, securities-related misdemeanor, bar/suspension by SEC/SRO, willful U4/U5 misstatements, injunctions, etc.).",
+        "Rule 1122: prohibits filing of misleading membership/registration information or failing to correct such filings.",
+        "Rule 2263: firm must deliver the prescribed written arbitration-disclosure statement whenever an associated person signs/acknowledges an initial or amended Form U4.",
+        "Rule 8312: FINRA publishes registration and disciplinary information via BrokerCheck."
       ],
       "formulas": [
-        "Exam retake wait = 30 days after each of the first 3 failures; 180 days after the 3rd consecutive failure.",
-        "Exam window after U4 filed = 120 days to pass.",
-        "SIE shelf life = 4 years (to pass top-off OR to re-affiliate before retaking SIE).",
-        "U4 amendment deadline = 30 days (standard) / 10 business days (statutory disqualification).",
-        "U5 filing deadline = 30 days from termination date.",
-        "Post-termination FINRA jurisdiction = 2 years (extendable up to 5 via MQP).",
-        "Military inactive status ends = 90 days after discharge; 2-year clock starts thereafter."
+        "Qualification window = 120 days from Form U4 filing to pass required exam(s).",
+        "U4 employment history disclosure window = prior 10 years.",
+        "Statutory disqualification look-back for felonies/securities misdemeanors = 10 years (Exchange Act \u00a73(a)(39))."
       ],
       "mnemonics": [
-        "'4-4-4 SIE life': SIE valid 4 years to top-off, 4 years to re-affiliate, files 4 years' worth of memory in your head.",
-        "'30/10' for amendments: 30 days standard, 10 business days for Statutory Disqualification (the more serious, the faster).",
-        "U5 termination reasons \u2014 'D-P-D-V-O': Discharged, Permitted to resign, Deceased, Voluntary, Other (only Deceased and Voluntary need NO explanation).",
-        "'Sales or Safe' = fingerprint required: anyone in Sales or with access to the Safe (cash/securities). Pure clerical = no print.",
-        "'Felony any / Misdemeanor money' \u2014 within 10 years = statutory DQ."
+        "FORM U4 = 'For Onboarding / Registering Me' \u2014 filed when you JOIN.",
+        "SD events (Statutory Disqualification): F-I-B \u2014 Felony (10 yrs), Injunction, Bar/Suspension."
       ]
     },
     {
-      "title": "Lesson 12.2: Ongoing Expectations of Representatives of Registered Persons",
-      "overview": "Once registered, an associated person operates under continuous obligations: supervision by registered principals, prompt handling of customer complaints, mandatory continuing education, and pre-approval/disclosure of outside business activities and private securities transactions. Strict caps apply to gifts, gratuities, and political contributions to prevent conflicts of interest and pay-to-play arrangements.",
+      "title": "2. Background Investigation & Fingerprinting",
+      "overview": "Member firms must conduct a reasonable investigation into each applicant's character, business reputation, qualifications, and experience, and must fingerprint covered personnel. The objective is to keep statutorily disqualified persons out of the industry.",
       "key_concepts": [
-        "Principals: Anyone managing or supervising any aspect of a member's investment banking or securities business (including training) must register as a principal. Non-sole-proprietorship firms must employ at least two registered principals.",
-        "Principal duties: approving new accounts, approving margin/options accounts, reviewing/approving communications, reviewing trading activity, hiring/training, responding to all written complaints.",
-        "Customer complaint definition: a written statement by a customer (or someone acting on the customer's behalf) alleging a grievance arising out of/connected with a securities transaction; includes electronic communications.",
-        "Complaint handling: route to principal, branch manager, or compliance; if resolved to both parties' satisfaction, no further action needed.",
-        "Quarterly complaint report: members file a list of all written complaints with FINRA within 15 days of each calendar quarter-end.",
-        "Complaint record retention: copies kept for 4 years after resolution.",
-        "Continuing Education \u2014 Firm Element: annual in-house training plan tailored to firm's business, regulatory developments, and personnel needs; required for all registered persons with public contact; must be completed by December 31 (firm may set earlier deadline); failure can result in license deactivation.",
-        "Continuing Education \u2014 Regulatory Element (post-2022 amendment to FINRA Rule 1240): now an ANNUAL requirement administered by FINRA; content varies by registration category (RR vs. principal). Failure to complete causes deactivation of registration until requirements are met. (Old rule of 'every 3 years after the 2nd anniversary' is superseded.)",
-        "Outside Business Activities (OBAs) \u2014 FINRA Rule 3270: an associated person may not be an employee, independent contractor, sole proprietor, officer, director, or partner of another person or business, or receive compensation from any other person as a result of any business activity outside the scope of the relationship with their firm, unless prior WRITTEN NOTICE is provided to the member.",
-        "OBA exception: passive investments and activities through a non-controlled entity are not OBAs; uncompensated volunteer work generally does not require notice.",
-        "Private Securities Transactions ('selling away') \u2014 FINRA Rule 3280: any sale of securities outside an associated person's regular business and employing member. Prior written notice required, including description of transaction, role, and whether compensation will be received.",
-        "PST with compensation: firm must approve in writing; if approved, firm must record the transaction on its books and supervise it as if it were its own; if disapproved, the person may not participate.",
-        "PST without compensation: firm must acknowledge receipt of written notice; firm may impose conditions or prohibit participation.",
-        "PST exclusion: transactions on behalf of immediate family with no compensation received are not PSTs.",
-        "Gifts & Gratuities \u2014 FINRA Rule 3220: cap of $100 per person per year for business-related cash or non-cash gifts; not contingent on sales; employing firm's prior approval required.",
-        "Gift cap EXCEPTIONS (over $100 permitted): occasional non-cash items (meals, seminars, entertainment tickets) where a rep of the giver attends = business entertainment; reminder advertising (logo items of nominal value); life-event gifts (weddings, births, retirement). All must be reasonable.",
-        "Political Contributions \u2014 MSRB Rule G-37 (Pay-to-Play): municipal firms prohibited from engaging in municipal securities business with an issuer for 2 YEARS after a contribution to an official of that issuer by the firm, an MFP, or a firm-controlled PAC.",
-        "G-37 scope: applies to NEGOTIATED underwritings and financial advisory work \u2014 NOT to competitive bid underwritings.",
-        "Municipal Finance Professional (MFP): associated person engaged in municipal underwriting, trading, sales, financial advisory, research, advice, or public-investor communications. Sales-only-to-individuals or clerical persons are NOT MFPs.",
-        "G-37 de minimis: MFPs may contribute up to $250 per election to candidates for whom they are ELIGIBLE TO VOTE. The de minimis does NOT apply to the firm itself (a firm cannot vote).",
-        "FINRA Rule 3210: registered-person brokerage accounts at other firms require written notice to employer and consent; duplicate confirms/statements furnished on request.",
-        "FINRA Rule 3240: borrowing/lending between RR and customer prohibited unless (a) within enumerated permitted relationships (immediate family, bank/lender in the business of lending, business relationship outside the BD relationship, etc.) AND (b) written firm approval."
+        "Pre-registration due diligence: firm must verify Form U4 information, including a search of public records, and (for transfers) must review the applicant's most recent Form U5 within 60 days of filing U4.",
+        "Fingerprint cards submitted to FINRA, which forwards to the FBI; results screened for statutorily disqualifying convictions.",
+        "Persons engaged in the sale of securities, supervision of such persons, or who handle/have access to securities, monies, or original books/records must be fingerprinted.",
+        "Limited clerical/ministerial exemptions exist under SEC rule.",
+        "Firm must report on Form U4 any disclosable event learned during the investigation."
       ],
       "rules": [
-        "FINRA Rule 1240 \u2014 Continuing Education (Regulatory Element now ANNUAL per amendment effective 3/15/2022; Maintaining Qualifications Program extends re-affiliation window to 5 years).",
-        "FINRA Rule 3110 \u2014 Supervision (principal responsibilities).",
-        "FINRA Rule 3110.18 \u2014 Remote Inspections Pilot Program (effective 7/1/2024 \u2013 6/30/2027): eligible firms may satisfy branch inspection obligations remotely with WSPs and FINRA reporting.",
-        "FINRA Rule 3110.19 \u2014 Residential Supervisory Location (effective 6/1/2024): a registered person's residence may qualify as a non-branch location with periodic (not annual) inspections if conditions met (no customer funds, no public signage, eligible-person status).",
-        "FINRA Rule 3210 \u2014 Accounts at other broker-dealers.",
-        "FINRA Rule 3220 \u2014 Influencing or Rewarding Employees of Others ($100 gift limit).",
-        "FINRA Rule 3240 \u2014 Borrowing from / lending to customers.",
-        "FINRA Rule 3270 \u2014 Outside Business Activities of Registered Persons (prior written notice).",
-        "FINRA Rule 3280 \u2014 Private Securities Transactions (selling away).",
-        "FINRA Rule 4111 \u2014 Restricted Firm Obligations (effective 1/1/2022; annual designation of restricted firms requiring deposit).",
-        "FINRA Rule 4513 \u2014 Records of Written Customer Complaints (4-year retention).",
-        "FINRA Rule 4530 \u2014 Reporting Requirements (quarterly complaint report within 15 days of quarter-end).",
-        "MSRB Rule G-37 \u2014 Political Contributions and Prohibitions on Municipal Securities Business (2-year ban; $250 de minimis for MFPs in eligible-to-vote elections).",
-        "MSRB Rule G-20 \u2014 Gifts, Gratuities and Non-Cash Compensation."
+        "17 CFR 240.17f-2: SEC fingerprinting requirement for securities industry personnel; identifies categories that must be fingerprinted and narrow clerical exemptions.",
+        "Rule 3110(e): each member shall ascertain by investigation the good character, business reputation, qualifications, and experience of any applicant before applying for registration; written procedures required, including a national search of reasonably available public records within 30 calendar days after Form U4 filing."
       ],
       "formulas": [
-        "Gift cap = $100 per person, per year (business-related, non-sales-contingent, with firm pre-approval).",
-        "MFP political contribution de minimis = $250 per election, per candidate the MFP can vote for (firm itself: $0).",
-        "G-37 ban = 2 years of no municipal securities business with the issuer after a triggering contribution.",
-        "Regulatory Element CE = annually (post-2022 amendment).",
-        "Firm Element CE = at least annually, completed by December 31.",
-        "Quarterly complaint filing = within 15 days of calendar quarter-end.",
-        "Customer complaint record retention = 4 years after resolution.",
-        "Branch inspection cycle = OSJ annually; non-OSJ branch every 3 years; non-branch periodic (Remote Inspection Pilot and RSL designation may modify)."
+        "Public-records search deadline = within 30 calendar days after Form U4 filing (Rule 3110(e))."
       ],
       "mnemonics": [
-        "'Selling Away = Tell Today': any private securities transaction requires PRIOR written notice to the firm.",
-        "'$100 / $250 / 2': $100 gift cap, $250 MFP political de minimis, 2-year G-37 ban.",
-        "OBA vs. PST \u2014 OBA = outside JOB (3270); PST = outside SECURITIES sale (3280).",
-        "'A-R-R-R-H-R' principal duties: Approve accounts, Review trading, Review communications, Respond to complaints, Hire/train, Review options/margin.",
-        "G-37 'Negotiated, Not Bid' \u2014 pay-to-play rule bites only on negotiated underwritings and financial advisory work.",
-        "Regulatory Element = 'Annual Anniversary' (post-2022, replaces old 2-yr/3-yr cycle)."
+        "Fingerprint test = 'SSSM': Sell securities, Supervise sellers, Securities/money handling, Maintain original records."
       ]
+    },
+    {
+      "title": "3. Statutory Disqualification & Ineligibility",
+      "overview": "Certain enumerated events automatically disqualify a person from association with a member absent FINRA/SEC relief. The defined list controls \u2014 not the firm's discretion.",
+      "key_concepts": [
+        "Triggering events: (i) any felony within the past 10 years; (ii) any securities- or money-related misdemeanor within 10 years; (iii) SEC/SRO/CFTC/state bar, suspension, or expulsion; (iv) injunctions involving securities activity; (v) willful false or misleading statements on U4/U5/Form BD/MA; (vi) being subject to a final order from a state/federal regulator barring association.",
+        "Effect: person is ineligible to associate with a member unless FINRA approves a continued/initial association through the MC-400/eligibility-proceeding process.",
+        "Firm must not knowingly permit a statutorily disqualified person to associate without relief."
+      ],
+      "rules": [
+        "Exchange Act \u00a73(a)(39): exclusive statutory definition of disqualification.",
+        "Rule 1122: omitting or misrepresenting disqualifying information on filings is itself a disqualifying violation."
+      ],
+      "formulas": [
+        "Felony / securities-misdemeanor look-back = 10 years from date of conviction."
+      ],
+      "mnemonics": [
+        "Disqualifiers = 'F-MISBAR': Felony, Misdemeanor (securities/money), Injunction, Suspension, Bar, Aiding-misstatement, Regulatory order."
+      ]
+    },
+    {
+      "title": "4. Form U4 Amendments & Form U5 (Leaving a Member Firm)",
+      "overview": "Registration is a continuous disclosure obligation. Material changes require timely U4 amendments while registered; termination requires the firm to file Form U5. Both forms must be accurate \u2014 willful false statements are themselves statutory disqualifiers.",
+      "key_concepts": [
+        "Form U4 amendment deadline: not later than 30 days after the firm learns of facts/circumstances giving rise to the amendment.",
+        "Statutory disqualification disclosure events: file within 10 business days.",
+        "Form U5 = Uniform Termination Notice for Securities Industry Registration; filed by the firm with CRD within 30 days of termination, with a copy delivered to the (former) associated person within the same period.",
+        "Reason-for-termination disclosure (voluntary, permitted to resign, discharged, other) and any internal review disclosures must be accurate; defamation actions are difficult given conditional privilege but willful false U5 entries can be sanctioned and are SD events.",
+        "Amended U5: if the firm later learns of facts that should have been disclosed at termination, it must file an amended U5 (no time limit on duty to correct).",
+        "Two-year tail: certain post-termination jurisdiction (e.g., FINRA jurisdiction over the person) continues for 2 years following filing of U5.",
+        "Maintaining Qualifications Program (MQP): a person whose registration is terminated may keep qualifications alive for up to 5 years by electing MQP and completing annual CE in FinPro (otherwise the 2-year exam expiration applies)."
+      ],
+      "rules": [
+        "Rule 1122: incomplete/misleading filings (including U4/U5) prohibited; willful misstatements are SD under \u00a73(a)(39).",
+        "Rule 4530: firm-level reporting obligations that often parallel U4 disclosure events for the associated person."
+      ],
+      "formulas": [
+        "U4 amendment \u2014 general events: file within 30 days of firm's knowledge.",
+        "U4 amendment \u2014 statutory disqualification events: file within 10 business days.",
+        "U5 filing & delivery to ex-AP: within 30 days of termination.",
+        "Post-termination FINRA jurisdiction: 2 years from U5 filing.",
+        "Exam validity after termination (no MQP): 2 years.",
+        "MQP extension of qualification: up to 5 years (annual CE via FinPro)."
+      ],
+      "mnemonics": [
+        "'30/10/30/2/5' \u2014 30-day U4 amend, 10-business-day SD amend, 30-day U5, 2-yr jurisdiction/exam-expiry, 5-yr MQP cap."
+      ]
+    },
+    {
+      "title": "5. Continuing Education (CE)",
+      "overview": "All registered persons must maintain competence through ongoing CE consisting of a FINRA-administered Regulatory Element and a firm-administered Firm Element. Failure to complete CE renders the registration inactive.",
+      "key_concepts": [
+        "Regulatory Element: content tailored to each representative/principal registration category; administered by FINRA.",
+        "Annual completion: each covered person must complete the Regulatory Element by December 31 of each year (annual cycle, replacing the prior 2nd-/5th-/10th-anniversary cycle).",
+        "Failure to complete by year-end: registration becomes inactive \u2014 person must cease all activities requiring registration and may not accept business or new compensation (trail commissions may continue subject to firm policy).",
+        "Two consecutive years inactive: registration terminated and re-qualification required.",
+        "Firm Element: each member must annually evaluate and prioritize training needs and administer a written training plan for covered registered persons engaged with public customers (and their immediate supervisors)."
+      ],
+      "rules": [
+        "Rule 1240(a): Regulatory Element \u2014 annual completion, content keyed to registration category; non-completion deems registration inactive.",
+        "Rule 1240(b): Firm Element \u2014 annual needs analysis and written training plan.",
+        "Rule 1240 (MQP): permits a terminated registered person to keep qualifications alive for up to 5 years by electing the Maintaining Qualifications Program and completing annual CE in FinPro."
+      ],
+      "formulas": [
+        "Regulatory Element cycle: annually, by Dec 31.",
+        "Firm Element cycle: at least annually.",
+        "Inactive-to-terminated trigger: 2 consecutive years inactive."
+      ],
+      "mnemonics": [
+        "'RE = Regulator, annual'; 'FE = Firm, custom training'."
+      ]
+    },
+    {
+      "title": "6. Outside Business Activities (OBA) \u2014 Rule 3270",
+      "overview": "A registered person owes the firm prior written notice before engaging in any outside business activity for compensation (or with a reasonable expectation of compensation). The firm must evaluate whether the activity interferes with customer obligations or should be treated as firm business.",
+      "key_concepts": [
+        "Prior written notice required before being employed by, or accepting compensation from, any other person/entity, or being an officer/director/partner outside the firm.",
+        "Firm evaluates: interference with customers, potential to be viewed as the firm's business, conflict of interest.",
+        "Firm must consider whether to limit/condition the OBA or treat it as a private securities transaction (Rule 3280).",
+        "Passive investments (e.g., holding stock as an ordinary investor) generally are not OBAs; serving as a director/officer of an outside entity is.",
+        "Recordkeeping: firm must retain the notice and the firm's evaluation."
+      ],
+      "rules": [
+        "Rule 3270: written notice to firm prior to OBA; firm assesses potential conflicts and obligations."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "OBA = 'Outside, Before, Always' (write notice OUTSIDE business, BEFORE you start, ALWAYS to your firm)."
+      ]
+    },
+    {
+      "title": "7. Private Securities Transactions ('Selling Away') \u2014 Rule 3280",
+      "overview": "A registered person who participates in a securities transaction outside the regular course of the firm's business must provide written notice to the firm. If compensation is involved, the firm must give written approval and treat the activity as if it were the firm's own \u2014 including supervision and books-and-records.",
+      "key_concepts": [
+        "Private securities transaction = any securities transaction outside the regular course/scope of the associated person's employment with the firm.",
+        "Compensated PSTs: require prior written notice describing the transaction and the proposed role and prior written approval; firm must record on its books and supervise as if its own.",
+        "Uncompensated PSTs: still require written notice; firm provides written acknowledgment and may impose conditions.",
+        "Examples: selling private placements, hedge-fund interests, limited partnerships to friends/family outside the firm.",
+        "Failure to provide notice/get approval = 'selling away,' a frequent enforcement target."
+      ],
+      "rules": [
+        "Rule 3280: written notice required; written approval required if selling-person will receive compensation; firm must supervise/record compensated PSTs as firm transactions."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "PST: 'Paid \u2192 Sign + Track' (Paid = need firm written approval, recordkeeping, supervision)."
+      ]
+    },
+    {
+      "title": "8. Personal Trading & Borrowing/Lending With Customers",
+      "overview": "A registered person's personal brokerage accounts elsewhere, and any borrowing/lending arrangements with customers, are tightly controlled to prevent conflicts of interest and self-dealing.",
+      "key_concepts": [
+        "FINRA Rule 3210: an associated person must obtain prior written consent of the employer before opening or maintaining an account at another member firm in which securities transactions can be effected; must notify the executing firm of the association; duplicate confirms/statements available to the employer on request.",
+        "FINRA Rule 3240: borrowing/lending arrangements between registered persons and customers are prohibited unless (a) the firm has written procedures permitting them, (b) the arrangement falls within an enumerated permissible relationship (e.g., immediate family; financial-institution lender in business of lending; personal/business relationship outside the BD context; business partners), and (c) the firm gives required pre-approval/notification.",
+        "Firm WSPs must address how 3210/3240 notifications are reviewed and documented."
+      ],
+      "rules": [
+        "Rule 4513: firms must retain written customer complaints in each OSJ for at least 4 years.",
+        "Rule 4330: extension of credit / customer borrowing of securities (margin-related controls; cited here as part of personal-conduct / customer-fund safeguards)."
+      ],
+      "formulas": [
+        "3210 = outside accounts \u2192 firm consent BEFORE opening.",
+        "3240 = customer loans \u2192 permissible relationship + WSPs + firm approval."
+      ],
+      "mnemonics": [
+        "'3-2-1-0' (3210) Outside accounts; '3-2-4-0' (3240) Money to/from customers."
+      ]
+    },
+    {
+      "title": "9. Gifts, Gratuities, Non-Cash Compensation & Business Entertainment",
+      "overview": "FINRA limits gifts to industry counterparties to avoid undue influence and channels non-cash sales-incentive compensation for mutual funds, variable contracts, and DPPs through narrow categories. Business entertainment is permitted if neither so frequent nor so extensive as to raise a conflict.",
+      "key_concepts": [
+        "Rule 3220 cap: no member or associated person may give anything of value > $100 per person per year to any person where the gift relates to the recipient's employer's business.",
+        "Aggregation: all gifts to the same recipient in a calendar year aggregate against the $100 limit; logos/promotional items of de minimis value typically excluded.",
+        "Excluded from cap: bona fide compensation pursuant to a pre-existing written employment/services agreement with the recipient's employer's written consent.",
+        "Non-cash compensation for mutual funds (2341), variable contracts (2320), DPPs (2310), and public offerings (5110): permitted only in enumerated buckets \u2014 gifts within Rule 3220 limit; occasional meals/entertainment; payments to firm (not individuals) for training/education meetings meeting prescribed conditions; internal sales contests structured on total-production/equal-weighting basis.",
+        "Business entertainment: meals/events attended together with the customer/counterparty representative are not 'gifts' if reasonable; purely one-sided perks count as gifts.",
+        "MSRB parallel: Rule G-20 imposes a $100 limit on gifts in municipal-securities business."
+      ],
+      "rules": [
+        "Rule 3220: $100 per-person, per-year gift limit in connection with the recipient's business; pre-existing written employment/services contract exception.",
+        "Rule 2310(c): non-cash compensation restrictions for direct participation programs.",
+        "Rule 2320(g)(4): non-cash compensation restrictions for variable contracts.",
+        "Rule 2341(l)(5): non-cash compensation restrictions for investment-company securities.",
+        "Rule 5110(h): non-cash compensation restrictions for public offerings of securities.",
+        "Rule G-20: MSRB gift limit in municipal-securities activities (parallel $100).",
+        "Rule 3110(e): supervisory system must reasonably surveil gift/entertainment activity."
+      ],
+      "formulas": [
+        "Gift limit = $100 per individual per year (Rule 3220 and MSRB G-20)."
+      ],
+      "mnemonics": [
+        "'$100 - One person - One year - One direction (gift)'; meals/events together = entertainment, not a gift."
+      ]
+    },
+    {
+      "title": "10. Political Contributions \u2014 'Pay-to-Play'",
+      "overview": "To prevent pay-to-play in municipal and government-related securities business, MSRB Rule G-37 limits political contributions by dealers and their MFPs, and FINRA Rule 2030 imposes a parallel regime for distribution/solicitation activities relating to government entities by investment-adviser-affiliated broker-dealers.",
+      "key_concepts": [
+        "Covered persons include municipal finance professionals (MFPs) and certain government-distribution personnel.",
+        "De minimis exception: MFP may contribute up to $250 per election to a candidate for whom the MFP is entitled to vote without triggering the two-year ban.",
+        "Two-year ban: contributions in excess of the de minimis amount (or to officials the MFP cannot vote for) trigger a 2-year prohibition on the firm engaging in municipal-securities business with that issuer.",
+        "Disclosure: dealers report contributions and municipal-securities business quarterly to the MSRB (publicly disclosed via EMMA).",
+        "Look-back: contributions made within 2 years prior to becoming an MFP can attach (subject to specified roles)."
+      ],
+      "rules": [
+        "Rule G-37: MSRB pay-to-play limits, two-year ban, quarterly reporting; $250 voter-de-minimis exception."
+      ],
+      "formulas": [
+        "MFP de minimis = $250 per candidate per election (voter-eligible only).",
+        "Two-year ban on muni business after excess contribution = 24 months."
+      ],
+      "mnemonics": [
+        "'$250 if you can vote; 2 years if you can't' (G-37)."
+      ]
+    },
+    {
+      "title": "11. Reporting Obligations \u2014 Rule 4530 & Disclosure Events",
+      "overview": "Firms must report specified events and statistical/quarterly data to FINRA, and certain underlying events must also be disclosed on the associated person's Form U4. This dual reporting keeps both the firm-level and individual-level records current.",
+      "key_concepts": [
+        "Rule 4530(a) \u2014 events the firm must report within 30 calendar days after the firm knows or should have known: regulatory actions, criminal indictments/convictions, certain civil litigation, customer-complaint findings, internal disciplinary actions involving suspension/termination/fine > $2,500, etc.",
+        "Rule 4530(d) \u2014 quarterly statistical/summary reports of written customer complaints.",
+        "Rule 4530(f) \u2014 copies of certain criminal/civil complaints and arbitration claims promptly to FINRA.",
+        "Form U4 events to be amended: felony/financial-misdemeanor charges or convictions; liens/judgments; bankruptcy (typically within 10 years); compromises with creditors; customer complaints meeting reporting thresholds; regulatory actions.",
+        "Bankruptcy/lien/judgment disclosure on U4: required and timely; not automatically disqualifying but reportable."
+      ],
+      "rules": [
+        "Rule 4530: firm reporting and quarterly statistical reporting obligations.",
+        "Rule 1122: individual's U4 disclosures must be accurate; failure to amend can be a willful omission and SD trigger."
+      ],
+      "formulas": [
+        "4530(a) reporting deadline = 30 calendar days after knowledge.",
+        "Internal discipline reporting threshold = fine > $2,500 (Rule 4530(a))."
+      ],
+      "mnemonics": [
+        "'4530 in 30' \u2014 firm-level events in 30 days."
+      ]
+    },
+    {
+      "title": "12. Supervision of New & Transferring Associated Persons",
+      "overview": "Joining or moving to a member firm triggers immediate supervisory obligations. The firm must build a written supervisory system, designate qualified principals, and inspect locations on a defined cycle (with new flexibility for remote and residential locations).",
+      "key_concepts": [
+        "Each member must establish/maintain a supervisory system reasonably designed to achieve compliance \u2014 written WSPs, designated principals, branch/OSJ designation, annual compliance interview, and pre-registration investigation.",
+        "Branch office = any location at which one or more associated persons regularly conducts the firm's investment-banking or securities business (subject to defined exclusions).",
+        "OSJ (Office of Supervisory Jurisdiction): locations performing enumerated supervisory functions (final order approval, structuring offerings, holding customer funds/securities, supervising other branches, market making, etc.).",
+        "Inspection cycle: OSJs at least annually; non-OSJ branches at least every 3 years; non-branch locations on a periodic schedule.",
+        "Remote Inspections Pilot Program (Rule 3110.18): three-year pilot 7/1/2024 \u2013 6/30/2027 lets eligible firms satisfy on-site inspection obligations remotely under WSPs, enrollment, and reporting conditions.",
+        "Residential Supervisory Location (Rule 3110.19): effective 6/1/2024, a registered person's private residence meeting enumerated conditions (no customer funds, no public signage, eligible-person status, etc.) may be classified as a non-branch location subject to a periodic inspection cycle.",
+        "Restricted Firm Obligations (Rule 4111): annual FINRA designation process imposing a Restricted Deposit Requirement on firms presenting heightened risk."
+      ],
+      "rules": [
+        "Rule 3110(e): pre-registration investigation and public-records search within 30 days of Form U4 filing.",
+        "Rule 3110.18 (Remote Inspections Pilot 2024\u20132027).",
+        "Rule 3110.19 (Residential Supervisory Location).",
+        "Rule 4111: Restricted Firm Obligations (annual)."
+      ],
+      "formulas": [
+        "OSJ inspection cycle \u2265 once/year; non-OSJ branch \u2265 once/3 years; non-branch periodic.",
+        "Public-records search within 30 days of U4 filing."
+      ],
+      "mnemonics": [
+        "'1-3-P' inspection cycle: 1 yr OSJ, 3 yr non-OSJ branch, Periodic non-branch."
+      ]
+    },
+    {
+      "title": "13. Customer Confidentiality & Use of Information When Joining/Leaving",
+      "overview": "Customer and issuer information acquired in a fiduciary or trust capacity may not be used for solicitation. Departing reps and their new firms must respect privacy rules, recruitment-related disclosure obligations, and prohibitions on misuse of confidential firm information.",
+      "key_concepts": [
+        "Information obtained as paying agent, transfer agent, trustee, or similar capacity may not be used to solicit purchases, sales, or exchanges (except at the issuer's request).",
+        "Educational communications/recruitment practices: when a representative transfers to a new firm and contacts former customers, the new firm must comply with FINRA disclosure standards regarding recruitment compensation and account-transfer costs.",
+        "BrokerCheck disclosure: firms must annually provide customers the BrokerCheck hotline, FINRA website, and availability-of-investor-brochure statement.",
+        "MSRB-related conduct standards (G-2, G-3, G-7, G-10) parallel FINRA standards for muni professionals (qualification, U4-equivalent disclosures, customer education)."
+      ],
+      "rules": [
+        "Rule 2060: prohibition on using information obtained in a fiduciary capacity to solicit.",
+        "Rule 2267: annual BrokerCheck disclosure to customers.",
+        "Rule 8312: BrokerCheck \u2014 public release of registration/disciplinary information.",
+        "Rule G-2: MSRB \u2014 standards of professional qualification.",
+        "Rule G-3: MSRB \u2014 classification and qualification of muni professionals (including CE).",
+        "Rule G-7: MSRB \u2014 information concerning associated persons (muni-equivalent of U4 disclosures).",
+        "Rule G-10: MSRB \u2014 customer education and protection (parallel to Rule 2267)."
+      ],
+      "formulas": [
+        "BrokerCheck notice to each customer: at least once per calendar year (Rule 2267)."
+      ],
+      "mnemonics": [
+        "Fiduciary info = 'Look but don't solicit' (Rule 2060)."
+      ]
+    },
+    {
+      "title": "14. CBOE / Exchange Membership Concepts",
+      "overview": "Exchange member firms and their associated persons are subject to exchange-level rules layered atop FINRA requirements. A 'member' is a registered broker-dealer that has agreed to be regulated by the exchange.",
+      "key_concepts": [
+        "Exchange Act \u00a73(a)(39) defines 'member' for national securities exchanges and registered securities associations.",
+        "Exchange members and their associated persons are subject to exchange registration and conduct rules (e.g., CBOE Rule 7.10 on imposition of fines for minor rule violations).",
+        "Dual-regulated persons (FINRA + exchange) must satisfy both regimes \u2014 including CE, U4/U5 disclosures, and supervision."
+      ],
+      "rules": [
+        "Exchange Act \u00a73(a)(39): 'member' definition.",
+        "Rule 7.10 (CBOE): minor-rule-violation fine procedures applicable to members and associated persons."
+      ],
+      "formulas": [],
+      "mnemonics": []
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 12374,
-    "output": 5460
+    "input": 12681,
+    "output": 9481
   },
-  "cost_usd": 0.5951
+  "cost_usd": 0.9013
 }

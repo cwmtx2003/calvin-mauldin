@@ -1,0 +1,341 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "jf": "rf",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Each of the following is an accurate statement about the Municipal Securities Rulemaking Board (MSRB) EXCEPT:",
+      "choices": [
+        "The MSRB writes rules governing brokers, dealers, and municipal advisors that transact in municipal securities.",
+        "The MSRB enforces its own rules against broker-dealers through its own examination staff.",
+        "MSRB rules applicable to bank dealers are enforced by the appropriate federal bank regulators.",
+        "FINRA enforces MSRB rules against FINRA member firms that engage in a municipal securities business."
+      ],
+      "answer": 1,
+      "explanation": "The MSRB is a rule-writing SRO; it does not have its own enforcement arm. FINRA, the SEC, and the federal banking regulators enforce MSRB rules against their respective regulated entities. The other choices correctly describe MSRB rulemaking authority and the division of enforcement labor.",
+      "citations": [
+        "Rule G-2",
+        "Rule G-3"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about SIPC and FDIC coverage is MOST accurate?",
+      "choices": [
+        "SIPC covers up to $500,000 per separate customer, including a $250,000 limit on cash, while FDIC insures bank deposits up to $250,000 per depositor, per insured bank, per ownership category.",
+        "SIPC and FDIC both insure customers against losses caused by declines in the market value of securities.",
+        "FDIC coverage applies to securities held in a brokerage account, while SIPC covers bank deposits at affiliated banks.",
+        "SIPC coverage of $500,000 is in addition to FDIC coverage of $250,000 on the same brokerage account."
+      ],
+      "answer": 0,
+      "explanation": "SIPC protects customers of a failed broker-dealer up to $500,000 per separate-capacity customer (cash sub-limit $250,000); FDIC protects bank depositors up to $250,000 per depositor, per insured bank, per ownership category. Neither covers market losses, and the two cover different types of accounts at different types of institutions.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about the SEC is NOT correct?",
+      "choices": [
+        "The SEC was created by the Securities Exchange Act of 1934.",
+        "The Commission consists of five commissioners, no more than three of whom may be members of the same political party.",
+        "The SEC is a self-regulatory organization (SRO) whose members include broker-dealers and exchanges.",
+        "The SEC has authority to oversee SROs such as FINRA, the MSRB, and the national securities exchanges."
+      ],
+      "answer": 2,
+      "explanation": "The SEC is a federal government agency, not an SRO. SROs (FINRA, MSRB, exchanges) are subject to SEC oversight. The other three statements accurately describe the SEC's creation, structure, and oversight role.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are true regarding FINRA's Regulatory Element of Continuing Education EXCEPT:",
+      "choices": [
+        "Covered persons must complete the Regulatory Element annually by December 31.",
+        "Content is tailored to the registration category(ies) held by the covered person.",
+        "A registered person who fails to complete the Regulatory Element within the prescribed period will have his or her registration deemed inactive.",
+        "A registered person whose registration is inactive due to CE non-compliance may continue to accept unsolicited customer orders."
+      ],
+      "answer": 3,
+      "explanation": "A registered person whose registration is inactive must cease all activities requiring registration, including accepting orders, soliciting business, or receiving transaction-based compensation. The Regulatory Element is completed annually by December 31, is registration-specific, and non-completion results in inactive status.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is LEAST likely to be subject to direct rulemaking authority of the MSRB?",
+      "choices": [
+        "A bank dealer effecting transactions in general obligation bonds.",
+        "A municipal advisor providing advice to a city issuer.",
+        "A FINRA member firm underwriting a revenue bond.",
+        "An investment adviser providing portfolio management to a retail customer in a managed equity account."
+      ],
+      "answer": 3,
+      "explanation": "The MSRB writes rules governing brokers, dealers, and municipal advisors in the municipal securities market. An investment adviser managing a retail equity account is regulated under the Investment Advisers Act, not the MSRB. Bank dealers, municipal advisors, and broker-dealer underwriters of municipals are all subject to MSRB rules.",
+      "citations": [
+        "Rule G-2"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about the regulation of national banks and BSA/AML enforcement is MOST accurate?",
+      "choices": [
+        "The OCC is the primary federal regulator of national banks, and FinCEN administers the Bank Secrecy Act and AML rules.",
+        "The SEC is the primary federal regulator of national banks and also administers the Bank Secrecy Act.",
+        "FINRA is the primary federal regulator of national banks and supervises their BSA/AML programs.",
+        "The FDIC writes BSA/AML rules and is the primary regulator of national banks."
+      ],
+      "answer": 0,
+      "explanation": "Within the Treasury Department, the OCC charters and supervises national banks, and FinCEN administers the BSA/AML regime. The SEC, FINRA, and FDIC do not play these roles for national banks.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about state securities regulation is NOT correct?",
+      "choices": [
+        "State securities laws are commonly referred to as \"blue-sky\" laws.",
+        "NASAA is the membership organization of state securities administrators and promotes the Uniform Securities Act.",
+        "State administrators may require registration of broker-dealers, agents, and certain investment advisers operating in their state.",
+        "NASAA is a federal agency created by Congress to preempt state regulation of securities offerings."
+      ],
+      "answer": 3,
+      "explanation": "NASAA is a voluntary association of state, provincial, and territorial securities administrators\u2014not a federal agency, and it does not preempt state law. The other statements accurately describe blue-sky laws, NASAA's role, and state authority to register industry participants.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following correctly distinguishes FINRA's Code of Procedure from its Code of Arbitration?",
+      "choices": [
+        "The Code of Procedure governs FINRA disciplinary actions against members and associated persons, while the Code of Arbitration provides a forum for resolving monetary disputes between covered parties.",
+        "Both codes apply only to customer complaints and have no application to industry disputes.",
+        "The Code of Procedure provides for binding arbitration of customer disputes, while the Code of Arbitration governs SEC enforcement actions.",
+        "The Code of Arbitration governs FINRA disciplinary matters, while the Code of Procedure handles intra-industry disputes."
+      ],
+      "answer": 0,
+      "explanation": "FINRA's Code of Procedure governs disciplinary proceedings, while the Code of Arbitration provides the forum for resolving monetary disputes (customer-member and intra-industry). The other choices reverse or mischaracterize the functions.",
+      "citations": [
+        "Rule 2263"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under SEC Rules 17a-3 and 17a-4, which of the following statements about broker-dealer record retention is MOST accurate?",
+      "choices": [
+        "All broker-dealer records must be retained for the life of the firm.",
+        "Most records must be retained for six years, certain records for three years, and certain records (such as partnership articles and stock certificate books) for the life of the firm.",
+        "All records must be retained for three years, after which they may be destroyed.",
+        "Records may be retained for any period the firm chooses, provided customer consent is obtained."
+      ],
+      "answer": 1,
+      "explanation": "Rules 17a-3/17a-4 establish a tiered retention scheme: most records six years, certain records three years, and organizational records (e.g., partnership articles, stock certificate books) for the life of the firm. The other choices misstate the scheme.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is NOT a function or characteristic of FINRA?",
+      "choices": [
+        "FINRA was formed in 2007 from the consolidation of NASD and NYSE Member Regulation.",
+        "FINRA regulates broker-dealers and their associated persons and operates a dispute-resolution forum.",
+        "FINRA has direct statutory authority to regulate investment advisers under the Investment Advisers Act of 1940.",
+        "FINRA enforces compliance with federal securities laws, SEC rules, and its own rules against its members."
+      ],
+      "answer": 2,
+      "explanation": "FINRA does not regulate investment advisers under the Investment Advisers Act; that authority lies with the SEC and state administrators. The other statements correctly describe FINRA's formation, scope, and enforcement authority.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about the SEC's Consolidated Audit Trail (CAT) is MOST accurate?",
+      "choices": [
+        "The CAT replaced OATS as the centralized order-event audit trail used by regulators to track orders across U.S. securities markets.",
+        "OATS remains the primary order-event reporting system for FINRA members.",
+        "The CAT is operated by the MSRB to track municipal securities trades only.",
+        "CAT reporting applies only to options exchanges and not to equity markets."
+      ],
+      "answer": 0,
+      "explanation": "OATS was retired and replaced by the Consolidated Audit Trail (CAT), which captures order and trade event data across U.S. equity and options markets. The other statements are factually inaccurate.",
+      "citations": [],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements concerning the SEC and SROs is LEAST accurate?",
+      "choices": [
+        "National securities exchanges and registered securities associations are SROs subject to SEC oversight.",
+        "An SRO must file proposed rule changes with the SEC, which may approve, disapprove, or otherwise act on them.",
+        "The SEC may bring civil enforcement actions and refer matters for criminal prosecution to the Department of Justice.",
+        "Because SROs are self-regulating, their disciplinary actions are not subject to any SEC review."
+      ],
+      "answer": 3,
+      "explanation": "SRO disciplinary actions are subject to SEC review under the Exchange Act. The other statements accurately describe SRO status, the rule-filing process, and the SEC's civil and criminal-referral authority.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 10,
+      "jf": "rf",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12101,
+    "output": 3459
+  },
+  "cost_usd": 0.4409
+}

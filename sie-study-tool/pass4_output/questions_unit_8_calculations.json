@@ -1,0 +1,551 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "jf": "tc",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "An investor buys a corporate bond with a 6% coupon and a $1,000 par value for $1,200. What is the current yield?",
+      "choices": [
+        "5.00%",
+        "5.50%",
+        "6.00%",
+        "7.20%"
+      ],
+      "answer": 0,
+      "explanation": "Current yield = annual interest income / current market price = $60 / $1,200 = 5.00%. 6.00% would be the nominal (coupon) yield based on par, not the current yield on a premium bond.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer purchases 100 shares of stock at $40 per share. One year later the stock pays a $2 per share dividend and the customer sells the shares at $44. What is the total return on the investment?",
+      "choices": [
+        "5%",
+        "10%",
+        "15%",
+        "20%"
+      ],
+      "answer": 2,
+      "explanation": "Total return = (income + capital gain) / cost basis = ($200 dividend + $400 gain) / $4,000 = $600 / $4,000 = 15%. 10% reflects only the capital gain and ignores the dividend income.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor in the 24% ordinary income bracket sells stock held for 8 months at a $5,000 gain. How much federal tax is owed on the gain?",
+      "choices": [
+        "$750",
+        "$1,000",
+        "$1,200",
+        "$1,500"
+      ],
+      "answer": 2,
+      "explanation": "A holding period of one year or less produces a short-term capital gain taxed at ordinary income rates: $5,000 \u00d7 24% = $1,200. $750 (15%) would apply only if the gain were long-term (held more than one year).",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer buys 200 shares of stock at $30, then sells the shares 18 months later at $45. The investor is in the 15% long-term capital gains bracket. What is the federal capital gains tax owed?",
+      "choices": [
+        "$450",
+        "$900",
+        "$1,350",
+        "$1,800"
+      ],
+      "answer": 0,
+      "explanation": "Gain = ($45 \u2212 $30) \u00d7 200 = $3,000. Because the shares were held more than one year, the gain is long-term and taxed at 15%: $3,000 \u00d7 15% = $450. $900 (30%) would double-tax the gain.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor buys a bond at $950 with a 5% coupon ($50 annual interest) and a $1,000 par value. What is the current yield?",
+      "choices": [
+        "4.75%",
+        "5.00%",
+        "5.26%",
+        "5.50%"
+      ],
+      "answer": 2,
+      "explanation": "Current yield = $50 / $950 = 5.26%. 5.00% is the nominal coupon yield based on par; because the bond is bought at a discount, current yield exceeds coupon.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer has the following realized results for the tax year: $8,000 short-term capital gain, $3,000 short-term capital loss, $5,000 long-term capital gain, and $2,000 long-term capital loss. What is the customer's net long-term capital gain after netting?",
+      "choices": [
+        "$2,000",
+        "$3,000",
+        "$5,000",
+        "$8,000"
+      ],
+      "answer": 1,
+      "explanation": "Long-term gains are first netted against long-term losses: $5,000 \u2212 $2,000 = $3,000 net long-term capital gain. $5,000 ignores the long-term loss; $2,000 confuses long-term with the short-term net.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor buys 100 shares of XYZ at $50. Two months later, with the stock at $35, the investor sells the 100 shares and 10 days later repurchases 100 shares of XYZ at $36. For tax purposes, what is the cost basis of the newly purchased shares under the wash sale rule?",
+      "choices": [
+        "$3,600",
+        "$3,900",
+        "$5,000",
+        "$5,100"
+      ],
+      "answer": 4,
+      "explanation": "Because replacement shares were bought within 30 days of the loss sale, the $1,500 loss ($5,000 \u2212 $3,500) is disallowed and added to the basis of the new shares: $3,600 + $1,500 = $5,100. $3,600 ignores the wash sale adjustment.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bond with a $1,000 par value and a 4% coupon is purchased at $900. The bond matures in 10 years. Using the simple (approximate) YTM formula, what is the yield to maturity?",
+      "choices": [
+        "4.00%",
+        "4.44%",
+        "5.26%",
+        "5.00%"
+      ],
+      "answer": 2,
+      "explanation": "Approximate YTM = [annual interest + (par \u2212 price)/years] / [(par + price)/2] = [$40 + ($100/10)] / [($1,000 + $900)/2] = $50 / $950 = 5.26%. 4.44% is the current yield ($40/$900); 4.00% is the nominal coupon.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer in the 32% ordinary income bracket receives $4,000 in qualified dividends (taxed at 15%) and $1,000 in non-qualified dividends (taxed at ordinary rates) during the year. What is the total federal tax owed on these dividends?",
+      "choices": [
+        "$600",
+        "$920",
+        "$1,200",
+        "$1,600"
+      ],
+      "answer": 1,
+      "explanation": "Qualified dividends: $4,000 \u00d7 15% = $600. Non-qualified dividends: $1,000 \u00d7 32% = $320. Total = $920. $1,600 incorrectly taxes all dividends at the ordinary 32% rate.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor purchases 500 shares of a stock at $20 per share. The company declares a 2-for-1 stock split. After the split, what is the investor's adjusted cost basis per share?",
+      "choices": [
+        "$5",
+        "$10",
+        "$20",
+        "$40"
+      ],
+      "answer": 1,
+      "explanation": "After a 2-for-1 split, shares double to 1,000 and the per-share cost basis is halved: $20 / 2 = $10. Total basis remains $10,000. $20 ignores the required cost-basis adjustment for the split.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A municipal bond yields 3.0% tax-free. An investor is in the 32% federal tax bracket. What is the tax-equivalent yield (federal only)?",
+      "choices": [
+        "2.04%",
+        "3.96%",
+        "4.41%",
+        "9.38%"
+      ],
+      "answer": 2,
+      "explanation": "Tax-equivalent yield = tax-free yield / (1 \u2212 tax bracket) = 3.0% / (1 \u2212 0.32) = 3.0% / 0.68 = 4.41%. 2.04% incorrectly multiplies by (1 \u2212 0.32) rather than dividing.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor buys 100 shares of stock at $25 and sells them 3 years later at $40, after receiving $1.50 per share in dividends each year. What is the total return over the holding period?",
+      "choices": [
+        "18%",
+        "60%",
+        "78%",
+        "85%"
+      ],
+      "answer": 2,
+      "explanation": "Capital gain = ($40 \u2212 $25) \u00d7 100 = $1,500. Dividends = $1.50 \u00d7 100 \u00d7 3 = $450. Total return = ($1,500 + $450) / $2,500 = $1,950 / $2,500 = 78%. 60% ignores the dividend income.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13195,
+    "output": 2491
+  },
+  "cost_usd": 0.3847
+}

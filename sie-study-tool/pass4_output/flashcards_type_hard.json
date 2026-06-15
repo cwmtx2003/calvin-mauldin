@@ -3,232 +3,219 @@
   "cards": [
     {
       "type": "qa",
-      "front": "All of the following securities settle T+1 under current SEC Rule 15c6-1 EXCEPT:\nA) Corporate bonds\nB) Municipal bonds\nC) Options premiums\nD) Cash settlement trades",
-      "back": "D) Cash settlement trades. Cash settlement occurs same day (trade date). As of 5/28/2024, corporate bonds, municipal bonds, equities, and ADRs all settle T+1. Options premiums have always settled T+1 (next business day).",
-      "unit": 1,
-      "lesson": 2
+      "front": "All of the following statements about settlement under SEC Rule 15c6-1 are correct EXCEPT:\nA) A regular-way trade in NYSE-listed common stock settles T+1\nB) A regular-way trade in a corporate bond settles T+1\nC) The exercise of a listed equity call option results in stock delivery that settles T+2\nD) A regular-way trade in a U.S. Treasury note settles T+1",
+      "back": "C. Since 5/28/2024, the stock leg resulting from the exercise of a listed equity option settles T+1, aligned with regular-way equity settlement. Treasuries have always been T+1. Corporates and equities moved from T+2 to T+1 in May 2024.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Which of the following statements regarding the ex-dividend date are TRUE under current settlement rules?\nI. The ex-date is the same business day as the record date for regular-way trades\nII. The ex-date is one business day before the record date\nIII. A buyer who purchases on the ex-date is NOT entitled to the dividend\nIV. A buyer who purchases on the ex-date IS entitled to the dividend",
-      "back": "I and III. Under T+1 settlement, the ex-dividend date is now the same business day as the record date. A buyer purchasing on or after the ex-date will not settle in time to be the holder of record and therefore does not receive the dividend.",
-      "unit": 2,
-      "lesson": 3
+      "front": "Which of the following would NOT, by itself, make an individual an accredited investor under Rule 501 of Regulation D?\nI. Net worth of $1.2 million including a primary residence valued at $400,000\nII. Individual income of $210,000 in each of the last two years with reasonable expectation of the same this year\nIII. Holding an active Series 7 license\nIV. Serving as an outside director of the issuer\nA) I only\nB) I and IV\nC) II and III\nD) IV only",
+      "back": "B. Net worth must EXCLUDE the primary residence \u2014 $1.2M minus $400K = $800K, below the $1M threshold. Outside directors are accredited only if they are directors/executive officers of THE issuer offering the securities \u2014 actually IV alone WOULD qualify. Re-read: directors of the issuer ARE accredited, so IV qualifies. The non-qualifying item is I only. Correct answer: A. (Key trap: primary-residence carve-out; Series 7/65/82 holders qualify per the 2020 amendment.)",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "A customer holds 1,000 shares of XYZ in a margin account. All of the following corporate actions would change the customer's cost basis per share EXCEPT:\nA) A 2-for-1 forward stock split\nB) A 10% stock dividend\nC) A 1-for-5 reverse split\nD) A $0.50 cash dividend",
-      "back": "D) A cash dividend does not adjust cost basis \u2014 it is taxable income (ordinary or qualified). Stock splits (forward and reverse) and stock dividends require basis allocation across the new share count, changing per-share basis but not total basis.",
-      "unit": 2,
-      "lesson": 3
+      "front": "A customer buys 1,000 shares of XYZ on Monday, June 2. To receive the cash dividend declared with a record date of Wednesday, June 4, the latest the customer could have purchased the shares regular-way is:\nA) Monday, June 2\nB) Tuesday, June 3\nC) Wednesday, June 4\nD) Thursday, June 5",
+      "back": "B. Under T+1 settlement, the ex-dividend date is the SAME business day as the record date (Wed June 4). To be an owner of record by the record date, the trade must settle on or before June 4, meaning the trade must occur no later than Tuesday, June 3 (T+1 = June 4). A purchase on the record date itself would settle June 5, after the record date.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Which of the following are characteristics of preferred stock?\nI. Holders generally have voting rights on board elections\nII. Dividends must be declared by the board to be paid\nIII. In liquidation, preferred ranks ahead of common but behind all debt\nIV. Cumulative preferred guarantees dividend payment",
-      "back": "II and III. Preferred stockholders generally lack voting rights. Dividends, while stated, still require board declaration. Cumulative preferred does NOT guarantee payment \u2014 it requires that any skipped dividends be paid before common dividends resume.",
-      "unit": 2,
-      "lesson": 2
+      "front": "Which of the following statements about Federal Reserve monetary policy tools is LEAST accurate?\nA) Open market operations are the most frequently used active tool\nB) The reserve requirement ratio has been set at 0% since March 2020\nC) Lowering the discount rate is generally expansionary\nD) Raising margin requirements under Regulation T tightens credit and is used routinely by the FOMC",
+      "back": "D. Regulation T margin requirements have been set at 50% since 1974 and are not used as an active monetary policy tool. The reserve requirement has been 0% since 3/26/2020. Open market operations and interest on reserve balances (IORB) are the primary active tools.",
+      "unit": 9
     },
     {
       "type": "qa",
-      "front": "An investor purchases a 6% corporate bond at 95 with 10 years to maturity. Which yield is LOWEST?\nA) Nominal yield\nB) Current yield\nC) Yield to maturity\nD) Yield to call (callable at 102 in 5 years)",
-      "back": "A) Nominal yield (6%). For a discount bond, the relationship is: nominal < current < YTM < YTC. The discount adds to total return as the bond accretes toward par (or above par at call), making YTC highest when callable above par.",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor holds preferred stock and corporate bonds of the same issuer. In a corporate liquidation, which statement is MOST accurate?\nI. Secured bondholders are paid before general creditors\nII. Subordinated debenture holders are paid before preferred stockholders\nIII. Preferred stockholders are paid before common stockholders but after the IRS\nIV. Accrued wages are paid before secured bondholders\nA) I, II, and III\nB) I and III only\nC) II, III, and IV\nD) I, II, III, and IV",
+      "back": "A. The standard liquidation order: (1) unpaid wages/taxes/admin expenses (administrative priorities, but generally AFTER secured creditors to the extent of collateral), (2) secured bondholders, (3) unsecured/debentures, (4) subordinated debentures, (5) preferred stock, (6) common stock. IV is wrong \u2014 secured bondholders generally come before unsecured wage claims to the extent of their collateral.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "Which of the following statements about Treasury securities are TRUE?\nI. T-bills are issued at a discount and pay no coupon\nII. T-notes and T-bonds pay interest semi-annually\nIII. Interest on Treasuries is exempt from state and local income tax\nIV. Treasury STRIPS pay semi-annual interest",
-      "back": "I, II, and III. Treasury STRIPS are zero-coupon securities \u2014 they are issued at a discount and pay no periodic interest, though phantom income is taxed annually at the federal level.",
-      "unit": 3,
-      "lesson": 2
+      "front": "Each of the following statements about money market mutual funds is correct EXCEPT:\nA) Government money market funds may maintain a stable $1.00 NAV\nB) Institutional prime money market funds must use a floating NAV\nC) Boards may impose redemption gates of up to 10 business days when weekly liquid assets fall below 30%\nD) Institutional prime funds must impose a mandatory liquidity fee when daily net redemptions exceed 5% of NAV",
+      "back": "C. The SEC's 2023 money market reforms REMOVED the redemption gate authority entirely. The mandatory liquidity fee for institutional prime/tax-exempt funds (when daily net redemptions exceed 5%) replaced gates, with a compliance date of 10/2/2024. Daily/weekly liquid asset minimums were also raised to 25%/50%.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "A registered representative recommends a deferred variable annuity to a 72-year-old client. Which of the following is LEAST consistent with FINRA Rule 2330?\nA) Reviewing whether the client would benefit from features like tax deferral\nB) Documenting the surrender period and surrender charges\nC) Emphasizing the death benefit as a substitute for life insurance\nD) Principal review and approval within 7 business days",
-      "back": "C) Emphasizing the death benefit as a life-insurance substitute is misleading. VA death benefits are insurance features but the product is primarily an investment vehicle. Reg BI and Rule 2330 require evaluation of tax deferral benefits, surrender features, and exchange analysis with principal approval.",
-      "unit": 4,
-      "lesson": 2
+      "front": "An RR's customer turns 73 in 2026 with a $400,000 traditional IRA. Which statements are correct?\nI. The customer must take an RMD for 2026\nII. The penalty for failing to take the RMD is 50% of the shortfall\nIII. The penalty for failing to take the RMD is 25%, reducible to 10% if timely corrected\nIV. The RBD for the first RMD is April 1 of the year following the year the customer turns 73\nA) I, II, and IV\nB) I, III, and IV\nC) II and IV\nD) I and III only",
+      "back": "B. Under SECURE 2.0, RMDs begin at age 73 (for those reaching 72 after 12/31/2022). The penalty was reduced from 50% to 25%, further reduced to 10% if corrected during the correction window. The required beginning date remains April 1 of the year following the year the participant turns the RMD age.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Which of the following accurately describe a 529 plan under current law?\nI. Contributions are federally tax-deductible\nII. Qualified withdrawals for K-12 tuition (up to $10,000/year) are tax-free\nIII. Up to $35,000 lifetime may be rolled to a Roth IRA for the beneficiary\nIV. The donor retains control of the account",
-      "back": "II, III, and IV. 529 contributions are NOT federally deductible (some state deductions exist). Since 2024 under SECURE 2.0, up to $35,000 lifetime can roll from a 529 to the beneficiary's Roth IRA subject to a 15-year account holding period and annual IRA contribution limits.",
-      "unit": 5,
-      "lesson": 2
+      "front": "Which of the following best describes when a CTR is NOT required?\nA) A customer deposits $11,000 in cash into a brokerage account\nB) A customer makes two cash deposits of $6,000 each on the same business day\nC) A customer wires $250,000 from their bank to purchase securities\nD) A customer brings in $15,000 in currency to fund an IRA",
+      "back": "C. CTRs are required for CASH transactions exceeding $10,000 (single or aggregated same-day). Wires and checks do not trigger CTRs (though they may trigger a SAR if suspicious). Aggregated same-day cash of $12,000 (B) does require a CTR.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "An investor is long 1 XYZ 50 call and short 1 XYZ 60 call. This position is MOST accurately described as:\nA) A bearish vertical spread with limited risk\nB) A bullish vertical spread with limited risk and limited reward\nC) A long straddle\nD) A covered call",
-      "back": "B) A bull call spread (debit spread). Buying the lower strike call and selling the higher strike call profits if the stock rises; maximum gain is the difference in strikes minus net premium; maximum loss is the net debit paid.",
-      "unit": 5,
-      "lesson": 1
+      "front": "Under FINRA Rule 2165 (as amended in 2022), a member firm that reasonably believes financial exploitation of a specified adult has occurred may place a hold on:\nI. A disbursement of funds or securities\nII. A securities transaction\nIII. Up to 15 business days initially, extendable internally to 25 business days\nIV. Up to a total of 55 business days when extended by a state regulator or court\nA) I and III only\nB) I, II, and III\nC) I, II, III, and IV\nD) II and IV only",
+      "back": "C. All four are correct under the 2022 amendments to Rule 2165. The original rule allowed only disbursement holds; the amendments added securities-transaction holds, an internal extension up to 25 business days, and a further extension to 55 business days total when a state regulator, agency, or court is involved.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "Under SECURE 2.0, all of the following are TRUE EXCEPT:\nA) The required beginning age for RMDs is 73\nB) The penalty for failure to take an RMD is 25% (reduced to 10% if timely corrected)\nC) The traditional IRA contribution age limit is 70\u00bd\nD) Roth 401(k)s are no longer subject to RMDs during the owner's lifetime",
-      "back": "C) There is no age limit for traditional IRA contributions (removed by the original SECURE Act of 2019). RMD age is now 73 (rising to 75 in 2033), the missed-RMD penalty was reduced from 50% to 25%, and Roth 401(k)s no longer require lifetime RMDs starting 2024.",
-      "unit": 6,
-      "lesson": 2
+      "front": "An investor is long 1 XYZ 50 call at 3 when XYZ is at 54. Which statement is LEAST accurate?\nA) The option has $4 of intrinsic value\nB) The option has $1 of time value\nC) Breakeven for the long call is $53\nD) Maximum loss if the option expires worthless is $400",
+      "back": "D. Maximum loss on a long call is the premium paid \u2014 $3 \u00d7 100 = $300, not $400. Intrinsic value = $54 \u2212 $50 = $4; time value = premium $3 \u2212 intrinsic $4 = negative, which is impossible \u2014 so actually the premium would have to be at least $4. Re-reading: premium is 3 but the call is $4 in-the-money \u2014 the question is testing recognition that this pricing is inconsistent OR the answer is D ($300 max loss, not $400). Best answer: D.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "Which of the following risks would be MOST mitigated by purchasing TIPS rather than nominal Treasuries?\nA) Credit risk\nB) Interest-rate risk\nC) Purchasing power risk\nD) Reinvestment risk",
-      "back": "C) Purchasing power (inflation) risk. TIPS adjust principal based on CPI, protecting the real value of the investment. They do not mitigate interest-rate risk (still have duration) or credit risk (already minimal for Treasuries).",
-      "unit": 7,
-      "lesson": 1
+      "front": "Which of the following would MOST likely require pre-approval by a registered principal before use?\nI. A retail communication distributed to 30 retail investors\nII. A correspondence sent to 20 existing retail customers\nIII. An institutional communication sent to QIBs only\nIV. A retail communication that is a generic statement of services posted on the firm's public website\nA) I and IV\nB) I, II, and III\nC) II and III\nD) I, II, III, and IV",
+      "back": "A. Under FINRA Rule 2210, retail communications (sent to more than 25 retail investors in a 30-day period) generally require principal pre-approval. Correspondence (\u226425 retail in 30 days) requires supervision but not pre-approval. Institutional communications require supervisory procedures but not pre-approval.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "All of the following are required elements of a broker-dealer's AML compliance program EXCEPT:\nA) Designation of an AML compliance officer\nB) Ongoing employee training\nC) Independent testing of the program\nD) Filing a CTR for every wire transfer over $10,000",
-      "back": "D) CTRs are filed for CASH transactions exceeding $10,000 (single day, aggregated), not wires or checks. The required AML pillars include written program, AMLCO designation, training, independent testing, CIP, and ongoing customer due diligence.",
-      "unit": 11,
-      "lesson": 1
+      "front": "A municipal bond with a 5% coupon is purchased at a premium yielding 3.5% to maturity. Which of the following is the MOST accurate ordering of yields, highest to lowest?\nA) Nominal > Current > YTM > YTC\nB) YTC > YTM > Current > Nominal\nC) Current > YTM > YTC > Nominal\nD) Nominal > YTM > Current > YTC",
+      "back": "A. For a bond trading at a PREMIUM: Nominal (coupon) > Current Yield > YTM > YTC. The deeper the premium and earlier the call, the lower YTC is. For a discount bond, the order reverses: YTC > YTM > CY > Nominal.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A registered representative is named executor in the will of a non-family customer. Under FINRA Rule 3241, the representative must:\nI. Provide written notice to the firm\nII. Obtain written firm approval before accepting the role\nIII. Decline compensation for the role\nIV. Wait at least 2 years before being named",
-      "back": "I and II. FINRA Rule 3241 (effective 2/15/2021) requires a registered person to provide written notice and obtain written firm approval before being named beneficiary, executor, trustee, or holder of POA for a non-immediate-family customer. Compensation is not automatically prohibited.",
-      "unit": 12,
-      "lesson": 2
+      "front": "Each of the following actions by a registered representative would violate FINRA rules EXCEPT:\nA) Sharing in a customer's account in proportion to the rep's capital contribution, with prior written firm approval\nB) Borrowing $5,000 from a customer who is the rep's first cousin, without firm notice\nC) Guaranteeing a customer against loss on a recommended trade\nD) Effecting a private securities transaction for compensation with written notice but without written firm approval",
+      "back": "A. Sharing in customer accounts is permitted under FINRA Rule 2150 if (1) the rep obtains prior written firm approval and (2) shares only in proportion to capital contribution (except for immediate family). First cousins are NOT immediate family under Rule 3240 \u2014 written firm approval required. Guarantees against loss are prohibited. PSTs for compensation require WRITTEN FIRM APPROVAL, not just notice.",
+      "unit": 12
     },
     {
       "type": "qa",
-      "front": "Which of the following statements about the Federal Reserve's monetary policy tools is MOST accurate today?\nA) Reserve requirements are the Fed's primary active tool\nB) The discount rate is set by the Treasury\nC) Open market operations and interest on reserve balances (IORB) are the principal active tools\nD) The federal funds rate is set directly by the FOMC",
-      "back": "C) Since the reserve requirement ratio was set to 0% in March 2020 (still 0%), the Fed primarily uses open market operations and IORB to influence rates. The FOMC sets a TARGET RANGE for fed funds; the actual rate is determined by bank lending. The discount rate is set by the Fed Board.",
-      "unit": 9,
-      "lesson": 3
+      "front": "Which of the following are characteristics of a Rule 144A transaction?\nI. Restricted securities may be resold to qualified institutional buyers (QIBs)\nII. A QIB must own and invest on a discretionary basis at least $100 million in securities of non-affiliates\nIII. There is a six-month holding period before resale under 144A\nIV. 144A securities are exempt from Securities Act registration\nA) I and IV\nB) I, II, and IV\nC) II and III\nD) I, III, and IV",
+      "back": "B. Rule 144A allows resale of restricted securities to QIBs (institutions owning/managing \u2265$100M in securities of non-affiliates). The transaction is exempt from registration. There is NO holding period under 144A (unlike Rule 144's 6-month/1-year holding for restricted securities sold to the public).",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "Under Regulation T, an investor deposits $10,000 in a new margin account to purchase stock. What is the maximum market value of stock the investor may purchase?\nA) $10,000\nB) $15,000\nC) $20,000\nD) $25,000",
-      "back": "C) $20,000. Reg T initial margin is 50%, so $10,000 deposit supports $20,000 of stock purchase. The FINRA minimum equity requirement of $2,000 is satisfied, and the purchase meets the 50% initial requirement.",
-      "unit": 6,
-      "lesson": 3
+      "front": "A customer's margin account shows: Long Market Value $40,000, Debit $18,000. Which statements are accurate?\nI. Equity is $22,000\nII. The account has SMA of approximately $2,000\nIII. The account is restricted (below 50% Reg T)\nIV. A maintenance call would be triggered if LMV fell below $24,000",
+      "back": "I and II only. Equity = $40,000 \u2212 $18,000 = $22,000. Reg T 50% requirement = $20,000; equity exceeds that, so SMA \u2248 $22,000 \u2212 $20,000 = $2,000. The account is NOT restricted (equity > 50% requirement). Maintenance call triggers when LMV \u00d7 25% = debit, i.e., LMV = $18,000 \u00f7 0.75 = $24,000. So IV is also correct. Best answer: I, II, and IV. Choose the option matching all three.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Which of the following would NOT be considered a prohibited practice?\nA) Marking the close to influence the closing price\nB) Front-running a customer's block order\nC) Recommending a security after disclosing a material conflict of interest under Reg BI\nD) Effecting matched orders to create the appearance of trading activity",
-      "back": "C) Disclosing material conflicts and proceeding consistent with Reg BI obligations is required, not prohibited. Marking the close, front-running, and matched orders (painting the tape) are all forms of market manipulation prohibited under the Exchange Act and FINRA rules.",
-      "unit": 11,
-      "lesson": 2
+      "front": "An investor in the 32% federal tax bracket is comparing two bonds: a corporate bond yielding 6.0% and a general obligation municipal bond yielding 4.25%. Assuming both are of equivalent credit quality, which statement is MOST accurate?\nA) The corporate bond offers a higher after-tax yield\nB) The municipal bond offers a higher after-tax yield\nC) The yields are equivalent on an after-tax basis\nD) The tax-equivalent yield of the muni is 5.95%",
+      "back": "B. Muni TEY = 4.25% \u00f7 (1 \u2212 0.32) = 6.25%. After-tax corporate = 6.0% \u00d7 (1 \u2212 0.32) = 4.08%. The muni's 4.25% tax-free beats the corporate's 4.08% after-tax. D is close but incorrect (5.95% would require a different bracket).",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "Which of the following are TRUE about ETFs versus open-end mutual funds?\nI. ETFs trade intraday at market prices; mutual funds price once daily at NAV\nII. ETFs can be sold short and bought on margin; mutual funds cannot\nIII. ETFs typically have lower expense ratios than comparable index mutual funds\nIV. Both ETFs and mutual funds settle T+2",
-      "back": "I, II, and III. Both ETFs and mutual funds now settle T+1 (since 5/28/2024). ETFs trade like stocks on exchanges, can be margined and shorted, and typically charge lower expenses. Mutual funds use forward pricing at next computed NAV.",
-      "unit": 4,
-      "lesson": 1
+      "front": "Which of the following are TRUE about variable annuities under FINRA Rule 2330?\nI. A principal must review and determine whether to approve the application no later than seven business days after the customer signs\nII. The recommending rep must consider whether the customer has had another deferred VA exchange within the preceding 36 months\nIII. Variable annuity subaccounts are insulated from the insurance company's general creditors\nIV. The free-look period is a federal requirement set by FINRA\nA) I, II, and III\nB) I and III only\nC) II, III, and IV\nD) I, II, III, and IV",
+      "back": "A. I, II, and III are correct. Rule 2330 requires principal review within 7 business days and consideration of prior exchanges within 36 months. VA subaccounts are held in a separate account, insulated from general creditors. IV is false \u2014 free-look periods are set by STATE insurance law, not FINRA.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "A municipal general obligation bond is BEST characterized as:\nA) Backed by revenues from a specific project\nB) Backed by the full faith, credit, and taxing power of the issuer\nC) Subject to federal taxation on interest paid to in-state residents\nD) Issued primarily by the federal government",
-      "back": "B) GO bonds are backed by the issuer's full faith, credit, and taxing power (ad valorem property taxes for local issuers; broader taxing authority for states). Revenue bonds are backed by project revenues. Municipal interest is generally federally tax-exempt.",
-      "unit": 3,
-      "lesson": 1
+      "front": "Which of the following statements about ABLE accounts and 529 plans is LEAST accurate?\nA) Both are municipal fund securities under MSRB Rule D-12\nB) 529 plan beneficiaries may roll up to $35,000 lifetime into a Roth IRA under SECURE 2.0\nC) ABLE accounts are limited to beneficiaries whose disability began before age 26\nD) 529 plan contributions are deductible from federal income tax",
+      "back": "D. 529 contributions are NOT federally deductible (though many states offer state-tax deductions). Earnings grow federally tax-deferred and qualified distributions are federally tax-free. A, B, and C are correct. Note: the ABLE age threshold rises to 46 for tax years beginning after 12/31/2025 under SECURE 2.0.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "Which of the following is LEAST likely to be considered an offer or sale of securities requiring registration under the Securities Act of 1933?\nA) A Rule 506(b) private placement to 50 non-accredited investors\nB) A Rule 147 intrastate offering\nC) An IPO of common stock on the NYSE\nD) A Reg A Tier 2 offering of $40 million",
-      "back": "B) Rule 147 intrastate offerings are EXEMPT from federal registration (subject to state blue-sky). Rule 506(b) is also exempt but allows max 35 non-accredited (50 fails the limit). Reg A Tier 2 requires SEC qualification (not full registration but still a filing). IPOs require full registration.",
-      "unit": 1,
-      "lesson": 1
+      "front": "A registered rep recommends a security to a retail customer. Under Reg BI, which of the following is NOT one of the four component obligations?\nA) Disclosure Obligation\nB) Care Obligation\nC) Fiduciary Obligation\nD) Conflict of Interest Obligation",
+      "back": "C. Reg BI's four obligations are: Disclosure, Care, Conflict of Interest, and Compliance. Reg BI deliberately does NOT impose a fiduciary standard on broker-dealers (which is the standard for investment advisers under the '40 Act).",
+      "unit": 7
     },
     {
       "type": "qa",
-      "front": "An investor in the 32% federal tax bracket is choosing between a 4% municipal bond and a corporate bond of equivalent credit quality. The tax-equivalent yield of the muni is approximately:\nA) 4.00%\nB) 5.26%\nC) 5.88%\nD) 6.25%",
-      "back": "C) 5.88%. TEY = tax-free yield / (1 - tax bracket) = 4% / (1 - 0.32) = 4% / 0.68 = 5.88%. The corporate bond would need to yield at least 5.88% to match the muni's after-tax return.",
-      "unit": 8,
-      "lesson": 1
+      "front": "Each of the following triggers a U4 amendment within 30 days EXCEPT:\nA) The registered person moves residences\nB) The registered person is convicted of a felony\nC) The registered person files for personal bankruptcy\nD) The registered person is named in a customer complaint alleging $20,000 in damages and sales-practice violations",
+      "back": "B. Statutory disqualification events (felony convictions, certain misdemeanors, regulatory bars) must be amended within 10 BUSINESS DAYS, not 30 calendar days. Residential changes, bankruptcy, and reportable customer complaints are amended within 30 days.",
+      "unit": 12
     },
     {
       "type": "qa",
-      "front": "All of the following positions create unlimited maximum loss EXCEPT:\nA) Short naked call\nB) Short stock\nC) Short naked put\nD) Long stock purchased on margin",
-      "back": "C) A short put has limited loss equal to strike minus premium (stock can only fall to zero). Short naked calls have unlimited loss (stock can rise infinitely), as does short stock. Long stock on margin can lose more than invested due to leverage but is bounded by stock falling to zero (technically large but not infinite).",
-      "unit": 5,
-      "lesson": 1
+      "front": "Which of the following statements about Treasury securities is MOST accurate?\nI. T-bills are issued at a discount and pay no periodic interest\nII. T-notes have maturities of 2 to 10 years and pay semiannual interest\nIII. STRIPS are created by separating the coupon and principal payments of Treasury notes and bonds\nIV. Treasury interest is exempt from federal income tax but subject to state income tax\nA) I, II, and III\nB) I, II, III, and IV\nC) II and IV only\nD) I and III only",
+      "back": "A. I, II, and III are correct. IV is BACKWARD \u2014 Treasury interest is subject to FEDERAL income tax but EXEMPT from state and local income tax. (Municipals are the reverse \u2014 federally tax-exempt.)",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "Under FINRA Rule 2165 (financial exploitation of specified adults), a member firm may place a temporary hold on a disbursement or transaction for a maximum of:\nA) 15 business days\nB) 25 business days internally; up to 55 business days total with state agency involvement\nC) 30 calendar days\nD) 60 business days",
-      "back": "B) Under the 2022 amendments, firms may hold for up to 25 business days internally (15 initial + 10 extension), and up to 55 business days total when the matter has been reported to a state regulator, agency, or court. The hold can apply to both disbursements and securities transactions.",
-      "unit": 11,
-      "lesson": 3
+      "front": "An RR transferring to a new firm is subject to which of the following?\nI. The former firm must file Form U5 within 30 days of termination\nII. The RR has 2 years to associate with a new firm under standard rules without re-taking qualification exams\nIII. Under the Maintaining Qualifications Program (MQP), the 2-year window can be extended up to 5 years if the RR elects to participate in annual CE\nIV. The RR must complete the Regulatory Element on the second anniversary of registration\nA) I, II, and III\nB) I, II, III, and IV\nC) II and IV only\nD) I and IV only",
+      "back": "A. I, II, and III are correct. IV is STALE \u2014 under the 2022 amendments to FINRA Rule 1240, the Regulatory Element is now ANNUAL, completed within 120 days of the registration anniversary each year, not just on the 2nd/5th/10th anniversaries.",
+      "unit": 12
     },
     {
       "type": "qa",
-      "front": "Which of the following are characteristics of a hedge fund?\nI. Generally exempt from registration under the Investment Company Act of 1940\nII. Limited to accredited investors and qualified purchasers\nIII. Highly liquid with daily redemptions\nIV. Often uses leverage, derivatives, and short selling",
-      "back": "I, II, and IV. Hedge funds are typically structured as private limited partnerships exempt under Section 3(c)(1) or 3(c)(7) of the '40 Act. They are illiquid, often with lockup periods and quarterly or annual redemption windows.",
-      "unit": 5,
-      "lesson": 3
+      "front": "Each of the following are characteristics of GNMA pass-through securities EXCEPT:\nA) Backed by the full faith and credit of the U.S. government\nB) Subject to prepayment risk when interest rates fall\nC) Interest is exempt from state income tax\nD) Pay monthly principal and interest to investors",
+      "back": "C. GNMA interest is FULLY TAXABLE at federal, state, and local levels. Only direct Treasury obligations enjoy the state/local exemption. GNMA is the only mortgage-backed agency security with explicit full faith and credit backing (FNMA and FHLMC do not have explicit backing, though they are under federal conservatorship).",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "A registered representative leaves Firm A and joins Firm B 30 days later. Which of the following are TRUE?\nI. Firm A must file Form U5 within 30 days of termination\nII. Firm B must file Form U4 to register the representative\nIII. The representative must retake the SIE exam if absent over 60 days\nIV. The Maintaining Qualifications Program may extend qualification up to 5 years",
-      "back": "I, II, and IV. Form U5 is filed within 30 days. Form U4 is required at new firm. Under the MQP (effective 2022), terminated registered persons may extend the standard 2-year requalification window up to 5 years by electing into MQP and completing annual CE.",
-      "unit": 12,
-      "lesson": 1
+      "front": "Which of the following economic indicators are classified as LEADING?\nI. S&P 500 index\nII. Average weekly initial unemployment claims\nIII. Industrial production\nIV. Average duration of unemployment\nA) I and II\nB) II and III\nC) I, II, and IV\nD) III and IV",
+      "back": "A. Leading: stock prices (S&P 500), new orders, building permits, initial unemployment claims, money supply (M2), yield curve. Coincident: industrial production, nonfarm payrolls, personal income. Lagging: average duration of unemployment, CPI, prime rate, average bank loans outstanding.",
+      "unit": 9
     },
     {
       "type": "qa",
-      "front": "Which of the following economic indicators is LEAST useful for predicting future economic activity?\nA) Building permits\nB) Stock market prices (S&P 500)\nC) Average duration of unemployment\nD) New orders for consumer goods",
-      "back": "C) Average duration of unemployment is a LAGGING indicator \u2014 it confirms what has already happened. Building permits, stock prices, and new orders for consumer goods are all LEADING indicators that anticipate future activity.",
-      "unit": 9,
-      "lesson": 1
+      "front": "A customer sells short 100 shares of ABC at $50 and simultaneously buys 1 ABC 55 call for a premium of $4. What is the maximum gain, maximum loss, and breakeven?\nA) Max gain $4,600 / Max loss $900 / BE $46\nB) Max gain $4,600 / Max loss unlimited / BE $54\nC) Max gain unlimited / Max loss $900 / BE $46\nD) Max gain $5,000 / Max loss $400 / BE $50",
+      "back": "A. Short stock + long call (protective call). Breakeven = short sale price \u2212 call premium = $50 \u2212 $4 = $46. Max loss = strike \u2212 sale price + premium = ($55 \u2212 $50) + $4 = $9 \u00d7 100 = $900. Max gain = sale proceeds \u2212 premium (if stock goes to 0) = $50 \u2212 $4 = $46 \u00d7 100 = $4,600.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "All of the following statements about money market mutual funds are TRUE under current SEC Rule 2a-7 EXCEPT:\nA) Government and retail MMFs may maintain a stable $1.00 NAV\nB) Institutional prime and tax-exempt MMFs must use a floating NAV\nC) Redemption gates of up to 10 business days may be imposed when weekly liquid assets fall below 30%\nD) A mandatory liquidity fee applies to institutional prime/tax-exempt funds when daily net redemptions exceed 5%",
-      "back": "C) Redemption GATES were eliminated under the 2023 reforms (compliance 10/2024). The current framework requires minimum 25% daily liquid assets and 50% weekly liquid assets, with a mandatory liquidity fee (not gates) for institutional prime/tax-exempt funds when daily redemptions exceed 5% of NAV.",
-      "unit": 4,
-      "lesson": 1
+      "front": "Which of the following are TRUE about REITs?\nI. To qualify for special tax treatment, a REIT must distribute at least 90% of its taxable income to shareholders\nII. REIT dividends are generally taxed as ordinary income, not as qualified dividends\nIII. At least 75% of a REIT's assets must consist of real estate, cash, or government securities\nIV. REITs are organized as limited partnerships and pass through both income and losses to investors\nA) I, II, and III\nB) I, II, III, and IV\nC) I and IV only\nD) II and III only",
+      "back": "A. I, II, and III are correct. IV is FALSE \u2014 REITs are organized as trusts or corporations and pass through income (avoiding double taxation) but DO NOT pass through losses. Limited partnerships (DPPs) pass through losses.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "An investor buys 100 shares at $50 and sells them 9 months later at $60. Two weeks after the sale, the investor repurchases 100 shares at $58. The tax treatment is:\nA) $1,000 short-term capital gain recognized immediately\nB) $1,000 long-term capital gain recognized immediately\nC) Gain recognized; wash sale rule does not apply to gains\nD) Gain deferred under the wash sale rule",
-      "back": "C) The wash sale rule disallows LOSSES on securities repurchased within 30 days \u2014 it does NOT apply to GAINS. The $1,000 gain is recognized as short-term (held 9 months, which is less than the more-than-one-year required for long-term).",
-      "unit": 8,
-      "lesson": 2
+      "front": "Each of the following is true about a SAR EXCEPT:\nA) Must be filed within 30 calendar days of detecting suspicious activity\nB) Threshold for filing is generally transactions aggregating $5,000 or more involving potential illegal activity\nC) The filing firm may inform the customer that a SAR has been filed if the customer asks\nD) The filing may be extended up to 60 days if no suspect has been identified",
+      "back": "C. SARs are STRICTLY CONFIDENTIAL. The firm is prohibited by law from disclosing to anyone (including the customer) that a SAR has been filed. Disclosure can result in criminal penalties for the firm and individuals involved.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "Which of the following customer communications would MOST likely require principal pre-approval under FINRA Rule 2210?\nA) A correspondence email to a single existing retail client\nB) A retail communication distributed to 30 prospective clients about a non-registered investment company\nC) An institutional communication sent to 50 banks\nD) An internal training memo",
-      "back": "B) Retail communications about non-registered investment companies (e.g., hedge funds, private offerings) generally require pre-use principal approval. Correspondence (\u226425 retail recipients within 30 days) typically requires post-use supervision. Institutional communications and internal materials are not retail.",
-      "unit": 11,
-      "lesson": 4
+      "front": "An RR's customer wants to open a 529 plan. Which of the following is LEAST accurate?\nA) The account owner retains control of the assets and may change the beneficiary to another family member\nB) Earnings grow federal-income-tax-deferred and qualified distributions for higher education are federal-tax-free\nC) Up to $35,000 may be rolled lifetime from the 529 to a Roth IRA for the beneficiary, subject to a 15-year account age requirement\nD) Contributions are limited to $2,000 per beneficiary per year",
+      "back": "D. The $2,000 annual limit applies to COVERDELL ESAs, not 529 plans. 529 plan contribution limits vary by state but are typically very high (hundreds of thousands lifetime per beneficiary). A, B, and C are correct \u2014 including the SECURE 2.0 529-to-Roth rollover provision effective 2024.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "A CMO tranche holder is MOST exposed to which combination of risks?\nA) Credit risk and currency risk\nB) Prepayment risk and extension risk\nC) Political risk and liquidity risk\nD) Inflation risk and reinvestment risk only",
-      "back": "B) CMOs are subject to prepayment risk (homeowners refinance when rates fall, returning principal early when reinvestment yields are low) AND extension risk (when rates rise, prepayments slow and the bond's life extends just when investors want their money back). Agency CMOs have minimal credit risk.",
-      "unit": 3,
-      "lesson": 3
+      "front": "Which of the following best describes the difference between a firm commitment and best efforts underwriting?\nI. In firm commitment, the underwriter acts as principal and bears the risk of unsold shares\nII. In best efforts, the underwriter acts as agent and returns unsold shares to the issuer\nIII. An all-or-none (AON) is a type of best efforts where the entire offering must be sold or it is canceled\nIV. A mini-max is a type of firm commitment offering\nA) I, II, and III\nB) I, II, III, and IV\nC) I and IV only\nD) II and III only",
+      "back": "A. I, II, and III correct. IV is FALSE \u2014 mini-max is a type of BEST EFFORTS offering (a minimum must be sold or the deal is canceled; the underwriter may sell up to a maximum). Best efforts variants include AON and mini-max, all of which are agency arrangements.",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "Which of the following are TRUE about Direct Participation Programs (DPPs)?\nI. Income and losses pass through to investors without entity-level taxation\nII. Interests are highly liquid and trade on national exchanges\nIII. Limited partners have limited liability to their investment\nIV. The general partner has unlimited personal liability",
-      "back": "I, III, and IV. DPPs are characterized by pass-through tax treatment, limited liability for LPs, and unlimited liability for GPs. DPP interests are generally UNLISTED and ILLIQUID, often with significant restrictions on transfer.",
-      "unit": 5,
-      "lesson": 3
+      "front": "Under FINRA Rule 5130, which of the following persons would be considered a 'restricted person' prohibited from buying a new equity issue at the public offering price?\nI. A registered representative of a member firm\nII. The spouse of a registered representative\nIII. An immediate family member who receives material support from a registered representative\nIV. A portfolio manager who buys for their personal account",
+      "back": "All four. Restricted persons under Rule 5130 include broker-dealers and their personnel, immediate family members who are materially supported by (or who materially support) the registered person, portfolio managers buying for their own account, and finders/fiduciaries connected with the offering. The spouse is included as immediate family.",
+      "unit": 11
     },
     {
       "type": "qa",
-      "front": "Under Reg BI, the Care Obligation requires a broker-dealer to have a reasonable basis to believe a recommendation is in the customer's best interest based on all of the following EXCEPT:\nA) The customer's investment profile\nB) Potential risks, rewards, and costs\nC) Reasonably available alternatives\nD) Guarantee of investment performance",
-      "back": "D) No recommendation can guarantee performance. The Care Obligation requires considering the customer's profile, the security's risks/rewards/costs, and reasonably available alternatives. Reg BI requires best interest based on facts known, not guaranteed outcomes.",
-      "unit": 7,
-      "lesson": 2
+      "front": "Each statement about SIPC coverage is correct EXCEPT:\nA) SIPC covers up to $500,000 per separate customer, of which up to $250,000 may be cash claims\nB) Commodity futures and fixed annuities are not covered by SIPC\nC) SIPC protects against losses due to a decline in the market value of securities\nD) A joint account and an individual account at the same firm are considered separate customers for SIPC purposes",
+      "back": "C. SIPC does NOT protect against market losses \u2014 it protects against the loss of customer securities and cash held by a failed brokerage firm. It is a financial-failure insurance, not a market-loss insurance.",
+      "unit": 10
     },
     {
       "type": "qa",
-      "front": "A customer has $400,000 in cash and $300,000 in securities in a single account at a SIPC-member broker-dealer that fails. SIPC coverage will provide:\nA) Full $700,000 coverage\nB) $500,000 total, with $250,000 cash and $250,000 securities covered\nC) $500,000 total, with all $300,000 securities and $200,000 of cash covered\nD) $250,000 only",
-      "back": "C) SIPC covers up to $500,000 per separate customer, of which a maximum of $250,000 may be CASH. So all $300,000 of securities is covered, plus $200,000 of the cash (reaching the $500,000 cap). The remaining $200,000 of cash is a general unsecured claim.",
-      "unit": 10,
-      "lesson": 1
+      "front": "An RR receives an unsolicited order from a customer to buy a thinly traded penny stock. Which of the following are TRUE?\nI. Penny stock disclosure rules generally do not apply to unsolicited transactions\nII. The order ticket must be marked 'unsolicited'\nIII. The customer must sign a suitability statement before the first penny stock purchase even if unsolicited\nIV. Reg BI's Care Obligation does not apply because the trade is unsolicited\nA) I and II only\nB) I, II, and IV\nC) I, II, and III\nD) II and III only",
+      "back": "A. Penny stock cold-call/suitability rules exempt unsolicited transactions, and the ticket must be marked accordingly. III is wrong \u2014 the signed suitability statement is required for SOLICITED penny stock transactions. IV is wrong \u2014 Reg BI's Care Obligation applies whenever a RECOMMENDATION is made; an unsolicited order is not a recommendation, but Reg BI still applies to any recommendation made to the customer.",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following statements about ADRs is LEAST accurate?\nA) ADRs are issued by U.S. depositary banks and represent ownership of foreign company shares held abroad\nB) ADR holders have voting rights but exercise them through the depositary bank\nC) ADR dividends are paid in U.S. dollars and are subject to currency risk\nD) ADRs settle T+2 because they represent foreign securities",
+      "back": "D. U.S.-listed ADRs settle T+1, aligned with U.S. equity settlement as of 5/28/2024. ADRs are dollar-denominated, dividends are converted to USD (exposing investors to currency risk), and voting is exercised through the depositary bank.",
+      "unit": 2
+    },
+    {
+      "type": "qa",
+      "front": "A customer purchases 100 shares of XYZ at $40 in a margin account. XYZ rises to $60. Which statements are accurate?\nI. The customer has SMA of $1,000\nII. The customer could withdraw $1,000 in cash\nIII. The customer could use the SMA to purchase $2,000 of additional securities\nIV. Withdrawing the SMA increases the debit balance\nA) I and II only\nB) I, II, and IV\nC) I, II, III, and IV\nD) II and III",
+      "back": "C. Initial purchase: LMV $4,000, debit $2,000, equity $2,000. After rise: LMV $6,000, debit $2,000, equity $4,000. Reg T 50% requirement = $3,000; excess equity (SMA) = $4,000 \u2212 $3,000 = $1,000. SMA can be withdrawn as cash ($1,000) or used to buy 2\u00d7 that amount in securities ($2,000) at 50% margin. Withdrawing SMA increases the debit. All four correct.",
+      "unit": 6
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following best describes the regulatory treatment of municipal advisors?\nI. Municipal advisors must register with the SEC and MSRB\nII. Municipal advisors owe a fiduciary duty to their municipal entity clients\nIII. Municipal advisors are regulated by FINRA when they are dual-registered broker-dealers\nIV. Underwriters of municipal securities are automatically considered municipal advisors\nA) I, II, and III\nB) I, II, III, and IV\nC) II and IV only\nD) I and III only",
+      "back": "A. I, II, and III correct. IV is FALSE \u2014 Dodd-Frank specifically EXCLUDES underwriters acting in their capacity as underwriters from the municipal advisor definition (the 'underwriter exclusion'). MSRB Rule G-42 imposes the fiduciary duty.",
+      "unit": 10
     }
   ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 18452,
-    "output": 8000
+    "input": 17838,
+    "output": 10531
   },
-  "cost_usd": 0.8768
+  "cost_usd": 1.0574
 }

@@ -1,0 +1,355 @@
+{
+  "unit": 10,
+  "unit_name": "Regulators",
+  "jf": "rf",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "SEC (Securities and Exchange Commission)",
+      "back": "The federal regulator created by the Securities Exchange Act of 1934. Composed of 5 commissioners appointed by the President (no more than 3 from the same political party), with five divisions and supporting offices. The SEC has ultimate authority over U.S. securities markets and oversees SROs.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Which federal statute created the SEC, and which statute does the SEC primarily administer for the regulation of new issues?",
+      "back": "The Securities Exchange Act of 1934 created the SEC. The SEC administers the Securities Act of 1933 (registration/disclosure of new issues) and the Exchange Act of 1934 (secondary market, broker-dealers, exchanges, SROs), along with the Investment Company Act of 1940, Investment Advisers Act of 1940, and other federal securities laws.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "definition",
+      "front": "Self-Regulatory Organization (SRO)",
+      "back": "An industry organization that writes and enforces rules for its members under SEC oversight. Examples: FINRA (broker-dealers), MSRB (writes municipal rules), CBOE and NYSE (exchanges). SROs operate subject to SEC approval of their rules.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is FINRA's regulatory scope, and how was it formed?",
+      "back": "FINRA is the SRO for U.S. broker-dealers dealing with the public. It was formed in 2007 through the consolidation of NASD with NYSE Member Regulation. FINRA writes and enforces rules for member firms and their associated persons, administers qualification exams, operates BrokerCheck, and runs the Code of Procedure (disciplinary) and Code of Arbitration (dispute resolution).",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is the MSRB's role, and who enforces MSRB rules?",
+      "back": "The MSRB writes rules governing municipal securities dealers and municipal advisors but does NOT enforce them. Enforcement is carried out by FINRA (against broker-dealers), the SEC, and federal bank regulators (against bank dealers).",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "definition",
+      "front": "NASAA (North American Securities Administrators Association)",
+      "back": "The association of state securities administrators. NASAA developed the Uniform Securities Act, which serves as a model for state ('blue-sky') securities laws governing state registration of securities, broker-dealers, agents, and investment advisers.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Which three Treasury-related agencies have securities-relevant authority, and what does each do?",
+      "back": "OCC (Office of the Comptroller of the Currency) \u2014 supervises national banks; FinCEN (Financial Crimes Enforcement Network) \u2014 administers the Bank Secrecy Act / AML regime; IRS \u2014 administers federal tax laws relevant to securities transactions and retirement accounts.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What are the SIPC coverage limits for a customer of a failed broker-dealer?",
+      "back": "Up to $500,000 per separate-capacity customer, of which up to $250,000 may be cash. SIPC covers missing securities and cash in a customer's brokerage account; it does NOT cover market losses.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "How do SIPC and FDIC coverage differ?",
+      "back": "SIPC protects customers of failed broker-dealers ($500,000 total, $250,000 cash max per separate capacity) \u2014 covers missing securities/cash, not market losses. FDIC insures bank deposits up to $250,000 per depositor, per insured bank, per ownership category \u2014 covers deposit accounts at insured banks, not securities.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "scenario",
+      "front": "A customer holds $400,000 in stocks, $150,000 in mutual funds, and $200,000 in cash at a single broker-dealer (single capacity). The firm fails. How much is covered by SIPC?",
+      "back": "Total securities = $550,000 and cash = $200,000. SIPC covers up to $500,000 per separate-capacity customer, with cash sub-limit of $250,000. Cash ($200,000) is fully covered. Securities are covered up to the remaining $300,000 of the $500,000 cap, leaving $250,000 of securities uncovered by SIPC.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What does Section 3(a)(39) of the Exchange Act define, and why is it tested?",
+      "back": "It defines the categories of persons subject to 'statutory disqualification' from association with a member firm \u2014 e.g., persons subject to certain SEC/SRO bars, expulsions, suspensions, certain felony convictions within the prior 10 years, or certain misstatements on registration applications. A statutorily disqualified person generally cannot be associated with a member firm absent SEC/FINRA approval.",
+      "citation": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under SEC Rule 17f-2, what is required of securities industry personnel?",
+      "back": "Every partner, director, officer, and employee of a registered broker-dealer who is engaged in the securities business (or has access to securities, money, or original books and records) must be fingerprinted, with prints submitted to the Attorney General for an FBI criminal background check.",
+      "citation": "17 CFR 240.17f-2",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 1122, what is prohibited regarding membership and registration filings?",
+      "back": "A member or associated person may not file information with FINRA regarding membership or registration that is incomplete or inaccurate so as to be misleading, or fail to correct such filing after notice. This applies to Form U4, Form U5, and BD/BDW filings.",
+      "citation": "Rule 1122",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What are the two components of FINRA Continuing Education under Rule 1240?",
+      "back": "(1) Regulatory Element \u2014 content prescribed by FINRA, must be completed annually by December 31 each year the person remains registered. Failure to complete causes the registration to be deemed inactive. (2) Firm Element \u2014 annual training program developed by the member firm, tailored to covered registered persons' securities activities.",
+      "citation": "Rule 1240",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What happens if a covered registered person fails to complete the Regulatory Element by the deadline?",
+      "back": "The person's registration is deemed inactive. They must cease all activities requiring registration, may not solicit or accept business or receive compensation for securities transactions, and may not function in any registered capacity until the Regulatory Element is completed. A registration inactive for 2 consecutive years is terminated.",
+      "citation": "Rule 1240",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is Form U4 and when must it be updated?",
+      "back": "Form U4 is the Uniform Application for Securities Industry Registration used to register associated persons with FINRA, the SEC, SROs, and states. It must be updated promptly to reflect any material change, including disclosure events (criminal charges, customer complaints, judgments/liens, bankruptcy, regulatory actions). Filing misleading or incomplete information violates Rule 1122.",
+      "citation": "Rule 1122",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is Form U5 and what is the filing deadline?",
+      "back": "Form U5 is the Uniform Termination Notice. A member firm must file Form U5 within 30 days of an associated person's termination, disclosing the reason for termination and any pending disclosure matters. The firm must also provide a copy to the terminated person.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2263, what must a member do when an associated person signs or acknowledges a Form U4?",
+      "back": "The member must provide a written statement explaining the predispute arbitration clause in the Form U4 \u2014 including that the associated person is agreeing to arbitrate disputes with the firm, customers, or other associated persons; that certain employment-discrimination, whistleblower, and sexual-assault/harassment claims are not required to be arbitrated; and that arbitration awards are generally final and binding.",
+      "citation": "Rule 2263",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3270, what is required for an associated person's outside business activity (OBA)?",
+      "back": "An associated person must provide prior written notice to the member firm before engaging in any outside business activity (being employed by, accepting compensation from, or having a business interest with any other person or entity outside the firm). The firm must evaluate the OBA and may impose conditions or prohibit it.",
+      "citation": "Rule 3270",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3280, what is required for a private securities transaction (selling away)?",
+      "back": "An associated person must provide prior written notice to the member firm describing the proposed transaction. If the person will receive selling compensation, the firm must approve or disapprove in writing; if approved, the firm must supervise the transaction as if executed on its behalf and record it on its books. If no compensation, the firm must acknowledge the notice.",
+      "citation": "Rule 3280",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3220, what is the limit on gifts and gratuities to employees of others?",
+      "back": "A member or associated person may not give anything of value exceeding $300 per individual per year to any person where the payment is in relation to the business of the recipient's employer. A gift of any kind is considered a gratuity. The rule does not apply to bona fide employment contracts that meet the rule's written-agreement and consent conditions.",
+      "citation": "Rule 3220",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-37, what is the consequence of a municipal finance professional (MFP) making a political contribution that exceeds the de minimis threshold to an issuer official?",
+      "back": "If an MFP contributes more than $250 per election to an issuer official for whom the MFP is entitled to vote (or any amount to an official for whom the MFP cannot vote), the dealer is generally banned from engaging in negotiated municipal securities business with that issuer for 2 years.",
+      "citation": "Rule G-37",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is FINRA Rule 4530 about?",
+      "back": "It requires member firms to report to FINRA specified events \u2014 including findings of securities violations, written customer complaints involving theft or misappropriation, certain regulatory/criminal/civil actions, terminations, and statistical/summary customer-complaint information. Specified events must generally be reported within 30 calendar days of the firm knowing or having reason to know.",
+      "citation": "Rule 4530",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 4513, how long must records of written customer complaints be kept, and where?",
+      "back": "Each office of supervisory jurisdiction must keep records of written customer complaints (including complaint, identity of complainant, date received, name of associated person, description and disposition) for at least 4 years.",
+      "citation": "Rule 4513",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What are the core record-retention periods under SEA Rules 17a-3 and 17a-4?",
+      "back": "Most broker-dealer records: 6 years (first 2 in an easily accessible place). Certain records (e.g., order tickets, employment applications): 3 years. Partnership articles, articles of incorporation, minute books, and stock certificate books: life of the firm. Communications with the public and most customer-account records: generally 6 years.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What replaced OATS as the audit-trail system for equity orders?",
+      "back": "The Consolidated Audit Trail (CAT). OATS was retired on September 1, 2021. CAT collects order-event data across U.S. equities and listed options markets.",
+      "citation": null,
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "What is the FINRA BrokerCheck disclosure requirement under Rule 2267?",
+      "back": "Each member must, once every calendar year, provide each customer in writing with: (1) the FINRA BrokerCheck Hotline number, (2) the FINRA website address, and (3) a statement that an investor brochure describing BrokerCheck is available.",
+      "citation": "Rule 2267",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 8312, what does FINRA BrokerCheck disclose?",
+      "back": "FINRA BrokerCheck publicly discloses information about current and former FINRA-registered firms and associated persons, including registration/qualification information, employment history, and disclosure events (regulatory actions, certain customer complaints, criminal matters, bankruptcies, judgments/liens).",
+      "citation": "Rule 8312",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-3, what qualification regime applies to municipal securities professionals?",
+      "back": "Persons associated with a broker-dealer who engage in municipal securities activities must qualify by examination (e.g., Series 52 for municipal securities representatives, Series 53 for principals) and satisfy Continuing Education requirements similar to FINRA's Regulatory and Firm Element structure.",
+      "citation": "Rule G-3",
+      "unit": 10
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-20, what is the limit on gifts to persons in connection with their municipal securities employment?",
+      "back": "A dealer (or associated person) may not give gifts or gratuities exceeding $100 per year per recipient in relation to the recipient's municipal securities activities. Normal business entertainment and certain other categories are excepted under the rule.",
+      "citation": "Rule G-20",
+      "unit": 10
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12066,
+    "output": 4758
+  },
+  "cost_usd": 0.5378
+}

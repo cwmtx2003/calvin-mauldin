@@ -1,0 +1,555 @@
+{
+  "unit": 7,
+  "unit_name": "Risk & Recommendations",
+  "jf": "tc",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A customer buys 100 shares of XYZ at $40 per share and pays a $25 commission. Two years later, the customer sells all 100 shares at $55 per share and pays a $25 commission on the sale. What is the customer's realized gain?",
+      "choices": [
+        "$1,450",
+        "$1,500",
+        "$1,550",
+        "$1,475"
+      ],
+      "answer": 0,
+      "explanation": "Adjusted cost basis = (100 \u00d7 $40) + $25 = $4,025. Net sale proceeds = (100 \u00d7 $55) \u2212 $25 = $5,475. Realized gain = $5,475 \u2212 $4,025 = $1,450. The $1,500 distractor ignores both commissions; commissions adjust basis and proceeds.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor purchases a 6% corporate bond at $950. The bond has a $1,000 par value. What is the bond's current yield?",
+      "choices": [
+        "6.00%",
+        "6.32%",
+        "5.70%",
+        "6.50%"
+      ],
+      "answer": 1,
+      "explanation": "Current yield = annual interest \u00f7 market price = ($1,000 \u00d7 6%) \u00f7 $950 = $60 \u00f7 $950 = 6.32%. 6.00% is the nominal (coupon) yield, which uses par instead of market price.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer owns 200 shares of ABC at a cost basis of $60 per share. ABC declares a 2-for-1 stock split. After the split, what is the customer's adjusted cost basis per share and number of shares?",
+      "choices": [
+        "400 shares at $30 per share",
+        "200 shares at $30 per share",
+        "400 shares at $60 per share",
+        "100 shares at $120 per share"
+      ],
+      "answer": 0,
+      "explanation": "In a 2-for-1 split, shares double and per-share basis is halved: 200 \u00d7 2 = 400 shares; $60 \u00f7 2 = $30 basis. Total basis remains $12,000 (400 \u00d7 $30 = $12,000), unchanged from before the split.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer's portfolio earned the following annual returns over four years: +10%, \u22125%, +15%, and +8%. What is the simple (arithmetic) average annual return?",
+      "choices": [
+        "6.5%",
+        "7.0%",
+        "7.5%",
+        "8.0%"
+      ],
+      "answer": 1,
+      "explanation": "Arithmetic average = (10 \u2212 5 + 15 + 8) \u00f7 4 = 28 \u00f7 4 = 7.0%. 7.5% is incorrect because it does not properly subtract the \u22125% return.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A bond pays a 5% coupon and is currently priced at $1,025. The investor receives $50 in interest and the bond's price rises by $15 during the year. What is the investor's total return (rounded) for the year?",
+      "choices": [
+        "4.88%",
+        "6.34%",
+        "5.00%",
+        "1.46%"
+      ],
+      "answer": 1,
+      "explanation": "Total return = (income + price change) \u00f7 beginning price = ($50 + $15) \u00f7 $1,025 = $65 \u00f7 $1,025 = 6.34%. 4.88% reflects only the current yield ($50/$1,025) and ignores the capital appreciation component of total return.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer is in the 24% federal tax bracket and is considering a corporate bond yielding 5.5%. What is the equivalent tax-free (municipal) yield the customer would need to receive to match the after-tax return of the corporate bond?",
+      "choices": [
+        "4.18%",
+        "5.50%",
+        "7.24%",
+        "4.40%"
+      ],
+      "answer": 0,
+      "explanation": "After-tax yield on corporate = 5.5% \u00d7 (1 \u2212 0.24) = 5.5% \u00d7 0.76 = 4.18%. To match a taxable bond, a muni must yield the corporate's after-tax return. 7.24% (5.5 \u00f7 0.76) is the tax-equivalent yield formula used in the reverse direction.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor buys 100 shares of stock at $50, using 50% Regulation T margin. The stock rises to $70, and the investor sells. Ignoring interest and commissions, what is the percentage return on the investor's equity (cash) investment?",
+      "choices": [
+        "20%",
+        "40%",
+        "80%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": "Cost = 100 \u00d7 $50 = $5,000; 50% margin means investor put up $2,500. Gain on sale = 100 \u00d7 ($70 \u2212 $50) = $2,000. Return on equity = $2,000 \u00f7 $2,500 = 80%. 40% would be the return on the total position value, not on the cash invested\u2014margin magnifies the return.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer wishes to make a withdrawal from a traditional IRA at age 55. The withdrawal is $10,000 and the customer is in the 22% tax bracket. Assuming the customer does not qualify for any penalty exception, what is the total federal tax and penalty owed?",
+      "choices": [
+        "$2,200",
+        "$1,000",
+        "$3,200",
+        "$2,000"
+      ],
+      "answer": 2,
+      "explanation": "Early withdrawals from a traditional IRA before age 59\u00bd are subject to ordinary income tax plus a 10% penalty. Tax = $10,000 \u00d7 22% = $2,200; Penalty = $10,000 \u00d7 10% = $1,000; Total = $3,200. $2,200 reflects tax only and omits the early-withdrawal penalty.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A stock pays a quarterly cash dividend of $0.40. Its current market price is $32. What is the stock's annual dividend yield?",
+      "choices": [
+        "1.25%",
+        "5.00%",
+        "1.60%",
+        "5.12%"
+      ],
+      "answer": 1,
+      "explanation": "Annual dividend = $0.40 \u00d7 4 = $1.60. Dividend yield = $1.60 \u00f7 $32 = 5.00%. 1.25% uses only the quarterly dividend without annualizing.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An insider sold 5,000 shares of XYZ while in possession of material nonpublic information, avoiding a loss of $80,000. Under Section 21A of the Securities Exchange Act of 1934, what is the maximum civil penalty the SEC may seek against the insider for this trade?",
+      "choices": [
+        "$80,000",
+        "$160,000",
+        "$240,000",
+        "$1,000,000"
+      ],
+      "answer": 2,
+      "explanation": "Section 21A authorizes a civil penalty of up to three times the profit gained or loss avoided. $80,000 \u00d7 3 = $240,000. $80,000 represents only disgorgement of the loss avoided, not the maximum civil penalty.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor owns a portfolio: $20,000 in Stock A (return 8%), $30,000 in Stock B (return 12%), and $50,000 in Stock C (return 6%). What is the weighted average return of the portfolio?",
+      "choices": [
+        "8.20%",
+        "8.67%",
+        "9.00%",
+        "10.00%"
+      ],
+      "answer": 0,
+      "explanation": "Weights: A = 20%, B = 30%, C = 50%. Weighted return = (0.20 \u00d7 8%) + (0.30 \u00d7 12%) + (0.50 \u00d7 6%) = 1.6% + 3.6% + 3.0% = 8.2%. 8.67% is the simple average of the three returns, which ignores the different dollar weights.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer buys a 4% corporate bond at $1,040 with 10 years to maturity. Using the approximate yield-to-maturity formula, what is the bond's approximate YTM?",
+      "choices": [
+        "3.85%",
+        "3.53%",
+        "4.00%",
+        "4.40%"
+      ],
+      "answer": 1,
+      "explanation": "Approximate YTM = [Annual interest + (Par \u2212 Price)/Years] \u00f7 [(Par + Price)/2] = [$40 + ($1,000 \u2212 $1,040)/10] \u00f7 [($1,000 + $1,040)/2] = [$40 \u2212 $4] \u00f7 $1,020 = $36 \u00f7 $1,020 = 3.53%. 3.85% is the current yield ($40/$1,040) and ignores the capital loss from premium amortization to maturity.",
+      "citations": [],
+      "unit": 7,
+      "jf": "tc",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13216,
+    "output": 2947
+  },
+  "cost_usd": 0.4193
+}

@@ -1,0 +1,271 @@
+{
+  "unit": 2,
+  "unit_name": "Equity Securities",
+  "jf": "pr",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "An investor buys 200 shares of common stock at $42.50 per share and pays a $25 commission. What is the investor's total cost basis?",
+      "choices": [
+        "$8,475",
+        "$8,500",
+        "$8,525",
+        "$8,550"
+      ],
+      "explanation": "Total cost = (200 \u00d7 $42.50) + $25 commission = $8,500 + $25 = $8,525. The commission is added to the purchase price to determine cost basis. $8,475 incorrectly subtracts the commission instead of adding it.",
+      "citations": [
+        "17 CFR 240.3a11-1"
+      ],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A corporation declares a $0.75 quarterly dividend on its common stock. An investor owns 400 shares. What is the total annual dividend income the investor will receive if the quarterly rate is maintained?",
+      "choices": [
+        "$300",
+        "$900",
+        "$1,200",
+        "$1,500"
+      ],
+      "explanation": "Annual dividend per share = $0.75 \u00d7 4 quarters = $3.00. Total annual income = $3.00 \u00d7 400 shares = $1,200. $300 is only one quarter's payment; $900 reflects only three quarters.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A 6% cumulative preferred stock has a par value of $100. The company paid no dividend last year and intends to pay common shareholders this year. How much must be paid per preferred share before any common dividend can be paid?",
+      "choices": [
+        "$6",
+        "$12",
+        "$60",
+        "$100"
+      ],
+      "explanation": "Cumulative preferred accumulates unpaid dividends. Annual dividend = 6% \u00d7 $100 par = $6. The skipped year plus the current year = $6 + $6 = $12 per share owed before any common dividend. $6 ignores the arrearage.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A convertible preferred stock has a par value of $100 and a conversion price of $25. The common stock currently trades at $30. What is the parity (conversion) value of the preferred stock?",
+      "choices": [
+        "$100",
+        "$120",
+        "$125",
+        "$133.33"
+      ],
+      "explanation": "Conversion ratio = $100 par \u00f7 $25 conversion price = 4 shares of common per preferred. Parity value = 4 \u00d7 $30 market price = $120. $100 is par; $125 incorrectly uses the conversion price.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A company issues rights allowing existing shareholders to buy one new share at $20 for every 5 rights held. The common stock trades cum-rights at $26. What is the theoretical value of one right during the cum-rights period?",
+      "choices": [
+        "$0.60",
+        "$1.00",
+        "$1.20",
+        "$1.50"
+      ],
+      "explanation": "Cum-rights formula: (Market price \u2212 Subscription price) \u00f7 (Number of rights to buy one share + 1) = ($26 \u2212 $20) \u00f7 (5 + 1) = $6 \u00f7 6 = $1.00. $1.20 incorrectly omits the +1 used during the cum-rights period.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A warrant gives the holder the right to buy one share of common stock at $30. The common stock currently trades at $38, and the warrant is priced at $10 in the market. What is the intrinsic value of the warrant?",
+      "choices": [
+        "$2",
+        "$8",
+        "$10",
+        "$18"
+      ],
+      "explanation": "Intrinsic value = Market price of stock \u2212 Exercise price = $38 \u2212 $30 = $8. The $10 market price includes $2 of time value. $2 is the time value, not intrinsic value.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An ADR represents 3 ordinary shares of a foreign company. The ordinary shares trade in the home country at the equivalent of $14 per share. Ignoring fees and currency conversion costs, what is the approximate parity price of the ADR?",
+      "choices": [
+        "$4.67",
+        "$14.00",
+        "$28.00",
+        "$42.00"
+      ],
+      "explanation": "ADR parity = price per ordinary share \u00d7 number of ordinary shares per ADR = $14 \u00d7 3 = $42. $4.67 incorrectly divides; $14 ignores the 3-to-1 ratio.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor owns 500 shares of XYZ common stock purchased at $40. XYZ declares a 5-for-1 stock split. After the split, what is the investor's new share count and adjusted cost basis per share?",
+      "choices": [
+        "100 shares at $200",
+        "500 shares at $40",
+        "2,500 shares at $8",
+        "2,500 shares at $40"
+      ],
+      "explanation": "In a 5-for-1 split, shares multiply by 5 and price divides by 5. New shares = 500 \u00d7 5 = 2,500; new basis = $40 \u00f7 5 = $8 per share. Total value remains $20,000. 100 shares at $200 describes a 1-for-5 reverse split.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A company has 10,000,000 shares of common stock outstanding and reports net income of $25,000,000 for the year. What are the earnings per share (EPS)?",
+      "choices": [
+        "$0.40",
+        "$2.50",
+        "$4.00",
+        "$25.00"
+      ],
+      "explanation": "EPS = Net income \u00f7 Shares outstanding = $25,000,000 \u00f7 10,000,000 = $2.50 per share. $4.00 inverts the calculation.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A common stock has a current market price of $48 and just paid an annual dividend of $1.92 per share. What is the stock's current dividend yield?",
+      "choices": [
+        "2.4%",
+        "3.0%",
+        "4.0%",
+        "9.6%"
+      ],
+      "explanation": "Current yield = Annual dividend \u00f7 Current market price = $1.92 \u00f7 $48 = 0.04 = 4.0%. 2.4% would result from using a higher price; 9.6% uses an incorrect dividend total.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor owns 2,000 shares of ABC common stock. ABC declares a 10% stock dividend. After the distribution, how many shares does the investor own, and what happens to total equity value (assuming the market adjusts proportionally)?",
+      "choices": [
+        "1,800 shares; total value decreases",
+        "2,000 shares; total value unchanged",
+        "2,200 shares; total value approximately unchanged",
+        "2,200 shares; total value increases 10%"
+      ],
+      "explanation": "A 10% stock dividend increases share count by 10%: 2,000 \u00d7 1.10 = 2,200 shares. Because the per-share market price adjusts downward proportionally, total value is approximately unchanged. Stock dividends do not create new wealth for the shareholder.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Under SEC Rule 144, an affiliate wishes to sell restricted stock. The issuer has 8,000,000 shares outstanding, and the average weekly reported trading volume over the prior four weeks was 60,000 shares. Using the 1% of outstanding shares limitation, what is the maximum number of shares the affiliate may sell in a 90-day period?",
+      "choices": [
+        "60,000 shares",
+        "75,000 shares",
+        "80,000 shares",
+        "100,000 shares"
+      ],
+      "explanation": "Rule 144 volume limit for affiliates is the greater of 1% of outstanding shares or the average weekly trading volume over the prior four weeks. 1% of 8,000,000 = 80,000 shares; average weekly volume = 60,000. The greater amount, 80,000 shares, is the maximum.",
+      "citations": [],
+      "unit": 2,
+      "jf": "pr",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12502,
+    "output": 2595
+  },
+  "cost_usd": 0.3822
+}

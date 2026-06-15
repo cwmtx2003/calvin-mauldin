@@ -1,0 +1,565 @@
+{
+  "unit": 6,
+  "unit_name": "Customer Accounts",
+  "jf": "tc",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "Before a registered representative may exercise discretion in a customer's account, which of the following is required?",
+      "choices": [
+        "Verbal authorization from the customer for each trade",
+        "Written authorization from the customer and acceptance of the account by the firm",
+        "A power of attorney filed with the SEC",
+        "Approval from FINRA"
+      ],
+      "answer": 1,
+      "explanation": "Discretionary authority requires prior written authorization from the customer and the firm's written acceptance of the account. Verbal authorization is not sufficient for ongoing discretion (though it may be used for time/price discretion on a specific order).",
+      "citations": [
+        "Rule 3260"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following is a key feature of a Roth IRA?",
+      "choices": [
+        "Contributions are tax-deductible",
+        "Qualified withdrawals of earnings are tax-free",
+        "Required minimum distributions must begin at age 73",
+        "Contributions are limited to individuals under age 70\u00bd"
+      ],
+      "answer": 1,
+      "explanation": "Roth IRA contributions are made with after-tax dollars, but qualified withdrawals (including earnings) are tax-free. Contributions are not deductible, there are no lifetime RMDs for the original owner, and there is no age limit on contributions provided the individual has earned income.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A customer opens a UTMA account for her nephew. Which statement is TRUE?",
+      "choices": [
+        "The account may have more than one minor as beneficiary",
+        "The custodian and the minor may be different individuals, but only one custodian and one minor are allowed per account",
+        "Securities in the account are registered in the name of the custodian only",
+        "Margin trading is permitted in a UTMA account"
+      ],
+      "answer": 1,
+      "explanation": "A UTMA account is limited to one custodian and one minor per account. The securities are registered in the custodian's name as custodian for the named minor. Margin is not permitted in custodial accounts because the assets belong irrevocably to the minor.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA rules, what is the minimum equity required to maintain a pattern day trader account?",
+      "choices": [
+        "$2,000",
+        "$10,000",
+        "$25,000",
+        "$50,000"
+      ],
+      "answer": 2,
+      "explanation": "FINRA Rule 4210 requires a pattern day trader (a customer who executes 4 or more day trades within 5 business days) to maintain minimum equity of $25,000 in the margin account. $2,000 is the general minimum equity requirement for a margin account.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "In a Joint Tenants with Rights of Survivorship (JTWROS) account, upon the death of one tenant, the deceased tenant's interest:",
+      "choices": [
+        "Passes to the deceased's estate per the will",
+        "Passes automatically to the surviving tenant(s)",
+        "Is divided equally among the deceased's heirs",
+        "Is frozen pending probate court determination"
+      ],
+      "answer": 1,
+      "explanation": "In JTWROS, the surviving tenant(s) automatically receive the deceased tenant's interest, bypassing probate. This is the defining feature that distinguishes JTWROS from Tenants in Common, where the deceased's share passes to their estate.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under Regulation T, what is the initial margin requirement for the purchase of marginable equity securities?",
+      "choices": [
+        "25% of the purchase price",
+        "30% of the purchase price",
+        "50% of the purchase price",
+        "100% of the purchase price"
+      ],
+      "answer": 2,
+      "explanation": "Regulation T, established by the Federal Reserve, requires an initial margin deposit of 50% of the purchase price for marginable equity securities. 25% and 30% are the FINRA maintenance margin requirements for long and short positions, respectively.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 4512, customer account records must be updated and verified:",
+      "choices": [
+        "Only when the customer requests changes",
+        "At least every 36 months",
+        "At least annually",
+        "Only when a new account is opened"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 4512 requires firms to send customers, at least once every 36 months, the account record information for verification. This ensures KYC information remains current.",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which retirement plan is characterized by employer-promised specific benefit payments at retirement, with the investment risk borne by the employer?",
+      "choices": [
+        "Defined contribution plan",
+        "Defined benefit plan",
+        "Roth IRA",
+        "SEP-IRA"
+      ],
+      "answer": 1,
+      "explanation": "In a defined benefit plan, the employer promises a specific retirement benefit (often based on salary and years of service) and bears the investment risk of funding the promised benefit. In a defined contribution plan, contributions are defined but the ultimate benefit depends on investment performance, with the employee bearing the investment risk.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2090 (Know Your Customer), a firm must use reasonable diligence to know the essential facts concerning every customer:",
+      "choices": [
+        "Only when making a recommendation",
+        "When opening and maintaining every account",
+        "Only for discretionary accounts",
+        "Only for institutional accounts"
+      ],
+      "answer": 1,
+      "explanation": "Rule 2090 (KYC) requires firms to use reasonable diligence in regard to the opening and maintenance of every account, to know the essential facts concerning every customer. This duty applies to all accounts, not just those where recommendations are made (which is Rule 2111, suitability).",
+      "citations": [
+        "Rule 2090"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2165, a member firm that reasonably believes financial exploitation of a specified adult customer has occurred may:",
+      "choices": [
+        "Liquidate all positions in the account without notice",
+        "Place a temporary hold on disbursements from the account",
+        "Close the account permanently",
+        "Transfer the account to a state regulator"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2165 permits a member firm to place a temporary hold on disbursements of funds or securities from the account of a specified adult (age 65+ or 18+ with an impairment) when financial exploitation is reasonably suspected. The rule does not authorize liquidation, closure, or transfer.",
+      "citations": [
+        "Rule 2165"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "An irrevocable trust differs from a revocable trust in that:",
+      "choices": [
+        "A revocable trust avoids probate but an irrevocable trust does not",
+        "The grantor of an irrevocable trust generally cannot alter or terminate the trust",
+        "Only irrevocable trusts can hold securities",
+        "Revocable trusts must be filed with the SEC"
+      ],
+      "answer": 1,
+      "explanation": "Once established and funded, an irrevocable trust generally cannot be modified, amended, or terminated by the grantor. A revocable trust, by contrast, can be changed or revoked by the grantor at any time during their lifetime. Both types can hold securities and both can avoid probate.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 3210, an associated person who wishes to open a securities account at another broker-dealer must:",
+      "choices": [
+        "Obtain written consent from FINRA before opening the account",
+        "Notify the executing firm in writing and obtain prior written consent from the employer member",
+        "Open the account only if the other firm is FINRA-regulated",
+        "Wait one year after employment begins"
+      ],
+      "answer": 1,
+      "explanation": "Rule 3210 requires an associated person to obtain prior written consent from their employer member before opening or otherwise establishing an account at another broker-dealer, and to notify the executing member in writing of their association.",
+      "citations": [
+        "Rule 3210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13827,
+    "output": 2715
+  },
+  "cost_usd": 0.411
+}

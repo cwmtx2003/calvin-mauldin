@@ -3,267 +3,243 @@
   "cards": [
     {
       "type": "qa",
-      "front": "A corporate bond has a 6% coupon and is trading at 80. What is its current yield?",
-      "back": "Current Yield = Annual Interest / Market Price = $60 / $800 = 0.075 = 7.5%. (A bond at 80 means $800; 6% coupon on $1,000 par = $60 annual interest.)",
-      "unit": 8,
-      "lesson": 1
+      "front": "A corporate bond has a 6% coupon and is trading at $1,200. Calculate the current yield.",
+      "back": "Current Yield = Annual Income / Current Market Price = $60 / $1,200 = 0.05 = 5.00%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A municipal bond yields 4%. An investor is in the 32% federal tax bracket. What is the tax-equivalent yield (TEY)?",
-      "back": "TEY = Tax-Free Yield / (1 - Tax Bracket) = 4% / (1 - 0.32) = 4% / 0.68 = 5.88%. The investor would need a 5.88% taxable yield to match the muni's 4% tax-free yield.",
-      "unit": 8,
-      "lesson": 1
+      "front": "A bond with a 5% coupon and $1,000 par is purchased at $950 with 10 years to maturity. Estimate the yield to maturity using the approximation formula.",
+      "back": "YTM \u2248 [Annual Interest + (Par \u2212 Price)/Years] / [(Par + Price)/2]\nYTM \u2248 [$50 + ($50/10)] / [($1,000+$950)/2]\nYTM \u2248 $55 / $975 = 0.0564 \u2248 5.64%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A taxable corporate bond yields 7%. What is the equivalent tax-free yield for an investor in the 28% bracket?",
-      "back": "Tax-Free Equivalent = Taxable Yield x (1 - Tax Bracket) = 7% x 0.72 = 5.04%. A muni yielding above 5.04% would be more attractive than the 7% taxable bond.",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor in the 32% federal tax bracket is comparing a 4% municipal bond to a corporate bond. What taxable-equivalent yield must the corporate bond offer to match?",
+      "back": "TEY = Muni Yield / (1 \u2212 Tax Bracket) = 0.04 / (1 \u2212 0.32) = 0.04 / 0.68 = 0.0588 = 5.88%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A mutual fund has total assets of $50 million, liabilities of $2 million, and 4 million shares outstanding. What is the NAV per share?",
-      "back": "NAV = (Total Assets - Total Liabilities) / Shares Outstanding = ($50,000,000 - $2,000,000) / 4,000,000 = $48,000,000 / 4,000,000 = $12.00 per share.",
-      "unit": 4,
-      "lesson": 1
+      "front": "A corporate bond pays 6% on $1,000 par, with semiannual coupons on Jan 1 and Jul 1. A regular-way trade settles Aug 15. How much accrued interest does the buyer owe? (30/360 convention)",
+      "back": "Semiannual coupon = $30. Days from Jul 1 to Aug 15 (30/360) = 30 + 15 = 45 days.\nAccrued = $30 \u00d7 (45/180) = $7.50.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "A Class A mutual fund share has an NAV of $9.20 and a public offering price (POP) of $10.00. What is the sales charge percentage?",
-      "back": "Sales Charge % = (POP - NAV) / POP = ($10.00 - $9.20) / $10.00 = $0.80 / $10.00 = 8.0%. (Note: FINRA caps mutual fund sales charges at 8.5%.)",
-      "unit": 4,
-      "lesson": 1
+      "front": "A Treasury bond pays 4% on $1,000 par, semiannual coupons on Feb 15 and Aug 15. Trade settles April 10 (Treasuries use actual/actual). How much accrued interest?",
+      "back": "Semiannual coupon = $20. Days from Feb 15 to Apr 10 = 13 (Feb) + 31 (Mar) + 10 (Apr) = 54 days. Days in period Feb 15\u2013Aug 15 = 181.\nAccrued = $20 \u00d7 (54/181) \u2248 $5.97.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "A convertible bond has a par value of $1,000 and a conversion price of $40. The common stock trades at $45. What is the conversion ratio and parity price of the bond?",
-      "back": "Conversion Ratio = Par / Conversion Price = $1,000 / $40 = 25 shares. Parity Price of Bond = 25 shares x $45 = $1,125 (or 112.5). The bond should trade at or above 112.5 to reflect conversion value.",
-      "unit": 3,
-      "lesson": 1
+      "front": "A convertible bond ($1,000 par) is convertible at $40 per share. The common stock trades at $50. Calculate the conversion ratio and the parity price of the bond.",
+      "back": "Conversion Ratio = Par / Conversion Price = $1,000 / $40 = 25 shares.\nParity Price of Bond = 25 \u00d7 $50 = $1,250.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "An investor buys 100 shares of XYZ at $60 in a margin account under Regulation T (50%). What is the initial Reg T call?",
-      "back": "Purchase = 100 x $60 = $6,000. Reg T requirement = 50% x $6,000 = $3,000. The customer must deposit $3,000 in cash (or equivalent securities). The broker lends the remaining $3,000 (debit balance).",
-      "unit": 6,
-      "lesson": 3
+      "front": "A convertible preferred stock has a par of $100 and is convertible into 4 shares of common. The common trades at $30. What is the parity price of the preferred?",
+      "back": "Parity = Conversion Ratio \u00d7 Common Price = 4 \u00d7 $30 = $120 per preferred share.",
+      "unit": 2
     },
     {
       "type": "qa",
-      "front": "A long margin account has Long Market Value (LMV) of $20,000 and a Debit Balance (DR) of $8,000. What is the equity and is there excess equity over the 50% Reg T requirement?",
-      "back": "Equity = LMV - DR = $20,000 - $8,000 = $12,000. Reg T requirement (50% of LMV) = $10,000. Excess Equity (SMA) = $12,000 - $10,000 = $2,000.",
-      "unit": 6,
-      "lesson": 3
+      "front": "A mutual fund has total assets of $250 million, liabilities of $10 million, and 12 million shares outstanding. What is the NAV per share?",
+      "back": "NAV = (Assets \u2212 Liabilities) / Shares Outstanding = ($250M \u2212 $10M) / 12M = $240M / 12M = $20.00 per share.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "A long margin account has LMV of $10,000 and DR of $8,000. Is the account at FINRA's 25% maintenance level? What is the minimum equity required?",
-      "back": "Equity = $10,000 - $8,000 = $2,000. FINRA maintenance minimum = 25% of LMV = 25% x $10,000 = $2,500. Since equity ($2,000) is below $2,500, the account receives a maintenance call for $500.",
-      "unit": 6,
-      "lesson": 3
+      "front": "A Class A mutual fund share has a NAV of $19.05 and a maximum sales charge of 5%. Calculate the public offering price (POP).",
+      "back": "POP = NAV / (1 \u2212 Sales Charge %) = $19.05 / (1 \u2212 0.05) = $19.05 / 0.95 = $20.05.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "Investor buys 1 XYZ Oct 50 call at a premium of 3. What is the breakeven point, and what is the maximum loss?",
-      "back": "Breakeven (long call) = Strike + Premium = $50 + $3 = $53. Maximum Loss = Premium paid = $3 x 100 = $300. Maximum gain = unlimited.",
-      "unit": 5,
-      "lesson": 1
+      "front": "An investor buys mutual fund shares at a POP of $25 and the NAV is $23.50. What is the sales charge percentage?",
+      "back": "Sales Charge % = (POP \u2212 NAV) / POP = ($25 \u2212 $23.50) / $25 = $1.50 / $25 = 6.00%.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "Investor buys 1 XYZ Oct 50 put at a premium of 4. What is the breakeven, maximum gain, and maximum loss?",
-      "back": "Breakeven (long put) = Strike - Premium = $50 - $4 = $46. Maximum Gain = Strike - Premium = $46 x 100 = $4,600 (stock to zero). Maximum Loss = Premium = $400.",
-      "unit": 5,
-      "lesson": 1
+      "front": "A customer opens a long margin account and purchases $8,000 of stock. Under Reg T (50%), what is the required initial cash deposit?",
+      "back": "Reg T Requirement = 50% \u00d7 $8,000 = $4,000 cash deposit.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Investor writes 1 XYZ Oct 70 call at a premium of 5 (uncovered). What is the breakeven and maximum loss?",
-      "back": "Breakeven (short call) = Strike + Premium = $70 + $5 = $75. Maximum Gain = Premium = $500. Maximum Loss = Unlimited (stock can rise without limit).",
-      "unit": 5,
-      "lesson": 1
+      "front": "A customer buys $20,000 of marginable stock with 50% Reg T. The stock declines to $14,000. Calculate the equity and check the FINRA 25% maintenance requirement.",
+      "back": "Original loan (debit) = $10,000. Equity = $14,000 \u2212 $10,000 = $4,000.\nMinimum Maintenance = 25% \u00d7 $14,000 = $3,500.\nEquity ($4,000) > Min Maint ($3,500). No maintenance call.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "Investor buys 100 shares XYZ at $40 and writes 1 XYZ 45 call at 3 (covered call). What is the breakeven and maximum gain?",
-      "back": "Breakeven = Stock Cost - Premium = $40 - $3 = $37. Maximum Gain = (Strike - Stock Cost) + Premium = ($45 - $40) + $3 = $8 per share = $800. Maximum Loss = $37 x 100 = $3,700 (stock to zero offset by premium).",
-      "unit": 5,
-      "lesson": 1
+      "front": "A short margin account holds 100 shares short at $50 (proceeds $5,000) with Reg T 50% deposit. Stock rises to $60. Calculate equity and FINRA 30% maintenance.",
+      "back": "Credit Balance = Short Proceeds + Reg T = $5,000 + $2,500 = $7,500.\nShort Market Value (SMV) = $6,000. Equity = Credit \u2212 SMV = $7,500 \u2212 $6,000 = $1,500.\nMinimum Maintenance = 30% \u00d7 $6,000 = $1,800.\nEquity ($1,500) < $1,800 \u2192 maintenance call of $300.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "A 5% corporate bond pays interest J&J 1 (Jan 1 and Jul 1). It settles on March 10. How many days of accrued interest does the buyer owe the seller? (Use 30/360.)",
-      "back": "Accrued interest runs from the last coupon (Jan 1) up to but not including settlement (Mar 10). January = 30, February = 30, March 1-9 = 9. Total = 30 + 30 + 9 = 69 days of accrued interest owed by the buyer.",
-      "unit": 3,
-      "lesson": 1
+      "front": "An investor buys 1 XYZ Oct 50 call at a $3 premium. Calculate the breakeven and the maximum loss.",
+      "back": "Breakeven = Strike + Premium = $50 + $3 = $53.\nMax Loss = Premium Paid = $3 \u00d7 100 = $300.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "An investor buys a bond at 95 with 10 years to maturity and a 6% coupon. What is the approximate yield to maturity (YTM)?",
-      "back": "Annual interest = $60. Annual accretion = ($1,000 - $950) / 10 = $5. Numerator = $60 + $5 = $65. Average price = ($1,000 + $950) / 2 = $975. YTM \u2248 $65 / $975 = 6.67%. (YTM > coupon > CY when bought at discount.)",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor buys 1 XYZ Oct 40 put at a $2 premium. Calculate the breakeven and the maximum gain.",
+      "back": "Breakeven = Strike \u2212 Premium = $40 \u2212 $2 = $38.\nMax Gain = (Strike \u2212 Premium) \u00d7 100 = $38 \u00d7 100 = $3,800 (if stock goes to $0).",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "A bond purchased at 110 has a 5% coupon and 10 years to maturity. Calculate approximate YTM.",
-      "back": "Annual interest = $50. Annual amortization of premium = ($1,100 - $1,000) / 10 = $10. Numerator = $50 - $10 = $40. Average price = ($1,100 + $1,000) / 2 = $1,050. YTM \u2248 $40 / $1,050 = 3.81%. (At premium: Nominal > CY > YTM > YTC.)",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor writes 1 uncovered XYZ Oct 50 call for a $4 premium. What is the breakeven and the maximum gain?",
+      "back": "Breakeven = Strike + Premium = $50 + $4 = $54.\nMax Gain = Premium = $4 \u00d7 100 = $400. Max Loss is unlimited.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "If interest rates increase by 50 basis points from 4.25%, what is the new rate?",
-      "back": "100 basis points = 1%, so 50 basis points = 0.50%. New rate = 4.25% + 0.50% = 4.75%.",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor buys 100 shares of ABC at $48 and writes 1 ABC Oct 50 call for a $2 premium (covered call). Calculate breakeven and maximum gain.",
+      "back": "Breakeven = Stock Cost \u2212 Premium = $48 \u2212 $2 = $46.\nMax Gain = (Strike \u2212 Stock Cost + Premium) \u00d7 100 = ($50 \u2212 $48 + $2) \u00d7 100 = $400.",
+      "unit": 5
     },
     {
       "type": "qa",
-      "front": "An investor owns 200 shares of XYZ at $30/share. XYZ declares a 3-for-1 stock split. What is the new share count and adjusted cost basis per share?",
-      "back": "New shares = 200 x 3 = 600 shares. Adjusted basis = $30 / 3 = $10 per share. Total position value remains $6,000.",
-      "unit": 2,
-      "lesson": 3
+      "front": "A bond's yield moves from 4.25% to 4.65%. How many basis points did the yield change?",
+      "back": "1 basis point = 0.01%. Change = 4.65% \u2212 4.25% = 0.40% = 40 basis points.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "XYZ announces a 1-for-5 reverse stock split. An investor owns 500 shares at $4. What is the new share count and price per share?",
-      "back": "New shares = 500 / 5 = 100 shares. New price = $4 x 5 = $20 per share. Total value unchanged at $2,000.",
-      "unit": 2,
-      "lesson": 3
+      "front": "A stock pays a $0.75 quarterly dividend and trades at $60. What is the current dividend yield?",
+      "back": "Annual Dividend = $0.75 \u00d7 4 = $3.00.\nDividend Yield = $3.00 / $60 = 0.05 = 5.00%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A preferred stock pays a $5 annual dividend and is trading at $80. What is the current yield?",
-      "back": "Current Yield = Annual Dividend / Market Price = $5 / $80 = 6.25%.",
-      "unit": 2,
-      "lesson": 2
+      "front": "An investor bought 100 shares at $40, received $200 in dividends during the year, and sold at $46. Calculate total return.",
+      "back": "Capital Gain = ($46 \u2212 $40) \u00d7 100 = $600. Dividends = $200. Total Gain = $800.\nTotal Return = $800 / $4,000 = 20.0%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A 5% cumulative preferred stock ($100 par) skipped dividends in Years 1 and 2. In Year 3, before any common dividend is paid, how much must each preferred share receive?",
-      "back": "Annual dividend = 5% x $100 = $5. Skipped Yr 1 ($5) + skipped Yr 2 ($5) + current Yr 3 ($5) = $15 per share must be paid to cumulative preferred holders before common shareholders receive any dividend.",
-      "unit": 2,
-      "lesson": 2
+      "front": "A stock undergoes a 3-for-1 split. An investor previously owned 200 shares at $90 per share. What are the new share count, price, and cost basis per share?",
+      "back": "New Shares = 200 \u00d7 3 = 600.\nNew Price = $90 / 3 = $30.\nTotal Cost Basis unchanged = $18,000; New Basis/Share = $18,000 / 600 = $30.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "An investor buys stock at $50 and sells it 10 months later at $65, after receiving $2 in dividends. What is the total return, and how is the gain taxed?",
-      "back": "Total Return = (Gain + Income) / Cost = ($15 + $2) / $50 = 34%. Holding period of 10 months is less than 1 year, so the $15 capital gain is short-term and taxed as ordinary income. The $2 dividend may be qualified if 60-day holding period met.",
-      "unit": 8,
-      "lesson": 1
+      "front": "An investor owns 500 shares with a cost basis of $20/share. The company declares a 10% stock dividend. What is the new cost basis per share?",
+      "back": "New Shares = 500 \u00d7 1.10 = 550.\nTotal Basis Unchanged = 500 \u00d7 $20 = $10,000.\nNew Basis = $10,000 / 550 \u2248 $18.18 per share.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "An investor has $9,000 in realized capital losses and $2,000 in realized capital gains in 2024. How much loss can be deducted against ordinary income this year, and how much is carried forward?",
-      "back": "Net capital loss = $9,000 - $2,000 = $7,000. Maximum deduction against ordinary income = $3,000 per year. Carryforward = $7,000 - $3,000 = $4,000 (carried forward indefinitely).",
-      "unit": 8,
-      "lesson": 2
+      "front": "A bond is callable at 102 in 5 years. It has a 5% coupon, currently trades at $1,050, par $1,000. Estimate yield to call.",
+      "back": "YTC \u2248 [Annual Interest + (Call Price \u2212 Price)/Years] / [(Call Price + Price)/2]\n= [$50 + ($1,020 \u2212 $1,050)/5] / [($1,020 + $1,050)/2]\n= [$50 \u2212 $6] / $1,035 = $44 / $1,035 \u2248 4.25%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A customer wires $9,500 cash on Monday and $2,000 cash on Tuesday into the same account. Is a Currency Transaction Report (CTR) required?",
-      "back": "CTRs are required for cash transactions exceeding $10,000 in a single day. The two days are NOT aggregated, BUT structuring rules apply. Monday $9,500 alone = no CTR. Tuesday $2,000 alone = no CTR. However, the pattern suggests structuring and may warrant a SAR. (CTR threshold = >$10,000 per day.)",
-      "unit": 11,
-      "lesson": 1
+      "front": "A T-bill with $10,000 face is purchased at $9,850 and matures in 90 days. Calculate the discount yield.",
+      "back": "Discount Yield = (Discount / Face) \u00d7 (360 / Days)\n= ($150 / $10,000) \u00d7 (360 / 90) = 0.015 \u00d7 4 = 0.06 = 6.00%.",
+      "unit": 3
     },
     {
       "type": "qa",
-      "front": "An ADR represents 4 ordinary foreign shares. The foreign shares trade at the equivalent of $12 each in the home market. What is the parity (theoretical) price of the ADR in USD?",
-      "back": "ADR Parity Price = Foreign Share Price x Bundling Ratio = $12 x 4 = $48 USD per ADR (before currency conversion adjustments).",
-      "unit": 2,
-      "lesson": 2
+      "front": "An investor in the 24% federal bracket receives $5,000 in interest from a corporate bond. What is the after-tax income?",
+      "back": "Tax = $5,000 \u00d7 0.24 = $1,200.\nAfter-Tax Income = $5,000 \u2212 $1,200 = $3,800.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "A 50-year-old in 2026 contributes to a Traditional IRA. Per current SECURE 2.0 indexed limits, what is the maximum allowable contribution (base + catch-up)?",
-      "back": "For tax year 2026: Base IRA limit = $7,500. Catch-up for age 50+ = $1,100 (indexed under SECURE 2.0). Total maximum = $7,500 + $1,100 = $8,600.",
-      "unit": 6,
-      "lesson": 2
+      "front": "An investor sells stock for a $10,000 long-term capital gain and incurs $4,000 in long-term capital losses. There are also $2,000 in short-term losses. What is the net taxable gain?",
+      "back": "LTCG: $10,000 \u2212 $4,000 = $6,000 LT gain.\nShort term: $0 \u2212 $2,000 = $2,000 ST loss.\nNet = $6,000 \u2212 $2,000 = $4,000 net long-term capital gain.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "An investor fails to take a $4,000 Required Minimum Distribution (RMD). Under SECURE 2.0, what is the standard penalty (without correction)?",
-      "back": "Penalty under SECURE 2.0 = 25% of the shortfall = 25% x $4,000 = $1,000. (Reduced to 10% = $400 if corrected during the correction window. Prior law was 50%.)",
-      "unit": 6,
-      "lesson": 2
+      "front": "An investor has $9,000 in net capital losses for the year and no capital gains. How much can be deducted against ordinary income, and what carries forward?",
+      "back": "Maximum deduction against ordinary income = $3,000 per year.\nCarryforward = $9,000 \u2212 $3,000 = $6,000 to future tax years.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "An investor buys a T-bill with a face value of $10,000 for $9,850, maturing in 180 days. What is the approximate annualized discount yield?",
-      "back": "Discount = $10,000 - $9,850 = $150. Discount Yield = ($150 / $10,000) x (360 / 180) = 0.015 x 2 = 3.00% annualized discount yield. (T-bills use a 360-day year for discount yield.)",
-      "unit": 3,
-      "lesson": 2
+      "front": "A customer's account holds $400,000 in securities and $150,000 in cash. The firm liquidates. What is the SIPC coverage?",
+      "back": "SIPC covers up to $500,000 total per separate customer, of which up to $250,000 may be cash.\nSecurities covered: $400,000 (fully covered).\nCash covered: $150,000 (under the $250,000 cash sub-limit).\nTotal covered = $550,000, but capped at $500,000 SIPC limit; here $400K + $150K = $550K, so $50K not covered.",
+      "unit": 10
     },
     {
       "type": "qa",
-      "front": "A customer's account holds $300,000 in securities and $300,000 in cash at a failed broker-dealer. What is the SIPC coverage?",
-      "back": "SIPC covers up to $500,000 per separate-capacity customer, of which a maximum of $250,000 may be cash. Securities: full $300,000 covered. Cash: $250,000 covered (the $50,000 excess is an unsecured claim). Total SIPC payout = $300,000 + $250,000 = $550,000.",
-      "unit": 10,
-      "lesson": 1
+      "front": "A rights offering allows one new share at $20 for every 5 rights held. The stock currently trades cum-rights at $26. Calculate the theoretical value of one right (cum-rights).",
+      "back": "Value of Right (Cum-Rights) = (Market Price \u2212 Subscription Price) / (Rights to Buy 1 Share + 1)\n= ($26 \u2212 $20) / (5 + 1) = $6 / 6 = $1.00 per right.",
+      "unit": 2
     },
     {
       "type": "qa",
-      "front": "A General Obligation municipal bond pays 3.5%. An investor is in the 24% federal bracket and lives in a state with a 5% income tax (the bond is in-state and triple tax-exempt). What is the federal-only TEY?",
-      "back": "Federal-only TEY = 3.5% / (1 - 0.24) = 3.5% / 0.76 = 4.61%. (If including state tax exemption: combined rate \u2248 29%; TEY = 3.5% / 0.71 = 4.93%.)",
-      "unit": 8,
-      "lesson": 1
+      "front": "A stock pays $4 annual dividends. An investor is in the 22% bracket and the dividends qualify for the 15% qualified dividend rate. Owning 500 shares, what is the after-tax dividend income?",
+      "back": "Total Dividends = 500 \u00d7 $4 = $2,000.\nTax = $2,000 \u00d7 0.15 = $300.\nAfter-Tax Income = $2,000 \u2212 $300 = $1,700.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "An investor establishes a long stock position by purchasing 500 shares at $20 and writes 5 calls at strike $25 for a premium of $1 each. Maximum gain?",
-      "back": "Maximum Gain (covered call) = (Strike - Stock Cost) + Premium per share = ($25 - $20) + $1 = $6 per share. Total = $6 x 500 = $3,000.",
-      "unit": 5,
-      "lesson": 1
+      "front": "A money market fund must maintain a minimum weekly liquid asset (WLA) level. Per the 2023 SEC reforms, what is the minimum WLA, and at what daily-net-redemption threshold is a mandatory liquidity fee imposed on an institutional prime fund?",
+      "back": "Minimum Weekly Liquid Assets = 50% of total assets (raised from 30%).\nMandatory liquidity fee triggered when daily net redemptions exceed 5% of NAV (for institutional prime/tax-exempt MMFs). Minimum DLA = 25%.",
+      "unit": 4
     },
     {
       "type": "qa",
-      "front": "An investor opens a short margin account by shorting 100 shares at $50. What is the Reg T deposit required?",
-      "back": "Short sale proceeds = 100 x $50 = $5,000. Reg T initial requirement = 50% of $5,000 = $2,500 deposit. (FINRA minimum equity for a short account is $2,000, so the $2,500 Reg T requirement applies.)",
-      "unit": 6,
-      "lesson": 3
+      "front": "An investor deposits the maximum $7,500 in a traditional IRA at age 55 for tax year 2026 (catch-up applies). What is the catch-up portion, and what is the base limit?",
+      "back": "Base IRA Limit (2026) = $7,500.\nCatch-up (age 50+, 2026, indexed under SECURE 2.0) = $1,100.\nTotal Contribution = $7,500 + $1,100 = $8,600.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "A short margin account has Short Market Value (SMV) of $10,000 and Credit Balance (CR) of $15,000. What is the equity, and is FINRA's 30% maintenance met?",
-      "back": "Equity = CR - SMV = $15,000 - $10,000 = $5,000. FINRA short maintenance = 30% of SMV = 30% x $10,000 = $3,000. Equity ($5,000) exceeds the $3,000 minimum \u2014 no maintenance call.",
-      "unit": 6,
-      "lesson": 3
+      "front": "An investor age 76 has an IRA worth $500,000. The IRS RMD divisor for that age is 23.7. What is the required minimum distribution, and what is the penalty if missed and not corrected?",
+      "back": "RMD = $500,000 / 23.7 \u2248 $21,097.\nUnder SECURE 2.0, penalty for missed RMD = 25% of shortfall, reduced to 10% if corrected during the correction window.\nUncorrected penalty \u2248 $21,097 \u00d7 25% \u2248 $5,274.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "An investor buys a bond at 102 (premium) with a 6% coupon. What is the current yield?",
-      "back": "Current Yield = Annual Interest / Market Price = $60 / $1,020 = 5.88%. (For premium bonds: Nominal yield 6% > CY 5.88% > YTM > YTC.)",
-      "unit": 8,
-      "lesson": 1
+      "front": "Stock ABC pays a $1 dividend with a record date of Tuesday, June 10. Under T+1 settlement, what is the ex-dividend date for regular-way trades?",
+      "back": "Under T+1 settlement (effective 5/28/2024), the ex-dividend date is the SAME business day as the record date.\nEx-Date = Tuesday, June 10.",
+      "unit": 1
     },
     {
       "type": "qa",
-      "front": "An investor signs a Letter of Intent (LOI) to invest $50,000 in a mutual fund to qualify for a breakpoint. The fund's breakpoint at $50,000 reduces the sales charge from 5% to 4%. If the customer invests $30,000 initially, how many shares (in dollars) are held in escrow?",
-      "back": "Under an LOI, the fund holds additional shares in escrow equal to the difference in sales charge. The 1% sales-charge difference x the initial $30,000 = $300 worth of shares held in escrow. These shares are released if the customer completes the $50,000 commitment within 13 months.",
-      "unit": 4,
-      "lesson": 1
+      "front": "An investor buys 200 shares of XYZ at $30. XYZ declares a 1-for-4 reverse split. What are the new share count, adjusted price, and cost basis per share?",
+      "back": "New Shares = 200 / 4 = 50.\nAdjusted Price = $30 \u00d7 4 = $120.\nTotal Cost Basis Unchanged = $6,000; New Basis/Share = $6,000 / 50 = $120.",
+      "unit": 6
     },
     {
       "type": "qa",
-      "front": "A closed-end fund has an NAV of $20 per share and trades on the exchange at $18 per share. Is it trading at a premium or discount, and by what percentage?",
-      "back": "Market price ($18) < NAV ($20), so it trades at a discount. Discount = ($20 - $18) / $20 = 10%. (Unlike open-end funds, CEFs can trade above or below NAV based on supply/demand.)",
-      "unit": 4,
-      "lesson": 1
+      "front": "A municipal GO bond yields 3.5%. An investor is in the combined 35% bracket. Calculate the taxable-equivalent yield.",
+      "back": "TEY = Muni Yield / (1 \u2212 Tax Bracket) = 0.035 / (1 \u2212 0.35) = 0.035 / 0.65 \u2248 0.0538 = 5.38%.",
+      "unit": 8
     },
     {
       "type": "qa",
-      "front": "An investor sells stock for a $5,000 loss on June 15. On July 1, the investor repurchases the same security. What is the tax consequence?",
-      "back": "Wash sale rule applies: any sale at a loss with repurchase of substantially identical security within 30 days before or after the sale disallows the loss. The $5,000 loss is disallowed for current tax use and is added to the cost basis of the replacement shares.",
-      "unit": 8,
-      "lesson": 2
+      "front": "A customer deposits $14,000 cash at a brokerage in one day. What CTR threshold applies, and what action is required?",
+      "back": "CTR (Currency Transaction Report) must be filed for cash transactions exceeding $10,000 in a single day (or aggregated).\n$14,000 > $10,000 \u2192 File CTR with FinCEN within 15 days.",
+      "unit": 11
+    },
+    {
+      "type": "qa",
+      "front": "A bond trades at 98.5. What is the dollar price per $1,000 par?",
+      "back": "Bond prices quoted as % of par.\nDollar Price = 98.5% \u00d7 $1,000 = $985.00.",
+      "unit": 3
+    },
+    {
+      "type": "qa",
+      "front": "An ADR represents 3 ordinary shares of a foreign company. The ordinary trades on the foreign exchange at the equivalent of $15 USD per share. What is the parity price of the ADR (ignoring fees)?",
+      "back": "Parity ADR Price = Ordinary Share Price \u00d7 Shares per ADR = $15 \u00d7 3 = $45.00.",
+      "unit": 2
     }
   ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 18458,
-    "output": 6692
+    "input": 17851,
+    "output": 6267
   },
-  "cost_usd": 0.7788
+  "cost_usd": 0.7378
 }

@@ -1,0 +1,306 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "jf": "pr",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Each of the following is classified as an investment company under the Investment Company Act of 1940 EXCEPT a:",
+      "choices": [
+        "Face-amount certificate company",
+        "Unit investment trust",
+        "Real estate investment trust",
+        "Closed-end management company"
+      ],
+      "answer": 2,
+      "explanation": "Section 4 of the Investment Company Act of 1940 divides investment companies into three classes: face-amount certificate companies, unit investment trusts, and management companies (which are further divided into open-end and closed-end). REITs are not investment companies under the Act, although they are pooled investment vehicles. Closed-end is a subclassification of a management company under Section 5.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74",
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which feature is LEAST characteristic of a unit investment trust (UIT)?",
+      "choices": [
+        "It is organized under a trust indenture",
+        "It issues redeemable securities representing an undivided interest in a unit of specified securities",
+        "It has a board of directors that actively manages the portfolio",
+        "It is a type of investment company under the Investment Company Act of 1940"
+      ],
+      "answer": 2,
+      "explanation": "Under Section 4(2) of the Investment Company Act of 1940, a UIT is organized under a trust indenture, does NOT have a board of directors, and issues only redeemable securities representing an undivided interest in a unit of specified securities. The absence of a board (and active management) is a defining feature.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "A management company will MOST likely lose its status as a \"diversified company\" under the Investment Company Act of 1940 if, at the time of an acquisition:",
+      "choices": [
+        "It owns government securities exceeding 25% of total assets",
+        "It invests more than 5% of total assets in one issuer or acquires more than 10% of that issuer's voting securities",
+        "It issues redeemable securities to more than 100 holders",
+        "Its net asset value declines below the original offering price"
+      ],
+      "answer": 1,
+      "explanation": "Section 5(b)(1) defines a diversified company as one in which at least 75% of total assets consists of cash, government securities, securities of other investment companies, and other securities limited per issuer to no more than 5% of total assets and no more than 10% of the issuer's outstanding voting securities. Subsequent market-value discrepancies (not caused by acquisition) do not cost the fund its diversified status under \u00a75(c).",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are TRUE about open-end investment company shares EXCEPT:",
+      "choices": [
+        "They are continuously offered and redeemable at NAV",
+        "They are priced using forward pricing at the next computed NAV",
+        "They may trade on an exchange at a premium or discount to NAV",
+        "They may impose a 12b-1 fee for distribution expenses"
+      ],
+      "answer": 2,
+      "explanation": "Open-end (mutual fund) shares are redeemable directly with the issuer at the next computed NAV (forward pricing) and are not exchange-traded; only closed-end shares trade in the secondary market at a premium or discount to NAV. 12b-1 fees for distribution are permitted under Rule 12b-1.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75",
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA Rule 2342, a registered representative who deliberately accepts a mutual fund purchase order for an amount just below a published breakpoint in order to earn a higher sales charge has MOST likely:",
+      "choices": [
+        "Acted properly as long as the customer initiated the trade size",
+        "Violated the rule prohibiting \"breakpoint sales\"",
+        "Complied because the customer did not sign a letter of intent",
+        "Engaged in a permissible practice if disclosed orally at the point of sale"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 2342 expressly prohibits the sale of investment company shares in dollar amounts just below a breakpoint so as to share in the higher sales charge. Such conduct is a \"breakpoint sale\" violation regardless of who initiated the order size, unless the trade was part of a documented bona fide asset allocation program with proper disclosure.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Concerning a recommended purchase or exchange of a deferred variable annuity, which factor must a registered representative consider under FINRA Rule 2330?",
+      "choices": [
+        "Whether the customer will incur a new surrender period or surrender charge on an exchange",
+        "Whether the issuer carries an investment-grade rating from at least two NRSROs",
+        "Whether the contract's subaccounts outperformed the S&P 500 over the prior year",
+        "Whether the customer can fund the contract entirely through a margin loan"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 2330(b)(1)(B) requires the representative, on an exchange, to consider whether the customer would incur a new surrender period, a surrender charge, or loss of existing benefits (e.g., death or living benefits). Issuer credit ratings and prior-period subaccount performance versus an index are not the rule's enumerated suitability criteria.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor is considering a direct participation program (DPP). Which combination of features BEST describes a DPP?",
+      "choices": [
+        "Listed on an exchange, double taxation at the entity level, and highly liquid",
+        "Flow-through tax treatment, generally unlisted, and generally illiquid",
+        "Flow-through tax treatment, exchange-listed, and continuously redeemable at NAV",
+        "Double taxation, illiquid, and registered as an open-end investment company"
+      ],
+      "answer": 1,
+      "explanation": "Per the SIE outline and FINRA Rule 2310, DPPs are characterized by pass-through (flow-through) tax treatment, are generally unlisted, and are generally illiquid. They are not registered investment companies and do not have continuous redemption at NAV.",
+      "citations": [
+        "Rule 2310"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following statements about 529 plans and ABLE accounts are correct EXCEPT:",
+      "choices": [
+        "They are classified as municipal fund securities",
+        "The account owner and the beneficiary may be different persons",
+        "Assets are restricted in use to qualified purposes for the tax advantages to apply",
+        "They are registered investment companies under the Investment Company Act of 1940"
+      ],
+      "answer": 3,
+      "explanation": "Under MSRB Rule D-12, municipal fund securities are issued by an issuer that, but for the application of Section 2(b) of the Investment Company Act of 1940, would be an investment company. By statute they are not registered investment companies. The other choices accurately describe these municipal fund products.",
+      "citations": [
+        "Rule D-12",
+        "Investment Company Act of 1940 \u00a73(a)"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about money market mutual funds is MOST accurate under current SEC rules?",
+      "choices": [
+        "All money market funds maintain a stable $1.00 NAV regardless of investor type",
+        "Institutional prime and institutional tax-exempt funds may be subject to a mandatory liquidity fee when daily net redemptions exceed 5% of fund NAV",
+        "Money market funds are permitted to suspend redemptions through redemption gates of up to 10 business days",
+        "Retail prime funds must price at a floating NAV computed to four decimal places"
+      ],
+      "answer": 1,
+      "explanation": "Under the SEC's 2023 money market reforms, institutional prime and institutional tax-exempt funds are subject to a mandatory liquidity fee when daily net redemptions exceed 5% of fund NAV. The SEC eliminated redemption gate authority. Retail and government MMFs continue to use a stable $1 NAV; only institutional prime/tax-exempt funds use a floating NAV.",
+      "citations": [],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is NOT a permitted use of Rule 12b-1 fees by a registered open-end management investment company?",
+      "choices": [
+        "Compensation to broker-dealers for distribution of fund shares",
+        "Printing and mailing of sales literature to prospective investors",
+        "Advertising expenses incurred in the distribution of fund shares",
+        "Reimbursement of portfolio management research costs"
+      ],
+      "answer": 3,
+      "explanation": "Rule 12b-1 permits an open-end fund to use fund assets to pay for distribution-related activities, such as compensation to broker-dealers, sales literature, and advertising. Portfolio management research is an advisory/operating expense, not a distribution expense permissible under a 12b-1 plan.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following would help a mutual fund investor qualify for a reduced sales charge EXCEPT:",
+      "choices": [
+        "A letter of intent (LOI) to invest a specified amount over 13 months",
+        "Rights of accumulation (ROA) based on the current value of existing holdings",
+        "Combining purchases across the same fund family to reach a breakpoint",
+        "Splitting a single $50,000 purchase into ten $5,000 monthly purchases in unrelated funds"
+      ],
+      "answer": 3,
+      "explanation": "Breakpoints, LOIs, and ROA all aggregate purchases (in time or across a fund family) to reach a lower sales charge tier. Splitting a single intended purchase into smaller amounts across unrelated funds does not qualify for a breakpoint and may itself create a breakpoint-sale concern under FINRA Rule 2342.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement BEST distinguishes a fixed annuity from a variable annuity?",
+      "choices": [
+        "A fixed annuity is a security registered under the Securities Act of 1933; a variable annuity is not",
+        "A variable annuity places investment risk on the contract owner through subaccount performance, while a fixed annuity places investment risk on the insurer who guarantees a minimum rate",
+        "Both products are sold exclusively with an Options Disclosure Document",
+        "A fixed annuity is regulated by FINRA, while a variable annuity is regulated solely by state insurance departments"
+      ],
+      "answer": 1,
+      "explanation": "A variable annuity is both an insurance product and a security; its subaccount values fluctuate with investment performance, so the contract owner bears the investment risk. A fixed annuity provides a guaranteed minimum rate from the insurer, who bears the investment risk. Variable annuities \u2014 not fixed annuities \u2014 are securities; FINRA Rule 2330 governs recommendations for deferred variable annuities.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13014,
+    "output": 3714
+  },
+  "cost_usd": 0.4738
+}

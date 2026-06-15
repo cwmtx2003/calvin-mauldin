@@ -3,187 +3,425 @@
   "unit_name": "Other Investment Vehicles",
   "sections": [
     {
-      "title": "Lesson 5.1: Characteristics of Options",
-      "overview": "Options are derivative contracts deriving value from an underlying asset (stock, index, interest rate, or foreign currency). A two-party contract gives the buyer (long, holder) the right to exercise and obligates the seller (writer, short) to perform if assigned. The four basic positions\u2014long call, short call, long put, short put\u2014each have defined market attitudes, breakeven points, maximum gains, and maximum losses.",
+      "title": "1. Options: Contract Characteristics & Mechanics",
+      "overview": "Options are derivative contracts granting the holder the right (not obligation) to buy (call) or sell (put) an underlying asset at a fixed strike price by expiration. Listed equity and index options are standardized, issued and guaranteed by the Options Clearing Corporation (OCC), and traded on registered exchanges. Mastery of contract terms, moneyness, premium components, and settlement timing is essential.",
       "key_concepts": [
-        "Derivative: contract whose value derives from an underlying asset; futures (commodities) are NOT securities, options ARE securities.",
-        "Buyer/holder/long: pays premium, owns the right to exercise, risks losing only the premium paid.",
-        "Seller/writer/short: receives premium, obligated to perform if assigned, profits if contract expires worthless.",
-        "Opening purchase \u2192 closing sale (long side); Opening sale \u2192 closing purchase (short side).",
-        "One equity option contract = 100 shares of underlying stock.",
-        "Call buyer = BULLISH (right to BUY at strike); Call writer = BEARISH (obligated to SELL at strike).",
-        "Put buyer = BEARISH (right to SELL at strike); Put writer = BULLISH (obligated to BUY at strike).",
-        "In-the-money (ITM): Call when stock > strike; Put when stock < strike.",
-        "At-the-money (ATM): stock = strike (for both calls and puts).",
-        "Out-of-the-money (OTM): Call when stock < strike; Put when stock > strike.",
-        "Intrinsic value: amount option is ITM; never negative (zero if ATM or OTM).",
-        "Premium = Intrinsic Value + Time Value (IV + TV = Pr).",
-        "Time value affected by: time to expiration and volatility (more of either = more TV).",
-        "Parity: premium equals intrinsic value.",
-        "Equity options: American-style exercise (any time before expiration); expire third Friday of expiration month at 11:59 pm ET.",
-        "Nonequity options: index options (broad-based like SPX/OEX, narrow-based, VIX), interest rate (yield-based), and currency options.",
-        "Index options: $100 multiplier, cash-settled, exercise settles next business day, broad-based stop trading 4:15 pm ET, narrow-based 4:00 pm ET.",
-        "Interest rate (yield-based) options: European-style exercise only; strike of 35 = 3.5% yield; each 1% = $1,000.",
-        "Currency options: European-style exercise only; exporters buy puts, importers buy calls; do NOT exist on U.S. dollar.",
-        "Hedging: protective put (long stock + long put); protective call (short stock + long call).",
-        "Covered call: writer owns underlying stock \u2014 conservative income strategy.",
-        "Uncovered (naked) call: unlimited risk (stock can rise infinitely).",
-        "Covered put: writer has cash or is short the underlying stock.",
-        "Naked put: max loss = strike \u2212 premium (substantial but not unlimited).",
-        "Spot Bitcoin ETPs approved by SEC 1/10/2024; spot Ether ETPs approved 5/23/2024 \u2014 part of registered-product universe."
+        "Call = right to BUY underlying at strike; Put = right to SELL underlying at strike.",
+        "Standard equity option contract = 100 shares of underlying.",
+        "Four key terms: underlying, strike (exercise) price, expiration date, premium.",
+        "American-style: exercisable any time before expiration (most equity options). European-style: exercisable only at expiration (most broad-based index options).",
+        "Settlement at exercise: equity options deliver stock (physical settlement); index options settle in CASH for intrinsic value the next business day.",
+        "Equity option premium settles next business day (T+1). Stock delivered upon exercise of an equity option settles T+1 (aligned with equity regular-way, effective 5/28/2024).",
+        "Moneyness \u2014 Call ITM: market > strike; Put ITM: market < strike; ATM: market = strike; OTM is the opposite.",
+        "Premium = Intrinsic Value + Time Value. Only ITM options have intrinsic value.",
+        "Long call/long put = holder (pays premium, has the right). Short call/short put = writer (receives premium, has the obligation).",
+        "Covered call = short call against long stock position. Uncovered (naked) = no offsetting position; unlimited risk on naked calls.",
+        "OCC is the issuer and guarantor of all listed options; OPRA disseminates option quotes.",
+        "Options Disclosure Document (ODD) \u2014 \"Characteristics and Risks of Standardized Options\" \u2014 must be delivered at or prior to approval of a customer's options account.",
+        "Uses: hedging (protective put, covered call), speculation (leverage), income (writing premium)."
       ],
       "rules": [
-        "OCC (Options Clearing Corporation): issuer, guarantor, and clearing agent for all listed options; standardizes contract terms.",
-        "CBOE: principal options exchange and regulator.",
-        "Options Disclosure Document (ODD): must be delivered at or before account approval.",
-        "Account approval: must be approved by a Registered Options Principal (ROP) before any trading.",
-        "Trading may begin immediately after ROP approval; signed options agreement must be returned within 15 days of account approval.",
-        "If options agreement not returned within 15 days: only closing transactions allowed.",
-        "Premium settlement: T+1 (next business day).",
-        "Exercise of equity option delivering stock: settles T+1 (moved from T+2 to T+1 effective 5/28/2024).",
-        "Index option exercise settles next business day in cash.",
-        "Automatic exercise: any contract ITM by at least $0.01 at expiration exercised automatically unless 'do not exercise' instructions given.",
-        "Listed options trade 9:30 am\u20134:00 pm ET; expire third Friday at 11:59 pm ET.",
-        "OCC assigns exercise notices to short BDs randomly; BDs may assign to customers randomly, FIFO, or any fair method.",
-        "FINRA Rule 2360: Options."
+        "Rule 2360 \u2014 defines options terms (call, class, series, aggregate exercise price), governs position/exercise limits, account approval, supervision, and customer disclosure standards for FINRA members transacting in standardized options.",
+        "OCC issues and guarantees all listed options (per Rule 2360 definitional framework).",
+        "Rule 1.1 (CBOE) \u2014 exchange-level definitions (e.g., ABBO) underpinning options market structure."
       ],
       "formulas": [
+        "Aggregate Exercise Price = Strike Price \u00d7 Number of Units (100 for equity options)",
+        "Call Intrinsic Value = max(0, Market Price \u2212 Strike)",
+        "Put Intrinsic Value = max(0, Strike \u2212 Market Price)",
         "Premium = Intrinsic Value + Time Value",
-        "Call Intrinsic Value = Stock Price \u2212 Strike Price (if positive, else 0)",
-        "Put Intrinsic Value = Strike Price \u2212 Stock Price (if positive, else 0)",
-        "Long Call: BE = Strike + Premium; MG = unlimited; ML = Premium",
-        "Short Call: BE = Strike + Premium; MG = Premium; ML = unlimited",
-        "Long Put: BE = Strike \u2212 Premium; MG = Strike \u2212 Premium (BE down to 0); ML = Premium",
-        "Short Put: BE = Strike \u2212 Premium; MG = Premium; ML = Strike \u2212 Premium",
-        "Protective Put BE = Stock Purchase Price + Premium",
-        "Protective Call BE = Short Sale Price \u2212 Premium",
-        "Index Option Total Premium = Quoted Premium \u00d7 $100",
-        "Index Option Exercise Value = (Index Value \u2212 Strike) \u00d7 $100 (for call)",
-        "Yield-based Option Payout = (Yield Difference in basis points / 100) \u00d7 $100 per contract; each 1% = $1,000"
+        "Long Call Breakeven = Strike + Premium",
+        "Long Put Breakeven = Strike \u2212 Premium",
+        "Long Call Max Loss = Premium paid; Max Gain = Unlimited",
+        "Long Put Max Loss = Premium paid; Max Gain = Strike \u2212 Premium (stock to zero)",
+        "Short (Naked) Call Max Gain = Premium; Max Loss = Unlimited",
+        "Short Put Max Gain = Premium; Max Loss = Strike \u2212 Premium"
       ],
       "mnemonics": [
-        "CBOLA / PSBOSA: Call Buyer = Bullish, Owns right, Long, pays premium / Call Seller = Bearish, Obligation to Sell, Short, receives premium.",
-        "EPIC: Exporters buy Puts, Importers buy Calls (currency options).",
-        "Calls go UP, Puts go DOWN (direction owner wants stock to move).",
-        "'OCC starts with O for Obligation guarantor' \u2014 OCC issues and guarantees performance.",
-        "American = Anytime exercise; European = Expiration day only (yield-based and currency = European)."
+        "CALL UP / PUT DOWN \u2014 calls bullish, puts bearish for the holder.",
+        "OCC = One Central Clearer (issuer and guarantor).",
+        "PIPE: Premium = Intrinsic + Time, Expires worthless if OTM.",
+        "ODD before OK \u2014 Options Disclosure Document delivered before account approval."
       ]
     },
     {
-      "title": "Lesson 5.2: Municipal Fund Securities",
-      "overview": "Municipal fund securities are state/local government\u2013sponsored investment products under MSRB jurisdiction. The three categories tested are Section 529 plans (education savings), Local Government Investment Pools (LGIPs), and ABLE accounts (for individuals with disabilities). Each is sold with an official statement (not a prospectus) and offers specific tax advantages.",
+      "title": "2. Investment Company Act Classification (Packaged Products Framework)",
+      "overview": "The Investment Company Act of 1940 defines what an investment company is and classifies registered investment companies into three principal types, then subdivides management companies. This taxonomy is the legal backbone for mutual funds, closed-end funds, UITs, and ETFs.",
       "key_concepts": [
-        "Two types of 529 plans: (1) Prepaid Tuition Plans \u2014 lock in current tuition rates, state-resident plans, hedge against tuition inflation; (2) College Savings Plans \u2014 invest contributions for later use on qualified education expenses.",
-        "529 contributions: made with after-tax dollars, treated as gifts under federal tax law, no income limitations on donor.",
-        "529 earnings: grow tax-deferred; withdrawals tax-free at federal level if used for qualified education expenses.",
-        "Qualified expenses include K-12 tuition up to $10,000/year; no $10,000 limit on post-secondary qualified expenses.",
-        "Donor retains control of 529 account even after beneficiary reaches age of majority.",
-        "Beneficiary can be changed to a family member of the original beneficiary without penalty.",
-        "Scholarship exception: equivalent value may be withdrawn penalty-free (income tax on gains still applies).",
-        "Rollovers between state 529 plans permitted but no more than once every 12 months.",
-        "SECURE 2.0 (effective 2024): 529-to-Roth IRA rollovers permitted \u2014 $35,000 lifetime cap, account must be 15+ years old, annual rollover capped at IRA contribution limit.",
-        "Out-of-state 529 plans may forfeit state tax advantages (deductibility, tax-free withdrawals at state level).",
-        "LGIPs: established by states for OTHER GOVERNMENT ENTITIES (cities, counties, school districts) to invest short-term funds \u2014 NOT for retail investors.",
-        "LGIPs operate similarly to money market funds (often maintain stable $1 NAV) but are NOT money market funds.",
-        "LGIPs are NOT required to register with SEC (governmental exemption); no prospectus, but disclosure documents include information statement, investment policy, operating procedures.",
-        "ABLE accounts: tax-advantaged savings for individuals with significant disabilities (ABLE Act of 2014).",
-        "ABLE eligibility: onset of disability must have occurred before age 26 (beneficiary may currently be older).",
-        "ABLE: beneficiary is the account owner; income is tax-free.",
-        "ABLE: SSI/SSDI recipients meeting age criteria automatically qualify.",
-        "Only ONE ABLE account per person; annual contribution limit applies; contributions made with after-tax dollars."
+        "Investment company (\u00a73(a)): issuer primarily engaged in investing/reinvesting/trading in securities, OR holds >40% of total assets (ex Government securities and cash) in investment securities.",
+        "Three principal classes (\u00a74): (1) Face-Amount Certificate Company; (2) Unit Investment Trust (UIT); (3) Management Company.",
+        "UIT (\u00a74(2)): organized under trust indenture; NO board of directors; issues only REDEEMABLE securities representing undivided interest in a fixed portfolio.",
+        "Management companies (\u00a75(a)) split into: Open-End (issues redeemable securities \u2014 mutual funds, open-end ETFs) and Closed-End (any management company that is not open-end).",
+        "Further subdivision (\u00a75(b)) \u2014 Diversified vs. Non-Diversified.",
+        "Diversified Company (75-5-10 test): at least 75% of total assets in cash/cash items, Government securities, securities of other investment companies, and other securities limited per issuer to \u22645% of total assets AND \u226410% of issuer's outstanding voting securities.",
+        "Non-diversified: any management company not meeting the 75-5-10 test."
       ],
       "rules": [
-        "MSRB has jurisdiction over municipal fund securities (529s, LGIPs, ABLE).",
-        "MSRB Rule D-12: Definition of Municipal Fund Securities.",
-        "MSRB Rule G-45: Reporting of Information on Municipal Fund Securities.",
-        "MSRB Rule G-17: Conduct of municipal securities activities (fair dealing).",
-        "Sale of 529 plan must be accompanied or preceded by an official statement / offering circular.",
-        "529 nonqualified withdrawals: gains subject to ordinary income tax PLUS 10% penalty."
+        "Investment Company Act of 1940 \u00a73(a) \u2014 definition of \"investment company\"; 40% asset test.",
+        "Investment Company Act of 1940 \u00a74 \u2014 three classes: face-amount certificate, UIT, management company.",
+        "Investment Company Act of 1940 \u00a75 \u2014 open-end vs. closed-end; diversified vs. non-diversified (75-5-10).",
+        "17 CFR 270.12b-1 \u2014 permits open-end funds to use fund assets to pay distribution/marketing expenses under a written 12b-1 plan."
+      ],
+      "formulas": [
+        "Diversified test (per \u00a75(b)(1)): 75% of assets where, within that 75%, any single issuer \u2264 5% of total assets AND \u2264 10% of issuer's voting securities.",
+        "Investment company threshold (\u00a73(a)(1)(C)): Investment securities > 40% \u00d7 (Total Assets \u2212 Government securities \u2212 Cash items)"
+      ],
+      "mnemonics": [
+        "F-U-M: Face-amount, UIT, Management (the three \u00a74 classes).",
+        "75-5-10 = Diversified.",
+        "UIT = Unmanaged, Undivided, Unit redeemable (no board, fixed portfolio)."
+      ]
+    },
+    {
+      "title": "3. Open-End Funds (Mutual Funds) \u2014 Pricing, Loads, Share Classes",
+      "overview": "Open-end management companies continuously issue and redeem shares at NAV (forward-priced). They are sold by prospectus and may charge front-end, back-end, or asset-based distribution fees. Breakpoints and aggregation rules reduce sales charges for larger investments.",
+      "key_concepts": [
+        "NAV = (Total Fund Assets \u2212 Liabilities) / Shares Outstanding; calculated at least once per business day.",
+        "Forward pricing \u2014 orders execute at the next computed NAV.",
+        "Public Offering Price (POP) = NAV + Sales Charge (for front-load funds).",
+        "Share Classes: Class A (front-end load, lower 12b-1), Class B (back-end CDSC, higher 12b-1; often convert to A), Class C (level load, ongoing 12b-1, small/no CDSC).",
+        "12b-1 Fee \u2014 asset-based annual distribution/service fee under Rule 12b-1 plan.",
+        "Breakpoints \u2014 discounts on sales charges at specified investment levels.",
+        "Letter of Intent (LOI) \u2014 non-binding statement to invest enough within 13 months to reach a breakpoint; may be backdated up to 90 days.",
+        "Right of Accumulation (ROA) \u2014 prior holdings count toward breakpoints on new purchases.",
+        "Breakpoint sale \u2014 selling shares just below a breakpoint to share in higher commissions is prohibited (Rule 2342).",
+        "Redemption \u2014 fund must redeem within 7 days of request (Investment Company Act).",
+        "Net transaction \u2014 disclosed transaction with no commission added; price reflects markup/markdown."
+      ],
+      "rules": [
+        "17 CFR 270.12b-1 \u2014 distribution fees from fund assets allowed only under a written plan approved by board and shareholders.",
+        "Rule 2342 \u2014 prohibits sales just below breakpoints designed to capture higher sales charges; bona fide asset-allocation programs are an exception with proper disclosure.",
+        "Investment Company Act of 1940 \u00a75(a)(1) \u2014 open-end company defined by issuing redeemable securities."
+      ],
+      "formulas": [
+        "NAV per share = (Assets \u2212 Liabilities) / Shares Outstanding",
+        "POP = NAV / (1 \u2212 Sales Charge %)",
+        "Sales Charge % = (POP \u2212 NAV) / POP",
+        "Sales Charge $ = POP \u2212 NAV"
+      ],
+      "mnemonics": [
+        "ABC of share classes: A=front, B=back, C=continuous (level).",
+        "LOI = 13 months forward, 90 days back.",
+        "Forward pricing: \"Order today, NAV tonight.\""
+      ]
+    },
+    {
+      "title": "4. Closed-End Funds, UITs, and ETPs (ETFs/ETNs)",
+      "overview": "Closed-end funds and UITs are non-redeemable from the investor's standpoint and trade or are traded differently than mutual funds. ETPs include ETFs (registered investment companies) and ETNs (unsecured debt). Spot Bitcoin ETPs were SEC-approved 1/10/2024 and spot Ether ETPs on 5/23/2024.",
+      "key_concepts": [
+        "Closed-End Fund (CEF): fixed number of shares issued in IPO; trades intraday on exchange at market price that may be at premium or discount to NAV; not redeemable with issuer.",
+        "UIT: fixed portfolio; units redeemable with the trust; no active management; terminates on a specified date; no board of directors.",
+        "ETF: typically open-end fund (or UIT structure); trades intraday on exchange; uses creation/redemption mechanism via Authorized Participants to keep price near NAV; generally passive (index-tracking) but actively managed ETFs exist.",
+        "ETN: senior unsecured DEBT obligation of issuing bank; tracks an index; carries CREDIT RISK of issuer; not an investment company.",
+        "Fee considerations: ETFs typically have lower expense ratios than comparable mutual funds; investors also pay brokerage commissions/spreads.",
+        "Spot Bitcoin ETPs approved 1/10/2024; spot Ether ETPs approved 5/23/2024.",
+        "Active vs. passive \u2014 passive tracks an index; active seeks to outperform a benchmark."
+      ],
+      "rules": [
+        "Investment Company Act of 1940 \u00a74(2) \u2014 UIT defined (no board, redeemable undivided interest, trust indenture).",
+        "Investment Company Act of 1940 \u00a75(a)(2) \u2014 Closed-end management company definition.",
+        "17 CFR 270.12b-1 \u2014 applies to open-end ETFs' distribution fees."
+      ],
+      "formulas": [
+        "CEF Premium/Discount % = (Market Price \u2212 NAV) / NAV \u00d7 100",
+        "ETF Tracking Error = Std. Deviation of (ETF Return \u2212 Index Return)"
+      ],
+      "mnemonics": [
+        "ETN = Equity-linked, Treated as Note (credit risk).",
+        "CEF: Closed, Exchange-traded, Fixed shares.",
+        "UIT: Unmanaged, Indenture-based, Terminates."
+      ]
+    },
+    {
+      "title": "5. Variable Annuities and Variable Contracts",
+      "overview": "Variable annuities are insurance/securities hybrid products providing tax-deferred growth and optional annuitization. Subaccounts function like mutual funds and bear investment risk on the contract holder. Recommendations are governed by FINRA Rule 2330 with heightened suitability and supervisory review.",
+      "key_concepts": [
+        "Two phases: Accumulation (units purchased, value fluctuates) and Annuitization/Payout (units converted to annuity units; periodic payments).",
+        "Tax: tax-deferred growth inside contract; ordinary income on earnings at withdrawal; 10% penalty on withdrawals before age 59\u00bd.",
+        "Surrender charges: contingent deferred sales charges typically declining over a multi-year schedule.",
+        "Mortality & Expense (M&E) risk charge \u2014 covers insurance guarantees.",
+        "Death benefit (minimum return of premium or stepped-up value) and optional living benefits (GMIB, GMWB) via riders.",
+        "Subaccount allocation and exchanges (1035 exchanges) require special scrutiny.",
+        "Required disclosures: surrender period/charge, tax penalty, M&E fees, advisory fees, rider charges, market risk, insurance + investment components."
+      ],
+      "rules": [
+        "Rule 2330 \u2014 applies to recommended purchases/exchanges of deferred variable annuities and initial subaccount allocations; requires reasonable basis to believe (a) customer is informed of key features (surrender, tax penalty, M&E, riders, market risk); (b) customer would benefit from features (tax deferral, annuitization, death/living benefits); (c) the specific contract and subaccounts are suitable; for exchanges, must consider new surrender period, lost benefits, and prior exchanges within 36 months.",
+        "Registered principal review of variable annuity applications required under Rule 2330."
+      ],
+      "formulas": [
+        "Tax on non-qualified VA withdrawal: Earnings withdrawn first (LIFO) taxed as ordinary income; 10% additional tax if before 59\u00bd."
+      ],
+      "mnemonics": [
+        "VA Risks SAID: Surrender, Annuitization is irrevocable, Insurance fees, Deferred tax (penalty if early).",
+        "2330 = Triple-Three suitability: Informed, Benefitted, Suitable."
+      ]
+    },
+    {
+      "title": "6. Municipal Fund Securities (529 Plans, LGIPs, ABLE)",
+      "overview": "Municipal fund securities are issued by entities that would be investment companies but for \u00a72(b) of the Investment Company Act and are regulated by the MSRB. They include 529 college savings plans, prepaid tuition plans, LGIPs, and ABLE accounts.",
+      "key_concepts": [
+        "529 Savings Plan: state-sponsored; contributions grow federal tax-deferred; qualified distributions (qualified education expenses, K-12 tuition up to limits, student loan repayments) federally tax-free; donor retains control; beneficiary changeable within family.",
+        "529 Prepaid Tuition Plan: locks in future tuition at today's prices; typically state residency requirements; usually limited to tuition/fees.",
+        "529-to-Roth IRA Rollover (SECURE 2.0, effective 2024): tax- and penalty-free rollover subject to $35,000 lifetime cap, 15-year-old account requirement, and annual rollover capped at IRA contribution limit.",
+        "Owner vs. Beneficiary: account owner controls assets and distributions; beneficiary is the student.",
+        "LGIPs (Local Government Investment Pools): investment pools for state/local government entities; not for retail investors; provide cash-management-like vehicle.",
+        "ABLE Accounts (529A): tax-advantaged savings for individuals with disabilities (onset before age 26, rising to 46 in 2026 under SECURE 2.0); qualified disability expenses tax-free.",
+        "Direct-sold vs. adviser-sold 529 plans \u2014 adviser-sold typically have sales charges/loads; direct-sold typically lower cost.",
+        "Tax advantage outside the home state \u2014 investors may lose state tax deduction by investing in out-of-state plan (must disclose)."
+      ],
+      "rules": [
+        "Rule D-12 \u2014 defines \"Municipal Fund Security\" as a municipal security issued by an issuer that, but for \u00a72(b) of the Investment Company Act, would be an investment company under \u00a73.",
+        "Rule G-17 \u2014 fair-dealing standard applicable to municipal securities dealers, including 529/ABLE distributions.",
+        "Rule G-45 \u2014 periodic reporting on 529 and ABLE program data to the MSRB.",
+        "Investment Company Act of 1940 \u00a73(a) \u2014 referenced by Rule D-12."
+      ],
+      "formulas": [
+        "529-to-Roth rollover cap = $35,000 lifetime (subject to annual IRA contribution limit and 15-year account-age requirement)."
+      ],
+      "mnemonics": [
+        "529 OWNER controls, BENEFICIARY uses.",
+        "D-12 = Defines (Municipal Fund Security).",
+        "G-45 = reGulatory data filing for 529s."
+      ]
+    },
+    {
+      "title": "7. Direct Participation Programs (DPPs)",
+      "overview": "DPPs are non-corporate entities providing flow-through (pass-through) tax treatment to investors, most commonly structured as limited partnerships. They are generally illiquid, unlisted, and require heightened suitability review.",
+      "key_concepts": [
+        "Flow-through taxation: income, gains, losses, deductions, and credits pass through to investors (no entity-level federal income tax).",
+        "Structure: General Partner (GP) manages, has unlimited liability and fiduciary duty; Limited Partners (LPs) are passive investors with liability limited to investment.",
+        "Tenants-in-Common (TIC): co-ownership structure used in real estate DPPs.",
+        "Typical DPPs: oil & gas (exploratory, developmental, income), real estate (raw land, new construction, existing properties, government-assisted), equipment leasing, agricultural.",
+        "Excluded from DPP definition (Rule 2310): REITs, qualified retirement plans (401, 403(a), 408 IRAs, 403(b)), and registered investment companies.",
+        "Risks: ILLIQUIDITY (no active secondary market), tax-law risk, GP management risk, capital risk, recapture.",
+        "Cash flow vs. cash available for distribution \u2014 distinct measures (G-30/Rule 2310 definitions).",
+        "Subscription agreement \u2014 required for investor admission; GP/sponsor evaluates suitability."
+      ],
+      "rules": [
+        "Rule 2310 \u2014 governs FINRA members' participation in public DPP offerings: definitions, suitability inquiry, organization-and-offering expenses, GP/sponsor affiliations, and compensation limits; defines DPP, affiliate, cash flow, cash available for distribution.",
+        "DPP definition (Rule 2310(a)(4)) \u2014 flow-through tax consequences regardless of entity form; expressly excludes REITs, qualified plans, and registered investment companies."
+      ],
+      "formulas": [
+        "Cash Available for Distribution = Cash Flow \u2212 Reserves",
+        "Cash Flow (Rule 2310) = Operating cash receipts \u2212 operating cash expenses \u2212 debt service \u2212 capital improvements/replacements (before depreciation)"
+      ],
+      "mnemonics": [
+        "DPP = Don't Pay (entity) tax; Pass-through, Partnership, Possibly illiquid.",
+        "LP = Limited liability, Passive role.",
+        "GP = General liability, Generally manages."
+      ]
+    },
+    {
+      "title": "8. Real Estate Investment Trusts (REITs)",
+      "overview": "REITs pool capital to invest in real estate equity or mortgage debt and pass income through to shareholders without entity-level federal tax, provided they meet IRC qualification requirements. They are distinct from DPPs because losses do NOT pass through.",
+      "key_concepts": [
+        "Tax qualification (general industry rule): distribute at least 90% of taxable income to shareholders; at least 75% of assets in real estate; at least 75% of gross income from real estate sources.",
+        "No double taxation on distributed income; dividends taxed as ordinary income to shareholders (no pass-through of losses \u2014 distinguishing from DPPs).",
+        "Types by structure: Listed (exchange-traded \u2014 liquid), Public Non-Listed (PNLR \u2014 registered with SEC, not exchange-traded, illiquid), Private (unregistered, only for accredited investors).",
+        "Types by holdings: Equity REIT (owns income-producing property), Mortgage REIT (originates/holds real-estate debt; sensitive to interest rates), Hybrid.",
+        "Risks: interest-rate risk (especially mortgage REITs), real estate market risk, liquidity risk (non-listed).",
+        "Excluded from DPP definition under Rule 2310."
+      ],
+      "rules": [
+        "Rule 2310 \u2014 explicitly excludes REITs from the DPP definition.",
+        "Securities Act of 1933 \u2014 public non-listed REIT offerings require registration and prospectus delivery."
+      ],
+      "formulas": [
+        "REIT qualification rule of thumb: 90% income distributed / 75% real estate assets / 75% real estate gross income."
+      ],
+      "mnemonics": [
+        "REIT = Real Estate Income, Tax-advantaged (no double tax, but no loss pass-through).",
+        "90-75-75 \u2014 distribution / assets / income tests."
+      ]
+    },
+    {
+      "title": "9. Hedge Funds and Private Funds",
+      "overview": "Hedge funds are pooled, privately offered investment vehicles typically structured as limited partnerships and exempt from Investment Company Act registration under \u00a73(c)(1) or \u00a73(c)(7). They employ flexible strategies and are sold only to qualified investors.",
+      "key_concepts": [
+        "Structure: limited partnership or LLC; manager is GP/managing member; investors are LPs.",
+        "Exemptions used: ICA \u00a73(c)(1) (\u2264100 beneficial owners) or \u00a73(c)(7) (sold only to qualified purchasers).",
+        "Investors: accredited investors / qualified purchasers; high minimum investments.",
+        "Liquidity: ILLIQUID \u2014 lock-up periods, redemption gates, quarterly/annual redemption windows.",
+        "Fee structure: typically \"2 and 20\" \u2014 2% management fee + 20% performance/incentive fee, often subject to hurdle rate and high-water mark.",
+        "Strategies: long/short equity, global macro, arbitrage, event-driven, distressed.",
+        "Private equity funds \u2014 similar private-fund structure; invest in non-public companies; very long lock-ups (often 7\u201310+ years).",
+        "Risks: leverage, illiquidity, lack of transparency, manager risk, valuation risk."
+      ],
+      "rules": [
+        "Investment Company Act \u00a73(c)(1) and \u00a73(c)(7) \u2014 exclusions from investment company definition under which hedge funds rely.",
+        "Investment Company Act of 1940 \u00a73(a) \u2014 definitional baseline."
+      ],
+      "formulas": [
+        "Performance Fee = Performance % \u00d7 (Return \u2212 Hurdle Rate) \u00d7 NAV above High-Water Mark",
+        "\"2 and 20\" annual cost \u2248 2% \u00d7 NAV + 20% \u00d7 Profit above hurdle/HWM"
+      ],
+      "mnemonics": [
+        "Hedge Fund HALL: High minimums, Accredited investors, Lock-ups, Limited partnership.",
+        "3(c)(1) = 100 owners; 3(c)(7) = Qualified purchasers."
+      ]
+    },
+    {
+      "title": "10. Investment Risks: Identification and Mitigation",
+      "overview": "Representatives must identify the distinct risks attached to each product and recommend mitigation strategies aligned to client objectives. The SIE outline enumerates specific risk types and three primary mitigation tools.",
+      "key_concepts": [
+        "Capital Risk \u2014 loss of principal invested.",
+        "Credit (Default) Risk \u2014 issuer fails to pay interest/principal (corporate/muni bonds, ETNs).",
+        "Currency (Exchange Rate) Risk \u2014 adverse FX moves affecting foreign securities/ADRs.",
+        "Inflation / Purchasing Power Risk \u2014 fixed payments lose real value; primary risk for long-term fixed-income.",
+        "Interest Rate Risk \u2014 bond prices fall as rates rise; longer duration = greater sensitivity.",
+        "Reinvestment Risk \u2014 cash flows reinvested at lower rates; significant for callable bonds and MBS.",
+        "Liquidity (Marketability) Risk \u2014 inability to sell quickly without price concession (DPPs, non-listed REITs, hedge funds, private placements).",
+        "Market / Systematic Risk \u2014 broad market decline; cannot be diversified away.",
+        "Non-Systematic (Business/Unsystematic) Risk \u2014 company- or industry-specific; can be diversified away.",
+        "Political / Legislative Risk \u2014 government action, tax law changes, sovereign actions.",
+        "Prepayment Risk \u2014 borrowers prepay mortgages when rates fall (MBS, CMOs); a form of reinvestment risk.",
+        "Mitigation tools: Diversification (reduces non-systematic risk), Portfolio Rebalancing (restore target allocation), Hedging (offsetting positions \u2014 e.g., protective puts, short futures)."
+      ],
+      "rules": [
+        "Rule 2261 \u2014 member must make balance sheet (financial condition) available to bona fide customers on request (relevant to assessing counterparty/credit risk of a member).",
+        "Rule 2262 \u2014 disclosure of control relationship between member and issuer before transaction (mitigates conflict-of-interest risk).",
+        "Rule G-30 \u2014 fair-pricing/markup standard for municipal securities, including PMP \"waterfall\" analysis (mitigates pricing risk to customers)."
+      ],
+      "formulas": [
+        "Total Risk = Systematic Risk + Non-Systematic Risk",
+        "Only non-systematic risk is reduced by diversification.",
+        "Duration \u2248 % change in bond price for a 1% change in interest rates."
+      ],
+      "mnemonics": [
+        "CCC-LIMP-PR: Capital, Credit, Currency, Liquidity, Inflation, Market, Political, Prepayment, Reinvestment.",
+        "DRH = Diversify, Rebalance, Hedge.",
+        "Systematic = STays (cannot diversify); Non-Systematic = Negated by diversification."
+      ]
+    },
+    {
+      "title": "11. Cross-Cutting Disclosure & Conduct Rules for Other Investment Vehicles",
+      "overview": "Several SRO rules cut across packaged products, options, DPPs, and municipal fund securities to ensure suitability, fair pricing, and required disclosures.",
+      "key_concepts": [
+        "Financial condition disclosure to customers on request (Rule 2261).",
+        "Control relationship between member and issuer must be disclosed before transacting (Rule 2262).",
+        "DPP organizational, compensation, and suitability requirements (Rule 2310).",
+        "Deferred variable annuity recommendation/principal review (Rule 2330).",
+        "Breakpoint sales prohibition for mutual fund shares (Rule 2342).",
+        "Standardized options conduct, account approval, ODD delivery, position limits (Rule 2360).",
+        "Municipal Fund Security definition (Rule D-12).",
+        "Fair-dealing and disclosure for municipal securities, including 529s (Rule G-17).",
+        "Prevailing Market Price determination and markup discipline for municipal securities (Rule G-30 with \"waterfall\" SM .06).",
+        "Periodic 529/ABLE program data reporting (Rule G-45).",
+        "Issuer share repurchase safe harbor \u2014 Rule 10b-18 (relevant to corporate equity market conduct).",
+        "Equity security definition \u2014 17 CFR 240.3a11-1."
+      ],
+      "rules": [
+        "Rule 2261 \u2014 Disclosure of Financial Condition upon customer request.",
+        "Rule 2262 \u2014 Disclosure of Control Relationship with issuer before transaction.",
+        "Rule 2310 \u2014 Direct Participation Programs conduct standards.",
+        "Rule 2330 \u2014 Members' Responsibilities Regarding Deferred Variable Annuities (suitability, principal review, exchange considerations).",
+        "Rule 2342 \u2014 Prohibition on \"Breakpoint Sales.\"",
+        "Rule 2360 \u2014 Standardized options conduct, definitions, supervision.",
+        "Rule D-12 (MSRB) \u2014 Municipal Fund Security definition.",
+        "Rule G-17 (MSRB) \u2014 Conduct of municipal securities activities; fair dealing.",
+        "Rule G-30 (MSRB) \u2014 Prices and commissions; PMP waterfall.",
+        "Rule G-45 (MSRB) \u2014 Reporting of information on municipal fund securities (529/ABLE).",
+        "17 CFR 240.10b-18 \u2014 Safe harbor for issuer repurchases of equity securities.",
+        "17 CFR 240.3a11-1 \u2014 Definition of \"equity security.\""
       ],
       "formulas": [],
       "mnemonics": [
-        "Prepaid = Price locked; Savings = Stock-market-like growth.",
-        "ABLE 26: disability must onset Before age 26.",
-        "LGIPs = Local Government Investment Pools (Local Governments are the investors, not individuals)."
-      ]
-    },
-    {
-      "title": "Lesson 5.3: Partnerships",
-      "overview": "Partnerships are unincorporated associations of two or more individuals. General partnerships are not securities, but limited partnerships (LPs) \u2014 often called direct participation programs (DPPs) \u2014 are securities that pass income, losses, and tax benefits directly through to investors. Hedge funds are commonly organized as LPs and sold via private placement.",
-      "key_concepts": [
-        "General Partnership: all partners are general partners (GPs), share management responsibility, unlimited personal liability, results flow through to partners for tax purposes.",
-        "Partnership is a tax-REPORTING entity but NOT a tax-PAYING entity.",
-        "Limited Partnership (LP) requires at least one GP and one Limited Partner.",
-        "GP: unlimited liability, manages partnership, fiduciary duty to investors, cannot compete, cannot borrow from partnership, cannot commingle funds.",
-        "Limited Partner: limited liability (only invested capital at risk), no management role (loses limited liability if participates in day-to-day management), votes on overall objectives, receives distributions, may inspect books, may sue GP.",
-        "LPs are highly illiquid \u2014 virtually no secondary market; transfers require GP approval.",
-        "LPs sold publicly = prospectus; sold privately (private placement) = private placement memorandum (PPM); private placements typically require accredited investors.",
-        "Property in LPs often held as Tenants in Common (TIC).",
-        "Dissolution priority: (1) Secured lenders, (2) Other creditors, (3) Limited partners (profits first, then capital), (4) General partners.",
-        "Tax deductions that reduce taxable income without reducing cash flow: depreciation, depletion, accelerated depreciation, intangible drilling costs (IDCs).",
-        "Passive income/losses: income from LPs is passive; passive losses can offset passive income only \u2014 NOT ordinary income.",
-        "Recapture of tax benefit: if IRS disallows prior deduction, limited partners owe back taxes, penalties, and interest.",
-        "Hedge funds: typically organized as LPs, sold as private placements, not subject to mutual fund rules.",
-        "Hedge fund strategies: high leverage, short selling, derivatives, currency/commodity speculation, emerging markets.",
-        "Hedge funds have lockup provisions (minimum holding periods), high minimum investments, limited number of investors."
-      ],
-      "rules": [
-        "FINRA Rule 2310: Direct Participation Programs.",
-        "Limited partner who participates in management may lose limited-liability status.",
-        "LP must complete a partnership agreement; if amended, amended agreement must be obtained annually if changes occur.",
-        "Passive losses deductible only against passive income (NOT the $3,000/year capital loss rule)."
-      ],
-      "formulas": [
-        "Cash Flow = Net Income (Loss) + Depreciation (and other non-cash deductions)",
-        "Investor's share of partnership income/loss = Ownership % \u00d7 Partnership Income/Loss"
-      ],
-      "mnemonics": [
-        "Dissolution order \u2014 'Secured Other Limited General' (SOLG): Secured creditors \u2192 Other creditors \u2192 Limited partners \u2192 General partners.",
-        "GP = Greater liability; LP = Limited liability.",
-        "DPP benefits: 'DAID' \u2014 Depreciation, Accelerated depreciation, Intangible drilling costs, Depletion."
-      ]
-    },
-    {
-      "title": "Lesson 5.4: REITs, ETFs, and ETNs",
-      "overview": "REITs pool investor capital to invest in real estate equity, mortgages, or both, passing through income (but not losses) under the conduit theory. ETFs are exchange-traded baskets of securities (typically index-tracking) that trade intraday like stocks. ETNs are unsecured debt obligations of an issuer whose return is linked to an index \u2014 exposing investors to issuer credit risk.",
-      "key_concepts": [
-        "REIT types by holdings: Equity REIT (owns property), Mortgage REIT (owns mortgages on property), Hybrid REIT (both).",
-        "REIT types by registration/listing: Public listed (exchange traded), Public non-listed (registered with SEC but not exchange-listed), Private (not registered).",
-        "Non-listed REITs: difficult to price, less liquid, greater risk.",
-        "REITs are NOT investment companies and NOT DPPs \u2014 losses do NOT pass through.",
-        "REIT taxation (conduit/pipeline theory): avoids corporate tax if 75%+ of income from real estate AND 90%+ of net investment income distributed to shareholders (Subchapter M).",
-        "Investors hold an undivided interest in a pool of real estate investments.",
-        "ETFs: typically track an index, registered as open-end funds or UITs, trade intraday on exchanges like stocks.",
-        "ETF advantages vs. mutual funds: intraday pricing, marginable, can be sold short, lower operating expenses, greater tax efficiency.",
-        "ETF disadvantages vs. mutual funds: commissions on each trade, temptation to overtrade, market-driven price may diverge from NAV.",
-        "ETF pricing: subject to supply/demand forces; may trade above or below NAV.",
-        "ETNs: unsecured debt securities issued by banks/financial institutions \u2014 backed only by issuer's credit.",
-        "ETNs: have stated maturity, pay NO interest, offer NO principal protection; investor receives cash payment linked to index performance minus fees at maturity.",
-        "ETN primary risks: DEFAULT/CREDIT risk (issuer), market risk (index linked), liquidity risk (few are actually exchange-listed).",
-        "ETNs may trade at a premium to inherent value due to limited issue size \u2014 premium buyers may suffer losses at maturity.",
-        "Spot Bitcoin ETPs approved by SEC 1/10/2024 (Rel. 34-99306); spot Ether ETPs approved 5/23/2024."
-      ],
-      "rules": [
-        "Subchapter M (IRC): REIT must distribute 90%+ of net investment income and receive 75%+ of income from real estate to qualify for conduit tax treatment.",
-        "REITs are subject to SEC registration if public; private REITs are exempt.",
-        "ETFs registered under Investment Company Act of 1940 as open-end funds or UITs.",
-        "ETNs are debt securities \u2014 not registered investment companies."
-      ],
-      "formulas": [
-        "REIT qualification: \u226575% income from real estate AND \u226590% net investment income distributed",
-        "ETN Maturity Payment = Principal \u00d7 (Index Performance) \u2212 Management Fees"
-      ],
-      "mnemonics": [
-        "REIT = '75/90' for Subchapter M conduit treatment.",
-        "REITs pass through INCOME, not LOSSES (DPPs pass through both).",
-        "ETF = Equity-like Trading Fund (trades like stock); ETN = Exchange-Traded Note (debt, default risk).",
-        "Three REIT registration types: Private, Public Non-listed, Public Listed (P-PN-PL)."
+        "\"Disclose Before You Close\" \u2014 Rule 2262 control relationships disclosed before transaction.",
+        "G-Rules for Munis: G-17 (Fair), G-30 (Price), G-45 (Filing)."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 31448,
-    "output": 6011
+    "input": 12828,
+    "output": 10301
   },
-  "cost_usd": 0.9225
+  "cost_usd": 0.965
 }

@@ -1,0 +1,569 @@
+{
+  "unit": 6,
+  "unit_name": "Customer Accounts",
+  "jf": "tc",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "A customer purchases 200 shares of XYZ at $60 per share in a new margin account. Under Regulation T (50% initial requirement), what is the minimum cash deposit the customer must make?",
+      "choices": [
+        "$2,000",
+        "$3,000",
+        "$6,000",
+        "$12,000"
+      ],
+      "answer": 2,
+      "explanation": "Total purchase = 200 \u00d7 $60 = $12,000. Reg T initial margin = 50% \u00d7 $12,000 = $6,000. The $2,000 figure is the FINRA minimum equity floor for margin accounts, which does not override the higher 50% Reg T requirement here.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer buys 100 shares of ABC at $18 per share in a margin account. Under Regulation T (50%) and FINRA's minimum equity rule, what is the required deposit?",
+      "choices": [
+        "$900",
+        "$1,800",
+        "$2,000",
+        "$3,600"
+      ],
+      "answer": 2,
+      "explanation": "Reg T 50% of $1,800 = $900, but FINRA requires a minimum equity of $2,000 in a long margin account (provided the deposit does not exceed 100% of the purchase price). Because $2,000 is greater than the $900 Reg T amount but less than the full $1,800 purchase price would be \u2014 actually the customer must deposit the lesser of 100% or $2,000, which is $1,800 \u2014 wait: the deposit may not exceed the purchase price, so the customer must deposit $1,800 (100%). The correct minimum deposit is $1,800.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer sells short 100 shares of DEF at $40. Under Regulation T, what is the initial margin requirement (ignoring the FINRA $2,000 minimum, which is exceeded)?",
+      "choices": [
+        "$1,000",
+        "$2,000",
+        "$2,500",
+        "$4,000"
+      ],
+      "answer": 1,
+      "explanation": "Short sale proceeds = 100 \u00d7 $40 = $4,000. Reg T initial margin = 50% \u00d7 $4,000 = $2,000. The $2,500 figure is unrelated; $1,000 would be 25% (a maintenance-style figure for long positions, not initial margin on a short).",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer holds a long margin position with a current market value of $20,000. Under FINRA's 25% long maintenance margin requirement, what is the minimum equity the customer must maintain?",
+      "choices": [
+        "$2,000",
+        "$5,000",
+        "$6,000",
+        "$10,000"
+      ],
+      "answer": 1,
+      "explanation": "FINRA long maintenance margin = 25% of market value = 25% \u00d7 $20,000 = $5,000. The $10,000 figure is the Reg T initial 50% requirement; $2,000 is the minimum equity floor.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer has a short margin account with securities valued at $10,000. Under FINRA's 30% short maintenance requirement, what is the minimum equity that must be maintained?",
+      "choices": [
+        "$2,000",
+        "$2,500",
+        "$3,000",
+        "$5,000"
+      ],
+      "answer": 2,
+      "explanation": "Short maintenance margin = 30% \u00d7 $10,000 = $3,000. The 25% figure ($2,500) applies to long positions, not short.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A 55-year-old individual wants to make the maximum contribution to a traditional IRA for tax year 2026, including the catch-up. What is the maximum allowable contribution?",
+      "choices": [
+        "$7,000",
+        "$7,500",
+        "$8,000",
+        "$8,600"
+      ],
+      "answer": 3,
+      "explanation": "For tax year 2026, the base IRA contribution limit is $7,500 and the age-50+ catch-up is $1,100 (indexed under SECURE 2.0 in $100 increments), totaling $8,600. The other figures reflect earlier years' limits.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer day trades a margin account, executing 5 day trades over 4 business days. Under FINRA's pattern day trader rule, what is the minimum equity the account must maintain?",
+      "choices": [
+        "$2,000",
+        "$5,000",
+        "$10,000",
+        "$25,000"
+      ],
+      "answer": 3,
+      "explanation": "Four or more day trades within five business days classifies the account as a pattern day trader, requiring minimum equity of $25,000. The $2,000 figure is the general margin minimum, not the PDT requirement.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer aggregates currency transactions of $4,000, $3,500, and $3,000 in a single business day at the same firm. At what aggregated cash threshold in a single business day is a Currency Transaction Report (CTR) required to be filed with FinCEN?",
+      "choices": [
+        "More than $5,000",
+        "More than $10,000",
+        "More than $25,000",
+        "More than $50,000"
+      ],
+      "answer": 1,
+      "explanation": "A CTR must be filed for cash transactions aggregating more than $10,000 in a single business day. The $4,000 + $3,500 + $3,000 = $10,500 example exceeds the threshold and would trigger filing. The other amounts are distractors.",
+      "citations": [
+        "USA PATRIOT Act \u00a7352"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An insider realizes a profit of $200,000 by trading on material nonpublic information. Under Section 21A of the Securities Exchange Act of 1934, what is the maximum civil penalty a court may impose on the person who committed the violation?",
+      "choices": [
+        "$200,000",
+        "$400,000",
+        "$600,000",
+        "$1,000,000"
+      ],
+      "answer": 2,
+      "explanation": "Under Section 21A(a)(2), the civil penalty on the violator may not exceed three times the profit gained or loss avoided: 3 \u00d7 $200,000 = $600,000. The $1,000,000 figure is the alternative cap that applies to controlling persons, not the violator.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A controlling person fails to enforce required supervisory procedures and a controlled person nets $150,000 in insider trading profits. What is the maximum civil penalty that may be imposed on the controlling person under Section 21A?",
+      "choices": [
+        "$150,000",
+        "$450,000",
+        "$1,000,000",
+        "$1,500,000"
+      ],
+      "answer": 2,
+      "explanation": "Under Section 21A(a)(3), the penalty on a controlling person may not exceed the greater of $1,000,000 or three times the profit gained/loss avoided. Three times $150,000 = $450,000, which is less than $1,000,000, so the maximum is $1,000,000.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer who is 73 has a traditional IRA balance subject to RMDs. The customer's required minimum distribution for the year is $10,000, but the customer takes only $4,000. Under SECURE 2.0, what is the standard excise tax penalty on the shortfall (assuming the correction window is not used)?",
+      "choices": [
+        "$600 (10% of shortfall)",
+        "$1,500 (25% of shortfall)",
+        "$3,000 (50% of shortfall)",
+        "$6,000 (100% of shortfall)"
+      ],
+      "answer": 1,
+      "explanation": "Shortfall = $10,000 \u2212 $4,000 = $6,000. Under SECURE 2.0, the excise tax on a missed RMD is 25% of the shortfall: 25% \u00d7 $6,000 = $1,500. The penalty drops to 10% only if corrected during the correction window; the old 50% rate is no longer current.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer buys 100 shares of stock at $50 per share. The company then declares a 2-for-1 stock split. After the split, what are the customer's adjusted share count and adjusted cost basis per share?",
+      "choices": [
+        "100 shares at $100/share",
+        "200 shares at $50/share",
+        "200 shares at $25/share",
+        "50 shares at $100/share"
+      ],
+      "answer": 2,
+      "explanation": "In a 2-for-1 split, share count doubles and price per share halves. Shares: 100 \u00d7 2 = 200. Cost basis per share: $50 \u00f7 2 = $25. Total cost basis stays at $5,000 (200 \u00d7 $25). A 50-share/$100 result would describe a 1-for-2 reverse split.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13831,
+    "output": 2878
+  },
+  "cost_usd": 0.4233
+}

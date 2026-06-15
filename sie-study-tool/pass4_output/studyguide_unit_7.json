@@ -3,96 +3,662 @@
   "unit_name": "Risk & Recommendations",
   "sections": [
     {
-      "title": "Lesson 7.1: Investment Risks (Systematic vs. Nonsystematic)",
-      "overview": "Investment risk is divided into systematic (nondiversifiable, market-wide) and nonsystematic (diversifiable, issuer/industry-specific) categories. Systematic risk cannot be eliminated through diversification \u2014 only hedged via derivatives or counter-moving assets. Nonsystematic risk is reduced by holding a diversified portfolio across issuers, industries, and asset classes.",
+      "title": "1. Types of Investment Risk \u2014 Systematic vs. Nonsystematic",
+      "overview": "All investment risk is classified as either systematic (market-wide, undiversifiable) or nonsystematic (issuer/industry-specific, diversifiable). The SIE expects candidates to identify each risk type, recognize which products are most exposed, and pair the risk with the appropriate mitigation technique.",
       "key_concepts": [
-        "SYSTEMATIC RISK \u2014 built into the market; cannot be diversified away.",
-        "Market Risk: when the overall market declines, diversified equity portfolios decline with it (measured by beta vs. S&P 500).",
-        "Interest Rate Risk: bond prices move inversely to interest rates; longer-duration bonds are more sensitive. Sometimes called 'market risk for bonds.'",
-        "Reinvestment Risk: when rates fall, proceeds from coupons, calls, or maturities must be reinvested at lower yields.",
-        "Inflation/Purchasing Power Risk: fixed income loses real value as prices rise; affects all fixed-income payments (bonds, fixed annuities, CDs).",
-        "Currency Risk: foreign-denominated investments lose value if the foreign currency weakens vs. the USD; quoted at spot rate.",
-        "Call Risk: callable bonds may be redeemed early when rates fall; leads to reinvestment risk. Treasuries are not callable; corporates/munis usually offer call protection.",
-        "Political/Sovereign Risk: instability of a country's government or its ability to service sovereign debt (especially emerging markets).",
-        "NONSYSTEMATIC RISK \u2014 unique to an issuer/industry; mitigated by diversification.",
-        "Default/Credit/Financial Risk: issuer fails to pay interest or principal; most relevant to debt securities.",
-        "Capital Risk: investor may not recover original principal (minimal for T-bills; high for options/DPPs).",
-        "Business Risk: poor management or operating decisions reduce earnings or cause company failure.",
-        "Prepayment Risk: borrowers (e.g., mortgage holders backing GNMAs) prepay principal when rates fall, forcing reinvestment at lower rates.",
-        "Liquidity/Marketability Risk: inability to sell quickly at a fair price (real estate, collectibles, thinly traded bonds).",
-        "Regulatory Risk: change in agency rules (FDA, EPA) hurts a company/industry.",
-        "Legislative Risk: a change in the LAW (e.g., tax code, luxury tax) impacts an investment. Distinguish from regulatory (agency rules).",
-        "Beta measures volatility vs. the market (S&P 500 = 1.00). Beta > 1.00 = more volatile; < 1.00 = less volatile. Beta is a measure of nonsystematic/relative risk."
+        "Systematic risk = risk inherent to the entire market; cannot be eliminated by diversification within an asset class.",
+        "Market risk (price risk): the risk that the overall market declines, dragging down individual securities; chiefly an equity risk.",
+        "Interest-rate risk: risk that rising rates depress fixed-income prices; greatest for long-duration, low-coupon bonds.",
+        "Reinvestment risk: risk that coupon/principal proceeds must be reinvested at lower prevailing rates; the inverse of interest-rate risk; affects callable bonds and laddered portfolios.",
+        "Inflation (purchasing-power) risk: risk that real returns are eroded by inflation; greatest for fixed-rate long bonds and cash equivalents.",
+        "Currency (exchange-rate) risk: risk that foreign-currency-denominated assets lose value when the foreign currency weakens vs. USD; affects ADRs, foreign bonds, international funds.",
+        "Political/legislative/sovereign risk: risk of adverse government action, expropriation, tax-law change, or war; greatest in emerging markets.",
+        "Nonsystematic risk = risk specific to an issuer, industry, or sector; reducible through diversification.",
+        "Business risk: risk that an issuer's operations underperform (poor management, declining sales).",
+        "Financial (credit/default) risk: risk that the issuer cannot meet debt obligations; measured by credit rating.",
+        "Regulatory/legislative risk: risk that new rules harm a particular industry (e.g., utilities, pharma).",
+        "Liquidity (marketability) risk: risk of being unable to sell quickly at fair value; high in thinly-traded bonds, limited partnerships, private placements.",
+        "Call risk / prepayment risk: risk an issuer redeems debt early when rates fall, forcing reinvestment at lower yields; prepayment risk is the mortgage-backed analog.",
+        "Capital risk: risk of losing principal \u2014 present in all securities except direct U.S. Treasury obligations held to maturity.",
+        "Opportunity cost: forgone return from choosing one investment over another (risk-free rate is the benchmark)."
       ],
       "rules": [
-        "FINRA recognizes both systematic and nonsystematic risk categories in suitability analysis (Reg BI Care Obligation requires understanding of risks/rewards/costs)."
+        "FINRA Rule 2111 (Suitability) requires the registered rep to understand the risks of any recommended security before recommending it.",
+        "17 CFR 240.15l-1 (Regulation Best Interest) \u2014 Care Obligation requires the broker-dealer to understand the potential risks, rewards, and costs of a recommendation."
       ],
       "formulas": [
-        "Risk-Reward Axiom: Higher risk = higher potential reward AND higher potential loss; lower risk = lower potential reward.",
-        "Beta of the market (S&P 500) = 1.00; Security Beta > 1.00 = more volatile than market; < 1.00 = less volatile."
+        "Total Risk = Systematic Risk + Nonsystematic Risk",
+        "Real Return \u2248 Nominal Return \u2212 Inflation Rate",
+        "Risk Premium = Expected Return \u2212 Risk-Free Rate"
       ],
       "mnemonics": [
-        "Systematic risks = 'PRIME-C': Purchasing power, Reinvestment, Interest rate, Market, Exchange (currency), Call.",
-        "Nonsystematic risks = 'BLRCP': Business, Liquidity, Regulatory/legislative, Credit (default), Prepayment.",
-        "'Cannot Diversify the System' \u2014 systematic risk is nondiversifiable.",
-        "Regulatory = Rules (agency); Legislative = Law (legislature)."
+        "Systematic risks \u2014 \"PRIME\": Purchasing-power (inflation), Reinvestment, Interest-rate, Market, Exchange-rate (currency). Add Political for sovereign exposure.",
+        "Nonsystematic risks \u2014 \"ABCDL-R\": (A)Business, (B)usiness/management, (C)redit (financial), (D)efault, (L)iquidity, (R)egulatory.",
+        "Systematic = \"Same for all\"; Nonsystematic = \"Not for all.\""
       ]
     },
     {
-      "title": "Lesson 7.2: Recommendations, Suitability, Regulation BI, and Market Benchmarks",
-      "overview": "A recommendation is any communication that reasonably could be viewed as a 'call to action' to buy, sell, or hold a security. Regulation Best Interest (Reg BI), effective 6/30/2020, requires broker-dealers and associated persons to act in the retail customer's best interest when making a recommendation, satisfying four component obligations: Disclosure, Care, Conflict of Interest, and Compliance. Suitability depends on aligning the customer's financial and nonfinancial profile with appropriate investment products, and performance is judged against an appropriate benchmark index.",
+      "title": "2. Risk Mitigation Techniques",
+      "overview": "Different risks call for different defenses. Diversification addresses nonsystematic risk; asset allocation, hedging, and time horizon address systematic risk. Candidates must match technique to the specific exposure.",
       "key_concepts": [
-        "RECOMMENDATION DEFINITION: a communication that 'reasonably could be viewed as a call to action' influencing a purchase, sale, or hold of a specific security or strategy \u2014 includes explicit hold recommendations and account-type recommendations (e.g., open IRA, rollover).",
-        "CUSTOMER PROFILE \u2014 must collect: age, marital status, dependents, employment, income, net worth, liquid net worth, tax status, investment experience, investment objectives, time horizon, liquidity needs, and risk tolerance.",
-        "Financial Circumstances (quantifiable in dollars): income, home value, liquid net worth, debt payments, total debt.",
-        "Nonfinancial Circumstances: age, marital status, dependents, employment status, family employment.",
-        "INVESTMENT OBJECTIVES \u2192 SUITABLE PRODUCTS:",
-        "\u2022 Preservation of Capital/Safety \u2192 CDs, money market funds, fixed annuities, Treasuries, agencies, investment-grade corporates.",
-        "\u2022 Growth (Moderate) \u2192 common stock, blue-chip, defensive stocks, stock mutual funds.",
-        "\u2022 Aggressive Growth \u2192 tech stocks, sector funds, emerging markets.",
-        "\u2022 Income \u2192 bonds (NOT zero coupons), REITs, CMOs, preferred/utility stocks.",
-        "\u2022 Tax-Free Income \u2192 municipal bonds/funds, Roth IRA.",
-        "\u2022 High-Yield Income \u2192 below-investment-grade ('junk') bond funds.",
-        "\u2022 Liquidity \u2192 exchange-listed stocks, Nasdaq stocks, mutual funds, publicly traded REITs.",
-        "\u2022 Diversification \u2192 mutual funds, asset allocation/balanced funds.",
-        "\u2022 Speculation \u2192 options, DPPs, high-yield bonds, sector funds, commodities, futures, precious metals.",
-        "REGULATION BEST INTEREST (Reg BI) \u2014 effective 6/30/2020; under '34 Act; applies to broker-dealers and associated persons making recommendations to RETAIL customers (excludes institutional accounts: banks, S&Ls, insurance companies, registered investment companies).",
-        "Reg BI prohibits placing firm or associated person interest ahead of the retail customer's interest.",
-        "FOUR REG BI OBLIGATIONS:",
-        "1. DISCLOSURE OBLIGATION \u2014 full and fair written disclosure before/at time of recommendation: scope/terms of relationship, fees and costs, type/scope of services, material limitations on products recommended, and all material conflicts of interest.",
-        "2. CARE OBLIGATION \u2014 exercise reasonable diligence, care, skill; understand risks/rewards/costs; reasonable basis recommendation could be in some retail customer's best interest; customer-specific basis; series of recommendations not excessive.",
-        "3. CONFLICT OF INTEREST OBLIGATION (firm-level) \u2014 written policies to identify, mitigate, or eliminate conflicts; eliminate sales contests/quotas/bonuses tied to specific securities or specific types of securities within a limited period.",
-        "4. COMPLIANCE OBLIGATION (firm-level) \u2014 written policies and procedures designed to achieve compliance with Reg BI as a whole.",
-        "USE OF 'ADVISER/ADVISOR' TITLE \u2014 presumptive Reg BI violation for a BD or AP not also registered as an IA/IA representative (requires Series 65 or 66).",
-        "FORM CRS (Customer Relationship Summary) \u2014 delivered to retail investors at the earlier of: entering into an IA contract OR opening a brokerage account. 2 pages for BD or IA; up to 4 pages for dual-registrants.",
-        "MAJOR MARKET BENCHMARKS:",
-        "\u2022 DJIA \u2014 30 large-cap U.S. industrial stocks; price-weighted; most widely cited in popular press.",
-        "\u2022 S&P 500 \u2014 ~500 large U.S. companies; market-cap weighted; standard benchmark for overall U.S. market performance and large-cap portfolios.",
-        "\u2022 Russell 2000 \u2014 ~2,000 small-cap U.S. stocks; benchmark for small-company performance.",
-        "\u2022 Wilshire 5000 \u2014 broadest measure of U.S. equity market (~3,500 actual components).",
-        "\u2022 Nasdaq Composite \u2014 all Nasdaq-listed stocks; tech-heavy.",
-        "\u2022 Bloomberg Barclays U.S. Aggregate Bond Index ('the Agg') \u2014 composite benchmark for U.S. bond market.",
-        "\u2022 MSCI EAFE Index \u2014 developed-market equities outside U.S./Canada (Europe, Australasia, Far East); standard international equity benchmark."
+        "Diversification: spreading investments across issuers/industries/asset classes reduces nonsystematic risk; cannot eliminate systematic risk.",
+        "Asset allocation: strategic mix among stocks, bonds, cash, alternatives based on objectives and horizon; main defense against market risk.",
+        "Modern Portfolio Theory: combining negatively/low-correlated assets lowers portfolio standard deviation for a given expected return (efficient frontier).",
+        "Hedging: offsetting positions using options (protective puts, covered calls), futures, or inverse ETFs.",
+        "Laddering bonds: staggering maturities mitigates interest-rate and reinvestment risk by ensuring continuous reinvestment at varied rates.",
+        "Barbell strategy: short + long maturities; balances liquidity with yield.",
+        "Bullet strategy: maturities clustered at a target date; matches a future liability.",
+        "Dollar-cost averaging: investing fixed dollars at regular intervals lowers average cost per share over time; mitigates timing risk.",
+        "Buying TIPS or floating-rate notes mitigates inflation/interest-rate risk.",
+        "Buying investment-grade or insured (e.g., U.S. Treasuries, GOs) securities mitigates default risk.",
+        "Mitigating currency risk: currency-hedged funds, forward contracts, or holding domestic securities.",
+        "Mitigating liquidity risk: avoid thinly traded issues; hold listed securities and money-market reserves.",
+        "Time horizon: longer horizons absorb market volatility; shorter horizons demand higher-grade, shorter-duration holdings.",
+        "Beta measures systematic risk relative to the market (\u03b2 = 1.0 = market; >1.0 more volatile; <1.0 less).",
+        "Standard deviation measures total volatility (total risk).",
+        "Alpha measures excess return vs. expected return given beta \u2014 manager skill."
       ],
       "rules": [
-        "SEC Regulation Best Interest (Reg BI) \u2014 Securities Exchange Act of 1934; effective June 30, 2020; retail customers only.",
-        "Form CRS \u2014 required relationship summary delivered to retail investors at/before account opening or advisory contract.",
-        "FINRA noncash compensation rules amended to comply with Reg BI: contests may continue, but incentives based on product type (e.g., mutual funds) must apply to ALL products of that type sold by the firm \u2014 not a single sponsor.",
-        "Reg BI excludes recommendations to institutional accounts (banks, S&Ls, insurance companies, registered investment companies)."
+        "FINRA Rule 2111 requires that a recommended investment strategy (including portfolio construction and asset allocation) be in the customer's best interest based on the investment profile.",
+        "17 CFR 240.15l-1 Reg BI Care Obligation \u2014 the rep must have a reasonable basis to believe the recommendation, including a series of recommendations, is in the retail customer's best interest."
+      ],
+      "formulas": [
+        "Expected Return (two-asset) = Wa \u00d7 Ra + Wb \u00d7 Rb",
+        "Portfolio Beta = \u03a3 (Weight_i \u00d7 Beta_i)",
+        "Sharpe Ratio = (Rp \u2212 Rf) / \u03c3p",
+        "Alpha = Actual Return \u2212 [Rf + \u03b2 \u00d7 (Rm \u2212 Rf)]"
+      ],
+      "mnemonics": [
+        "\"DAHL\" \u2014 Diversify, Allocate, Hedge, Ladder.",
+        "Beta = systematic measure; Standard Deviation = total measure; Alpha = skill."
+      ]
+    },
+    {
+      "title": "3. What Constitutes a Recommendation",
+      "overview": "Whether communication is a \"recommendation\" triggers suitability and Reg BI obligations. The determination is facts-and-circumstances based on whether a reasonable person would view the communication as a call to action for a specific security or strategy.",
+      "key_concepts": [
+        "A recommendation = a communication that, viewed objectively, would reasonably be considered a call to action regarding a particular security or investment strategy involving securities.",
+        "Indicators of a recommendation: specificity, individual tailoring, frequency, and whether it suggests buying, selling, or holding.",
+        "Not recommendations (generally): general educational material, market commentary not tied to a specific security, asset-allocation models meeting safe-harbor criteria, and tools widely disseminated.",
+        "Solicited order: rep suggested the security \u2014 triggers suitability/Reg BI.",
+        "Unsolicited order: customer initiated \u2014 must be marked unsolicited on the order ticket; does not trigger Reg BI (but firm still has fair-dealing obligation).",
+        "Hold recommendations are explicitly covered by Reg BI and Rule 2111.",
+        "Implicit recommendations (e.g., reallocating a discretionary account) are also covered."
+      ],
+      "rules": [
+        "FINRA Rule 2111 \u2014 Suitability applies to recommended transactions and investment strategies, including recommendations to hold.",
+        "17 CFR 240.15l-1 (Reg BI) \u2014 applies whenever a broker-dealer or associated person makes a recommendation of any securities transaction or investment strategy involving securities to a retail customer.",
+        "FINRA Rule 2010 \u2014 Standards of Commercial Honor and Just and Equitable Principles of Trade underlies fair dealing on all orders, solicited or not."
       ],
       "formulas": [],
       "mnemonics": [
-        "Reg BI Four Obligations = 'DC\u00b3' or 'DCCC': Disclosure, Care, Conflict of interest, Compliance.",
-        "Recommendation test = 'Call to Action' \u2014 would it influence a customer to trade or hold a specific security?",
-        "Income objective avoids ZEROS \u2014 zero-coupon bonds pay NO current income.",
-        "Benchmark match: Large-cap \u2192 S&P 500; Small-cap \u2192 Russell 2000; Broad U.S. \u2192 Wilshire 5000; Bonds \u2192 Bloomberg Barclays Agg; International \u2192 MSCI EAFE; 30 blue chips \u2192 DJIA.",
-        "'Adviser/Advisor' title = IA registration required (Series 65/66)."
+        "\"Call-to-Action\" test \u2014 if it tells the customer to DO something specific, it's a recommendation."
+      ]
+    },
+    {
+      "title": "4. Reg BI \u2014 Regulation Best Interest (17 CFR 240.15l-1)",
+      "overview": "Reg BI is the federal conduct standard for broker-dealer recommendations to retail customers. Compliance was required by 6/30/2020. It is satisfied only by meeting four component obligations: Disclosure, Care, Conflict of Interest, and Compliance.",
+      "key_concepts": [
+        "Applies when a BD or associated person makes a recommendation of a securities transaction or investment strategy to a retail customer.",
+        "Retail customer = a natural person (or legal rep) who receives a recommendation and uses it primarily for personal, family, or household purposes.",
+        "Disclosure Obligation: full and fair written disclosure, before/at time of recommendation, of material facts about the relationship, scope/type of services, fees, conflicts, and capacity (broker vs. adviser).",
+        "Care Obligation: rep must exercise reasonable diligence, care, and skill to: (1) understand risks/rewards/costs, (2) have a reasonable basis the recommendation is in the retail customer's best interest, (3) avoid excessive trading regardless of discretion.",
+        "Conflict of Interest Obligation: written policies & procedures to identify and at minimum disclose, or eliminate, conflicts; eliminate sales contests, quotas, bonuses based on specific securities in a limited time.",
+        "Compliance Obligation: written P&Ps reasonably designed to achieve compliance with Reg BI as a whole.",
+        "Cannot satisfy Reg BI by disclosure alone \u2014 best-interest standard is substantive.",
+        "Reg BI does not apply to recommendations to institutional customers (FINRA Rule 2111 institutional-customer exemption may apply)."
+      ],
+      "rules": [
+        "17 CFR 240.15l-1 \u2014 Regulation Best Interest; effective compliance date 6/30/2020.",
+        "17 CFR 240.17a-14 \u2014 Form CRS requirement for BDs (retail-investor relationship summary).",
+        "FINRA Rule 2111 \u2014 Suitability remains in effect; Reg BI supersedes Rule 2111 for retail recommendations but Rule 2111 still applies to institutional customers."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Reg BI's four obligations = \"DC\u00b3\" \u2014 Disclosure, Care, Conflict, Compliance.",
+        "Care Obligation sub-prongs = \"RRC\" \u2014 Reasonable basis (general), Recommendation-specific (this customer), Customer's series (no excessive trading)."
+      ]
+    },
+    {
+      "title": "5. Form CRS (Customer/Client Relationship Summary)",
+      "overview": "Form CRS is a short, plain-English disclosure delivered to retail investors describing the firm's relationship, services, fees, conflicts, and disciplinary history. Required of broker-dealers under 17 CFR 240.17a-14.",
+      "key_concepts": [
+        "Delivered to a retail investor: at the earliest of (a) opening an account, (b) recommending a securities transaction or investment strategy, (c) recommending an account type or rollover, or (d) placing an order.",
+        "Maximum 2 pages (4 for dual registrants).",
+        "Must include prescribed \"Conversation Starter\" questions.",
+        "Filed with the SEC and posted on the firm's public website.",
+        "Updated within 30 days of becoming materially inaccurate, with communication of changes to existing customers within 60 days."
+      ],
+      "rules": [
+        "17 CFR 240.17a-14 \u2014 Form CRS preparation, filing, and delivery requirements for broker-dealers."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "\"CRS = Customer Relationship Summary\" \u2014 short, plain-English, retail-only."
+      ]
+    },
+    {
+      "title": "6. Know Your Customer & Customer Investment Profile",
+      "overview": "Suitable recommendations require firm knowledge of the customer. Rule 2090 (KYC) demands essential facts to service the account; Rule 2111 catalogs the investment profile elements forming the basis for any recommendation.",
+      "key_concepts": [
+        "KYC essential facts (Rule 2090): facts needed to (a) effectively service the account, (b) act on instructions, (c) understand authority of any person acting for the customer, (d) comply with applicable laws and rules.",
+        "Customer investment profile elements (Rule 2111): age, other investments, financial situation and needs, tax status, investment objectives, investment experience, investment time horizon, liquidity needs, risk tolerance, and any other information the customer may disclose.",
+        "Customer objectives (rank by priority): preservation of capital, income, growth, growth & income, speculation, tax advantage, liquidity.",
+        "Time horizon: short-term (<3 yrs), intermediate (3\u201310 yrs), long-term (>10 yrs); drives risk capacity.",
+        "Risk tolerance: subjective willingness to bear loss; distinct from risk capacity (objective ability).",
+        "Tax status: marginal bracket determines attractiveness of municipal bonds (tax-equivalent yield) and tax-deferred vehicles."
+      ],
+      "rules": [
+        "FINRA Rule 2090 \u2014 Know Your Customer; requires firms to use reasonable diligence to know essential facts about every customer.",
+        "FINRA Rule 2111 \u2014 Suitability; three main obligations: reasonable-basis, customer-specific, and quantitative suitability.",
+        "FINRA Rule 4512 \u2014 Customer Account Information; lists information required to be obtained when opening an account."
+      ],
+      "formulas": [
+        "Tax-Equivalent Yield = Municipal Yield / (1 \u2212 Marginal Tax Rate)",
+        "After-Tax Yield = Taxable Yield \u00d7 (1 \u2212 Marginal Tax Rate)"
+      ],
+      "mnemonics": [
+        "Objectives priority \u2014 \"PIGSTL\": Preservation, Income, Growth, Speculation, Tax-advantage, Liquidity.",
+        "Profile elements \u2014 \"FORT-ART\": Financial situation, Objectives, Risk tolerance, Tax status, Age, Risk experience, Time horizon (plus liquidity, other investments).",
+        "KYC = \"Know \u00b7 Service \u00b7 Act \u00b7 Authority\" (four pillars of Rule 2090)."
+      ]
+    },
+    {
+      "title": "7. Matching Customer Objectives to Investment Characteristics",
+      "overview": "Each product class has a risk/return profile suited to certain objectives. The SIE tests whether a candidate can match the right product to the stated objective and constraints.",
+      "key_concepts": [
+        "Preservation of capital \u2192 U.S. Treasury bills/notes, money market funds, bank CDs, high-grade short bonds.",
+        "Current income (taxable account) \u2192 corporate bonds, preferred stock, REITs, bond funds, dividend-paying utilities.",
+        "Current income (high tax bracket) \u2192 municipal bonds (federally tax-exempt; in-state often state/local exempt).",
+        "Growth \u2192 common stock of growth companies, growth mutual funds, growth-oriented ETFs.",
+        "Growth & income \u2192 blue-chip dividend payers, balanced funds, equity-income funds.",
+        "Speculation/aggressive growth \u2192 small-cap, emerging-market equities, options, leveraged ETFs, sector funds.",
+        "Liquidity \u2192 money market instruments, listed equities, exchange-traded bonds; AVOID DPPs, hedge funds, illiquid bonds.",
+        "Inflation hedge \u2192 TIPS, equities (long-run), real assets/commodities, real estate.",
+        "Tax deferral \u2192 annuities (variable/fixed), qualified plans, IRAs.",
+        "Tax-free income \u2192 municipal bonds, Roth IRA qualified distributions.",
+        "Retirement savings \u2192 IRAs, 401(k)s, target-date funds; mix shifts to fixed income as horizon shortens.",
+        "Education funding \u2192 529 plans, Coverdell ESAs, UTMA/UGMA.",
+        "DPPs are unsuitable for income/liquidity-focused investors \u2014 designed for high-net-worth investors seeking passive losses and long horizons."
+      ],
+      "rules": [
+        "FINRA Rule 2111 \u2014 Customer-specific suitability requires the recommendation be suitable based on the customer's profile.",
+        "17 CFR 240.15l-1 \u2014 Reg BI Care Obligation requires the recommendation be in the retail customer's best interest in light of the profile."
+      ],
+      "formulas": [
+        "After-Tax Yield (municipal vs. taxable comparison): see Section 6."
+      ],
+      "mnemonics": [
+        "\"Higher return = higher risk\" \u2014 risk-return tradeoff is universal.",
+        "Retirement income clients = \"safety + income\" \u2192 bonds, dividend stocks, annuities; AVOID speculative options."
+      ]
+    },
+    {
+      "title": "8. Major Market Benchmarks and Indices",
+      "overview": "Benchmarks measure market performance and serve as comparison standards for portfolios. Candidates must know weighting methodology, breadth, and what market segment each index represents.",
+      "key_concepts": [
+        "DJIA (Dow Jones Industrial Average): 30 large-cap U.S. blue-chip stocks; PRICE-WEIGHTED (high-priced stocks have greater influence).",
+        "S&P 500: 500 large-cap U.S. stocks; MARKET-CAP-WEIGHTED (float-adjusted); the standard U.S. equity benchmark.",
+        "Nasdaq Composite: all common stocks listed on Nasdaq; market-cap-weighted; technology-heavy.",
+        "Nasdaq 100: 100 largest non-financial Nasdaq-listed companies.",
+        "Russell 2000: 2,000 small-cap U.S. stocks; primary small-cap benchmark; market-cap-weighted.",
+        "Russell 3000: broad U.S. market \u2014 largest 3,000 stocks (~98% of U.S. investable equity).",
+        "Wilshire 5000: total U.S. equity market index \u2014 broadest U.S. equity gauge.",
+        "MSCI EAFE: developed markets ex-U.S./Canada \u2014 Europe, Australasia, Far East; benchmark for international equity.",
+        "MSCI Emerging Markets Index: emerging-market equity benchmark.",
+        "Bloomberg U.S. Aggregate Bond Index: broad U.S. investment-grade bond benchmark.",
+        "Other measures: NYSE Composite, Value Line (geometric, equal-weighted)."
+      ],
+      "rules": [],
+      "formulas": [
+        "Price-Weighted Index Value = \u03a3 Prices / Divisor   (DJIA methodology)",
+        "Market-Cap-Weighted Index Value \u221d \u03a3 (Price \u00d7 Shares Outstanding)   (S&P 500, Nasdaq, Russell methodology)"
+      ],
+      "mnemonics": [
+        "\"DJIA = Dollar; S&P = Size\" \u2014 Dow is price-weighted, S&P is cap-weighted.",
+        "Small-cap \u2192 Russell 2000; Total U.S. \u2192 Wilshire 5000; International developed \u2192 EAFE."
+      ]
+    },
+    {
+      "title": "9. Quantitative Risk and Return Measures",
+      "overview": "The SIE expects familiarity with statistical measures used to describe and compare risk and return. These appear in performance reports, suitability discussions, and Reg BI cost-vs.-benefit analyses.",
+      "key_concepts": [
+        "Standard deviation (\u03c3): measures dispersion of returns; proxy for total risk (both systematic and nonsystematic).",
+        "Beta (\u03b2): measures sensitivity to overall market returns; systematic-risk measure. \u03b2=1 market; \u03b2>1 aggressive; \u03b2<1 defensive; \u03b2<0 inverse.",
+        "Alpha (\u03b1): risk-adjusted excess return vs. CAPM expected return \u2014 measures manager value-add.",
+        "Sharpe Ratio: excess return per unit of total risk (uses \u03c3).",
+        "R-squared: % of a fund's movement explained by its benchmark (0\u20131.0); high R\u00b2 makes beta meaningful.",
+        "Correlation coefficient (\u22121 to +1): combining low/negative correlations reduces portfolio risk.",
+        "Duration: bond price sensitivity to interest-rate changes; longer duration = greater interest-rate risk.",
+        "Total return = (income + capital gain/loss) / beginning value."
+      ],
+      "rules": [
+        "FINRA Rule 2210 \u2014 Communications with the Public requires that performance figures and risk disclosures be fair, balanced, and not misleading."
+      ],
+      "formulas": [
+        "Total Return = (Ending Value \u2212 Beginning Value + Income) / Beginning Value",
+        "Holding Period Return = (P1 \u2212 P0 + Distributions) / P0",
+        "Annualized Return \u2248 (1 + Periodic Return)^n \u2212 1",
+        "Sharpe Ratio = (Rp \u2212 Rf) / \u03c3p",
+        "CAPM: Expected Return = Rf + \u03b2 \u00d7 (Rm \u2212 Rf)",
+        "Portfolio \u03c3 depends on weights, individual \u03c3, and correlations between assets."
+      ],
+      "mnemonics": [
+        "\"\u03c3 = Total \u00b7 \u03b2 = Market \u00b7 \u03b1 = Skill.\"",
+        "Higher Sharpe = better risk-adjusted return."
+      ]
+    },
+    {
+      "title": "10. Suitability Obligations Under FINRA Rule 2111 (Institutional & Quantitative)",
+      "overview": "Rule 2111 contains three suitability obligations. Reg BI now governs retail recommendations, but Rule 2111 remains the SRO standard, especially for institutional customers, and supplies the quantitative-suitability framework.",
+      "key_concepts": [
+        "Reasonable-basis suitability: the rep must have a reasonable basis to believe, after reasonable diligence, that the recommendation is suitable for AT LEAST SOME investors.",
+        "Customer-specific suitability: a reasonable basis to believe the recommendation is suitable for THIS particular customer based on his/her investment profile.",
+        "Quantitative suitability: even individually suitable recommendations, when taken together, cannot be excessive (anti-churning) when the rep has actual or de facto control over the account.",
+        "Institutional-customer exemption: customer-specific suitability deemed satisfied if (a) the firm has reasonable basis to believe the institutional customer is capable of evaluating risks independently, and (b) the institutional customer affirmatively indicates it is exercising independent judgment.",
+        "Hold recommendations are covered.",
+        "Reg BI's Care Obligation effectively raises the standard from \"suitable\" to \"in the best interest of\" the retail customer."
+      ],
+      "rules": [
+        "FINRA Rule 2111 \u2014 Suitability (three obligations).",
+        "FINRA Rule 2090 \u2014 Know Your Customer.",
+        "17 CFR 240.15l-1 \u2014 Reg BI (supersedes Rule 2111 for retail recommendations).",
+        "FINRA Rule 2010 \u2014 fair dealing principles."
+      ],
+      "formulas": [
+        "Turnover Ratio = Total Annual Purchases / Average Monthly Equity   (excessive trading indicator)",
+        "Cost-to-Equity Ratio = Total Annual Costs / Average Equity   (break-even commission burden)"
+      ],
+      "mnemonics": [
+        "Suitability's three prongs = \"R-C-Q\": Reasonable-basis, Customer-specific, Quantitative.",
+        "Reg BI \u2265 Rule 2111 \u2014 best interest is a HIGHER bar than mere suitability."
+      ]
+    },
+    {
+      "title": "11. Putting It Together \u2014 The Recommendation Workflow",
+      "overview": "On exam scenarios, apply a consistent decision sequence: gather profile, identify objective, screen products by risk profile, select a best-interest recommendation, document, and disclose.",
+      "key_concepts": [
+        "Step 1 \u2014 KYC (Rule 2090, Rule 4512): gather essential facts and profile data at account opening.",
+        "Step 2 \u2014 Identify primary objective and any constraints (time horizon, liquidity, taxes, risk tolerance).",
+        "Step 3 \u2014 Match product characteristics to objective; eliminate clearly unsuitable products.",
+        "Step 4 \u2014 Apply Reg BI Care Obligation: weigh risks, rewards, costs; reasonably available alternatives need not be exhaustively reviewed but must be considered.",
+        "Step 5 \u2014 Disclose material facts, fees, capacity, and conflicts (Reg BI Disclosure + Form CRS).",
+        "Step 6 \u2014 Document the basis for the recommendation; mark order solicited or unsolicited.",
+        "Step 7 \u2014 Supervisory review (Rule 3110); monitor for quantitative suitability over time.",
+        "Red flags requiring escalation: speculative recommendations to retirees seeking income, recommending illiquid products to clients with liquidity needs, recommending margin/options without experience, frequent trading in a small account, or recommendations producing high cost-to-equity ratios."
+      ],
+      "rules": [
+        "FINRA Rules 2090, 2111, 2010, 2210, 4512.",
+        "17 CFR 240.15l-1 (Reg BI).",
+        "17 CFR 240.17a-14 (Form CRS)."
+      ],
+      "formulas": [],
+      "mnemonics": [
+        "Workflow = \"K-O-M-C-D-D-S\": Know, Objective, Match, Care-test, Disclose, Document, Supervise."
       ]
     }
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 14347,
-    "output": 3783
+    "input": 13136,
+    "output": 9267
   },
-  "cost_usd": 0.4989
+  "cost_usd": 0.8921
 }

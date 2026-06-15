@@ -3,33 +3,43 @@
   "title": "Yield Relationships & Bond Math",
   "sections": [
     {
-      "heading": "The 4 Yields \u2014 Definitions",
+      "heading": "Core Yield Definitions",
       "type": "bullets",
       "items": [
-        "Nominal (Coupon/Stated) Yield: FIXED % of par set at issue. 6% coupon = $60/yr forever, regardless of price.",
-        "Current Yield (CY): Annual coupon \u00f7 Current market price. Ignores gain/loss at maturity.",
-        "Yield to Maturity (YTM): Annualized total return if held to maturity. Includes coupon + discount gain OR \u2013 premium loss. Also called the bond's 'basis'.",
-        "Yield to Call (YTC): Same as YTM but uses call date & call price. Accelerates the discount gain OR premium loss into a shorter time frame."
+        "Nominal Yield (Coupon Rate) = stated annual coupon \u00f7 par ($1,000). Fixed at issuance; never changes.",
+        "Current Yield (CY) = Annual Coupon Income \u00f7 Current Market Price. Ignores gain/loss to maturity.",
+        "Yield to Maturity (YTM) = total annualized return if held to maturity, assuming all coupons reinvested at YTM and bond redeemed at par. Reflects coupon + amortization of premium / accretion of discount.",
+        "Yield to Call (YTC) = total annualized return if bond is called at the first/next call date at the call price. Uses call price (often par or par + premium) and shorter time horizon.",
+        "Yield to Worst (YTW) = lower of YTM or YTC \u2014 what must be disclosed to customer on a callable bond."
       ]
     },
     {
-      "heading": "THE Yield Seesaw (MEMORIZE)",
+      "heading": "Price / Yield Relationship (INVERSE)",
       "type": "table",
       "items": [
         {
-          "Bond Trades At": "DISCOUNT (e.g., $900)",
-          "Order (low\u2192high)": "Coupon < CY < YTM < YTC",
-          "Logic": "Earlier call accelerates the discount GAIN"
+          "Bond Trading At": "Discount (Price < Par)",
+          "Coupon": "Lowest",
+          "Current Yield": "Higher than coupon",
+          "YTM": "Higher than CY",
+          "YTC": "Higher than YTM",
+          "Order (low\u2192high)": "Coupon < CY < YTM < YTC"
         },
         {
-          "Bond Trades At": "PAR ($1,000)",
-          "Order": "Coupon = CY = YTM = YTC",
-          "Logic": "No gain/loss to amortize"
+          "Bond Trading At": "Par (Price = $1,000)",
+          "Coupon": "=",
+          "Current Yield": "= Coupon",
+          "YTM": "= Coupon",
+          "YTC": "= Coupon",
+          "Order (low\u2192high)": "All equal"
         },
         {
-          "Bond Trades At": "PREMIUM (e.g., $1,100)",
-          "Order (high\u2192low)": "Coupon > CY > YTM > YTC",
-          "Logic": "Earlier call accelerates the premium LOSS"
+          "Bond Trading At": "Premium (Price > Par)",
+          "Coupon": "Highest",
+          "Current Yield": "Lower than coupon",
+          "YTM": "Lower than CY",
+          "YTC": "Lower than YTM (YTW)",
+          "Order (low\u2192high)": "YTC < YTM < CY < Coupon"
         }
       ]
     },
@@ -37,97 +47,530 @@
       "heading": "Key Formulas",
       "type": "formula",
       "items": [
-        "Current Yield = Annual Coupon \u00f7 Market Price",
-        "Tax-Equivalent Yield (TEY) = Muni Yield \u00f7 (1 \u2212 Tax Bracket)",
-        "Muni-Equivalent Yield = Corp Yield \u00d7 (1 \u2212 Tax Bracket)",
-        "Bond Price ($) = Quoted Price \u00d7 10  (e.g., quote of 97.5 = $975)",
-        "Inverse Rule: Interest rates \u2191 \u2192 Bond prices \u2193 (and vice versa)"
+        "Current Yield = Annual Coupon $ / Market Price",
+        "Approx YTM \u2248 [Annual Coupon + (Par \u2212 Price)/Years to Maturity] \u00f7 [(Par + Price)/2]",
+        "Approx YTC \u2248 [Annual Coupon + (Call Price \u2212 Price)/Years to Call] \u00f7 [(Call Price + Price)/2]",
+        "Tax-Equivalent Yield (TEY) = Muni Yield \u00f7 (1 \u2212 Investor's Marginal Federal Tax Rate)",
+        "After-Tax Yield (taxable bond) = Taxable Yield \u00d7 (1 \u2212 Tax Rate)",
+        "Total Return = (Income + Capital Gain) / Cost Basis"
       ]
     },
     {
-      "heading": "Points vs. Basis Points (DON'T CONFUSE)",
-      "type": "table",
-      "items": [
-        {
-          "Unit": "1 Point",
-          "Measures": "PRICE",
-          "Value": "1% of par = $10 per bond",
-          "Example": "Bond up 2 pts = +$20"
-        },
-        {
-          "Unit": "1 Basis Point (bp)",
-          "Measures": "YIELD",
-          "Value": "1/100 of 1% = 0.01%",
-          "Example": "100 bps = 1.00% yield change"
-        }
-      ]
-    },
-    {
-      "heading": "TEY Worked Example",
+      "heading": "Bond Pricing Conventions \u2014 Points & Basis Points",
       "type": "bullets",
       "items": [
-        "Investor in 30% bracket, muni yields 7%: TEY = 7% \u00f7 (1 \u2212 0.30) = 7% \u00f7 0.70 = 10%",
-        "Corp must yield >10% to beat the muni after tax",
-        "Higher tax bracket = greater muni advantage"
+        "1 bond point = 1% of par = $10 (par = $1,000). A bond quoted at 102 = $1,020; at 98 = $980.",
+        "Quotes in 1/8ths (corporates): 101 1/8 = $1,011.25; each 1/8 pt = $1.25.",
+        "Treasury notes/bonds quoted in 32nds: 99-16 = 99 + 16/32 = 99.50% of par = $995.00. Each 1/32 = $0.3125.",
+        "T-bills quoted on discount yield basis (not price).",
+        "1 basis point (bp) = 0.01% = 1/100 of 1%. 100 bps = 1.00%. A yield move from 4.25% \u2192 4.50% = +25 bps."
       ]
     },
     {
-      "heading": "Accrued Interest Conventions",
+      "heading": "Accrued Interest Conventions (post-5/28/2024 T+1)",
       "type": "table",
       "items": [
         {
           "Security": "Corporate bonds",
-          "Day Count": "30/360",
-          "Settlement": "T+1 (post-5/28/2024)"
+          "Day-Count": "30/360 (assume 30-day months, 360-day year)",
+          "Settlement": "T+1",
+          "Accrues": "From last coupon date up to but NOT including settlement"
         },
         {
           "Security": "Municipal bonds",
-          "Day Count": "30/360",
-          "Settlement": "T+1 (post-5/28/2024)"
+          "Day-Count": "30/360",
+          "Settlement": "T+1 (MSRB G-12/G-15, eff. 5/28/2024)",
+          "Accrues": "Last coupon \u2192 day before settlement"
         },
         {
-          "Security": "Treasury notes/bonds",
-          "Day Count": "Actual/Actual",
-          "Settlement": "T+1"
+          "Security": "U.S. Treasury notes/bonds",
+          "Day-Count": "Actual/Actual (actual days / actual days in coupon period)",
+          "Settlement": "T+1",
+          "Accrues": "Last coupon \u2192 day before settlement"
         },
         {
-          "Security": "Zero-coupon bonds",
-          "Day Count": "NONE \u2014 no accrued interest paid",
-          "Settlement": "T+1"
+          "Security": "T-bills / zero-coupons",
+          "Day-Count": "No accrued interest (no coupon)",
+          "Settlement": "T+1",
+          "Accrues": "N/A"
         }
       ]
     },
     {
-      "heading": "YTC vs YTM \u2014 When Each Is Worse",
-      "type": "rule",
+      "heading": "YTC vs YTM \u2014 Which Governs?",
+      "type": "bullets",
       "items": [
-        "PREMIUM bond: YTC is the WORST yield (lowest) \u2014 assume issuer calls when rates fall \u2192 investor loses premium faster. Quote YTC.",
-        "DISCOUNT bond: YTM is the WORST yield (lowest) \u2014 issuer unlikely to call; investor waits longer for gain. Quote YTM.",
-        "Rule of thumb: Always quote the LOWER of YTM/YTC to the customer (yield-to-worst)."
+        "Issuers CALL when rates fall \u2192 premium bonds are most likely to be called \u2192 YTC is the binding (worst-case) yield.",
+        "Discount bonds: issuer unlikely to call (would refinance at higher cost) \u2192 YTM is the relevant yield.",
+        "FINRA confirms (Rule 2232 / customer confirmation context) that yield-to-worst is the figure disclosed when lower than YTM.",
+        "YTC uses (a) shorter time to call and (b) the call price \u2014 not par \u2014 in the formula."
       ]
     },
     {
-      "heading": "Quick Recognition Cues",
+      "heading": "Tax-Equivalent Yield \u2014 Quick Reference",
       "type": "bullets",
       "items": [
-        "'Bond trading on a 6.5 basis' \u2192 YTM = 6.5%",
-        "'Trading at 102' \u2192 Premium bond ($1,020); coupon is HIGHEST yield",
-        "'Trading at 94' \u2192 Discount bond ($940); coupon is LOWEST yield",
-        "Coupon NEVER changes \u2014 only the other 3 yields move with price"
+        "Use TEY to compare a tax-exempt muni to a taxable corporate/Treasury at the investor's marginal bracket.",
+        "Example: 4% muni, 32% bracket \u2192 TEY = 4% / (1 \u2212 0.32) = 4% / 0.68 = 5.88%.",
+        "Treasuries: exempt from STATE/LOCAL tax only \u2014 taxable federally. Use after-tax yield comparisons accordingly.",
+        "Municipal interest is federally tax-exempt (taxable munis like BABs are exception)."
       ]
     }
   ],
   "common_traps": [
-    "Confusing POINTS (price, $10) with BASIS POINTS (yield, 0.01%). A bond down 50 bps \u2260 down $5.",
-    "Forgetting the seesaw flips for premium bonds: at a premium, YTC is LOWEST (not highest) \u2014 call accelerates the premium loss.",
-    "Applying accrued interest to zero-coupon bonds \u2014 they pay NO accrued interest (no current coupon to accrue).",
-    "Using corporate yield in the TEY numerator. Formula is MUNI \u00f7 (1 \u2212 bracket); muni yield is always the lower number.",
-    "Assuming coupon yield changes when price changes \u2014 it NEVER does. Only CY, YTM, and YTC move.",
-    "Using T+2 for corporate/muni settlement \u2014 the SEC moved to T+1 effective 5/28/2024."
+    "Reversing the inverse relationship: when PRICE goes UP, YIELD goes DOWN \u2014 and vice versa. A 'higher yield' bond is the cheaper bond.",
+    "Forgetting that on a PREMIUM callable bond the YTC is the LOWEST yield and is the yield-to-worst that must be quoted to the customer. On a DISCOUNT bond, YTM is lowest/relevant.",
+    "Confusing point values: 1 point = $10 (not $1). 1 basis point = $0.10 per $1,000 par per year of yield \u2014 not a dollar price move.",
+    "Mixing day-count conventions: corporates AND munis use 30/360; Treasuries use actual/actual. Don't apply 30/360 to a T-note accrued interest question.",
+    "Using PAR instead of CALL PRICE in the YTC numerator, or using years-to-maturity instead of years-to-call. YTC must use the call price and the call date.",
+    "Forgetting tax-equivalent yield works ONLY for federal tax-exempt munis; do not gross up a Treasury yield (Treasuries are federally taxable)."
   ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 23562,
-    "output": 2038
+    "input": 13898,
+    "output": 2442
   },
-  "cost_usd": 0.5063
+  "cost_usd": 0.3916
 }

@@ -3,170 +3,498 @@
   "title": "AML / Reporting Thresholds",
   "sections": [
     {
-      "heading": "Key Dollar Thresholds & Deadlines",
+      "heading": "Money Laundering \u2014 Definition & 3 Stages",
+      "type": "bullets",
+      "items": [
+        "Money laundering = converting illicit proceeds into apparently legitimate funds.",
+        "Stage 1 \u2014 PLACEMENT: cash enters the financial system (deposits, money orders, chips). Highest detection risk.",
+        "Stage 2 \u2014 LAYERING: separate funds from source via complex transactions (wires, securities trades, shell co's, offshore).",
+        "Stage 3 \u2014 INTEGRATION: funds re-enter economy looking legitimate (real estate, business, luxury goods).",
+        "Reverse money laundering / terrorist financing = clean money funding illegal activity (still SAR-reportable)."
+      ]
+    },
+    {
+      "heading": "Key Reporting Thresholds & Deadlines",
       "type": "table",
-      "items": {
-        "columns": [
-          "Report/Rule",
-          "Trigger $",
-          "Filing Deadline",
-          "Recordkeeping",
-          "Filed With"
-        ],
-        "rows": [
-          [
-            "CTR (Currency Transaction Report)",
-            "> $10,000 cash, single day (aggregated)",
-            "15 days of receipt",
-            "5 years",
-            "FinCEN"
-          ],
-          [
-            "SAR (Suspicious Activity Report)",
-            "$5,000+ suspicious (NO min for terrorist financing)",
-            "30 days of detection (60 if no suspect)",
-            "5 years from filing",
-            "FinCEN"
-          ],
-          [
-            "Wire Transfer Recordkeeping",
-            "$3,000+ (sender + recipient info)",
-            "At time of transfer",
-            "5 years",
-            "Internal"
-          ],
-          [
-            "FINRA Rule 3220 Gifts",
-            "$100/person/year max",
-            "N/A",
-            "Log all gifts",
-            "Internal"
-          ],
-          [
-            "Rule 2165 Temp Hold (disbursement OR transaction)",
-            "Reasonable belief of exploitation of specified adult",
-            "Up to 15 business days; +10 internal = 25; +30 if reported to regulator/court = 55 total",
-            "Document",
-            "Internal + notify trusted contact"
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "CTR \u2014 Critical Facts",
-      "type": "bullets",
       "items": [
-        "CASH only \u2014 NOT checks, NOT wires (wires have separate $3,000 recordkeeping rule)",
-        "Aggregates multiple cash transactions same day, same customer",
-        "Need not be U.S. dollars",
-        "Penalties: up to $500,000 fine + 10 years prison",
-        "Filed by BD; goes to FinCEN (Treasury bureau, not DOJ)"
+        {
+          "Report": "CTR (FinCEN Form 112)",
+          "Trigger": "Cash in/out > $10,000 single day (aggregated, same customer)",
+          "Deadline": "File within 15 days of transaction",
+          "Applies To": "Currency only \u2014 NOT checks/wires"
+        },
+        {
+          "Report": "SAR (FinCEN Form 111)",
+          "Trigger": "Suspicious activity \u2265 $5,000 (where suspect identified or identifiable)",
+          "Deadline": "30 days from detection; +30 days (60 total) if no suspect ID'd",
+          "Applies To": "Any suspicious txn; confidential \u2014 do NOT tell customer"
+        },
+        {
+          "Report": "SAR \u2014 no-suspect extension",
+          "Trigger": "Cannot identify suspect",
+          "Deadline": "Up to 60 days total",
+          "Applies To": "Still must file"
+        },
+        {
+          "Report": "FBAR",
+          "Trigger": "Foreign accounts aggregate > $10,000",
+          "Deadline": "Annual (April 15)",
+          "Applies To": "U.S. persons"
+        },
+        {
+          "Report": "Form 8300",
+          "Trigger": "Trade/business receives > $10,000 cash",
+          "Deadline": "15 days",
+          "Applies To": "Non-financial trades/businesses"
+        }
       ]
     },
     {
-      "heading": "SAR \u2014 Four Triggers ($5,000+)",
+      "heading": "Structuring (Smurfing)",
       "type": "bullets",
       "items": [
-        "1) Funds derived from illegal activity",
-        "2) Designed to evade Bank Secrecy Act (e.g., structuring)",
-        "3) No business or apparent lawful purpose",
-        "4) Use of firm to facilitate criminal activity",
-        "CONFIDENTIAL \u2014 never tell the subject; if subpoenaed, refuse & notify FinCEN",
-        "NO dollar minimum for suspected terrorist financing"
+        "Structuring = breaking cash into amounts < $10,000 to evade CTR (e.g., 3 deposits of $4,000 same day).",
+        "ILLEGAL regardless of source of funds \u2014 triggers SAR.",
+        "Aggregation rule: multiple same-day cash txns by/for same person are summed for CTR."
       ]
     },
     {
-      "heading": "Three Stages of Money Laundering (P-L-I)",
-      "type": "table",
-      "items": {
-        "columns": [
-          "Stage",
-          "What Happens",
-          "Key Point"
-        ],
-        "rows": [
-          [
-            "1. Placement",
-            "Dirty cash enters financial system (deposits, buying chips, etc.)",
-            "MOST DETECTABLE stage"
-          ],
-          [
-            "2. Layering",
-            "Series of complex transactions to disguise source",
-            "Trades make no business sense"
-          ],
-          [
-            "3. Integration",
-            "Funds re-enter economy looking legitimate",
-            "Front companies, real estate, etc."
-          ]
-        ]
-      }
-    },
-    {
-      "heading": "Structuring (ILLEGAL)",
+      "heading": "AML Program \u2014 FINRA Rule 3310 (5 Required Elements)",
       "type": "bullets",
       "items": [
-        "Breaking cash deposits into amounts under $10,000 to evade CTR filing",
-        "Example: 25 deposits of $500 to pay for $12,500 trade = structuring",
-        "Triggers SAR filing; criminal offense even if underlying funds are legal"
+        "1. Written policies & procedures reasonably designed to detect/report suspicious activity.",
+        "2. Designated AML Compliance Officer (AMLCO) \u2014 name reported to FINRA.",
+        "3. Ongoing employee training.",
+        "4. Independent annual testing (every calendar year; every 2 yrs if no customer-facing biz).",
+        "5. CIP \u2014 Customer Identification Program (USA PATRIOT Act \u00a7326): name, DOB, address, TIN/SSN before account opens.",
+        "USA PATRIOT Act \u00a7352 \u2014 required AML program; \u00a7314(a) law-enforcement info requests; \u00a7314(b) voluntary info-sharing between FIs."
       ]
     },
     {
-      "heading": "OFAC / SDN List",
+      "heading": "OFAC & SDN List",
       "type": "bullets",
       "items": [
-        "Office of Foreign Assets Control \u2014 division of TREASURY (not State, not DOJ)",
-        "SDN = Specially Designated Nationals \u2014 terrorists, narco-traffickers, sanctioned individuals/countries",
-        "All U.S. persons + entities PROHIBITED from doing business with anyone on SDN list",
-        "Check at account opening AND periodically thereafter",
-        "Assets of SDN persons are BLOCKED/FROZEN"
-      ]
-    },
-    {
-      "heading": "AML Program \u2014 Required Elements (Rule 3310)",
-      "type": "bullets",
-      "items": [
-        "Designated AML Compliance Officer (need NOT be a registered principal)",
-        "Written policies & procedures",
-        "Ongoing employee training",
-        "Independent annual testing",
-        "Customer Identification Program (CIP) \u2014 verify ID before opening account"
+        "OFAC = Office of Foreign Assets Control (U.S. Treasury) \u2014 administers economic sanctions.",
+        "SDN List = Specially Designated Nationals & Blocked Persons (terrorists, narco-traffickers, sanctioned regimes).",
+        "Firm must screen new and existing customers against SDN list.",
+        "Match \u2192 BLOCK/FREEZE assets immediately, REJECT transaction, report to OFAC (not just SAR).",
+        "Strict liability \u2014 no knowledge requirement; penalties even for inadvertent violations."
       ]
     },
     {
       "heading": "FINRA Rule 3220 \u2014 Gifts & Gratuities",
       "type": "rule",
       "items": [
-        "$100 max per person, per year, to employees of other member firms",
-        "Applies to business-related gifts; personal gifts (weddings, etc.) generally excluded",
-        "Must log all gifts given/received",
-        "Promotional items <$50 with firm logo typically excluded",
-        "Bereavement gifts excluded",
-        "Does NOT cap business entertainment (meals/events) if rep is present and reasonable"
+        "Limit: $100 per person per year (aggregate) for gifts in relation to the business of the recipient's employer.",
+        "Excluded: personal gifts (e.g., wedding), de minimis promotional items (logo pens, etc.), business entertainment (must be reasonable & both parties present).",
+        "Records of all gifts must be retained.",
+        "Related: Rule 3240 (borrowing/lending w/ customers \u2014 generally prohibited), Rule 3210 (outside accounts), Rule 3250 (no conditions on non-cash comp)."
       ]
     },
     {
-      "heading": "FinCEN at a Glance",
+      "heading": "FinCEN & Regulators \u2014 Quick Map",
+      "type": "table",
+      "items": [
+        {
+          "Body": "FinCEN",
+          "Role": "Receives CTRs & SARs; admin of BSA"
+        },
+        {
+          "Body": "OFAC",
+          "Role": "Sanctions / SDN list / blocking"
+        },
+        {
+          "Body": "Treasury",
+          "Role": "Parent of FinCEN & OFAC"
+        },
+        {
+          "Body": "FINRA",
+          "Role": "Enforces Rule 3310 AML program"
+        },
+        {
+          "Body": "SEC",
+          "Role": "Examines BD AML compliance"
+        }
+      ]
+    },
+    {
+      "heading": "Recordkeeping (cross-ref)",
       "type": "bullets",
       "items": [
-        "Bureau of U.S. TREASURY (not DOJ, not SEC)",
-        "Intelligence agency \u2014 NO law-enforcement arm",
-        "Collects CTRs, SARs to combat money laundering & terrorist financing"
+        "SARs and supporting docs: retain 5 years from filing (BSA).",
+        "CTRs: retain 5 years.",
+        "AML records generally under 17 CFR 240.17a-4 retention regimes."
       ]
     }
   ],
   "common_traps": [
-    "CTR is CASH ONLY \u2014 checks and wire transfers do NOT trigger a CTR (wires have their own $3,000 recordkeeping rule).",
-    "Mixing up deadlines: CTR = 15 days, SAR = 30 days. Don't flip them.",
-    "SAR has NO dollar minimum for suspected terrorist financing \u2014 the $5,000 threshold does not apply.",
-    "OFAC is part of TREASURY, not Justice or State Department. FinCEN is also Treasury.",
-    "PLACEMENT (not layering) is the stage most susceptible to detection \u2014 cash entering the system is the easiest red flag.",
-    "Rule 3220 gift limit is $100 per person PER YEAR \u2014 not per gift, not per occasion."
+    "CTR is CASH only and > $10,000 \u2014 wires, checks, and ACH do NOT trigger a CTR (they may trigger a SAR).",
+    "SAR threshold is $5,000 (not $10,000) and the filing deadline is 30 days (60 if no suspect). Never tip off the customer \u2014 disclosure of a SAR is a federal crime.",
+    "Stages order: PLACEMENT \u2192 LAYERING \u2192 INTEGRATION. Exam often lists 'structuring' as a stage \u2014 structuring is a TECHNIQUE used in placement, not one of the three stages.",
+    "Rule 3220 gift limit is $100/person/YEAR aggregate \u2014 not per gift. Business entertainment (meals, events with rep present) is NOT counted toward the $100 cap.",
+    "OFAC hit = BLOCK/FREEZE and report to OFAC; it is separate from (and in addition to) any SAR filing. Strict liability \u2014 intent doesn't matter."
   ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
   "tokens": {
-    "input": 20616,
-    "output": 2150
+    "input": 14286,
+    "output": 2356
   },
-  "cost_usd": 0.4705
+  "cost_usd": 0.391
 }

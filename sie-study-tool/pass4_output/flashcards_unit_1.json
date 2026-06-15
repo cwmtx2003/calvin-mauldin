@@ -1,0 +1,302 @@
+{
+  "unit": 1,
+  "unit_name": "Primary & Secondary Markets",
+  "jf": "km",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Primary market",
+      "back": "The market in which issuers sell newly created securities to investors and receive the proceeds. Includes IPOs, follow-on offerings, and private placements.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "definition",
+      "front": "Secondary market",
+      "back": "The market in which previously issued securities are traded among investors. Issuer receives no proceeds. Includes exchanges, OTC, third market, and fourth market.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between an IPO, a follow-on (primary) offering, and a secondary offering?",
+      "back": "IPO: issuer's first public sale of stock. Follow-on/primary offering: issuer sells additional newly issued shares after the IPO (proceeds go to issuer). Secondary offering: existing large shareholders (e.g., insiders) sell their shares to the public (proceeds go to selling shareholders, not the issuer).",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish a firm commitment from a best efforts underwriting.",
+      "back": "Firm commitment: underwriters buy the entire issue from the issuer and resell to the public, bearing the risk of unsold shares (acting as principal). Best efforts: underwriters act as agent and sell only what they can; unsold shares are returned to the issuer. Variants: all-or-none (AON) and mini-max.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is a shelf registration and what is its purpose?",
+      "back": "An SEC registration (Rule 415) that allows a seasoned issuer to register securities and then sell them in tranches over up to three years (or two years for unseasoned) without re-registering each time. Purpose: allows issuers to time market conditions and access capital quickly.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Under the Securities Act of 1933, what is the default effective date of a registration statement, and how can it be accelerated?",
+      "back": "Default: the 20th day after filing (the 'cooling-off period'). The SEC may declare the registration effective earlier based on the adequacy of disclosure and the public interest.",
+      "citation": "Securities Act of 1933 \u00a78",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "During the cooling-off period, what activities are permitted and prohibited?",
+      "back": "Permitted: filing the registration statement, distributing a preliminary (red herring) prospectus, tombstone ads, and gathering non-binding indications of interest. Prohibited: selling the security, accepting payment, advertising beyond a tombstone, and using sales literature.",
+      "citation": "Securities Act of 1933 \u00a78",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Under Section 23 of the Securities Act of 1933, what may NOT be implied from SEC effectiveness of a registration statement?",
+      "back": "It must not be represented that the SEC has approved or passed on the merits of the security or has determined the registration statement is true and accurate. Effectiveness only means filing requirements were met.",
+      "citation": "Securities Act of 1933 \u00a723",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is a preliminary prospectus (red herring), and what information does it omit?",
+      "back": "A prospectus used during the cooling-off period to solicit indications of interest. It omits the final public offering price (POP) and the effective date. It must clearly state that the registration is not yet effective and that the document is not an offer to sell.",
+      "citation": "Securities Act of 1933 \u00a710",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "When must a final prospectus be delivered for securities sold in a registered offering?",
+      "back": "A final (statutory) prospectus must be delivered no later than confirmation of the sale. Section 10 requires the prospectus to contain the information in the registration statement and be current (information cannot be more than 16 months old if used more than 9 months after the effective date).",
+      "citation": "Securities Act of 1933 \u00a710",
+      "unit": 1
+    },
+    {
+      "type": "definition",
+      "front": "Free writing prospectus (FWP)",
+      "back": "Any written offer made after the registration statement is filed that does not meet the statutory prospectus requirements of Section 10(a). Permitted post-filing under Rule 164/433 if filed with the SEC and accompanied/preceded by the statutory prospectus as required.",
+      "citation": "17 CFR 230.164",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Under Rule 215/501, who qualifies as an accredited investor on the basis of income or net worth?",
+      "back": "A natural person with: (1) individual income > $200,000 (or $300,000 joint) in each of the two most recent years with expectation of the same in the current year; OR (2) net worth > $1,000,000 individually or jointly with spouse, excluding primary residence. Also includes holders of Series 7, 65, or 82 licenses, and knowledgeable employees of private funds.",
+      "citation": "17 CFR 230.215",
+      "unit": 1
+    },
+    {
+      "type": "scenario",
+      "front": "An issuer offers securities only to residents of one state, with the issuer doing business primarily in that state. Which exemption may apply, and what is the key risk if a resident resells out of state shortly after purchase?",
+      "back": "Rule 147 (intrastate offering) exemption. Resales must be limited to in-state residents for six months after the issuer's last sale; an early out-of-state resale can destroy the exemption for the entire offering.",
+      "citation": "17 CFR 230.147",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What does Rule 144 govern, and what are its key limits for affiliates?",
+      "back": "Rule 144 provides a safe harbor for resales of restricted (and affiliate-held) securities so the seller is not deemed an underwriter. Affiliates must: hold restricted shares 6 months (reporting issuer) or 1 year (non-reporting); meet volume limits (greater of 1% of outstanding shares or average weekly trading volume over preceding 4 weeks); file Form 144 (electronically on EDGAR) when sales exceed 5,000 shares or $50,000 in any 3-month period; and sell via broker's transactions.",
+      "citation": "17 CFR 230.144",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What does Rule 144A permit?",
+      "back": "Resales of restricted securities to Qualified Institutional Buyers (QIBs) \u2014 institutions that own and invest at least $100 million in securities \u2014 without registration. Provides liquidity for privately placed securities among large institutions.",
+      "citation": "17 CFR 230.144A",
+      "unit": 1
+    },
+    {
+      "type": "definition",
+      "front": "Exchange (national securities exchange)",
+      "back": "Per Section 3(a)(1) of the Exchange Act: any organization or facility that constitutes, maintains, or provides a marketplace for bringing together purchasers and sellers of securities, or performing functions commonly performed by a stock exchange. Must register with the SEC under Section 6.",
+      "citation": "Securities Exchange Act of 1934 \u00a73(a)",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish the third market from the fourth market.",
+      "back": "Third market: OTC trading of exchange-listed securities (e.g., a market maker trading NYSE-listed stock off-exchange). Fourth market: direct institution-to-institution trading of securities without a broker-dealer intermediary, typically via ECNs/ATSs.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Under Section 12 of the Exchange Act, when must an issuer register a class of securities?",
+      "back": "When the security is to be listed on a national securities exchange, or when the issuer meets the size/holder thresholds for OTC reporting issuers. Registration requires disclosure of issuer organization, financials (audited balance sheets and P&L), officers/directors, and material contracts.",
+      "citation": "Securities Exchange Act of 1934 \u00a712",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the regular-way settlement period for corporate stocks and bonds, and for U.S. Treasury securities?",
+      "back": "Corporate stocks and bonds (and municipal securities): T+1 (effective 5/28/2024 under amended Rule 15c6-1). U.S. Treasury securities and options: T+1 (next business day). When-issued: settles on issuance.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Under T+1 settlement, when is the ex-dividend date for a regular-way trade?",
+      "back": "The ex-dividend date is the same business day as the record date. (Under the prior T+2 regime it was one business day before record date \u2014 that is now stale.)",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What role does a syndicate's managing underwriter (book-running manager) play in a public offering?",
+      "back": "Negotiates the underwriting agreement with the issuer, forms the syndicate and selling group, allocates shares, manages the book of indications of interest, sets the final offering price, and conducts stabilization activities. Receives a manager's fee in addition to syndicate and selling concessions.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "definition",
+      "front": "Municipal advisor",
+      "back": "A person (other than the municipal issuer or its employees) who provides advice to a municipal entity on the issuance of municipal securities or on municipal financial products. Must register with the SEC and MSRB and owes a fiduciary duty to municipal entity clients.",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What is the purpose of an Official Statement in a municipal offering?",
+      "back": "The official statement is the disclosure document for a new issue of municipal securities (analogous to a prospectus). It discloses material information about the issuer, the security, the use of proceeds, and risks. Municipal securities are exempt from Securities Act registration, but MSRB Rule G-32 requires underwriters to deliver the official statement to customers.",
+      "citation": "Rule G-32",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "FINRA Rule 5250 prohibits what conduct in connection with offerings?",
+      "back": "Prohibits members from accepting payments (other than normal underwriting compensation) from an issuer or its affiliates for publishing a quotation, acting as a market maker, or submitting an application to make a market in the issuer's securities. Designed to preserve market maker independence.",
+      "citation": "Rule 5250",
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "Which types of issuers/securities are exempt from Securities Act registration?",
+      "back": "Exempt issuers/securities include: U.S. government and agency securities; municipal securities; securities of non-profit organizations; commercial paper and bankers' acceptances with maturity \u2264 270 days; securities of small business investment companies; and securities of domestic banks (not bank holding companies).",
+      "citation": null,
+      "unit": 1
+    },
+    {
+      "type": "qa",
+      "front": "What are the dollar limits for Regulation A Tier 1 and Tier 2 offerings?",
+      "back": "Tier 1: up to $20 million in a 12-month period. Tier 2: up to $75 million in a 12-month period. Tier 2 requires audited financials and ongoing reporting but preempts state blue-sky review.",
+      "citation": null,
+      "unit": 1
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12377,
+    "output": 3958
+  },
+  "cost_usd": 0.4825
+}

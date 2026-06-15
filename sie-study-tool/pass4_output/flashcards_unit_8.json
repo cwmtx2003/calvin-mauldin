@@ -1,0 +1,559 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "jf": "tc",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Current Yield (for a stock)",
+      "back": "Annual dividend income divided by the current market price of the stock. Formula: CY = Annual Dividend / Current Market Price.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "definition",
+      "front": "Current Yield (for a bond)",
+      "back": "Annual coupon interest divided by the bond's current market price. Formula: CY = Annual Coupon / Current Market Price. It ignores any capital gain or loss at maturity.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "scenario",
+      "front": "A bond pays a 6% coupon on $1,000 par and is trading at $1,200. What is its current yield?",
+      "back": "Annual coupon = 6% \u00d7 $1,000 = $60. Current yield = $60 / $1,200 = 5.0%.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "scenario",
+      "front": "An investor buys a stock at $40 that pays a $2 annual dividend. The stock is now trading at $50. What is the current yield?",
+      "back": "Current yield uses the CURRENT market price, not cost basis. CY = $2 / $50 = 4.0%.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "Rank these yields for a bond trading at a DISCOUNT, from lowest to highest: nominal (coupon) yield, current yield, yield to maturity, yield to call.",
+      "back": "Nominal < Current < YTM < YTC. For a premium bond, the order reverses: YTC < YTM < Current < Nominal. (Memory aid: 'discount bonds climb, premium bonds fall.')",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "definition",
+      "front": "Yield to Maturity (YTM)",
+      "back": "The total annualized return earned if a bond is held to maturity, factoring in coupon income, reinvestment at YTM, and any gain (discount) or loss (premium) between the purchase price and par value received at maturity.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "definition",
+      "front": "Yield to Call (YTC)",
+      "back": "The total annualized return earned if a callable bond is held until its call date, factoring in coupon income and the difference between purchase price and the call price. For a premium bond, YTC is the most conservative (lowest) yield.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "definition",
+      "front": "Basis Point",
+      "back": "1/100 of 1 percent (0.01%). 100 basis points = 1.00%. Used to describe yield changes (e.g., a bond yield moving from 4.50% to 4.75% rose 25 basis points).",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "definition",
+      "front": "Total Return",
+      "back": "The sum of all income (interest/dividends) plus realized and unrealized capital gains/losses, expressed as a percentage of the original cost basis. Formula: Total Return = (Income + Capital Gain) / Cost Basis.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "scenario",
+      "front": "An investor buys 100 shares at $50, receives $2/share in dividends during the year, and sells the shares at $55. What is the total return?",
+      "back": "Income = $200; Capital gain = $500; Cost basis = $5,000. Total return = ($200 + $500) / $5,000 = 14%.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is the difference between a realized and an unrealized capital gain?",
+      "back": "A realized gain occurs when an appreciated security is SOLD \u2014 it is a taxable event. An unrealized (paper) gain reflects appreciation in a security still held \u2014 it is NOT a taxable event.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What holding period distinguishes a long-term capital gain from a short-term capital gain?",
+      "back": "A long-term capital gain requires a holding period of MORE THAN ONE YEAR (one year + 1 day). Anything held one year or less produces a short-term capital gain, which is taxed at ordinary income tax rates.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What are the current federal long-term capital gains tax brackets?",
+      "back": "Long-term capital gains are taxed at 0%, 15%, or 20%, depending on the taxpayer's taxable income. High-income taxpayers may also owe an additional 3.8% Net Investment Income Tax (NIIT) on investment income above certain MAGI thresholds.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How are short-term capital gains taxed at the federal level?",
+      "back": "Short-term capital gains (assets held one year or less) are taxed at the investor's ordinary income tax rate \u2014 the same rates that apply to wages and interest income.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is a qualified dividend, and how is it taxed?",
+      "back": "A qualified dividend is a dividend from a U.S. corporation (or qualified foreign corporation) on which the investor has held the underlying stock more than 60 days during the 121-day period surrounding the ex-dividend date. Qualified dividends are taxed at the favorable long-term capital gains rates (0%/15%/20%).",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How are non-qualified (ordinary) dividends taxed?",
+      "back": "Non-qualified dividends \u2014 including most REIT distributions and dividends on stock not held long enough to meet the holding-period requirement \u2014 are taxed at the investor's ordinary income tax rates.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from corporate bonds taxed?",
+      "back": "Corporate bond interest is fully taxable as ordinary income at the federal, state, and local levels.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from U.S. Treasury securities taxed?",
+      "back": "Treasury interest is taxable at the federal level but EXEMPT from state and local income taxes.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How is interest from municipal bonds taxed?",
+      "back": "Interest from general-purpose municipal bonds is EXEMPT from federal income tax. It is also exempt from state and local tax if the investor resides in the issuing state (triple tax-exempt). Capital gains on munis remain taxable.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "scenario",
+      "front": "An investor in the 32% federal tax bracket is comparing a 4% municipal bond to a corporate bond. What corporate yield is equivalent (taxable-equivalent yield)?",
+      "back": "Taxable-Equivalent Yield = Muni Yield / (1 \u2212 Tax Bracket) = 4% / (1 \u2212 0.32) = 4% / 0.68 \u2248 5.88%. A corporate bond must yield more than 5.88% to beat the muni after taxes.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is the Wash Sale Rule?",
+      "back": "If an investor sells a security at a LOSS and buys the same or a substantially identical security within 30 days BEFORE or 30 days AFTER the sale (a 61-day window), the loss is DISALLOWED for tax purposes. The disallowed loss is added to the cost basis of the replacement security.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "scenario",
+      "front": "An investor sells 100 shares of XYZ at a $1,000 loss on March 1 and repurchases 100 shares of XYZ on March 20. What is the tax consequence?",
+      "back": "The repurchase is within 30 days, triggering the wash sale rule. The $1,000 loss is DISALLOWED in the current year. The $1,000 disallowed loss is added to the cost basis of the new XYZ shares and the holding period of the original shares carries over.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is cost basis, and why does it matter?",
+      "back": "Cost basis is the original purchase price of a security plus commissions/acquisition costs. It is subtracted from sale proceeds to determine the taxable capital gain or loss. Brokerage firms are required to report cost basis for covered securities to the IRS and the customer.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How much in net capital losses can an individual deduct against ordinary income each year, and what happens to the excess?",
+      "back": "An individual may deduct up to $3,000 of net capital losses against ordinary income per year ($1,500 if married filing separately). Any remaining unused loss is carried forward indefinitely to offset future capital gains or ordinary income (subject to the same annual cap).",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "What is a return of capital, and how is it taxed?",
+      "back": "A return of capital is a distribution that represents a return of the investor's own invested principal rather than income or earnings. It is NOT immediately taxable; instead, it REDUCES the investor's cost basis. Tax is owed when the security is sold (or when basis reaches zero).",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How does a stock split affect cost basis per share?",
+      "back": "A stock split increases the number of shares and proportionally decreases the cost basis per share, while keeping the investor's TOTAL cost basis unchanged. Example: 100 shares at $60 basis = $6,000 total. After a 2-for-1 split: 200 shares at $30 basis = $6,000 total. No taxable event.",
+      "citation": null,
+      "unit": 8
+    },
+    {
+      "type": "qa",
+      "front": "How is a stock dividend treated for tax purposes?",
+      "back": "A stock dividend is NOT immediately taxable. The investor's total cost basis is spread over the increased number of shares, lowering the per-share basis. Tax is recognized only when the shares are eventually sold.",
+      "citation": null,
+      "unit": 8
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13166,
+    "output": 3504
+  },
+  "cost_usd": 0.4603
+}

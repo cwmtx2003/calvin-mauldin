@@ -1,0 +1,313 @@
+{
+  "unit": 1,
+  "unit_name": "Primary & Secondary Markets",
+  "jf": "km",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "An issuer files a registration statement with the SEC on March 1. No amendments are filed and the SEC takes no action to accelerate or delay the effective date. Under Section 8(a) of the Securities Act of 1933, on what day after filing does the registration statement become effective?",
+      "choices": [
+        "The 10th day after filing",
+        "The 15th day after filing",
+        "The 20th day after filing",
+        "The 30th day after filing"
+      ],
+      "answer": 2,
+      "explanation": "Section 8(a) of the Securities Act of 1933 states that the effective date of a registration statement shall be the twentieth day after filing, unless the SEC determines an earlier date. Counting: March 1 + 20 days = effective on day 20. The 10-day period in Section 8(b) relates to SEC notice of an incomplete filing, not the effective date.",
+      "citations": [
+        "Securities Act of 1933 \u00a78"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An IPO is structured as a firm-commitment underwriting. The issuer sells 5,000,000 shares to the underwriting syndicate at a price of $18.40 per share, and the syndicate reoffers them to the public at $20.00 per share. What is the total underwriting spread (gross spread) earned by the syndicate?",
+      "choices": [
+        "$1,600,000",
+        "$8,000,000",
+        "$9,200,000",
+        "$100,000,000"
+      ],
+      "answer": 1,
+      "explanation": "The underwriting spread is the difference between the public offering price and the proceeds to the issuer, multiplied by the number of shares: ($20.00 \u2212 $18.40) \u00d7 5,000,000 = $1.60 \u00d7 5,000,000 = $8,000,000. $9,200,000 is the issuer's proceeds per share times shares incorrectly used; $100,000,000 is gross POP proceeds.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A prospectus relating to a registered security was declared effective on January 1. Under Section 10(a)(3) of the Securities Act of 1933, if the prospectus is used more than nine months after the effective date, the information in it must be as of a date no more than how many months prior to its use?",
+      "choices": [
+        "9 months",
+        "12 months",
+        "16 months",
+        "20 months"
+      ],
+      "answer": 2,
+      "explanation": "Section 10(a)(3) provides that when a prospectus is used more than nine months after the effective date of the registration statement, the information must be as of a date not more than sixteen months prior to such use. Nine months is the trigger period, not the look-back limit.",
+      "citations": [
+        "Securities Act of 1933 \u00a710"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor is single and has earned income of $210,000 in each of the last two years and reasonably expects the same in the current year. Under the income test in Rule 215, what is the minimum individual income threshold to qualify as an accredited investor on the basis of income alone?",
+      "choices": [
+        "$100,000",
+        "$200,000",
+        "$300,000",
+        "$1,000,000"
+      ],
+      "answer": 1,
+      "explanation": "Under Rule 215, an individual qualifies as accredited under the income test with individual income in excess of $200,000 in each of the two most recent years (or $300,000 jointly with a spouse), with a reasonable expectation of the same level in the current year. The investor's $210,000 income exceeds the $200,000 individual threshold. $300,000 is the joint threshold; $1,000,000 is the net-worth threshold.",
+      "citations": [
+        "17 CFR 230.215"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A married couple is determining whether they qualify as accredited investors based on net worth. They own a primary residence with a fair market value of $600,000 and an outstanding mortgage of $400,000. Excluding their primary residence (and related mortgage), they have other assets of $900,000 and other liabilities of $50,000. What is their net worth for purposes of the accredited-investor test under Rule 215?",
+      "choices": [
+        "$850,000",
+        "$1,050,000",
+        "$1,450,000",
+        "$1,500,000"
+      ],
+      "answer": 0,
+      "explanation": "Under Rule 215, the value of the primary residence is excluded from assets, and indebtedness secured by the primary residence up to its fair market value is also excluded from liabilities. Net worth = other assets ($900,000) \u2212 other liabilities ($50,000) = $850,000. Because this is below $1,000,000, the couple does not qualify on net worth. $1,050,000 incorrectly includes home equity.",
+      "citations": [
+        "17 CFR 230.215"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A best-efforts offering is being conducted for 2,000,000 shares at $10 per share. The underwriters sell 1,400,000 shares to the public. Under a best-efforts arrangement, what is the dollar amount of gross proceeds raised by the issuer from the public (before any selling concession)?",
+      "choices": [
+        "$6,000,000",
+        "$14,000,000",
+        "$20,000,000",
+        "$0 \u2014 the offering is cancelled"
+      ],
+      "answer": 1,
+      "explanation": "In a best-efforts underwriting, the underwriter acts as an agent and the issuer receives proceeds only for the shares actually sold; unsold shares are returned. Gross proceeds = 1,400,000 \u00d7 $10 = $14,000,000. Unlike an all-or-none offering, a best-efforts deal is not automatically cancelled if it is undersubscribed.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An affiliate of an issuer wants to sell restricted stock under Rule 144. The issuer has 8,000,000 shares of common stock outstanding, and the average weekly reported trading volume during the four calendar weeks preceding the filing of Form 144 was 60,000 shares. Under the Rule 144 volume limitation, what is the maximum number of shares the affiliate may sell during a 90-day period?",
+      "choices": [
+        "60,000 shares",
+        "80,000 shares",
+        "200,000 shares",
+        "480,000 shares"
+      ],
+      "answer": 1,
+      "explanation": "Rule 144 limits an affiliate's sales in any 90-day period to the greater of (a) 1% of the outstanding shares of the class, or (b) the average weekly reported trading volume during the preceding four weeks. 1% of 8,000,000 = 80,000 shares; average weekly volume = 60,000 shares. The greater is 80,000 shares.",
+      "citations": [
+        "17 CFR 230.144"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A corporation conducts a follow-on offering. It registers 3,000,000 newly issued shares (primary) and 1,000,000 existing shares being sold by a selling shareholder (secondary). The public offering price is $25 per share. How much in gross proceeds will the issuer itself receive from this combined offering (before underwriting discounts)?",
+      "choices": [
+        "$25,000,000",
+        "$75,000,000",
+        "$100,000,000",
+        "$0 \u2014 secondary offerings do not raise capital for issuers"
+      ],
+      "answer": 1,
+      "explanation": "The issuer only receives proceeds from the primary (newly issued) portion. Proceeds to issuer = 3,000,000 \u00d7 $25 = $75,000,000. The 1,000,000 secondary shares are sold by an existing shareholder, who receives those proceeds, not the issuer. $100,000,000 is the total deal size; $25,000,000 is the selling-shareholder proceeds.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "Under Rule 147 (intrastate offers and sales), an issuer must meet several \"doing business\" thresholds in the state. One of those tests requires that at least what percentage of the issuer's consolidated gross revenues be derived from operations within the state (or a similar in-state nexus)?",
+      "choices": [
+        "50%",
+        "75%",
+        "80%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": "Rule 147 requires, among other in-state-business tests, that at least 80% of the issuer's consolidated gross revenues be derived from operations within the state (or from real property or rendering of services within the state). 50% and 75% are insufficient under the rule; 100% is not required.",
+      "citations": [
+        "17 CFR 230.147"
+      ],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A municipal underwriter is awarded a $50,000,000 new-issue bond deal. The takedown is $7.50 per $1,000 bond and the management fee is $1.00 per $1,000 bond. What is the total gross spread (in dollars) on the offering, assuming bonds are sold in $1,000 denominations?",
+      "choices": [
+        "$50,000",
+        "$375,000",
+        "$425,000",
+        "$500,000"
+      ],
+      "answer": 2,
+      "explanation": "The gross spread per bond = takedown + management fee = $7.50 + $1.00 = $8.50 per $1,000 bond. Number of bonds = $50,000,000 / $1,000 = 50,000 bonds. Total spread = 50,000 \u00d7 $8.50 = $425,000. $375,000 omits the management fee; $50,000 is only the management fee total.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor purchases 500 shares of common stock at $42 per share in a regular-way trade executed on Monday, June 3 (no holidays in the week). On what date must the investor settle (pay for) the trade under current SEC settlement rules?",
+      "choices": [
+        "Monday, June 3 (trade date)",
+        "Tuesday, June 4",
+        "Wednesday, June 5",
+        "Thursday, June 6"
+      ],
+      "answer": 1,
+      "explanation": "Effective May 28, 2024, regular-way settlement for corporate equity trades is T+1 under SEC Rule 15c6-1, as amended. A trade executed Monday June 3 settles on Tuesday June 4. Wednesday June 5 (T+2) reflects the prior, now-outdated standard.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An issuer plans a Regulation A offering. Under the current rules, what is the maximum aggregate amount of securities that may be offered and sold under Regulation A Tier 2 during any 12-month period?",
+      "choices": [
+        "$5 million",
+        "$20 million",
+        "$50 million",
+        "$75 million"
+      ],
+      "answer": 3,
+      "explanation": "Under Regulation A, Tier 1 permits offerings up to $20 million in any 12-month period, and Tier 2 permits offerings up to $75 million in any 12-month period. $20 million is the Tier 1 cap, not Tier 2.",
+      "citations": [],
+      "unit": 1,
+      "jf": "km",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12406,
+    "output": 3546
+  },
+  "cost_usd": 0.452
+}

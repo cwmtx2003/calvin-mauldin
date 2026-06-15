@@ -1,0 +1,575 @@
+{
+  "unit": 11,
+  "unit_name": "Regulatory Issues & Ethics",
+  "jf": "tc",
+  "mode": "standard",
+  "questions": [
+    {
+      "stem": "A bank teller notices that a customer made five separate cash deposits of $3,000 each over two days, apparently to avoid a reporting threshold. This activity is most characteristic of which stage of money laundering?",
+      "choices": [
+        "Layering",
+        "Integration",
+        "Placement through structuring",
+        "Smurfing into legitimate investments"
+      ],
+      "answer": 2,
+      "explanation": "Breaking up cash deposits into amounts below the $10,000 CTR threshold is structuring, a technique used during the placement stage to introduce illicit cash into the financial system. Layering involves moving funds among accounts to obscure their origin, which occurs after placement.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A broker-dealer must file a Currency Transaction Report (CTR) with FinCEN when a customer conducts cash transactions exceeding what amount in a single business day?",
+      "choices": [
+        "$3,000",
+        "$5,000",
+        "$10,000",
+        "$25,000"
+      ],
+      "answer": 2,
+      "explanation": "A CTR must be filed for cash transactions exceeding $10,000 (single or aggregated same-day). The $5,000 figure is the threshold associated with SAR filings, not CTRs.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 3310, every member firm's AML compliance program must, at a minimum, be tested:",
+      "choices": [
+        "Monthly by the firm's CCO",
+        "Independently, on a periodic basis",
+        "Quarterly by FINRA staff",
+        "Only when a suspicious activity is detected"
+      ],
+      "answer": 1,
+      "explanation": "FINRA Rule 3310 requires an independent test of the AML program on a periodic basis. FINRA does not directly perform the test, and testing is not contingent on detecting suspicious activity.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Which of the following best describes \"front running\"?",
+      "choices": [
+        "Executing a personal trade ahead of a known imminent customer block order",
+        "Buying a security at the open to drive up the closing price",
+        "Selling securities short without first locating shares to borrow",
+        "Recommending unsuitable trades to generate commissions"
+      ],
+      "answer": 0,
+      "explanation": "Front running is trading for one's own account based on knowledge of a pending customer block order that will likely move the market. The other choices describe marking the open/close, naked short selling, and churning/unsuitable recommendations, respectively.",
+      "citations": [
+        "Rule 5270"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under the Insider Trading and Securities Fraud Enforcement Act, the SEC may seek a civil penalty against a person who trades on material nonpublic information of up to:",
+      "choices": [
+        "One time the profit gained or loss avoided",
+        "Two times the profit gained or loss avoided",
+        "Three times the profit gained or loss avoided",
+        "Five times the profit gained or loss avoided"
+      ],
+      "answer": 2,
+      "explanation": "Section 21A authorizes a civil penalty of up to three times (treble) the profit gained or loss avoided as a result of the unlawful trading or communication.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a721A"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 5130, which of the following individuals would generally be considered a \"restricted person\" prohibited from purchasing a new equity issue at the public offering price?",
+      "choices": [
+        "A retired schoolteacher with no industry affiliation",
+        "A registered representative employed by a FINRA member firm",
+        "An accredited investor who is a doctor",
+        "A senior corporate executive of a non-financial public company"
+      ],
+      "answer": 1,
+      "explanation": "Rule 5130 defines restricted persons to include FINRA member firms and their associated persons (including registered representatives), among others. Retail customers without industry ties are not restricted simply because they are accredited or executives.",
+      "citations": [
+        "Rule 5130"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2165, after a member firm places an initial temporary hold on a disbursement based on a reasonable belief of financial exploitation of a specified adult, the hold may be extended internally for an additional period, for a total internal hold of up to:",
+      "choices": [
+        "10 business days",
+        "15 business days",
+        "25 business days",
+        "60 calendar days"
+      ],
+      "answer": 2,
+      "explanation": "Following the 2022 amendments, Rule 2165 permits an initial 15-business-day hold plus an additional 10 business days of internal extension, for a total of 25 business days. Further extension up to 55 business days is allowed only when the matter has been reported to a state regulator, agency, or court.",
+      "citations": [
+        "Rule 2165"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 4512, when opening a non-institutional account, the firm must make reasonable efforts to obtain the name and contact information of a:",
+      "choices": [
+        "Successor account owner",
+        "Trusted contact person",
+        "Designated beneficiary",
+        "Power of attorney holder"
+      ],
+      "answer": 1,
+      "explanation": "Rule 4512 requires firms to make reasonable efforts to obtain the name and contact information of a trusted contact person at account opening. A trusted contact is distinct from a beneficiary, POA holder, or successor owner.",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under TCPA cold-calling rules, an unsolicited telemarketing call to a prospective retail customer may only be made between which hours, measured in the called party's local time?",
+      "choices": [
+        "7 AM and 8 PM",
+        "8 AM and 9 PM",
+        "9 AM and 10 PM",
+        "8 AM and 10 PM"
+      ],
+      "answer": 1,
+      "explanation": "Cold calls may only be made between 8 AM and 9 PM in the called party's local time zone. The caller must also identify themselves, the firm, and the firm's phone number, and screen against the firm's DNC list and the National DNC Registry.",
+      "citations": [
+        "Rule 3230"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under FINRA Rule 2210, which classification applies to a written communication distributed to more than 25 retail investors within any 30-calendar-day period?",
+      "choices": [
+        "Correspondence",
+        "Institutional communication",
+        "Retail communication",
+        "Public appearance"
+      ],
+      "answer": 2,
+      "explanation": "A retail communication is any written communication distributed to more than 25 retail investors within a 30-day period. Correspondence is sent to 25 or fewer retail investors, and institutional communications are directed only to institutional investors.",
+      "citations": [
+        "Rule 2210"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "A customer's brokerage account has no activity during the most recent calendar quarter. How often must the firm send the customer an account statement?",
+      "choices": [
+        "Monthly",
+        "At least quarterly",
+        "Semiannually",
+        "Only upon written request"
+      ],
+      "answer": 1,
+      "explanation": "Account statements must be sent at least quarterly. Statements are sent monthly when there is account activity during the month, but quarterly remains the minimum frequency regardless of activity.",
+      "citations": [
+        "Rule 2231"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    },
+    {
+      "stem": "Under Regulation S-P, a broker-dealer must provide a customer with an initial privacy notice describing the firm's information-sharing practices:",
+      "choices": [
+        "Only if the customer requests it in writing",
+        "At the time the customer relationship is established",
+        "Within 30 days after the first transaction",
+        "Only when nonpublic information is shared with a third party"
+      ],
+      "answer": 1,
+      "explanation": "Regulation S-P requires delivery of an initial privacy notice at the time the customer relationship is established, and an annual notice thereafter. Delivery is not contingent on a customer request or on actual third-party sharing.",
+      "citations": [
+        "17 CFR 240.17a-4"
+      ],
+      "unit": 11,
+      "jf": "tc",
+      "mode": "standard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 14324,
+    "output": 2694
+  },
+  "cost_usd": 0.4169
+}

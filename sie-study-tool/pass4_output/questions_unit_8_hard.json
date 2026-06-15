@@ -1,0 +1,551 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "jf": "tc",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "An investor purchased 100 shares of XYZ common stock at $40 per share two years ago. During the most recent year, the investor received $200 in qualified dividends and sold the shares for $46 per share. Which of the following statements about this investor's tax treatment is LEAST accurate?",
+      "choices": [
+        "The $600 gain on the sale is treated as a long-term capital gain because the shares were held more than one year.",
+        "The $200 in qualified dividends is eligible for preferential long-term capital gains tax rates if the holding period requirement is met.",
+        "The $600 gain is taxed at the investor's ordinary income tax rate because dividends and gains are aggregated.",
+        "The investor's total return for the year includes both the realized capital gain and the dividend income."
+      ],
+      "answer": 2,
+      "explanation": "A gain on stock held more than one year is a long-term capital gain taxed at preferential 0/15/20% rates, not at ordinary income rates. Qualified dividends also receive preferential rates if the more-than-60-day holding period within the 121-day window around ex-date is met. The other statements correctly describe LTCG treatment, qualified dividend treatment, and total return.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer buys a 6% corporate bond at $1,050 that matures in 10 years. Which of the following statements about this bond's yields is MOST accurate?",
+      "choices": [
+        "The current yield is higher than the nominal yield, and the YTM is lower than the current yield.",
+        "The current yield is lower than the nominal yield, and the YTM is lower than the current yield.",
+        "The current yield is lower than the nominal yield, and the YTM is higher than the current yield.",
+        "The nominal yield, current yield, and YTM are all equal because the coupon is fixed."
+      ],
+      "answer": 1,
+      "explanation": "When a bond is purchased at a premium, the relationship is: Nominal > Current Yield > YTM > YTC. The $60 annual coupon divided by $1,050 produces a current yield below 6%, and YTM is further reduced because the premium is amortized over the life of the bond.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following would be classified as ordinary income for federal tax purposes EXCEPT:",
+      "choices": [
+        "Interest received on a corporate bond.",
+        "A non-qualified dividend from a REIT.",
+        "Gain on stock held 14 months and then sold at a profit.",
+        "Interest received on a certificate of deposit."
+      ],
+      "answer": 2,
+      "explanation": "Gain on stock held more than one year is a long-term capital gain, taxed at preferential rates \u2014 not as ordinary income. Corporate bond interest, non-qualified dividends, and CD interest are all taxed at ordinary income rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor sells 200 shares of ABC at a $4,000 loss on October 1. On October 20 of the same year, she repurchases 200 shares of ABC. Which statement is MOST accurate?",
+      "choices": [
+        "The loss is fully deductible because the repurchase occurred in the same tax year.",
+        "The $4,000 loss is disallowed and is added to the cost basis of the replacement shares.",
+        "The $4,000 loss is disallowed permanently with no basis adjustment.",
+        "The loss is allowed because the wash sale rule applies only to gains, not losses."
+      ],
+      "answer": 1,
+      "explanation": "Under the wash sale rule, purchasing substantially identical securities within 30 days before or after a loss sale disallows the loss. However, the disallowed loss is added to the cost basis of the replacement shares, preserving it for a future sale. It is not permanently lost.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about capital gains and losses is NOT correct?",
+      "choices": [
+        "Short-term capital gains are taxed at the investor's ordinary income tax rate.",
+        "To qualify for long-term capital gains treatment, the security must be held more than one year.",
+        "Capital losses can be used to offset capital gains without limitation, and excess losses are deductible against ordinary income subject to an annual limit.",
+        "A capital gain is recognized when an unrealized appreciation in a security is reported on the customer's account statement."
+      ],
+      "answer": 3,
+      "explanation": "Capital gains are recognized only upon sale (realization). Unrealized appreciation shown on a statement is not a taxable event. The other statements correctly describe STCG treatment, the more-than-one-year LTCG holding period, and the ability of losses to offset gains with an annual ordinary-income offset limit.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer's portfolio generated $3,000 of interest from a corporate bond, $1,500 of qualified dividends from common stock held 18 months, and a $5,000 gain from selling stock held 8 months. Which statement BEST characterizes the federal taxation of these items?",
+      "choices": [
+        "All three items are taxed at preferential long-term capital gains rates.",
+        "The corporate bond interest and the $5,000 gain are taxed as ordinary income; the qualified dividends receive preferential rates.",
+        "Only the corporate bond interest is taxed as ordinary income; both the qualified dividends and the $5,000 gain receive preferential rates.",
+        "All three items are taxed as ordinary income because they were earned in the same tax year."
+      ],
+      "answer": 1,
+      "explanation": "Corporate bond interest is ordinary income. The stock gain is short-term (held 8 months \u2014 not more than one year) and taxed at ordinary rates. Only the qualified dividends \u2014 held more than 60 days within the 121-day window \u2014 receive preferential rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about yield to maturity (YTM) is LEAST accurate?",
+      "choices": [
+        "YTM assumes the bond is held until maturity and all coupon payments are reinvested at the YTM rate.",
+        "For a bond purchased at a discount, YTM is greater than the current yield.",
+        "For a bond purchased at a premium, YTM is greater than the nominal yield.",
+        "YTM reflects both the annual coupon income and the gain or loss between the purchase price and par value."
+      ],
+      "answer": 2,
+      "explanation": "For a premium bond, YTM is LESS than the nominal yield, not greater, because the premium paid above par is amortized and reduces the effective yield. The other statements correctly describe YTM assumptions and the relationships at a discount.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor in the 32% ordinary income bracket and 15% long-term capital gains bracket is comparing two investments held over one year. Which combination would result in the HIGHEST after-tax return, all else equal?",
+      "choices": [
+        "$1,000 of corporate bond interest.",
+        "$1,000 of short-term capital gains from stock held 10 months.",
+        "$1,000 of qualified dividends meeting the holding period requirement.",
+        "$1,000 of non-qualified dividends from a REIT."
+      ],
+      "answer": 2,
+      "explanation": "Qualified dividends meeting the more-than-60-day holding period are taxed at the preferential 15% LTCG rate. Corporate bond interest, short-term capital gains (held 10 months \u2014 not more than one year), and non-qualified REIT dividends are all taxed at the higher 32% ordinary income rate.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about the calculation and use of current yield and total return is MOST accurate?",
+      "choices": [
+        "Current yield includes both income and capital appreciation, while total return reflects only income.",
+        "Total return includes income plus realized and unrealized gains or losses; current yield reflects only annual income relative to current market price.",
+        "Current yield and total return produce identical figures when a bond is held to maturity.",
+        "Total return is calculated using par value, while current yield is calculated using cost basis."
+      ],
+      "answer": 1,
+      "explanation": "Total return measures all components of return (income + gains/losses), while current yield is annual income divided by current market price. The two are not the same \u2014 current yield captures only income, not price changes.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor receives a $500 stock dividend (additional shares) rather than a cash dividend. Which statement is LEAST accurate regarding tax treatment?",
+      "choices": [
+        "A stock dividend is generally not taxable at the time of receipt.",
+        "The cost basis per share is adjusted (reduced) to reflect the additional shares received.",
+        "The holding period of the new shares tacks back to the original purchase date for long-term/short-term determination.",
+        "The stock dividend is immediately taxed as ordinary income in the year received."
+      ],
+      "answer": 3,
+      "explanation": "A standard stock dividend is generally not a taxable event at receipt. Instead, the investor's per-share cost basis is reduced to spread the original cost over the larger number of shares, and the holding period carries over. It is not taxed as ordinary income at receipt.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following accurately describe the relationship between bond prices and yields EXCEPT:",
+      "choices": [
+        "As market interest rates rise, bond prices fall and yields rise.",
+        "A bond trading at a discount has a YTM that exceeds its nominal yield.",
+        "A change of 1 basis point equals a 1% change in yield.",
+        "For a bond trading at par, the nominal yield, current yield, and YTM are all equal."
+      ],
+      "answer": 2,
+      "explanation": "One basis point equals 0.01% (one one-hundredth of one percent), not 1%. A 100-basis-point move equals 1%. The other statements correctly describe the inverse price/yield relationship, discount bond yield relationships, and par bond yield equivalence.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer has the following realized results for the tax year: $8,000 long-term capital gain, $2,000 long-term capital loss, $3,000 short-term capital gain, and $6,000 short-term capital loss. Which statement is MOST accurate regarding the net result for tax purposes?",
+      "choices": [
+        "The customer has a $3,000 net long-term capital gain taxed at preferential rates after netting all gains and losses.",
+        "The customer has a $3,000 net short-term capital loss deductible against ordinary income.",
+        "Gains and losses cannot be netted across short-term and long-term categories.",
+        "All $11,000 in gains are taxed at ordinary income rates because short-term losses exceed short-term gains."
+      ],
+      "answer": 0,
+      "explanation": "Net long-term: $8,000 gain \u2212 $2,000 loss = $6,000 LTCG. Net short-term: $3,000 gain \u2212 $6,000 loss = $3,000 STCL. The net STCL offsets the LTCG, leaving a $3,000 net long-term capital gain taxed at preferential rates. Short-term and long-term results are netted against each other after netting within each category.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13201,
+    "output": 3830
+  },
+  "cost_usd": 0.4853
+}

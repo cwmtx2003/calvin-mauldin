@@ -1,0 +1,551 @@
+{
+  "unit": 8,
+  "unit_name": "Tax & Yields",
+  "jf": "tc",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term is defined as a stock's annual dividend divided by its current market price?",
+      "choices": [
+        "Yield to maturity",
+        "Current yield",
+        "Total return",
+        "Yield to call"
+      ],
+      "answer": 1,
+      "explanation": "Current yield (also called dividend yield for stocks) equals annual income divided by current market price. Total return is broader, adding price appreciation to income.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The measure that combines income received plus capital gain (or loss), expressed as a percentage of the investor's cost basis, is best described as:",
+      "choices": [
+        "Current yield",
+        "Nominal yield",
+        "Total return",
+        "Yield to maturity"
+      ],
+      "answer": 2,
+      "explanation": "Total return captures both income (interest/dividends) and realized/unrealized capital gains relative to cost basis. Current yield ignores capital appreciation.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the gain realized when an investor sells a security held for more than one year at a price above its cost basis?",
+      "choices": [
+        "Short-term capital gain",
+        "Long-term capital gain",
+        "Ordinary income",
+        "Return of capital"
+      ],
+      "answer": 1,
+      "explanation": "A long-term capital gain results from the sale of a capital asset held more than one year. If held one year or less, the gain would be short-term and taxed at ordinary rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A capital gain on a security held for one year or less is classified as:",
+      "choices": [
+        "Long-term and taxed at preferential rates",
+        "Short-term and taxed at ordinary income rates",
+        "Tax-exempt",
+        "Return of capital"
+      ],
+      "answer": 1,
+      "explanation": "Short-term capital gains (holding period of one year or less) are taxed at the investor's ordinary income tax rates. Long-term treatment requires a holding period of more than one year.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the yield calculation that reflects a bond's total annualized return if held until its maturity date, accounting for coupon income and any premium or discount to par?",
+      "choices": [
+        "Current yield",
+        "Nominal yield",
+        "Yield to maturity",
+        "Yield to call"
+      ],
+      "answer": 2,
+      "explanation": "Yield to maturity (YTM) is the internal rate of return on a bond held to maturity, considering coupon payments and the difference between purchase price and par value. Current yield ignores the gain or loss to par.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to dividends that meet IRS holding-period requirements and are therefore taxed at long-term capital gains rates rather than ordinary income rates?",
+      "choices": [
+        "Ordinary dividends",
+        "Qualified dividends",
+        "Stock dividends",
+        "Return-of-capital distributions"
+      ],
+      "answer": 1,
+      "explanation": "Qualified dividends are taxed at long-term capital gain rates provided the holding period requirement (more than 60 days within the 121-day period around the ex-dividend date) is met. Ordinary (non-qualified) dividends are taxed at ordinary income rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "The IRS rule that disallows a loss when an investor sells a security at a loss and purchases a substantially identical security within 30 days before or after the sale is known as the:",
+      "choices": [
+        "Wash sale rule",
+        "Constructive sale rule",
+        "Short-against-the-box rule",
+        "Straddle rule"
+      ],
+      "answer": 0,
+      "explanation": "Under the wash sale rule, a loss is disallowed if a substantially identical security is bought within 30 days before or after the loss sale; the disallowed loss is added to the basis of the replacement security.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a distribution from an investment that represents a partial return of the investor's original principal rather than earnings, and is generally not taxable when received?",
+      "choices": [
+        "Qualified dividend",
+        "Capital gain distribution",
+        "Return of capital",
+        "Ordinary income"
+      ],
+      "answer": 2,
+      "explanation": "A return of capital is a distribution of the investor's own invested principal; it is not currently taxed but reduces the investor's cost basis in the security.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the lower of yield to maturity or yield to call, often quoted to give the most conservative return projection on a callable bond?",
+      "choices": [
+        "Yield to worst",
+        "Current yield",
+        "Nominal yield",
+        "Total return"
+      ],
+      "answer": 0,
+      "explanation": "Yield to worst is the lowest potential yield a bondholder may receive without the issuer defaulting\u2014typically the lower of YTM or YTC\u2014and represents the most conservative yield measure.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Income such as wages, interest from corporate bonds, and non-qualified dividends, taxed at the investor's marginal tax bracket, is best described as:",
+      "choices": [
+        "Long-term capital gain",
+        "Ordinary income",
+        "Tax-exempt interest",
+        "Qualified dividend income"
+      ],
+      "answer": 1,
+      "explanation": "Ordinary income includes wages, taxable interest, short-term capital gains, and non-qualified dividends, all taxed at the taxpayer's marginal (ordinary) rates. Long-term gains and qualified dividends receive preferential rates.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the amount, generally the purchase price plus commissions and adjustments, used to determine the gain or loss on the sale of a security?",
+      "choices": [
+        "Market value",
+        "Cost basis",
+        "Par value",
+        "Net asset value"
+      ],
+      "answer": 1,
+      "explanation": "Cost basis is the investor's adjusted investment in a security used to calculate taxable gain or loss. Market value is the current trading price, not the figure used to measure gain or loss.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "A unit of measure equal to 1/100 of one percent (0.01%), commonly used to express changes in bond yields, is called a:",
+      "choices": [
+        "Basis point",
+        "Tick",
+        "Spread",
+        "Pip"
+      ],
+      "answer": 0,
+      "explanation": "A basis point equals 0.01% (one one-hundredth of one percent); 100 basis points equal 1%. It is the standard unit for quoting yield changes on bonds.",
+      "citations": [],
+      "unit": 8,
+      "jf": "tc",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13195,
+    "output": 2188
+  },
+  "cost_usd": 0.362
+}

@@ -1,0 +1,289 @@
+{
+  "unit": 5,
+  "unit_name": "Other Investment Vehicles",
+  "jf": "pr",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Open-end management company (mutual fund)",
+      "back": "A management investment company that continuously offers and redeems its shares at NAV. Shares are redeemable securities; price is calculated as NAV per share (plus any sales charge for purchases). Forward pricing applies.",
+      "citation": "Investment Company Act of 1940 \u00a75",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Closed-end management company",
+      "back": "A management investment company that issues a fixed number of shares in an IPO, then trades on an exchange or OTC at a market price determined by supply and demand (which may be at a premium or discount to NAV). Shares are NOT redeemable.",
+      "citation": "Investment Company Act of 1940 \u00a75",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Unit Investment Trust (UIT)",
+      "back": "An investment company organized under a trust indenture that (a) has no board of directors, (b) issues only redeemable securities representing an undivided interest in a fixed (unmanaged) portfolio of specified securities, and (c) has a fixed termination date.",
+      "citation": "Investment Company Act of 1940 \u00a74",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Under the Investment Company Act, what are the three principal classes of investment companies?",
+      "back": "(1) Face-amount certificate companies, (2) Unit investment trusts (UITs), and (3) Management companies (which are further divided into open-end and closed-end, and into diversified and non-diversified).",
+      "citation": "Investment Company Act of 1940 \u00a74",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "What is the '75-5-10' test for a diversified management company?",
+      "back": "At least 75% of total assets must consist of cash, cash items, government securities, securities of other investment companies, and other securities limited \u2014 as to any one issuer \u2014 to no more than 5% of the fund's total assets and no more than 10% of that issuer's outstanding voting securities.",
+      "citation": "Investment Company Act of 1940 \u00a75",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Rule 12b-1 fee",
+      "back": "An annual fee charged against fund assets by an open-end fund to cover distribution, marketing, and shareholder servicing costs, authorized by a written plan adopted under SEC Rule 12b-1. The fee is disclosed in the prospectus and reduces shareholder return.",
+      "citation": "17 CFR 270.12b-1",
+      "unit": 5
+    },
+    {
+      "type": "scenario",
+      "front": "A mutual fund's sales charge schedule reduces the load from 5.5% to 4.5% at $25,000. A registered rep recommends a client purchase $24,500 to avoid the breakpoint. Permissible?",
+      "back": "No. This is a prohibited 'breakpoint sale' \u2014 selling just below a breakpoint to earn the higher sales charge. The rep must inform the customer of the breakpoint and the benefit of investing at or above it.",
+      "citation": "Rule 2342",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Letter of Intent (LOI) / Right of Accumulation (ROA)",
+      "back": "LOI: A non-binding statement that a mutual fund investor intends to invest enough over a 13-month period to qualify for a breakpoint discount (may be backdated up to 90 days). ROA: Allows previously purchased fund shares (at current value) to count toward breakpoint thresholds on new purchases.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Compare Class A, Class B, and Class C mutual fund shares.",
+      "back": "Class A: front-end sales load, lower 12b-1 fees, breakpoints available \u2014 best for large, long-term investments. Class B: back-end (contingent deferred) sales load that declines over time, higher 12b-1 fees, typically converts to A. Class C: level load \u2014 small/no front-end charge, higher ongoing 12b-1 fees, possible short-term CDSC \u2014 best for shorter holding periods.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "How is the public offering price (POP) of a mutual fund share calculated?",
+      "back": "POP = NAV per share \u00f7 (1 \u2212 sales charge %). Sales charge % = (POP \u2212 NAV) \u00f7 POP. Pricing is forward \u2014 the next computed NAV after the order is received.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Variable annuity",
+      "back": "An insurance contract whose accumulation and/or payout values vary with the performance of investor-selected subaccounts (separate account). The separate account is registered as an investment company; the variable contract is a security. Features include tax-deferred growth, surrender charges, mortality & expense (M&E) fees, and optional living/death benefit riders.",
+      "citation": "Rule 2330",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 2330, what must a registered rep reasonably believe before recommending the purchase or exchange of a deferred variable annuity?",
+      "back": "That (1) the customer has been informed of features such as the surrender period/charge, potential tax penalty for distributions before age 59\u00bd, M&E fees, advisory fees, rider charges, and market risk; (2) the customer would benefit from a feature like tax-deferred growth, annuitization, or a death/living benefit; and (3) the particular VA, subaccount allocations, and riders are suitable for that customer.",
+      "citation": "Rule 2330",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "529 Savings Plan",
+      "back": "A municipal fund security sponsored by a state offering tax-deferred growth and tax-free qualified distributions for higher-education (and limited K-12) expenses. No income limits on contributors; the account owner controls assets and may change the beneficiary to a family member. SECURE 2.0 permits tax-free rollovers from a 529 to a Roth IRA (lifetime cap $35,000; 15-year account rule; subject to IRA annual contribution limits), effective 2024.",
+      "citation": "Rule D-12",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "How does a 529 prepaid tuition plan differ from a 529 savings plan?",
+      "back": "Prepaid tuition: locks in future tuition at today's prices at participating (usually in-state public) colleges; limited to tuition/fees. Savings plan: invests contributions in portfolios that fluctuate with market performance; proceeds can be used for a broader range of qualified higher-education expenses at most accredited institutions nationwide.",
+      "citation": "Rule D-12",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "ABLE account",
+      "back": "A tax-advantaged municipal fund security (under Section 529A) for individuals with qualifying disabilities. Earnings grow tax-deferred; qualified disability-expense distributions are tax-free. Subject to annual contribution limits; preserves eligibility for means-tested benefits within limits.",
+      "citation": "Rule D-12",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Local Government Investment Pool (LGIP)",
+      "back": "A municipal fund security established by a state or local government to allow public entities to pool short-term operating cash for investment. Treated as a municipal fund security under MSRB rules; not federally registered as an investment company.",
+      "citation": "Rule D-12",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Direct Participation Program (DPP)",
+      "back": "An entity (commonly a limited partnership) that provides flow-through tax treatment \u2014 passing income, gains, losses, deductions, and credits directly to investors. Examples: oil & gas, real estate, equipment leasing, agricultural programs. Generally illiquid, unlisted, and sold via offering documents. Excludes REITs, qualified plans, and registered investment companies.",
+      "citation": "Rule 2310",
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "In a limited partnership DPP, how do the roles and liability of general partners (GPs) and limited partners (LPs) differ?",
+      "back": "GPs: manage the partnership, have unlimited personal liability, owe fiduciary duties, and make day-to-day decisions. LPs: passive investors whose liability is limited to their investment; they cannot participate in management without risking loss of limited-liability status.",
+      "citation": "Rule 2310",
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Real Estate Investment Trust (REIT)",
+      "back": "A company that owns (equity REIT) or finances (mortgage REIT) income-producing real estate. To qualify, it must distribute at least 90% of taxable income to shareholders, allowing it to avoid corporate-level tax on distributed income (no double taxation). Three structures: listed (exchange-traded, most liquid), registered non-listed (PNLR \u2014 SEC-registered but not exchange-traded, illiquid), and private (unregistered, illiquid, accredited investors).",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Why are REIT dividends NOT considered 'qualified' dividends for the preferential tax rate?",
+      "back": "Because the REIT itself avoids corporate tax (passes income through), its ordinary dividends do not meet the qualified-dividend requirements and are taxed at the shareholder's ordinary income rate (though they may be eligible for the 20% Section 199A deduction on REIT dividends).",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "definition",
+      "front": "Hedge fund",
+      "back": "A privately offered, generally unregistered pooled investment vehicle structured as a limited partnership or LLC, sold to accredited/qualified investors with high minimum investments. Uses leverage, short selling, derivatives, and other aggressive strategies. Charges performance fees (commonly '2 and 20'), is illiquid (lockups, gates), and is not subject to many investor-protection rules applicable to mutual funds.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Compare ETFs and ETNs.",
+      "back": "ETF: an equity interest in a fund that holds a portfolio of underlying assets; investor owns a pro-rata share of assets; subject to market price/NAV tracking; can be active or passive. ETN: an unsecured debt obligation of an issuing bank promising to pay a return linked to an index \u2014 no underlying portfolio; investor bears the credit risk of the issuer in addition to market risk.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "How do ETFs typically differ from open-end mutual funds in trading and pricing?",
+      "back": "ETFs trade intraday on exchanges at market prices (which may differ slightly from NAV), can be bought on margin and sold short, and generally have lower expense ratios. Mutual funds price once daily at NAV (forward pricing), settle directly with the fund, cannot be margined at purchase, and cannot be sold short.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "What investment risks are most associated with bond investing \u2014 and how do they differ?",
+      "back": "Interest-rate risk: bond prices fall when rates rise (longer duration = more risk). Reinvestment risk: cash flows may have to be reinvested at lower rates. Credit/default risk: issuer fails to pay. Inflation/purchasing-power risk: fixed payments lose real value. Liquidity risk: difficulty selling without price concession. Call/prepayment risk: principal returned early when rates fall, forcing reinvestment at lower yields.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish systematic (market) risk from non-systematic risk and identify a mitigation strategy for each.",
+      "back": "Systematic risk: market-wide risk affecting all securities (interest-rate, inflation, market, political) \u2014 mitigated by hedging (e.g., options, asset-class diversification across uncorrelated markets). Non-systematic risk: issuer- or industry-specific risk \u2014 mitigated by diversification across many securities/sectors.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "scenario",
+      "front": "An investor places a mutual fund purchase order at 2:00 p.m. ET for $10,000. The fund computes NAV at 4:00 p.m. ET. At what price is the order executed?",
+      "back": "At the POP based on the NAV calculated at 4:00 p.m. that day (forward pricing). Orders received before the daily pricing time receive that day's price; orders received after receive the next computed NAV.",
+      "citation": null,
+      "unit": 5
+    },
+    {
+      "type": "qa",
+      "front": "What is the key tax characteristic shared by DPPs, REITs, mutual funds (RICs), and partnerships?",
+      "back": "All are 'flow-through' or pass-through entities that avoid double taxation at the entity level \u2014 income (and, for DPPs/partnerships, losses) flows directly to investors who report it on their own returns. (REITs and RICs must meet distribution tests to retain this treatment.)",
+      "citation": null,
+      "unit": 5
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12879,
+    "output": 4517
+  },
+  "cost_usd": 0.532
+}

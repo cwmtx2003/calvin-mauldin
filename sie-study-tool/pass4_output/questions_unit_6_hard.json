@@ -1,0 +1,573 @@
+{
+  "unit": 6,
+  "unit_name": "Customer Accounts",
+  "jf": "tc",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "All of the following statements about a custodial UTMA account are accurate EXCEPT:",
+      "choices": [
+        "There may be only one custodian and one minor per account.",
+        "The custodian may exercise discretion over investment decisions without a separate written trading authorization from the minor.",
+        "Securities in the account are registered in the custodian's name with the minor's Social Security number for tax reporting.",
+        "Upon reaching the age of majority in the governing state, the assets remain titled in the custodian's name until the custodian voluntarily transfers them."
+      ],
+      "answer": 3,
+      "explanation": "Once the minor reaches the state's age of majority, the custodianship terminates and the assets must be re-registered in the now-adult beneficiary's name; the custodian cannot withhold the transfer. The other statements correctly describe UTMA mechanics (one custodian/one minor, custodial discretion without separate authorization, and use of the minor's SSN).",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following is LEAST likely to require the written authorization of all parties to the account before being executed?",
+      "choices": [
+        "A trade in which the registered representative selects the security in a joint tenants in common account",
+        "A trade in which the registered representative selects the number of shares of a customer-named security in an individual account",
+        "An unsolicited market order entered by one tenant in a joint tenants with rights of survivorship account",
+        "A trade in which the registered representative determines the timing of an order in a corporate account opened by an officer not listed on the corporate resolution"
+      ],
+      "answer": 2,
+      "explanation": "An unsolicited order from any one joint tenant in a JTWROS account may be accepted without all parties' authorization; only one signature is needed to trade. The other choices involve either discretionary activity (asset, amount, or timing\u2014the \"A's\" of discretion that require prior written authorization) or trading by a person not authorized in the corporate resolution.",
+      "citations": [
+        "Rule 3260",
+        "Rule 4512"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about Traditional and Roth IRAs is NOT correct?",
+      "choices": [
+        "Neither account has an age cap on making contributions, provided the owner has earned income.",
+        "Contributions to a Roth IRA are subject to AGI phase-out limits, while contributions to a Traditional IRA are not subject to AGI phase-outs for contribution purposes.",
+        "Required minimum distributions must begin from a Roth IRA at the same age as from a Traditional IRA during the owner's lifetime.",
+        "Earnings withdrawn from a Roth IRA may be tax-free if the account has been open at least five years and the owner is at least 59\u00bd."
+      ],
+      "answer": 2,
+      "explanation": "Roth IRAs are NOT subject to lifetime RMDs for the original owner; Traditional IRAs are. The other statements are correct: neither IRA has an age cap on contributions (since the SECURE Act), Roths are subject to AGI phase-outs on contributions, and Roth qualified distributions are tax-free after five years and age 59\u00bd.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "A representative wishes to open a margin account for a new individual customer. Each of the following must be obtained or delivered EXCEPT:",
+      "choices": [
+        "A signed credit agreement",
+        "A signed loan consent agreement",
+        "Disclosure of the risks of margin trading",
+        "A signed hypothecation agreement"
+      ],
+      "answer": 1,
+      "explanation": "The loan consent agreement, which permits the firm to lend the customer's securities to others, is optional and not required to open the margin account. The credit (margin) agreement and hypothecation agreement are required, and the margin risk disclosure statement must be delivered before the account is opened and annually thereafter.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA rules, an account would MOST likely be classified as a pattern day trading account if the customer:",
+      "choices": [
+        "Executes three day trades within a five-business-day period in a margin account whose day-trading activity exceeds 6% of total trading activity",
+        "Executes four day trades within a five-business-day period in a margin account whose day-trading activity exceeds 6% of total trading activity",
+        "Executes four day trades within a five-business-day period in a cash account whose day-trading activity exceeds 6% of total trading activity",
+        "Executes any day trade in a margin account that has equity below $25,000"
+      ],
+      "answer": 1,
+      "explanation": "A pattern day trader is defined as one who executes four or more day trades within five business days in a margin account, provided those day trades exceed 6% of total trading activity for the period. Cash accounts cannot be PDT accounts because day trading is conducted in margin accounts, and three trades does not meet the four-trade threshold.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following actions by a registered representative would NOT, by itself, violate FINRA conduct rules?",
+      "choices": [
+        "Borrowing money from an unrelated retail customer of the firm pursuant to a written agreement the firm has not reviewed",
+        "Sharing in the profits and losses of a customer account in direct proportion to the representative's own capital contribution, with prior written firm approval and customer consent",
+        "Lending personal funds to a customer who is not an immediate family member, with no firm notification",
+        "Accepting a gift of $250 from a customer in connection with the customer's account"
+      ],
+      "answer": 1,
+      "explanation": "Sharing in a customer account is permitted when the representative obtains prior written approval from the firm and the customer, and shares only in direct proportion to the financial contribution to the account. Borrowing from or lending to customers requires firm pre-approval under specified permissible arrangements and notice; the gift exceeds the $100 annual limit per person.",
+      "citations": [
+        "Rule 2150",
+        "Rule 3240"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which two requirements MUST both be satisfied before a registered representative may exercise discretion in a customer's cash account?",
+      "choices": [
+        "Prior written authorization from the customer AND prior written acceptance of the account as discretionary by the firm",
+        "Prior oral authorization from the customer AND a signed new account form",
+        "Prior written authorization from the customer AND a signed margin agreement",
+        "Verbal approval of each trade by a principal AND delivery of a discretionary disclosure document"
+      ],
+      "answer": 0,
+      "explanation": "Discretion may not be exercised until the customer has provided prior written authorization (e.g., a written trading authorization or power of attorney) AND the firm has accepted the account as discretionary in writing. Oral authorization is insufficient, and a margin agreement is unrelated to the grant of discretion.",
+      "citations": [
+        "Rule 3260"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Each of the following events would terminate a power of attorney granted over a customer's individual account EXCEPT:",
+      "choices": [
+        "The death of the customer (grantor)",
+        "The legal incompetency of the customer, where the POA is a non-durable power",
+        "The death of the holder of the power of attorney",
+        "The customer's transfer of the account from one broker-dealer to another"
+      ],
+      "answer": 3,
+      "explanation": "Transferring the account between firms does not, by itself, revoke a power of attorney; the POA remains in effect with the new firm if re-documented. Death of the customer, death of the attorney-in-fact, or incompetency of the customer (under a non-durable POA) all terminate the authority.",
+      "citations": [
+        "Rule 3260"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under FINRA's AML rules and the Bank Secrecy Act, which statement is NOT correct?",
+      "choices": [
+        "A Currency Transaction Report (CTR) must be filed for cash transactions aggregating more than $10,000 in a single business day.",
+        "A Suspicious Activity Report (SAR) must be filed for suspicious transactions involving at least $5,000 that the firm believes may involve illegal activity.",
+        "A customer must be notified that a SAR has been filed in connection with the customer's account.",
+        "Customer identification (CIP) procedures must collect name, date of birth, address, and taxpayer identification number for individual customers."
+      ],
+      "answer": 2,
+      "explanation": "Firms are prohibited from disclosing to the customer or any unauthorized person that a SAR has been filed. The CTR threshold (>$10,000 cash/day), SAR threshold ($5,000 if suspicious), and CIP data elements are all correctly stated.",
+      "citations": [
+        "Rule 3310",
+        "USA PATRIOT Act \u00a7326",
+        "USA PATRIOT Act \u00a7352"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Under SECURE 2.0, which statement about required minimum distributions from a Traditional IRA is correct?",
+      "choices": [
+        "RMDs must begin by April 1 of the year following the year the owner attains age 72, and the penalty for failure to take an RMD is 50% of the shortfall.",
+        "RMDs must begin by April 1 of the year following the year the owner attains age 73, and the penalty for failure to take an RMD is 25% of the shortfall (reducible to 10% if timely corrected).",
+        "RMDs must begin by December 31 of the year the owner attains age 73, and the penalty for failure to take an RMD is 50% of the shortfall.",
+        "RMDs must begin by April 1 of the year following retirement, and the penalty for failure to take an RMD is 10% of the shortfall."
+      ],
+      "answer": 1,
+      "explanation": "Under SECURE 2.0, the RMD beginning age is 73, with the first RMD due by April 1 of the year following the year the owner turns 73. The penalty was reduced from 50% to 25% of the shortfall, with a further reduction to 10% if corrected within the correction window. The \"retirement\" rule applies to certain qualified plans, not IRAs.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following accounts MOST likely permits the broker-dealer to follow the instructions of a single account holder to liquidate the entire account and remit proceeds solely to that holder?",
+      "choices": [
+        "A joint tenants with rights of survivorship account, where one tenant directs liquidation and a check payable only to that tenant",
+        "A tenants in common account, where one tenant directs liquidation and a check payable to all tenants jointly",
+        "A revocable living trust account, where the sole grantor/trustee directs liquidation and a check payable to the trust",
+        "An UTMA account, where the minor (still under the age of majority) directs liquidation and a check payable to the minor"
+      ],
+      "answer": 2,
+      "explanation": "In a revocable living trust where the grantor is also the sole trustee, that person has full authority to direct trades and distributions payable to the trust. In JTWROS or TIC accounts, while either party can enter orders, distributions of cash or securities must be made payable to all account holders. A minor cannot direct trading in an UTMA account\u2014only the custodian can.",
+      "citations": [
+        "Rule 4512"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about Coverdell Education Savings Accounts (ESAs) and 529 plans is LEAST accurate?",
+      "choices": [
+        "Contributions to both Coverdell ESAs and 529 plans are made with after-tax dollars at the federal level.",
+        "Qualified withdrawals from both Coverdell ESAs and 529 plans are federally tax-free when used for qualified education expenses.",
+        "Coverdell ESA contributions are subject to income-based limits on the contributor, whereas 529 plans generally have no income limit on the contributor.",
+        "Contributions to a Coverdell ESA may be made for a beneficiary of any age, while 529 plans impose a strict age cap on the beneficiary."
+      ],
+      "answer": 3,
+      "explanation": "Coverdell ESAs generally restrict contributions to beneficiaries under age 18, and 529 plans typically have no beneficiary age limit\u2014this is the reverse of what the choice states. The other statements are accurate: both use after-tax dollars, both offer tax-free qualified withdrawals, and Coverdell (but not 529) contributions are subject to contributor income limits.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13837,
+    "output": 4232
+  },
+  "cost_usd": 0.525
+}

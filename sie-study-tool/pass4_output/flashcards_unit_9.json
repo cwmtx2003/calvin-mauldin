@@ -1,0 +1,295 @@
+{
+  "unit": 9,
+  "unit_name": "Economics",
+  "jf": "km",
+  "cards": [
+    {
+      "type": "qa",
+      "front": "What are the four phases of the business cycle, in order?",
+      "back": "Expansion \u2192 Peak \u2192 Contraction \u2192 Trough (then back to expansion). Expansion features rising GDP, employment, and consumer spending; the peak marks the top before activity slows; contraction features falling GDP and rising unemployment; the trough is the bottom before recovery begins.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Recession (technical definition used on the SIE)",
+      "back": "Two consecutive quarters of negative real GDP growth. A depression is generally defined as a prolonged, severe recession (often described as six or more consecutive quarters of declining real GDP).",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "Distinguish leading, coincident, and lagging economic indicators, with one example of each.",
+      "back": "Leading indicators predict future activity (e.g., S&P 500, building permits, new orders for durable goods, initial jobless claims, money supply M2). Coincident indicators move with the economy (e.g., nonfarm payrolls, industrial production, personal income). Lagging indicators confirm trends after they occur (e.g., CPI/inflation, average duration of unemployment, prime rate, corporate profits).",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "GDP vs. GNP",
+      "back": "GDP (Gross Domestic Product) = value of all final goods and services produced WITHIN a country's borders, regardless of producer nationality. GNP (Gross National Product) = value of all final goods and services produced by a country's CITIZENS/residents, regardless of location.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "Classify these industries: autos, utilities, technology start-ups, tobacco, luxury goods, discount retailers.",
+      "back": "Cyclical (rise/fall with economy): autos, luxury goods. Defensive (stable demand): utilities, tobacco, food/pharma. Growth: technology start-ups (reinvest earnings). Countercyclical (do better in downturns): discount retailers, often gold mining.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Defensive (non-cyclical) industry",
+      "back": "Industries whose demand remains relatively stable regardless of the business cycle \u2014 utilities, food, basic consumer staples, tobacco, and pharmaceuticals. Their stocks tend to outperform in recessions and underperform in strong expansions.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "Compare Keynesian and Monetarist (supply-side) economic theories.",
+      "back": "Keynesian: government can stabilize the economy through FISCAL policy \u2014 taxation and spending \u2014 to manage aggregate demand. Monetarist (Milton Friedman): the MONEY SUPPLY is the primary driver of economic activity; control inflation/growth by managing money supply growth, not through active fiscal intervention.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Fiscal policy vs. monetary policy",
+      "back": "Fiscal policy = government TAXATION and SPENDING decisions, controlled by Congress and the President. Monetary policy = control of the MONEY SUPPLY and INTEREST RATES, controlled by the Federal Reserve (FOMC).",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What is the purpose of the Federal Reserve System?",
+      "back": "The Fed conducts U.S. monetary policy to promote (1) maximum employment, (2) stable prices (control inflation), and (3) moderate long-term interest rates. It also supervises banks, maintains financial stability, and provides payment/clearing services.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What are the Federal Reserve's principal active monetary policy tools?",
+      "back": "(1) Open market operations (FOMC buys/sells Treasuries) \u2014 the most-used tool; (2) the Discount Rate (rate the Fed charges member banks for loans at the discount window); (3) Interest on Reserve Balances (IORB), now the principal administered policy rate; and (4) Reserve Requirements \u2014 although the reserve requirement ratio has been 0% since March 26, 2020, so this is no longer an active tool in practice.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "scenario",
+      "front": "The economy is overheating and inflation is rising. What open market operation would the FOMC most likely undertake, and what is the expected effect on interest rates and the money supply?",
+      "back": "The Fed would SELL Treasury securities in the open market. This drains reserves from the banking system, SHRINKS the money supply, and pushes interest rates UP \u2014 slowing borrowing, spending, and inflation. (Tight money policy.)",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "scenario",
+      "front": "To stimulate a sluggish economy, what would the FOMC most likely do, and what effect does it have?",
+      "back": "BUY Treasury securities in the open market. This INJECTS reserves into the banking system, EXPANDS the money supply, and pushes interest rates DOWN \u2014 encouraging borrowing, investment, and consumer spending. (Easy money policy.)",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Discount rate",
+      "back": "The interest rate the Federal Reserve charges member banks that borrow directly from the Fed's discount window. Set by the Fed Board of Governors. Lowering it encourages bank lending; raising it discourages it.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Federal funds rate",
+      "back": "The interest rate banks charge EACH OTHER on overnight loans of excess reserves. Set by the market within a target range established by the FOMC. The most sensitive indicator of short-term interest rate trends.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Prime rate",
+      "back": "The interest rate that large commercial banks charge their most creditworthy corporate customers on short-term loans. Set by individual banks (not the Fed), though it generally moves with the fed funds rate.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Broker call (call money) rate",
+      "back": "The interest rate banks charge broker-dealers on loans collateralized by securities, used to finance customer margin accounts. Margin loans to customers are typically the call rate plus a service charge.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "Rank these four rates from typically LOWEST to HIGHEST: prime rate, federal funds rate, discount rate, broker call rate.",
+      "back": "Typically (lowest to highest): Federal funds rate \u2248 Discount rate < Broker call rate < Prime rate. The fed funds and discount rates are bank-to-bank/Fed wholesale rates; the call rate is slightly higher; prime is charged to the best corporate borrowers and is generally the highest of these four.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What is the FOMC and who serves on it?",
+      "back": "The Federal Open Market Committee directs open market operations (buying/selling Treasuries). It has 12 voting members: the 7 Federal Reserve Board Governors, the President of the NY Federal Reserve Bank (permanent), and 4 of the other 11 regional Reserve Bank presidents on a rotating basis.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What is the U.S. balance of payments, and what are its two main components?",
+      "back": "The balance of payments is the total flow of money into and out of the U.S. Its two main components are the (1) CURRENT account \u2014 trade in goods and services, plus income flows (the 'balance of trade' is the largest piece) \u2014 and the (2) CAPITAL account \u2014 investment flows in and out of the country.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What causes a U.S. balance of payments DEFICIT vs. SURPLUS?",
+      "back": "DEFICIT: more money flowing OUT of the U.S. than in \u2014 typically caused by Americans importing more than the U.S. exports, U.S. tourism abroad, and U.S. foreign investment. SURPLUS: more money flowing IN than out \u2014 driven by U.S. exports exceeding imports, foreign tourism in the U.S., and foreign investment in U.S. assets.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "scenario",
+      "front": "The U.S. dollar strengthens significantly against the euro. What is the likely effect on U.S. exports to Europe and U.S. imports from Europe?",
+      "back": "A stronger dollar makes U.S. goods MORE EXPENSIVE for European buyers, so U.S. EXPORTS to Europe DECREASE. European goods become CHEAPER for Americans, so U.S. IMPORTS from Europe INCREASE. Net effect: worsens the U.S. balance of trade.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "What is the purpose of a balance sheet vs. an income statement?",
+      "back": "Balance sheet: a SNAPSHOT at a point in time showing Assets = Liabilities + Shareholders' Equity. Income statement: shows REVENUES, expenses, and net income (profit/loss) over a PERIOD of time (quarter or year). Together they show financial position and operating performance.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Inflation vs. deflation",
+      "back": "Inflation = a general rise in prices, eroding purchasing power; commonly measured by the CPI (a lagging indicator). Deflation = a general DECLINE in prices. Mild inflation is normal in an expanding economy; deflation is associated with recessions/depressions.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "qa",
+      "front": "How do rising interest rates typically affect bond prices and equity prices?",
+      "back": "Bond prices fall (inverse relationship \u2014 existing lower-coupon bonds become less attractive). Equity prices typically fall as well: borrowing costs rise for companies, future cash flows are discounted at higher rates, and fixed-income investments become more competitive with stocks. Interest-rate-sensitive sectors (utilities, REITs, banks holding long bonds) are hit hardest.",
+      "citation": null,
+      "unit": 9
+    },
+    {
+      "type": "definition",
+      "front": "Stagflation",
+      "back": "An economic condition combining stagnant economic growth (high unemployment, slow or negative GDP growth) with high inflation. Difficult for policymakers because tools used to fight inflation (tightening) worsen unemployment, and tools used to spur growth (easing) worsen inflation.",
+      "citation": null,
+      "unit": 9
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12050,
+    "output": 3775
+  },
+  "cost_usd": 0.4639
+}

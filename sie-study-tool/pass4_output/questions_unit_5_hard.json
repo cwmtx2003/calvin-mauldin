@@ -1,0 +1,298 @@
+{
+  "unit": 5,
+  "unit_name": "Other Investment Vehicles",
+  "jf": "pr",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "Each of the following is a feature of an open-end management investment company EXCEPT:",
+      "choices": [
+        "It continuously offers new shares to the public",
+        "Investors purchase and redeem shares at net asset value (NAV) plus any applicable sales charge",
+        "Its shares trade in the secondary market at prices determined by supply and demand, often at a discount or premium to NAV",
+        "It may charge a 12b-1 fee to cover distribution expenses"
+      ],
+      "answer": 2,
+      "explanation": "Open-end funds issue redeemable shares priced at NAV (plus any load); they do not trade in the secondary market. Shares trading at a discount or premium to NAV is characteristic of closed-end funds. 12b-1 fees and continuous offerings are open-end features.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75",
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "A registered representative is comparing a unit investment trust (UIT) to an open-end mutual fund. Which statement is NOT accurate about the UIT?",
+      "choices": [
+        "A UIT is organized under a trust indenture and has no board of directors",
+        "A UIT issues redeemable securities representing an undivided interest in a unit of specified securities",
+        "A UIT is actively managed by an investment adviser who selects and rotates the portfolio over time",
+        "A UIT is classified as an investment company under the Investment Company Act of 1940"
+      ],
+      "answer": 2,
+      "explanation": "By statutory definition, a UIT has no board of directors and holds a fixed, specified portfolio\u2014it is not actively managed. The other choices are correct features of a UIT under Section 4.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following are characteristics common to both direct participation programs (DPPs) and non-listed REITs EXCEPT:",
+      "choices": [
+        "Generally illiquid investments with limited secondary markets",
+        "Pass-through tax treatment in which losses flow through to investors at the entity level",
+        "Suitability concerns due to long holding periods",
+        "Investors purchase units or shares through a broker-dealer pursuant to a prospectus"
+      ],
+      "answer": 1,
+      "explanation": "DPPs (limited partnerships) provide pass-through of both income and losses. REITs avoid double taxation by distributing income, but losses do not flow through to shareholders. Both are typically illiquid and require suitability review.",
+      "citations": [
+        "Rule 2310"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about hedge funds is LEAST accurate?",
+      "choices": [
+        "They are typically structured as private partnerships",
+        "They usually require a high minimum investment and are sold to accredited or qualified investors",
+        "They are generally illiquid, often imposing lock-up periods on investors",
+        "They must redeem investor interests at NAV on a daily basis like an open-end fund"
+      ],
+      "answer": 3,
+      "explanation": "Hedge funds are not open-end funds and do not provide daily redemption at NAV; they typically restrict redemptions through lock-ups and gates. The other statements correctly describe hedge funds.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "A customer asks about municipal fund securities. Which statement is NOT correct?",
+      "choices": [
+        "A 529 savings plan is a municipal fund security whose issuer would be an investment company but for Section 2(b) of the Investment Company Act of 1940",
+        "Local government investment pools (LGIPs) and ABLE accounts are categorized as municipal fund securities",
+        "529 plan assets must generally be used for qualified education expenses to retain favorable federal tax treatment",
+        "529 plan account owners must liquidate the account by the time the beneficiary reaches age 30"
+      ],
+      "answer": 3,
+      "explanation": "There is no age-30 mandatory distribution requirement for 529 plans\u2014that rule applies to Coverdell ESAs. The other choices correctly describe municipal fund securities.",
+      "citations": [
+        "Rule D-12"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following would MOST likely violate FINRA Rule 2342 governing breakpoint sales?",
+      "choices": [
+        "A representative recommends a $24,500 mutual fund purchase when a breakpoint reduction is available at $25,000, without disclosing the breakpoint",
+        "A representative documents a bona fide asset-allocation program and discloses that the customer may forego some breakpoint reductions",
+        "A representative aggregates purchases under a written letter of intent to qualify the customer for a lower sales charge",
+        "A representative applies rights of accumulation based on the customer's existing holdings in the same fund family"
+      ],
+      "answer": 0,
+      "explanation": "Selling shares in dollar amounts just below a breakpoint to capture a higher sales charge violates Rule 2342. LOI, ROA, and bona fide asset-allocation programs are permissible breakpoint-related practices.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Each of the following is a required suitability consideration before recommending a deferred variable annuity EXCEPT:",
+      "choices": [
+        "Whether the customer would benefit from features such as tax deferral, annuitization, or a death/living benefit",
+        "Whether the customer has been informed of surrender periods and charges, mortality and expense fees, and market risk",
+        "Whether the particular contract and its subaccount allocations are suitable for the customer",
+        "Whether the contract's NAV is currently trading at a discount or premium to its market price"
+      ],
+      "answer": 3,
+      "explanation": "Variable annuities are not exchange-traded securities priced at discounts or premiums to NAV. Rule 2330 requires disclosure of features, costs, and a suitability analysis covering the contract, subaccounts, and riders.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor exercises a long equity call option. Which of the following statements is correct?",
+      "choices": [
+        "The resulting stock transaction settles on a T+2 basis following the exercise notice",
+        "The resulting stock transaction settles on a T+1 basis, consistent with regular-way equity settlement",
+        "The transaction settles in cash on the same business day, as with index options",
+        "Settlement does not occur until expiration of the option series"
+      ],
+      "answer": 1,
+      "explanation": "Effective 5/28/2024, regular-way equity settlement is T+1, and stock delivered upon exercise of an equity option follows the same T+1 schedule. Index options settle in cash the next business day based on intrinsic value.",
+      "citations": [
+        "Rule 2360"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following BEST distinguishes an exchange-traded note (ETN) from an exchange-traded fund (ETF)?",
+      "choices": [
+        "An ETN is an unsecured debt obligation of the issuer, exposing investors to the issuer's credit risk, whereas an ETF holds a portfolio of underlying assets",
+        "Only ETNs trade on exchanges throughout the trading day",
+        "ETFs are not registered with the SEC, while ETNs are",
+        "An ETN provides voting rights in the underlying index components, while an ETF does not"
+      ],
+      "answer": 0,
+      "explanation": "An ETN is a senior unsecured debt instrument whose payments depend on an index and on issuer creditworthiness. An ETF holds underlying securities. Both trade intraday on exchanges.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "All of the following risks would be of GREATEST concern to a holder of a long-term, fixed-rate corporate bond EXCEPT:",
+      "choices": [
+        "Interest rate risk",
+        "Credit risk",
+        "Purchasing power (inflation) risk",
+        "Prepayment risk"
+      ],
+      "answer": 3,
+      "explanation": "Prepayment risk is principally associated with mortgage-backed securities whose underlying borrowers can repay early. Fixed-rate corporate bonds face interest rate, credit, and inflation risk; prepayment is generally not the primary concern unless the bond is callable.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about closed-end management companies is NOT correct?",
+      "choices": [
+        "They issue a fixed number of shares in an IPO and the shares then trade in the secondary market",
+        "Their shares may trade at a premium or discount to NAV based on supply and demand",
+        "They are management companies under the Investment Company Act of 1940",
+        "They continuously offer and redeem shares at NAV plus any applicable sales charge"
+      ],
+      "answer": 3,
+      "explanation": "Continuous issuance and redemption at NAV are features of open-end funds. Closed-end funds issue a fixed number of shares that subsequently trade on the secondary market at market-determined prices.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor wants tax-advantaged exposure to real estate income without double taxation and with daily liquidity. Which vehicle BEST meets ALL of these objectives?",
+      "choices": [
+        "A non-listed (registered) REIT",
+        "A real estate limited partnership (DPP)",
+        "A listed (exchange-traded) REIT",
+        "A private REIT sold under a Regulation D exemption"
+      ],
+      "answer": 2,
+      "explanation": "Listed REITs avoid entity-level taxation when distribution requirements are met, provide real estate income, and trade on exchanges providing daily liquidity. Non-listed and private REITs and real estate DPPs are illiquid; DPPs also have pass-through losses but no daily liquidity.",
+      "citations": [],
+      "unit": 5,
+      "jf": "pr",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12914,
+    "output": 3389
+  },
+  "cost_usd": 0.4479
+}

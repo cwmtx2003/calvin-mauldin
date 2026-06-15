@@ -1,0 +1,301 @@
+{
+  "unit": 9,
+  "unit_name": "Economics",
+  "jf": "km",
+  "mode": "hard",
+  "questions": [
+    {
+      "stem": "All of the following are tools the Federal Reserve actively uses to influence monetary policy EXCEPT:",
+      "choices": [
+        "Open market operations involving purchases and sales of U.S. Treasury securities",
+        "Changes to the discount rate charged to depository institutions",
+        "Adjustments to the reserve requirement ratio imposed on member banks",
+        "Changes to the interest paid on reserve balances (IORB) held at the Fed"
+      ],
+      "answer": 2,
+      "explanation": "The Fed reduced the reserve requirement ratio to 0% effective March 26, 2020 and it has remained at zero, so it is not an active policy lever today. Open market operations, the discount rate, and IORB remain active tools the Fed uses to set the policy rate corridor.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "During a period of contraction with rising unemployment and falling output, which combination of fiscal and monetary actions would a Keynesian economist MOST likely advocate?",
+      "choices": [
+        "Increased government spending and Fed purchases of Treasury securities in the open market",
+        "Decreased government spending and Fed sales of Treasury securities in the open market",
+        "Tax increases and an increase in the discount rate",
+        "A balanced federal budget and an increase in the federal funds target range"
+      ],
+      "answer": 0,
+      "explanation": "Keynesians favor expansionary fiscal policy (more government spending or tax cuts) to boost aggregate demand during contractions. Expansionary monetary policy \u2014 Fed purchases of Treasuries \u2014 adds reserves to the banking system, lowers rates, and stimulates activity. The other choices are contractionary.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following industries would LEAST likely be classified as defensive?",
+      "choices": [
+        "Food and household staples",
+        "Pharmaceuticals and basic healthcare",
+        "Electric and gas utilities",
+        "Automobile manufacturing"
+      ],
+      "answer": 3,
+      "explanation": "Auto manufacturing is a classic cyclical industry \u2014 sales fall sharply in recessions and rise in expansions. Food, pharmaceuticals, and utilities provide goods/services consumers buy regardless of the business cycle and are therefore defensive.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about U.S. economic indicators is NOT correct?",
+      "choices": [
+        "The S&P 500 Index is considered a leading indicator",
+        "Manufacturers' new orders for consumer goods are a leading indicator",
+        "Industrial production is a coincident indicator",
+        "The unemployment rate is a coincident indicator"
+      ],
+      "answer": 3,
+      "explanation": "The unemployment rate is a lagging indicator \u2014 it tends to change direction after the economy as a whole has turned. Stock prices and new orders are leading; industrial production is coincident.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "If the U.S. dollar strengthens significantly against the euro, which of the following effects is MOST likely?",
+      "choices": [
+        "U.S. exports to the eurozone become more competitive and increase",
+        "European goods become more expensive for U.S. consumers",
+        "U.S. consumers find European imports cheaper",
+        "The U.S. trade deficit with Europe narrows immediately"
+      ],
+      "answer": 2,
+      "explanation": "A stronger dollar means each dollar buys more euros, so European (and other foreign) goods become cheaper for U.S. consumers, increasing imports. U.S. exports become more expensive abroad \u2014 hurting, not helping, exporters \u2014 and the trade deficit tends to widen.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following actions by the Federal Open Market Committee would MOST directly tend to reduce the money supply and raise short-term interest rates?",
+      "choices": [
+        "The Fed buys U.S. Treasury securities from primary dealers",
+        "The Fed sells U.S. Treasury securities to primary dealers",
+        "The Fed lowers the discount rate",
+        "The Fed lowers the interest rate paid on reserve balances"
+      ],
+      "answer": 1,
+      "explanation": "When the Fed sells Treasuries in the open market, dealers pay with bank reserves, draining reserves from the banking system and putting upward pressure on short-term rates. Buying securities, lowering the discount rate, or lowering IORB are all easing actions.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which statement about GDP and GNP is correct?",
+      "choices": [
+        "GDP measures the value of goods and services produced by U.S. citizens anywhere in the world",
+        "GNP measures the value of goods and services produced within U.S. borders regardless of producer nationality",
+        "GDP measures output produced within U.S. borders regardless of the nationality of the producer",
+        "Two consecutive quarters of positive real GDP growth define a recession"
+      ],
+      "answer": 2,
+      "explanation": "GDP is geographic \u2014 output produced within a country's borders. GNP is based on citizenship/ownership of the factors of production. A recession is commonly defined as two consecutive quarters of negative (not positive) real GDP growth.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following pairs is LEAST accurately matched?",
+      "choices": [
+        "Discount rate \u2014 rate the Fed charges depository institutions for short-term borrowing at the discount window",
+        "Federal funds rate \u2014 rate banks charge each other on overnight loans of reserves",
+        "Prime rate \u2014 rate large money-center banks charge their most creditworthy corporate customers",
+        "Broker call loan rate \u2014 rate set by the Federal Reserve at FOMC meetings"
+      ],
+      "answer": 3,
+      "explanation": "The broker call (call money) rate is set by banks \u2014 it is the rate banks charge broker-dealers on loans collateralized by securities, used to fund margin accounts. It is not set by the Fed. The other three pairings are correct.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor reviewing a corporation's balance sheet would expect to find all of the following EXCEPT:",
+      "choices": [
+        "Total assets and total liabilities as of a point in time",
+        "Stockholders' equity",
+        "Net revenues and cost of goods sold for the period",
+        "Cash and cash equivalents"
+      ],
+      "answer": 2,
+      "explanation": "Revenues and cost of goods sold appear on the income statement, which reports performance over a period. The balance sheet shows assets, liabilities, and stockholders' equity at a single point in time.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following BEST describes a key difference between Keynesian and monetarist (supply-side) economic theory?",
+      "choices": [
+        "Keynesians emphasize active fiscal policy to manage aggregate demand, while monetarists emphasize controlled growth of the money supply",
+        "Monetarists rely on government spending changes, while Keynesians focus on the money supply",
+        "Both theories oppose any central bank intervention in the economy",
+        "Keynesians believe markets always self-correct quickly without intervention"
+      ],
+      "answer": 0,
+      "explanation": "Keynesian theory advocates active fiscal stimulus (spending and tax policy) to manage demand, especially in downturns. Monetarists hold that steady, predictable growth in the money supply is the primary determinant of long-run economic stability. The other choices reverse or misstate the theories.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "An investor is concerned about a coming recession. Which sector rotation strategy is MOST consistent with that outlook?",
+      "choices": [
+        "Shift from defensive stocks into cyclical stocks such as airlines and homebuilders",
+        "Shift from cyclical stocks into defensive stocks such as utilities and consumer staples",
+        "Increase exposure to capital-goods manufacturers and luxury retailers",
+        "Reduce holdings of pharmaceutical and food-products companies"
+      ],
+      "answer": 1,
+      "explanation": "Defensive industries (utilities, consumer staples, healthcare) tend to maintain earnings during recessions because demand for their products is relatively inelastic. Cyclical industries (autos, airlines, homebuilders, luxury goods) generally underperform when economic activity falls.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    },
+    {
+      "stem": "Which of the following statements about the four phases of the business cycle is NOT correct?",
+      "choices": [
+        "Expansion is characterized by rising GDP, increasing employment, and generally rising consumer confidence",
+        "The peak marks the transition from expansion to contraction",
+        "A trough marks the low point of the cycle before recovery begins",
+        "A recession is officially defined as one quarter of negative real GDP growth"
+      ],
+      "answer": 3,
+      "explanation": "A recession is commonly defined as two consecutive quarters of negative real GDP growth, not one. The four phases \u2014 expansion, peak, contraction, trough \u2014 and the descriptions of expansion, peak, and trough are accurate.",
+      "citations": [],
+      "unit": 9,
+      "jf": "km",
+      "mode": "hard"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Act of 1933 \u00a77",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a78",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Act of 1933 \u00a723",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.215",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.431",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a712",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.144A",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.145",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.147",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 230.164",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2266",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2269",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-11",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-32",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-34",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12085,
+    "output": 2888
+  },
+  "cost_usd": 0.3979
+}

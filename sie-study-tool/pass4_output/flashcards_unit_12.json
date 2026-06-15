@@ -1,0 +1,327 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "jf": "rf",
+  "cards": [
+    {
+      "type": "definition",
+      "front": "Form U4",
+      "back": "The Uniform Application for Securities Industry Registration. Filed by a member firm to register an associated person with FINRA via CRD. Requires disclosure of employment history, residential history, criminal/regulatory/financial events, and contains a predispute arbitration clause.",
+      "citation": "Rule 2263",
+      "unit": 12
+    },
+    {
+      "type": "definition",
+      "front": "Form U5",
+      "back": "The Uniform Termination Notice for Securities Industry Registration. The member firm must file Form U5 within 30 days of an associated person's termination and provide a copy to the former associated person within the same window.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Within how many days must a Form U4 amendment be filed for most disclosure events, and what is the shorter deadline for statutory disqualification events?",
+      "back": "Most amendments: within 30 days of learning of the event. Statutory disqualification events: within 10 business days.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "After a Form U4 is filed, how long does a candidate have to pass the required qualification examination?",
+      "back": "120 days from the filing of Form U4 to pass the required qualification exam.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is the consequence of filing a Form U4 or U5 that is incomplete, inaccurate, or misleading?",
+      "back": "It is a violation of FINRA Rule 1122. The associated person and/or firm may face disciplinary action including fines, suspension, or bar. Failure to correct a known misleading filing is also a violation.",
+      "citation": "Rule 1122",
+      "unit": 12
+    },
+    {
+      "type": "definition",
+      "front": "Statutory Disqualification",
+      "back": "Under Exchange Act \u00a73(a)(39), conditions that disqualify a person from associating with a member firm, including: expulsion/suspension from an SRO, SEC/CFTC bar, felony or securities-related misdemeanor conviction within the past 10 years, willful false statements on registration forms, or being subject to certain injunctions.",
+      "citation": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Which securities industry personnel must be fingerprinted, and who is exempt?",
+      "back": "Under SEC Rule 17f-2, partners, directors, officers, and employees of broker-dealers must be fingerprinted. Exemptions include persons not engaged in sales, who do not regularly access securities/monies/original books and records, and who do not supervise such persons (e.g., certain clerical staff).",
+      "citation": "17 CFR 240.17f-2",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under the current FINRA Rule 1240 Regulatory Element requirements, how often must registered persons complete the Regulatory Element?",
+      "back": "Annually. Each covered person must complete the Regulatory Element for each registration category they hold by December 31 of each year. (This replaced the prior 2nd/5th/10th anniversary cycle, effective 1/1/2023.)",
+      "citation": "Rule 1240",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is the Firm Element of Continuing Education, and how often must it be administered?",
+      "back": "An annual, firm-developed training program covering products, services, strategies, regulatory requirements, and ethical considerations relevant to the firm's business. Must be conducted at least annually for covered registered persons.",
+      "citation": "Rule 1240",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What happens if a registered person fails to complete the Regulatory Element by the deadline?",
+      "back": "Their registration is deemed inactive. They must cease all activities requiring registration and may not accept business or receive transaction-based compensation. If inactive for 2 consecutive years, the registration is terminated.",
+      "citation": "Rule 1240",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under the Maintaining Qualifications Program (MQP), how long can a former registered person extend their requalification window by completing annual CE?",
+      "back": "Up to 5 years (extending the standard 2-year requalification window). The person must elect into the MQP within 2 years of termination and complete annual CE through FINRA's FinPro system.",
+      "citation": "Rule 1240",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3270, what must a registered representative do before engaging in any outside business activity (OBA)?",
+      "back": "Provide prior written notice to their member firm in the form required by the firm. The firm must review the notice and may impose conditions or prohibit the activity.",
+      "citation": "Rule 3270",
+      "unit": 12
+    },
+    {
+      "type": "scenario",
+      "front": "A registered rep wants to sell a private placement security to a friend outside of her firm, receiving a commission. What must she do under FINRA Rule 3280?",
+      "back": "She must provide prior written notice to her firm AND obtain prior written approval before engaging in the private securities transaction (selling away) because she is receiving compensation. The firm must then supervise and record the transaction on its books as if it were the firm's own.",
+      "citation": "Rule 3280",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3280, what is required if a rep participates in a private securities transaction WITHOUT receiving selling compensation?",
+      "back": "The rep must still provide prior written notice to the firm. The firm must acknowledge receipt and may impose conditions, but written approval is not required (versus when compensation is received).",
+      "citation": "Rule 3280",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3210, what must a registered person do before opening a securities account at another firm?",
+      "back": "Obtain prior written consent from their employer member firm and notify the executing firm of their association. The executing firm must, upon written request, provide duplicate confirmations and account statements to the employer firm.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is the maximum gift value one member or associated person may give to an employee of another firm per year in connection with business?",
+      "back": "$100 per individual per year. Gifts of any kind are considered gratuities. The rule does not apply to personal gifts unrelated to business or to business entertainment subject to firm policies.",
+      "citation": "Rule 3220",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-37, what is the dollar threshold for a political contribution to an issuer official by a municipal finance professional (MFP) that does NOT trigger a 2-year ban on municipal securities business?",
+      "back": "$250 per election, and only if the MFP is entitled to vote for the official. Contributions above that threshold (or any amount to an official the MFP cannot vote for) trigger a 2-year ban on the firm engaging in municipal securities business with that issuer.",
+      "citation": "Rule G-37",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 4530, what kinds of events must a member firm report to FINRA about itself or its associated persons?",
+      "back": "Reportable events include: findings of violations of securities laws/SRO rules, written customer complaints alleging theft/misappropriation or forgery, internal disciplinary actions involving suspension/fine of $2,500+ or termination, criminal indictments/convictions, civil judgments, statutory disqualification events, and bankruptcies.",
+      "citation": "Rule 4530",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Which of the following must an associated person disclose on Form U4: (a) felony charges, (b) misdemeanor traffic ticket, (c) personal bankruptcy within past 10 years, (d) unsatisfied judgments/liens?",
+      "back": "(a) Yes\u2014all felonies (charges and convictions); (b) No\u2014routine traffic violations are not reportable; (c) Yes\u2014bankruptcies within past 10 years; (d) Yes\u2014unsatisfied judgments and liens. Investment-related misdemeanors must also be reported.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is a 'branch office' under FINRA rules, and what is an 'OSJ'?",
+      "back": "Branch office: any location where one or more associated persons regularly conducts the firm's broker-dealer business (with enumerated exclusions). OSJ (Office of Supervisory Jurisdiction): a location where specified supervisory functions occur (e.g., market making, structuring offerings, final approval of new accounts, supervising other branches). OSJs require designation of a registered principal.",
+      "citation": "Rule 3110(e)",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What is the standard inspection cycle for OSJs, branch offices, and non-branch locations?",
+      "back": "OSJs and supervisory branches: at least annually. Non-supervisory branch offices: at least every 3 years. Non-branch locations: on a regular periodic schedule, presumed at least every 3 years.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3110.19, what is a Residential Supervisory Location (RSL) and how is it treated for inspection purposes?",
+      "back": "Effective 6/1/2024, a registered person's private residence may qualify as a non-branch location subject to a periodic inspection cycle (rather than annual), provided conditions are met: no customer funds/securities held, no public signage, eligible-person status, and the firm conducts a risk assessment.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "What does FINRA Rule 3110.18 (Remote Inspections Pilot Program) allow?",
+      "back": "A 3-year pilot (7/1/2024 \u2013 6/30/2027) permitting eligible firms to satisfy Rule 3110(c) branch office inspection obligations remotely (without an on-site visit), subject to enrollment, written supervisory procedures, risk assessment, and quarterly/annual reporting to FINRA.",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under FINRA Rule 3240, when may a registered person borrow from or lend to a customer?",
+      "back": "Only if the firm has written procedures permitting such arrangements, the arrangement falls within an enumerated permissible relationship (immediate family, financial institution lender in the regular business of lending, personal business relationship outside the BD relationship, or fellow registered person at the firm), AND the firm gives written pre-approval (where required).",
+      "citation": null,
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-3, what continuing education obligations apply to municipal securities representatives?",
+      "back": "Municipal securities representatives are subject to both a Regulatory Element (annual content prescribed by the MSRB/FINRA) and a Firm Element (firm-developed annual training appropriate to the rep's municipal securities activities).",
+      "citation": "Rule G-3",
+      "unit": 12
+    },
+    {
+      "type": "qa",
+      "front": "Under MSRB Rule G-20, what is the gift limit applicable to persons engaged in municipal securities business?",
+      "back": "$100 per person per year for gifts given in relation to the recipient's municipal securities activities. Normal business entertainment, certain promotional items, and gifts of de minimis value are excluded subject to conditions.",
+      "citation": "Rule G-20",
+      "unit": 12
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12732,
+    "output": 3817
+  },
+  "cost_usd": 0.4773
+}

@@ -1,0 +1,352 @@
+{
+  "unit": 12,
+  "unit_name": "Joining & Leaving a Member Firm",
+  "jf": "rf",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which form is used to register an associated person with a FINRA member firm?",
+      "choices": [
+        "Form U5",
+        "Form U4",
+        "Form BD",
+        "Form ADV"
+      ],
+      "answer": 1,
+      "explanation": "Form U4 (Uniform Application for Securities Industry Registration or Transfer) is filed by the member firm to register an associated person. Form U5 is filed upon termination, Form BD registers the broker-dealer itself, and Form ADV is used by investment advisers.",
+      "citations": [
+        "Rule 1122",
+        "Rule 2263"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a form filed by a member firm to report the termination of an associated person?",
+      "choices": [
+        "Form U4",
+        "Form U5",
+        "Form BD-W",
+        "Form 211"
+      ],
+      "answer": 1,
+      "explanation": "Form U5 (Uniform Termination Notice for Securities Industry Registration) is filed upon termination of a registered person. Form U4 is for initial registration; Form BD-W withdraws a firm's registration.",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the SRO continuing education component that is administered by each member firm and addresses the firm's products, services, and regulatory responsibilities?",
+      "choices": [
+        "Regulatory Element",
+        "Firm Element",
+        "Maintaining Qualifications Program",
+        "Regulatory Notice Element"
+      ],
+      "answer": 1,
+      "explanation": "The Firm Element is the in-house CE training each member designs and delivers to its covered registered persons. The Regulatory Element is the FINRA-administered component completed through FinPro.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the CE component that registered persons must complete annually through FINRA?",
+      "choices": [
+        "Firm Element",
+        "Regulatory Element",
+        "Supervisory Element",
+        "Compliance Element"
+      ],
+      "answer": 1,
+      "explanation": "Under Rule 1240, the Regulatory Element must be completed annually by December 31 for each registration category held. The Firm Element is delivered by the member firm, not FINRA.",
+      "citations": [
+        "Rule 1240"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term is defined as any business activity outside the scope of an associated person's relationship with their member firm that requires prior written notice to the firm?",
+      "choices": [
+        "Private securities transaction",
+        "Outside business activity",
+        "Selling away",
+        "Fiduciary activity"
+      ],
+      "answer": 1,
+      "explanation": "An outside business activity (OBA) under FINRA Rule 3270 is any business activity conducted outside the scope of the relationship with the member firm and requires prior written notice. A private securities transaction (Rule 3280) specifically involves securities transactions away from the firm.",
+      "citations": [
+        "Rule 3270"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a securities transaction effected by an associated person outside the regular course or scope of employment with the member firm?",
+      "choices": [
+        "Outside business activity",
+        "Private securities transaction",
+        "Agency cross transaction",
+        "Principal transaction"
+      ],
+      "answer": 1,
+      "explanation": "A private securities transaction (often called \"selling away\") is governed by FINRA Rule 3280 and requires written notice to the firm; if the associated person receives compensation, written approval is required.",
+      "citations": [
+        "Rule 3280"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term is defined as a disqualification from association with a member firm based on certain criminal convictions, regulatory actions, or other enumerated events under the Exchange Act?",
+      "choices": [
+        "Statutory disqualification",
+        "Administrative suspension",
+        "Ineligibility waiver",
+        "Censure"
+      ],
+      "answer": 0,
+      "explanation": "Statutory disqualification is defined in Section 3(a)(39) of the Securities Exchange Act of 1934 and encompasses specified felony convictions, certain misdemeanors, regulatory bars, and similar events that disqualify a person from association with a member.",
+      "citations": [
+        "Securities Exchange Act of 1934 \u00a73(a)(39)"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the SEC requirement that securities industry personnel handling cash, securities, or original books and records submit fingerprints for identification and background screening?",
+      "choices": [
+        "CE registration",
+        "Fingerprinting requirement",
+        "Statutory disqualification check",
+        "BrokerCheck filing"
+      ],
+      "answer": 1,
+      "explanation": "SEC Rule 17f-2 requires fingerprinting of securities industry personnel, with limited exemptions for certain clerical and non-handling employees.",
+      "citations": [
+        "17 CFR 240.17f-2"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the FINRA rule limiting gifts given by a member or associated person to any employee of another person to no more than $100 per individual per year when the gift relates to the recipient's employer's business?",
+      "choices": [
+        "Influencing or rewarding employees of others",
+        "Non-cash compensation rule",
+        "Customer gratuity rule",
+        "Outside compensation rule"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 3220 (\"Influencing or Rewarding Employees of Others\") sets the gift limit at $100 per person per year for gifts in relation to the recipient's employer's business. (Note: $100 is the current limit under the rule.)",
+      "citations": [
+        "Rule 3220"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the predispute clause contained in Form U4 that an associated person acknowledges when signing the form?",
+      "choices": [
+        "Predispute arbitration clause",
+        "Predispute mediation clause",
+        "Litigation waiver clause",
+        "Class action waiver clause"
+      ],
+      "answer": 0,
+      "explanation": "Form U4 contains a predispute arbitration clause; Rule 2263 requires the firm to provide a written disclosure statement explaining its meaning whenever an associated person signs or acknowledges an amendment to the Form U4.",
+      "citations": [
+        "Rule 2263"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the FINRA system that allows the public to research the professional background of registered persons and member firms?",
+      "choices": [
+        "EDGAR",
+        "CRD direct lookup",
+        "BrokerCheck",
+        "TRACE"
+      ],
+      "answer": 2,
+      "explanation": "BrokerCheck is FINRA's public disclosure tool, and members must annually notify customers of its availability under Rule 2267. EDGAR is the SEC's filing system, and TRACE reports corporate bond trades.",
+      "citations": [
+        "Rule 8312",
+        "Rule 2267"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the prohibition against filing information with FINRA regarding membership or registration that is incomplete or inaccurate so as to be misleading?",
+      "choices": [
+        "Filing misleading information",
+        "Statutory disqualification",
+        "Material omission rule",
+        "Books and records violation"
+      ],
+      "answer": 0,
+      "explanation": "FINRA Rule 1122 prohibits filing misleading information as to membership or registration, including failing to correct such filings after notice. Statutory disqualification is a separate concept defined in Exchange Act \u00a73(a)(39).",
+      "citations": [
+        "Rule 1122"
+      ],
+      "unit": 12,
+      "jf": "rf",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a73(a)(39)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17f-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 1122",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2060",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2263",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2267",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310(c)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2320(g)(4)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2341(l)(5)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3110(e)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4513",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4530",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5110(h)",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 8312",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-2",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-3",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-7",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-10",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-20",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-37",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 7.10",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 12761,
+    "output": 2484
+  },
+  "cost_usd": 0.3777
+}

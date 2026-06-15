@@ -1,0 +1,564 @@
+{
+  "unit": 6,
+  "unit_name": "Customer Accounts",
+  "jf": "tc",
+  "mode": "definitions",
+  "questions": [
+    {
+      "stem": "Which term describes an account in which the customer has given a registered representative written authorization to make investment decisions without consulting the customer before each trade?",
+      "choices": [
+        "Fee-based account",
+        "Discretionary account",
+        "Prime brokerage account",
+        "Custodial account"
+      ],
+      "answer": 1,
+      "explanation": "A discretionary account allows the representative to decide what, when, and how much to buy or sell without prior client approval, provided prior written authorization has been obtained. A custodial account is one managed for a minor; it does not by itself involve representative discretion.",
+      "citations": [
+        "Rule 3260"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a custodial account established under state law to hold gifts of cash and securities \u2014 and other property \u2014 for the benefit of a minor until the minor reaches the age of majority?",
+      "choices": [
+        "Coverdell ESA",
+        "UTMA account",
+        "Revocable trust account",
+        "529 plan account"
+      ],
+      "answer": 1,
+      "explanation": "A Uniform Transfers to Minors Act (UTMA) account is a custodial account holding assets for a minor managed by a custodian until the minor reaches the age of majority. A Coverdell ESA is an education savings vehicle, not a general-purpose custodial account.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which type of trust can be changed or terminated by the grantor during the grantor's lifetime?",
+      "choices": [
+        "Irrevocable trust",
+        "Testamentary trust",
+        "Revocable (living) trust",
+        "Charitable remainder trust"
+      ],
+      "answer": 2,
+      "explanation": "A revocable (living) trust may be amended or revoked by the grantor while living. An irrevocable trust generally cannot be altered or revoked by the grantor once established.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to nonpublic personal information about a customer that a broker-dealer must safeguard and that triggers initial and annual privacy notice obligations?",
+      "choices": [
+        "Material nonpublic information",
+        "Nonpublic personal information under Regulation S-P",
+        "Customer identification information under the CIP rule",
+        "Suspicious activity information"
+      ],
+      "answer": 1,
+      "explanation": "Regulation S-P governs the collection, use, and protection of customers' nonpublic personal information and requires privacy notices. Material nonpublic information refers to undisclosed information about an issuer relevant to insider-trading rules, not customer privacy.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a joint account registration in which, upon the death of one owner, that owner's interest passes automatically to the surviving owner(s)?",
+      "choices": [
+        "Tenants in common (TIC)",
+        "Joint tenants with rights of survivorship (JTWROS)",
+        "Transfer on death (TOD) individual account",
+        "Community property account"
+      ],
+      "answer": 1,
+      "explanation": "JTWROS provides that upon a tenant's death, that tenant's interest passes automatically to the surviving owner(s). In tenants in common, a deceased owner's share passes to that owner's estate, not the surviving co-owner.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes an account in which the broker-dealer extends credit to the customer to finance the purchase of securities, subject to Regulation T and FINRA equity requirements?",
+      "choices": [
+        "Cash account",
+        "Margin account",
+        "Prime account",
+        "Wrap-fee account"
+      ],
+      "answer": 1,
+      "explanation": "A margin account allows the customer to borrow from the broker-dealer to purchase securities, subject to Reg T initial margin and FINRA minimum equity and maintenance margin rules. A cash account requires full payment for purchases.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term identifies a customer who executes four or more day trades within five business days in a margin account, where the number of day trades represents more than a specified percentage of total trading activity?",
+      "choices": [
+        "Pattern day trader",
+        "Active trader",
+        "Professional customer",
+        "Registered day trader"
+      ],
+      "answer": 0,
+      "explanation": "The pattern day trader designation applies to a customer effecting four or more day trades in five business days in a margin account meeting the activity threshold; such customers must maintain minimum equity of $25,000. \"Active trader\" is not a defined regulatory category.",
+      "citations": [
+        "Rule 4210"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the AML report a broker-dealer must file with FinCEN when it knows, suspects, or has reason to suspect that a transaction involves funds derived from illegal activity or is designed to evade BSA reporting?",
+      "choices": [
+        "Currency Transaction Report (CTR)",
+        "Suspicious Activity Report (SAR)",
+        "Form CRS",
+        "OFAC Blocked Persons Report"
+      ],
+      "answer": 1,
+      "explanation": "A SAR is filed with FinCEN when a firm suspects activity involving illicit funds or designed to evade BSA requirements. A CTR is filed for cash transactions exceeding the prescribed currency threshold, regardless of suspicion.",
+      "citations": [
+        "Rule 3310",
+        "USA PATRIOT Act \u00a7352"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes the stage of money laundering in which illicit cash is first introduced into the financial system?",
+      "choices": [
+        "Layering",
+        "Integration",
+        "Placement",
+        "Structuring"
+      ],
+      "answer": 2,
+      "explanation": "Placement is the initial stage where illegal proceeds are deposited or otherwise introduced into the financial system. Layering involves separating the funds from their source through multiple transactions, and integration returns the funds to the launderer in apparently legitimate form.",
+      "citations": [
+        "Rule 3310"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term refers to the FINRA requirement that a member firm use reasonable diligence to know and retain the essential facts concerning every customer and the authority of each person acting on the customer's behalf?",
+      "choices": [
+        "Best interest standard",
+        "Know-your-customer (KYC)",
+        "Customer identification program (CIP)",
+        "Form CRS delivery"
+      ],
+      "answer": 1,
+      "explanation": "The Know-Your-Customer rule requires firms to use reasonable diligence to know essential facts about every customer and persons authorized to act for the account. The CIP rule, by contrast, is the USA PATRIOT Act-based identity verification process.",
+      "citations": [
+        "Rule 2090"
+      ],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes a retirement account funded with after-tax contributions that, when qualifying distribution conditions are met, allows withdrawals of earnings free of federal income tax?",
+      "choices": [
+        "Traditional IRA",
+        "Roth IRA",
+        "SEP-IRA",
+        "Defined benefit plan"
+      ],
+      "answer": 1,
+      "explanation": "A Roth IRA is funded with after-tax contributions, and qualified distributions (including earnings) are tax-free. A traditional IRA generally permits pre-tax contributions and taxes withdrawals as ordinary income.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    },
+    {
+      "stem": "Which term describes an employer-sponsored retirement plan that promises a specified monthly benefit at retirement, with the employer bearing the investment risk?",
+      "choices": [
+        "Defined contribution plan",
+        "Defined benefit plan",
+        "Roth 401(k)",
+        "SIMPLE IRA"
+      ],
+      "answer": 1,
+      "explanation": "A defined benefit plan provides a predetermined retirement benefit, and the employer assumes the investment and funding risk. In a defined contribution plan, contributions are defined but the ultimate benefit depends on investment performance, with the employee bearing the investment risk.",
+      "citations": [],
+      "unit": 6,
+      "jf": "tc",
+      "mode": "definitions"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-5",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b5-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-10",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-2",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c1-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15c2-12",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.15l-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-3",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-4",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.17a-14",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-6",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.17a-7",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7314",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7326",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "USA PATRIOT Act \u00a7352",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2010",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2020",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2040",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2090",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2111",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2120",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2165",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2231",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2251",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2264",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2232",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3150",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3250",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3260",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 3310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4370",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4511",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4512",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 4514",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5130",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5210",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5220",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5230",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5240",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5270",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5280",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5290",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 5320",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 6438",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-8",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-9",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-13",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-14",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-15",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-18",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-21",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-25",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-39",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-41",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-47",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13831,
+    "output": 2635
+  },
+  "cost_usd": 0.4051
+}

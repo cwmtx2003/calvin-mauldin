@@ -1,0 +1,305 @@
+{
+  "unit": 4,
+  "unit_name": "Investment Companies & Insurance",
+  "jf": "pr",
+  "mode": "calculations",
+  "questions": [
+    {
+      "stem": "An investor purchases Class A shares of a mutual fund with a public offering price (POP) of $20.00 per share. The fund's net asset value (NAV) is $19.00 per share. What is the sales charge percentage on this purchase?",
+      "choices": [
+        "4.75%",
+        "5.00%",
+        "5.26%",
+        "8.50%"
+      ],
+      "answer": 1,
+      "explanation": "Sales charge % = (POP \u2212 NAV) / POP = ($20.00 \u2212 $19.00) / $20.00 = $1.00 / $20.00 = 5.00%. The distractor 5.26% incorrectly divides the $1.00 charge by the $19.00 NAV instead of the POP.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A mutual fund has total assets of $550 million, liabilities of $50 million, and 25 million shares outstanding. What is the fund's NAV per share?",
+      "choices": [
+        "$20.00",
+        "$22.00",
+        "$24.00",
+        "$25.00"
+      ],
+      "answer": 0,
+      "explanation": "NAV per share = (Total Assets \u2212 Total Liabilities) / Shares Outstanding = ($550M \u2212 $50M) / 25M = $500M / 25M = $20.00. The $22.00 distractor incorrectly ignores liabilities.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer invests $30,000 in a mutual fund. The fund offers a breakpoint reducing the sales charge to 4.00% for investments of $25,000 or more (versus 5.50% below that). How many shares will the customer receive if the NAV is $14.40 per share?",
+      "choices": [
+        "1,996.01 shares",
+        "2,000.00 shares",
+        "2,083.33 shares",
+        "2,170.14 shares"
+      ],
+      "answer": 1,
+      "explanation": "At the 4.00% breakpoint, POP = NAV / (1 \u2212 sales charge %) = $14.40 / (1 \u2212 0.04) = $14.40 / 0.96 = $15.00. Shares = $30,000 / $15.00 = 2,000 shares. The 2,083.33 distractor wrongly divides by NAV without including the sales charge.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A diversified management company under the Investment Company Act of 1940 has total assets of $400 million. With respect to 75% of its assets, what is the maximum dollar amount it may invest in the securities of any one issuer?",
+      "choices": [
+        "$15 million",
+        "$20 million",
+        "$30 million",
+        "$40 million"
+      ],
+      "answer": 0,
+      "explanation": "Under \u00a75(b)(1), within the 75% portion, no more than 5% of the fund's total assets may be invested in any one issuer. 5% \u00d7 $400M = $20M applies to total assets, but the 75% test limits each holding to 5% of total assets \u2014 so 5% \u00d7 $400M = $20M? Recalculating: the 5% limit applies to total assets, so max per issuer = 0.05 \u00d7 $400M = $20M. The correct answer is $20 million.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer signs a Letter of Intent (LOI) to invest $50,000 within 13 months to qualify for a breakpoint. During the 13-month period, the customer invests $35,000. The fund's standard sales charge is 6.00% but the breakpoint at $50,000 reduces it to 4.00%. How much additional sales charge will be assessed if the LOI is not completed?",
+      "choices": [
+        "$300",
+        "$500",
+        "$700",
+        "$1,000"
+      ],
+      "answer": 2,
+      "explanation": "Charges paid at 4.00% on $35,000 = $1,400. Charges that would apply at 6.00% on $35,000 = $2,100. Additional sales charge owed = $2,100 \u2212 $1,400 = $700. The $300 distractor incorrectly applies the 2% differential to only the shortfall amount.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A variable annuity contract has a 7-year surrender charge schedule beginning at 7% in year 1 and declining 1% each year. A contract owner surrenders the contract in year 4 when the account value is $80,000. What is the surrender charge?",
+      "choices": [
+        "$2,400",
+        "$3,200",
+        "$4,000",
+        "$5,600"
+      ],
+      "answer": 1,
+      "explanation": "Year 1 = 7%, Year 2 = 6%, Year 3 = 5%, Year 4 = 4%. Surrender charge = 4% \u00d7 $80,000 = $3,200. The $4,000 distractor uses the year-3 rate of 5%.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An open-end fund charges a 12b-1 fee of 0.75% annually. If an investor has $40,000 invested in the fund for one year (with the balance assumed constant), what is the approximate 12b-1 fee paid?",
+      "choices": [
+        "$75",
+        "$200",
+        "$300",
+        "$750"
+      ],
+      "answer": 2,
+      "explanation": "12b-1 fee = 0.75% \u00d7 $40,000 = $300 per year. The $75 distractor mistakes the percentage as 0.075% rather than 0.75%.",
+      "citations": [
+        "17 CFR 270.12b-1"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A closed-end fund's shares trade at $18.50 on the NYSE, while the fund's NAV per share is $20.00. What is the discount to NAV?",
+      "choices": [
+        "7.50%",
+        "8.11%",
+        "9.00%",
+        "10.00%"
+      ],
+      "answer": 0,
+      "explanation": "Discount % = (NAV \u2212 Market Price) / NAV = ($20.00 \u2212 $18.50) / $20.00 = $1.50 / $20.00 = 7.50%. The 8.11% distractor incorrectly divides $1.50 by the $18.50 market price.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer has owned mutual fund shares worth $20,000. Using the right of accumulation (ROA), she invests an additional $8,000. The fund offers breakpoints at $25,000 (4.50%) and $50,000 (3.50%); the standard charge is 5.50%. What sales charge percentage applies to the new $8,000 investment?",
+      "choices": [
+        "3.50%",
+        "4.50%",
+        "5.50%",
+        "Blended rate"
+      ],
+      "answer": 1,
+      "explanation": "Under ROA, the cumulative value ($20,000 existing + $8,000 new = $28,000) qualifies the new purchase for the $25,000 breakpoint at 4.50%. It does not reach the $50,000 breakpoint, so 3.50% is incorrect.",
+      "citations": [
+        "Rule 2342"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "An investor purchases 500 shares of a mutual fund at a POP of $12.50 per share with a sales charge of 5.00%. What total dollar amount of the investment is actually used to purchase fund shares at NAV (i.e., not consumed by the sales charge)?",
+      "choices": [
+        "$5,937.50",
+        "$6,000.00",
+        "$6,250.00",
+        "$6,562.50"
+      ],
+      "answer": 0,
+      "explanation": "Total invested = 500 \u00d7 $12.50 = $6,250.00. Sales charge = 5.00% \u00d7 $6,250 = $312.50. Net amount invested at NAV = $6,250.00 \u2212 $312.50 = $5,937.50. The $6,000 distractor wrongly subtracts a flat 4% rather than the 5% charge.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a75"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A variable annuity separate account has an Assumed Interest Rate (AIR) of 4%. In a given month, the separate account's actual performance is 6%. Will the next annuity payment increase, decrease, or remain the same compared with the prior payment?",
+      "choices": [
+        "Decrease, because 6% exceeds the AIR by 2%",
+        "Increase, because actual performance (6%) exceeded the AIR (4%)",
+        "Remain the same, because the AIR is fixed at 4%",
+        "Decrease by 2% to align with the AIR"
+      ],
+      "answer": 1,
+      "explanation": "Annuity payments rise when the separate account's actual return exceeds the AIR, fall when it underperforms the AIR, and stay level when it equals the AIR. Since 6% > 4% AIR, the payment increases.",
+      "citations": [
+        "Rule 2330"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    },
+    {
+      "stem": "A customer purchases 1,000 shares of a no-load mutual fund at an NAV of $25.00 per share. One year later, the fund pays a $0.80 per share dividend and a $1.20 per share capital gains distribution, and the NAV rises to $26.50. Assuming all distributions are reinvested into the customer's account at $26.50 NAV, what is the approximate dollar value of the additional shares acquired through reinvestment?",
+      "choices": [
+        "$800",
+        "$1,200",
+        "$2,000",
+        "$2,650"
+      ],
+      "answer": 2,
+      "explanation": "Total distributions per share = $0.80 + $1.20 = $2.00. On 1,000 shares = $2,000 reinvested. The $800 and $1,200 distractors each capture only one component (dividend or capital gain) rather than the total reinvested.",
+      "citations": [
+        "Investment Company Act of 1940 \u00a74"
+      ],
+      "unit": 4,
+      "jf": "pr",
+      "mode": "calculations"
+    }
+  ],
+  "citations_available": [
+    {
+      "ref": "17 CFR 240.3a11-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 240.10b-18",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a73(a)",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a74",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "Investment Company Act of 1940 \u00a75",
+      "type": "statute",
+      "ship": true
+    },
+    {
+      "ref": "17 CFR 270.12b-1",
+      "type": "cfr",
+      "ship": true
+    },
+    {
+      "ref": "Rule 2261",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2262",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2310",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2330",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2342",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 2360",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule D-12",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-17",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-30",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule G-45",
+      "type": "sro",
+      "ship": false
+    },
+    {
+      "ref": "Rule 1.1",
+      "type": "sro",
+      "ship": false
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "tokens": {
+    "input": 13008,
+    "output": 3173
+  },
+  "cost_usd": 0.4331
+}
