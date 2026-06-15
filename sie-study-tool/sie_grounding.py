@@ -207,10 +207,11 @@ def resolve_ref_excerpt(ref: dict):
         part_file = _corpus_glob(ACT_CFR_PART[act])
         if part_file:
             num = re.sub(r"^Rule\s+", "", raw)
-            part = ACT_CFR_PART[act].split("Part ")[-1]
+            part = ACT_CFR_PART[act].split("Part ")[-1]          # e.g. "240"
+            title = ACT_CFR_PART[act].replace("Part ", "")        # e.g. "17 CFR 240"
             ex = extract_cfr_rule(part_file.name, f"{part}.{num}")
             return ex, {"id": ACT_CFR_PART[act], "type": "cfr", "ship": True,
-                        "resolved": ex is not None, "ref": f"{part} CFR {part}.{num}"}
+                        "resolved": ex is not None, "ref": f"{title}.{num}"}
     return None, {"id": act or "?", "type": "unknown", "ship": True, "resolved": False, "ref": raw}
 
 
@@ -257,6 +258,33 @@ def resolve_grounding(manifest: dict, jf_key: str, include_sro: bool = True) -> 
     resolved = sum(1 for c in citations if c["resolved"])
     return {"text": "\n".join(parts), "citations": citations,
             "resolved": resolved, "unresolved": unresolved}
+
+
+def resolve_grounding_for_unit(manifest: dict, unit_num, include_sro: bool = True) -> dict:
+    """Grounding for one app unit, via its job-function crosswalk.
+
+    The topic->unit crosswalk is currently JF-coarse (every topic in a JF maps to
+    every unit in that JF until source_map.json is hand-refined), so a unit grounds
+    on its whole JF section. Correct and complete, just broader than ideal.
+    """
+    u = manifest["units"].get(str(unit_num))
+    if not u:
+        raise ValueError(f"unknown unit {unit_num!r}")
+    g = resolve_grounding(manifest, u["jf"], include_sro=include_sro)
+    g["unit"] = int(unit_num)
+    g["unit_name"] = u["name"]
+    g["jf"] = u["jf"]
+    return g
+
+
+def compact_citations(citations: list) -> list:
+    """De-duplicated, resolved citation refs (for prompting + output tagging)."""
+    seen, out = set(), []
+    for c in citations:
+        if c.get("resolved") and c["ref"] not in seen:
+            seen.add(c["ref"])
+            out.append({"ref": c["ref"], "type": c["type"], "ship": c["ship"]})
+    return out
 
 
 def load_manifest(path: Path = MANIFEST) -> dict:

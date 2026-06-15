@@ -247,13 +247,13 @@ The following are commonly suspected of being out of date but **are not** as of 
 
 ---
 
-# APPENDIX A — Unit-by-Unit Audit of the Kaplan SIE LEM, 3rd Ed. (©2022, updated July 2023)
+# APPENDIX A — Unit-by-Unit Audit of Common SIE Prep Content
 
-This appendix walks the manual unit by unit. For each unit I list the stated **Learning Objectives** (as printed at the start of the unit), then flag every claim that is **STALE**, **OK** (current as printed), or **ADD** (a current rule the manual does not cover but the SIE may test). Page numbers refer to the printed page numbers in the Kaplan PDF.
+This appendix walks the SIE curriculum unit by unit. For each unit I list the stated **Learning Objectives**, then flag every commonly-taught claim that is **STALE**, **OK** (current), or **ADD** (a current rule older prep material does not cover but the SIE may test), checked against current primary sources.
 
-**Headline finding.** The 3rd Edition (updated July 2023) is **more current than a typical pre-2023 prep book** — it already reflects Reg BI, Form CRS, Reg A+ $75M, the Coverdell/529 framework, ADRs, and the post-2020 conduct rules. The principal gaps are:
+**Headline finding.** Typical recent prep content already reflects Reg BI, Form CRS, Reg A+ $75M, the Coverdell/529 framework, ADRs, and the post-2020 conduct rules. The principal gaps are:
 
-1. **Settlement is T+2 throughout the manual** (Units 1, 2, 3). The May 2024 T+1 transition is not reflected anywhere. This is the single biggest correction.
+1. **Settlement is taught as T+2 throughout older material** (Units 1, 2, 3). The May 2024 T+1 transition is often not reflected. This is the single biggest correction.
 2. **FINRA Rule 2165** (Unit 11) is described in pre-2022-amendment form — 15-business-day hold on disbursements only. The 2022 amendments (transaction holds; up to 55-business-day extension) are missing.
 3. **FINRA Rule 3241** (registered person as beneficiary/POA/trustee) is missing entirely from Unit 12.
 4. **2023 Money Market Fund reforms** (Unit 4) are not reflected — the manual still describes the legacy redemption-gate / discretionary-liquidity-fee framework where MMFs are discussed.
@@ -307,7 +307,7 @@ What follows is the unit-by-unit detail.
 | 3.1 | **Corporate bonds settle T+2** (p. ~75) with accrued interest on a 30/360 basis. | **STALE** | Corporate bond settlement is now **T+1**; 30/360 accrual convention is unchanged. |
 | 3.2 | **Municipal bonds settle T+2** (p. ~76) with accrued interest 30/360. | **STALE** | MSRB Rules **G-12 and G-15** were amended to **T+1**, effective **5/28/2024**. Source: MSRB Notice 2023-19. |
 | 3.3 | **Treasury bonds/notes/bills settle T+1**. | **OK** | Unchanged (Treasuries were always T+1). |
-| 3.4 | **Asset-backed securities settle T+2** (p. ~80). | **STALE** | Now **T+1** for standard equity-like and corporate-debt-like ABS that trade under the general settlement-cycle rule. (Specific MBS/TBA timelines are governed by SIFMA's separate TBA schedule and were not part of the 15c6-1 amendment — but Kaplan's general statement should be updated.) |
+| 3.4 | **Asset-backed securities settle T+2** (p. ~80). | **STALE** | Now **T+1** for standard equity-like and corporate-debt-like ABS that trade under the general settlement-cycle rule. (Specific MBS/TBA timelines are governed by SIFMA's separate TBA schedule and were not part of the 15c6-1 amendment — but the commonly-taught statement should be updated.) |
 | 3.5 | Bond taxation: tax-equivalent yield formula; municipal interest federally tax-exempt; Treasury interest exempt from state/local. | **OK** | Unchanged. |
 | 3.6 | Money market instruments (CDs, commercial paper, BAs, repos, fed funds, T-bills, negotiable CDs). | **OK** | Unchanged. (FDIC insurance cap remains $250,000 per depositor per insured bank per ownership category — confirmed.) |
 | 3.7 | Issuer credit-rating agencies (S&P, Moody's, Fitch). | **OK** | Unchanged. |
@@ -338,7 +338,7 @@ What follows is the unit-by-unit detail.
 
 | # | Claim | Status | Correction / Citation |
 |---|---|---|---|
-| 5.1 | **Listed options settle T+1** (premium next business day); exercise of equity options settles **T+2**. | **STALE in part** | Options-premium settlement is still next business day (the manual is right on that). **Exercise of an equity option that delivers stock** now settles **T+1** (it tracked the underlying equity from T+2 to T+1 on 5/28/2024). |
+| 5.1 | **Listed options settle T+1** (premium next business day); exercise of equity options settles **T+2**. | **STALE in part** | Options-premium settlement is still next business day (older material is right on that). **Exercise of an equity option that delivers stock** now settles **T+1** (it tracked the underlying equity from T+2 to T+1 on 5/28/2024). |
 | 5.2 | Options characteristics — strike, expiration, contract size (100), OCC issues/guarantees options, OPRA, NYSE/CBOE. | **OK** | Unchanged. |
 | 5.3 | 529 plans — state-sponsored, federal tax-deferred / qualified-distribution tax-free, no income limits, beneficiary changeable within family. | **OK** | Unchanged. **ADD:** SECURE 2.0 permits tax- and penalty-free **rollover from a 529 to a Roth IRA** (subject to a $35,000 lifetime cap, 15-year-old-account rule, annual rollover capped at the IRA contribution limit). Effective for distributions in **2024**. |
 | 5.4 | Coverdell ESA — $2,000 annual contribution per beneficiary, age-30 distribution rule. | **OK** | Unchanged. |
@@ -443,7 +443,7 @@ What follows is the unit-by-unit detail.
 | 11.7 | Rule 5130 / 5131 — restricted persons in IPO allocations; spinning prohibition. | **OK** | Unchanged. |
 | 11.8 | **FINRA Rule 2165 (financial exploitation of specified adults)** — temporary hold on **disbursements** for up to **15 business days**, extendable by a state regulator. | **STALE** | The 2022 amendments (effective **3/17/2022**) (a) added authority to place a hold on a **securities transaction** in addition to a disbursement, (b) permit an internal extension up to **25 business days total** (15 initial + 10 additional), and (c) permit a further **30-business-day** extension (up to **55 business days total**) where the matter has been reported to a state regulator, agency, or court of competent jurisdiction. FINRA *Regulatory Notice 22-05*. |
 | 11.9 | Trusted contact person — required to make reasonable effort to obtain at account opening. | **OK** | Unchanged (FINRA Rule 4512). |
-| 11.10 | **FINRA Rule 3241 (registered person named as customer's beneficiary / executor / trustee / POA)**. | **MISSING** | The 3rd Edition does not appear to cover Rule 3241. Add: registered person must give written notice to the firm and obtain firm approval before being named in such a role for a non-immediate-family customer. Effective **2/15/2021**. *Regulatory Notice 20-38*. |
+| 11.10 | **FINRA Rule 3241 (registered person named as customer's beneficiary / executor / trustee / POA)**. | **MISSING** | Older prep material does not appear to cover Rule 3241. Add: registered person must give written notice to the firm and obtain firm approval before being named in such a role for a non-immediate-family customer. Effective **2/15/2021**. *Regulatory Notice 20-38*. |
 | 11.11 | TCPA cold-call rules — calls only **8 AM – 9 PM** local time of the called party; firm DNC list and National DNC Registry screening; identify caller, firm, phone number. | **OK** | Unchanged in substance. The **FCC's "one-to-one consent" amendment** (intended to restrict lead-generator consent) was vacated by the 11th Circuit in *IMC v. FCC* (Jan. 2025) — not in scope for SIE. |
 | 11.12 | **Public-communications categories** — retail / institutional / correspondence (FINRA Rule 2210); pre-use principal approval generally required for retail communications. | **OK** | Unchanged. |
 | 11.13 | Customer statements — quarterly minimum (monthly if account activity). | **OK** | Unchanged. |
@@ -469,8 +469,8 @@ What follows is the unit-by-unit detail.
 | 12.9 | Borrowing from/lending to customers — generally prohibited; permitted only under enumerated relationships (immediate family / bank lender / business relationship outside the BD relationship) **and** written firm approval. | **OK** | Unchanged (FINRA Rule 3240). |
 | 12.10 | **Branch office** = any location where one or more associated persons regularly conducts BD business; **OSJ** designation triggers heightened supervision. | **OK** | Unchanged. |
 | 12.11 | **Branch office inspection cycle** — annual for OSJs; every 3 years for non-OSJ branches; periodic for non-branch locations. | **OK as a general rule** | Cycle unchanged, BUT see additions below. |
-| 12.12 | **FINRA Rule 3110.18 (Remote Inspections Pilot Program)**. | **MISSING** | The 3rd Edition does not cover this. Three-year pilot effective **7/1/2024 – 6/30/2027** permits eligible firms to satisfy Rule 3110(c) inspection obligations remotely, subject to enrollment, written supervisory procedures, and reporting to FINRA. *Regulatory Notice 24-02*. |
-| 12.13 | **FINRA Rule 3110.19 (Residential Supervisory Location)**. | **MISSING** | The 3rd Edition does not cover this. Effective **6/1/2024**, a registered person's private residence may be classified as a **non-branch location** subject to a **periodic** (rather than annual) inspection cycle, provided enumerated conditions are met (no customer funds, no public signage, eligible-person status, etc.). *Regulatory Notice 24-02*. |
+| 12.12 | **FINRA Rule 3110.18 (Remote Inspections Pilot Program)**. | **MISSING** | Older prep material does not cover this. Three-year pilot effective **7/1/2024 – 6/30/2027** permits eligible firms to satisfy Rule 3110(c) inspection obligations remotely, subject to enrollment, written supervisory procedures, and reporting to FINRA. *Regulatory Notice 24-02*. |
+| 12.13 | **FINRA Rule 3110.19 (Residential Supervisory Location)**. | **MISSING** | Older prep material does not cover this. Effective **6/1/2024**, a registered person's private residence may be classified as a **non-branch location** subject to a **periodic** (rather than annual) inspection cycle, provided enumerated conditions are met (no customer funds, no public signage, eligible-person status, etc.). *Regulatory Notice 24-02*. |
 | 12.14 | **FINRA Rule 4111 (Restricted Firm Obligations)**. | **MISSING / lower priority** | Effective **1/1/2022**. Annual FINRA process to designate "Restricted Firms" presenting heightened investor-protection risk and impose a Restricted Deposit Requirement. Currently a low-frequency SIE item but technically in scope as a FINRA enforcement tool. |
 
 ---
@@ -512,7 +512,7 @@ I checked every figure used in the manual against the current primary-source val
 
 # APPENDIX C — Items the Manual Already Got Right (Don't "Correct" Them)
 
-These are areas where it might look like older Kaplan content is wrong, but the 3rd Edition (updated July 2023) already reflects the current rule:
+These are areas where it might look like older prep content is wrong, but current primary sources already reflect the current rule:
 
 - **Reg BI as the conduct standard** for retail recommendations, with the four obligations (Disclosure / Care / Conflict / Compliance) and a **6/30/2020** compliance date.
 - **Form CRS** delivery at or before account opening / recommendation.
@@ -535,7 +535,7 @@ These are areas where it might look like older Kaplan content is wrong, but the 
 
 ---
 
-*Last reviewed against primary sources: May 2026. Citations link to SEC.gov, FINRA.org, MSRB.org, FinCEN.gov, IRS.gov, or the Federal Register. The 3rd Edition Kaplan SIE LEM (©2022, updated July 2023) was reviewed unit by unit; each unit's stated Learning Objectives were mapped to the unit's substantive claims, and each claim was checked against current rules.*
+*Last reviewed against primary sources: May 2026. Citations link to SEC.gov, FINRA.org, MSRB.org, FinCEN.gov, IRS.gov, or the Federal Register. Common SIE prep content was reviewed unit by unit; each unit's stated Learning Objectives were mapped to the unit's substantive claims, and each claim was checked against current rules.*
 
 ## Global
 - Option-exercise settlement: when an equity (stock) option is EXERCISED, the resulting stock delivery now settles T+1 (aligned with regular-way equity settlement, effective 5/28/2024) — NOT T+2. Index options settle the next business day in cash (intrinsic value). Any statement that an equity option exercise settles "T+2 after exercise" is STALE; use T+1.
