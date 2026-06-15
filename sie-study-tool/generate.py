@@ -57,17 +57,24 @@ GROUNDING_CAP = 30000      # cap grounding text per prompt to bound input cost
 def get_api_key() -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
-        keyfile = Path(__file__).parent / ".api_key"
-        if keyfile.exists():
-            key = keyfile.read_text().strip()
+        here = Path(__file__).parent
+        # Candidate key files (all gitignored): the canonical .api_key, plus a
+        # plain api_key file or api_key/api_key folder.
+        for kf in (here / ".api_key", here / "api_key" / "api_key", here / "api_key"):
+            if kf.is_file():
+                txt = kf.read_text(encoding="utf-8-sig", errors="replace").strip()
+                if txt:
+                    key = txt
+                    break
     if not key:
         raise SystemExit(
-            "ANTHROPIC_API_KEY not set.\n"
+            "ANTHROPIC_API_KEY not set, or the key file is empty.\n"
             "Either:\n"
-            "  1. Run: export ANTHROPIC_API_KEY='sk-ant-...' (Mac/Linux)\n"
-            "     Or:  set ANTHROPIC_API_KEY=sk-ant-...    (Windows cmd)\n"
-            "     Or:  $env:ANTHROPIC_API_KEY='sk-ant-...' (Windows PowerShell)\n"
-            "  2. Or create a file '.api_key' next to this script with your key inside."
+            "  1. $env:ANTHROPIC_API_KEY='sk-ant-...' (Windows PowerShell)\n"
+            "     export ANTHROPIC_API_KEY='sk-ant-...' (Mac/Linux)\n"
+            "  2. Or put your key inside one of these files (gitignored):\n"
+            "       .api_key   |   api_key/api_key   |   api_key\n"
+            "     (must contain the key text — a 0-byte file won't work.)"
         )
     return key
 

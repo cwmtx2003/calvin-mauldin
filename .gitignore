@@ -1,4 +1,7 @@
 .api_key
+# Anthropic key — also protect a plain 'api_key' file or folder (any location)
+api_key
+api_key/
 
 # Local backups & build artifacts (not part of the deployed app)
 __pycache__/
