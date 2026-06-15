@@ -155,13 +155,15 @@ def parse_json_response(text: str, api_key: str = None) -> dict:
     m = re.search(r"\{.*\}", text, re.DOTALL)
     if m:
         text = m.group(0)
+    first_err = None
+    # strict=False tolerates literal newlines/tabs inside strings (a common model slip).
     try:
-        return json.loads(text)
-    except json.JSONDecodeError as first_err:
-        pass
+        return json.loads(text, strict=False)
+    except json.JSONDecodeError as e:
+        first_err = e  # `except ... as` deletes the name at block end; keep it
     repaired = re.sub(r",(\s*[}\]])", r"\1", text)
     try:
-        return json.loads(repaired)
+        return json.loads(repaired, strict=False)
     except json.JSONDecodeError:
         pass
     for cut in range(len(repaired) - 1, 0, -1):
@@ -170,7 +172,7 @@ def parse_json_response(text: str, api_key: str = None) -> dict:
         closes = candidate.count("}") + candidate.count("]")
         if opens == closes and candidate.rstrip().endswith(("}", "]")):
             try:
-                return json.loads(candidate)
+                return json.loads(candidate, strict=False)
             except json.JSONDecodeError:
                 continue
     if api_key:
@@ -186,7 +188,7 @@ def parse_json_response(text: str, api_key: str = None) -> dict:
             if fixed_text.startswith("```"):
                 fixed_text = re.sub(r"^```(?:json)?\s*\n?", "", fixed_text)
                 fixed_text = re.sub(r"\n?```\s*$", "", fixed_text)
-            return json.loads(fixed_text)
+            return json.loads(fixed_text, strict=False)
         except Exception as e:
             print(f"    ! Repair attempt failed: {e}", flush=True)
     raise json.JSONDecodeError(
@@ -391,7 +393,11 @@ SOURCE MATERIAL ({SOURCES_DESCRIPTION}):
 CITATIONS YOU MAY USE (do not invent others):
 {citation_menu(cites)}{errata_block([unit_num])}
 
-Respond ONLY with valid JSON:
+CRITICAL JSON: inside every string value, escape each double-quote as \\" and each
+newline as \\n. Do not put raw quotes, line breaks, or control characters inside
+strings — they break parsing.
+
+Respond ONLY with valid JSON, no markdown fences:
 {{
   "sections": [
     {{ "title": "...", "overview": "...", "key_concepts": ["..."], "rules": ["..."],
@@ -455,7 +461,10 @@ SOURCE MATERIAL ({SOURCES_DESCRIPTION}):
 CITATIONS YOU MAY USE (do not invent others):
 {citation_menu(cites)}{errata_block(sheet['source_units'])}
 
-Respond ONLY with valid JSON:
+CRITICAL JSON: inside every string value, escape each double-quote as \\" and each
+newline as \\n. No raw quotes, line breaks, or control characters inside strings.
+
+Respond ONLY with valid JSON, no markdown fences:
 {{
   "title": "{sheet['title']}",
   "sections": [ {{ "heading": "...", "type": "bullets" | "table" | "formula" | "rule", "items": [...] }} ],
@@ -498,7 +507,10 @@ SOURCE MATERIAL ({SOURCES_DESCRIPTION}):
 CITATIONS YOU MAY USE (do not invent others):
 {citation_menu(cites)}{errata_block([unit_num])}
 
-Respond ONLY with valid JSON:
+CRITICAL JSON: inside every string value, escape each double-quote as \\" and each
+newline as \\n. No raw quotes, line breaks, or control characters inside strings.
+
+Respond ONLY with valid JSON, no markdown fences:
 {{
   "questions": [
     {{ "stem": "...", "choices": ["A","B","C","D"], "answer": 0,
@@ -571,7 +583,7 @@ def generate_unit_guide(api_key, manifest, unit_num, out_dir, force=False):
     print(f"  → Unit {unit_num} study guide: {bundle['unit_name']}", flush=True)
     resp = call_opus(api_key, STUDY_GUIDE_SYSTEM,
                      study_guide_prompt_for_unit(unit_num, bundle["unit_name"], grounding, cites),
-                     max_tokens=8000)
+                     max_tokens=16000)  # dense multi-section guides exceeded 8000 -> truncation
     it, ot, cost = _usage(resp)
     parsed = parse_json_response(resp["content"][0]["text"], api_key)
     result = {"unit": unit_num, "unit_name": bundle["unit_name"],
@@ -599,7 +611,7 @@ def generate_reference_sheet(api_key, manifest, sheet, out_dir, force=False):
     grounding = "\n\n".join(texts)[:GROUNDING_CAP]
     print(f"  → Reference sheet: {sheet['title']}", flush=True)
     resp = call_opus(api_key, REFERENCE_SHEET_SYSTEM,
-                     reference_sheet_prompt(sheet, grounding, all_cites), max_tokens=4000)
+                     reference_sheet_prompt(sheet, grounding, all_cites), max_tokens=6000)
     it, ot, cost = _usage(resp)
     parsed = parse_json_response(resp["content"][0]["text"], api_key)
     result = {"key": sheet["key"], "title": sheet["title"],
@@ -624,7 +636,7 @@ def generate_question_set(api_key, manifest, unit_num, mode, out_dir,
     resp = call_opus(api_key, QUESTION_BANK_SYSTEM,
                      question_bank_prompt(unit_num, bundle["unit_name"], mode,
                                           grounding, cites, n),
-                     max_tokens=8000)
+                     max_tokens=12000)  # headroom for 12 items + explanations
     it, ot, cost = _usage(resp)
     parsed = parse_json_response(resp["content"][0]["text"], api_key)
     questions = parsed.get("questions", [])
@@ -719,38 +731,53 @@ def main():
               "--reference-sheets, --question-bank, or --all.")
         return
 
+    failures = []
+
+    def safe(label, fn, *a, **kw):
+        """Run one generation step; log+skip on failure so the long run continues.
+        Budget/fatal SystemExit still aborts. Re-run (resumable) fills any gaps."""
+        try:
+            fn(*a, **kw)
+        except SystemExit:
+            raise
+        except Exception as e:
+            print(f"  ! SKIPPED {label}: {e}", flush=True)
+            failures.append(label)
+
     if do_flashcards:
         print("\n--- FLASHCARDS (12 unit decks) ---")
         for u in range(1, 13):
-            generate_unit_flashcards(api_key, manifest, u, out_dir, force=args.force)
+            safe(f"flashcards unit {u}", generate_unit_flashcards, api_key, manifest, u, out_dir, force=args.force)
             check_budget()
         print("\n4 question-type decks:")
         for t in QUESTION_MODES:
-            generate_type_deck(api_key, manifest, t, out_dir, force=args.force)
+            safe(f"type deck {t}", generate_type_deck, api_key, manifest, t, out_dir, force=args.force)
             check_budget()
 
     if do_guides:
         print("\n--- STUDY GUIDES (12 units) ---")
         for u in range(1, 13):
-            generate_unit_guide(api_key, manifest, u, out_dir, force=args.force)
+            safe(f"study guide unit {u}", generate_unit_guide, api_key, manifest, u, out_dir, force=args.force)
             check_budget()
 
     if do_refs:
         print("\n--- REFERENCE SHEETS ---")
         for sheet in REFERENCE_SHEETS:
-            generate_reference_sheet(api_key, manifest, sheet, out_dir, force=args.force)
+            safe(f"reference {sheet['key']}", generate_reference_sheet, api_key, manifest, sheet, out_dir, force=args.force)
             check_budget()
 
     if do_qbank:
         print("\n--- QUESTION BANK (12 units x 4 modes) ---")
         for u in range(1, 13):
             for mode in QUESTION_MODES:
-                generate_question_set(api_key, manifest, u, mode, out_dir,
-                                      n=args.qbank_per_set, force=args.force)
+                safe(f"questions u{u} {mode}", generate_question_set, api_key, manifest, u, mode, out_dir,
+                     n=args.qbank_per_set, force=args.force)
                 check_budget()
 
     print(f"\n=== DONE ===")
     print(f"Total spent: ${total_spent(out_dir):.4f}")
+    if failures:
+        print(f"Skipped {len(failures)} item(s) (re-run to fill, it's resumable): {failures}")
     print(f"Output: {out_dir.resolve()}")
 
 
