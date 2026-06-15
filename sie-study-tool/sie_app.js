@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════
-// UNITS — Kaplan 3rd Ed. + FINRA Content Outline 2024
+// UNITS — curated topic summaries aligned to the FINRA SIE Content Outline 2024
 // ═══════════════════════════════════════════════════
 const UNITS=[
 {num:1,name:"Primary & Secondary Markets",topics:`PRIMARY MARKET: Issuers sell securities to raise capital — proceeds go to issuer. IPO: first-time issuance, Rule 5130 applies. APO/Follow-on: company already public, Rule 5130 does NOT apply. SECONDARY MARKET: investors trade among themselves — issuer does NOT receive proceeds. NYSE/Nasdaq (NMS securities); OTC (non-NMS). NYSE hours 9:30am–4:00pm ET. Dark pools: anonymous institutional block orders. THIRD MARKET: exchange-listed securities traded OTC. FOURTH MARKET: direct institutional trading via ECNs. SECURITIES ACT OF 1933 (Paper Act): governs primary market. Registration statement (S-1) filed with SEC. Cooling-off period: minimum 20 calendar days — no solicitation. Tombstone ads allowed. Prospectus: required for all purchasers. EXEMPT ISSUERS: US government, municipalities, national/state banks (NOT bank holding companies), S&Ls, charities, religious/educational nonprofits. EXEMPT ISSUES: commercial paper/bankers acceptances under 270 days; insurance policies; fixed annuity contracts (NOT variable annuities). REG A: Tier 1 up to $20M/12 months, Tier 2 up to $75M/12 months. REG D: private placements to accredited investors (net worth over $1M excluding primary residence OR income over $200K individual/$300K joint). RULE 144A: private resales to qualified institutional buyers (QIBs). SHELF REGISTRATION: WKSI registers securities to sell over 2-3 years. Supplemental prospectus required before each sale. MARKET PARTICIPANTS: SEC (primary federal regulator), FINRA (largest SRO), MSRB (municipal rules, NO enforcement authority), SIPC (customer protection if BD fails — NOT govt agency, $500K/$250K cash), FDIC ($250K bank deposits). Broker-dealers: introducing vs. clearing vs. prime. Investment advisers: fiduciaries under Investment Advisers Act 1940. Municipal advisors. Transfer agents. DTC/DTCC: depositories and clearing. ACCREDITED INVESTOR: net worth >$1M excluding primary residence OR income >$200K individual/$300K joint. ORDER TYPES: Market (immediate best price). Limit (specific price or better). Stop (triggers at stop price, becomes market). Stop-limit (triggers at stop, becomes limit). Buy limit = at or below. Sell limit = at or above. Buy stop = above market. Sell stop = below market. TIME RESTRICTIONS: Day order (default, EOD). GTC (auto-cancelled last business day of April and October). FILL RESTRICTIONS (limit only): FOK (all or nothing immediately). IOC (partial ok, rest cancelled). AON (all or nothing, can wait). SETTLEMENT: corporate T+1, options T+1, government T+1. PROSPECTUS DELIVERY: IPO NMS 25 days, IPO non-NMS 90 days, APO NMS 0 days, APO non-NMS 40 days. LONG = own, bullish. SHORT = borrowed and sold, bearish. METHODS OF DISTRIBUTION: Best efforts (underwriter not obligated to sell all). Firm commitment (underwriter buys all, resells). FEDERAL RESERVE tools: open market operations (MOST USED), discount rate, reserve requirement, fed funds rate (FOMC). Fiscal policy = Congress/President (NOT Fed). Monetary policy = Fed.`},
@@ -55,13 +55,13 @@ const JF_SHORT = {
 };
 
 // ═══════════════════════════════════════════════════
-// SOURCE GROUNDING (Phase 2)
-// Uses window.SIE_SOURCES (loaded from sie_sources.js) to ground questions
-// in the actual Kaplan Manual + FINRA Outline text instead of relying only
-// on the curated topics string.
+// SOURCE GROUNDING
+// The live-question booster grounds on the browser-safe FINRA SIE Content
+// Outline shipped in window.SIE_STUDY_DATA.outline plus each unit's curated
+// topic summary (UNITS[].topics). No copyrighted manual text is loaded.
 // ═══════════════════════════════════════════════════
 
-// Feature flag — defaults ON when SIE_SOURCES is loaded; user can disable for A/B test.
+// Feature flag — defaults ON when the outline is loaded; user can disable for A/B test.
 let groundingEnabled = (() => {
   try {
     const v = localStorage.getItem('sie_grounding_enabled');
@@ -75,15 +75,21 @@ function setGroundingEnabled(on) {
   try { localStorage.setItem('sie_grounding_enabled', on ? 'on' : 'off'); } catch (e) {}
 }
 
+// The browser-safe outline ships inside SIE_STUDY_DATA.outline (built by bundle.py).
+function outlineFull() {
+  const o = window.SIE_STUDY_DATA && window.SIE_STUDY_DATA.outline;
+  return (o && typeof o.full === 'string') ? o.full : '';
+}
+
 function isGroundingAvailable() {
-  return groundingEnabled && typeof window.SIE_SOURCES === 'object' && window.SIE_SOURCES !== null;
+  return groundingEnabled && outlineFull().length > 0;
 }
 
 // ═══════════════════════════════════════════════════
-// ERRATA — corrections to the Kaplan 3rd Ed. manual
+// ERRATA — corrections to the source material
 // Loaded from sie_errata.txt (plain text/markdown; sections like
 // "## Global" and "## Unit 3"). Treated as authoritative over
-// the manual so generated questions reflect up-to-date info.
+// the source material so generated questions reflect up-to-date info.
 // ═══════════════════════════════════════════════════
 let SIE_ERRATA = { global: [], byUnit: {} };
 
@@ -153,51 +159,73 @@ function renderErrataCallouts() {
   if (rs) rs.innerHTML = html;
 }
 
-// Lesson picker — given a unit and a question mode, return one lesson object.
-// Strategy:
-//   - For 'calculations' mode: prefer lessons with hasCalculations=true.
-//   - For 'definitions' mode: prefer lessons with hasDefinitions=true (almost all).
-//   - Otherwise: pick uniformly at random across the unit's lessons.
-// Returns the lesson object, or null if SIE_SOURCES isn't loaded.
-function pickLessonForUnit(unitNum, mode) {
-  if (!isGroundingAvailable()) return null;
-  const unitEntry = window.SIE_SOURCES.manual[String(unitNum)];
-  if (!unitEntry || !unitEntry.lessons || unitEntry.lessons.length === 0) return null;
-  let pool = unitEntry.lessons;
-  if (mode === 'calculations') {
-    const calcOnly = pool.filter(L => L.hasCalculations);
-    if (calcOnly.length) pool = calcOnly;
-  } else if (mode === 'definitions') {
-    const defOnly = pool.filter(L => L.hasDefinitions);
-    if (defOnly.length) pool = defOnly;
-  }
-  return pool[Math.floor(Math.random() * pool.length)];
+// ═══════════════════════════════════════════════════
+// QUESTION BANK — primary engine (pre-generated, no API key)
+// SIE_STUDY_DATA.questionBank (built by bundle.py from generate.py --question-bank)
+// holds MCQs grouped byUnit / byJF / byType. Quizzes, drills, and the practice
+// test draw from here first; the live API booster is only a fallback.
+// ═══════════════════════════════════════════════════
+function questionBank() {
+  const qb = window.SIE_STUDY_DATA && window.SIE_STUDY_DATA.questionBank;
+  return (qb && qb.total > 0) ? qb : null;
 }
 
-// JF-aware lesson picker — used by job-function quizzes. Picks from all lessons
-// across all units whose jobFunction tag matches `jfKey`. This is more accurate
-// than the unit-level JF_UNITS mapping because units 1, 7, 8, and 10 each split
-// their content across multiple job functions at the lesson level.
-function pickLessonForJF(jfKey, mode) {
-  if (!isGroundingAvailable()) return null;
-  const allLessons = [];
-  for (let u = 1; u <= 12; u++) {
-    const entry = window.SIE_SOURCES.manual[String(u)];
-    if (!entry) continue;
-    for (const L of entry.lessons) {
-      if (L.jobFunction === jfKey) allLessons.push(L);
-    }
-  }
-  if (allLessons.length === 0) return null;
-  let pool = allLessons;
-  if (mode === 'calculations') {
-    const calcOnly = pool.filter(L => L.hasCalculations);
-    if (calcOnly.length) pool = calcOnly;
-  } else if (mode === 'definitions') {
-    const defOnly = pool.filter(L => L.hasDefinitions);
-    if (defOnly.length) pool = defOnly;
-  }
-  return pool[Math.floor(Math.random() * pool.length)];
+function bankAvailable() { return questionBank() !== null; }
+
+const _bankServed = new Set(); // bank question ids already shown this session
+
+// Parse a bank citation string into the app's {source, ref, title} shape so the
+// existing citation-link builder (SOURCE_FALLBACKS) can resolve it.
+function bankCitationToObj(s) {
+  if (!s || typeof s !== 'string') return null;
+  const ref = s.trim();
+  let source = 'OUTLINE';
+  if (/^Rule\s+G-/i.test(ref)) source = 'MSRB';
+  else if (/^Rule\s+\d/i.test(ref)) source = 'FINRA';
+  else if (/\bCFR\b/i.test(ref)) source = 'SEC';
+  else if (/Securities Exchange Act/i.test(ref)) source = 'SEA34';
+  else if (/Securities Act of 1933/i.test(ref)) source = 'SA33';
+  else if (/Investment Company Act/i.test(ref)) source = 'ICA40';
+  else if (/Investment Advisers?\s+Act/i.test(ref)) source = 'IAA40';
+  else if (/PATRIOT|SIPA|Securities Investor Protection/i.test(ref)) source = 'USC';
+  else if (/Reg(ulation)?\s*T\b/i.test(ref)) source = 'FRB';
+  return { source, ref, title: '' };
+}
+
+// Convert a stored bank question to the app's internal question shape.
+function normalizeBankQuestion(bq) {
+  const letters = ['A', 'B', 'C', 'D'];
+  const options = {};
+  (bq.choices || []).slice(0, 4).forEach((c, i) => { options[letters[i]] = c; });
+  return {
+    topic: bq.unit_name || (bq.unit != null ? 'Unit ' + bq.unit : 'SIE'),
+    question: bq.stem,
+    options,
+    correct: letters[bq.answer] || 'A',
+    explanation: bq.explanation || '',
+    citations: (bq.citations || []).map(bankCitationToObj).filter(Boolean).slice(0, 4),
+    _fromBank: true,
+    _unitNum: bq.unit
+  };
+}
+
+// Draw one unused bank question. Prefers (unit, mode), then unit-any-mode, then
+// the job function; allows repeats only once a pool is exhausted. Null if no bank.
+function drawBankQuestion(unitNum, mode, jf) {
+  const qb = questionBank();
+  if (!qb) return null;
+  let pool = [];
+  if (unitNum != null && qb.byUnit && qb.byUnit[String(unitNum)]) pool = qb.byUnit[String(unitNum)];
+  if (!pool.length && jf && qb.byJF && qb.byJF[jf]) pool = qb.byJF[jf];
+  if (!pool.length) return null;
+  const unused = pool.filter(q => !_bankServed.has(q.id));
+  let cand = unused.filter(q => !mode || q.mode === mode);
+  if (!cand.length) cand = unused;                       // mode exhausted → any unused in pool
+  if (!cand.length) cand = pool.filter(q => !mode || q.mode === mode) || pool; // all used → allow repeats
+  if (!cand.length) cand = pool;
+  const q = cand[Math.floor(Math.random() * cand.length)];
+  if (q && q.id) _bankServed.add(q.id);
+  return q ? normalizeBankQuestion(q) : null;
 }
 
 // Trim helper — Outline is small enough to send whole; lessons can be big.
@@ -682,7 +710,7 @@ function setStep(step, state) {
 // DRILLING
 // ═══════════════════════════════════════════════════
 async function startDrill() {
-  if (!apiKey) { showErr('setup-err', 'Please enter your Anthropic API key first.'); return; }
+  if (!apiKey && !bankAvailable()) { showErr('setup-err', 'Add your Anthropic API key for live questions, or load the question bank first.'); return; }
   if (!pomoPresetChosen) { showErr('setup-err', 'Please select a focus preset.'); return; }
   if (selUnits.size === 0 && selJFs.size === 0) { showErr('setup-err', 'Please select at least one unit or job function.'); return; }
   if (selModes.size === 0) { showErr('setup-err', 'Please select at least one question mode.'); return; }
@@ -727,7 +755,8 @@ async function genQ() {
   document.getElementById('q-mode').textContent = pickedMode.toUpperCase();
 
   try {
-    const q = await callGenQuestion(unit, pickedMode);
+    // Primary engine: pre-generated bank (no API key). Live API is the fallback.
+    const q = drawBankQuestion(unit.num, pickedMode, null) || await callGenQuestion(unit, pickedMode);
     q._unitNum = unit.num;
     curQ = q;
     drillHistory.push({ topic: q.topic, unit: unit.num });
@@ -757,62 +786,53 @@ async function callGenQuestion(unit, pickedMode, opts = {}) {
   // don't cluster on the same headline facts. Keeps content on-topic (still drawn
   // from the lesson) while diversifying the angle each generation.
   const varietyAngles = [
-    'Choose a specific sub-topic from the lesson that differs from the recently tested ones.',
-    'Pick a less commonly drilled but exam-relevant detail from this lesson.',
-    'Target a common exam trap, exception, or edge case within this lesson.',
-    'Center the question on a precise rule, number, threshold, or timeframe from the lesson.',
-    'Draw from a different part of the lesson than the most obvious headline concept.',
-    'Test how a rule from this lesson applies or what its consequence is, not just its definition.'
+    'Choose a specific sub-topic from this unit that differs from the recently tested ones.',
+    'Pick a less commonly drilled but exam-relevant detail from this unit.',
+    'Target a common exam trap, exception, or edge case within this unit.',
+    'Center the question on a precise rule, number, threshold, or timeframe from this unit.',
+    'Draw from a different part of this unit than the most obvious headline concept.',
+    'Test how a rule from this unit applies or what its consequence is, not just its definition.'
   ];
   const angle = varietyAngles[Math.floor(Math.random() * varietyAngles.length)];
 
-  // ─── Phase 2: source grounding ───
-  // If SIE_SOURCES is loaded and grounding is enabled, include the FINRA Outline
-  // and the lesson text the question should be drawn from. The caller may pass
-  // opts.lesson to override the picker (useful when the quiz planner already
-  // chose a specific lesson for this slot).
-  let lesson = opts.lesson || pickLessonForUnit(unit.num, pickedMode);
-  let groundingBlock = '';
+  // ─── Source grounding ───
+  // Ground on the browser-safe FINRA outline (SIE_STUDY_DATA.outline) plus the
+  // unit's curated topic summary. No copyrighted manual text is used.
   let outlineBlock = '';
-  let sourcesClaim = `Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual and the official FINRA SIE Content Outline (2024)`;
-  if (isGroundingAvailable() && lesson) {
-    outlineBlock = `\n\nFINRA SIE CONTENT OUTLINE (official, full document):\n${window.SIE_SOURCES.outline.full}`;
-    groundingBlock = `\n\nKAPLAN SIE MANUAL — Lesson ${lesson.unit}.${lesson.lesson}: ${lesson.title}\n(This is the authoritative source. Draw the question's content from this lesson.)\n\n${trimText(lesson.text)}`;
-  } else {
-    // Fall back to topics-only mode
-    sourcesClaim = `Kaplan's 3rd Edition Securities Industry Essentials License Exam Manual and the official FINRA SIE Content Outline (2024)`;
+  const sourcesClaim = `the official FINRA SIE Content Outline (2024) together with authoritative public primary sources (federal securities statutes, SEC/FINRA/MSRB/CBOE rules, and OpenStax)`;
+  if (isGroundingAvailable()) {
+    outlineBlock = `\n\nFINRA SIE CONTENT OUTLINE (official, full document):\n${trimText(outlineFull())}`;
   }
 
-  // ─── Errata grounding: corrections that OVERRIDE the manual ───
-  const errataUnit = (lesson && lesson.unit != null) ? lesson.unit : unit.num;
-  const eu = errataForUnit(errataUnit);
+  // ─── Errata grounding: corrections that OVERRIDE the source material ───
+  const eu = errataForUnit(unit.num);
   const errataEntries = [...eu.global, ...eu.unit];
   let errataBlock = '';
   let errataRule = '';
   if (errataEntries.length) {
-    errataBlock = `\n\nERRATA — AUTHORITATIVE CORRECTIONS to the Kaplan 3rd Edition manual. The manual text above may be outdated or wrong where these entries apply; THESE ENTRIES ARE CORRECT AND CURRENT:\n${errataEntries.map(e => '- ' + e).join('\n')}`;
-    errataRule = `\n7. ERRATA OVERRIDE: Where any ERRATA entry conflicts with the manual/outline, the ERRATA is correct. The question stem, the correct answer, and the explanation MUST reflect the corrected, up-to-date information — never test or affirm the outdated version.`;
+    errataBlock = `\n\nERRATA — AUTHORITATIVE CORRECTIONS to the source material. The material above may be outdated or wrong where these entries apply; THESE ENTRIES ARE CORRECT AND CURRENT:\n${errataEntries.map(e => '- ' + e).join('\n')}`;
+    errataRule = `\n7. ERRATA OVERRIDE: Where any ERRATA entry conflicts with the outline/source, the ERRATA is correct. The question stem, the correct answer, and the explanation MUST reflect the corrected, up-to-date information — never test or affirm the outdated version.`;
   }
 
   const sys = `You are a FINRA SIE exam tutor using ${sourcesClaim} as your sources. Generate exam-realistic multiple choice questions that mirror the actual SIE exam.
 
 RULES:
-1. Base ALL content strictly on the provided Kaplan/FINRA material. Do not invent content not covered.
+1. Base ALL content strictly on the provided outline and curated topic summary. Do not invent content not covered.
 2. Exactly one correct answer. Four choices (A B C D), all plausible.
 3. ${modeprompts[pickedMode] || modeprompts.standard}
 4. ${avoid}
 5. Keep questions concise and focused on one testable concept.
-6. VARIETY: ${angle} Vary the wording, scenario framing, named securities/people, and any numbers so this question feels distinct from previous ones — while staying strictly within this lesson's material.${errataRule}
+6. VARIETY: ${angle} Vary the wording, scenario framing, named securities/people, and any numbers so this question feels distinct from previous ones — while staying strictly within this unit's material.${errataRule}
 8. CITATIONS: Provide 1–3 citations to OFFICIAL PRIMARY sources the student can use to verify the explanation. Each citation is a structured object with three fields:
    - "source": one of "FINRA" (FINRA rule or guidance), "MSRB" (Municipal Securities Rulemaking Board rule), "SEC" (SEC rule/release/staff guidance), "SA33" (Securities Act of 1933 section), "SEA34" (Securities Exchange Act of 1934 section), "ICA40" (Investment Company Act of 1940 section), "IAA40" (Investment Advisers Act of 1940 section), "IRC" (Internal Revenue Code section), "FRB" (Federal Reserve regulation, e.g. Reg T), "SIPC", "USC" (other US Code), or "OUTLINE" (FINRA SIE Content Outline section)
    - "ref": the rule/section identifier the user can search on. Examples: "Rule 2090", "Rule 2111", "Rule G-17", "Reg BI / Rule 15l-1", "Reg T", "Section 5", "Rule 10b-5", "Section 26(c)", "Outline §2.1"
    - "title": a short plain-English label naming what the rule covers, e.g. "Know Your Customer", "Suitability", "Customer Identification Program (CIP)", "Initial margin requirement", "Prohibition on fraudulent conduct"
-   Cite only rules/sections you are confident actually cover the tested concept — never fabricate a rule number. Do NOT cite Kaplan, study guides, or third-party material. Do NOT include URLs (URLs are built for you from the structured fields).
+   Cite only rules/sections you are confident actually cover the tested concept — never fabricate a rule number. Cite only official primary sources; do NOT cite study guides or third-party prep material. Do NOT include URLs (URLs are built for you from the structured fields).
 
 Respond ONLY with valid JSON — no markdown fences, no extra text:
 {"topic":"brief topic name","question":"full question stem here","options":{"A":"...","B":"...","C":"...","D":"..."},"correct":"B","explanation":"Why the correct answer is right. Why each wrong answer is incorrect.","citations":[{"source":"FINRA","ref":"Rule 2090","title":"Know Your Customer"}]}`;
 
-  const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nCURATED TOPIC SUMMARY (use this for the unit's key facts and exam-tested points):\n${unit.topics}${outlineBlock}${groundingBlock}${errataBlock}`;
+  const msg = `Generate a ${pickedMode} SIE question for Unit ${unit.num}: ${unit.name}.\n\nCURATED TOPIC SUMMARY (use this for the unit's key facts and exam-tested points):\n${unit.topics}${outlineBlock}${errataBlock}`;
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -834,10 +854,6 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
   const raw = d.content[0].text.trim();
   const m = raw.match(/\{[\s\S]*\}/);
   const q = JSON.parse(m ? m[0] : raw);
-  // Attach grounding info so the caller / log can record which lesson was used
-  if (lesson) {
-    q._lesson = { unit: lesson.unit, lesson: lesson.lesson, title: lesson.title };
-  }
   // Normalize citations to a clean array (model may omit, return null, or return malformed entries)
   if (!Array.isArray(q.citations)) q.citations = [];
   q.citations = q.citations.filter(c => c && typeof c === 'object' && (c.source || c.ref || c.title)).slice(0, 4);
@@ -922,7 +938,8 @@ function renderQ(q) {
 }
 
 async function prefetchNextQ() {
-  if (!apiKey || prefetching) return;
+  if (prefetching) return;
+  if (!apiKey && !bankAvailable()) return; // nothing to prefetch from
   prefetching = true;
   try {
     const pool = new Set([...selUnits]);
@@ -932,7 +949,7 @@ async function prefetchNextQ() {
     const unit = UNITS.find(u => u.num === pickedUnitNum);
     const modesArr = [...selModes];
     const pickedMode = modesArr[Math.floor(Math.random() * modesArr.length)];
-    const q = await callGenQuestion(unit, pickedMode);
+    const q = drawBankQuestion(unit.num, pickedMode, null) || await callGenQuestion(unit, pickedMode);
     q._unitNum = unit.num;
     q._mode = pickedMode;
     prefetchedQ = q;
@@ -1039,7 +1056,7 @@ async function sendFU() {
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
         max_tokens: 500,
-        system: `You are a FINRA SIE exam tutor using Kaplan's 3rd Edition SIE materials and the FINRA SIE Content Outline (2024). Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,
+        system: `You are a FINRA SIE exam tutor grounded in the FINRA SIE Content Outline (2024) and authoritative public primary sources (federal securities statutes, SEC/FINRA/MSRB rules, and OpenStax). Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,
         messages: [{ role: 'user', content: `We just covered Unit ${unit.num} (${unit.name}). Question: ${curQ.question}. Correct answer: ${curQ.correct} — ${curQ.options[curQ.correct]}. Explanation: ${curQ.explanation}\n\nFollow-up question: ${q}` }]
       })
     });
@@ -1340,15 +1357,6 @@ function planMiniSIE() {
   const shuffledModes = shuffle(modePool);
   return shuffledJF.map((jf, i) => {
     const mode = shuffledModes[i];
-    if (isGroundingAvailable()) {
-      const lesson = pickLessonForJF(jf, mode);
-      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
-      return {
-        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
-        unit: UNITS.find(u => u.num === unitNum),
-        mode, lesson
-      };
-    }
     const units = JF_UNITS[jf];
     const unitNum = units[Math.floor(Math.random() * units.length)];
     return {
@@ -1375,24 +1383,7 @@ function planUnitQuiz(unitNum) {
 function planJFQuiz(jfKey) {
   const modePool = buildEvenModePool(25);
 
-  // Phase 2: when grounding is available, pick lessons by their JF tag
-  // (more accurate than the unit-level JF_UNITS mapping). Each slot still
-  // gets a `unit` ref (for UI labels / drilldown), but the bound lesson
-  // determines what content the model actually sees.
-  if (isGroundingAvailable()) {
-    return modePool.map(mode => {
-      const lesson = pickLessonForJF(jfKey, mode);
-      const unitNum = lesson ? lesson.unit : JF_UNITS[jfKey][0];
-      return {
-        jf: jfKey, jfName: JF_NAMES[jfKey], jfShort: JF_SHORT[jfKey],
-        unit: UNITS.find(u => u.num === unitNum),
-        mode,
-        lesson
-      };
-    });
-  }
-
-  // Fallback (no grounding) — original behavior
+  // Distribute slots across the JF's units; the bank/booster keys on (unit, mode).
   const units = JF_UNITS[jfKey];
   const perUnit = {};
   units.forEach(u => perUnit[u] = 1 / units.length);
@@ -1416,19 +1407,6 @@ function planTypeQuiz(modeKey) {
     for (let i = 0; i < count; i++) slots.push(jf);
   });
   const shuffledJF = shuffle(slots);
-
-  if (isGroundingAvailable()) {
-    return shuffledJF.map(jf => {
-      const lesson = pickLessonForJF(jf, modeKey);
-      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
-      return {
-        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
-        unit: UNITS.find(u => u.num === unitNum),
-        mode: modeKey,
-        lesson
-      };
-    });
-  }
 
   return shuffledJF.map(jf => {
     const units = JF_UNITS[jf];
@@ -1454,16 +1432,6 @@ function planPracticeTest() {
   const shuffledJF = shuffle(jfSlots);
   const plan = shuffledJF.map((jf, i) => {
     const mode = modePool[i];
-    if (isGroundingAvailable()) {
-      const lesson = pickLessonForJF(jf, mode);
-      const unitNum = lesson ? lesson.unit : JF_UNITS[jf][0];
-      return {
-        jf, jfName: JF_NAMES[jf], jfShort: JF_SHORT[jf],
-        unit: UNITS.find(u => u.num === unitNum),
-        mode, lesson,
-        unscored: false
-      };
-    }
     const units = JF_UNITS[jf];
     const unitNum = units[Math.floor(Math.random() * units.length)];
     return {
@@ -1560,9 +1528,9 @@ function launchQuiz(quizId) {
 }
 
 function launchPracticeTest() {
-  if (!apiKey) {
+  if (!apiKey && !bankAvailable()) {
     document.getElementById('api-prompt').classList.add('vis');
-    showErr('pt-err', 'Please enter your Anthropic API key first (see top of page).');
+    showErr('pt-err', 'Add your Anthropic API key for live questions, or load the question bank first (see top of page).');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     return;
   }
@@ -1576,9 +1544,9 @@ function launchPracticeTest() {
 // QUIZ START — generates questions, with streaming support for practice test
 // ─────────────────────────────────────────────
 async function startQuiz(config) {
-  if (!apiKey) {
+  if (!apiKey && !bankAvailable()) {
     document.getElementById('api-prompt').classList.add('vis');
-    showErr('quiz-err', 'Please enter your Anthropic API key first.');
+    showErr('quiz-err', 'Add your Anthropic API key for live questions, or load the question bank first.');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     return;
   }
@@ -1642,7 +1610,6 @@ async function startQuiz(config) {
     mode: p.mode,
     unscored: !!p.unscored,
     _planUnit: p.unit,
-    _planLesson: p.lesson || null,
     _ready: false,
     _failed: false,
     question: null, options: null, correct: null, explanation: null, citations: []
@@ -1664,7 +1631,8 @@ async function startQuiz(config) {
           .slice(Math.max(0, myIdx - 6), myIdx)
           .filter(s => s._ready)
           .map(s => s.question?.slice(0, 80));
-        const q = await callGenQuestion(slot._planUnit, slot.mode, { recentTopics, lesson: slot._planLesson });
+        const q = drawBankQuestion(slot._planUnit.num, slot.mode, slot.jf)
+                  || await callGenQuestion(slot._planUnit, slot.mode, { recentTopics });
         slot.question = q.question;
         slot.options = q.options;
         slot.correct = q.correct;
@@ -3146,7 +3114,7 @@ function dsRenderConceptCard(t, q) {
       const tag = document.createElement('div');
       tag.className = 'ci-ref manual';
       const trimTitle = (r.title || '').slice(0, 30) + ((r.title || '').length > 30 ? '…' : '');
-      tag.textContent = `Manual ${r.unit}.${r.lesson}: ${trimTitle}`;
+      tag.textContent = `Unit ${r.unit}: ${trimTitle}`;
       refs.appendChild(tag);
     });
     (t.outline_refs || []).slice(0, 2).forEach(r => {
