@@ -599,3 +599,11 @@ mark{background:rgba(191,87,0,.4);color:var(--text);padding:0 2px;border-radius:
 .errata-callout ul{margin:0;padding-left:1.1rem}
 .errata-callout li{font-size:12.5px;color:var(--muted2);line-height:1.6;margin-bottom:.25rem}
 .errata-callout li:last-child{margin-bottom:0}
+
+/* CREDITS / LICENSE footer */
+.site-credits{margin:3rem 0 1.5rem;padding-top:1.25rem;border-top:1px solid var(--border);font-size:12px;color:var(--muted);line-height:1.6}
+.site-credits p{margin:0 0 .6rem}
+.site-credits strong{color:var(--muted2)}
+.site-credits ul{margin:0 0 .6rem;padding-left:1.1rem}
+.site-credits li{margin-bottom:.3rem}
+.site-credits a{color:var(--muted2);text-decoration:underline}
