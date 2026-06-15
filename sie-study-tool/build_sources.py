@@ -79,6 +79,9 @@ ACT_FILES = {
     "Investment Advisers Act of 1940": ("IAA40", "INVESTMENT ADVISERS ACT OF 1940.txt"),
     "Investment Adviser Act of 1940": ("IAA40", "INVESTMENT ADVISERS ACT OF 1940.txt"),
     "Securities Investor Protection Act of 1970": ("SIPA70", "sipa70.txt"),
+    "USA PATRIOT Act": ("PATRIOT", "PLAW-107publ56.txt"),
+    "Insider Trading & Securities Fraud Enforcement Act of 1988": ("ITSFEA", "STATUTE-102-Pg4677.txt"),
+    "Insider Trading and Securities Fraud Enforcement Act of 1988": ("ITSFEA", "STATUTE-102-Pg4677.txt"),
 }
 # Numeric SEC rules cited under an Act resolve to that Act's CFR part. CFR part
 # files carry an "(up to date as of ...)" suffix, so resolve by glob prefix.
@@ -114,6 +117,10 @@ RE_SUBTOPIC = re.compile(r"^(\d\.\d+\.\d+)\s+(\S.+?)\s*$")
 RE_RULE_ENTRY = re.compile(r"^\s*(?:Rule\s+)?([A-Za-z0-9().\-/]+(?:\([a-z0-9]+\))*)\s+[–—-]\s+(.+?)\s*$")
 RE_SECTION_ENTRY = re.compile(r"^\s*Section\s+([0-9A-Za-z().\-]+)\s+[–—-]\s+(.+?)\s*$")
 RE_PAGENUM = re.compile(r"^\s*\d{1,3}\s*$")
+# A grouping header inside an "SEC Rules and Regulations" block names an Act,
+# agency, or regulation family (vs. a wrapped continuation line of rule text).
+RE_GROUP_HEADER = re.compile(
+    r"\b(Act|Board|Commission|Reserve|Regulation|Rules and Regulations)\b")
 BULLET_CHARS = "•"  # primary bullet + common Wingdings sub-bullet glyphs
 
 
@@ -173,11 +180,15 @@ def parse_outline(text: str):
             if stripped.lower().startswith("sec rules and regulation"):
                 rules_group, sec_act = "sec", None; continue
             if rules_group == "sec":
-                act_key = stripped.rstrip(" (SIPA)").strip()
-                # Act header lines under "SEC Rules and Regulations".
-                matched_act = next((a for a in ACT_FILES if act_key.startswith(a)), None)
-                if matched_act and " – " not in stripped and " — " not in stripped:
-                    sec_act = matched_act
+                is_rule_entry = RE_SECTION_ENTRY.match(line) or RE_RULE_ENTRY.match(line)
+                if not is_rule_entry and RE_GROUP_HEADER.search(stripped) \
+                        and " – " not in stripped and " — " not in stripped:
+                    # Act / agency / regulation grouping header. Reset the act so
+                    # unrecognized groupings (Federal Reserve Board, FTC, named
+                    # Regulations) don't carry a stale Act forward; recognized acts
+                    # switch context. Plain wrapped-text lines are left untouched.
+                    act_key = stripped.rstrip(" (SIPA)").strip()
+                    sec_act = next((a for a in ACT_FILES if act_key.startswith(a)), None)
                     continue
             if rules_group:
                 sm = RE_SECTION_ENTRY.match(line)

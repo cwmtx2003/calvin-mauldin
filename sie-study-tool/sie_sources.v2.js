@@ -84,6 +84,14 @@ window.SIE_SOURCES = {
    "ship": true,
    "license": "public-domain",
    "present": true
+  },
+  "PATRIOT": {
+   "type": "statute",
+   "name": "USA PATRIOT Act",
+   "path": "corpus/PLAW-107publ56.txt",
+   "ship": true,
+   "license": "public-domain",
+   "present": true
   }
  },
  "outline": {
@@ -1125,17 +1133,17 @@ window.SIE_SOURCES = {
       {
        "ref": "Section 314",
        "title": "Cooperative Efforts to Deter Money Laundering",
-       "act": "Investment Company Act of 1940"
+       "act": "USA PATRIOT Act"
       },
       {
        "ref": "Section 326",
        "title": "Verification of Identification",
-       "act": "Investment Company Act of 1940"
+       "act": "USA PATRIOT Act"
       },
       {
        "ref": "Section 352",
        "title": "Anti-Money Laundering Programs",
-       "act": "Investment Company Act of 1940"
+       "act": "USA PATRIOT Act"
       }
      ]
     }
