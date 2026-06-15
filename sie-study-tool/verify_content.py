@@ -135,46 +135,77 @@ def check_citations():
 
 
 # ─── 2. Hard-fact stale-value scan ───────────────────────────────────────────
-# Each entry: (label, regex that matches a STALE/incorrect value in study text).
+# Each entry: (label, regex matching a STALE value, legit_context regex|None).
+# legit_context: if it matches near the hit, the value is being used correctly in
+# a DIFFERENT (still-valid) context — e.g. "redemption gate" is obsolete for money
+# market funds but normal for hedge/private funds — so the hit is not an error.
 STALE_PATTERNS = [
     ("settlement T+2 (now T+1)", re.compile(r"\bT\+?\s*2\b.{0,40}(settl|regular[-\s]?way)|"
-                                            r"(settl|regular[-\s]?way).{0,40}\bT\+?\s*2\b", re.I)),
+                                            r"(settl|regular[-\s]?way).{0,40}\bT\+?\s*2\b", re.I), None),
     ("Reg A Tier 2 $50M (now $75M)", re.compile(r"Tier\s*2.{0,30}\$?\s*50\s*million|"
-                                                r"\$50\s*million.{0,30}Tier\s*2", re.I)),
-    ("Reg CF cap $1.07M (now $5M)", re.compile(r"\$?\s*1\.07\s*million|\$1,070,000", re.I)),
+                                                r"\$50\s*million.{0,30}Tier\s*2", re.I), None),
+    ("Reg CF cap $1.07M (now $5M)", re.compile(r"\$?\s*1\.07\s*million|\$1,070,000", re.I), None),
     ("CE Reg Element 120-day/anniversary cycle (now annual)",
      re.compile(r"120\s*days.{0,40}(continuing education|regulatory element)|"
-                r"(second|fifth|tenth)[-\s]?(year|anniversary).{0,30}(continuing education|registration)", re.I)),
-    ("MMF redemption gates (authority removed 2023)", re.compile(r"redemption\s+gate", re.I)),
+                r"(second|fifth|tenth)[-\s]?(year|anniversary).{0,30}(continuing education|registration)", re.I), None),
+    ("MMF redemption gates (authority removed 2023)", re.compile(r"redemption\s+gate", re.I),
+     re.compile(r"hedge|private\s+fund|lock[-\s]?up|notice\s+period|3\(c\)", re.I)),
 ]
-
-
-def generated_text_blobs():
-    blobs = []
-    for p in list(P4.glob("questions_unit_*.json")) + list(P4.glob("flashcards_unit_*.json")) \
-            + list(P4.glob("studyguide_unit_*.json")) + list(P4.glob("reference_*.json")):
-        blobs.append((p.name, _read(p)))
-    return blobs
 
 
 # A stale value mentioned ALONGSIDE a correction signal is a legitimate "it
 # changed from X to Y" statement, not an error — only flag naked stale assertions.
 CORRECTION_SIGNAL = re.compile(
     r"T\+?\s*1|now|chang|shorten|moved|updat|effective|eliminat|remov|formerly|"
-    r"previously|\bwas\b|no longer|replaced|\$75|\$5\s*million|annual", re.I)
+    r"previously|\bwas\b|no longer|replaced|stale|obsolete|prior\s+to|\$75|"
+    r"\$5\s*million|annual", re.I)
+
+
+def _scan_text(text, patterns, window_pad=120):
+    """Flag stale-value hits in a free-text blob (no MCQ structure)."""
+    hits = []
+    for label, rx, legit in patterns:
+        for m in rx.finditer(text):
+            window = text[max(0, m.start() - window_pad):m.end() + window_pad]
+            if legit and legit.search(window):
+                continue  # valid use in a different (still-current) context
+            if CORRECTION_SIGNAL.search(window):
+                continue  # correctly framed as a past/changed value
+            snippet = text[max(0, m.start() - 30):m.end() + 30].replace("\n", " ")
+            hits.append((label, snippet.strip()))
+    return hits
+
+
+def _scan_question(q, patterns):
+    """Flag stale values ASSERTED AS TRUE in one MCQ.
+
+    A stale value sitting in a distractor (a wrong-answer choice) is intentional —
+    that is exactly what a hard question tests — so distractors are never scanned.
+    Only the stem, the CORRECT answer, and the explanation are read as assertions,
+    and the explanation may legitimately cite a stale value when it corrects it.
+    """
+    choices = q.get("choices") or []
+    ai = q.get("answer")
+    answer_txt = choices[ai] if isinstance(ai, int) and 0 <= ai < len(choices) else ""
+    asserted = "\n".join([q.get("stem") or "", answer_txt, q.get("explanation") or ""])
+    return _scan_text(asserted, patterns)
 
 
 def check_hard_facts():
     flagged = []
-    for fname, text in generated_text_blobs():
-        for label, rx in STALE_PATTERNS:
-            for m in rx.finditer(text):
-                window = text[max(0, m.start() - 80):m.end() + 80]
-                if CORRECTION_SIGNAL.search(window):
-                    continue  # correctly framed as a past/changed value
-                snippet = text[max(0, m.start() - 30):m.end() + 30].replace("\n", " ")
-                flagged.append((fname, label, snippet.strip()))
-    print(f"  naked stale-fact assertions (excluding 'changed from X to Y' mentions): {len(flagged)}")
+    # Question files: structured scan (ignore stale values used as distractors).
+    for p in sorted(P4.glob("questions_unit_*.json")):
+        d = json.loads(_read(p) or "{}")
+        for q in d.get("questions", []):
+            for label, snip in _scan_question(q, STALE_PATTERNS):
+                flagged.append((p.name, label, snip))
+    # Other generated prose: windowed scan with legit-context + correction guards.
+    others = (list(P4.glob("flashcards_unit_*.json")) + list(P4.glob("studyguide_unit_*.json"))
+              + list(P4.glob("reference_*.json")))
+    for p in sorted(others):
+        for label, snip in _scan_text(_read(p), STALE_PATTERNS):
+            flagged.append((p.name, label, snip))
+    print(f"  naked stale-fact assertions (excluding distractors & 'changed from X to Y' mentions): {len(flagged)}")
     for fname, label, snip in flagged[:20]:
         print(f"    ⚠ [{fname}] {label}: …{snip}…")
     # Soft check: warnings for human review, not a hard fail.
