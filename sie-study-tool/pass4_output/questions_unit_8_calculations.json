@@ -43,7 +43,7 @@
         "$1,500"
       ],
       "answer": 2,
-      "explanation": "A holding period of one year or less produces a short-term capital gain taxed at ordinary income rates: $5,000 \u00d7 24% = $1,200. $750 (15%) would apply only if the gain were long-term (held more than one year).",
+      "explanation": "A holding period of one year or less produces a short-term capital gain taxed at ordinary income rates: $5,000 × 24% = $1,200. $750 (15%) would apply only if the gain were long-term (held more than one year).",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -58,7 +58,7 @@
         "$1,800"
       ],
       "answer": 0,
-      "explanation": "Gain = ($45 \u2212 $30) \u00d7 200 = $3,000. Because the shares were held more than one year, the gain is long-term and taxed at 15%: $3,000 \u00d7 15% = $450. $900 (30%) would double-tax the gain.",
+      "explanation": "Gain = ($45 − $30) × 200 = $3,000. Because the shares were held more than one year, the gain is long-term and taxed at 15%: $3,000 × 15% = $450. $900 (30%) would double-tax the gain.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -88,7 +88,7 @@
         "$8,000"
       ],
       "answer": 1,
-      "explanation": "Long-term gains are first netted against long-term losses: $5,000 \u2212 $2,000 = $3,000 net long-term capital gain. $5,000 ignores the long-term loss; $2,000 confuses long-term with the short-term net.",
+      "explanation": "Long-term gains are first netted against long-term losses: $5,000 − $2,000 = $3,000 net long-term capital gain. $5,000 ignores the long-term loss; $2,000 confuses long-term with the short-term net.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -102,8 +102,8 @@
         "$5,000",
         "$5,100"
       ],
-      "answer": 4,
-      "explanation": "Because replacement shares were bought within 30 days of the loss sale, the $1,500 loss ($5,000 \u2212 $3,500) is disallowed and added to the basis of the new shares: $3,600 + $1,500 = $5,100. $3,600 ignores the wash sale adjustment.",
+      "answer": 3,
+      "explanation": "Because replacement shares were bought within 30 days of the loss sale, the $1,500 loss ($5,000 − $3,500) is disallowed and added to the basis of the new shares: $3,600 + $1,500 = $5,100. $3,600 ignores the wash sale adjustment.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -118,7 +118,7 @@
         "5.00%"
       ],
       "answer": 2,
-      "explanation": "Approximate YTM = [annual interest + (par \u2212 price)/years] / [(par + price)/2] = [$40 + ($100/10)] / [($1,000 + $900)/2] = $50 / $950 = 5.26%. 4.44% is the current yield ($40/$900); 4.00% is the nominal coupon.",
+      "explanation": "Approximate YTM = [annual interest + (par − price)/years] / [(par + price)/2] = [$40 + ($100/10)] / [($1,000 + $900)/2] = $50 / $950 = 5.26%. 4.44% is the current yield ($40/$900); 4.00% is the nominal coupon.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -133,7 +133,7 @@
         "$1,600"
       ],
       "answer": 1,
-      "explanation": "Qualified dividends: $4,000 \u00d7 15% = $600. Non-qualified dividends: $1,000 \u00d7 32% = $320. Total = $920. $1,600 incorrectly taxes all dividends at the ordinary 32% rate.",
+      "explanation": "Qualified dividends: $4,000 × 15% = $600. Non-qualified dividends: $1,000 × 32% = $320. Total = $920. $1,600 incorrectly taxes all dividends at the ordinary 32% rate.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -163,7 +163,7 @@
         "9.38%"
       ],
       "answer": 2,
-      "explanation": "Tax-equivalent yield = tax-free yield / (1 \u2212 tax bracket) = 3.0% / (1 \u2212 0.32) = 3.0% / 0.68 = 4.41%. 2.04% incorrectly multiplies by (1 \u2212 0.32) rather than dividing.",
+      "explanation": "Tax-equivalent yield = tax-free yield / (1 − tax bracket) = 3.0% / (1 − 0.32) = 3.0% / 0.68 = 4.41%. 2.04% incorrectly multiplies by (1 − 0.32) rather than dividing.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -178,7 +178,7 @@
         "85%"
       ],
       "answer": 2,
-      "explanation": "Capital gain = ($40 \u2212 $25) \u00d7 100 = $1,500. Dividends = $1.50 \u00d7 100 \u00d7 3 = $450. Total return = ($1,500 + $450) / $2,500 = $1,950 / $2,500 = 78%. 60% ignores the dividend income.",
+      "explanation": "Capital gain = ($40 − $25) × 100 = $1,500. Dividends = $1.50 × 100 × 3 = $450. Total return = ($1,500 + $450) / $2,500 = $1,950 / $2,500 = 78%. 60% ignores the dividend income.",
       "citations": [],
       "unit": 8,
       "jf": "tc",
@@ -187,32 +187,32 @@
   ],
   "citations_available": [
     {
-      "ref": "Securities Exchange Act of 1934 \u00a710",
+      "ref": "Securities Exchange Act of 1934 §10",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "Securities Exchange Act of 1934 \u00a711(d)",
+      "ref": "Securities Exchange Act of 1934 §11(d)",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "Securities Exchange Act of 1934 \u00a714",
+      "ref": "Securities Exchange Act of 1934 §14",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "Securities Exchange Act of 1934 \u00a715",
+      "ref": "Securities Exchange Act of 1934 §15",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "Securities Exchange Act of 1934 \u00a720A",
+      "ref": "Securities Exchange Act of 1934 §20A",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "Securities Exchange Act of 1934 \u00a721A",
+      "ref": "Securities Exchange Act of 1934 §21A",
       "type": "statute",
       "ship": true
     },
@@ -292,17 +292,17 @@
       "ship": true
     },
     {
-      "ref": "USA PATRIOT Act \u00a7314",
+      "ref": "USA PATRIOT Act §314",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "USA PATRIOT Act \u00a7326",
+      "ref": "USA PATRIOT Act §326",
       "type": "statute",
       "ship": true
     },
     {
-      "ref": "USA PATRIOT Act \u00a7352",
+      "ref": "USA PATRIOT Act §352",
       "type": "statute",
       "ship": true
     },

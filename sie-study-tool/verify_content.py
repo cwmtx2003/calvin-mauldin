@@ -212,6 +212,30 @@ def check_hard_facts():
     return True, len(flagged)
 
 
+# ─── 2b. Question structure (HARD) ───────────────────────────────────────────
+
+def check_question_structure():
+    """Every bank question must be answerable: a stem, ≥2 choices, and an
+    `answer` that is an in-range integer index. A missing/out-of-range answer
+    means the item cannot be graded in the app — a hard failure."""
+    broken = []
+    total = 0
+    for p in sorted(P4.glob("questions_unit_*.json")):
+        d = json.loads(_read(p) or "{}")
+        for q in d.get("questions", []):
+            total += 1
+            ch = q.get("choices") or []
+            a = q.get("answer")
+            if not (q.get("stem") and isinstance(ch, list) and len(ch) >= 2
+                    and isinstance(a, int) and not isinstance(a, bool) and 0 <= a < len(ch)):
+                broken.append((p.name, q.get("id") or q.get("stem", "?")[:50], repr(a),
+                               len(ch) if isinstance(ch, list) else ch))
+    print(f"  questions checked: {total}  unanswerable (bad stem/choices/answer): {len(broken)}")
+    for fname, qid, a, nch in broken[:25]:
+        print(f"    ✗ [{fname}] {qid}  answer={a} nchoices={nch}")
+    return len(broken) == 0
+
+
 # ─── 3. Leak scan (HARD) ─────────────────────────────────────────────────────
 
 def sro_signatures():
@@ -347,6 +371,8 @@ def main():
     ok, _, _ = check_citations(); hard_ok &= ok
     print("─── 2. Hard-fact stale-value scan ────────────────────")
     check_hard_facts()
+    print("─── 2b. Question structure (answerable) ──────────────")
+    ok = check_question_structure(); hard_ok &= ok
     print("─── 3. Leak scan (Kaplan / SRO) ──────────────────────")
     ok = check_leaks(); hard_ok &= ok
     if args.llm_check:
