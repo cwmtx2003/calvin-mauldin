@@ -296,7 +296,7 @@ def main():
         report(built)
         return 0
 
-    header = ("// SIE Study Tool — browser study data (de-Kaplan v2)\n"
+    header = ("// SIE Study Tool — browser study data (v2)\n"
               "// Flashcards, study guides, reference sheets, question bank, concept index,\n"
               "// browser-safe FINRA outline. Generated from public/open sources.\n"
               f"// Content license: {LICENSE} (non-commercial). See meta.credits.\n")
