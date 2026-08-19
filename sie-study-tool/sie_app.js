@@ -172,7 +172,38 @@ function questionBank() {
 
 function bankAvailable() { return questionBank() !== null; }
 
-const _bankServed = new Set(); // bank question ids already shown this session
+const _bankServed = new Set(); // bank question ids already shown this session (QUIZ path)
+
+// ── Pomodoro drill: per-session no-repeat / mastery (drill path only) ──
+// A question answered correctly is retired for the session; a missed question
+// stays eligible until later answered correctly. Reset each new drill. The quiz
+// path keeps using _bankServed above and is unaffected by these.
+let sessionMastered = new Set(); // _key of questions answered correctly → retired this session
+let recentKeys = [];             // last served _keys, to avoid near-term repeats
+
+// Tiny stable string hash → short base36 token. Used to key deep-study / AI
+// questions (which have no stored id) so they can be deduped within a session.
+function _strHash(s) {
+  let h = 0;
+  const str = String(s || '');
+  for (let i = 0; i < str.length; i++) { h = (h * 31 + str.charCodeAt(i)) | 0; }
+  return (h >>> 0).toString(36);
+}
+
+// Stable session identity for any drill question.
+function qKey(q) {
+  if (!q) return '';
+  if (q._key) return q._key;
+  if (q._fromBank && q.id != null) return 'bank:' + q.id;
+  if (q._fromDeep) return 'deep:' + _strHash(q.question);
+  return 'ai:' + _strHash(q.question);
+}
+
+function _pushRecentKey(k) {
+  if (!k) return;
+  recentKeys.push(k);
+  if (recentKeys.length > 15) recentKeys.shift();
+}
 
 // Parse a bank citation string into the app's {source, ref, title} shape so the
 // existing citation-link builder (SOURCE_FALLBACKS) can resolve it.
@@ -204,6 +235,7 @@ function normalizeBankQuestion(bq) {
     correct: letters[bq.answer] || 'A',
     explanation: bq.explanation || '',
     citations: (bq.citations || []).map(bankCitationToObj).filter(Boolean).slice(0, 4),
+    id: bq.id,
     _fromBank: true,
     _unitNum: bq.unit
   };
@@ -211,13 +243,28 @@ function normalizeBankQuestion(bq) {
 
 // Draw one unused bank question. Prefers (unit, mode), then unit-any-mode, then
 // the job function; allows repeats only once a pool is exhausted. Null if no bank.
-function drawBankQuestion(unitNum, mode, jf) {
+function drawBankQuestion(unitNum, mode, jf, opts = {}) {
   const qb = questionBank();
   if (!qb) return null;
   let pool = [];
   if (unitNum != null && qb.byUnit && qb.byUnit[String(unitNum)]) pool = qb.byUnit[String(unitNum)];
   if (!pool.length && jf && qb.byJF && qb.byJF[jf]) pool = qb.byJF[jf];
   if (!pool.length) return null;
+
+  // Drill path passes opts.exclude (a Set of _keys like 'bank:<id>' to skip —
+  // mastered/recent). It never forces repeats and never touches _bankServed, so
+  // missed questions stay eligible. Returns null when nothing is left; the drill
+  // dispatcher decides the fallback (deep-study / AI / recycle).
+  if (opts.exclude) {
+    const ok = q => !opts.exclude.has('bank:' + q.id);
+    let cand = pool.filter(q => ok(q) && (!mode || q.mode === mode));
+    if (!cand.length) cand = pool.filter(ok);
+    if (!cand.length) return null;
+    const q = cand[Math.floor(Math.random() * cand.length)];
+    return normalizeBankQuestion(q);
+  }
+
+  // Quiz / practice-test path (unchanged): no-repeat until the pool is exhausted.
   const unused = pool.filter(q => !_bankServed.has(q.id));
   let cand = unused.filter(q => !mode || q.mode === mode);
   if (!cand.length) cand = unused;                       // mode exhausted → any unused in pool
@@ -226,6 +273,215 @@ function drawBankQuestion(unitNum, mode, jf) {
   const q = cand[Math.floor(Math.random() * cand.length)];
   if (q && q.id) _bankServed.add(q.id);
   return q ? normalizeBankQuestion(q) : null;
+}
+
+// ═══════════════════════════════════════════════════
+// DEEP-STUDY → DRILL QUESTIONS (no API)
+// Convert the bundled Deep Study sources (flashcards, concept index, study
+// guides, reference sheets) into 4-option MCQs for extra pomodoro variety.
+// Loose alignment: respect a source's unit/mode tag where it has one; treat an
+// absent tag as matching any selection. Used only by the drill dispatcher.
+// ═══════════════════════════════════════════════════
+
+function _dsData() { return (typeof window !== 'undefined' && window.SIE_STUDY_DATA) || null; }
+
+function _shuffle(a) {
+  const arr = a.slice();
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Pick up to n distractor strings from pool, excluding blanks and anything equal
+// (trimmed, case-insensitive) to correct. May return fewer than n if pool is thin.
+function buildDistractors(correct, pool, n = 3) {
+  const norm = s => String(s == null ? '' : s).trim().toLowerCase();
+  const seen = new Set([norm(correct)]);
+  const out = [];
+  for (const item of _shuffle(pool || [])) {
+    const key = norm(item);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    out.push(item);
+    if (out.length >= n) break;
+  }
+  return out;
+}
+
+// Assemble a normalized MCQ. Returns null if fewer than 3 distractors are
+// available (can't form four distinct options).
+function _assembleMCQ(o) {
+  if (!o.stem || o.correct == null || !o.distractors || o.distractors.length < 3) return null;
+  const letters = ['A', 'B', 'C', 'D'];
+  const choices = _shuffle([o.correct, ...o.distractors.slice(0, 3)]);
+  const options = {};
+  let correctLetter = 'A';
+  choices.forEach((c, i) => { options[letters[i]] = c; if (c === o.correct) correctLetter = letters[i]; });
+  const cit = o.citation ? [bankCitationToObj(o.citation)].filter(Boolean) : [];
+  return {
+    topic: o.topic || ('Unit ' + o.unitNum),
+    question: o.stem,
+    options,
+    correct: correctLetter,
+    explanation: o.explanation || '',
+    citations: cit,
+    _fromDeep: true,
+    _unitNum: o.unitNum,
+    _mode: o.mode,
+    _key: 'deep:' + o.srcShort + ':' + (o.unitNum || 0) + ':' + _strHash(o.stem)
+  };
+}
+
+// FLASHCARDS — fully tagged by unit + type. definition cards → def→term MCQs
+// (short choices); qa/scenario cards → question stem with answer-based choices.
+function _drawFlashcardQ(unitNum, mode) {
+  const data = _dsData(); if (!data || !data.flashcards) return null;
+  const fc = data.flashcards;
+  let cards = [];
+  if (fc.byType && fc.byType[mode] && Array.isArray(fc.byType[mode].cards)) {
+    cards = fc.byType[mode].cards.filter(c => c.unit === unitNum);
+  }
+  if (!cards.length && fc.byUnit && fc.byUnit[String(unitNum)]) cards = fc.byUnit[String(unitNum)].cards || [];
+  if (!cards.length) return null;
+  const unitName = (fc.byUnit[String(unitNum)] && fc.byUnit[String(unitNum)].unit_name) || ('Unit ' + unitNum);
+  const card = cards[Math.floor(Math.random() * cards.length)];
+  if (!card || !card.front || !card.back) return null;
+
+  if (card.type === 'definition') {
+    const others = cards.filter(c => c !== card && c.type === 'definition' && c.front).map(c => c.front);
+    return _assembleMCQ({
+      srcShort: 'flash', unitNum, mode,
+      stem: 'Which term best matches this description?\n\n"' + card.back + '"',
+      correct: card.front, distractors: buildDistractors(card.front, others, 3),
+      explanation: '**' + card.front + '** — ' + card.back,
+      topic: unitName, citation: card.citation
+    });
+  }
+  const others = cards.filter(c => c !== card && c.back).map(c => c.back);
+  return _assembleMCQ({
+    srcShort: 'flash', unitNum, mode,
+    stem: card.front,
+    correct: card.back, distractors: buildDistractors(card.back, others, 3),
+    explanation: card.back,
+    topic: unitName, citation: card.citation
+  });
+}
+
+// CONCEPT INDEX — unit via manual_refs (respected); no mode tag → any mode.
+function _drawConceptQ(unitNum, mode) {
+  const data = _dsData();
+  if (!data || !data.conceptIndex || !Array.isArray(data.conceptIndex.terms)) return null;
+  const inUnit = data.conceptIndex.terms.filter(t =>
+    t.term && t.definition && !/^see\b/i.test(t.definition) &&
+    Array.isArray(t.manual_refs) && t.manual_refs.some(r => r.unit === unitNum));
+  if (inUnit.length < 4) return null;
+  const t = inUnit[Math.floor(Math.random() * inUnit.length)];
+  const others = inUnit.filter(x => x !== t).map(x => x.term);
+  return _assembleMCQ({
+    srcShort: 'concept', unitNum, mode,
+    stem: 'Which term best matches this definition?\n\n"' + t.definition + '"',
+    correct: t.term, distractors: buildDistractors(t.term, others, 3),
+    explanation: '**' + t.term + '** — ' + t.definition,
+    topic: 'Concept Index'
+  });
+}
+
+// STUDY GUIDES — unit-tagged, no mode tag → any mode. "Which fact belongs to this
+// unit?" with distractors pulled from OTHER units' guides (plausible but wrong).
+function _drawGuideQ(unitNum, mode) {
+  const data = _dsData();
+  if (!data || !data.studyGuides || !data.studyGuides.byUnit) return null;
+  const guide = data.studyGuides.byUnit[String(unitNum)];
+  if (!guide || !Array.isArray(guide.sections) || !guide.sections.length) return null;
+  const pick = (g, keys) => {
+    const out = [];
+    (g.sections || []).forEach(s => keys.forEach(k => (s[k] || []).forEach(v => { if (v) out.push(v); })));
+    return out;
+  };
+  const factKeys = mode === 'calculations' ? ['formulas'] : ['key_concepts', 'rules', 'mnemonics'];
+  const mine = pick(guide, factKeys);
+  if (!mine.length) return null;
+  let others = [];
+  Object.keys(data.studyGuides.byUnit).forEach(u => {
+    if (u === String(unitNum)) return;
+    others = others.concat(pick(data.studyGuides.byUnit[u], factKeys));
+  });
+  const correct = mine[Math.floor(Math.random() * mine.length)];
+  const where = guide.unit_name ? guide.unit_name + ' (Unit ' + unitNum + ')' : 'Unit ' + unitNum;
+  const stem = mode === 'calculations'
+    ? 'Which of the following formulas appears in the study material for ' + where + '?'
+    : 'Which of the following is covered in the study material for ' + where + '?';
+  return _assembleMCQ({
+    srcShort: 'guide', unitNum, mode,
+    stem,
+    correct, distractors: buildDistractors(correct, others, 3),
+    explanation: 'Drawn from the ' + where + ' study guide.',
+    topic: guide.unit_name || ('Unit ' + unitNum)
+  });
+}
+
+// REFERENCE SHEETS — no unit/mode tags → always eligible (Loose). Prefer a table
+// lookup; otherwise a "common trap" question.
+function _drawRefSheetQ(unitNum, mode) {
+  const data = _dsData();
+  if (!data || !Array.isArray(data.referenceSheets) || !data.referenceSheets.length) return null;
+  const sheet = data.referenceSheets[Math.floor(Math.random() * data.referenceSheets.length)];
+  if (!sheet) return null;
+
+  const tables = (sheet.sections || []).filter(s =>
+    s.type === 'table' && Array.isArray(s.items) &&
+    s.items.filter(r => r && typeof r === 'object' && !Array.isArray(r)).length >= 4);
+  if (tables.length) {
+    const tbl = tables[Math.floor(Math.random() * tables.length)];
+    const rows = tbl.items.filter(r => r && typeof r === 'object' && !Array.isArray(r));
+    const cols = Object.keys(rows[0] || {});
+    if (cols.length >= 2) {
+      const keyCol = cols[0];
+      const ansCol = cols[1 + Math.floor(Math.random() * (cols.length - 1))];
+      const row = rows[Math.floor(Math.random() * rows.length)];
+      const correct = row[ansCol];
+      const distractors = buildDistractors(correct, rows.filter(r => r !== row).map(r => r[ansCol]), 3);
+      const q = _assembleMCQ({
+        srcShort: 'ref', unitNum, mode,
+        stem: 'On the "' + sheet.title + '" reference — for ' + keyCol + ' "' + row[keyCol] + '", what is the ' + ansCol + '?',
+        correct, distractors,
+        explanation: '**' + row[keyCol] + '** → ' + ansCol + ': ' + correct + '.',
+        topic: sheet.title
+      });
+      if (q) return q;
+    }
+  }
+  if (Array.isArray(sheet.common_traps) && sheet.common_traps.length) {
+    const correct = sheet.common_traps[Math.floor(Math.random() * sheet.common_traps.length)];
+    let others = [];
+    data.referenceSheets.forEach(s => { if (s !== sheet && Array.isArray(s.common_traps)) others = others.concat(s.common_traps); });
+    const q = _assembleMCQ({
+      srcShort: 'ref', unitNum, mode,
+      stem: 'Which of the following is a common trap or key point on the "' + sheet.title + '" reference sheet?',
+      correct, distractors: buildDistractors(correct, others, 3),
+      explanation: 'From the "' + sheet.title + '" reference sheet.',
+      topic: sheet.title
+    });
+    if (q) return q;
+  }
+  return null;
+}
+
+// Deep-study dispatcher: try random sources until one yields a not-yet-mastered
+// MCQ for (unit, mode). `avoid` is a Set of _keys to skip.
+function drawDeepStudyQuestion(unitNum, mode, avoid) {
+  if (!_dsData()) return null;
+  const builders = [_drawFlashcardQ, _drawConceptQ, _drawGuideQ, _drawRefSheetQ];
+  for (let attempt = 0; attempt < 8; attempt++) {
+    const b = _shuffle(builders)[0];
+    try {
+      const q = b(unitNum, mode);
+      if (q && (!avoid || !avoid.has(q._key))) return q;
+    } catch (e) { /* skip a malformed source entry, try another */ }
+  }
+  return null;
 }
 
 // Trim helper — Outline is small enough to send whole; lessons can be big.
@@ -710,15 +966,51 @@ function setStep(step, state) {
 // DRILLING
 // ═══════════════════════════════════════════════════
 async function startDrill() {
-  if (!apiKey && !bankAvailable()) { showErr('setup-err', 'Add your Anthropic API key for live questions, or load the question bank first.'); return; }
+  if (!apiKey && !bankAvailable() && !_dsData()) { showErr('setup-err', 'Add your Anthropic API key for live questions, or load the question bank first.'); return; }
   if (!pomoPresetChosen) { showErr('setup-err', 'Please select a focus preset.'); return; }
   if (selUnits.size === 0 && selJFs.size === 0) { showErr('setup-err', 'Please select at least one unit or job function.'); return; }
   if (selModes.size === 0) { showErr('setup-err', 'Please select at least one question mode.'); return; }
   inSession = true;
   currentSessionLog = [];
+  sessionMastered.clear();   // fresh no-repeat/mastery scope for this session
+  recentKeys = [];
   clearCurrentSession();
   setStep('go', 'done');
   await genQ();
+}
+
+// Try the no-API sources (question bank + deep study) in random order, skipping
+// anything in `avoid`. Returns a question or null.
+function _drawNoApi(unitNum, mode, avoid) {
+  const producers = _shuffle([
+    () => drawBankQuestion(unitNum, mode, null, { exclude: avoid }),
+    () => drawDeepStudyQuestion(unitNum, mode, avoid)
+  ]);
+  for (const p of producers) {
+    const q = p();
+    if (q && !avoid.has(qKey(q))) return q;
+  }
+  return null;
+}
+
+// Drill-only dispatcher: blends the question bank and deep-study sources for
+// variety while honoring the session's mastery/no-repeat rules. Falls back to
+// live AI, then to recycling mastered questions so the drill never stalls.
+async function drawDrillQuestion(unit, mode) {
+  const unitNum = unit.num;
+  // Pass 1: avoid mastered (hard) + recent (soft).
+  let q = _drawNoApi(unitNum, mode, new Set([...sessionMastered, ...recentKeys]));
+  // Pass 2: relax the recent guard — only avoid mastered.
+  if (!q) q = _drawNoApi(unitNum, mode, new Set(sessionMastered));
+  // Pass 3: live AI (unchanged) when a key is set.
+  if (!q && apiKey) q = await callGenQuestion(unit, mode);
+  // Pass 4: graceful exhaustion — recycle mastered rather than stall.
+  if (!q) {
+    console.info('Drill pool exhausted (unit ' + unitNum + '/' + mode + ') — recycling mastered questions.');
+    sessionMastered.clear();
+    q = _drawNoApi(unitNum, mode, new Set(recentKeys)) || _drawNoApi(unitNum, mode, new Set());
+  }
+  return q;
 }
 
 async function genQ() {
@@ -755,9 +1047,13 @@ async function genQ() {
   document.getElementById('q-mode').textContent = pickedMode.toUpperCase();
 
   try {
-    // Primary engine: pre-generated bank (no API key). Live API is the fallback.
-    const q = drawBankQuestion(unit.num, pickedMode, null) || await callGenQuestion(unit, pickedMode);
+    // Blend no-API sources (bank + deep study) with AI fallback; honor no-repeat.
+    const q = await drawDrillQuestion(unit, pickedMode);
+    if (!q) throw new Error('No question available for the selected units and modes.');
     q._unitNum = unit.num;
+    q._mode = pickedMode;
+    q._key = qKey(q);
+    _pushRecentKey(q._key);
     curQ = q;
     drillHistory.push({ topic: q.topic, unit: unit.num });
     if (drillHistory.length > 20) drillHistory.shift();
@@ -939,7 +1235,7 @@ function renderQ(q) {
 
 async function prefetchNextQ() {
   if (prefetching) return;
-  if (!apiKey && !bankAvailable()) return; // nothing to prefetch from
+  if (!apiKey && !bankAvailable() && !_dsData()) return; // nothing to prefetch from
   prefetching = true;
   try {
     const pool = new Set([...selUnits]);
@@ -949,9 +1245,11 @@ async function prefetchNextQ() {
     const unit = UNITS.find(u => u.num === pickedUnitNum);
     const modesArr = [...selModes];
     const pickedMode = modesArr[Math.floor(Math.random() * modesArr.length)];
-    const q = drawBankQuestion(unit.num, pickedMode, null) || await callGenQuestion(unit, pickedMode);
+    const q = await drawDrillQuestion(unit, pickedMode);
+    if (!q) { prefetchedQ = null; prefetching = false; return; }
     q._unitNum = unit.num;
     q._mode = pickedMode;
+    q._key = qKey(q);
     prefetchedQ = q;
   } catch(e) {
     prefetchedQ = null;
@@ -969,6 +1267,7 @@ async function nextQ() {
     document.getElementById('q-mode').textContent = (q._mode || 'standard').toUpperCase();
     drillHistory.push({ topic: q.topic, unit: q._unitNum });
     if (drillHistory.length > 20) drillHistory.shift();
+    _pushRecentKey(q._key || qKey(q));
     curQ = q;
     document.getElementById('expl').classList.remove('vis');
     document.getElementById('fu-area').classList.remove('vis');
@@ -993,6 +1292,9 @@ function answer(chosen) {
   stats.total++;
   if (ok) { stats.correct++; stats.streak++; if (stats.streak > stats.best) stats.best = stats.streak; }
   else { stats.streak = 0; }
+  // Session no-repeat: retire a question once answered correctly; a miss stays
+  // eligible (in the random pool) until it's later answered correctly.
+  if (ok) sessionMastered.add(curQ._key || qKey(curQ));
   saveStats(); updateScore(); updateStatBar(); updateSessionScoreLive();
 
   currentSessionLog.push({
@@ -1085,6 +1387,8 @@ function fullReset(keepSelections) {
   clearCurrentSession();
   stats = { total:0, correct:0, streak:0, best:0 };
   drillHistory = [];
+  sessionMastered.clear();
+  recentKeys = [];
   updateScore();
   updateSessionScoreLive();
   const sb = document.getElementById('stats-bar');
