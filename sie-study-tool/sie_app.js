@@ -20,6 +20,9 @@ const UNITS=[
 // STATE
 // ═══════════════════════════════════════════════════
 let apiKey = '';
+// Anthropic model used for all API calls (question generation + follow-up tutor).
+// Change here only — both fetch call sites read this.
+const CLAUDE_MODEL = 'claude-opus-4-8';
 let selUnits = new Set();
 let selJFs = new Set();
 let selModes = new Set();
@@ -1139,7 +1142,7 @@ Respond ONLY with valid JSON — no markdown fences, no extra text:
       'anthropic-dangerous-direct-browser-access': 'true'
     },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-6',
+      model: CLAUDE_MODEL,
       max_tokens: 1000,
       system: sys,
       messages: [{ role: 'user', content: msg }]
@@ -1356,7 +1359,7 @@ async function sendFU() {
         'anthropic-dangerous-direct-browser-access': 'true'
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
+        model: CLAUDE_MODEL,
         max_tokens: 500,
         system: `You are a FINRA SIE exam tutor grounded in the FINRA SIE Content Outline (2024) and authoritative public primary sources (federal securities statutes, SEC/FINRA/MSRB rules, and OpenStax). Answer the student's follow-up question clearly and concisely, focused on exam-relevant content. Under 200 words. Plain text only.`,
         messages: [{ role: 'user', content: `We just covered Unit ${unit.num} (${unit.name}). Question: ${curQ.question}. Correct answer: ${curQ.correct} — ${curQ.options[curQ.correct]}. Explanation: ${curQ.explanation}\n\nFollow-up question: ${q}` }]

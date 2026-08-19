@@ -41,12 +41,12 @@ from pathlib import Path
 import sie_grounding
 
 
-# ─── Model + pricing (verify on console.anthropic.com — checked 2026-06-14) ───
-# Latest family is Claude 4.x (Opus 4.8 = claude-opus-4-8). Default stays on 4.7
-# because its per-token pricing below is known; override with --model if desired.
-MODEL = "claude-opus-4-7"
-PRICE_INPUT_PER_M = 15.0   # $ per million input tokens
-PRICE_OUTPUT_PER_M = 75.0  # $ per million output tokens
+# ─── Model + pricing (verify on console.anthropic.com — checked 2026-08-19) ───
+# Opus-tier pricing is $5 / $25 per million tokens; override with --model if desired
+# (update the prices below to match if you point this at a different tier).
+MODEL = "claude-opus-4-8"
+PRICE_INPUT_PER_M = 5.0    # $ per million input tokens
+PRICE_OUTPUT_PER_M = 25.0  # $ per million output tokens
 
 LICENSE = "CC BY-NC-SA 4.0"
 GROUNDING_CAP = 30000      # cap grounding text per prompt to bound input cost
