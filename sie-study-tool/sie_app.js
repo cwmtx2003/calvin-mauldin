@@ -44,6 +44,14 @@ const JF_UNITS = {
   tc: [6,7,8,11],
   rf: [10,12]
 };
+
+// Units the user selected, directly or via a job function. Shared by the drill
+// dispatcher and by _drawGuideQ, which must not use unstudied units as distractors.
+function selectedUnitPool() {
+  const pool = new Set([...selUnits]);
+  selJFs.forEach(jf => { (JF_UNITS[jf] || []).forEach(n => pool.add(n)); });
+  return pool;
+}
 const JF_NAMES = {
   km: 'Knowledge of Capital Markets',
   pr: 'Understanding Products & Their Risks',
@@ -392,7 +400,8 @@ function _drawConceptQ(unitNum, mode) {
 }
 
 // STUDY GUIDES — unit-tagged, no mode tag → any mode. "Which fact belongs to this
-// unit?" with distractors pulled from OTHER units' guides (plausible but wrong).
+// unit?" with distractors pulled from other units the user SELECTED, so a wrong
+// answer is always something they have studied.
 function _drawGuideQ(unitNum, mode) {
   const data = _dsData();
   if (!data || !data.studyGuides || !data.studyGuides.byUnit) return null;
@@ -406,9 +415,16 @@ function _drawGuideQ(unitNum, mode) {
   const factKeys = mode === 'calculations' ? ['formulas'] : ['key_concepts', 'rules', 'mnemonics'];
   const mine = pick(guide, factKeys);
   if (!mine.length) return null;
+  // Distractors come ONLY from other units in the current selection. Drawing from
+  // every unit made the wrong answers material the user may never have opened, which
+  // turns a miss into a meaningless one and drags the drill score down misleadingly.
+  // Side effect: a single-unit drill has no contrast unit, so this form yields no
+  // question at all — correct, since "which unit covers this?" is then unanswerable.
+  const allowed = selectedUnitPool();
   let others = [];
   Object.keys(data.studyGuides.byUnit).forEach(u => {
-    if (u === String(unitNum)) return;
+    const n = Number(u);
+    if (n === unitNum || !allowed.has(n)) return;
     others = others.concat(pick(data.studyGuides.byUnit[u], factKeys));
   });
   const correct = mine[Math.floor(Math.random() * mine.length)];
@@ -425,24 +441,139 @@ function _drawGuideQ(unitNum, mode) {
   });
 }
 
-// REFERENCE SHEETS — no unit/mode tags → always eligible (Loose). Prefer a table
-// lookup; otherwise a "common trap" question.
+// ═══════════════════════════════════════════════════
+// REFERENCE SHEETS — STRICT UNIT ALIGNMENT
+// The bundle ships sheets untagged ({key, title, sections, common_traps}), and several
+// sheets mix units across their own sections — settlement_times alone spans Unit 1
+// (cooling-off), Unit 2 (dividend dates), Unit 6 (Reg T) and Unit 12 (U4/U5). A
+// sheet-level tag is therefore not strict enough, so each SECTION is mapped to the
+// unit(s) it belongs to, and only sections matching the drilled unit are eligible.
+// Headings must match sie_study_data.js verbatim; a section not listed here is never
+// drilled (omission is the strict default, not an oversight — see _auditRefSectionMap).
+// `skipRows` drops individual table rows belonging to a different unit than the section.
+// ═══════════════════════════════════════════════════
+
+const REF_SECTION_UNITS = {
+  account_types: {
+    'Ownership Registrations': [6],
+    'Retirement Accounts — Key Numbers (per ERRATA)': [6],
+    'IRA/Plan Rules (post-SECURE 2.0)': [6],
+    'Cash vs Margin (Reg T / FINRA 4210)': [6],
+    'Education / Disability Accounts': [6],
+    'Discretionary vs Non-Discretionary': [6],
+    'KYC & Suitability (FINRA 2090 / 2111 / Reg BI 15l-1)': [6, 7],
+    'Account Opening Requirements': [6]
+  },
+  aml_amounts: {
+    'Money Laundering — Definition & 3 Stages': [11],
+    'Key Reporting Thresholds & Deadlines': [11],
+    'Structuring (Smurfing)': [11],
+    'AML Program — FINRA Rule 3310 (5 Required Elements)': [11],
+    'OFAC & SDN List': [11],
+    'FINRA Rule 3220 — Gifts & Gratuities': [11],
+    'FinCEN & Regulators — Quick Map': [10, 11],
+    'Recordkeeping (cross-ref)': [11]
+  },
+  options_strategies: {
+    'Core Mechanics (Rule 2360)': [5],
+    'Moneyness & Premium Composition': [5],
+    'Single-Leg Strategies — Max Gain / Max Loss / BE': [5],
+    'Hedging / Income Strategies': [5],
+    'Straddle (same strike, same expiration)': [5],
+    'Quick Formulas': [5],
+    'Covered vs. Uncovered (Rule 2360)': [5],
+    'Suitability / Disclosure': [5]
+  },
+  registration_exemptions: {
+    "Exempt Securities (Securities Act §3) — never need '33 Act registration": [1],
+    'Exempt Transactions — Key Numbers': [1],
+    'Accredited Investor Definition (17 CFR 230.215 / Reg D Rule 501)': [1],
+    'Rule 144 — Resale of Restricted/Control Stock (17 CFR 230.144)': [1],
+    'Offering Document Quick Map': [1],
+    'SEC Disclaimer (§23)': [1]
+  },
+  settlement_times: {
+    'Regular-Way Settlement (Effective 5/28/2024)': [6],
+    'Dividend Dates Under T+1': [2],
+    'Reg T — Payment & Margin (Federal Reserve)': [6],
+    'Prospectus Delivery — Aftermarket Windows (Securities Act §10)': [1],
+    'Registration / Cooling-Off Period (Securities Act §8)': [1],
+    'Order Duration / GTC': [1],
+    // 8 of the 9 rows are U12 registration filings; Form 144 is a U1 resale filing.
+    'FINRA Filing / Registration Deadlines': { units: [12], skipRows: ['Form 144 (affiliate resales)'] }
+    // 'Other Time Rules Worth Memorizing' is deliberately OMITTED: its rows span units
+    // 1, 4, 6, 10 and 11, so no single unit tag would be honest. Tag its rows if wanted.
+  },
+  yield_relationships: {
+    'Core Yield Definitions': [3],
+    'Price / Yield Relationship (INVERSE)': [3],
+    'Key Formulas': [3, 8],
+    'Bond Pricing Conventions — Points & Basis Points': [3],
+    'Accrued Interest Conventions (post-5/28/2024 T+1)': [3],
+    'YTC vs YTM — Which Governs?': [3],
+    'Tax-Equivalent Yield — Quick Reference': [8]
+  }
+};
+
+// Normalize a map entry to {units, skipRows}. Null when the section is unmapped.
+function _refSectionRule(sheetKey, heading) {
+  const sheetMap = REF_SECTION_UNITS[sheetKey];
+  const e = sheetMap && sheetMap[heading];
+  if (!e) return null;
+  return Array.isArray(e)
+    ? { units: e, skipRows: [] }
+    : { units: e.units || [], skipRows: e.skipRows || [] };
+}
+
+// Log (once, at boot) any sheet section with no unit mapping. Those are excluded from
+// drills, so a regenerated sie_study_data.js that renames or adds a section shows up
+// here instead of silently dropping content. Expected baseline: a single entry,
+// settlement_times / Other Time Rules Worth Memorizing.
+function _auditRefSectionMap() {
+  const data = _dsData();
+  if (!data || !Array.isArray(data.referenceSheets)) return;
+  const missing = [];
+  data.referenceSheets.forEach(sh => (sh.sections || []).forEach(sec => {
+    if (sec.heading && !_refSectionRule(sh.key, sec.heading)) missing.push(sh.key + ' / ' + sec.heading);
+  }));
+  if (missing.length) console.info('[ref-sheets] unmapped sections (excluded from drills):', missing);
+}
+
+// Build a table-lookup MCQ from a reference-sheet section strictly aligned to the
+// drilled unit. Table sections only — they ask for a real fact off the sheet, and
+// their distractors are other rows of the SAME table, so they stay in-unit for free.
+// (The old "which is a common trap on sheet X?" form is gone: its distractors came from
+// OTHER sheets, so it tested where a fact was printed rather than the fact itself.)
+// Returns null when a unit has no aligned tabular reference content — the normal case
+// for several units; the deep-study dispatcher simply falls through to another source.
 function _drawRefSheetQ(unitNum, mode) {
   const data = _dsData();
   if (!data || !Array.isArray(data.referenceSheets) || !data.referenceSheets.length) return null;
-  const sheet = data.referenceSheets[Math.floor(Math.random() * data.referenceSheets.length)];
-  if (!sheet) return null;
 
-  const tables = (sheet.sections || []).filter(s =>
-    s.type === 'table' && Array.isArray(s.items) &&
-    s.items.filter(r => r && typeof r === 'object' && !Array.isArray(r)).length >= 4);
-  if (tables.length) {
-    const tbl = tables[Math.floor(Math.random() * tables.length)];
-    const rows = tbl.items.filter(r => r && typeof r === 'object' && !Array.isArray(r));
+  const cands = [];
+  data.referenceSheets.forEach(sheet => {
+    (sheet.sections || []).forEach(sec => {
+      if (sec.type !== 'table' || !Array.isArray(sec.items)) return;
+      const rule = _refSectionRule(sheet.key, sec.heading);
+      if (!rule || rule.units.indexOf(unitNum) === -1) return;
+      const rows = sec.items.filter(r =>
+        r && typeof r === 'object' && !Array.isArray(r) &&
+        !rule.skipRows.some(sk => Object.keys(r).some(k => String(r[k]) === sk)));
+      if (rows.length >= 4) cands.push({ sheet, sec, rows });
+    });
+  });
+  if (!cands.length) return null;
+
+  // A given answer column can repeat values across rows (e.g. a "Source" column), which
+  // leaves too few distinct distractors for a 4-option MCQ. Walk the aligned candidates
+  // and their answer columns in random order and take the first combination that
+  // actually assembles, instead of failing on one unlucky pick.
+  for (const cand of _shuffle(cands)) {
+    const sheet = cand.sheet, sec = cand.sec, rows = cand.rows;
     const cols = Object.keys(rows[0] || {});
-    if (cols.length >= 2) {
-      const keyCol = cols[0];
-      const ansCol = cols[1 + Math.floor(Math.random() * (cols.length - 1))];
+    if (cols.length < 2) continue;
+    const keyCol = cols[0];
+    for (const ansCol of _shuffle(cols.slice(1))) {
       const row = rows[Math.floor(Math.random() * rows.length)];
       const correct = row[ansCol];
       const distractors = buildDistractors(correct, rows.filter(r => r !== row).map(r => r[ansCol]), 3);
@@ -450,24 +581,11 @@ function _drawRefSheetQ(unitNum, mode) {
         srcShort: 'ref', unitNum, mode,
         stem: 'On the "' + sheet.title + '" reference — for ' + keyCol + ' "' + row[keyCol] + '", what is the ' + ansCol + '?',
         correct, distractors,
-        explanation: '**' + row[keyCol] + '** → ' + ansCol + ': ' + correct + '.',
+        explanation: '**' + row[keyCol] + '** → ' + ansCol + ': ' + correct + '.\n\nFrom "' + sheet.title + '" → ' + sec.heading + '.',
         topic: sheet.title
       });
       if (q) return q;
     }
-  }
-  if (Array.isArray(sheet.common_traps) && sheet.common_traps.length) {
-    const correct = sheet.common_traps[Math.floor(Math.random() * sheet.common_traps.length)];
-    let others = [];
-    data.referenceSheets.forEach(s => { if (s !== sheet && Array.isArray(s.common_traps)) others = others.concat(s.common_traps); });
-    const q = _assembleMCQ({
-      srcShort: 'ref', unitNum, mode,
-      stem: 'Which of the following is a common trap or key point on the "' + sheet.title + '" reference sheet?',
-      correct, distractors: buildDistractors(correct, others, 3),
-      explanation: 'From the "' + sheet.title + '" reference sheet.',
-      topic: sheet.title
-    });
-    if (q) return q;
   }
   return null;
 }
@@ -478,11 +596,15 @@ function drawDeepStudyQuestion(unitNum, mode, avoid) {
   if (!_dsData()) return null;
   const builders = [_drawFlashcardQ, _drawConceptQ, _drawGuideQ, _drawRefSheetQ];
   for (let attempt = 0; attempt < 8; attempt++) {
-    const b = _shuffle(builders)[0];
-    try {
-      const q = b(unitNum, mode);
-      if (q && (!avoid || !avoid.has(q._key))) return q;
-    } catch (e) { /* skip a malformed source entry, try another */ }
+    // Walk a freshly shuffled FULL list each round: several builders now legitimately
+    // return null for a given unit (no aligned reference section, too few concept-index
+    // terms), so picking one random builder per attempt wasted most of the attempts.
+    for (const b of _shuffle(builders)) {
+      try {
+        const q = b(unitNum, mode);
+        if (q && (!avoid || !avoid.has(q._key))) return q;
+      } catch (e) { /* skip a malformed source entry, try another */ }
+    }
   }
   return null;
 }
@@ -537,6 +659,7 @@ const QUIZ_JF_DIST_MINI = [
 // INIT
 // ═══════════════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
+  _auditRefSectionMap();
   renderUnits();
   renderQuizCards();
   renderHistory();
@@ -1017,9 +1140,7 @@ async function drawDrillQuestion(unit, mode) {
 }
 
 async function genQ() {
-  const pool = new Set([...selUnits]);
-  selJFs.forEach(jf => { (JF_UNITS[jf] || []).forEach(n => pool.add(n)); });
-  const poolArr = [...pool];
+  const poolArr = [...selectedUnitPool()];
   const pickedUnitNum = poolArr[Math.floor(Math.random() * poolArr.length)];
   const unit = UNITS.find(u => u.num === pickedUnitNum);
 
@@ -1241,9 +1362,7 @@ async function prefetchNextQ() {
   if (!apiKey && !bankAvailable() && !_dsData()) return; // nothing to prefetch from
   prefetching = true;
   try {
-    const pool = new Set([...selUnits]);
-    selJFs.forEach(jf => { (JF_UNITS[jf] || []).forEach(n => pool.add(n)); });
-    const poolArr = [...pool];
+    const poolArr = [...selectedUnitPool()];
     const pickedUnitNum = poolArr[Math.floor(Math.random() * poolArr.length)];
     const unit = UNITS.find(u => u.num === pickedUnitNum);
     const modesArr = [...selModes];
